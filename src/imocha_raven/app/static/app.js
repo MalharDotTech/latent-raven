@@ -62,6 +62,10 @@ document.addEventListener('alpine:init', () => {
   Alpine.data('panelReveal', outcome => ({
     shown: 0, timers: [],
     init() {
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        this.shown = 4;
+        return;
+      }
       for (let n = 1; n <= 4; n++) this.timers.push(setTimeout(() => {
         this.shown = n;
         if (n === 4 && outcome === 'latent_winner') this.$nextTick(() => goldBurst(this.$el));
@@ -74,17 +78,24 @@ function goldBurst(element) {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const box = element.getBoundingClientRect();
   if (box.bottom < 0 || box.top > innerHeight) return;
+  const stage = document.createElement('div');
+  stage.className = 'confetti-stage';
+  stage.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(stage);
+  const center = Math.min(stage.clientWidth - 20, Math.max(20, box.left + box.width / 2));
+  const spread = Math.min(280, center - 12, stage.clientWidth - center - 12);
   for (let i = 0; i < 38; i++) {
     const p = document.createElement('i'); p.className = 'confetti';
-    p.style.left = Math.min(innerWidth - 20, Math.max(20, box.left + box.width / 2)) + 'px';
+    p.style.left = center + 'px';
     p.style.top = Math.min(innerHeight * .65, Math.max(100, box.top + box.height * .6)) + 'px';
-    p.style.setProperty('--dx', (Math.random() - .5) * 560 + 'px');
+    p.style.setProperty('--dx', (Math.random() - .5) * 2 * spread + 'px');
     p.style.setProperty('--dy', 100 + Math.random() * 330 + 'px');
     p.style.setProperty('--spin', Math.random() * 720 + 'deg');
     p.style.background = ['#dfba67', '#f7e0a5', '#a5823e'][i % 3];
     p.style.animationDelay = Math.random() * .12 + 's';
-    document.body.appendChild(p); setTimeout(() => p.remove(), 2000);
+    stage.appendChild(p);
   }
+  setTimeout(() => stage.remove(), 2000);
 }
 document.addEventListener('htmx:responseError', event => {
   const node = document.getElementById('network-message');

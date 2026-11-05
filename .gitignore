@@ -13,7 +13,7 @@ wheels/
 sample real employee data /
 data/real/
 .DS_Store
-pilot.db
+pilot.db*
 data/cache/
 runs/
 

@@ -78,7 +78,6 @@
     <text x="542" y="436" class="ws">evidence clusters</text>
     <text x="542" y="450" class="ws">noisy-OR, level</text>
     <text x="542" y="464" class="ws">posterior, tau</text>
-    <text x="542" y="478" class="ws">(ours)</text>
     <rect class="box" x="298" y="544" width="348" height="40"/>
     <text x="310" y="562" class="t">7 Send policy</text>
     <text x="310" y="577" class="s">max 3 skills, 3 quotes; hold / do-not-message</text>

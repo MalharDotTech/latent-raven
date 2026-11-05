@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#12100d"><title>{% block title %}Raven · Just Latent{% endblock %}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -11,9 +11,9 @@
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" defer></script>
 </head>
 <body>
-{% if fake_mode %}<div style="background:#7a1f12;color:#fff;text-align:center;padding:.5rem;font-size:.9rem;font-weight:600">Demo mode (LATENT_FAKE_PANEL=1): rounds use synthetic skills, not your documents. Restart with scripts/serve.sh for the real engine.</div>{% endif %}
+{% if fake_mode %}<div class="demo-banner">Demo mode (LATENT_FAKE_PANEL=1): rounds use synthetic skills, not your documents. Restart with scripts/serve.sh for the real engine.</div>{% endif %}
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header"><a class="brand" href="/" aria-label="Raven home"><span class="brand-mark">R</span> RAVEN <span class="brand-caption">THE LATENT MODE</span></a><nav aria-label="Main"><a href="/play">Play</a><a href="/leaderboard">Leaderboard</a><a href="/scoreboard">Engine room <span aria-hidden="true">↗</span></a></nav></header>
+<header class="site-header"><a class="brand" href="/" aria-label="Raven home"><span class="brand-mark">R</span> RAVEN <span class="brand-caption">THE LATENT MODE</span></a><nav aria-label="Main"><a href="/play">Play</a><a href="/leaderboard" aria-label="Leaderboard"><span class="nav-long">Leaderboard</span><span class="nav-short" aria-hidden="true">Scores</span></a><a href="/scoreboard" aria-label="Engine room"><span class="nav-long">Engine room ↗</span><span class="nav-short" aria-hidden="true">Engines</span></a></nav></header>
 <main id="main" class="{% block main_class %}container{% endblock %}">{% block content %}{% endblock %}</main>
 <footer class="site-footer"><span>Raven / Skill inference, with receipts.</span><span>A local pilot. A human gets the final word.</span></footer>
 <div id="network-message" class="toast" role="alert" hidden></div>
