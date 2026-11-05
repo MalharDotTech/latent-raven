@@ -1,0 +1,1066 @@
+{
+  "login": "isha-sethi-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-12072",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8285,
+      "title": "fix invoice download name",
+      "body": "Keep the content-disposition filename. Tested slow response and aborted navigation; released with console patch.",
+      "state": "merged",
+      "created": "2023-09-22",
+      "merged": "2023-09-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 3,
+        ".tsx": 2
+      },
+      "additions": 61,
+      "deletions": 27,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "WEB-3706"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8377,
+      "title": "keep filters when paging",
+      "body": "Filter state now lives above the paginated table. Component tests cover paging then changing bank.",
+      "state": "merged",
+      "created": "2023-11-27",
+      "merged": "2023-11-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 4,
+        ".ts": 1
+      },
+      "additions": 99,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "WEB-3787"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8436,
+      "title": "narrow amount before formatting",
+      "body": "Guard missing amount before money formatting; removed unsafe assertion and added regression test.",
+      "state": "merged",
+      "created": "2023-12-28",
+      "merged": "2023-12-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1,
+        ".tsx": 1
+      },
+      "additions": 126,
+      "deletions": 35,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "WEB-3829"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8572,
+      "title": "cancel stale invoice requests",
+      "body": "Abort previous fetch in effect cleanup. JavaScript test resolves requests in reverse order and the React screen retains current results.",
+      "state": "merged",
+      "created": "2024-04-04",
+      "merged": "2024-04-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 6,
+        ".js": 1
+      },
+      "additions": 23,
+      "deletions": 17,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "WEB-3943"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8664,
+      "title": "show retry for bank timeout",
+      "body": "React error panel and reviewed API checks for timeout, retry and missing auth. QA corrected the expected timeout error code.",
+      "state": "merged",
+      "created": "2024-05-30",
+      "merged": "2024-05-31",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".ts": 2
+      },
+      "additions": 62,
+      "deletions": 59,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "WEB-4008"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8695,
+      "title": "fix credit note selection reset",
+      "body": "State reset follows tenant key; released with component tests for switching tenant and filter.",
+      "state": "merged",
+      "created": "2024-06-13",
+      "merged": "2024-06-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3
+      },
+      "additions": 118,
+      "deletions": 21,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "WEB-4031"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8769,
+      "title": "type refund status response",
+      "body": "Discriminated union replaces string casts; exhaustive test handles pending and rejected variants.",
+      "state": "merged",
+      "created": "2024-08-07",
+      "merged": "2024-08-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 2
+      },
+      "additions": 36,
+      "deletions": 31,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "WEB-4097"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8903,
+      "title": "cache row action callbacks",
+      "body": "React profiler showed all 180 rows rerendering. Stable callbacks cut unnecessary row commits; verified in released screen.",
+      "state": "merged",
+      "created": "2024-11-06",
+      "merged": "2024-11-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1,
+        ".ts": 1
+      },
+      "additions": 39,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "WEB-4212"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8999,
+      "title": "test empty refund response",
+      "body": "API error-state checks added with QA review, recorded 204 and malformed body responses in the component test run.",
+      "state": "merged",
+      "created": "2025-01-08",
+      "merged": "2025-01-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1,
+        ".json": 3
+      },
+      "additions": 68,
+      "deletions": 30,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "tests"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "WEB-4287"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9007,
+      "title": "run typecheck before preview",
+      "body": "Pipeline step added with release engineer guidance. Passing run linked after fixing workspace command.",
+      "state": "merged",
+      "created": "2025-01-13",
+      "merged": "2025-01-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 2
+      },
+      "additions": 131,
+      "deletions": 66,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "WEB-4297"
+      ],
+      "review_comments": [
+        {
+          "user": "deepak-basu-kc",
+          "date": "2025-01-15",
+          "body": "Run this from the console workspace, root does not have that command.",
+          "path": ".yml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9099,
+      "title": "fix: filter debounce on unmount",
+      "body": "Debounce cleanup cancels the pending promise callback; regression test moves route before timer fires.",
+      "state": "merged",
+      "created": "2025-03-04",
+      "merged": "2025-03-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 3,
+        ".tsx": 4
+      },
+      "additions": 45,
+      "deletions": 70,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "WEB-4367"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9182,
+      "title": "refund drawer focus return",
+      "body": "Restore focus to trigger. Component tests include keyboard close and pending request.",
+      "state": "merged",
+      "created": "2025-04-30",
+      "merged": "2025-05-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".css": 1
+      },
+      "additions": 19,
+      "deletions": 58,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "WEB-4443"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9263,
+      "title": "remove any from exception row",
+      "body": "Parser checks bank code and exposes nullable display value. Regression test covers missing bank object.",
+      "state": "merged",
+      "created": "2025-06-24",
+      "merged": "2025-06-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4,
+        ".tsx": 2
+      },
+      "additions": 140,
+      "deletions": 45,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "WEB-4501"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9385,
+      "title": "keep disabled action tooltip",
+      "body": "React wrapper preserves tooltip for disabled actions. Released with component checks at narrow viewport.",
+      "state": "merged",
+      "created": "2025-09-02",
+      "merged": "2025-09-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1,
+        ".css": 4
+      },
+      "additions": 144,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "WEB-4585"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9468,
+      "title": "artifact name for preview build",
+      "body": "With release engineer changed workflow artifact name to include PR ref; checked simultaneous runs retain separate bundles.",
+      "state": "merged",
+      "created": "2025-10-03",
+      "merged": "2025-10-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 1
+      },
+      "additions": 7,
+      "deletions": 13,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "WEB-4642"
+      ],
+      "review_comments": [
+        {
+          "user": "deepak-basu-kc",
+          "date": "2025-10-06",
+          "body": "Include the PR ref so two preview runs do not overwrite each other.",
+          "path": ".yml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9637,
+      "title": "fix: response after cancelled refund",
+      "body": "JavaScript response branch checks cancellation before success notification. Production async defect reproduced and regression test merged.",
+      "state": "merged",
+      "created": "2025-12-12",
+      "merged": "2025-12-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1,
+        ".tsx": 3
+      },
+      "additions": 18,
+      "deletions": 48,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "commits": 3,
+      "issue_keys": [
+        "WEB-4772"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9742,
+      "title": "check retry after 429",
+      "body": "API checks reviewed by QA cover Retry-After and an empty header. Expected delay corrected following review.",
+      "state": "merged",
+      "created": "2026-01-20",
+      "merged": "2026-01-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 6,
+        ".json": 2
+      },
+      "additions": 40,
+      "deletions": 34,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "WEB-4830"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9920,
+      "title": "memoise exception table columns",
+      "body": "React profiler comparison attached: stable columns avoid rebuilding row cells when selection changes. Shipped in console release.",
+      "state": "merged",
+      "created": "2026-03-26",
+      "merged": "2026-03-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 4
+      },
+      "additions": 85,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "WEB-4946"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9984,
+      "title": "decode bank reference at boundary",
+      "body": "TypeScript response adapter does one decode, regression tests preserve literal percent signs and malformed input.",
+      "state": "merged",
+      "created": "2026-04-26",
+      "merged": "2026-04-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 6
+      },
+      "additions": 43,
+      "deletions": 53,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "WEB-5008"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10139,
+      "title": "fix refund status polling teardown",
+      "body": "React effect clears interval and aborts pending request; test advances timers after close and asserts no new call.",
+      "state": "merged",
+      "created": "2026-07-10",
+      "merged": "2026-07-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".ts": 4
+      },
+      "additions": 123,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "WEB-5099"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10242,
+      "title": "remove legacy invoice summary",
+      "body": "Removed the old React summary after routes migrated. Existing screen tests pass.",
+      "state": "merged",
+      "created": "2026-09-01",
+      "merged": "2026-09-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".css": 3
+      },
+      "additions": 1,
+      "deletions": 154,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "WEB-5173"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10311,
+      "title": "test retry button while offline",
+      "body": "Reviewed API checks for rejected network promise, offline state and recovery. QA confirmed the UI returns to retry state.",
+      "state": "merged",
+      "created": "2026-09-21",
+      "merged": "2026-09-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1,
+        ".tsx": 2
+      },
+      "additions": 114,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "tests"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "WEB-5202"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10408,
+      "title": "chore: update preview script",
+      "body": "Opened for the next iteration. Waiting for maintainer review.",
+      "state": "open",
+      "created": "2026-10-27",
+      "merged": null,
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 2
+      },
+      "additions": 54,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [],
+      "commits": 3,
+      "draft": false,
+      "updated": "2026-10-28"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10412,
+      "title": "try separate preview cache",
+      "body": "Closing this; the current runner setup already keys the cache on the lockfile.",
+      "state": "closed",
+      "created": "2026-10-29",
+      "merged": null,
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1,
+        ".ts": 1,
+        ".css": 1,
+        ".js": 3
+      },
+      "additions": 49,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 4,
+      "closed": "2026-10-31"
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8611,
+      "date": "2024-04-30",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "The response can arrive after tenant changes. Please abort the previous request.",
+      "author_reply_excerpt": "Added AbortController in effect cleanup, reverse-order response test passes.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8976,
+      "date": "2024-12-24",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "This as Bank hides the missing bank field. Could we narrow before formatting?",
+      "author_reply_excerpt": "Added optional-field guard and a missing-bank regression case.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9299,
+      "date": "2025-07-10",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "key=index reuses the wrong row when filters reorder this list.",
+      "author_reply_excerpt": "Changed to exception ID and added reorder test.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9904,
+      "date": "2026-03-23",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "Timer stays alive when drawer closes, so this still polls in background.",
+      "author_reply_excerpt": "Cleared timer on effect cleanup; unmount test checks no more requests.",
+      "thread_resolved": true
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-09",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".css": 12,
+        ".js": 13,
+        ".ts": 10,
+        ".tsx": 10
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".css": 4,
+        ".js": 11,
+        ".ts": 19,
+        ".tsx": 10
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 12,
+      "reviews": 9,
+      "by_ext": {
+        ".css": 11,
+        ".js": 23,
+        ".ts": 16,
+        ".tsx": 19
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 4,
+      "reviews": 4,
+      "by_ext": {
+        ".css": 4,
+        ".js": 4,
+        ".ts": 3,
+        ".tsx": 4
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".css": 11,
+        ".js": 12,
+        ".ts": 12,
+        ".tsx": 12
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".css": 10,
+        ".js": 6,
+        ".ts": 7,
+        ".tsx": 4
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".css": 17,
+        ".js": 12,
+        ".ts": 21,
+        ".tsx": 17
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 10,
+      "reviews": 10,
+      "by_ext": {
+        ".css": 8,
+        ".js": 13,
+        ".ts": 12,
+        ".tsx": 25
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".css": 13,
+        ".js": 15,
+        ".ts": 20,
+        ".tsx": 11
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".css": 9,
+        ".js": 10,
+        ".ts": 22,
+        ".tsx": 13
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".css": 12,
+        ".js": 15,
+        ".ts": 10,
+        ".tsx": 15
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".css": 9,
+        ".js": 10,
+        ".ts": 20,
+        ".tsx": 16
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 11,
+      "reviews": 7,
+      "by_ext": {
+        ".css": 15,
+        ".js": 17,
+        ".ts": 17,
+        ".tsx": 21
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".css": 14,
+        ".js": 6,
+        ".ts": 11,
+        ".tsx": 7
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 9,
+      "reviews": 7,
+      "by_ext": {
+        ".css": 12,
+        ".js": 13,
+        ".ts": 15,
+        ".tsx": 10
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".css": 6,
+        ".js": 9,
+        ".ts": 8,
+        ".tsx": 9
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 12,
+      "reviews": 11,
+      "by_ext": {
+        ".css": 24,
+        ".js": 20,
+        ".json": 3,
+        ".ts": 11,
+        ".tsx": 15,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 13,
+      "reviews": 5,
+      "by_ext": {
+        ".css": 15,
+        ".js": 19,
+        ".ts": 17,
+        ".tsx": 15
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".css": 13,
+        ".js": 17,
+        ".ts": 11,
+        ".tsx": 14
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 6,
+      "reviews": 9,
+      "by_ext": {
+        ".css": 6,
+        ".js": 6,
+        ".ts": 2,
+        ".tsx": 7
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".css": 3,
+        ".js": 8,
+        ".ts": 5,
+        ".tsx": 3
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".css": 7,
+        ".js": 11,
+        ".ts": 17,
+        ".tsx": 14
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 11,
+      "reviews": 6,
+      "by_ext": {
+        ".css": 9,
+        ".js": 17,
+        ".ts": 16,
+        ".tsx": 22
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 6,
+      "reviews": 8,
+      "by_ext": {
+        ".css": 10,
+        ".js": 11,
+        ".ts": 7,
+        ".tsx": 9
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 11,
+      "reviews": 9,
+      "by_ext": {
+        ".css": 25,
+        ".js": 22,
+        ".ts": 19,
+        ".tsx": 20
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".css": 15,
+        ".js": 8,
+        ".ts": 8,
+        ".tsx": 10,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 8,
+      "reviews": 10,
+      "by_ext": {
+        ".css": 9,
+        ".js": 15,
+        ".ts": 11,
+        ".tsx": 14
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".css": 13,
+        ".js": 11,
+        ".ts": 17,
+        ".tsx": 14
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 12,
+      "reviews": 12,
+      "by_ext": {
+        ".css": 15,
+        ".js": 15,
+        ".json": 2,
+        ".ts": 19,
+        ".tsx": 17
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 6,
+      "reviews": 8,
+      "by_ext": {
+        ".css": 7,
+        ".js": 5,
+        ".ts": 3,
+        ".tsx": 6
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 11,
+      "reviews": 5,
+      "by_ext": {
+        ".css": 15,
+        ".js": 20,
+        ".ts": 18,
+        ".tsx": 24
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 11,
+      "reviews": 7,
+      "by_ext": {
+        ".css": 20,
+        ".js": 15,
+        ".ts": 28,
+        ".tsx": 19
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".css": 13,
+        ".js": 14,
+        ".ts": 11,
+        ".tsx": 13
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 11,
+      "reviews": 13,
+      "by_ext": {
+        ".css": 23,
+        ".js": 19,
+        ".ts": 11,
+        ".tsx": 23
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 10,
+      "reviews": 10,
+      "by_ext": {
+        ".css": 16,
+        ".js": 17,
+        ".ts": 18,
+        ".tsx": 23
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 6,
+      "reviews": 7,
+      "by_ext": {
+        ".css": 14,
+        ".js": 15,
+        ".ts": 9,
+        ".tsx": 13
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 13,
+      "reviews": 9,
+      "by_ext": {
+        ".css": 22,
+        ".js": 18,
+        ".ts": 17,
+        ".tsx": 22
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".css": 11,
+        ".js": 8,
+        ".ts": 10,
+        ".tsx": 8
+      }
+    }
+  ],
+  "exported": "2026-10-31"
+}

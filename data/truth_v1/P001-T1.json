@@ -1,0 +1,266 @@
+{
+  "summary": "Consistent, honest senior DE. Claims match work. Serves as the control: clean multi-source agreement, a verified cert and an assessment in line with the work record. Only quirk is two CV versions from one lineage.",
+  "archetype": "control_positive_senior_de",
+  "skills": [
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:data-platform PRs",
+        "tara:python",
+        "cv_v2:Experience/Kestrel"
+      ],
+      "why": "Years of merged Python changes, reviews and prod fixes; assessment agrees; no evidence of teaching Python patterns beyond data repo"
+    },
+    {
+      "skill_id": "pyspark",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "assessed_level": null,
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "github:#recon v2 writer, skew fix",
+        "jira:DATA settlement skew"
+      ],
+      "why": "Maintains production PySpark jobs, fixed skew and small-file issues"
+    },
+    {
+      "skill_id": "spark",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": null,
+      "last_used": "2026-04",
+      "evidence_refs": [
+        "github:shuffle partition tuning",
+        "jira:DATA events_silver"
+      ],
+      "why": "Tuning and execution-plan level work on prod jobs"
+    },
+    {
+      "skill_id": "airflow",
+      "has_skill": true,
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "assessed_level": null,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "doc:DATA-airflow-dag-standards",
+        "github:airflow2 PRs",
+        "github:reviews"
+      ],
+      "why": "Led the 2.x upgrade, wrote standards adopted by lint + CI, reviews peers DAGs"
+    },
+    {
+      "skill_id": "aws",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": null,
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "certs:DVA-C02 verified",
+        "github:infra-live iam/glue"
+      ],
+      "why": "S3/Glue/IAM in production; cert current and verified but cert alone not the basis"
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "tara:sql",
+        "github:.sql files"
+      ],
+      "why": "Daily SQL on Athena/Snowflake, merge logic"
+    },
+    {
+      "skill_id": "data_modeling",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "last_used": "2025-06",
+      "evidence_refs": [
+        "github:schema evolution PR"
+      ],
+      "why": "Modelling decisions mostly follow lead architect; selfperceived higher"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "assessed_level": null,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:reviews_given"
+      ],
+      "why": "Substantive review threads that change code, ~150 per year"
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        3
+      ],
+      "assessed_level": null,
+      "last_used": "2026-06",
+      "evidence_refs": [
+        "doc:DATA-airflow-dag-standards"
+      ],
+      "why": "Authored standards page with real usage"
+    },
+    {
+      "skill_id": "docker",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "last_used": "2025-02",
+      "evidence_refs": [
+        "cv_v2:Skills"
+      ],
+      "why": "Thin: local images for tests, little operational evidence"
+    },
+    {
+      "skill_id": "terraform",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "assessed_level": null,
+      "last_used": "2025-01",
+      "evidence_refs": [
+        "github:infra-live PRs"
+      ],
+      "why": "Three small IAM/Glue changes under review guidance"
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Kubernetes (basic)",
+      "mapped_skill_id": "kubernetes",
+      "has_skill": false,
+      "why": "listed in the 2026 CV only; no manifests, no tickets, no course"
+    },
+    {
+      "skill_text": "Hive, Hadoop",
+      "mapped_skill_id": null,
+      "has_skill": false,
+      "why": "2020-22 Infosys era only; no taxonomy skill; dated"
+    },
+    {
+      "skill_text": "dbt (reading/reviewing)",
+      "mapped_skill_id": "dbt",
+      "has_skill": false,
+      "why": "one source-definition PR and a few review comments; not authoring models"
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "none:cv_lineage_duplicate",
+      "s11_row": "duplicate_counting",
+      "skill_id": "airflow",
+      "plant": "cv_v1 (2022) and cv_v2 (2026) share lineage_key cv-P001 and carry the same Infosys block verbatim, so Airflow/PySpark mentions appear in both.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F18",
+      "s11_row": "wrong_person",
+      "skill_id": "python",
+      "plant": "Same display name as P002 (HR Business Partner, priya.sharma2@). Only this record has github/jira/Tara data.",
+      "expected_engine_behavior": "join_neither"
+    },
+    {
+      "fault_id": "F10",
+      "s11_row": "wrong_person",
+      "skill_id": "pyspark",
+      "plant": "Three dependabot-authored bump PRs in github.json carry merged_by self; they are not her work.",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F16",
+      "s11_row": "wrong_mapping",
+      "skill_id": "python",
+      "plant": "Jira issues titled 'Fix bug' with component 'General' (two of them).",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F01",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "kubernetes",
+      "plant": "'Kubernetes (basic)' appears in the CV v2 skills list with no corroboration.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.8,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Honest; may push back if offered level 4 for Python; accepts Airflow 4 readily"
+  },
+  "messaging_allowed": true,
+  "generator": "claude-sonnet-5-5",
+  "batch": "A",
+  "pid": "P001-T1",
+  "twin_of": "P001",
+  "twin_swap": {
+    "first": "Rahul",
+    "last": "Verma",
+    "gender": "M",
+    "university": null
+  }
+}

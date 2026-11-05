@@ -1,0 +1,61 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Secure Coding Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2024-05-03",
+      "time_spent_minutes": 45,
+      "quiz_score_pct": 75,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Azure Foundations (path)",
+      "provider": "Pluralsight",
+      "completed": "2024-07-30",
+      "time_spent_minutes": 180,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "Master DevOps CI/CD, Docker, Kubernetes, Terraform & AWS",
+      "provider": "Udemy",
+      "completed": "2024-11-17",
+      "time_spent_minutes": 130,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "Docker & Kubernetes: The Practical Guide",
+      "provider": "Udemy",
+      "completed": "2025-02-09",
+      "time_spent_minutes": 95,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "AWS Infrastructure as Code With Terraform [2024 Updates]",
+      "provider": "Udemy",
+      "completed": "2025-02-23",
+      "time_spent_minutes": 60,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "Getting Started with Kubernetes",
+      "provider": "Pluralsight",
+      "completed": "2025-04-12",
+      "time_spent_minutes": 35,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "Learn DevOps: Docker, Kubernetes, Terraform and Azure DevOps",
+      "provider": "Udemy",
+      "completed": "2025-06-08",
+      "time_spent_minutes": 70,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "Managing Infrastructure with Terraform (path)",
+      "provider": "Pluralsight",
+      "completed": "2025-08-24",
+      "time_spent_minutes": 45,
+      "assigned_by": "self"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "assessments": [
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "JavaScript (Intermediate)",
+      "skill_text": "JavaScript",
+      "date": "2026-01-22",
+      "raw_score_pct": 58,
+      "percentile": 41,
+      "vendor_proficiency_label": "Basic",
+      "proctoring_flags": [
+        "tab_switch:3"
+      ]
+    }
+  ]
+}

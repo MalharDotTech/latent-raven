@@ -1,0 +1,35 @@
+{
+  "person_ref": "P035",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-12307",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_tanvi-menon-kc_1",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "self-tanvi-design",
+      "received": "2026-10-05"
+    },
+    {
+      "source_id": "jira_KC-12307",
+      "source_type": "jira",
+      "path": "jira.json"
+    },
+    {
+      "source_id": "doc_PM-2187",
+      "source_type": "authored_doc",
+      "path": "docs/review-flow.md",
+      "lineage_key": "self-tanvi-design"
+    },
+    {
+      "source_id": "lms_KC-12307",
+      "source_type": "lms",
+      "path": "lms.json"
+    }
+  ]
+}

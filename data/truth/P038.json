@@ -1,0 +1,236 @@
+{
+  "pid": "P038",
+  "schema": "truth-v2",
+  "summary": "Graduate trainee with seven months of supervised platform delivery. A short observational internship and college seminars occupy much of a scanned CV; actual applied work still meets the guided application lines.",
+  "archetype": "trainee_with_extraction_damage",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_devansh-sahu-kc; jira_KC-12754",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "gh_devansh-sahu-kc:#6336",
+        "gh_devansh-sahu-kc:#6527",
+        "gh_devansh-sahu-kc:#6687",
+        "gh_devansh-sahu-kc:#6809",
+        "jira_KC-12754:PLAT-5172",
+        "jira_KC-12754:PLAT-5248"
+      ],
+      "why": "Merged scripts and tests have concrete mentor corrections; this is guided application."
+    },
+    {
+      "skill_id": "kubernetes",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_devansh-sahu-kc; jira_KC-12754",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "gh_devansh-sahu-kc:#6269",
+        "gh_devansh-sahu-kc:#6573",
+        "gh_devansh-sahu-kc:#6592",
+        "gh_devansh-sahu-kc:#6718",
+        "jira_KC-12754:PLAT-5021",
+        "jira_KC-12754:PLAT-5106",
+        "jira_KC-12754:PLAT-5193"
+      ],
+      "why": "Sandbox manifests and rollout checks are applied under mentor supervision."
+    },
+    {
+      "skill_id": "linux",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_devansh-sahu-kc",
+        "missing_source": null
+      },
+      "last_used": "2026-07",
+      "evidence_refs": [
+        "gh_devansh-sahu-kc:#11614",
+        "gh_devansh-sahu-kc:#11748"
+      ],
+      "why": "Guided service commands have reviewed output and corrected unit/user choices."
+    },
+    {
+      "skill_id": "cicd",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_devansh-sahu-kc; jira_KC-12754",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "gh_devansh-sahu-kc:#6475",
+        "jira_KC-12754:PLAT-5231",
+        "jira_KC-12754:PLAT-5248"
+      ],
+      "why": "Reviewed validation and artifact steps have passing pipeline runs."
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_devansh-sahu-kc; jira_KC-12754",
+        "missing_source": null
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "gh_devansh-sahu-kc:#6378",
+        "gh_devansh-sahu-kc:#6655",
+        "jira_KC-12754:PLAT-5092",
+        "jira_KC-12754:PLAT-5132"
+      ],
+      "why": "Setup procedure drafts are corrected and checked with a buddy."
+    },
+    {
+      "skill_id": "docker",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_devansh-sahu-kc_1",
+        "missing_source": "A scored Docker lab, or a reviewed image build and successful run."
+      },
+      "last_used": "2025-08",
+      "evidence_refs": [
+        "cv_devansh-sahu-kc_1:skills/experience"
+      ],
+      "why": "Has limited conceptual familiarity; watching a deployment does not show a scored lab or build work."
+    },
+    {
+      "skill_id": "go",
+      "has_skill": false,
+      "true_level": 0,
+      "self_perceived_level": 0,
+      "would_accept_levels": [],
+      "oracle": {
+        "action": "not_extract",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_devansh-sahu-kc_1",
+        "missing_source": null
+      },
+      "last_used": "2025-03",
+      "evidence_refs": [
+        "cv_devansh-sahu-kc_1:PRO JECTS"
+      ],
+      "why": "The seminar title denotes attendance/presentation, not demonstrated programming competence."
+    }
+  ],
+  "decoys": [],
+  "traps": [
+    {
+      "fault_id": "F06",
+      "s11_row": "wrong_mapping",
+      "skill_id": "go",
+      "plant": "A seminar is filed under projects in an OCR-damaged CV; it demonstrates no programming work.",
+      "expected_engine_behavior": "not_extract",
+      "observation_ids": [
+        "RO-10",
+        "RO-13"
+      ]
+    },
+    {
+      "fault_id": "F25",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "docker",
+      "plant": "A short internship describes observation of image deployment; no current lab or image change is present.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "unmatched_skills": [],
+  "realism_observations": [
+    "RO-10",
+    "RO-13"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

@@ -1,0 +1,103 @@
+{
+  "employee_id": "KC-10412",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Rahul Kumar",
+  "preferred_name": "Rahul",
+  "emails": [
+    {
+      "email": "rahul.kumar@kestrelcloud.com",
+      "from": "2019-08",
+      "to": "2024-03"
+    },
+    {
+      "email": "rahul.kumar2@kestrelcloud.com",
+      "from": "2024-03",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Quality Engineering",
+  "manager_employee_id": "KC-10230",
+  "hire_date": "2019-08-12",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "SDET I",
+      "grade": "P2",
+      "from": "2019-08",
+      "to": "2022-04"
+    },
+    {
+      "title": "SDET II",
+      "grade": "P3",
+      "from": "2022-05",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Billing regression automation",
+      "role": "SDET",
+      "from": "2019-08",
+      "to": "2022-06",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Recon v2 test automation",
+      "role": "SDET",
+      "from": "2022-07",
+      "to": "2024-12",
+      "allocation_pct": 80
+    },
+    {
+      "project": "QA framework modernisation",
+      "role": "SDET",
+      "from": "2025-02",
+      "to": null,
+      "allocation_pct": 90
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Selenium WebDriver",
+      "self_level": 4,
+      "declared_on": "2022-03"
+    },
+    {
+      "skill_text": "Java",
+      "self_level": 3,
+      "declared_on": "2022-03"
+    },
+    {
+      "skill_text": "Playwright",
+      "self_level": 3,
+      "declared_on": "2026-01"
+    },
+    {
+      "skill_text": "TypeScript",
+      "self_level": 3,
+      "declared_on": "2026-01"
+    },
+    {
+      "skill_text": "API testing",
+      "self_level": 3,
+      "declared_on": "2026-01"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "VIT Vellore",
+      "degree": "B.Tech",
+      "field": "Computer Science and Engineering",
+      "year": 2017
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+ "pid": "P027",
+ "schema": "truth-v2",
+ "summary": "Jason is an experienced pre-sales engineer in Austin who is the technical half of most US deals. He builds good scripted API demos but they run from his laptop, not in a pipeline. Commercial credit sits with the account executives; he holds a minority share on each deal.",
+ "archetype": "Overlay SE with real API skills used for demos, not QA",
+ "batch": "E",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "api_testing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "doc_DOC-SALES-2410 Postman demo collection with assertions and failure cases (401, idempotent re-post, 429), PMM review notes; 'run with Newman from my laptop, not wired into CI'; sfdc_KC-12011 POC notes (Postman monitor 429s fixed on call). Reviewed collection + recorded runs = level 2; no CI runs or pre-release defects for 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:DOC-SALES-2410",
+    "cv_v1:Skills"
+   ],
+   "why": "Maintains a reviewed Postman collection with assertions and failure cases; runs it manually before calls, no CI, no defects found before release."
+  },
+  {
+   "skill_id": "solution_selling",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2
+    ],
+    "basis": "sfdc_KC-12011 51 overlay-SE opportunities 2023-2026: discovery tech calls (current stack, FTE cost), POC scoping with success criteria, competitive positioning, technical_win flags; doc_DOC-SALES-2562 POC success criteria template. Independent need-mapping = K3 level 2 (exact). AE owns commercials; 15-30% credit.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "salesforce:opportunities",
+    "doc:DOC-SALES-2562"
+   ],
+   "why": "Maps customer needs to the product and scopes POCs alone, with a technical-win record; does not coach AEs on discovery."
+  },
+  {
+   "skill_id": "salesforce",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 1,
+    "accept_levels": [
+     1
+    ],
+    "basis": "sfdc_KC-12011: he writes notes and the technical_win field on AE-owned opportunities; stages, amounts and forecast belong to AEs; hcm self 2. Field updates on others' records = K3 level 1; no stage/forecast maintenance for 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "salesforce:opportunities"
+   ],
+   "why": "Writes notes and a technical-win flag on deals owned by others; stages, forecast and amounts belong to the AEs."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "doc_DOC-SALES-2410 walkthrough with PMM review notes (added 429 case, shortened section 3), doc_DOC-SALES-2562 template with AE input; cv_2025_05 'now used for all POCs'. Reviewed and corrected drafts = level 2; no user validation results.",
+    "missing_source": null
+   },
+   "last_used": "2026-05",
+   "evidence_refs": [
+    "doc:DOC-SALES-2410",
+    "doc:DOC-SALES-2562"
+   ],
+   "why": "Clear runnable procedures that a PMM reviewed and fixed; no user validation results."
+  },
+  {
+   "skill_id": "python",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    0,
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "lms Python Essential Training (2023, quiz 80%), a 6-line helper snippet inside doc_DOC-SALES-2410, cv_2025_05 skills line, hcm self 2. Training + self + snippet; no work-system Python.",
+    "missing_source": "Python work in a repo or assessment"
+   },
+   "last_used": "2026-05",
+   "evidence_refs": [
+    "doc:DOC-SALES-2410",
+    "lms:Python Essential Training"
+   ],
+   "why": "A completed course and one short helper script in a demo page; nothing production."
+  },
+  {
+   "skill_id": "aws",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "certs_KC-12011 AWS Certified Cloud Practitioner verified, current to 2027-09 (foundational, knowledge-level); cv_2025_05 Rackspace AWS migration assessments ended 2023-03; nothing in Kestrel work. Cert shows at most level 1 and the only applied work is outside the 2y window.",
+    "missing_source": "current AWS work"
+   },
+   "last_used": "2023-03",
+   "evidence_refs": [
+    "certs:AWS Certified Cloud Practitioner"
+   ],
+   "why": "Foundational exam only; his Rackspace work was years ago and nothing here uses AWS."
+  },
+  {
+   "skill_id": "customer_onboarding",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Nothing in the bundle claims onboarding; pre-sales stops at signature.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [],
+   "why": "Pre-sales stops at signature; implementation is CS."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "SQL",
+   "mapped_skill_id": "sql",
+   "has_skill": false,
+   "why": "Listed on CV, MySQL tickets from 2016-2019; no recent trace.",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_05 'SQL' and MySQL tickets 2016-2019 at Rackspace; stale.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Linux",
+   "mapped_skill_id": "linux",
+   "has_skill": false,
+   "why": "Support tickets at a previous employer many years ago.",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_05 'Linux' tickets 2016-2019; stale.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F33",
+   "s11_row": "wrong_person",
+   "skill_id": "solution_selling",
+   "plant": "Every opportunity lists him as overlay SE with 15-30% credit; two are the same opportunities that appear on the Mumbai AE's record (P022).",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F35",
+   "s11_row": "wrong_mapping",
+   "skill_id": "api_testing",
+   "plant": "Postman collection and Newman runs support demos and POC validation; a QA-style 'API testing' mapping overstates the engineering practice.",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "aws",
+   "plant": "Cloud Practitioner badge, verified and current, with a CV listing AWS as a skill.",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "Foundational badge must not be read as operational AWS ability.",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "salesforce",
+   "plant": "K3 exact-level skills; HCM self-rating 3 on selling and API testing, 2 on Salesforce.",
+   "expected_engine_behavior": "send_at_level_1"
+  }
+ ],
+ "unmatched_skills": [
+  "Postman/Newman",
+  "Technical demos / POC management",
+  "OpenAPI"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.85,
+  "yes_to_everything": false,
+  "flattery_bias": 0.3,
+  "notes": "Fast, direct replies; accepts one level up on API testing."
+ },
+ "messaging_allowed": true
+}

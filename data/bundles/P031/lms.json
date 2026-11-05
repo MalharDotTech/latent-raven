@@ -1,0 +1,52 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Information Security Awareness 2026",
+      "provider": "Kestrel Learn",
+      "completed": "2026-05-12",
+      "time_spent_minutes": 34,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2026-05-13",
+      "time_spent_minutes": 29,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Data Platform Onboarding",
+      "provider": "Kestrel Learn",
+      "completed": "2026-05-20",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": 88,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Intern Code Review Etiquette",
+      "provider": "Kestrel Learn",
+      "completed": "2026-06-02",
+      "time_spent_minutes": 45,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Data Privacy Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2026-06-14",
+      "time_spent_minutes": 60,
+      "quiz_score_pct": 85,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "SQL Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2026-07-08",
+      "time_spent_minutes": 140,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    }
+  ]
+}

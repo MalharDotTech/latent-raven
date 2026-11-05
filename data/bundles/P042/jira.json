@@ -1,0 +1,1314 @@
+{
+  "linked_employee_id": "KC-11058",
+  "issues": [
+    {
+      "key": "RECON-1572",
+      "type": "Task",
+      "summary": "Recon worker stays alive after cancel",
+      "description_excerpt": "Add cancellation handling around the empty queue wait, then capture the worker profile after shutdown.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2020-11-16"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2020-11-16",
+      "resolved": "2020-11-24",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 23",
+        "start": "2020-11-09",
+        "end": "2020-11-20"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2020-11-24",
+          "body": "Goroutine profile after replay returned to baseline."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/6517"
+        }
+      ]
+    },
+    {
+      "key": "RECON-1647",
+      "type": "Task",
+      "summary": "Worker hides parse error",
+      "description_excerpt": "Scheduler marks the file complete when parser returns an error. Keep the original cause in the error path.",
+      "component": "Reconciliation services",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2021-01-18"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2021-01-18",
+      "resolved": "2021-01-29",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 28",
+        "start": "2021-01-18",
+        "end": "2021-01-29"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2021-01-29",
+          "body": "Failed partition is retried by scheduler instead of committed."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/6590"
+        }
+      ]
+    },
+    {
+      "key": "RECON-1746",
+      "type": "Task",
+      "summary": "Replay exhausts worker memory",
+      "description_excerpt": "Replay of a large bank creates too many inflight partitions. Bound concurrency before increasing memory.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2021-06-22"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2021-06-22",
+      "resolved": "2021-07-05",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 39",
+        "start": "2021-06-21",
+        "end": "2021-07-02"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2021-07-05",
+          "body": "Heap and goroutine profile checked during the 900-file staging replay."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/6727"
+        }
+      ]
+    },
+    {
+      "key": "RECON-1828",
+      "type": "Task",
+      "summary": "Recon worker leaks http connections",
+      "description_excerpt": "Repeated upstream errors exhaust HTTP connections in recon worker. Check response body handling.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2021-09-08"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2021-09-08",
+      "resolved": "2021-09-22",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 44",
+        "start": "2021-08-30",
+        "end": "2021-09-10"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2021-09-22",
+          "body": "Connection count stayed bounded in staging failure injection."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/6820"
+        }
+      ]
+    },
+    {
+      "key": "RECON-1901",
+      "type": "Task",
+      "summary": "Replay cancellation regression",
+      "description_excerpt": "Add regression for cancellation during queue wait and active parsing.",
+      "component": "Reconciliation services",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2021-11-10"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2021-11-10",
+      "resolved": "2021-11-22",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 49",
+        "start": "2021-11-08",
+        "end": "2021-11-19"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2021-11-22",
+          "body": "Go tests exercise a cancelled context while the queue is empty and while a partition is running."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/6903"
+        }
+      ]
+    },
+    {
+      "key": "RECON-2000",
+      "type": "Task",
+      "summary": "Duplicate callback adds batch twice",
+      "description_excerpt": "Same settlement callback can arrive twice. Handler must not commit the batch twice.",
+      "component": "Reconciliation services",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-02-10"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2022-02-10",
+      "resolved": "2022-02-24",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 55",
+        "start": "2022-01-31",
+        "end": "2022-02-11"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2022-02-24",
+          "body": "API fixture sends the callback twice and checks one committed batch."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/7006"
+        }
+      ]
+    },
+    {
+      "key": "RECON-2038",
+      "type": "Task",
+      "summary": "Recon retry delay overflows",
+      "description_excerpt": "Retry duration overflows after many attempts. Put a bound on the calculation.",
+      "component": "Reconciliation services",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-03-09"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2022-03-09",
+      "resolved": "2022-03-21",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 57",
+        "start": "2022-02-28",
+        "end": "2022-03-11"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2022-03-21",
+          "body": "Table tests cover max duration and attempt boundary."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/7040"
+        }
+      ]
+    },
+    {
+      "key": "RECON-2131",
+      "type": "Task",
+      "summary": "Parser ignores worker shutdown",
+      "description_excerpt": "Parser carries on after worker cancellation and holds its buffer. Pass cancellation through that path.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-06-06"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2022-06-06",
+      "resolved": "2022-06-27",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 64",
+        "start": "2022-06-06",
+        "end": "2022-06-17"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2022-06-27",
+          "body": "Replay profile checked after shutdown."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/7138"
+        }
+      ]
+    },
+    {
+      "key": "RECON-2273",
+      "type": "Task",
+      "summary": "Worker stuck when producer exits",
+      "description_excerpt": "Producer exits on error and a consumer waits forever. Check ownership of channel close.",
+      "component": "Reconciliation services",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-10-03"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2022-10-03",
+      "resolved": "2022-10-13",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 72",
+        "start": "2022-09-26",
+        "end": "2022-10-07"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2022-10-13",
+          "body": "Repeated shutdown test and profile attached."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/7254"
+        }
+      ]
+    },
+    {
+      "key": "RECON-2322",
+      "type": "Task",
+      "summary": "Replay can cross bank cutoff",
+      "description_excerpt": "Replay endpoint accepts a window beyond bank cutoff. Add boundary validation.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-11-14"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2022-11-14",
+      "resolved": "2022-11-22",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 75",
+        "start": "2022-11-07",
+        "end": "2022-11-18"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2022-11-22",
+          "body": "Go handler rejects a window beyond bank cutoff and tests the boundary with a fixed clock."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/7328"
+        }
+      ]
+    },
+    {
+      "key": "RECON-2539",
+      "type": "Task",
+      "summary": "Backfill release checklist update",
+      "description_excerpt": "Update backfill release checklist with queue check and named bank cutoff owner.",
+      "component": "Reconciliation services",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2023-07-31"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2023-07-31",
+      "resolved": "2023-08-07",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 94",
+        "start": "2023-07-31",
+        "end": "2023-08-11"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2023-08-07",
+          "body": "Reviewed by the on-call engineer."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/7519"
+        }
+      ]
+    },
+    {
+      "key": "RECON-2774",
+      "type": "Task",
+      "summary": "Replay rollback steps out of order",
+      "description_excerpt": "Recovery exercise left old work in the queue during rollback. Correct the sequence in the procedure.",
+      "component": "Reconciliation services",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-02-29"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2024-02-29",
+      "resolved": "2024-03-13",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 109",
+        "start": "2024-02-26",
+        "end": "2024-03-08"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2024-03-13",
+          "body": "Updated the rollback procedure after the recovery exercise; reviewer asked to drain work before reverting the flag."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/7787"
+        }
+      ]
+    },
+    {
+      "key": "RECON-3006",
+      "type": "Task",
+      "summary": "Record load test entry conditions",
+      "description_excerpt": "Write down inputs and owners needed before we accept the load-test result.",
+      "component": "Reconciliation services",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-09-02"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2024-09-02",
+      "resolved": "2024-09-09",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 122",
+        "start": "2024-08-26",
+        "end": "2024-09-06"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2024-09-09",
+          "body": "Discussed at the service design review."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/8111"
+        }
+      ]
+    },
+    {
+      "key": "RECON-3039",
+      "type": "Task",
+      "summary": "Recovery drill follow-up",
+      "description_excerpt": "Add the old-file replay check found missing in the recovery drill.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-09-23"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2024-09-23",
+      "resolved": "2024-10-07",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 124",
+        "start": "2024-09-23",
+        "end": "2024-10-04"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2024-10-07",
+          "body": "Team checked it in staging before signoff."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/8179"
+        }
+      ]
+    },
+    {
+      "key": "RECON-3216",
+      "type": "Task",
+      "summary": "Backfill queue isolation decision",
+      "description_excerpt": "Choose isolation boundary for bank file backfills.",
+      "component": "Reconciliation services",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-02-28"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2025-02-28",
+      "resolved": "2025-03-03",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 135",
+        "start": "2025-02-24",
+        "end": "2025-03-07"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2025-03-03",
+          "body": "Vivek proposed bank-level queues after comparing per-tenant memory and queue count. Team accepted capacity limit of 600 files/hour and tested the failure case with one bank unavailable. Production rollout passed queue and latency checks."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3230",
+      "type": "Task",
+      "summary": "Replay dependency with billing",
+      "description_excerpt": "Billing lock change blocks recon replay release.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-03-04"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2025-03-04",
+      "resolved": "2025-03-10",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 135",
+        "start": "2025-02-24",
+        "end": "2025-03-07"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2025-03-10",
+          "body": "Vivek agreed separate rollout windows with billing owner. Feature flag stays off until lock metrics pass. Owners completed both windows and release check was green."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3360",
+      "type": "Task",
+      "summary": "Handover actions need owners",
+      "description_excerpt": "Give each pending handover action an owner and a ticket link.",
+      "component": "Reconciliation services",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-06-02"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2025-06-02",
+      "resolved": "2025-06-13",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 142",
+        "start": "2025-06-02",
+        "end": "2025-06-13"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2025-06-13",
+          "body": "Accepted at the team delivery review."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/8551"
+        }
+      ]
+    },
+    {
+      "key": "RECON-3417",
+      "type": "Task",
+      "summary": "Retro: remove cross-bank test dependency",
+      "description_excerpt": "One bank fixture blocks all release candidates.",
+      "component": "Reconciliation services",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-07-14"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2025-07-14",
+      "resolved": "2025-08-11",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 145",
+        "start": "2025-07-14",
+        "end": "2025-07-25"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2025-08-11",
+          "body": "Vivek coordinated separate fixtures and owners. Tracked actions through two sprints; the recon board shows both fixture tasks done and no shared-data blocker at the next release."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3498",
+      "type": "Task",
+      "summary": "Reconciliation release split",
+      "description_excerpt": "Large replay feature exceeds release window.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-09-18"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2025-09-18",
+      "resolved": "2025-10-01",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 149",
+        "start": "2025-09-08",
+        "end": "2025-09-19"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2025-10-01",
+          "body": "Vivek guided the team through flag-first versus full release, recorded risk and owner for each path. Flag-first accepted; two phased releases completed with rollback checks."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3649",
+      "type": "Task",
+      "summary": "Bank cutoff capacity decision",
+      "description_excerpt": "Retry surge can extend work past bank cutoff.",
+      "component": "Reconciliation services",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-01-09"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-01-09",
+      "resolved": "2026-01-19",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 157",
+        "start": "2025-12-29",
+        "end": "2026-01-09"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2026-01-19",
+          "body": "Vivek authored capacity and failure notes for the replay limiter. Team accepted 80 concurrent jobs after load test; production validation kept work inside cutoff under the replay surge."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3730",
+      "type": "Task",
+      "summary": "Retro action: queue age owner",
+      "description_excerpt": "Queue age alert has no handover owner.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-02-20"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-02-20",
+      "resolved": "2026-03-05",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 160",
+        "start": "2026-02-09",
+        "end": "2026-02-20"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2026-03-05",
+          "body": "Vivek coordinated action owners and updated the release board. Both follow-up tickets closed in the next sprint; the handover check was completed on the next release."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3847",
+      "type": "Task",
+      "summary": "Agree recovery drill window",
+      "description_excerpt": "Data load conflicts with recon recovery exercise.",
+      "component": "Reconciliation services",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-05-14"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-05-14",
+      "resolved": "2026-05-27",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 166",
+        "start": "2026-05-04",
+        "end": "2026-05-15"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2026-05-27",
+          "body": "Vivek secured a shifted drill window with data and billing leads. Agreed evidence checklist and owners; drill completed and actions have named due dates."
+        }
+      ]
+    },
+    {
+      "key": "RECON-4008",
+      "type": "Task",
+      "summary": "Record partition isolation decision",
+      "description_excerpt": "Capture the bank partition decision and link the production rollout checks.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-09-07"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-09-07",
+      "resolved": "2026-09-23",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 175",
+        "start": "2026-09-07",
+        "end": "2026-09-18"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2026-09-23",
+          "body": "Linked the accepted bank-level queue decision and production rollout checks from the design note."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/recon-engine/pull/9271"
+        }
+      ]
+    },
+    {
+      "key": "RECON-4018",
+      "type": "Task",
+      "summary": "Partition rollout readiness",
+      "description_excerpt": "Close risks before bank partition change.",
+      "component": "Reconciliation services",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-09-15"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-09-15",
+      "resolved": "2026-09-22",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 175",
+        "start": "2026-09-07",
+        "end": "2026-09-18"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2026-09-22",
+          "body": "Vivek guided the technical decision on partial rollback and recorded capacity assumptions. Service owners completed load and failure tests, phased rollout passed production validation."
+        }
+      ]
+    },
+    {
+      "key": "RECON-4058",
+      "type": "Task",
+      "summary": "Handover guide validation",
+      "description_excerpt": "Use ENG-2936 in the staging handover exercise.",
+      "component": "Reconciliation services",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-09-24"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-09-24",
+      "resolved": "2026-09-28",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 176",
+        "start": "2026-09-21",
+        "end": "2026-10-02"
+      },
+      "comments": [
+        {
+          "author": "Deepak Basu",
+          "date": "2026-09-28",
+          "body": "Deepak and Aditi completed the handover tasks using Vivek guide version 3. Aditi missed the flag path; version 4 added it and she repeated the step successfully. Team accepted the guide link for on-call handover."
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2020-11",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2020-12",
+      "resolved_as_assignee": 0,
+      "reported": 3
+    },
+    {
+      "month": "2021-01",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2021-02",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2021-03",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2021-04",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2021-05",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2021-06",
+      "resolved_as_assignee": 0,
+      "reported": 7
+    },
+    {
+      "month": "2021-07",
+      "resolved_as_assignee": 0,
+      "reported": 6
+    },
+    {
+      "month": "2021-08",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2021-09",
+      "resolved_as_assignee": 0,
+      "reported": 9
+    },
+    {
+      "month": "2021-10",
+      "resolved_as_assignee": 0,
+      "reported": 6
+    },
+    {
+      "month": "2021-11",
+      "resolved_as_assignee": 0,
+      "reported": 6
+    },
+    {
+      "month": "2021-12",
+      "resolved_as_assignee": 0,
+      "reported": 3
+    },
+    {
+      "month": "2022-01",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2022-02",
+      "resolved_as_assignee": 0,
+      "reported": 6
+    },
+    {
+      "month": "2022-03",
+      "resolved_as_assignee": 0,
+      "reported": 7
+    },
+    {
+      "month": "2022-04",
+      "resolved_as_assignee": 0,
+      "reported": 6
+    },
+    {
+      "month": "2022-05",
+      "resolved_as_assignee": 0,
+      "reported": 4
+    },
+    {
+      "month": "2022-06",
+      "resolved_as_assignee": 0,
+      "reported": 7
+    },
+    {
+      "month": "2022-07",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 0,
+      "reported": 4
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 0,
+      "reported": 4
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 0,
+      "reported": 9
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 0,
+      "reported": 6
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 0,
+      "reported": 3
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 0,
+      "reported": 3
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    }
+  ],
+  "exported": "2026-10-31"
+}

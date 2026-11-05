@@ -1,0 +1,76 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2021-09-02",
+      "time_spent_minutes": 32,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2021",
+      "provider": "Kestrel Learn",
+      "completed": "2021-09-14",
+      "time_spent_minutes": 36,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Agile Foundations",
+      "provider": "LinkedIn Learning",
+      "completed": "2021-10-21",
+      "time_spent_minutes": 62,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Research Ops: Consent and Recording",
+      "provider": "Kestrel Learn",
+      "completed": "2023-03-16",
+      "time_spent_minutes": 75,
+      "quiz_score_pct": 92,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Data Privacy Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2023-04-05",
+      "time_spent_minutes": 58,
+      "quiz_score_pct": 90,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2023",
+      "provider": "Kestrel Learn",
+      "completed": "2023-06-20",
+      "time_spent_minutes": 33,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Becoming a Product Manager: A Complete Guide",
+      "provider": "LinkedIn Learning",
+      "completed": "2024-02-12",
+      "time_spent_minutes": 130,
+      "quiz_score_pct": null,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-05-27",
+      "time_spent_minutes": 35,
+      "quiz_score_pct": 90,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Accessibility Basics for Product Teams",
+      "provider": "Kestrel Learn",
+      "completed": "2025-11-12",
+      "time_spent_minutes": 90,
+      "quiz_score_pct": 84,
+      "assigned_by": "manager"
+    }
+  ]
+}

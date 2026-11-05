@@ -1,0 +1,777 @@
+{
+  "account_email": "rahul.kumar2@kestrelcloud.com",
+  "issues": [
+    {
+      "key": "WEB-3286",
+      "type": "Story",
+      "summary": "Invoice list sortable columns",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-08-10"
+        }
+      ],
+      "created": "2022-08-04",
+      "component": "Invoices UI",
+      "resolution": "Done",
+      "resolved": "2022-08-31",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "WEB-3378",
+      "type": "Task",
+      "summary": "Empty/loading states for tables",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-10-31"
+        }
+      ],
+      "created": "2022-10-28",
+      "component": "Design System",
+      "resolution": "Done",
+      "resolved": "2022-11-24",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-3330",
+      "type": "Bug",
+      "summary": "Date picker shows previous day in IST",
+      "description_excerpt": "Selecting 1 Oct shows 30 Sep. tz parsing of ISO string.",
+      "priority": "High",
+      "status": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-09-22"
+        }
+      ],
+      "created": "2022-09-13",
+      "component": "Design System",
+      "resolution": "Done",
+      "resolved": "2022-10-07",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "WEB-3535",
+      "type": "Story",
+      "summary": "Virtualize invoice table (>5k rows janky)",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-03-30"
+        }
+      ],
+      "created": "2023-03-30",
+      "component": "Invoices UI",
+      "resolution": "Done",
+      "resolved": "2023-04-26",
+      "resolved_by_self": true,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "WEB-3474",
+      "type": "Bug",
+      "summary": "Modal focus escapes to page behind",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-01-30"
+        }
+      ],
+      "created": "2023-01-30",
+      "component": "Design System",
+      "resolution": "Done",
+      "resolved": "2023-02-13",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": [
+        "a11y"
+      ]
+    },
+    {
+      "key": "WEB-3632",
+      "type": "Story",
+      "summary": "Dark mode theme tokens",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-07-11"
+        }
+      ],
+      "created": "2023-07-11",
+      "component": "Design System",
+      "resolution": "Done",
+      "resolved": "2023-08-04",
+      "resolved_by_self": true,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "WEB-3714",
+      "type": "Bug",
+      "summary": "Billing settings save button stays disabled",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2023-09-14"
+        },
+        {
+          "assignee": "self",
+          "from": "2023-09-18"
+        }
+      ],
+      "created": "2023-09-14",
+      "component": "Billing Settings",
+      "resolution": "Done",
+      "resolved": "2023-09-18",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "WEB-3875",
+      "type": "Task",
+      "summary": "Migrate class components in billing settings",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-01-30"
+        }
+      ],
+      "created": "2024-01-30",
+      "component": "Billing Settings",
+      "resolution": "Done",
+      "resolved": "2024-03-03",
+      "resolved_by_self": true,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "WEB-3955",
+      "type": "Bug",
+      "summary": "UI broken",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-04-03"
+        }
+      ],
+      "created": "2024-04-03",
+      "component": "General",
+      "resolution": "Done",
+      "resolved": "2024-04-04",
+      "resolved_by_self": true,
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "WEB-4020",
+      "type": "Epic",
+      "summary": "TypeScript strict mode rollout - recon",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-05-29"
+        }
+      ],
+      "created": "2024-05-29",
+      "component": "Recon UI",
+      "resolution": "Done",
+      "resolved": "2024-10-17",
+      "resolved_by_self": true,
+      "labels": []
+    },
+    {
+      "key": "WEB-4143",
+      "type": "Task",
+      "summary": "Lazy load recon route",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-09-08"
+        }
+      ],
+      "created": "2024-09-08",
+      "component": "Recon UI",
+      "resolution": "Done",
+      "resolved": "2024-10-01",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-4199",
+      "type": "Bug",
+      "summary": "Recon table loses scroll position on filter",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-10-23"
+        }
+      ],
+      "created": "2024-10-23",
+      "component": "Recon UI",
+      "resolution": "Done",
+      "resolved": "2024-11-11",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-4281",
+      "type": "Task",
+      "summary": "Write RTL tests for PaymentMethodForm",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-07"
+        }
+      ],
+      "created": "2025-01-02",
+      "component": "Billing Settings",
+      "resolution": "Done",
+      "resolved": "2025-01-17",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-4392",
+      "type": "Story",
+      "summary": "Recon filters in URL state",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-17"
+        }
+      ],
+      "created": "2025-03-10",
+      "component": "Recon UI",
+      "resolution": "Done",
+      "resolved": "2025-08-21",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "WEB-4348",
+      "type": "Bug",
+      "summary": "Safari: date input unusable",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-20"
+        }
+      ],
+      "created": "2025-02-19",
+      "component": "Design System",
+      "resolution": "Done",
+      "resolved": "2025-03-03",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "WEB-4666",
+      "type": "Story",
+      "summary": "Tax profile form in billing settings",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-10-15"
+        }
+      ],
+      "created": "2025-10-15",
+      "component": "Billing Settings",
+      "resolution": "Done",
+      "resolved": "2025-11-13",
+      "resolved_by_self": true,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "WEB-4717",
+      "type": "Bug",
+      "summary": "fix button",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-11-13"
+        }
+      ],
+      "created": "2025-11-13",
+      "component": "General",
+      "resolution": "Done",
+      "resolved": "2025-11-14",
+      "resolved_by_self": true,
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "WEB-4840",
+      "type": "Story",
+      "summary": "Form validation with zod",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-19"
+        }
+      ],
+      "created": "2026-01-19",
+      "component": "Billing Settings",
+      "resolution": "Done",
+      "resolved": "2026-02-19",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "WEB-4921",
+      "type": "Bug",
+      "summary": "Invoice count stale after refresh",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-12"
+        }
+      ],
+      "created": "2026-03-09",
+      "component": "Invoices UI",
+      "resolution": "Done",
+      "resolved": "2026-03-12",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "WEB-4974",
+      "type": "Task",
+      "summary": "Numeric input a11y review items",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-14"
+        }
+      ],
+      "created": "2026-04-08",
+      "component": "Design System",
+      "resolution": "Done",
+      "resolved": "2026-05-13",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": [
+        "a11y"
+      ]
+    },
+    {
+      "key": "WEB-5066",
+      "type": "Task",
+      "summary": "Reduce main bundle size",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-05"
+        }
+      ],
+      "created": "2026-06-05",
+      "component": "Platform",
+      "resolution": "Done",
+      "resolved": "2026-06-17",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "WEB-5129",
+      "type": "Story",
+      "summary": "Unsaved changes prompt",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-24"
+        }
+      ],
+      "created": "2026-07-24",
+      "component": "Billing Settings",
+      "resolution": "Done",
+      "resolved": "2026-08-14",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-5221",
+      "type": "Bug",
+      "summary": "Tooltip clipped inside scroll container",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "In Progress",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-30"
+        }
+      ],
+      "created": "2026-09-25",
+      "component": "Design System",
+      "story_points": 2,
+      "labels": []
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-07",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 4,
+      "reported": 4
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 4,
+      "reported": 4
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    }
+  ]
+}

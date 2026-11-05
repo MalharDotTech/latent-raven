@@ -1,0 +1,884 @@
+{
+  "login": "kavya-rao-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-10909",
+  "exported_on": "2026-10-31",
+  "sample_scope": "Selected PRs and review threads; monthly activity covers complete membership, including zero months.",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 9761,
+      "title": "DATA-2110 fix signed credit totals",
+      "state": "merged",
+      "created": "2023-05-18",
+      "merged": "2023-05-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 2
+      },
+      "additions": 19,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL report included voided credits; reconciled invoice and credit totals with finance export."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 10135,
+      "title": "Use account timezone in daily extract",
+      "state": "merged",
+      "created": "2023-08-25",
+      "merged": "2023-08-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 2
+      },
+      "additions": 56,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL dates derived after timezone conversion; reconciled midnight sample."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 10455,
+      "title": "fix: null segment drops accounts",
+      "state": "merged",
+      "created": "2023-11-19",
+      "merged": "2023-11-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 2
+      },
+      "additions": 93,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Left join preserves unclassified accounts; checked against source row counts."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 10740,
+      "title": "DATA-2489 add refund bridge query",
+      "state": "merged",
+      "created": "2024-02-06",
+      "merged": "2024-02-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 2
+      },
+      "additions": 130,
+      "deletions": 36,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL refund bridge at transaction grain, checked by finance against January export."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11101,
+      "title": "Keep fx date with ledger rows",
+      "state": "merged",
+      "created": "2024-05-15",
+      "merged": "2024-05-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 2
+      },
+      "additions": 167,
+      "deletions": 47,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL exchange-rate join now uses posting date, not statement date."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11611,
+      "title": "fix: reversed invoice counted twice",
+      "state": "merged",
+      "created": "2024-09-18",
+      "merged": "2024-09-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 2
+      },
+      "additions": 204,
+      "deletions": 58,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL anti-join removes cancelled/reissued invoice pair; totals reconciled."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6370,
+      "title": "Add tests for invoice daily model",
+      "state": "merged",
+      "created": "2024-12-11",
+      "merged": "2024-12-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 241,
+      "deletions": 69,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "First dbt contribution; reviewer supplied source freshness config and corrected unique key."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6478,
+      "title": "DATA-2992 revenue mart incremental key",
+      "state": "merged",
+      "created": "2025-01-23",
+      "merged": "2025-01-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 278,
+      "deletions": 80,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "dbt unique key includes tenant and line id; reconciliation covers partial refunds."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6571,
+      "title": "fix: credit memo reloaded after cutoff",
+      "state": "merged",
+      "created": "2025-03-09",
+      "merged": "2025-03-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 34,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "dbt merge includes late-arriving updates; compared full-refresh and incremental outputs."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6740,
+      "title": "Prune invoice scan by posted_date",
+      "state": "merged",
+      "created": "2025-05-30",
+      "merged": "2025-05-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 71,
+      "deletions": 23,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Snowflake query profile reduced scanned partitions from 812 to 67; finance totals unchanged."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6860,
+      "title": "Add currency to revenue grain",
+      "state": "merged",
+      "created": "2025-07-21",
+      "merged": "2025-07-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 108,
+      "deletions": 34,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Data model separates invoice currency from reporting currency; foreign-key and history checks attached."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6975,
+      "title": "DATA-3426 grant mart role to finance",
+      "state": "merged",
+      "created": "2025-09-07",
+      "merged": "2025-09-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 145,
+      "deletions": 45,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Snowflake role change reviewed by platform; verified restricted source tables remain inaccessible."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7128,
+      "title": "fix: snapshot hard-delete handling",
+      "state": "merged",
+      "created": "2025-11-19",
+      "merged": "2025-11-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 182,
+      "deletions": 56,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "dbt snapshot keeps valid-to on removed accounts; checked history against source extracts."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7280,
+      "title": "Move close adjustment out of base revenue",
+      "state": "merged",
+      "created": "2026-01-19",
+      "merged": "2026-01-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 219,
+      "deletions": 67,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "dbt models now preserve posted ledger grain; finance adjustment table reconciled separately."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7425,
+      "title": "fix: duplicate credits on rerun",
+      "state": "merged",
+      "created": "2026-03-17",
+      "merged": "2026-03-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 256,
+      "deletions": 78,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "dbt incremental delete/insert key corrected; reran affected days and checked net value."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7554,
+      "title": "DATA-3902 lower warehouse auto_suspend",
+      "state": "merged",
+      "created": "2026-05-12",
+      "merged": "2026-05-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 293,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Snowflake query-history sample checked before reducing idle timeout; dashboard latency held."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7773,
+      "title": "Do not fan out invoice tags",
+      "state": "merged",
+      "created": "2026-08-16",
+      "merged": "2026-08-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 49,
+      "deletions": 21,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL aggregates tags before joining fact table; counted stable fact rows on multi-tag invoices."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7889,
+      "title": "fix: close totals for backdated credits",
+      "state": "merged",
+      "created": "2026-10-04",
+      "merged": "2026-10-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "kavya-rao-kc",
+      "files_ext": {
+        ".sql": 3,
+        ".yml": 1
+      },
+      "additions": 86,
+      "deletions": 32,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL posting period and event period retained separately; finance signed off September rerun."
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "pr_number": 6868,
+      "date": "2025-07-24",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "This is invoice grain but tags are many-to-many. Can you aggregate before joining?",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "pr_number": 6983,
+      "date": "2025-09-11",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "Please compare incremental output with full refresh for the late credit fixture.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "pr_number": 7139,
+      "date": "2025-11-21",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "Where does reporting currency come from here? Keep posted currency separate.",
+      "author_followup": "Checks passed on updated change."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "pr_number": 7251,
+      "date": "2026-01-15",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "This is invoice grain but tags are many-to-many. Can you aggregate before joining?",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "pr_number": 7418,
+      "date": "2026-03-18",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "Please compare incremental output with full refresh for the late credit fixture.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "pr_number": 7528,
+      "date": "2026-05-07",
+      "state": "APPROVED",
+      "comment_count": 2,
+      "sample_comment": "Where does reporting currency come from here? Keep posted currency separate.",
+      "author_followup": "Checks passed on updated change."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "pr_number": 7784,
+      "date": "2026-08-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "This is invoice grain but tags are many-to-many. Can you aggregate before joining?",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "pr_number": 7922,
+      "date": "2026-10-16",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "Please compare incremental output with full refresh for the late credit fixture.",
+      "author_followup": "Added regression fixture and reran checks."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-04",
+      "merged_prs": 1,
+      "reviews": 1,
+      "by_ext": {
+        ".sql": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 4,
+      "reviews": 5,
+      "by_ext": {
+        ".sql": 12,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 3,
+      "reviews": 3,
+      "by_ext": {
+        ".sql": 9,
+        ".yml": 3
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".sql": 18,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 3,
+      "reviews": 5,
+      "by_ext": {
+        ".sql": 6,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".sql": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 3,
+      "reviews": 5,
+      "by_ext": {
+        ".sql": 12,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".sql": 9,
+        ".yml": 3
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 6,
+      "reviews": 1,
+      "by_ext": {
+        ".sql": 18,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 2,
+      "reviews": 4,
+      "by_ext": {
+        ".sql": 6,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".sql": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 4,
+      "reviews": 6,
+      "by_ext": {
+        ".sql": 12,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".sql": 9,
+        ".yml": 3
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".sql": 18,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 2,
+      "reviews": 4,
+      "by_ext": {
+        ".sql": 6,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".sql": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 4,
+      "reviews": 6,
+      "by_ext": {
+        ".sql": 12,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 3,
+      "reviews": 3,
+      "by_ext": {
+        ".sql": 9,
+        ".yml": 3
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 6,
+      "reviews": 1,
+      "by_ext": {
+        ".sql": 18,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 2,
+      "reviews": 3,
+      "by_ext": {
+        ".sql": 6,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".sql": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 9,
+      "reviews": 12,
+      "by_ext": {
+        ".sql": 27,
+        ".yml": 9
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 10,
+      "reviews": 7,
+      "by_ext": {
+        ".sql": 24,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 12,
+      "reviews": 5,
+      "by_ext": {
+        ".sql": 33,
+        ".yml": 11
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".sql": 21,
+        ".yml": 7
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".sql": 18,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 9,
+      "reviews": 11,
+      "by_ext": {
+        ".sql": 27,
+        ".yml": 9
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 10,
+      "reviews": 8,
+      "by_ext": {
+        ".sql": 24,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 13,
+      "reviews": 5,
+      "by_ext": {
+        ".sql": 33,
+        ".yml": 11
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".sql": 21,
+        ".yml": 7
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".sql": 18,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 11,
+      "reviews": 10,
+      "by_ext": {
+        ".sql": 27,
+        ".yml": 9
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".sql": 24,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 14,
+      "reviews": 7,
+      "by_ext": {
+        ".sql": 33,
+        ".yml": 11
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".sql": 21,
+        ".yml": 7
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 6,
+      "reviews": 7,
+      "by_ext": {
+        ".sql": 18,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".sql": 27,
+        ".yml": 9
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 10,
+      "reviews": 9,
+      "by_ext": {
+        ".sql": 24,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 14,
+      "reviews": 6,
+      "by_ext": {
+        ".sql": 33,
+        ".yml": 11
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".sql": 21,
+        ".yml": 7
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".sql": 18,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 10,
+      "reviews": 12,
+      "by_ext": {
+        ".sql": 27,
+        ".yml": 9
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".sql": 24,
+        ".yml": 8
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [],
+    "oss_contributions": []
+  }
+}

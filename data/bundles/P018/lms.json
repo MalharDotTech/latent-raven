@@ -1,0 +1,36 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "Git Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2024-06-18",
+      "time_spent_minutes": 92,
+      "assigned_by": "self",
+      "quiz_score_pct": 84
+    },
+    {
+      "course_title": "internal: Kestrel Import Service Onboarding",
+      "provider": "Kestrel Learn",
+      "completed": "2024-04-04",
+      "time_spent_minutes": 180,
+      "assigned_by": "manager",
+      "quiz_score_pct": 78
+    },
+    {
+      "course_title": "Getting Started with Kubernetes",
+      "provider": "Pluralsight",
+      "completed": "2025-11-12",
+      "time_spent_minutes": 3,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Incident Handover Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2026-05-19",
+      "time_spent_minutes": 55,
+      "assigned_by": "manager",
+      "quiz_score_pct": 74
+    }
+  ]
+}

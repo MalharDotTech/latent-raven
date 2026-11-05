@@ -1,0 +1,69 @@
+{
+  "employee_id": "KC-12146",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Sravya Dutta",
+  "preferred_name": "Sravya",
+  "emails": [
+    {
+      "email": "sravya.dutta@kestrelcloud.com",
+      "from": "2024-06",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Hyderabad",
+  "country": "IN",
+  "department": "Data Platform",
+  "manager_employee_id": "KC-10176",
+  "hire_date": "2024-06-10",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Data Engineer",
+      "grade": "P2",
+      "from": "2024-06",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Settlement ingestion",
+      "role": "Data Engineer",
+      "from": "2024-06",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "JNTU Hyderabad",
+      "degree": "B.Tech",
+      "field": "Electronics and Communication Engineering",
+      "year": 2023
+    }
+  ],
+  "exported": "2026-10-31",
+  "self_declared_skills": [
+    {
+      "skill_text": "Python",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    },
+    {
+      "skill_text": "Airflow",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    }
+  ]
+}

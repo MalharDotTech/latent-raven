@@ -1,0 +1,600 @@
+{
+  "exported_on": "2026-10-31",
+  "linked_employee_id": "KC-11020",
+  "issues": [
+    {
+      "key": "PM-1402",
+      "type": "Bug",
+      "summary": "Bulk accept: stop pilot",
+      "description_excerpt": "Six operator sessions: bulk action hid mismatched currency. Changed pilot to per-row reasons; operators caught seeded mismatches.",
+      "component": "reconciliation",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-04",
+      "resolved": "2025-02-28",
+      "story_points": 3,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Gupta",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.gupta@kestrelcloud.com"
+    },
+    {
+      "key": "PM-1456",
+      "type": "Task",
+      "summary": "Saved filters before scheduler",
+      "description_excerpt": "Compared repeat triage time with export requests. Finance ops backed filters; sales accepted manual weekly report for pilot account.",
+      "component": "reconciliation",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-05",
+      "resolved": "2025-03-31",
+      "story_points": 2,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Gupta",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.gupta@kestrelcloud.com"
+    },
+    {
+      "key": "PM-1496",
+      "type": "Task",
+      "summary": "Pilot acceptance criteria",
+      "description_excerpt": "No silent cross-currency match. Acceptance tied to error rate and review time, not count of clicks.",
+      "component": "reconciliation",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-04-01",
+      "resolved": "2025-04-29",
+      "story_points": 5,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Gupta",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.gupta@kestrelcloud.com"
+    },
+    {
+      "key": "PM-1558",
+      "type": "Bug",
+      "summary": "Filter discovery follow-up",
+      "description_excerpt": "Three returning operators reused filters; time-on-task improved, but one could not find reset. Sent placement issue to design.",
+      "component": "reconciliation",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-13",
+      "resolved": "2025-05-20",
+      "story_points": 1,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Gupta",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.gupta@kestrelcloud.com"
+    },
+    {
+      "key": "PM-1870",
+      "type": "Task",
+      "summary": "June release scope",
+      "description_excerpt": "Dropped scheduled export from milestone after dependency review; communicated revised commitment to sales and support.",
+      "component": "reconciliation",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-06",
+      "resolved": "2026-02-25",
+      "story_points": 3,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Kapoor",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.kapoor@kestrelcloud.com"
+    },
+    {
+      "key": "PM-1902",
+      "type": "Task",
+      "summary": "Fix export retry",
+      "description_excerpt": "Engineering-owned retry issue reported after pilot. PM supplied affected user workflow, no implementation.",
+      "component": "reconciliation",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-03-05"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-03-05",
+      "resolved": "2026-03-24",
+      "story_points": 2,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Kapoor",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.kapoor@kestrelcloud.com"
+    },
+    {
+      "key": "PM-1950",
+      "type": "Bug",
+      "summary": "Rollout handover",
+      "description_excerpt": "Support completed the account enablement steps in test tenant. Clarified rollback ownership after first walkthrough.",
+      "component": "reconciliation",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-03",
+      "resolved": "2026-04-27",
+      "story_points": 5,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Kapoor",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.kapoor@kestrelcloud.com"
+    },
+    {
+      "key": "PM-1998",
+      "type": "Task",
+      "summary": "Retro: stuck acceptance",
+      "description_excerpt": "Added named acceptance owner before sprint planning; next two iterations had no unowned acceptance items.",
+      "component": "reconciliation",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-08",
+      "resolved": "2026-05-25",
+      "story_points": 1,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Kapoor",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.kapoor@kestrelcloud.com"
+    },
+    {
+      "key": "PM-2032",
+      "type": "Task",
+      "summary": "Roadmap rebaseline",
+      "description_excerpt": "Retained filter improvements, deferred scheduler until adoption threshold. Recorded dissent and final product decision.",
+      "component": "reconciliation",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-02",
+      "resolved": "2026-06-18",
+      "story_points": 3,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Kapoor",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.kapoor@kestrelcloud.com"
+    },
+    {
+      "key": "PM-2093",
+      "type": "Bug",
+      "summary": "SQL pilot totals",
+      "description_excerpt": "Edited analyst query for date window; analyst corrected join grain before numbers used in review.",
+      "component": "reconciliation",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-10",
+      "resolved": "2026-07-25",
+      "story_points": 2,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Kapoor",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.kapoor@kestrelcloud.com"
+    },
+    {
+      "key": "PM-2123",
+      "type": "Task",
+      "summary": "Export API addendum",
+      "description_excerpt": "Architecture appendix pasted by engineer into PM-created page. PM approved user-visible behaviour only.",
+      "component": "reconciliation",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-08-05"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-08-03",
+      "resolved": "2026-08-24",
+      "story_points": 5,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Kapoor",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.kapoor@kestrelcloud.com"
+    },
+    {
+      "key": "PM-2174",
+      "type": "Task",
+      "summary": "Discovery note tidy",
+      "description_excerpt": "Research synthesis shared with designer; designer checked participant selection and removed an unsupported generalisation.",
+      "component": "reconciliation",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-02",
+      "resolved": "2026-09-21",
+      "story_points": 1,
+      "labels": [
+        "reconciliation"
+      ],
+      "reporter_account_id": "jira-pm-1020",
+      "reporter_display_name": "Anjali Kapoor",
+      "reporter_employee_id": "KC-11020",
+      "reporter_email": "anjali.kapoor@kestrelcloud.com"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 6,
+      "reported": 12
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 3,
+      "reported": 21
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 6,
+      "reported": 10
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 4,
+      "reported": 13
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 2,
+      "reported": 19
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 4,
+      "reported": 15
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 5,
+      "reported": 10
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 5,
+      "reported": 12
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 2,
+      "reported": 13
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 6,
+      "reported": 16
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 5,
+      "reported": 15
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 5,
+      "reported": 11
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 5,
+      "reported": 17
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 2,
+      "reported": 11
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 6,
+      "reported": 15
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 4,
+      "reported": 13
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 2,
+      "reported": 17
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 3,
+      "reported": 20
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 3,
+      "reported": 9
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 3,
+      "reported": 12
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 3,
+      "reported": 14
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 6,
+      "reported": 10
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 5,
+      "reported": 14
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 5,
+      "reported": 10
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 2,
+      "reported": 10
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 6,
+      "reported": 18
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 6,
+      "reported": 12
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 5,
+      "reported": 9
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 3,
+      "reported": 15
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 2,
+      "reported": 13
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 6,
+      "reported": 9
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 5,
+      "reported": 15
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 4,
+      "reported": 12
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 5,
+      "reported": 12
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 6,
+      "reported": 15
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 3,
+      "reported": 21
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 3,
+      "reported": 13
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 2,
+      "reported": 16
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 2,
+      "reported": 18
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 4,
+      "reported": 17
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 4,
+      "reported": 17
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 4,
+      "reported": 17
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 2,
+      "reported": 12
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 5,
+      "reported": 9
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 6,
+      "reported": 12
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 3,
+      "reported": 16
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 4,
+      "reported": 17
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 5,
+      "reported": 15
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 4,
+      "reported": 13
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 4,
+      "reported": 17
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 5,
+      "reported": 9
+    }
+  ],
+  "export_scope": "Representative issues; monthly_activity covers complete Kestrel tenure. Reporter and assignee counts are separate."
+}

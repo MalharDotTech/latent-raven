@@ -1,0 +1,399 @@
+{
+ "pid": "P021",
+ "schema": "truth-v2",
+ "summary": "Tom is a productive Berlin SRE who can teach recovery and alert practices as well as operate the stack. The employee outreach purpose has no EU opt-in, so accurate skill inference must still result in no message. His old Java ability has decayed and the Azure keyword never reflected usable experience.",
+ "archetype": "Strong EU SRE without outreach opt-in",
+ "batch": "D",
+ "generator": "codex (GPT-6; runtime submodel not exposed)",
+ "skills": [
+  {
+   "skill_id": "kubernetes",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_certs CKA verified (2025-03); P021_github drain hook waits for exports, PDB tuning, startup probe fix 2025-2026; P021_jira PLAT-4892 Pune rotation ran the drain/rollback drill from his guide without him, procedure revised; P021_ENG-521. Teaches recovery procedures with completed team drill = level 4. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "send",
+     "level": 4,
+     "accept_levels": [
+      3,
+      4
+     ]
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:PLAT-4892",
+    "github:review platform-k8s#6144",
+    "docs/ENG-521"
+   ],
+   "why": "Another rotation completes recovery drills using his corrected procedures."
+  },
+  {
+   "skill_id": "terraform",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_github state address moves tested against plan (2025-02), staging state split with lock + rollback file (2025-07), module pinning, plan assertions; review demanding old state addresses (2026-03). Team adoption of his procedure not shown -> ceiling 4, floor 3. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "send",
+     "level": 3,
+     "accept_levels": [
+      3,
+      4
+     ]
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#10282",
+    "github:review infra-live#11380",
+    "docs/ENG-521"
+   ],
+   "why": "Rehearsed state procedures become a team change template after his review."
+  },
+  {
+   "skill_id": "observability",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_github burn-rate paging over two windows (2025-08), grouped double paging (2026-03), review moving per-pod alert to dashboard; P021_jira PLAT-5207 other team reused his burn-window checklist and monthly duplicate pages fell. Level 4 line. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "send",
+     "level": 4,
+     "accept_levels": [
+      3,
+      4
+     ]
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review platform-k8s#6307",
+    "jira:PLAT-5207"
+   ],
+   "why": "Other teams adopt the alert method and record fewer duplicate pages."
+  },
+  {
+   "skill_id": "aws",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_github/P021_jira recovery-role GetObject denial fixed and restore repeated (2025-04), public-bucket guardrail (2026-01), wildcard principal plan test (2026-07). Access faults resolved in 3+ months. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "send",
+     "level": 3,
+     "accept_levels": [
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#10460",
+    "jira:PLAT-4417"
+   ],
+   "why": "Independently repairs recovery access and validates restored data."
+  },
+  {
+   "skill_id": "linux",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_jira PLAT-4370 conntrack saturation diagnosed via sysctl counters (2025-03), PLAT-4968 journal retention filled root fs, checked open deleted files (2026-05); P021_github matching PRs. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "send",
+     "level": 3,
+     "accept_levels": [
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:PLAT-4370",
+    "jira:PLAT-4968"
+   ],
+   "why": "Diagnoses host networking and disk faults with concrete recovery checks."
+  },
+  {
+   "skill_id": "python",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_github data-platform restore checker: delete markers (2025-05), hash mismatch test (2025-09), missing manifest false green (2026-05); P021_jira PLAT-4856, PLAT-5072. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "send",
+     "level": 3,
+     "accept_levels": [
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#12576",
+    "github:#14117",
+    "jira:PLAT-5072"
+   ],
+   "why": "Maintains the production restore checker and fixes false success paths."
+  },
+  {
+   "skill_id": "incident_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Recovery fixes and drills (P021_jira, P021_ENG-521) and lms 'EU Incident Commander Drill' show technical response, not incident coordination timelines. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": "incident timelines / rota coordination records",
+    "if_consented": {
+     "action": "hold",
+     "level": null,
+     "accept_levels": []
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:PLAT-4370",
+    "jira:PLAT-4968",
+    "lms:internal: Kestrel EU Incident Commander Drill"
+   ],
+   "why": "Privately owns coordination of the EU incident rota; visible recovery timelines and completed follow-ups support independent response."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_ENG-521 drain and restore rehearsal guide; P021_jira PLAT-4892 Pune rotation executed it and the gateway-check correction was published; P021_github runbook PRs. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "send",
+     "level": 3,
+     "accept_levels": [
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "docs/ENG-521",
+    "jira:PLAT-4892"
+   ],
+   "why": "A different rotation executes his recovery procedure and reports a concrete correction."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_github reviews ~130/yr; listed catches: PDB blocking last eviction, state move not tested, duplicate alerts (2026-02..2026-05). Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "send",
+     "level": 3,
+     "accept_levels": [
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review infra-live#11380",
+    "github:review platform-k8s#6144"
+   ],
+   "why": "Catches unsafe infrastructure changes; general reviewer coaching is not established."
+  },
+  {
+   "skill_id": "java",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P021_cv_v1 'Java: old service work, no recent project' (Zalando to 2023-01); nothing since. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "hold",
+     "level": null,
+     "accept_levels": []
+    }
+   },
+   "last_used": "2023-01",
+   "evidence_refs": [
+    "cv_v1:Earlier and tools"
+   ],
+   "why": "Last used on the former employer’s services in January 2023. Private current exercise confirms concepts but he cannot complete a service change without substantial retraining."
+  },
+  {
+   "skill_id": "azure",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Single keyword in P021_cv_v1 skills line. Consent: P021_hcm messaging_consent eu_opt_in false (DE, recorded 2026-09-15) -> do_not_message.",
+    "missing_source": null,
+    "if_consented": {
+     "action": "hold",
+     "level": null,
+     "accept_levels": []
+    }
+   },
+   "evidence_refs": [
+    "cv_v1:Tools"
+   ],
+   "why": "A copied skill-list keyword remained from job-search notes; no usable Azure knowledge or delivery exists."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Azure",
+   "mapped_skill_id": "azure",
+   "has_skill": false,
+   "why": "A single CV keyword is the entire visible basis and is false in private calibration.",
+   "oracle": {
+    "action": "do_not_message",
+    "level": null,
+    "accept_levels": [],
+    "basis": "CV keyword only; consent blocks any message.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": null,
+   "s11_row": "consent",
+   "skill_id": null,
+   "plant": "Berlin location and DE country coincide with an explicit false EU opt-in for employee skill outreach in HCM.",
+   "expected_engine_behavior": "do_not_message",
+   "roster_case": "eu_opt_in_absent",
+   "catalog_note": "Consent is covered by section 4 of the nuance document and the roster, not by any F01-F36 row."
+  },
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "java",
+   "plant": "CV confines Java to the pre-Kestrel job; current platform work has no Java implementation.",
+   "expected_engine_behavior": "do_not_message",
+   "inference_behavior": "hold_current_java_delivery_claim"
+  },
+  {
+   "fault_id": "F01",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "azure",
+   "plant": "Azure appears in the CV list without work, course or assessment support.",
+   "expected_engine_behavior": "do_not_message",
+   "inference_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [],
+ "answer_behavior": {
+  "reply_probability": 0,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "No outreach permitted. A later authorised assessment could confirm operational skills; hypothetical willingness does not override consent."
+ },
+ "messaging_allowed": false
+}

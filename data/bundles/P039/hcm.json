@@ -1,0 +1,64 @@
+{
+  "employee_id": "KC-12018",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Pallavi Kulkarni",
+  "preferred_name": "Pallavi",
+  "emails": [
+    {
+      "email": "pallavi.kulkarni@kestrelcloud.com",
+      "from": "2023-08",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Quality Engineering",
+  "manager_employee_id": "KC-10230",
+  "hire_date": "2023-08-07",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "QA Engineer",
+      "grade": "P3",
+      "from": "2023-08",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Billing and reconciliation QA",
+      "role": "QA Engineer",
+      "from": "2023-08",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Shivaji University",
+      "degree": "B.E.",
+      "field": "Computer Science and Engineering",
+      "year": 2021
+    }
+  ],
+  "exported": "2026-10-31",
+  "self_declared_skills": [
+    {
+      "skill_text": "Selenium",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    },
+    {
+      "skill_text": "API testing",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    }
+  ]
+}

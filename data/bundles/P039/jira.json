@@ -1,0 +1,1083 @@
+{
+  "linked_employee_id": "KC-12018",
+  "issues": [
+    {
+      "key": "QA-2438",
+      "type": "Story",
+      "summary": "Invoice list test intermittently fails",
+      "description_excerpt": "Invoice list test fails after spinner goes away, before the target row is visible. Seen in 6 of 40 slow runs.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-08-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-08-07",
+      "resolved": "2023-08-11",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 94",
+        "start": "2023-07-31",
+        "end": "2023-08-11"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2023-08-11",
+          "body": "40 repeat runs passed, including the slow-response fixture."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/7472"
+        }
+      ]
+    },
+    {
+      "key": "QA-2518",
+      "type": "Task",
+      "summary": "Refund endpoint accepts missing scope",
+      "description_excerpt": "Add negative auth cases to refund suite. Need missing scope as well as missing token.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-10-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-10-13",
+      "resolved": "2023-10-20",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 99",
+        "start": "2023-10-09",
+        "end": "2023-10-20"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2023-10-20",
+          "body": "Scope defect raised before the release candidate went out."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/7635"
+        }
+      ]
+    },
+    {
+      "key": "QA-2575",
+      "type": "Story",
+      "summary": "Parallel tests share invoice ids",
+      "description_excerpt": "Parallel tests create and delete the same invoice reference. Failures move between workers.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-11-29"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-11-29",
+      "resolved": "2023-12-20",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 102",
+        "start": "2023-11-20",
+        "end": "2023-12-01"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2023-12-20",
+          "body": "No collisions across 30 full parallel runs."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/7759"
+        }
+      ]
+    },
+    {
+      "key": "QA-2662",
+      "type": "Story",
+      "summary": "Refund modal test flakes",
+      "description_excerpt": "Changing refund amount redraws modal. Selenium sometimes clicks an element from the previous render.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-01-29"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-01-29",
+      "resolved": "2024-02-12",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 107",
+        "start": "2024-01-29",
+        "end": "2024-02-09"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2024-02-12",
+          "body": "Repeat-run report attached for chrome and firefox."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/7898"
+        }
+      ]
+    },
+    {
+      "key": "QA-2758",
+      "type": "Bug",
+      "summary": "Retry can post refund twice",
+      "description_excerpt": "Timeout then retry appears to add two postings. Need API regression that checks ledger totals.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-04-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-04-15",
+      "resolved": "2024-04-22",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 112",
+        "start": "2024-04-08",
+        "end": "2024-04-19"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2024-04-22",
+          "body": "RestAssured checks timeout then retry and ledger totals; the seeded service bug failed in CI before release."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/8066"
+        }
+      ]
+    },
+    {
+      "key": "QA-2829",
+      "type": "Task",
+      "summary": "Totals check joins wrong tenant",
+      "description_excerpt": "Database assertion passes against another tenant fixture. Invoice reference alone is not unique.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-06-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-06-10",
+      "resolved": "2024-06-20",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 116",
+        "start": "2024-06-03",
+        "end": "2024-06-14"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2024-06-20",
+          "body": "Data engineer reviewed the query and source totals on the sample database."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/8180"
+        }
+      ]
+    },
+    {
+      "key": "QA-2847",
+      "type": "Task",
+      "summary": "Failed test jobs have no report",
+      "description_excerpt": "When nightly fails there is no junit report to inspect. Keep report upload on failure path.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-06-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-06-24",
+      "resolved": "2024-07-02",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 117",
+        "start": "2024-06-17",
+        "end": "2024-06-28"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2024-07-02",
+          "body": "Added GitHub Actions always() report step with build engineer; failed-run artifacts now include the junit report."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/8213"
+        }
+      ]
+    },
+    {
+      "key": "QA-2953",
+      "type": "Story",
+      "summary": "Fixture endpoint accepts invalid total",
+      "description_excerpt": "Fixture API accepts negative amount and crashes on null. Add validation and controller tests with Deepak.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-09-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-09-16",
+      "resolved": "2024-09-18",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 123",
+        "start": "2024-09-09",
+        "end": "2024-09-20"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2024-09-18",
+          "body": "Fixture controller and tests under Deepak review; changed validation order after reviewer found null amount returned 500."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/8413"
+        }
+      ]
+    },
+    {
+      "key": "QA-3012",
+      "type": "Story",
+      "summary": "Tab switch invalidates invoice element",
+      "description_excerpt": "Switching tabs invalidates elements cached by invoice page object. Can we resolve inside the active tab?",
+      "component": "Billing and reconciliation QA",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-11-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-11-04",
+      "resolved": "2024-11-18",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 127",
+        "start": "2024-11-04",
+        "end": "2024-11-15"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2024-11-18",
+          "body": "Tested 50 tab-switch repetitions without stale reference."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/8540"
+        }
+      ]
+    },
+    {
+      "key": "QA-3123",
+      "type": "Task",
+      "summary": "Conflict response loses request id",
+      "description_excerpt": "409 response sometimes omits request id. Need contract assertion before next release.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-03",
+      "resolved": "2025-02-19",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 133",
+        "start": "2025-01-27",
+        "end": "2025-02-07"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2025-02-19",
+          "body": "CI run exposed response mapper regression in the release candidate."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/8741"
+        }
+      ]
+    },
+    {
+      "key": "QA-3189",
+      "type": "Bug",
+      "summary": "Test totals use posting date",
+      "description_excerpt": "Test totals are grouped by posting date. Bank acceptance sheet is by value date.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-24",
+      "resolved": "2025-04-07",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 137",
+        "start": "2025-03-24",
+        "end": "2025-04-04"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2025-04-07",
+          "body": "Reviewed SQL query uses bank value date, compared sum and count against supplied reconciliation sheet."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/8898"
+        }
+      ]
+    },
+    {
+      "key": "QA-3202",
+      "type": "Task",
+      "summary": "Rerun hides failed assertions",
+      "description_excerpt": "Workflow retry reruns a failed assertion and can make the build green. Retry browser startup only.",
+      "component": "Billing and reconciliation QA",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-31"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-31",
+      "resolved": "2025-04-03",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 137",
+        "start": "2025-03-24",
+        "end": "2025-04-04"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2025-04-03",
+          "body": "Assertion failures no longer rerun, setup failures retry once."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/8907"
+        }
+      ]
+    },
+    {
+      "key": "QA-3314",
+      "type": "Story",
+      "summary": "CSV download occasionally empty",
+      "description_excerpt": "CSV test checks the file before download completes. Especially frequent on the slow runner.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-26",
+      "resolved": "2025-07-10",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 143",
+        "start": "2025-06-16",
+        "end": "2025-06-27"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2025-07-10",
+          "body": "Repeat run includes delayed response and empty invoice list."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/9168"
+        }
+      ]
+    },
+    {
+      "key": "QA-3333",
+      "type": "Task",
+      "summary": "Revoked token gets wrong error",
+      "description_excerpt": "Token revoke path has different error from expiry. Add both to API regression.",
+      "component": "Billing and reconciliation QA",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-07-07",
+      "resolved": "2025-07-18",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 144",
+        "start": "2025-06-30",
+        "end": "2025-07-11"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2025-07-18",
+          "body": "RestAssured failure-path checks distinguish expired and revoked tokens, with assertions on response schema and audit ID."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/9208"
+        }
+      ]
+    },
+    {
+      "key": "QA-3423",
+      "type": "Task",
+      "summary": "Failed test leaves invoice lock",
+      "description_excerpt": "One failed setup leaves the fixture invoice locked for the rest of the run. Cleanup must survive validation failure.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-16",
+      "resolved": "2025-09-29",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 149",
+        "start": "2025-09-08",
+        "end": "2025-09-19"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2025-09-29",
+          "body": "Controller test forces validation failure and confirms the lock is released."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/9393"
+        }
+      ]
+    },
+    {
+      "key": "QA-3579",
+      "type": "Task",
+      "summary": "Badge text changed in new UI",
+      "description_excerpt": "Invoice status label translated in UI; old locator assumes English text.",
+      "component": "Billing and reconciliation QA",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-12-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-12-30",
+      "resolved": "2026-01-09",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 157",
+        "start": "2025-12-29",
+        "end": "2026-01-09"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2026-01-09",
+          "body": "Full locale matrix and repeat-run reports passed."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/9673"
+        }
+      ]
+    },
+    {
+      "key": "QA-3622",
+      "type": "Story",
+      "summary": "Rounding changes not caught by API suite",
+      "description_excerpt": "Partial refund rounding regression went through API suite. Assert ledger snapshot as well as response.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-27"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-01-27",
+      "resolved": "2026-02-12",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 159",
+        "start": "2026-01-26",
+        "end": "2026-02-06"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2026-02-12",
+          "body": "API checks compare BigDecimal totals and the ledger snapshot for partial refunds; caught the one-paisa regression in preprod."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/9746"
+        }
+      ]
+    },
+    {
+      "key": "QA-3671",
+      "type": "Task",
+      "summary": "Fixture endpoint returns 500 for missing bank",
+      "description_excerpt": "Missing bank id makes the fixture controller return 500. Please cover null and empty values separately.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-02"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-02",
+      "resolved": "2026-03-18",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 161",
+        "start": "2026-02-23",
+        "end": "2026-03-06"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2026-03-18",
+          "body": "Reviewer corrected the null check and test covers missing and empty values."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/9844"
+        }
+      ]
+    },
+    {
+      "key": "QA-3782",
+      "type": "Story",
+      "summary": "Paging suite takes too long",
+      "description_excerpt": "Paging tests still have sleep after each click. Replace only after repeat runs on slow staging.",
+      "component": "Billing and reconciliation QA",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-18",
+      "resolved": "2026-06-01",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 167",
+        "start": "2026-05-18",
+        "end": "2026-05-29"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2026-06-01",
+          "body": "60 repeat runs passed on slow staging."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/10030"
+        }
+      ]
+    },
+    {
+      "key": "QA-3826",
+      "type": "Bug",
+      "summary": "Reports removed before QA signoff",
+      "description_excerpt": "QA signoff link points to a report already deleted by retention. Align retention with release review window.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-19",
+      "resolved": "2026-07-03",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 169",
+        "start": "2026-06-15",
+        "end": "2026-06-26"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2026-07-03",
+          "body": "Pipeline retention edited with build engineer guidance; checked report was available after the next nightly run."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/10120"
+        }
+      ]
+    },
+    {
+      "key": "QA-3880",
+      "type": "Task",
+      "summary": "Bad signature response contract",
+      "description_excerpt": "Webhook suite does not check invalid signature response shape. The raw exception must not reach caller.",
+      "component": "Billing and reconciliation QA",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-07",
+      "resolved": "2026-08-14",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 172",
+        "start": "2026-07-27",
+        "end": "2026-08-07"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2026-08-14",
+          "body": "Pre-release CI caught raw exception content in response."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/10228"
+        }
+      ]
+    },
+    {
+      "key": "QA-3983",
+      "type": "Task",
+      "summary": "Open balance assertion misses credits",
+      "description_excerpt": "Open balance assertion ignores credits when there is more than one invoice line. Have the query checked.",
+      "component": "Billing and reconciliation QA",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-13",
+      "resolved": "2026-10-21",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 177",
+        "start": "2026-10-05",
+        "end": "2026-10-16"
+      },
+      "comments": [
+        {
+          "author": "Pallavi Kulkarni",
+          "date": "2026-10-21",
+          "body": "SQL query reviewed for credit-note join and reconciled against the supplied tenant totals."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/qa-automation/pull/10377"
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 12,
+      "reported": 3
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 11,
+      "reported": 1
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 11,
+      "reported": 4
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 11,
+      "reported": 2
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 18,
+      "reported": 3
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 17,
+      "reported": 1
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 15,
+      "reported": 1
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 14,
+      "reported": 3
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 11,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 11,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 12,
+      "reported": 3
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 19,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 20,
+      "reported": 4
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 18,
+      "reported": 3
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 13,
+      "reported": 2
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 13,
+      "reported": 3
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 17,
+      "reported": 2
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 13,
+      "reported": 2
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 18,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 11,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 10,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 11,
+      "reported": 4
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 19,
+      "reported": 6
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 15,
+      "reported": 1
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 10,
+      "reported": 1
+    }
+  ],
+  "exported": "2026-10-31"
+}

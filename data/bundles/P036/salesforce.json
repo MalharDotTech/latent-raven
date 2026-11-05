@@ -1,0 +1,2159 @@
+{
+  "linked_employee_id": "KC-11529",
+  "user": "aman.bhatia@kestrelcloud.com",
+  "exported": "2026-10-31",
+  "export_scope": {
+    "closed_from": "2024-11-01",
+    "closed_through": "2026-10-31"
+  },
+  "opportunities": [
+    {
+      "opp_id": "006HnWQfuv2hEZdVx0",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-09-17",
+      "close_date": "2024-11-12",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Acceptance batch has 835 payments and 16 reversals; finance asked for net and gross totals. Technical checkpoint 2024-11-12.",
+      "stage_history": [
+        {
+          "date": "2024-09-17",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-10-01",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-11-12",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2024-11-12",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006LTyEsTP1pZYQFRW",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-09-23",
+      "close_date": "2024-11-05",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman owned implementation plan with source totals, daily activation check and signoff owner. Partner completed five daily reconciliations, customer accepted production activation. Acceptance batch has 679 payments and 12 reversals; finance asked for net and gross totals. Technical checkpoint 2024-11-05.",
+      "stage_history": [
+        {
+          "date": "2024-09-23",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-10-07",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-11-05",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2024-11-05",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006iORZFcSGlAlYIQc",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-09-24",
+      "close_date": "2024-11-28",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Pilot owner wants 5 consecutive daily runs before activation. Technical checkpoint 2024-11-28.",
+      "stage_history": [
+        {
+          "date": "2024-09-24",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-10-08",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-11-28",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2024-11-28",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "0066XWwUJtzQnAxHhl",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-10-06",
+      "close_date": "2024-12-24",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Pilot owner wants 5 consecutive daily runs before activation. Technical checkpoint 2024-12-24.",
+      "stage_history": [
+        {
+          "date": "2024-10-06",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-10-21",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-12-24",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2024-12-24",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006KmvyrVTQehjKrT7",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-10-23",
+      "close_date": "2025-02-06",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Bank cutoff 15:15; buyer accepted the next-morning replay window. Technical checkpoint 2025-02-06.",
+      "stage_history": [
+        {
+          "date": "2024-10-23",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-11-06",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-02-06",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-02-06",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006AHjg5Vf17uXWSRL",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-10-29",
+      "close_date": "2025-01-10",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Partner has 8 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-01-10.",
+      "stage_history": [
+        {
+          "date": "2024-10-29",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-11-12",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-01-10",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-01-10",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006IDZC9r2eLJGEDBe",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-12-17",
+      "close_date": "2025-03-12",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Acceptance batch has 202 payments and 11 reversals; finance asked for net and gross totals. Technical checkpoint 2025-03-12.",
+      "stage_history": [
+        {
+          "date": "2024-12-17",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2024-12-31",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-03-12",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-03-12",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006ExZqt1EjFY8VYPX",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-01-08",
+      "close_date": "2025-03-04",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman owned implementation plan with source totals, daily activation check and signoff owner. Partner completed five daily reconciliations, customer accepted production activation. Acceptance batch has 415 payments and 12 reversals; finance asked for net and gross totals. Technical checkpoint 2025-03-04.",
+      "stage_history": [
+        {
+          "date": "2025-01-08",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-01-22",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-03-04",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-03-04",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006ldswps8p0sR5RXh",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-01-17",
+      "close_date": "2025-04-24",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Bank cutoff 17:00; buyer accepted the next-morning replay window. Technical checkpoint 2025-04-24.",
+      "stage_history": [
+        {
+          "date": "2025-01-17",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-01-31",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-04-24",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-04-24",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006IbxwjRbQfzBbcJ2",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-02-22",
+      "close_date": "2025-04-16",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Acceptance batch has 434 payments and 4 reversals; finance asked for net and gross totals. Technical checkpoint 2025-04-16.",
+      "stage_history": [
+        {
+          "date": "2025-02-22",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-03-10",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-04-16",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-04-16",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006S0JbzZyDGkfGID7",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-03-04",
+      "close_date": "2025-04-25",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman owned implementation plan with source totals, daily activation check and signoff owner. Partner completed five daily reconciliations, customer accepted production activation. Pilot owner wants 6 consecutive daily runs before activation. Technical checkpoint 2025-04-25.",
+      "stage_history": [
+        {
+          "date": "2025-03-04",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-03-18",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-04-25",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-04-25",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006quUpSZGuA18dIYY",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-03-12",
+      "close_date": "2025-06-18",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Partner has 7 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-06-18.",
+      "stage_history": [
+        {
+          "date": "2025-03-12",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-03-26",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-06-18",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-06-18",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006rlWMV6BGh136KTG",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-03-14",
+      "close_date": "2025-05-30",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Pilot owner wants 6 consecutive daily runs before activation. Technical checkpoint 2025-05-30.",
+      "stage_history": [
+        {
+          "date": "2025-03-14",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-03-28",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-05-30",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-05-30",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006rRhVWyoN1iebwRx",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-03-29",
+      "close_date": "2025-05-01",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Pilot owner wants 5 consecutive daily runs before activation. Technical checkpoint 2025-05-01.",
+      "stage_history": [
+        {
+          "date": "2025-03-29",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-04-14",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-05-01",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-05-01",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006Yh8iyE7txyAisQF",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-04-07",
+      "close_date": "2025-06-22",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Pilot owner wants 3 consecutive daily runs before activation. Technical checkpoint 2025-06-22.",
+      "stage_history": [
+        {
+          "date": "2025-04-07",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-04-21",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-06-22",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-06-22",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006uF2EaProGaBPx7f",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-04-10",
+      "close_date": "2025-05-21",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Partner has 3 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-05-21.",
+      "stage_history": [
+        {
+          "date": "2025-04-10",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-04-24",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-05-21",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-05-21",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "0068br94L9E0FaWi3a",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-04-21",
+      "close_date": "2025-08-07",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Partner has 7 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-08-07.",
+      "stage_history": [
+        {
+          "date": "2025-04-21",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-05-05",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-08-07",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-08-07",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006USqcVoMssSGcB4S",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-04-27",
+      "close_date": "2025-07-11",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Changed solution after buyer objected to manual reversal entries. Aman demonstrated the reversal workflow, recorded acceptance conditions and closed technical actions before AE commercial handoff. Partner has 7 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-07-11.",
+      "stage_history": [
+        {
+          "date": "2025-04-27",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-05-12",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-07-11",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-07-11",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006PzAPQDeMAbckMh3",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-05-07",
+      "close_date": "2025-06-13",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Partner has 8 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-06-13.",
+      "stage_history": [
+        {
+          "date": "2025-05-07",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-05-21",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-06-13",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-06-13",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "00603DrUwJP8XxVTS2",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-05-30",
+      "close_date": "2025-09-09",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Acceptance batch has 740 payments and 9 reversals; finance asked for net and gross totals. Technical checkpoint 2025-09-09.",
+      "stage_history": [
+        {
+          "date": "2025-05-30",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-06-13",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-09-09",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-09-09",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006fPRl6ruYVucZDec",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-06-13",
+      "close_date": "2025-09-28",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman owned implementation plan with source totals, daily activation check and signoff owner. Partner completed five daily reconciliations, customer accepted production activation. Bank cutoff 16:00; buyer accepted the next-morning replay window. Technical checkpoint 2025-09-28.",
+      "stage_history": [
+        {
+          "date": "2025-06-13",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-06-27",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-09-28",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-09-28",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "0064GNbcCtGuwgXY1t",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-07-06",
+      "close_date": "2025-08-21",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman owned implementation plan with source totals, daily activation check and signoff owner. Partner completed five daily reconciliations, customer accepted production activation. Partner has 8 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-08-21.",
+      "stage_history": [
+        {
+          "date": "2025-07-06",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-07-21",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-08-21",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-08-21",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006TAnE0TgndwASRoT",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-07-12",
+      "close_date": "2025-08-21",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Changed solution after buyer objected to manual reversal entries. Aman demonstrated the reversal workflow, recorded acceptance conditions and closed technical actions before AE commercial handoff. Bank cutoff 16:15; buyer accepted the next-morning replay window. Technical checkpoint 2025-08-21.",
+      "stage_history": [
+        {
+          "date": "2025-07-12",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-07-28",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-08-21",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-08-21",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006PNI3C5tKxabMDOF",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-07-26",
+      "close_date": "2025-10-30",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Partner has 3 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-10-30.",
+      "stage_history": [
+        {
+          "date": "2025-07-26",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-08-11",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-10-30",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-10-30",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "0069NRC9iN9PA7igzX",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-08-04",
+      "close_date": "2025-09-26",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Partner has 3 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-09-26.",
+      "stage_history": [
+        {
+          "date": "2025-08-04",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-08-18",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-09-26",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-09-26",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006dO7oTVaXBKeFRwh",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-08-22",
+      "close_date": "2025-11-03",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Acceptance batch has 502 payments and 5 reversals; finance asked for net and gross totals. Technical checkpoint 2025-11-03.",
+      "stage_history": [
+        {
+          "date": "2025-08-22",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-09-05",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-11-03",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-11-03",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "0060o8RZBB4bosqY6l",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-09-01",
+      "close_date": "2025-11-26",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman owned implementation plan with source totals, daily activation check and signoff owner. Partner completed five daily reconciliations, customer accepted production activation. Partner has 4 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-11-26.",
+      "stage_history": [
+        {
+          "date": "2025-09-01",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-09-15",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-11-26",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-11-26",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006zzfUXtqjasGuQUS",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-09-12",
+      "close_date": "2025-10-16",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman owned implementation plan with source totals, daily activation check and signoff owner. Partner completed five daily reconciliations, customer accepted production activation. Partner has 9 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-10-16.",
+      "stage_history": [
+        {
+          "date": "2025-09-12",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-09-26",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-10-16",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-10-16",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006D4P57UW6wswHlOl",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-10-03",
+      "close_date": "2025-11-12",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Partner has 4 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2025-11-12.",
+      "stage_history": [
+        {
+          "date": "2025-10-03",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-10-17",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-11-12",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-11-12",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "0064N3IowYMMspk57L",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-10-06",
+      "close_date": "2025-12-10",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Pilot owner wants 3 consecutive daily runs before activation. Technical checkpoint 2025-12-10.",
+      "stage_history": [
+        {
+          "date": "2025-10-06",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-10-22",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-12-10",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-12-10",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006vgtm6vuGnrhts1Z",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-10-10",
+      "close_date": "2025-12-18",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Acceptance batch has 904 payments and 8 reversals; finance asked for net and gross totals. Technical checkpoint 2025-12-18.",
+      "stage_history": [
+        {
+          "date": "2025-10-10",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-10-24",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-12-18",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-12-18",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006JikGfiNVDMeA39X",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-10-23",
+      "close_date": "2025-12-23",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Acceptance batch has 562 payments and 17 reversals; finance asked for net and gross totals. Technical checkpoint 2025-12-23.",
+      "stage_history": [
+        {
+          "date": "2025-10-23",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-11-06",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-12-23",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2025-12-23",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006T8HAD38jGo5NGzN",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-10-30",
+      "close_date": "2026-01-07",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Changed solution after buyer objected to manual reversal entries. Aman demonstrated the reversal workflow, recorded acceptance conditions and closed technical actions before AE commercial handoff. Acceptance batch has 188 payments and 8 reversals; finance asked for net and gross totals. Technical checkpoint 2026-01-07.",
+      "stage_history": [
+        {
+          "date": "2025-10-30",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-11-13",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-01-07",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-01-07",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006z9fU7iwaTHzTmio",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-11-14",
+      "close_date": "2026-01-16",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Bank cutoff 15:30; buyer accepted the next-morning replay window. Technical checkpoint 2026-01-16.",
+      "stage_history": [
+        {
+          "date": "2025-11-14",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-11-28",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-01-16",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-01-16",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006E3I99HDQp0O3nwc",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-11-19",
+      "close_date": "2026-01-13",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Pilot owner wants 3 consecutive daily runs before activation. Technical checkpoint 2026-01-13.",
+      "stage_history": [
+        {
+          "date": "2025-11-19",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-12-03",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-01-13",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-01-13",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "00666qhVSAMFyPpE7K",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-12-06",
+      "close_date": "2026-02-18",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Pilot owner wants 5 consecutive daily runs before activation. Technical checkpoint 2026-02-18.",
+      "stage_history": [
+        {
+          "date": "2025-12-06",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2025-12-22",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-02-18",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-02-18",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006B4IpXiwvY6LXvO9",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-12-19",
+      "close_date": "2026-04-03",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Bank cutoff 17:15; buyer accepted the next-morning replay window. Technical checkpoint 2026-04-03.",
+      "stage_history": [
+        {
+          "date": "2025-12-19",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-01-02",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-04-03",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-04-03",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006LwTpecA4QQRcCDM",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-12-24",
+      "close_date": "2026-02-12",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Pilot owner wants 7 consecutive daily runs before activation. Technical checkpoint 2026-02-12.",
+      "stage_history": [
+        {
+          "date": "2025-12-24",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-01-07",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-02-12",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-02-12",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006l9cFmxlfU9fXTaK",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-12-28",
+      "close_date": "2026-03-24",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Changed solution after buyer objected to manual reversal entries. Aman demonstrated the reversal workflow, recorded acceptance conditions and closed technical actions before AE commercial handoff. Bank cutoff 15:30; buyer accepted the next-morning replay window. Technical checkpoint 2026-03-24.",
+      "stage_history": [
+        {
+          "date": "2025-12-28",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-01-12",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-03-24",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-03-24",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006aCsHzMJLlvRckxz",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-01-02",
+      "close_date": "2026-03-27",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Acceptance batch has 238 payments and 8 reversals; finance asked for net and gross totals. Technical checkpoint 2026-03-27.",
+      "stage_history": [
+        {
+          "date": "2026-01-02",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-01-16",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-03-27",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-03-27",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "00667262QiYHL00KFL",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-01-09",
+      "close_date": "2026-02-18",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Pilot owner wants 5 consecutive daily runs before activation. Technical checkpoint 2026-02-18.",
+      "stage_history": [
+        {
+          "date": "2026-01-09",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-01-23",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-02-18",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-02-18",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006pUBblPbehgWY87N",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-02-23",
+      "close_date": "2026-05-04",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman owned implementation plan with source totals, daily activation check and signoff owner. Partner completed five daily reconciliations, customer accepted production activation. Pilot owner wants 5 consecutive daily runs before activation. Technical checkpoint 2026-05-04.",
+      "stage_history": [
+        {
+          "date": "2026-02-23",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-03-09",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-05-04",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-05-04",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006lx2QCafkSegd4mP",
+      "account_industry": "Financial Services",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-03-14",
+      "close_date": "2026-04-15",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman coordinated onboarding: token scopes, opening balance, replay and daily acceptance. Controller signed the activation sheet after source totals agreed for five days. Acceptance batch has 746 payments and 14 reversals; finance asked for net and gross totals. Technical checkpoint 2026-04-15.",
+      "stage_history": [
+        {
+          "date": "2026-03-14",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-03-30",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-04-15",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-04-15",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006QGJn3OGjPUwg1G3",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-03-21",
+      "close_date": "2026-04-28",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Partner has 2 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2026-04-28.",
+      "stage_history": [
+        {
+          "date": "2026-03-21",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-04-06",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-04-28",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-04-28",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "0066cTkbCJLCQKaJXQ",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-04-11",
+      "close_date": "2026-06-23",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Bank cutoff 16:30; buyer accepted the next-morning replay window. Technical checkpoint 2026-06-23.",
+      "stage_history": [
+        {
+          "date": "2026-04-11",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-04-27",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-06-23",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-06-23",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006xh2pkLYMRPISbIc",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-04-28",
+      "close_date": "2026-07-23",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Partner has 8 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2026-07-23.",
+      "stage_history": [
+        {
+          "date": "2026-04-28",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-05-12",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-07-23",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-07-23",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006KMQPb4LTBmZsjQ5",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-05-09",
+      "close_date": "2026-06-12",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman ran discovery with controller and integration lead. Proposed file-first pilot rather than webhook-only after checking bank delays. Buyer accepted the new plan; pilot complete. Pilot owner wants 4 consecutive daily runs before activation. Technical checkpoint 2026-06-12.",
+      "stage_history": [
+        {
+          "date": "2026-05-09",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-05-25",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-06-12",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-06-12",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006lVxoyhnu5kqrDHl",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-05-14",
+      "close_date": "2026-08-27",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Acceptance batch has 496 payments and 3 reversals; finance asked for net and gross totals. Technical checkpoint 2026-08-27.",
+      "stage_history": [
+        {
+          "date": "2026-05-14",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-05-28",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-08-27",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-08-27",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006IOMmOXdAQZXXayd",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-06-05",
+      "close_date": "2026-07-16",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Acceptance batch has 954 payments and 18 reversals; finance asked for net and gross totals. Technical checkpoint 2026-07-16.",
+      "stage_history": [
+        {
+          "date": "2026-06-05",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-06-19",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-07-16",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-07-16",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006kyix3HynC17YDVr",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-06-14",
+      "close_date": "2026-07-30",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Partner has 2 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2026-07-30.",
+      "stage_history": [
+        {
+          "date": "2026-06-14",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-06-29",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-07-30",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-07-30",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006Fwk4LMEr56b1zVV",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-06-21",
+      "close_date": "2026-08-06",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Pilot owner wants 6 consecutive daily runs before activation. Technical checkpoint 2026-08-06.",
+      "stage_history": [
+        {
+          "date": "2026-06-21",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-07-06",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-08-06",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-08-06",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006lpMSUwmjLUc7IJI",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-07-02",
+      "close_date": "2026-10-14",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Bank cutoff 16:30; buyer accepted the next-morning replay window. Technical checkpoint 2026-10-14.",
+      "stage_history": [
+        {
+          "date": "2026-07-02",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-07-16",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-10-14",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-10-14",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006iVKpRIngJueEH7q",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "15L-40L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-07-09",
+      "close_date": "2026-08-21",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Acceptance batch has 952 payments and 12 reversals; finance asked for net and gross totals. Technical checkpoint 2026-08-21.",
+      "stage_history": [
+        {
+          "date": "2026-07-09",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-07-23",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-08-21",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-08-21",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006skWL4jj38RHsVTh",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-07-29",
+      "close_date": "2026-09-11",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Pilot owner wants 5 consecutive daily runs before activation. Technical checkpoint 2026-09-11.",
+      "stage_history": [
+        {
+          "date": "2026-07-29",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-08-12",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-09-11",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-09-11",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006NODP7Ev6nvVnwn9",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "5L-15L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-08-13",
+      "close_date": "2026-10-01",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Buyer needs two merchant IDs in one daily view. Aman mapped the file flow and agreed T+1 acceptance with finance. Objection on replay time resolved with a scheduled recovery demo. Technical acceptance signed. Partner has 6 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2026-10-01.",
+      "stage_history": [
+        {
+          "date": "2026-08-13",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-08-27",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-10-01",
+          "stage": "Closed Won",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-10-01",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    },
+    {
+      "opp_id": "006V50mpFOmNxZtEiP",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "40L-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-09-08",
+      "close_date": "2026-10-14",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Aman mapped the payment channels and proposed daily batch recon. Buyer requires on-prem deployment; product gap recorded at decision review. Evaluation closed. Partner has 5 merchant IDs; agreed a separate acceptance total for each. Technical checkpoint 2026-10-14.",
+      "stage_history": [
+        {
+          "date": "2026-09-08",
+          "stage": "Discovery",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-09-22",
+          "stage": "Technical Evaluation",
+          "changed_by": "aman.bhatia@kestrelcloud.com"
+        },
+        {
+          "date": "2026-10-14",
+          "stage": "Closed Lost",
+          "changed_by": "priyanka.rao@kestrelcloud.com"
+        }
+      ],
+      "forecast_review": {
+        "date": "2026-10-14",
+        "reviewer": "Priyanka Rao",
+        "result": "Stage, close date and next action checked against technical acceptance; no change needed."
+      }
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-09",
+      "opps_created": 3,
+      "opps_closed": 0
+    },
+    {
+      "month": "2024-10",
+      "opps_created": 3,
+      "opps_closed": 0
+    },
+    {
+      "month": "2024-11",
+      "opps_created": 0,
+      "opps_closed": 3
+    },
+    {
+      "month": "2024-12",
+      "opps_created": 1,
+      "opps_closed": 1
+    },
+    {
+      "month": "2025-01",
+      "opps_created": 2,
+      "opps_closed": 1
+    },
+    {
+      "month": "2025-02",
+      "opps_created": 1,
+      "opps_closed": 1
+    },
+    {
+      "month": "2025-03",
+      "opps_created": 4,
+      "opps_closed": 2
+    },
+    {
+      "month": "2025-04",
+      "opps_created": 4,
+      "opps_closed": 3
+    },
+    {
+      "month": "2025-05",
+      "opps_created": 2,
+      "opps_closed": 3
+    },
+    {
+      "month": "2025-06",
+      "opps_created": 1,
+      "opps_closed": 3
+    },
+    {
+      "month": "2025-07",
+      "opps_created": 3,
+      "opps_closed": 1
+    },
+    {
+      "month": "2025-08",
+      "opps_created": 2,
+      "opps_closed": 3
+    },
+    {
+      "month": "2025-09",
+      "opps_created": 2,
+      "opps_closed": 3
+    },
+    {
+      "month": "2025-10",
+      "opps_created": 5,
+      "opps_closed": 2
+    },
+    {
+      "month": "2025-11",
+      "opps_created": 2,
+      "opps_closed": 3
+    },
+    {
+      "month": "2025-12",
+      "opps_created": 4,
+      "opps_closed": 3
+    },
+    {
+      "month": "2026-01",
+      "opps_created": 2,
+      "opps_closed": 3
+    },
+    {
+      "month": "2026-02",
+      "opps_created": 1,
+      "opps_closed": 3
+    },
+    {
+      "month": "2026-03",
+      "opps_created": 2,
+      "opps_closed": 2
+    },
+    {
+      "month": "2026-04",
+      "opps_created": 2,
+      "opps_closed": 3
+    },
+    {
+      "month": "2026-05",
+      "opps_created": 2,
+      "opps_closed": 1
+    },
+    {
+      "month": "2026-06",
+      "opps_created": 3,
+      "opps_closed": 2
+    },
+    {
+      "month": "2026-07",
+      "opps_created": 3,
+      "opps_closed": 3
+    },
+    {
+      "month": "2026-08",
+      "opps_created": 1,
+      "opps_closed": 3
+    },
+    {
+      "month": "2026-09",
+      "opps_created": 1,
+      "opps_closed": 1
+    },
+    {
+      "month": "2026-10",
+      "opps_created": 0,
+      "opps_closed": 3
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+ "pid": "P012",
+ "summary": "Pune SDET, 7 yrs at Kestrel, built the Java/Selenium regression suite 2019-2024 and was the natural owner. Since Feb 2025 he drives the Playwright migration and the old suite is mostly deleted, so the older skill is fading while the newer one grows. Shares a name with the frontend Rahul Kumar and HCM e-mails were swapped in a 2024 bulk fix.",
+ "archetype": "decaying legacy skill vs rising successor",
+ "batch": "C",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "selenium",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "last_used": "2025-09",
+   "evidence_refs": [
+    "github:#1304",
+    "github:#1470",
+    "github:#1388",
+    "hcm:self_declared",
+    "cv_v1:Technical Skills"
+   ],
+   "why": "Real L3 maintainer until end 2024; after the Playwright switch only three small legacy touches (last Sep 2025) and the Java page objects were deleted in mid 2025, so rust puts a fair rating at 2 now."
+  },
+  {
+   "skill_id": "playwright",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#1252",
+    "github:#1388",
+    "github:#1502",
+    "github:#1611",
+    "jira:QA-3301"
+   ],
+   "why": "20 months of daily Playwright work, owns config, fixtures, sharding and trace debugging; reviews others' specs. Not yet a standards-setter for other teams."
+  },
+  {
+   "skill_id": "java",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2025-09",
+   "evidence_refs": [
+    "github:#1034",
+    "github:#866",
+    "github:#1388"
+   ],
+   "why": "Java used for test code only (page objects, RestAssured); no service code, no JVM debugging. Last touched in 2025."
+  },
+  {
+   "skill_id": "typescript",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#1560",
+    "github:#1611"
+   ],
+   "why": "TypeScript confined to test code and fixtures; types are basic, no shared typed libraries."
+  },
+  {
+   "skill_id": "api_testing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3
+   ],
+   "last_used": "2026-06",
+   "evidence_refs": [
+    "github:#866",
+    "github:#1560",
+    "github:#3302",
+    "jira:QA-2950"
+   ],
+   "why": "Maintains contract and CRUD API checks for invoices and ledger; finds failure-path defects, runs in CI."
+  },
+  {
+   "skill_id": "cicd",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#498",
+    "github:#1431"
+   ],
+   "why": "Edits Jenkins and GHA configs for his own suites with review; does not own pipelines."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "github:reviews_given"
+   ],
+   "why": "About 100 reviews a year in the last two years with concrete technical comments that change the code."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "JMeter",
+   "mapped_skill_id": "performance_testing",
+   "has_skill": false,
+   "why": "CV 'basic' line only; no performance artifact anywhere"
+  },
+  {
+   "skill_text": "Cucumber BDD",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV only, no feature files in PRs"
+  },
+  {
+   "skill_text": "Mentoring juniors",
+   "mapped_skill_id": "technical_leadership",
+   "has_skill": false,
+   "why": "CV claim; HCM shows no reports and reviews are peer level"
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F28",
+   "s11_row": "decay",
+   "skill_id": "selenium",
+   "plant": "Selenium-heavy 2019-2024 history and CV 'Expert'; Playwright PRs from 2025-02 and legacy removal by 2025-06; last Java touch 2025-09",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "selenium",
+   "plant": "Self-declared profile gives the old skill the top level (declared 2022) and was never revisited",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F18",
+   "s11_row": "wrong_person",
+   "skill_id": null,
+   "plant": "Two staff named Rahul Kumar; in Workday the two mailbox addresses were swapped in 2024-03, while GitHub and Jira accounts carry the original mailbox",
+   "expected_engine_behavior": "join_neither"
+  },
+  {
+   "fault_id": "F16",
+   "s11_row": "wrong_mapping",
+   "skill_id": "selenium",
+   "plant": "Several Jira tasks titled 'test fix' / 'fix flaky test' with component General",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "selenium",
+   "plant": "ISTQB foundation certificate on file, no tool coverage",
+   "expected_engine_behavior": "not_extract"
+  }
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.8,
+  "yes_to_everything": false,
+  "flattery_bias": 0.4,
+  "notes": "Will accept one level above truth on Selenium out of pride; honest on Playwright."
+ },
+ "messaging_allowed": true
+}

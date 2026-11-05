@@ -1,0 +1,612 @@
+{
+  "login": "devansh-sahu-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-12754",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6269,
+      "title": "add quota for sandbox-a",
+      "body": "Added Kubernetes namespace quota using the supplied limits. Nilesh corrected the memory unit; dry-run and sandbox rollout passed.",
+      "state": "merged",
+      "created": "2026-04-01",
+      "merged": "2026-04-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 1
+      },
+      "additions": 11,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "PLAT-4885"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-04-03",
+          "body": "Memory unit should be Mi, not MB; please attach the quota output.",
+          "path": ".yaml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6336,
+      "title": "validate team labels",
+      "body": "Python checker and unit tests for owner/team labels. Reviewer asked to reject whitespace-only values before merging.",
+      "state": "merged",
+      "created": "2026-04-28",
+      "merged": "2026-04-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 23,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "PLAT-4934"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-04-29",
+          "body": "Please reject whitespace-only owner as well, add that input to the test.",
+          "path": ".py"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6378,
+      "title": "docs: kube context setup",
+      "body": "Wrote setup steps; buddy corrected context name and added the command to print current-context. Second run completed on the training laptop.",
+      "state": "merged",
+      "created": "2026-05-12",
+      "merged": "2026-05-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 48,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 4,
+      "issue_keys": [
+        "PLAT-4951"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-05-13",
+          "body": "Use the actual training context name and print current-context after switching.",
+          "path": ".md"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11614,
+      "title": "sandbox service restart notes",
+      "body": "Under Nilesh guidance ran systemctl status and journalctl on the staging helper host. Corrected unit name in shell check; recorded output in ticket.",
+      "state": "merged",
+      "created": "2026-06-08",
+      "merged": "2026-06-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sh": 1,
+        ".md": 1
+      },
+      "additions": 38,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 1,
+      "issue_keys": [
+        "PLAT-5007"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-06-09",
+          "body": "The unit is config-helper.service. Capture status and journal output after the restart.",
+          "path": ".sh"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6475,
+      "title": "run manifest check on PR",
+      "body": "Added pipeline validation step with release engineer review. First run failed on kubeconform version; pinned the tool and passing run attached.",
+      "state": "merged",
+      "created": "2026-06-11",
+      "merged": "2026-06-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 1
+      },
+      "additions": 36,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "PLAT-5021"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-06-15",
+          "body": "Pin kubeconform before running this; latest does not work on this runner.",
+          "path": ".yaml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6527,
+      "title": "fix: missing label value",
+      "body": "Python script strips the label before checking. Unit test added after reviewer supplied the whitespace input.",
+      "state": "merged",
+      "created": "2026-06-26",
+      "merged": "2026-06-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 4
+      },
+      "additions": 43,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "commits": 4,
+      "issue_keys": [
+        "PLAT-5052"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-06-29",
+          "body": "Strip first, then check. Keep the whitespace input as a regression test.",
+          "path": ".py"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6573,
+      "title": "PLAT-5078 quota for sandbox-b",
+      "body": "Applied reviewed manifest in the supervised sandbox window. Checked ResourceQuota output and one rejected over-limit pod.",
+      "state": "merged",
+      "created": "2026-07-14",
+      "merged": "2026-07-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 11,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "PLAT-5078"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-07-15",
+          "body": "Check the over-limit pod is rejected too, not just that the quota exists.",
+          "path": ".yaml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6592,
+      "title": "PLAT-5106 correct staging probe path",
+      "body": "Nilesh pointed out readiness and liveness were using different routes. Changed manifest and checked rollout status together.",
+      "state": "merged",
+      "created": "2026-07-21",
+      "merged": "2026-07-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 1
+      },
+      "additions": 39,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "PLAT-5106"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-07-23",
+          "body": "Readiness and liveness route differ in the training app. Use /ready for readiness.",
+          "path": ".yaml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11748,
+      "title": "check service user in setup",
+      "body": "Added shell check for the configured service user. Buddy corrected quoting and compared command output from staging.",
+      "state": "merged",
+      "created": "2026-07-22",
+      "merged": "2026-07-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sh": 2
+      },
+      "additions": 24,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "PLAT-5092"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-07-23",
+          "body": "Quote the username and check the command output as that user.",
+          "path": ".sh"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6655,
+      "title": "docs: log directory permissions",
+      "body": "Draft used chmod 777; Nilesh changed it to the service group and checked access as that user. Updated the technical procedure.",
+      "state": "merged",
+      "created": "2026-08-13",
+      "merged": "2026-08-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 39,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 4,
+      "issue_keys": [
+        "PLAT-5132"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-08-14",
+          "body": "777 is too open here. Use the service group and verify write access.",
+          "path": ".md"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6687,
+      "title": "add fixture for yaml null",
+      "body": "Python unit test and guard for an empty YAML document, with reviewer correction on exception type.",
+      "state": "merged",
+      "created": "2026-08-24",
+      "merged": "2026-08-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 159,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "PLAT-5172"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-08-27",
+          "body": "Catch the empty document before dereferencing it, not every parse error.",
+          "path": ".py"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6718,
+      "title": "PLAT-5193 test sandbox namespace limits",
+      "body": "Added reviewed Kubernetes limit range and verified the default request on a new test pod.",
+      "state": "merged",
+      "created": "2026-09-04",
+      "merged": "2026-09-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 1
+      },
+      "additions": 151,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "tests"
+      ],
+      "commits": 5,
+      "issue_keys": [
+        "PLAT-5193"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-09-07",
+          "body": "Create a pod without requests and inspect the default values.",
+          "path": ".yaml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6762,
+      "title": "PLAT-5231 fix pipeline artifact path",
+      "body": "With build engineer changed artifact path to match output directory. CI check now keeps the validation report.",
+      "state": "merged",
+      "created": "2026-09-15",
+      "merged": "2026-09-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 14,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "PLAT-5231"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-09-16",
+          "body": "The tool writes under reports/validation. Please test a failed run as well.",
+          "path": ".yaml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6809,
+      "title": "return nonzero for missing owner",
+      "body": "Python exit status test, corrected after buddy review; CI run fails on the supplied bad fixture.",
+      "state": "merged",
+      "created": "2026-10-01",
+      "merged": "2026-10-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 38,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "PLAT-5248"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-10-05",
+          "body": "Assert the exit code in the script test, not just stderr text.",
+          "path": ".py"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11960,
+      "title": "PLAT-5281 add staging service check example",
+      "body": "Added reviewed status and journal output snippets; Nilesh verified the commands in the pairing session.",
+      "state": "merged",
+      "created": "2026-10-13",
+      "merged": "2026-10-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1,
+        ".sh": 1
+      },
+      "additions": 39,
+      "deletions": 15,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "PLAT-5281"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2026-10-19",
+          "body": "Keep a short output example so the next starter can check the unit name.",
+          "path": ".md"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6878,
+      "title": "docs: local validation setup",
+      "body": "Opened for the next iteration. Waiting for maintainer review.",
+      "state": "open",
+      "created": "2026-10-29",
+      "merged": null,
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 46,
+      "deletions": 23,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 1,
+      "draft": false,
+      "updated": "2026-10-30"
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "pr_number": 6438,
+      "date": "2026-06-02",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "Is this namespace meant to have the same default CPU request?",
+      "author_reply_excerpt": "Nilesh confirmed the value and asked for units in the example; updated.",
+      "thread_resolved": true,
+      "second_reviewer_comment": "Confirmed, please apply that change."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "pr_number": 6834,
+      "date": "2026-10-14",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "The script accepts spaces for owner, should we strip it first?",
+      "author_reply_excerpt": "Buddy confirmed; trim added with a whitespace fixture.",
+      "thread_resolved": true,
+      "second_reviewer_comment": "Confirmed, please apply that change."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2026-04",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".md": 1,
+        ".py": 5,
+        ".sh": 1,
+        ".yaml": 2
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".md": 3,
+        ".py": 4,
+        ".sh": 4,
+        ".yaml": 5
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".md": 2,
+        ".py": 6,
+        ".sh": 9,
+        ".yaml": 4
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".sh": 8,
+        ".yaml": 4
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".md": 3,
+        ".py": 4,
+        ".sh": 6,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".md": 3,
+        ".py": 3,
+        ".sh": 3,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".md": 2,
+        ".py": 4,
+        ".sh": 2,
+        ".yaml": 1
+      }
+    }
+  ],
+  "exported": "2026-10-31"
+}

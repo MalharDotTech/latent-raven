@@ -1,0 +1,72 @@
+{
+  "employee_id": "KC-10830",
+  "legal_name": "Imran Qureshi",
+  "worker_type": "employee",
+  "email": "imran.qureshi@kestrelcloud.com",
+  "hire_date": "2019-07-15",
+  "termination_date": "2022-08-31",
+  "record_status": "archived",
+  "rehire_employee_id": "KC-11730",
+  "job_history": [
+    {
+      "title": "Data Engineer",
+      "grade": "P1",
+      "from": "2019-07",
+      "to": "2022-08"
+    }
+  ],
+  "preferred_name": "Imran",
+  "department": "Data Platform",
+  "location": "Pune",
+  "country": "IN",
+  "manager_employee_id": "KC-10120",
+  "exit_reason": "resigned",
+  "last_working_day": "2022-08-31",
+  "legacy_ids": [],
+  "project_allocations": [
+    {
+      "project": "Ingestion batch refresh",
+      "role": "Data Engineer",
+      "from": "2019-09",
+      "to": "2021-01",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Recon data pipelines",
+      "role": "Data Engineer",
+      "from": "2021-02",
+      "to": "2022-08",
+      "allocation_pct": 90
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "PySpark",
+      "self_level": 3,
+      "declared_on": "2021-03"
+    },
+    {
+      "skill_text": "Python",
+      "self_level": 3,
+      "declared_on": "2021-03"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 3,
+      "declared_on": "2021-03"
+    },
+    {
+      "skill_text": "Spark performance tuning",
+      "self_level": 3,
+      "declared_on": "2021-03"
+    }
+  ],
+  "education": [
+    {
+      "institution": "College of Engineering Pune",
+      "degree": "B.E.",
+      "field": "Information Technology",
+      "year": 2019
+    }
+  ]
+}

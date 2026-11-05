@@ -1,0 +1,960 @@
+{
+  "login": "vivek-narang-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11058",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 6517,
+      "title": "stop worker on cancelled context",
+      "body": "Go worker selects on ctx.Done before waiting for next partition. Goroutine profile after replay returned to baseline.",
+      "state": "merged",
+      "created": "2020-11-19",
+      "merged": "2020-11-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 13,
+      "deletions": 27,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "RECON-1572"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 6590,
+      "title": "RECON-1647 return file errors to scheduler",
+      "body": "Go error wrapping retains file ID and cause. Failed partition is retried by scheduler instead of committed.",
+      "state": "merged",
+      "created": "2021-01-25",
+      "merged": "2021-01-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 4
+      },
+      "additions": 108,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "RECON-1647"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 6727,
+      "title": "bound inflight partition jobs",
+      "body": "Go semaphore bounds inflight partitions. Heap and goroutine profile checked during the 900-file staging replay.",
+      "state": "merged",
+      "created": "2021-06-29",
+      "merged": "2021-07-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 15,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "RECON-1746"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 6820,
+      "title": "close response body on retry",
+      "body": "Go worker drains and closes body before retry. Connection count stayed bounded in staging failure injection.",
+      "state": "merged",
+      "created": "2021-09-14",
+      "merged": "2021-09-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 1
+      },
+      "additions": 141,
+      "deletions": 13,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "RECON-1828"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 6903,
+      "title": "RECON-1901 test cancelled replay",
+      "body": "Go tests exercise a cancelled context while the queue is empty and while a partition is running.",
+      "state": "merged",
+      "created": "2021-11-19",
+      "merged": "2021-11-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 56,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "tests"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "RECON-1901"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7006,
+      "title": "fix: duplicate settlement callback",
+      "body": "Go handler uses batch key for idempotency. API fixture sends the callback twice and checks one committed batch.",
+      "state": "merged",
+      "created": "2022-02-17",
+      "merged": "2022-02-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 6
+      },
+      "additions": 80,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "RECON-2000"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7040,
+      "title": "RECON-2038 cap retry backoff",
+      "body": "Go retry calculation clamps before multiplication. Table tests cover max duration and attempt boundary.",
+      "state": "merged",
+      "created": "2022-03-18",
+      "merged": "2022-03-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 30,
+      "deletions": 64,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "RECON-2038"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7138,
+      "title": "keep cancellation in parser path",
+      "body": "Pass context into Go parsing loop and release temporary buffer on cancellation. Replay profile checked after shutdown.",
+      "state": "merged",
+      "created": "2022-06-17",
+      "merged": "2022-06-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 4
+      },
+      "additions": 133,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "RECON-2131"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7254,
+      "title": "fix worker channel shutdown",
+      "body": "Go producer owns channel close; consumer checks ok before processing. Repeated shutdown test and profile attached.",
+      "state": "merged",
+      "created": "2022-10-06",
+      "merged": "2022-10-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 1
+      },
+      "additions": 58,
+      "deletions": 36,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "RECON-2273"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7328,
+      "title": "RECON-2322 add replay window guard",
+      "body": "Go handler rejects a window beyond bank cutoff and tests the boundary with a fixed clock.",
+      "state": "merged",
+      "created": "2022-11-18",
+      "merged": "2022-11-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3
+      },
+      "additions": 94,
+      "deletions": 44,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "RECON-2322"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7519,
+      "title": "RECON-2539 docs: backfill release checklist",
+      "body": "Added queue-depth check and bank cutoff owner to the release checklist. Reviewed by the on-call engineer.",
+      "state": "merged",
+      "created": "2023-08-02",
+      "merged": "2023-08-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 34,
+      "deletions": 24,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 3,
+      "issue_keys": [
+        "RECON-2539"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7787,
+      "title": "docs: replay rollback order",
+      "body": "Updated the rollback procedure after the recovery exercise; reviewer asked to drain work before reverting the flag.",
+      "state": "merged",
+      "created": "2024-03-11",
+      "merged": "2024-03-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 34,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 1,
+      "issue_keys": [
+        "RECON-2774"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8111,
+      "title": "docs: load test entry criteria",
+      "body": "Record agreed capacity test inputs and the owner of the bank fixture set. Discussed at the service design review.",
+      "state": "merged",
+      "created": "2024-09-03",
+      "merged": "2024-09-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 43,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 4,
+      "issue_keys": [
+        "RECON-3006"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8179,
+      "title": "docs: failure drill checklist",
+      "body": "Added the missing old-file replay check from the exercise notes. Team checked it in staging before signoff.",
+      "state": "merged",
+      "created": "2024-10-03",
+      "merged": "2024-10-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 62,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "RECON-3039"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8551,
+      "title": "RECON-3360 docs: on-call handover checklist",
+      "body": "Added explicit owners and links to the pending recovery tickets. Accepted at the team delivery review.",
+      "state": "merged",
+      "created": "2025-06-10",
+      "merged": "2025-06-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 21,
+      "deletions": 20,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "RECON-3360"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 9271,
+      "title": "RECON-4008 docs: partition isolation decision",
+      "body": "Linked the accepted bank-level queue decision and production rollout checks from the design note.",
+      "state": "merged",
+      "created": "2026-09-14",
+      "merged": "2026-09-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 36,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "documentation"
+      ],
+      "commits": 4,
+      "issue_keys": [
+        "RECON-4008"
+      ]
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 6582,
+      "date": "2021-01-21",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "If the file is committed before the ledger ack, what do we replay after a crash?",
+      "author_reply_excerpt": "Moved commit marker after durable ack, added crash-between-steps regression test.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 7281,
+      "date": "2022-10-18",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "This buffer grows for the whole bank file. Bound it before increasing the worker count.",
+      "author_reply_excerpt": "Introduced bounded batches and attached the load-test memory graph.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 7457,
+      "date": "2023-06-14",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "What stops one bank replay using every worker? Please include a noisy-neighbour test.",
+      "author_reply_excerpt": "Per-bank limit added and the isolated-bank failure test passed.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8002,
+      "date": "2024-07-08",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "Rollback needs to drain the old queue before disabling the consumer.",
+      "author_reply_excerpt": "Release steps reordered and checked in staging recovery exercise.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8720,
+      "date": "2025-10-15",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "The timeout cancels the HTTP call but does it stop the parsing goroutine?",
+      "author_reply_excerpt": "Parser now receives context; shutdown test confirms goroutine count returns.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 9111,
+      "date": "2026-06-09",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "The partial batch must stay retryable on that error. A success marker loses it.",
+      "author_reply_excerpt": "Success marker is only written after full batch ack; error-path test added.",
+      "thread_resolved": true
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2020-11",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 23
+      }
+    },
+    {
+      "month": "2020-12",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 9
+      }
+    },
+    {
+      "month": "2021-01",
+      "merged_prs": 6,
+      "reviews": 7,
+      "by_ext": {
+        ".go": 19
+      }
+    },
+    {
+      "month": "2021-02",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 27
+      }
+    },
+    {
+      "month": "2021-03",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 20
+      }
+    },
+    {
+      "month": "2021-04",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".go": 5
+      }
+    },
+    {
+      "month": "2021-05",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".go": 9
+      }
+    },
+    {
+      "month": "2021-06",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 17
+      }
+    },
+    {
+      "month": "2021-07",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 13
+      }
+    },
+    {
+      "month": "2021-08",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 11
+      }
+    },
+    {
+      "month": "2021-09",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 27
+      }
+    },
+    {
+      "month": "2021-10",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 9
+      }
+    },
+    {
+      "month": "2021-11",
+      "merged_prs": 11,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 23
+      }
+    },
+    {
+      "month": "2021-12",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".go": 7
+      }
+    },
+    {
+      "month": "2022-01",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 12
+      }
+    },
+    {
+      "month": "2022-02",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 12
+      }
+    },
+    {
+      "month": "2022-03",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 19
+      }
+    },
+    {
+      "month": "2022-04",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 16
+      }
+    },
+    {
+      "month": "2022-05",
+      "merged_prs": 3,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 7
+      }
+    },
+    {
+      "month": "2022-06",
+      "merged_prs": 12,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 31
+      }
+    },
+    {
+      "month": "2022-07",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 19
+      }
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 11,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 23
+      }
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 18
+      }
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 13
+      }
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 11,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 23
+      }
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 8
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 2,
+      "reviews": 9,
+      "by_ext": {
+        ".go": 5
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 0,
+      "reviews": 3,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 0,
+      "reviews": 4,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 0,
+      "reviews": 9,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 0,
+      "reviews": 6,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 1,
+      "reviews": 8,
+      "by_ext": {
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 0,
+      "reviews": 3,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 0,
+      "reviews": 12,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 0,
+      "reviews": 5,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 0,
+      "reviews": 12,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 2,
+      "reviews": 12,
+      "by_ext": {
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 0,
+      "reviews": 8,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 0,
+      "reviews": 5,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 0,
+      "reviews": 8,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 0,
+      "reviews": 9,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 1,
+      "reviews": 11,
+      "by_ext": {
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 1,
+      "reviews": 11,
+      "by_ext": {
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 1,
+      "reviews": 7,
+      "by_ext": {
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 0,
+      "reviews": 8,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 1,
+      "reviews": 4,
+      "by_ext": {
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 0,
+      "reviews": 5,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 0,
+      "reviews": 6,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 0,
+      "reviews": 5,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 1,
+      "reviews": 9,
+      "by_ext": {
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 0,
+      "reviews": 7,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 0,
+      "reviews": 6,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 0,
+      "reviews": 5,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 0,
+      "reviews": 6,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 0,
+      "reviews": 8,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 0,
+      "reviews": 8,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 0,
+      "reviews": 6,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 1,
+      "reviews": 5,
+      "by_ext": {
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 0,
+      "reviews": 4,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 0,
+      "reviews": 9,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 0,
+      "reviews": 6,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 0,
+      "reviews": 9,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 2,
+      "reviews": 8,
+      "by_ext": {
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 0,
+      "reviews": 6,
+      "by_ext": {}
+    }
+  ],
+  "exported": "2026-10-31"
+}

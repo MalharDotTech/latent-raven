@@ -1,0 +1,68 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Workday HCM Basics for HR",
+      "provider": "Kestrel Learn",
+      "completed": "2023-06-09",
+      "time_spent_minutes": 240,
+      "quiz_score_pct": 88,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2023-05-24",
+      "time_spent_minutes": 33,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Python Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2023-07-28",
+      "time_spent_minutes": 262,
+      "quiz_score_pct": null,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Calibration Facilitation for HRBPs",
+      "provider": "Kestrel Learn",
+      "completed": "2023-11-08",
+      "time_spent_minutes": 180,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Labour Codes Update 2024",
+      "provider": "Kestrel Learn",
+      "completed": "2024-03-14",
+      "time_spent_minutes": 75,
+      "quiz_score_pct": 80,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Interviewer Certification",
+      "provider": "Kestrel Learn",
+      "completed": "2024-09-05",
+      "time_spent_minutes": 150,
+      "quiz_score_pct": 92,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-03-17",
+      "time_spent_minutes": 36,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH) 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-08-22",
+      "time_spent_minutes": 31,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    }
+  ]
+}

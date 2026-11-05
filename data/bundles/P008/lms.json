@@ -1,0 +1,29 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "Managing Infrastructure with Terraform (path)",
+      "provider": "Pluralsight",
+      "completed": "2022-04-23",
+      "time_spent_minutes": 460,
+      "quiz_score_pct": 84,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "Getting Started with Kubernetes",
+      "provider": "Pluralsight",
+      "completed": "2024-11-16",
+      "time_spent_minutes": 195,
+      "quiz_score_pct": 92,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Kestrel incident commander drill",
+      "provider": "Kestrel Learn",
+      "completed": "2026-02-09",
+      "time_spent_minutes": 110,
+      "quiz_score_pct": 88,
+      "assigned_by": "manager"
+    }
+  ]
+}

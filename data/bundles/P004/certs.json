@@ -1,0 +1,14 @@
+{
+  "certificates": [
+    {
+      "name": "Professional Scrum Master I (PSM I)",
+      "issuer": "Scrum.org",
+      "code": "PSM I",
+      "issued": "2019-06",
+      "expires": null,
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/b8004092-f9e2-4b92-9b38-eefa6bced784",
+      "verification_status": "verified"
+    }
+  ]
+}

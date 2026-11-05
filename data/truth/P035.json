@@ -1,0 +1,199 @@
+{
+  "pid": "P035",
+  "schema": "truth-v2",
+  "summary": "Pharmacy graduate who moved into product design, with two years at Kestrel and small concurrent freelance projects. Design system delivery is externally recorded, while research metrics are repeated in her own portfolio.",
+  "archetype": "career_pivot_designer",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "figma",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "jira_KC-12307",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "jira_KC-12307:PM-1324",
+        "jira_KC-12307:PM-1778",
+        "jira_KC-12307:PM-1925",
+        "jira_KC-12307:PM-2235"
+      ],
+      "why": "Employer acceptance records connect repeated component versions to released screens."
+    },
+    {
+      "skill_id": "ux_research",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_tanvi-menon-kc_1; doc_PM-2187",
+        "missing_source": "Employer-controlled research plan, session notes and linked design decision."
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "cv_tanvi-menon-kc_1:skills/experience",
+        "doc_PM-2187:case-study"
+      ],
+      "why": "She can independently plan and synthesise research; the only detailed study here is self-authored."
+    },
+    {
+      "skill_id": "product_discovery",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_tanvi-menon-kc_1; doc_PM-2187",
+        "missing_source": "Product decision log and an independently reviewed experiment summary."
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "cv_tanvi-menon-kc_1:skills/experience",
+        "doc_PM-2187:case-study"
+      ],
+      "why": "The underlying discovery work changed the flow, but its experiment results are only self-report."
+    },
+    {
+      "skill_id": "stakeholder_management",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_tanvi-menon-kc_1",
+        "missing_source": "Reviewed stakeholder action log with responsibility corrections."
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "cv_tanvi-menon-kc_1:skills/experience"
+      ],
+      "why": "Can maintain a guided action log; no reviewed responsibility plan is exported."
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_tanvi-menon-kc_1",
+        "missing_source": "Reviewed handoff or setup procedure and its revision comments."
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "cv_tanvi-menon-kc_1:skills/experience"
+      ],
+      "why": "Has written guided handoff procedures; portfolio narrative is not the required reviewed procedure."
+    },
+    {
+      "skill_id": "agile_delivery",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_tanvi-menon-kc_1",
+        "missing_source": "Iteration plan with facilitator review and completed follow-up actions."
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "cv_tanvi-menon-kc_1:skills/experience"
+      ],
+      "why": "Assists iteration activities but this export has no facilitated activity or action tracking."
+    }
+  ],
+  "decoys": [],
+  "traps": [
+    {
+      "fault_id": "F07",
+      "s11_row": "level_off",
+      "skill_id": "figma",
+      "plant": "Three named freelance engagements overlap regular employment; keep each engagement attached to its author.",
+      "expected_engine_behavior": "send",
+      "observation_ids": [
+        "RO-05"
+      ]
+    },
+    {
+      "fault_id": "F29",
+      "s11_row": "level_off",
+      "skill_id": "ux_research",
+      "plant": "Self-rating bars and the same-author portfolio repeat study metrics; neither supplies independent research acceptance.",
+      "expected_engine_behavior": "hold",
+      "observation_ids": [
+        "RO-09",
+        "RO-15"
+      ]
+    }
+  ],
+  "unmatched_skills": [
+    "Visual design",
+    "Information architecture"
+  ],
+  "realism_observations": [
+    "RO-05",
+    "RO-07",
+    "RO-09",
+    "RO-14",
+    "RO-15"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

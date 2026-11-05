@@ -1,0 +1,179 @@
+{
+  "summary": "Kavya moved from reporting into production analytics engineering in January 2025. The HR profile never caught up, an old Spark AR project is unrelated to distributed processing, and the completed Python course was skipped through.",
+  "archetype": "Analyst transition with lexical ambiguity and stale HCM",
+  "skills": [
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#9002",
+        "github:#9017",
+        "jira:DATA-9518"
+      ],
+      "why": "Production joins, signed totals and query-shape repairs demonstrate independent transformations.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "dbt",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#9008",
+        "github:#9015"
+      ],
+      "why": "Incremental bugs, history checks and reconciled rebuilds support ownership beyond her initial guided contribution.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "snowflake",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#9010",
+        "github:#9016"
+      ],
+      "why": "Query profiles and measured warehouse-idle changes justify workload operation.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "data_modeling",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#9011",
+        "docs/DATA-0912.md"
+      ],
+      "why": "Ledger grain, many-to-many tags and history validation have deployed consequences.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:reviews_given"
+      ],
+      "why": "She catches fanout and incremental comparison gaps before merge.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/DATA-0912.md"
+      ],
+      "why": "Finance successfully repeated a close reconciliation using her page.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "spark",
+      "has_skill": false,
+      "evidence_refs": [
+        "cv_v1:Other skills/projects",
+        "jira:DATA-9508"
+      ],
+      "why": "AR filter tooling and a stale queue component provide no Apache runtime exposure.",
+      "would_accept_levels": []
+    },
+    {
+      "skill_id": "python",
+      "has_skill": false,
+      "evidence_refs": [
+        "lms:Python Essential Training"
+      ],
+      "why": "Private interview: unable to explain a function or list iteration; completion came from skipping the material.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Spark",
+      "mapped_skill_id": "spark",
+      "has_skill": false,
+      "why": "College face-filter project refers to Spark AR; no Apache Spark claim is warranted."
+    },
+    {
+      "skill_text": "Python",
+      "mapped_skill_id": "python",
+      "has_skill": false,
+      "why": "Three-minute completion is not demonstrated understanding."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F16",
+      "s11_row": "wrong_mapping",
+      "skill_id": "spark",
+      "plant": "CV explicitly contextualises Spark as AR; DATA-9508 still carries the misleading old Spark component despite dbt implementation.",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F19",
+      "s11_row": "level_off",
+      "skill_id": "dbt",
+      "plant": "HCM profile still says analyst while allocations and recent changes show an analytics-engineer role.",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F26",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "python",
+      "plant": "Learning portal marks a substantial Python course complete after three minutes; no coding artifact corroborates it.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "pid": "P009",
+  "batch": "B",
+  "generator": "codex gpt-6.1-sol",
+  "answer_behavior": {
+    "reply_probability": 0.8,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Corrects Spark mapping and does not agree to Python proficiency."
+  },
+  "messaging_allowed": true
+}

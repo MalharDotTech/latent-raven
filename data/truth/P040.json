@@ -1,0 +1,227 @@
+{
+  "pid": "P040",
+  "schema": "truth-v2",
+  "summary": "Frontend engineer with three years of production React and typed JavaScript work. Maintains the website for Mitti Cart alongside Aman Bhatia; CV column order is lost during extraction.",
+  "archetype": "frontend_concurrent_business",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "react",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_isha-sethi-kc; jira_KC-12072",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "gh_isha-sethi-kc:#8572",
+        "gh_isha-sethi-kc:#9920",
+        "gh_isha-sethi-kc:#10139",
+        "gh_isha-sethi-kc:#10242",
+        "jira_KC-12072:WEB-3943",
+        "jira_KC-12072:WEB-5099"
+      ],
+      "why": "Released screens and profiler-backed rendering fixes show independent feature ownership."
+    },
+    {
+      "skill_id": "typescript",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_isha-sethi-kc; jira_KC-12072",
+        "missing_source": null
+      },
+      "last_used": "2026-04",
+      "evidence_refs": [
+        "gh_isha-sethi-kc:#9984",
+        "jira_KC-12072:WEB-5008"
+      ],
+      "why": "Module boundary narrowing removes unsafe casts with regression coverage."
+    },
+    {
+      "skill_id": "javascript",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_isha-sethi-kc; jira_KC-12072",
+        "missing_source": null
+      },
+      "last_used": "2025-12",
+      "evidence_refs": [
+        "gh_isha-sethi-kc:#8572",
+        "gh_isha-sethi-kc:#9637",
+        "jira_KC-12072:WEB-3943"
+      ],
+      "why": "Production async defects have request-ordering and cleanup fixes with tests."
+    },
+    {
+      "skill_id": "api_testing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_isha-sethi-kc; jira_KC-12072",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "gh_isha-sethi-kc:#8664",
+        "gh_isha-sethi-kc:#8999",
+        "gh_isha-sethi-kc:#9742",
+        "gh_isha-sethi-kc:#10311",
+        "jira_KC-12072:WEB-3829",
+        "jira_KC-12072:WEB-4287"
+      ],
+      "why": "UI/API failure checks are corrected by QA and have recorded results."
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_isha-sethi-kc",
+        "missing_source": null
+      },
+      "last_used": "2026-03",
+      "evidence_refs": [
+        "gh_isha-sethi-kc:review#2264",
+        "gh_isha-sethi-kc:review#2464",
+        "gh_isha-sethi-kc:review#2655",
+        "gh_isha-sethi-kc:review#2945"
+      ],
+      "why": "Review comments catch stale requests, unsafe casts and timer leaks, followed by author repairs."
+    },
+    {
+      "skill_id": "cicd",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_isha-sethi-kc; jira_KC-12072",
+        "missing_source": null
+      },
+      "last_used": "2025-10",
+      "evidence_refs": [
+        "gh_isha-sethi-kc:#9007",
+        "gh_isha-sethi-kc:#9468",
+        "jira_KC-12072:WEB-4642"
+      ],
+      "why": "Workflow additions are guided by the release engineer with successful artifact checks."
+    }
+  ],
+  "decoys": [],
+  "traps": [
+    {
+      "fault_id": "F07",
+      "s11_row": "wrong_person",
+      "skill_id": "react",
+      "plant": "Concurrent Mitti Cart role is shared with Aman; frontend and supplier duties have different authors.",
+      "expected_engine_behavior": "send",
+      "observation_ids": [
+        "RO-05",
+        "RO-06"
+      ]
+    },
+    {
+      "fault_id": "F06",
+      "s11_row": "level_off",
+      "skill_id": "typescript",
+      "plant": "CV extraction interleaves education and work columns; quote spans must follow extracted text.",
+      "expected_engine_behavior": "send",
+      "observation_ids": [
+        "RO-13"
+      ]
+    }
+  ],
+  "unmatched_skills": [],
+  "realism_observations": [
+    "RO-05",
+    "RO-06",
+    "RO-13"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

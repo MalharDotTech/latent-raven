@@ -1,0 +1,29 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "internal: Tenant Isolation Test Workshop",
+      "provider": "Kestrel Learn",
+      "completed": "2024-05-10",
+      "time_spent_minutes": 140,
+      "assigned_by": "manager",
+      "quiz_score_pct": 94
+    },
+    {
+      "course_title": "internal: Threat Review Facilitation",
+      "provider": "Kestrel Learn",
+      "completed": "2025-07-16",
+      "time_spent_minutes": 120,
+      "assigned_by": "manager",
+      "quiz_score_pct": 90
+    },
+    {
+      "course_title": "internal: Security Exception Process",
+      "provider": "Kestrel Learn",
+      "completed": "2026-04-14",
+      "time_spent_minutes": 65,
+      "assigned_by": "manager",
+      "quiz_score_pct": 96
+    }
+  ]
+}

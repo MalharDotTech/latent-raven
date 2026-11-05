@@ -1,0 +1,29 @@
+{
+  "person_ref": "P033",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-11682",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_nirav-deshpande-kc_1",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P033",
+      "received": "2026-10-16"
+    },
+    {
+      "source_id": "gh_nirav-deshpande-kc",
+      "source_type": "github",
+      "path": "github.json"
+    },
+    {
+      "source_id": "jira_KC-11682",
+      "source_type": "jira",
+      "path": "jira.json"
+    }
+  ]
+}

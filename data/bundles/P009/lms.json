@@ -1,0 +1,29 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "SQL Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2023-06-10",
+      "time_spent_minutes": 210,
+      "quiz_score_pct": 86,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Revenue mart dbt onboarding",
+      "provider": "Kestrel Learn",
+      "completed": "2025-01-10",
+      "time_spent_minutes": 160,
+      "quiz_score_pct": 82,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "Python Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2026-03-03",
+      "time_spent_minutes": 3,
+      "quiz_score_pct": 100,
+      "assigned_by": "self"
+    }
+  ]
+}

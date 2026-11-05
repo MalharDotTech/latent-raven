@@ -1,0 +1,20 @@
+{% extends 'base.html' %}{% block title %}Your round · Raven{% endblock %}
+{% block content %}
+<div class="page-intro"><p class="eyebrow">JUST LATENT / YOUR ROUND</p><h1>Your call, <em>{{ row.first_name }}.</em></h1><p>Choose the sentence that fits your work. Once you lock it, it’s yours.</p></div>
+{% if row.demo %}<div class="notice demo" role="status"><span class="badge">DEMO DATA</span> {{ row.notice }}</div>{% endif %}
+{% if row.status == 'running' %}{% include 'status.html' %}
+{% elif row.status == 'interrupted' %}<div class="notice">{{ row.notice }} <a href="/play">Start again →</a></div>
+{% else %}
+<div class="round-progress"><span>01 Evidence received</span><strong>02 Back yourself</strong><span>03 Meet the panel</span></div>
+{% if not skills %}<section class="panel empty"><h2>No skills to score yet.</h2><p>The evidence didn’t produce a scorable skill. You can still tell us what’s missing below.</p></section>{% endif %}
+<div class="skills-list">{% for skill in skills %}<section id="skill-{{ skill.skill_id }}" class="panel skill-panel">
+<div class="skill-heading"><div><p class="eyebrow">SKILL {{ loop.index }} / {{ skills|length }}</p><h2>{{ skill.name }}</h2></div><span class="scale-badge">{{ skill.scale_max }} levels</span></div>
+{% if skill.skill_id in ratings %}{% set rating=ratings[skill.skill_id] %}{% set sid=row.id %}{% include 'locked.html' %}
+{% else %}
+<form hx-post="/play/{{ row.id }}/skills/{{ skill.skill_id }}/lock" hx-target="this" hx-swap="outerHTML" x-data="{level:'', saving:false}" @htmx:before-request="saving=true" @htmx:after-request="saving=false">
+<fieldset class="level-options"><legend>Your level in {{ skill.name }}</legend>{% for level, line in skill.level_lines.items() %}{% if level|int <= skill.scale_max %}<label class="level-card" :class="{'selected': level === '{{ level }}'}"><input type="radio" name="level" value="{{ level }}" x-model="level" required><span class="level-number">{{ level }}</span><span>{{ line }}</span></label>{% endif %}{% endfor %}</fieldset>
+<div class="lock-row"><p class="tiny muted">A locked rating can’t be changed.</p><button class="button gold" type="submit" :disabled="!level || saving"><span x-text="saving ? 'Locking…' : 'Lock my rating 🔒'">Lock my rating 🔒</span></button></div></form>
+{% endif %}</section>{% endfor %}</div>
+<div id="round-finish" hx-get="/play/{{ row.id }}/finish" hx-trigger="load, feedbackSaved from:body" hx-swap="innerHTML"></div>
+{% endif %}
+{% endblock %}

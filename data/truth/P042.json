@@ -1,0 +1,234 @@
+{
+  "pid": "P042",
+  "schema": "truth-v2",
+  "summary": "Nine-year engineer now managing the recon team. Leadership and review work remain current, while practical Go independence has declined since the 2022 IC role and is not recoverable at a current level from this export.",
+  "archetype": "ordinary_engineering_manager",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "technical_leadership",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_vivek-narang-kc; jira_KC-11058; doc_ARCH-407",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "gh_vivek-narang-kc:#9271",
+        "jira_KC-11058:RECON-3498",
+        "jira_KC-11058:RECON-4008",
+        "jira_KC-11058:RECON-4018",
+        "doc_ARCH-407:decision/production-validation"
+      ],
+      "why": "Technical tradeoffs, rollout risks and team follow-ups are visible in decisions and completed tickets."
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_vivek-narang-kc",
+        "missing_source": null
+      },
+      "last_used": "2026-06",
+      "evidence_refs": [
+        "gh_vivek-narang-kc:review#2088",
+        "gh_vivek-narang-kc:review#2833",
+        "gh_vivek-narang-kc:review#3031",
+        "gh_vivek-narang-kc:review#3118"
+      ],
+      "why": "Independent failure-mode reviews lead to explicit code and test repairs."
+    },
+    {
+      "skill_id": "agile_delivery",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "jira_KC-11058",
+        "missing_source": null
+      },
+      "last_used": "2026-03",
+      "evidence_refs": [
+        "jira_KC-11058:RECON-3417",
+        "jira_KC-11058:RECON-3730"
+      ],
+      "why": "Dependency removal and retrospective actions are tracked through completed iterations."
+    },
+    {
+      "skill_id": "stakeholder_management",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_vivek-narang-kc; jira_KC-11058",
+        "missing_source": null
+      },
+      "last_used": "2026-05",
+      "evidence_refs": [
+        "gh_vivek-narang-kc:#8111",
+        "jira_KC-11058:RECON-3230",
+        "jira_KC-11058:RECON-3847"
+      ],
+      "why": "Cross-team windows and acceptance owners are negotiated and delivered."
+    },
+    {
+      "skill_id": "system_design",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_vivek-narang-kc; jira_KC-11058; doc_ARCH-407",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "gh_vivek-narang-kc:#8111",
+        "jira_KC-11058:RECON-3216",
+        "jira_KC-11058:RECON-3649",
+        "jira_KC-11058:RECON-4018",
+        "doc_ARCH-407:decision/production-validation"
+      ],
+      "why": "Accepted service isolation/capacity decisions have failure tests and production validation."
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "doc_ENG-2936; jira_KC-11058",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "doc_ENG-2936:review/validation",
+        "jira_KC-11058:RECON-4058"
+      ],
+      "why": "A versioned guide has named users completing handover tasks and a repeated corrected step."
+    },
+    {
+      "skill_id": "go",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_vivek-narang-kc_1; gh_vivek-narang-kc",
+        "missing_source": "Current practical Go reassessment or reviewed recent handler work."
+      },
+      "last_used": "2022-12",
+      "evidence_refs": [
+        "cv_vivek-narang-kc_1:skills/experience",
+        "gh_vivek-narang-kc:#6517",
+        "gh_vivek-narang-kc:#6590",
+        "gh_vivek-narang-kc:#6727"
+      ],
+      "why": "Retained ability is below his former independent operating level; old service work cannot pin today’s level."
+    }
+  ],
+  "decoys": [],
+  "traps": [
+    {
+      "fault_id": "F28",
+      "s11_row": "skill_decay",
+      "skill_id": "go",
+      "plant": "Last full implementation evidence ends in the former IC period. Declared current duties are reviews and delivery; current retained Go ability is unobserved.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "unmatched_skills": [],
+  "realism_observations": [
+    "RO-16"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

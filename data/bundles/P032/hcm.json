@@ -1,0 +1,100 @@
+{
+  "employee_id": "KC-11732",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Manoj Tiwari",
+  "preferred_name": "Manoj Tiwari",
+  "emails": [
+    {
+      "email": "manoj.tiwari@kestrelcloud.com",
+      "from": "2022-04",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Finance",
+  "manager_employee_id": "KC-10120",
+  "hire_date": "2022-04-11",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "FP&A Analyst",
+      "grade": "P2",
+      "from": "2022-04",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "FY23 budget cycle",
+      "role": "FP&A Analyst",
+      "from": "2022-07",
+      "to": "2023-03",
+      "allocation_pct": 80
+    },
+    {
+      "project": "Monthly forecast and variance pack",
+      "role": "FP&A Analyst",
+      "from": "2022-04",
+      "to": null,
+      "allocation_pct": 60
+    },
+    {
+      "project": "Headcount planning (quarterly)",
+      "role": "FP&A Analyst",
+      "from": "2023-01",
+      "to": null,
+      "allocation_pct": 20
+    },
+    {
+      "project": "EU entity reporting support",
+      "role": "FP&A Analyst",
+      "from": "2025-01",
+      "to": "2025-09",
+      "allocation_pct": 20
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "self_declared_skills": [
+    {
+      "skill_text": "Excel modelling",
+      "self_level": 3,
+      "declared_on": "2025-10"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 2,
+      "declared_on": "2025-10"
+    },
+    {
+      "skill_text": "Budgeting and forecasting",
+      "self_level": 3,
+      "declared_on": "2025-10"
+    },
+    {
+      "skill_text": "Stakeholder management",
+      "self_level": 2,
+      "declared_on": "2025-10"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Christ University",
+      "degree": "B.Com",
+      "field": "Commerce",
+      "year": 2017
+    },
+    {
+      "institution": "Symbiosis Institute of Business Management",
+      "degree": "MBA",
+      "field": "Finance",
+      "year": 2019
+    }
+  ]
+}

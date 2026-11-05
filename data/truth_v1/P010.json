@@ -1,0 +1,196 @@
+{
+  "summary": "Siddharth has substantial current Java and Spring experience in a dedicated client environment that the engine cannot inspect. Private assessor observation confirms concurrency reviews, production JVM diagnosis and shared configuration conventions; the visible export only hints at this work and must remain insufficient for confident outreach.",
+  "archetype": "Senior contractor with externally held evidence",
+  "skills": [
+    {
+      "skill_id": "java",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:Roles & Responsibilities",
+        "jira:BILL-10505"
+      ],
+      "why": "Private assessor reviewed client concurrency decisions adopted by two services; visible CV and acceptance stubs alone cannot establish that depth.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "assessed_level": 4,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "spring_boot",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:Roles & Responsibilities",
+        "jira:BILL-10508"
+      ],
+      "why": "Hidden client reviews confirm a reused starter with transaction and health-check conventions; export lacks those review records.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "assessed_level": 4,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:TECHNICAL SKILLS"
+      ],
+      "why": "Unexported client delivery includes independently repaired duplicate-posting queries and reconciled data.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "system_design",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:Roles & Responsibilities",
+        "jira:BILL-10502"
+      ],
+      "why": "Assessor inspected a deployed idempotency design and callback failure analysis in client records.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:Roles & Responsibilities"
+      ],
+      "why": "Private review archive shows two developers adopting his retry and concurrency checklist across releases.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "assessed_level": 4,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "docker",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:TECHNICAL SKILLS"
+      ],
+      "why": "He adjusts service images with client platform guidance; no evidence of image-policy ownership.",
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "api_testing",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:BILL-10506"
+      ],
+      "why": "Client CI has independently maintained callback-contract and retry checks, verified privately.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "kafka",
+      "has_skill": false,
+      "evidence_refs": [
+        "cv_v1:Roles & Responsibilities",
+        "jira:BILL-10540"
+      ],
+      "why": "Team responsibility prose and release administration conceal zero broker work; private questioning confirmed no practical or assessed fundamentals.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Kafka",
+      "mapped_skill_id": "kafka",
+      "has_skill": false,
+      "why": "Team upkeep and administrative closure belong to platform staff."
+    },
+    {
+      "skill_text": "MS Office",
+      "mapped_skill_id": "excel_modeling",
+      "has_skill": false,
+      "why": "Generic office use carries no finance modelling practice."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F09",
+      "s11_row": "skill_not_really_held_false_negative",
+      "skill_id": "java",
+      "plant": "No Kestrel GitHub source is available; client tracker stubs expose acceptance but no implementation or review. Actual high ability is established only privately.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F09",
+      "s11_row": "skill_not_really_held_false_negative",
+      "skill_id": "spring_boot",
+      "plant": "Current Spring work is under a client export restriction; a negative proficiency conclusion would be false, yet a confident level is unsupported.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F21",
+      "s11_row": "wrong_person",
+      "skill_id": "java",
+      "plant": "KCC identity and client guest sj7716 are explicitly linked through a verified email; no KC employee id should be invented.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F06",
+      "s11_row": "wrong_mapping",
+      "skill_id": "excel_modeling",
+      "plant": "Traditional CV includes generic computer-literacy items and numbered team duties.",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F15",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "kafka",
+      "plant": "BILL-10540 was bulk-closed after platform delivery; the senior connector developer did no broker implementation.",
+      "expected_engine_behavior": "not_extract"
+    }
+  ],
+  "pid": "P010",
+  "batch": "B",
+  "generator": "codex gpt-6.1-sol",
+  "answer_behavior": {
+    "reply_probability": 0.48,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Usually misses internal surveys while on client delivery; requests specifics before agreeing."
+  },
+  "messaging_allowed": true
+}

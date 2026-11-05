@@ -1,0 +1,29 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "Managing Infrastructure with Terraform (path)",
+      "provider": "Pluralsight",
+      "completed": "2024-03-20",
+      "time_spent_minutes": 720,
+      "assigned_by": "self",
+      "quiz_score_pct": 90
+    },
+    {
+      "course_title": "internal: Kestrel EU Incident Commander Drill",
+      "provider": "Kestrel Learn",
+      "completed": "2025-05-15",
+      "time_spent_minutes": 130,
+      "assigned_by": "manager",
+      "quiz_score_pct": 94
+    },
+    {
+      "course_title": "internal: Kestrel Restore Validation",
+      "provider": "Kestrel Learn",
+      "completed": "2026-07-14",
+      "time_spent_minutes": 95,
+      "assigned_by": "manager",
+      "quiz_score_pct": 96
+    }
+  ]
+}

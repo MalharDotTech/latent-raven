@@ -1,0 +1,675 @@
+{
+  "issues": [
+    {
+      "key": "RECON-2594",
+      "type": "Bug",
+      "summary": "ledger-api duplicate key returns 500",
+      "component": "Ledger",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-09-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-09-19",
+      "resolved": "2023-09-20",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "RECON-2658",
+      "type": "Story",
+      "summary": "Bulk posting endpoint",
+      "component": "Ledger",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-11-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-11-07",
+      "resolved": "2023-11-27",
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "RECON-2759",
+      "type": "Story",
+      "summary": "Partial payment tolerance rule",
+      "component": "Matcher",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-02-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-02-20",
+      "resolved": "2024-02-26",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "RECON-2807",
+      "type": "Bug",
+      "summary": "Fix bug",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-03-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-03-21",
+      "resolved": "2024-03-22",
+      "labels": []
+    },
+    {
+      "key": "RECON-2833",
+      "type": "Bug",
+      "summary": "Offsets committed before db tx -> lost matches on crash",
+      "component": "Matcher",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-04-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-04-12",
+      "resolved": "2024-04-29",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "RECON-2903",
+      "type": "Bug",
+      "summary": "Workers restart every ~6h (memory)",
+      "component": "Matcher",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-06-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-06-07",
+      "resolved": "2024-06-17",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "RECON-2988",
+      "type": "Task",
+      "summary": "Latency histograms per rule",
+      "component": "Observability",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-08-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-08-19",
+      "resolved": "2024-08-27",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "RECON-3051",
+      "type": "Story",
+      "summary": "Rule DSL: tolerance expressions",
+      "component": "Matcher",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-10-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-10-03",
+      "resolved": "2024-10-23",
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "RECON-3168",
+      "type": "Story",
+      "summary": "Shard matching by tenant",
+      "component": "Matcher",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-01-28",
+      "resolved": "2025-02-18",
+      "story_points": 13,
+      "labels": []
+    },
+    {
+      "key": "RECON-3250",
+      "type": "Task",
+      "summary": "go 1.22 upgrade",
+      "component": "Deploy",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-12",
+      "resolved": "2025-03-18",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "RECON-3331",
+      "type": "Task",
+      "summary": "Backpressure on matcher queue",
+      "component": "Matcher",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-26",
+      "resolved": "2025-05-27",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "RECON-3374",
+      "type": "Bug",
+      "summary": "Float rounding in tolerance compare",
+      "component": "Matcher",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-06",
+      "resolved": "2025-06-09",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "RECON-3470",
+      "type": "Task",
+      "summary": "EU region go-live checklist (recon)",
+      "description_excerpt": "Go-live items: config, residency guard, runbook, on-call handover. Owner: Ayesha.",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-08-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-08-26",
+      "resolved": "2025-10-06",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "RECON-3516",
+      "type": "Task",
+      "summary": "Go/no-go review for EU region launch",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-25"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-25",
+      "resolved": "2025-10-09",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "RECON-3532",
+      "type": "Task",
+      "summary": "Fix go-live blockers from UAT",
+      "component": "Matcher",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-10-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-10-03",
+      "resolved": "2025-10-15",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "RECON-3570",
+      "type": "Task",
+      "summary": "PDB + limits for matcher",
+      "component": "Deploy",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-11-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-11-04",
+      "resolved": "2025-11-07",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "RECON-3681",
+      "type": "Story",
+      "summary": "Batch ack for bank feed consumer",
+      "component": "Integration",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-01-22",
+      "resolved": "2026-01-26",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "RECON-3715",
+      "type": "Task",
+      "summary": "Seed script for SE sandbox",
+      "component": "Tools",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-16",
+      "resolved": "2026-02-19",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "RECON-3812",
+      "type": "Story",
+      "summary": "Explain-match API",
+      "component": "Matcher",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-22",
+      "resolved": "2026-05-11",
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "RECON-3832",
+      "type": "Bug",
+      "summary": "tolerance rule ignores currency exponent for JPY",
+      "component": "Matcher",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-04",
+      "resolved": "2026-05-07",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "RECON-3916",
+      "type": "Task",
+      "summary": "Rule cache contention (pprof)",
+      "component": "Matcher",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-13",
+      "resolved": "2026-07-14",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "RECON-3984",
+      "type": "Epic",
+      "summary": "Recon v3 cutover for remaining tenants",
+      "component": "General",
+      "priority": "Medium",
+      "status": "In Progress",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-08-26"
+        }
+      ],
+      "created": "2026-08-26",
+      "labels": []
+    },
+    {
+      "key": "RECON-4039",
+      "type": "Story",
+      "summary": "Tolerance rules per currency",
+      "component": "Matcher",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-17",
+      "resolved": "2026-09-23",
+      "story_points": 5,
+      "labels": []
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    }
+  ]
+}

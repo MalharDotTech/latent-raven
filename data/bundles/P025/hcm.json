@@ -1,0 +1,88 @@
+{
+  "employee_id": "KC-12248",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Neha Prakash Kulkarni",
+  "preferred_name": "Neha Kulkarni",
+  "emails": [
+    {
+      "email": "neha.kulkarni@kestrelcloud.com",
+      "from": "2024-01",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Pune",
+  "country": "IN",
+  "department": "People - Talent Acquisition",
+  "manager_employee_id": "KC-10215",
+  "hire_date": "2024-01-15",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "HR Executive",
+      "grade": "S1",
+      "from": "2024-01",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Engineering hiring FY25 (Pune, Hyderabad)",
+      "role": "Recruiter",
+      "from": "2024-04",
+      "to": "2025-03",
+      "allocation_pct": 70
+    },
+    {
+      "project": "Engineering and Data hiring FY26",
+      "role": "Recruiter (lead for Data roles)",
+      "from": "2025-04",
+      "to": null,
+      "allocation_pct": 80
+    },
+    {
+      "project": "Campus hiring 2026",
+      "role": "Campus coordinator",
+      "from": "2025-09",
+      "to": "2026-03",
+      "allocation_pct": 20
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Talent acquisition / end to end recruitment",
+      "self_level": 3,
+      "declared_on": "2025-08"
+    },
+    {
+      "skill_text": "Workday Recruiting",
+      "self_level": 2,
+      "declared_on": "2025-08"
+    },
+    {
+      "skill_text": "HR operations",
+      "self_level": 1,
+      "declared_on": "2025-08"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Fergusson College, Pune",
+      "degree": "B.Com",
+      "field": "Commerce",
+      "year": 2018
+    },
+    {
+      "institution": "Symbiosis Institute of Business Management, Pune",
+      "degree": "MBA",
+      "field": "Human Resource Management",
+      "year": 2020
+    }
+  ]
+}

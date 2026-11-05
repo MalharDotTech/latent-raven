@@ -1,0 +1,1017 @@
+{
+  "login": "ananya-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-10707",
+  "exported_on": "2026-10-31",
+  "sample_scope": "Selected PRs and review threads; monthly activity covers complete membership, including zero months.",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 3354,
+      "title": "fix: reject missing due_date before feature join",
+      "state": "merged",
+      "created": "2022-08-17",
+      "merged": "2022-08-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 19,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python validation; NULL due_date had reached the training join. Added a fixture from the rejected batch."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 3525,
+      "title": "DATA-1873 pin training cutoff per fold",
+      "state": "merged",
+      "created": "2022-11-07",
+      "merged": "2022-11-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 56,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python backtest now freezes feature availability at each fold boundary; invoice collection dates excluded from inputs."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 3719,
+      "title": "Handle empty partitions in score export",
+      "state": "merged",
+      "created": "2023-02-10",
+      "merged": "2023-02-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 93,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Empty tenant slice returns schema-only output; covered in Python tests."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 3926,
+      "title": "fix: NaT in payment delay features",
+      "state": "merged",
+      "created": "2023-05-23",
+      "merged": "2023-05-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 130,
+      "deletions": 36,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Production batch failed on an all-null paid_at column; preserve nullable dtype."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 4138,
+      "title": "Use tenant salt for holdout split",
+      "state": "merged",
+      "created": "2023-09-04",
+      "merged": "2023-09-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 167,
+      "deletions": 47,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL input selection and Python split key aligned; checked 84 tenant folds."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 4387,
+      "title": "DATA-2460 add late-label backtest",
+      "state": "merged",
+      "created": "2024-01-14",
+      "merged": "2024-01-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 204,
+      "deletions": 58,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Compared matured labels against previous report; held out last 28 days rather than treating missing collections as negatives."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 4567,
+      "title": "fix: score shard retry writes twice",
+      "state": "merged",
+      "created": "2024-04-10",
+      "merged": "2024-04-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 241,
+      "deletions": 69,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python writer uses run/shard id and atomic publish; rerun output checks added."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 4778,
+      "title": "chore: refresh scorer base image",
+      "state": "merged",
+      "created": "2024-07-17",
+      "merged": "2024-07-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 278,
+      "deletions": 80,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Docker build failed with incompatible system library; pinned base digest and smoke-tested scoring image."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 4946,
+      "title": "Expose forecast drift by cohort",
+      "state": "merged",
+      "created": "2024-10-05",
+      "merged": "2024-10-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 34,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Monitor debt-age cohorts separately; checked alert against replayed label delay."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 5164,
+      "title": "DATA-3008 tenant filter before retrieval",
+      "state": "merged",
+      "created": "2025-01-21",
+      "merged": "2025-01-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 71,
+      "deletions": 23,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "LLM retrieval uses authenticated tenant context; request text cannot override it."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 5275,
+      "title": "fix: citations survive chunk dedup",
+      "state": "merged",
+      "created": "2025-03-10",
+      "merged": "2025-03-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 108,
+      "deletions": 34,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Keep source invoice ids when adjacent chunks collapse. Added mismatched-citation eval cases."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 5419,
+      "title": "Add no-answer cases to pilot eval",
+      "state": "merged",
+      "created": "2025-05-18",
+      "merged": "2025-05-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 145,
+      "deletions": 45,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Labelled 180 question set; report unsupported claims and coverage side by side."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 5548,
+      "title": "fix: currency formatting in answer verifier",
+      "state": "merged",
+      "created": "2025-07-08",
+      "merged": "2025-07-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 182,
+      "deletions": 56,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Reject citation where currency differs even when numeric amount matches."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 5695,
+      "title": "DATA-3447 mask bank refs in traces",
+      "state": "merged",
+      "created": "2025-09-15",
+      "merged": "2025-09-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 219,
+      "deletions": 67,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python trace exporter removes bank identifiers; sampled trace payloads after deploy."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 5866,
+      "title": "Do not retry generation after token cap",
+      "state": "merged",
+      "created": "2025-12-01",
+      "merged": "2025-12-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 256,
+      "deletions": 78,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Return incomplete response marker and no-answer; removed blind retry in LLM workflow."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 6045,
+      "title": "fix: period filter on retrieval cache",
+      "state": "merged",
+      "created": "2026-02-10",
+      "merged": "2026-02-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 293,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Cache key includes ledger period and tenant; invalidated old keys on release."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 6206,
+      "title": "DATA-3837 add stale-index eval slice",
+      "state": "merged",
+      "created": "2026-04-21",
+      "merged": "2026-04-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 49,
+      "deletions": 21,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Pilot release blocks on stale-source answer count; tested index lag and rebuilt only affected tenant."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 6324,
+      "title": "Track abstention by tenant cohort",
+      "state": "merged",
+      "created": "2026-06-13",
+      "merged": "2026-06-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 86,
+      "deletions": 32,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Dashboard separates unsupported response from transport error; production evaluation stored with model revision."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 6468,
+      "title": "fix: closed invoice still cited",
+      "state": "merged",
+      "created": "2026-08-11",
+      "merged": "2026-08-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 123,
+      "deletions": 43,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Delete tombstones propagated into index refresh; replayed 34 removed-invoice cases."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "number": 6613,
+      "title": "Pin prompt and evaluator versions together",
+      "state": "merged",
+      "created": "2026-10-12",
+      "merged": "2026-10-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ananya-kc",
+      "files_ext": {
+        ".py": 4,
+        ".yaml": 1
+      },
+      "additions": 160,
+      "deletions": 54,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Rollback restores prompt, retrieval settings and labelled eval report as one release."
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "pr_number": 5530,
+      "date": "2025-07-11",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "This fold still sees paid_at from next month; freeze feature availability before the split.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "pr_number": 5703,
+      "date": "2025-09-17",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "Please include unanswered questions in the denominator. Otherwise this reports coverage as accuracy.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "pr_number": 5885,
+      "date": "2025-12-08",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "The cache key needs the tenant as well as the period.",
+      "author_followup": "Checks passed on updated change."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "pr_number": 6025,
+      "date": "2026-02-10",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "This fold still sees paid_at from next month; freeze feature availability before the split.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "pr_number": 6196,
+      "date": "2026-04-24",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "Please include unanswered questions in the denominator. Otherwise this reports coverage as accuracy.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "pr_number": 6352,
+      "date": "2026-06-24",
+      "state": "APPROVED",
+      "comment_count": 2,
+      "sample_comment": "The cache key needs the tenant as well as the period.",
+      "author_followup": "Checks passed on updated change."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "pr_number": 6455,
+      "date": "2026-08-10",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "This fold still sees paid_at from next month; freeze feature availability before the split.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/ml-forecasting",
+      "pr_number": 6581,
+      "date": "2026-10-05",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "Please include unanswered questions in the denominator. Otherwise this reports coverage as accuracy.",
+      "author_followup": "Added regression fixture and reran checks."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-07",
+      "merged_prs": 3,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 12,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 13,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 6,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 7,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 7,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 6,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 6,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 4,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 8,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 6,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 9,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 6,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 4,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 6,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 10,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 7,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 6,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 9,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 6,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 5,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 4,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 7,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 11,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 6,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 9,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 10,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 5,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 7,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 11,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 6,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 8,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 11,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 7,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 8,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 8,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 32,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 10,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 44,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 7,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 28,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 5,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 24,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 36,
+        ".yaml": 9
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [],
+    "oss_contributions": []
+  }
+}

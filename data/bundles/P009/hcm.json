@@ -1,0 +1,60 @@
+{
+  "employee_id": "KC-10909",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Kavya Rao",
+  "preferred_name": "Kavya",
+  "emails": [
+    {
+      "email": "kavya.rao@kestrelcloud.com",
+      "from": "2023-04",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Hyderabad",
+  "country": "IN",
+  "department": "Analytics",
+  "manager_employee_id": "KC-10038",
+  "hire_date": "2023-04-17",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Data Analyst",
+      "grade": "P2",
+      "from": "2023-04",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Finance reporting",
+      "role": "Data Analyst",
+      "from": "2023-04",
+      "to": "2024-12",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Revenue marts",
+      "role": "Analytics Engineer",
+      "from": "2025-01",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "PES University",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2020
+    }
+  ],
+  "exported_on": "2026-10-31",
+  "title_sync_note": "2026-09-30: Analytics Engineer transfer approved effective 2025-01-01; job profile mapping awaiting HRIS import."
+}

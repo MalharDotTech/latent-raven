@@ -1,0 +1,216 @@
+{
+  "summary": "Ananya owns a working forecasting component and a small production LLM pilot. Her cloud credential claim outlived her GCP practice; the operational GCP work ended in 2022, while one architecture page mostly belongs to platform engineers.",
+  "archetype": "ML engineer with substantive authored evidence and stale cloud claims",
+  "skills": [
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#7004",
+        "github:#7016"
+      ],
+      "why": "Runtime and retrieval corrections show sustained module ownership.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "machine_learning",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#7006",
+        "docs/ENG-2388.md"
+      ],
+      "why": "Fold construction, delayed labels and production cohort monitoring justify independent model delivery.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "llm_engineering",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#7010",
+        "github:#7017",
+        "docs/ENG-2741.md"
+      ],
+      "why": "Tenant isolation, labelled failure slices and operational rollback establish application delivery; no cross-team coaching claim.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#7005"
+      ],
+      "why": "Input selection works under data-team review; complex warehouse tuning is outside her remit.",
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "docker",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#7008"
+      ],
+      "why": "She maintains scorer packaging and diagnosed a real image failure.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "gcp",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:Freshworks",
+        "docs/ENG-2388.md",
+        "cv_v1:Credential scan"
+      ],
+      "why": "Private calibration: can still explain service identities but cannot deploy reliably without retraining; historical credential is not current operation.",
+      "true_level": 1,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 1,
+      "last_used": "2022-06"
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/ENG-2741.md",
+        "docs/ENG-2388.md"
+      ],
+      "why": "Other engineers reproduced the rollback and label replay from her procedures.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:reviews_given"
+      ],
+      "why": "Review corrections address leakage, cache isolation and misleading evaluation denominators.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "system_design",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/ENG-2741.md"
+      ],
+      "why": "Application failure handling and tested restoration support a bounded deployed design.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "terraform",
+      "has_skill": false,
+      "evidence_refs": [
+        "docs/ARCH-0190.md"
+      ],
+      "why": "Network template authorship is administrative; she has never authored infrastructure modules.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Terraform",
+      "mapped_skill_id": "terraform",
+      "has_skill": false,
+      "why": "A template page is mostly platform-written and contains no infrastructure implementation by Ananya."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F24",
+      "s11_row": "skill_decay",
+      "skill_id": "gcp",
+      "plant": "June resume retains a current-credential claim beside scan metadata ending in May 2024; only the self-report is exported, with no renewal evidence.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F28",
+      "s11_row": "skill_decay",
+      "skill_id": "gcp",
+      "plant": "Freshworks usage ends mid-2022 and current scoring is on AWS, despite the elevated HCM cloud self-rating.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F34",
+      "s11_row": "wrong_person",
+      "skill_id": "terraform",
+      "plant": "ARCH-0190 creator is Ananya but edit history attributes almost all content to platform.",
+      "expected_engine_behavior": "not_extract"
+    }
+  ],
+  "pid": "P007",
+  "batch": "B",
+  "generator": "codex gpt-6.1-sol",
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0.2,
+    "notes": "Willing to discuss current ML work; may initially repeat the old cloud rating."
+  },
+  "messaging_allowed": true
+}

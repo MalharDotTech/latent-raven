@@ -1,0 +1,12 @@
+python3 -I scripts/validate_personas.py P033 P034 P035 P036 P037 P038 P039 P040 P041 P042
+[OK ] P033  errors=0 warns=0
+[OK ] P034  errors=0 warns=0
+[OK ] P035  errors=0 warns=0
+[OK ] P036  errors=0 warns=0
+[OK ] P037  errors=0 warns=0
+[OK ] P038  errors=0 warns=0
+[OK ] P039  errors=0 warns=0
+[OK ] P040  errors=0 warns=0
+[OK ] P041  errors=0 warns=1
+   WARN  P041: no traps listed
+[OK ] P042  errors=0 warns=0

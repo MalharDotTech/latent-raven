@@ -1,0 +1,51 @@
+{
+  "employee_id": "KC-11731",
+  "legacy_ids": [],
+  "worker_type": "intern",
+  "legal_name": "Ayesha Khan",
+  "preferred_name": "Ayesha Khan",
+  "emails": [
+    {
+      "email": "ayesha.khan@kestrelcloud.com",
+      "from": "2026-05",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Hyderabad",
+  "country": "IN",
+  "department": "Data Platform",
+  "manager_employee_id": "KC-10120",
+  "hire_date": "2026-05-04",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Data Intern",
+      "grade": "I1",
+      "from": "2026-05",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Data quality framework (intern project)",
+      "role": "Data Intern",
+      "from": "2026-05",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "VIT Vellore",
+      "degree": "B.Tech",
+      "field": "Computer Science and Engineering",
+      "year": 2026
+    }
+  ]
+}

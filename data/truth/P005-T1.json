@@ -1,0 +1,402 @@
+{
+  "pid": "P005-T1",
+  "schema": "truth-v2",
+  "summary": "Real Go backend engineer. The evidence is strong in recon-engine and ledger-api. Her CV and Jira are full of the English phrase go-live and go-to-market, which a keyword mapper can confuse with the language. A teammate's pair and a Kubernetes manifest tweak look larger than they are.",
+  "archetype": "go_ambiguity_true_positive",
+  "batch": "A",
+  "generator": "claude-sonnet-5-5",
+  "skills": [
+    {
+      "skill_id": "go",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_siyer-kc: recon-engine/ledger-api Go PRs every month 2023-09..2026-10 incl. goroutine leak fix, race fix (go test -race), ticker leak, sharded rwmutex; jira_sneha.iyer matcher bugs resolved; tara_KC-11512 Go 71% 'Proficient' (2026-03); doc_ENG-recon-matcher-worker-pool. Work at 3 in 3+ months + measured.",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:recon-engine PRs",
+        "doc:ENG-recon-matcher-worker-pool",
+        "tara:go",
+        "github:reviews"
+      ],
+      "why": "Operates production Go services, found and fixed goroutine leaks with pprof, race fixes; reviews peers Go code"
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_siyer-kc: .sql in bulk-posting and tenant-shard PRs, pgx batch insert, review 'defer rows.Close() missing'; hcm_KC-11512 self 'PostgreSQL' 3; cv_2026_05 SQL. SQL is embedded in Go service work; no query plans or tuning records. Work + self at 2; ceiling 3 -> 2.",
+        "missing_source": null
+      },
+      "last_used": "2026-03",
+      "evidence_refs": [
+        "github:.sql changes",
+        "github:pgx CopyFrom"
+      ],
+      "why": "Postgres batch writes and indexes in production services"
+    },
+    {
+      "skill_id": "kafka",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_siyer-kc: 'commit offsets only after db tx commit' (2024-04), 'batch ack for bank feed consumer' (2026-01); jira_sneha.iyer RECON-2833 lost matches; hcm self 2. Consumer fixes, brokers owned by Platform.",
+        "missing_source": null
+      },
+      "last_used": "2026-01",
+      "evidence_refs": [
+        "github:offset commit fix",
+        "github:batch ack"
+      ],
+      "why": "Fixes consumer semantics but the topology and brokers are owned by Platform"
+    },
+    {
+      "skill_id": "docker",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_siyer-kc: golang bump in CI + Dockerfile (2025-03, reviewed); hcm_KC-11512 self 'Docker' 2; cv_2026_05; lms Docker Fundamentals (2023). Work + self at 2.",
+        "missing_source": null
+      },
+      "last_used": "2025-03",
+      "evidence_refs": [
+        "lms:Docker Fundamentals path",
+        "github:Dockerfile bump"
+      ],
+      "why": "Builds images for her services, no deeper container work"
+    },
+    {
+      "skill_id": "observability",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_siyer-kc: pprof endpoint (2024-05), goroutine-leak fix found via pprof (2024-06), match-latency histograms (2024-08), review flagging unbounded metric label cardinality (2026-05); jira_sneha.iyer 'Rule cache contention (pprof)' (2026-07), 'Latency histograms per rule'; doc pprof debugging checklist. Uses telemetry to locate production faults in 3+ months.",
+        "missing_source": null
+      },
+      "last_used": "2026-05",
+      "evidence_refs": [
+        "github:histogram metrics",
+        "github:pprof endpoint"
+      ],
+      "why": "Metrics and pprof for own services; thin but real"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_siyer-kc reviews_given (50-99/yr 2024-2026): defect catches before merge - goroutine not joined, shadowed err, missing rows.Close, wg.Add race, unbounded metric label. Independent defect-catching reviews in 3+ months.",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "github:reviews_given"
+      ],
+      "why": "Catches real concurrency defects; modest volume"
+    },
+    {
+      "skill_id": "system_design",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "doc_ENG-recon-matcher-worker-pool (authored, with contributor) on worker pool, backpressure and shutdown rules; gh_siyer-kc tenant-hash sharding, explain-match API, residency guard. Component designs inside one service; no service-level capacity/failure decision record. Floor 2, ceiling 3.",
+        "missing_source": null
+      },
+      "last_used": "2025-01",
+      "evidence_refs": [
+        "doc:ENG-recon-matcher-worker-pool",
+        "github:shard matching"
+      ],
+      "why": "Designs within a service; not cross-service"
+    },
+    {
+      "skill_id": "cicd",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_siyer-kc: golangci-lint upgrade + findings (2024-07), Go version bump in CI (2025-03); cv_2026_05 'GitHub Actions'; doc mentions go test -race in CI. Work + self at 2.",
+        "missing_source": null
+      },
+      "last_used": "2025-03",
+      "evidence_refs": [
+        "github:ci yaml bumps",
+        "github:lint"
+      ],
+      "why": "Maintains CI config for own repos"
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "One authored page (doc_ENG-recon-matcher-worker-pool, 63 views). Single artifact; no validation records.",
+        "missing_source": "more authored docs / validation records"
+      },
+      "last_used": "2026-07",
+      "evidence_refs": [
+        "doc:ENG-recon-matcher-worker-pool"
+      ],
+      "why": "One good engineering page"
+    },
+    {
+      "skill_id": "kubernetes",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "One Helm values PR (gh_siyer-kc resource limits + PDB, co-authored with a platform engineer) and its jira_sneha.iyer task; cv_2026_05 'Helm'. Co-authored single change cannot be credited mostly to her.",
+        "missing_source": "independent rollout / manifest work"
+      },
+      "last_used": "2025-11",
+      "evidence_refs": [
+        "github:helm resource limits PR (co-authored)"
+      ],
+      "why": "Edits helm values with a platform colleague; cannot operate or repair rollouts alone"
+    },
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "assessed_level": null,
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_2026_05 'Python (scripts)' only; no Python in any work system.",
+        "missing_source": "any Python repo work"
+      },
+      "last_used": "2023-11",
+      "evidence_refs": [
+        "cv_v1:Skills"
+      ],
+      "why": "Script-level only, no repo evidence"
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "go-live / go/no-go / go-to-market",
+      "mapped_skill_id": "go",
+      "has_skill": false,
+      "why": "English phrases from EU launch and demo tooling bullets; they are not the language",
+      "oracle": {
+        "action": "not_extract",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_2026_05 'go-live', 'go/no-go', 'Go-to-market'; jira_sneha.iyer go-live tasks; gh_siyer-kc 'eu region go-live' PR. English phrases, not the language.",
+        "missing_source": null
+      }
+    },
+    {
+      "skill_text": "Java",
+      "mapped_skill_id": "java",
+      "has_skill": false,
+      "why": "Razorpay SDE-I in 2022-23, no Java since; true level has decayed beneath what a CV line suggests",
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_2026_05 Razorpay Java/Spring Boot 2022-23 only; no Java since; outside 2y window.",
+        "missing_source": null
+      }
+    },
+    {
+      "skill_text": "AWS (SQS, S3)",
+      "mapped_skill_id": "aws",
+      "has_skill": false,
+      "why": "CV line only; no Kestrel artifact",
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_2026_05 'AWS (SQS, S3)' only.",
+        "missing_source": null
+      }
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F25",
+      "s11_row": "wrong_mapping",
+      "skill_id": "go",
+      "plant": "CV bullets 'go-live of the EU region', 'go/no-go checklist', 'Go-to-market support'; Jira tasks 'EU region go-live checklist' and 'Go/no-go review' with component General; PR 'eu region go-live'.",
+      "expected_engine_behavior": "send_at_level_3",
+      "evidence_expectation": "go-live / go-no-go / go-to-market phrases must not be extracted as Go evidence.",
+      "v1_expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "none:go_true_positive",
+      "s11_row": "go_genuine",
+      "skill_id": "go",
+      "plant": "Real Go evidence is plentiful (goroutine leak, race, pprof, golangci-lint, go.mod bumps) and Tara Go is 71%. Engine must not over-correct and hold Go.",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F16",
+      "s11_row": "wrong_mapping",
+      "skill_id": "go",
+      "plant": "Jira 'Fix bug' with component General (RECON) plus the go-live tasks filed under General.",
+      "expected_engine_behavior": "send_at_level_3",
+      "evidence_expectation": "'Fix bug' / component General tickets must not be mapped.",
+      "v1_expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F13",
+      "s11_row": "wrong_person",
+      "skill_id": "kubernetes",
+      "plant": "PR 'helm: resource limits + pdb for matcher' has a co-author trailer for a platform colleague; Kubernetes credit is mostly his.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F10",
+      "s11_row": "wrong_person",
+      "skill_id": "go",
+      "plant": "Bot dependency bump PR (kafka-go) appears in her authored list as author_type bot; not her work, but merged by another human.",
+      "expected_engine_behavior": "send_at_level_3",
+      "evidence_expectation": "Bot kafka-go bump PR is not her work.",
+      "v1_expected_engine_behavior": "not_extract"
+    }
+  ],
+  "unmatched_skills": [
+    "gRPC",
+    "Redis",
+    "PostgreSQL (as distinct from SQL)"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.85,
+    "yes_to_everything": false,
+    "flattery_bias": -1,
+    "notes": "Underclaims slightly; hesitant to accept Go 4 and will say 'I still ask seniors for concurrency design'"
+  },
+  "messaging_allowed": true,
+  "twin_of": "P005",
+  "twin_swap": {
+    "first": "Rahul",
+    "last": "Verma",
+    "gender": "M",
+    "university": null
+  }
+}

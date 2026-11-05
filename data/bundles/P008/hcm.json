@@ -1,0 +1,59 @@
+{
+  "employee_id": "KC-10808",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Mohammed Faizal",
+  "preferred_name": "Mohammed",
+  "emails": [
+    {
+      "email": "mohammed.faizal@kestrelcloud.com",
+      "from": "2021-09",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Platform Engineering",
+  "manager_employee_id": "KC-10062",
+  "hire_date": "2021-09-06",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Site Reliability Engineer",
+      "grade": "P3",
+      "from": "2021-09",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Platform on-call",
+      "role": "SRE",
+      "from": "2021-09",
+      "to": null,
+      "allocation_pct": 70
+    },
+    {
+      "project": "Dependency release rota",
+      "role": "Release duty",
+      "from": "2025-01",
+      "to": null,
+      "allocation_pct": 30
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "VIT Vellore",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2017
+    }
+  ],
+  "exported_on": "2026-10-31"
+}

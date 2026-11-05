@@ -1,0 +1,477 @@
+{
+  "user": "sunita.rao",
+  "table": "sc_req_item",
+  "note": "requested-for / requested-by user; export of RITMs raised by the user, not tickets worked by the user",
+  "items": [
+    {
+      "number": "RITM0003898",
+      "short_description": "SAP SF EC: permission role update for new HRBP",
+      "category": "HR Systems",
+      "assignment_group": "IT Enterprise Apps",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2017-02-14",
+      "resolved": "2017-02-16",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Access granted, valid till next review."
+    },
+    {
+      "number": "RITM0004113",
+      "short_description": "Need SAP GUI installed - laptop (SAP FI display, payroll accrual recon)",
+      "category": "Software",
+      "assignment_group": "IT Enterprise Apps",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2018-04-03",
+      "resolved": "2018-04-10",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Completed. Please verify."
+    },
+    {
+      "number": "RITM0004156",
+      "short_description": "SAP FI: display access to cost centre report FBL3N - payroll accrual reconciliation (read only)",
+      "category": "Access",
+      "assignment_group": "IT Enterprise Apps",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2018-04-11",
+      "resolved": "2018-04-20",
+      "priority": "P3",
+      "reassignment_count": 1,
+      "resolution_notes_excerpt": "Fixed in prod, tested in sandbox first."
+    },
+    {
+      "number": "RITM0004360",
+      "short_description": "SAP SF EC: bulk position upload failed validation - need IT help",
+      "category": "HR Systems",
+      "assignment_group": "IT Enterprise Apps",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2019-07-22",
+      "resolved": "2019-07-26",
+      "priority": "P3",
+      "reassignment_count": 1,
+      "resolution_notes_excerpt": "Access granted, valid till next review."
+    },
+    {
+      "number": "RITM0004446",
+      "short_description": "SuccessFactors: reporting access for HR analytics - ad hoc reports",
+      "category": "Access",
+      "assignment_group": "IT Enterprise Apps",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2019-10-09",
+      "resolved": "2019-10-12",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Completed. Please verify."
+    },
+    {
+      "number": "RITM0004620",
+      "short_description": "SAP SF: add new location Hyderabad-2 to location object",
+      "category": "HR Systems",
+      "assignment_group": "IT Enterprise Apps",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2020-03-02",
+      "resolved": "2020-03-06",
+      "priority": "P3",
+      "reassignment_count": 1,
+      "resolution_notes_excerpt": "Completed. Please verify."
+    },
+    {
+      "number": "RITM0004822",
+      "short_description": "SAP FI display access renewal (annual review)",
+      "category": "Access",
+      "assignment_group": "IT Enterprise Apps",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2021-04-12",
+      "resolved": "2021-04-15",
+      "priority": "P3",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Fixed in prod, tested in sandbox first."
+    },
+    {
+      "number": "RITM0005233",
+      "short_description": "Workday sandbox refresh needed before UAT cycle 2",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2023-05-16",
+      "resolved": "2023-05-19",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Fixed in prod, tested in sandbox first."
+    },
+    {
+      "number": "RITM0005375",
+      "short_description": "Workday: inbound integration from Berlin entity - country field mapping",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2023-08-29",
+      "resolved": "2023-09-12",
+      "priority": "P4",
+      "reassignment_count": 1,
+      "resolution_notes_excerpt": "Role mapped as per approval from HR head."
+    },
+    {
+      "number": "RITM0005447",
+      "short_description": "Workday: security group change - HRBP Hyderabad",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2023-11-06",
+      "resolved": "2023-11-08",
+      "priority": "P3",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Role mapped as per approval from HR head."
+    },
+    {
+      "number": "RITM0005505",
+      "short_description": "SuccessFactors: set read only archive access for audit (2016-2023 data)",
+      "category": "Access",
+      "assignment_group": "IT Enterprise Apps",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2023-12-04",
+      "resolved": "2023-12-11",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Access granted, valid till next review."
+    },
+    {
+      "number": "RITM0005592",
+      "short_description": "Workday: calculated field for notice period end date not showing in report",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2024-01-23",
+      "resolved": "2024-02-01",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Access granted, valid till next review."
+    },
+    {
+      "number": "RITM0005655",
+      "short_description": "Workday: Ledgerly employee records import - template error",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2024-03-08",
+      "resolved": "2024-03-14",
+      "priority": "P3",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Completed. Please verify."
+    },
+    {
+      "number": "RITM0005773",
+      "short_description": "Workday: BP definition change - transfer approval chain for Pune",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2024-06-19",
+      "resolved": "2024-06-27",
+      "priority": "P3",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Role mapped as per approval from HR head."
+    },
+    {
+      "number": "RITM0005899",
+      "short_description": "Workday: terminated worker still visible in org chart",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2024-10-07",
+      "resolved": "2024-10-09",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Access granted, valid till next review."
+    },
+    {
+      "number": "RITM0006058",
+      "short_description": "Workday: new supervisory org for Ledgerly Pune team",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2025-01-14",
+      "resolved": "2025-01-17",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Done as requested."
+    },
+    {
+      "number": "RITM0006188",
+      "short_description": "Workday: HRBP access for Austin office (US payroll vendor)",
+      "category": "Access",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2025-04-22",
+      "resolved": "2025-04-25",
+      "priority": "P3",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Fixed in prod, tested in sandbox first."
+    },
+    {
+      "number": "RITM0006344",
+      "short_description": "Workday report: headcount by grade not matching Finance report",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2025-08-05",
+      "resolved": "2025-08-12",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Done as requested."
+    },
+    {
+      "number": "RITM0006535",
+      "short_description": "Workday: rescind wrong promotion BP (employee id typo)",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2026-02-10",
+      "resolved": "2026-02-11",
+      "priority": "P3",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Fixed in prod, tested in sandbox first."
+    },
+    {
+      "number": "RITM0006752",
+      "short_description": "Workday: bulk comp change load - FY27 cycle template",
+      "category": "HR Systems",
+      "assignment_group": "IT Business Apps - Workday",
+      "requested_by_self": true,
+      "resolved_by_self": false,
+      "opened": "2026-09-02",
+      "resolved": "2026-09-09",
+      "priority": "P4",
+      "reassignment_count": 0,
+      "resolution_notes_excerpt": "Done as requested."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2017-02",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2018-04",
+      "ritm_raised": 2
+    },
+    {
+      "month": "2019-07",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2019-10",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2020-03",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2021-04",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2023-01",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2023-02",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2023-03",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2023-04",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2023-05",
+      "ritm_raised": 2
+    },
+    {
+      "month": "2023-06",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2023-07",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2023-08",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2023-09",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2023-10",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2023-11",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2023-12",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-01",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-02",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-03",
+      "ritm_raised": 2
+    },
+    {
+      "month": "2024-04",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-05",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-06",
+      "ritm_raised": 2
+    },
+    {
+      "month": "2024-07",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-08",
+      "ritm_raised": 2
+    },
+    {
+      "month": "2024-09",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-10",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-11",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2024-12",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2025-01",
+      "ritm_raised": 2
+    },
+    {
+      "month": "2025-02",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2025-03",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2025-04",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2025-05",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2025-06",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2025-07",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2025-08",
+      "ritm_raised": 2
+    },
+    {
+      "month": "2025-09",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2025-10",
+      "ritm_raised": 2
+    },
+    {
+      "month": "2025-11",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2025-12",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2026-01",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2026-02",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2026-03",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2026-04",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2026-05",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2026-06",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2026-07",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2026-08",
+      "ritm_raised": 0
+    },
+    {
+      "month": "2026-09",
+      "ritm_raised": 1
+    },
+    {
+      "month": "2026-10",
+      "ritm_raised": 0
+    }
+  ]
+}

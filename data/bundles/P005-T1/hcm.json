@@ -1,0 +1,93 @@
+{
+  "employee_id": "KC-11512",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Rahul Verma",
+  "preferred_name": "Rahul",
+  "emails": [
+    {
+      "email": "rahul.verma@kestrelcloud.com",
+      "from": "2023-09",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Reconciliation Engineering",
+  "manager_employee_id": "KC-10330",
+  "hire_date": "2023-09-11",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Software Development Engineer I",
+      "grade": "P2",
+      "from": "2023-09",
+      "to": "2025-03"
+    },
+    {
+      "title": "Software Development Engineer II",
+      "grade": "P3",
+      "from": "2025-04",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Ledger API bulk posting",
+      "role": "Backend Engineer",
+      "from": "2023-09",
+      "to": "2024-01",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Recon v3 matching engine",
+      "role": "Backend Engineer",
+      "from": "2024-02",
+      "to": null,
+      "allocation_pct": 90
+    },
+    {
+      "project": "EU region launch (recon)",
+      "role": "Backend Engineer",
+      "from": "2025-09",
+      "to": "2026-02",
+      "allocation_pct": 40
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Golang",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "PostgreSQL",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Kafka",
+      "self_level": 2,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Docker",
+      "self_level": 2,
+      "declared_on": "2025-04"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "PES University",
+      "degree": "B.Tech",
+      "field": "Computer Science and Engineering",
+      "year": 2022
+    }
+  ]
+}

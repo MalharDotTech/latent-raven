@@ -1,0 +1,343 @@
+{
+ "pid": "P008",
+ "schema": "truth-v2",
+ "summary": "Faizal is a capable production SRE, not an operator developer. His release rota adds bot and colleague merges to the legacy activity total, and a late ticket handoff makes a Go change look personally delivered.",
+ "archetype": "SRE with bot-inflated merger metrics",
+ "batch": "B",
+ "generator": "codex gpt-6.1-sol",
+ "skills": [
+  {
+   "skill_id": "kubernetes",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P008_certs_5 CKA verified (2025-03, to 2027-03); P008_github_3 authored PRs: ingress healthcheck fix (2022-02), failed-rollout alert (2023-08), rollout waits for ready replicas (2025-02), PDB preflight before drain (2026-05); P008_authored_doc_7 drain incident. Bot release PRs excluded.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#11527",
+    "docs/ENG-3012.md",
+    "certs:CKA"
+   ],
+   "why": "Repeated repaired rollouts and incident checks support independent operation; one drill does not establish organisation-wide leadership."
+  },
+  {
+   "skill_id": "terraform",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P008_github_3/P008_jira_4: stale lock recovery (2022-11), shared SG lifecycle/import after drift (2024-04), state mv before module rename (2025-06), failed-apply artefacts (2026-10); review comments on state address moves. Work at 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#8796",
+    "github:#4954",
+    "github:#10581"
+   ],
+   "why": "Lock recovery, safe address moves and drift repairs establish module ownership."
+  },
+  {
+   "skill_id": "aws",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P008_github_3/P008_jira_4: gp3 EBS change (2021-10), node role IAM module (2022-06), regional STS endpoint credential fault fixed (2023-12), EBS expansion (2024-08). Access/availability faults resolved across 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#8307",
+    "github:#9345"
+   ],
+   "why": "EBS and role-access incidents include implemented operational corrections."
+  },
+  {
+   "skill_id": "linux",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P008_github_3/P008_jira_4: root-volume disk alert fixed and tested (2023-03), filesystem expansion runbook tested on staging node (2024-08); P008_cv_2 Infosys Linux service support 2017-2021. Work + self at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#4707",
+    "github:#9813"
+   ],
+   "why": "Disk diagnosis and checked filesystem changes demonstrate service operations."
+  },
+  {
+   "skill_id": "observability",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P008_github_3/P008_jira_4: disk alert mountpoint fix (2023-03), Prometheus failed-rollout alert (2023-08), change-bounded silence with tested expiry (2026-01); P008_cv_2 Prometheus. Alerts adjusted from incidents across 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#9094",
+    "github:#6074"
+   ],
+   "why": "He adjusts alerts using incident causes and tests their lifecycle."
+  },
+  {
+   "skill_id": "cicd",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P008_github_3/P008_jira_4: pin actions by SHA + rollback job checked (2024-11), pipeline blocks on Kubernetes readiness (2025-02), failed-apply logs retained (2026-10). Work at 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#5319",
+    "github:#11962"
+   ],
+   "why": "Readiness gates and retained failure logs establish pipeline maintenance."
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "P008_github_3/P008_jira_4: one fix 'image has no ca certs' rebuilt base + TLS probe (2025-09); P008_cv_2 lists Docker. Single change: work + self pin 2, ceiling 3.",
+    "missing_source": null
+   },
+   "last_used": "2025-09",
+   "evidence_refs": [
+    "github:#10881"
+   ],
+   "why": "Packaging failure was diagnosed, corrected and checked through a live TLS probe."
+  },
+  {
+   "skill_id": "incident_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P008_authored_doc_7 (ENG-3012): May 2026 drain incident timeline, recovery and changed pre-drain check; P008_jira_4 PLAT-4961 corrective action; P008_hcm_1 platform on-call 70%; P008_lms_6 incident commander drill (2026-02). Authored + work at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-06",
+   "evidence_refs": [
+    "docs/ENG-3012.md",
+    "jira:PLAT-4961"
+   ],
+   "why": "Recovered the blocked maintenance sequence and completed its corrective action."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P008_github_3 reviews_given (~180/yr): CHANGES_REQUESTED catching worker-pool replacement from module rename, undrainable PDB, missing failed-apply output, 2024-08..2026-10. Defect catches in 3+ months (comments are repetitive).",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:reviews_given"
+   ],
+   "why": "State replacement and disruption-budget review comments caused concrete fixes."
+  },
+  {
+   "skill_id": "go",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Go appears only in bot-authored release PRs (kestrel-release-bot, .go files) merged by him and P008_jira_4 PLAT-4984 where the operator team wrote the fix; CKA is not Go evidence.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "github:#5539",
+    "jira:PLAT-4984"
+   ],
+   "why": "Private calibration confirms no assessed Go understanding; release files and merged bundles belong to maintainers."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Go",
+   "mapped_skill_id": "go",
+   "has_skill": false,
+   "why": "Generated release content includes Go; merger identity and Kubernetes certification do not establish language ability.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Generated release content and merges only.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F10",
+   "s11_row": "wrong_person",
+   "skill_id": "go",
+   "plant": "Dependency and generated release rows name bot authors while the linked employee performs merges.",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F12",
+   "s11_row": "level_off",
+   "skill_id": "kubernetes",
+   "plant": "Legacy merged_prs includes other authors and bots; CV repeats that dashboard total. Rate individual capability from operational changes instead.",
+   "expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F14",
+   "s11_row": "wrong_person",
+   "skill_id": "go",
+   "plant": "PLAT-4984 hands off twice before Faizal takes release closure; implementation comment is from operator-maintainer.",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "go",
+   "plant": "Valid CKA plus generated operator files can tempt transitive language inference; neither is a Go demonstration.",
+   "expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "Helm",
+  "Prometheus"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.87,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Answers plainly; corrects any claim that he wrote the operator patch."
+ },
+ "messaging_allowed": true
+}

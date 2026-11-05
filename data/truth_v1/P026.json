@@ -1,0 +1,183 @@
+{
+ "summary": "Sunita is a veteran HR operations lead who ran Kestrel's people-systems migration and owns the lifecycle SOPs. Her SAP exposure is the human-capital module only, plus read-only finance display for accrual checks; it ended with the 2023 cutover. Workday is her current system, with configuration done together with IT and an implementation partner.",
+ "archetype": "Senior HR ops with legacy system decay",
+ "skills": [
+  {
+   "skill_id": "hr_operations",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:DOC-PEOPLE-0412",
+    "hcm:project_allocations",
+    "cv_v1:Experience/Kestrel"
+   ],
+   "why": "Owns and teaches the lifecycle procedures, sampled audit re-performance with closed actions, team of five."
+  },
+  {
+   "skill_id": "workday",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "servicenow:items",
+    "doc:DOC-PEOPLE-0733",
+    "lms:Workday Business Process Administration"
+   ],
+   "why": "Maintains business processes and fixes worker data faults; configuration changes go through IT tickets, so independent but not teaching admins."
+  },
+  {
+   "skill_id": "sap",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "last_used": "2023-12",
+   "evidence_refs": [
+    "servicenow:items",
+    "doc:DOC-PEOPLE-0733",
+    "cv_v1:Experience/Kestrel"
+   ],
+   "why": "Years in SuccessFactors Employee Central processing, rated high before cutover; nothing since 2023 and finance access was read-only display, so today the usable level is lower."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:DOC-PEOPLE-0733",
+    "hcm:project_allocations"
+   ],
+   "why": "Got HR head, finance, IT and payroll vendor to sign off go/no-go criteria; documented decisions and closed actions."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "doc:DOC-PEOPLE-0412"
+   ],
+   "why": "SOP versions are validated with new joiners completing a mock case; revisions follow their questions."
+  },
+  {
+   "skill_id": "excel_modeling",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Skills"
+   ],
+   "why": "Pivot and lookup use for reconciliations, which is generic spreadsheet work."
+  },
+  {
+   "skill_id": "servicenow",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "last_used": null,
+   "evidence_refs": [
+    "servicenow:items"
+   ],
+   "why": "Appears only as a requester raising RITMs for IT."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "SAP FI (display)",
+   "mapped_skill_id": "sap",
+   "has_skill": false,
+   "why": "Read-only cost centre report access for payroll accrual checks; does not establish finance module operation."
+  },
+  {
+   "skill_text": "SAP HR (PA30 / PA40)",
+   "mapped_skill_id": "sap",
+   "has_skill": false,
+   "why": "Infosys-era transactions from 2011-2016; too old to count today."
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "sap",
+   "plant": "CV and RITMs mix SuccessFactors/HR module with SAP FI display access and SAP GUI install; skill phrase 'SAP' is bare in several places.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "sap",
+   "plant": "Last SAP-related request is Dec 2023 archive access; self-declared level 3-4 dates from 2021; all later records are Workday.",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F19",
+   "s11_row": "level_off",
+   "skill_id": "hr_operations",
+   "plant": "HCM titles climb from Executive to Lead; grade S1 to M1 across 7 years, with a title change in 2021 that does not match the CV's years.",
+   "expected_engine_behavior": "send_at_level_4"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "workday",
+   "plant": "Self-declared 3 on Workday and 4 on SAP SuccessFactors, the second from 2021 with no refresh.",
+   "expected_engine_behavior": "send_at_level_3"
+  }
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.65,
+  "yes_to_everything": false,
+  "flattery_bias": 0.2,
+  "notes": "Will push back on SAP level if the message names a finance module."
+ },
+ "messaging_allowed": true,
+ "pid": "P026",
+ "batch": "E",
+ "generator": "claude-sonnet-5-5"
+}

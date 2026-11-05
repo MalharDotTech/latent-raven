@@ -1,0 +1,26 @@
+{
+  "assessments": [
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "AWS Cloud Fundamentals",
+      "skill_text": "AWS",
+      "date": "2026-05-14",
+      "raw_score_pct": 71,
+      "percentile": 58,
+      "vendor_proficiency_label": "Intermediate",
+      "proctoring_flags": []
+    },
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Kubernetes Fundamentals",
+      "skill_text": "Kubernetes",
+      "date": "2026-06-10",
+      "raw_score_pct": 44,
+      "percentile": 29,
+      "vendor_proficiency_label": "Beginner",
+      "proctoring_flags": [
+        "tab_switch_x4"
+      ]
+    }
+  ]
+}

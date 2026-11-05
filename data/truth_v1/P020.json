@@ -1,0 +1,207 @@
+{
+  "summary": "Anjali’s employee and Jira account identifiers persist through the July 2025 surname and email change. She makes independent product trade-offs and has stronger research capability than the exported snippets demonstrate; a technical appendix on a page she created was written by an engineer.",
+  "archetype": "Product manager with identity continuity and shared documents",
+  "skills": [
+    {
+      "skill_id": "product_discovery",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/PM-220",
+        "jira:PM-3001",
+        "jira:PM-3004"
+      ],
+      "why": "Observed user behaviour causes a real pilot scope change followed by a return-session check.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "roadmapping",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:PM-3002",
+        "jira:PM-3005",
+        "jira:PM-3009"
+      ],
+      "why": "Maintains priorities and revises commitments based on adoption and dependencies.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "stakeholder_management",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/PM-220",
+        "jira:PM-3002"
+      ],
+      "why": "Resolves a commercial request against operator needs with an agreed temporary arrangement.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "agile_delivery",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:PM-3008",
+        "jira:PM-3005"
+      ],
+      "why": "Removes acceptance ownership blockers and tracks the resulting improvement across iterations.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:PM-3007",
+        "docs/PM-220"
+      ],
+      "why": "Support validation establishes that her rollout instructions are usable.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "ux_research",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:occasional moderated sessions",
+        "jira:PM-3012"
+      ],
+      "why": "Private recordings and research notes show independent study planning and synthesis. Exported work shows designer review and partial results only; hold a confident independent-research claim until those materials are available.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:PM-3010",
+        "lms:SQL Essential Training"
+      ],
+      "why": "Can adjust a query with analyst review; training alone would not establish production analysis.",
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "system_design",
+      "has_skill": false,
+      "evidence_refs": [
+        "docs/PM-241"
+      ],
+      "why": "She approved acceptance wording, not the engineer’s lease or consistency mechanism.",
+      "would_accept_levels": []
+    },
+    {
+      "skill_id": "go",
+      "has_skill": false,
+      "evidence_refs": [
+        "jira:PM-3006"
+      ],
+      "why": "Reporting the retry failure did not involve implementing or reviewing Go code.",
+      "would_accept_levels": []
+    },
+    {
+      "skill_id": "figma",
+      "has_skill": false,
+      "evidence_refs": [
+        "cv_v1:SQL and Figma"
+      ],
+      "why": "Commenting on linked designs is not the ability to build components or prototypes.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "System design",
+      "mapped_skill_id": "system_design",
+      "has_skill": false,
+      "why": "Page creation metadata conceals the engineering authorship split unless revision notes are considered."
+    },
+    {
+      "skill_text": "Go",
+      "mapped_skill_id": "go",
+      "has_skill": false,
+      "why": "Reporter attribution alone does not convey implementation skill."
+    },
+    {
+      "skill_text": "Figma",
+      "mapped_skill_id": "figma",
+      "has_skill": false,
+      "why": "A design viewer is not a practitioner of the tool."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F22",
+      "s11_row": "wrong_person",
+      "skill_id": null,
+      "plant": "The HCM change event ties both surnames and email intervals to one Jira account and employee key; the older PRD retains its original author name.",
+      "expected_engine_behavior": "join_by_name_change_event"
+    },
+    {
+      "fault_id": "F34",
+      "s11_row": "wrong_person",
+      "skill_id": "system_design",
+      "plant": "The PM-created addendum credits most technical content to recon-maintainer-kc and limits product approval to behaviour.",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F25",
+      "s11_row": "level_off",
+      "skill_id": "sql",
+      "plant": "A completed SQL course sits beside a ticket showing analyst correction; completion must not imply independent querying.",
+      "expected_engine_behavior": "send_at_level_2"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.73,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Confirms product work; redirects backend design questions to engineering. Research confirmation can succeed despite insufficient exported proof."
+  },
+  "pid": "P020",
+  "batch": "D",
+  "generator": "codex (GPT-6; runtime submodel not exposed)",
+  "messaging_allowed": true
+}

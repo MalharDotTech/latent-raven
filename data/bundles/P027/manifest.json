@@ -1,0 +1,44 @@
+{
+  "person_ref": "P027",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-12011",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_2025_05",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P027",
+      "received": "2025-05-06"
+    },
+    {
+      "source_id": "sfdc_KC-12011",
+      "source_type": "salesforce",
+      "path": "salesforce.json"
+    },
+    {
+      "source_id": "certs_KC-12011",
+      "source_type": "certs",
+      "path": "certs.json"
+    },
+    {
+      "source_id": "lms_KC-12011",
+      "source_type": "lms",
+      "path": "lms.json"
+    },
+    {
+      "source_id": "doc_DOC-SALES-2410",
+      "source_type": "authored_doc",
+      "path": "docs/DOC-SALES-2410.md"
+    },
+    {
+      "source_id": "doc_DOC-SALES-2562",
+      "source_type": "authored_doc",
+      "path": "docs/DOC-SALES-2562.md"
+    }
+  ]
+}

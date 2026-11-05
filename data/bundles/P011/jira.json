@@ -1,0 +1,869 @@
+{
+  "linked_worker_id": "KC-11111",
+  "exported_on": "2026-10-31",
+  "issues": [
+    {
+      "key": "DATA-1021",
+      "type": "Bug",
+      "summary": "DATA-1021 reject bad settlement header",
+      "description_excerpt": "Python header parser checks delimiter and required fields; file quarantine regression test.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2020-08-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2020-08-11",
+      "resolved": "2020-08-12",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#6438"
+      ]
+    },
+    {
+      "key": "DATA-1133",
+      "type": "Bug",
+      "summary": "fix: bank timestamp offset",
+      "description_excerpt": "Python datetime parser retains supplied offset instead of local timezone.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2020-11-09"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2020-11-09",
+      "resolved": "2020-11-11",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#6742"
+      ]
+    },
+    {
+      "key": "DATA-1271",
+      "type": "Task",
+      "summary": "Dedup settlement rows by bank ref",
+      "description_excerpt": "PySpark window chooses latest event by bank sequence; reconciled source counts.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-03-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2021-03-14",
+      "resolved": "2021-03-17",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#7124"
+      ]
+    },
+    {
+      "key": "DATA-1401",
+      "type": "Bug",
+      "summary": "DATA-1401 backfill uses logical date",
+      "description_excerpt": "Airflow task previously read wall clock; tested replay over month boundary.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-07-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2021-07-13",
+      "resolved": "2021-07-14",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#7532"
+      ]
+    },
+    {
+      "key": "DATA-1503",
+      "type": "Bug",
+      "summary": "fix: SQL null branch in fee totals",
+      "description_excerpt": "SQL CASE handles missing fee code; reconciliation attached.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-11-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2021-11-08",
+      "resolved": "2021-11-10",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#7931"
+      ]
+    },
+    {
+      "key": "DATA-1647",
+      "type": "Task",
+      "summary": "Handle skewed settlement tenant",
+      "description_excerpt": "PySpark plan isolated hot tenant and bounded partitions; run reduced from 71m to 29m.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-03-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2022-03-13",
+      "resolved": "2022-03-16",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#8295"
+      ]
+    },
+    {
+      "key": "DATA-1740",
+      "type": "Bug",
+      "summary": "DATA-1740 quarantine unknown schema",
+      "description_excerpt": "Python validator detects changed header before PySpark conversion; source file retained.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-07-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2022-07-12",
+      "resolved": "2022-07-13",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#8702"
+      ]
+    },
+    {
+      "key": "DATA-1841",
+      "type": "Bug",
+      "summary": "fix: retries publish partial output",
+      "description_excerpt": "Airflow publish waits for row-count gate; replayed failed partition before deploy.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-10-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2022-10-10",
+      "resolved": "2022-10-12",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#8993"
+      ]
+    },
+    {
+      "key": "DATA-1958",
+      "type": "Task",
+      "summary": "Add replay checklist",
+      "description_excerpt": "Airflow backfill handover; teammate replayed December run with documented checks.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-01-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-01-15",
+      "resolved": "2023-01-18",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#9310"
+      ]
+    },
+    {
+      "key": "DATA-3691",
+      "type": "Bug",
+      "summary": "fix: settlement schema v3 tests",
+      "description_excerpt": "Python parser update after return; reviewer showed new registry helper and requested fixture change.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-17",
+      "resolved": "2026-02-18",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#13754"
+      ]
+    },
+    {
+      "key": "DATA-3741",
+      "type": "Task",
+      "summary": "DATA-3741 dedup late bank events",
+      "description_excerpt": "PySpark latest-event key omitted bank sequence; corrected key, replayed 4 days, counts reconciled.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-09"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-09",
+      "resolved": "2026-03-11",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#13829"
+      ]
+    },
+    {
+      "key": "DATA-3778",
+      "type": "Bug",
+      "summary": "fix: casts before amount filter",
+      "description_excerpt": "PySpark decimal casts applied before comparison; quarantined 19 malformed values.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-22",
+      "resolved": "2026-03-25",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#13888"
+      ]
+    },
+    {
+      "key": "DATA-3828",
+      "type": "Bug",
+      "summary": "Backfill only missing settlement dates",
+      "description_excerpt": "Airflow partial backfill uses partition manifest; repaired failed run without replaying published days.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-14",
+      "resolved": "2026-04-15",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#14017"
+      ]
+    },
+    {
+      "key": "DATA-3879",
+      "type": "Task",
+      "summary": "DATA-3879 preserve scale in fee sum",
+      "description_excerpt": "SQL decimal type retained through aggregate; checked source and target net amounts.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-11",
+      "resolved": "2026-05-13",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#14156"
+      ]
+    },
+    {
+      "key": "DATA-3976",
+      "type": "Bug",
+      "summary": "fix: renamed bank column breaks parse",
+      "description_excerpt": "Python alias lookup with explicit schema version; added old/new file tests and deployed.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-14",
+      "resolved": "2026-06-17",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#14324"
+      ]
+    },
+    {
+      "key": "DATA-4045",
+      "type": "Bug",
+      "summary": "Keep lineage id on rejected records",
+      "description_excerpt": "PySpark quarantine includes source file and row hash; checked rejected count against input.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-07",
+      "resolved": "2026-07-08",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#14504"
+      ]
+    },
+    {
+      "key": "DATA-4189",
+      "type": "Task",
+      "summary": "DATA-4189 retries must reuse manifest",
+      "description_excerpt": "Airflow retries use original input manifest; recovered interrupted batch and checked no duplicate writes.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-17",
+      "resolved": "2026-08-19",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#14767"
+      ]
+    },
+    {
+      "key": "DATA-4268",
+      "type": "Bug",
+      "summary": "fix: assume-role expires during upload",
+      "description_excerpt": "AWS S3 multipart upload wrapper now refreshes credentials; platform reviewer helped configure role lifetime.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-13",
+      "resolved": "2026-09-16",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#14979"
+      ]
+    },
+    {
+      "key": "DATA-4370",
+      "type": "Bug",
+      "summary": "Fix shuffle spill on settlement replay",
+      "description_excerpt": "PySpark hot bank partition isolated; run log 46m to 24m, input/output counts and net sums match.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-13",
+      "resolved": "2026-10-14",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#15179"
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2020-06",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2020-07",
+      "resolved_as_assignee": 11,
+      "reported": 1
+    },
+    {
+      "month": "2020-08",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2020-09",
+      "resolved_as_assignee": 10,
+      "reported": 4
+    },
+    {
+      "month": "2020-10",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2020-11",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2020-12",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2021-01",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2021-02",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2021-03",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2021-04",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2021-05",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2021-06",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2021-07",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2021-08",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2021-09",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2021-10",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2021-11",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2021-12",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2022-01",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2022-02",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2022-03",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2022-04",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2022-05",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2022-06",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2022-07",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 11,
+      "reported": 2
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 10,
+      "reported": 3
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    }
+  ],
+  "export_scope": "Selected resolved issues; aggregate months include all issues visible to the project export."
+}

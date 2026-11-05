@@ -1,0 +1,18 @@
+{
+  "exported_on": "2026-10-31",
+  "certificates": [
+    {
+      "name": "AWS Certified Security - Specialty",
+      "issuer": "AWS",
+      "code": "SCS-C02",
+      "issued": "2025-06",
+      "expires": "2028-06",
+      "evidence_form": "pdf_upload",
+      "verification_status": "verified",
+      "verified_on": "2025-06-24",
+      "verification_method": "Issuer portal checked by People Ops; certificate number retained in restricted credential store",
+      "holder_name": "N. Lakshmi",
+      "linked_employee_id": "KC-10919"
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+{
+  "linked_employee_id": "KC-12754",
+  "issues": [
+    {
+      "key": "PLAT-4885",
+      "type": "Task",
+      "summary": "Sandbox namespace needs quota",
+      "description_excerpt": "Create quota for training sandbox A using the limits from Nilesh. Show quota output in the review.",
+      "component": "Platform enablement",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-01",
+      "resolved": "2026-04-06",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 163",
+        "start": "2026-03-23",
+        "end": "2026-04-03"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-04-06",
+          "body": "Nilesh corrected the memory unit; dry-run and sandbox rollout passed."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6269"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-4934",
+      "type": "Bug",
+      "summary": "Missing owner label in sandbox",
+      "description_excerpt": "Starter checker should reject a config without team or owner. Ask buddy to review the tests.",
+      "component": "Platform enablement",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-24",
+      "resolved": "2026-04-30",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 165",
+        "start": "2026-04-20",
+        "end": "2026-05-01"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-04-30",
+          "body": "Reviewer asked to reject whitespace-only values before merging."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6336"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-4951",
+      "type": "Task",
+      "summary": "New starter setup step missing",
+      "description_excerpt": "New starters are using the wrong kube context. Write the context switch and verification steps.",
+      "component": "Platform enablement",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-04",
+      "resolved": "2026-05-18",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 166",
+        "start": "2026-05-04",
+        "end": "2026-05-15"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-05-18",
+          "body": "Second run completed on the training laptop."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6378"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5007",
+      "type": "Task",
+      "summary": "Record service check commands",
+      "description_excerpt": "Record the staging helper service checks from the pairing session. Include the unit name and journal output.",
+      "component": "Platform enablement",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-01",
+      "resolved": "2026-06-12",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 168",
+        "start": "2026-06-01",
+        "end": "2026-06-12"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-06-12",
+          "body": "Corrected unit name in shell check; recorded output in ticket."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/infra-live/pull/11614"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5021",
+      "type": "Task",
+      "summary": "CI misses invalid resource requests",
+      "description_excerpt": "Run manifest validation on pull requests. Use the runner image and tool version supplied by release team.",
+      "component": "Platform enablement",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-08",
+      "resolved": "2026-06-17",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 168",
+        "start": "2026-06-01",
+        "end": "2026-06-12"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-06-17",
+          "body": "First run failed on kubeconform version; pinned the tool and passing run attached."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6475"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5052",
+      "type": "Story",
+      "summary": "Blank label passes checker",
+      "description_excerpt": "Config with owner as spaces passes the label check. Add it to the fixture set.",
+      "component": "Platform enablement",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-23",
+      "resolved": "2026-07-02",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 169",
+        "start": "2026-06-15",
+        "end": "2026-06-26"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-07-02",
+          "body": "Unit test added after reviewer supplied the whitespace input."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6527"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5078",
+      "type": "Bug",
+      "summary": "Sandbox B quota rollout",
+      "description_excerpt": "Sandbox B needs the same quota template, but verify it rejects an over-limit pod.",
+      "component": "Platform enablement",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-06",
+      "resolved": "2026-07-15",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 170",
+        "start": "2026-06-29",
+        "end": "2026-07-10"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-07-15",
+          "body": "Checked ResourceQuota output and one rejected over-limit pod."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6573"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5092",
+      "type": "Bug",
+      "summary": "Setup check runs as root",
+      "description_excerpt": "Local setup check runs as root even when the service account is available. Please check with buddy.",
+      "component": "Platform enablement",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-13",
+      "resolved": "2026-07-27",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 171",
+        "start": "2026-07-13",
+        "end": "2026-07-24"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-07-27",
+          "body": "Buddy corrected quoting and compared command output from staging."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/infra-live/pull/11748"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5106",
+      "type": "Bug",
+      "summary": "Training deployment readiness path wrong",
+      "description_excerpt": "Training app shows running but never ready. Compare the probe routes with the app config.",
+      "component": "Platform enablement",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-15",
+      "resolved": "2026-07-27",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 171",
+        "start": "2026-07-13",
+        "end": "2026-07-24"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-07-27",
+          "body": "Changed manifest and checked rollout status together."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6592"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5132",
+      "type": "Task",
+      "summary": "Permission step missing in setup",
+      "description_excerpt": "Log directory permission step is missing from the starter notes. Document what worked in the session.",
+      "component": "Platform enablement",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-04",
+      "resolved": "2026-08-17",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 172",
+        "start": "2026-07-27",
+        "end": "2026-08-07"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-08-17",
+          "body": "Updated the technical procedure."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6655"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5172",
+      "type": "Task",
+      "summary": "Config checker fails on null document",
+      "description_excerpt": "A YAML file containing only a separator crashes the label checker. Please add a small regression.",
+      "component": "Platform enablement",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-18",
+      "resolved": "2026-08-28",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 173",
+        "start": "2026-08-10",
+        "end": "2026-08-21"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-08-28",
+          "body": "Python unit test and guard for an empty YAML document, with reviewer correction on exception type."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6687"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5193",
+      "type": "Task",
+      "summary": "Quota check for sandbox template",
+      "description_excerpt": "Training namespace needs default requests. Apply limit range and inspect a newly created pod.",
+      "component": "Platform enablement",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-26",
+      "resolved": "2026-09-09",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 174",
+        "start": "2026-08-24",
+        "end": "2026-09-04"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-09-09",
+          "body": "Added reviewed Kubernetes limit range and verified the default request on a new test pod."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6718"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5231",
+      "type": "Story",
+      "summary": "Validation report not uploaded",
+      "description_excerpt": "Validation report is missing from the workflow artifacts although the tool printed its output path.",
+      "component": "Platform enablement",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-11",
+      "resolved": "2026-09-21",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 175",
+        "start": "2026-09-07",
+        "end": "2026-09-18"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-09-21",
+          "body": "CI check now keeps the validation report."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6762"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5248",
+      "type": "Bug",
+      "summary": "Checker returns success on invalid config",
+      "description_excerpt": "Missing owner prints an error but checker returns zero. Pipeline therefore stays green.",
+      "component": "Platform enablement",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-23",
+      "resolved": "2026-10-07",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 176",
+        "start": "2026-09-21",
+        "end": "2026-10-02"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-10-07",
+          "body": "Python exit status test, corrected after buddy review; CI run fails on the supplied bad fixture."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/platform-k8s/pull/6809"
+        }
+      ]
+    },
+    {
+      "key": "PLAT-5281",
+      "type": "Story",
+      "summary": "Starter runbook command example",
+      "description_excerpt": "Starter guide needs a short checked example for service status and logs.",
+      "component": "Platform enablement",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-12",
+      "resolved": "2026-10-20",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 177",
+        "start": "2026-10-05",
+        "end": "2026-10-16"
+      },
+      "comments": [
+        {
+          "author": "Devansh Sahu",
+          "date": "2026-10-20",
+          "body": "Added reviewed status and journal output snippets; Nilesh verified the commands in the pairing session."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/infra-live/pull/11960"
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    }
+  ],
+  "exported": "2026-10-31"
+}

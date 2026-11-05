@@ -1,0 +1,88 @@
+{
+  "employee_id": "KC-11517",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Meera Pillai",
+  "preferred_name": "Meera",
+  "emails": [
+    {
+      "email": "meera.pillai@kestrelcloud.com",
+      "from": "2023-04",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Quality Engineering",
+  "manager_employee_id": "KC-10312",
+  "hire_date": "2023-04-10",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Performance Test Engineer",
+      "grade": "P2",
+      "from": "2023-04",
+      "to": "2025-03"
+    },
+    {
+      "title": "Senior Performance Test Engineer",
+      "grade": "P3",
+      "from": "2025-04",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Billing-core load baseline",
+      "role": "Performance Test Engineer",
+      "from": "2023-04",
+      "to": "2024-06",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Recon v2 capacity validation",
+      "role": "Performance Test Engineer",
+      "from": "2024-07",
+      "to": "2025-05",
+      "allocation_pct": 80
+    },
+    {
+      "project": "Release performance gate",
+      "role": "Performance Test Engineer",
+      "from": "2025-04",
+      "to": null,
+      "allocation_pct": 70
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Java",
+      "self_level": 4,
+      "declared_on": "2026-01"
+    },
+    {
+      "skill_text": "Performance testing",
+      "self_level": 3,
+      "declared_on": "2026-01"
+    },
+    {
+      "skill_text": "JMeter",
+      "self_level": 4,
+      "declared_on": "2026-01"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Anna University",
+      "degree": "B.E.",
+      "field": "Electronics and Communication Engineering",
+      "year": 2019
+    }
+  ]
+}

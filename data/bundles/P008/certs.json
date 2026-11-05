@@ -1,0 +1,16 @@
+{
+  "exported_on": "2026-10-31",
+  "certificates": [
+    {
+      "name": "Certified Kubernetes Administrator",
+      "issuer": "Linux Foundation / CNCF",
+      "code": "CKA",
+      "issued": "2025-03",
+      "expires": "2027-03",
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/3c94d7a1-561a-4f63-a859-1dbdd2e88448",
+      "verification_status": "verified",
+      "verified_on": "2026-09-14"
+    }
+  ]
+}

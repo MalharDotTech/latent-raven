@@ -1,0 +1,520 @@
+{
+  "issues": [
+    {
+      "key": "DATA-3866",
+      "type": "Task",
+      "summary": "Add usage example to data_checks docs",
+      "description_excerpt": "Intern onboarding ticket. Pair with Ananth.",
+      "component": "Docs",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-06",
+      "resolved": "2026-05-15",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-3892",
+      "type": "Story",
+      "summary": "Row count validator for settlements",
+      "description_excerpt": "Fail the run if row count differs from partner file header by more than tolerance.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-12",
+      "resolved": "2026-05-29",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-3934",
+      "type": "Bug",
+      "summary": "bad row count",
+      "description_excerpt": "Reproduce with empty input; attach result and test.",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-01",
+      "resolved": "2026-06-09",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-3943",
+      "type": "Bug",
+      "summary": "dq runner crashes on second pass",
+      "description_excerpt": "Generator consumed in first report. Found while writing DATA-3934 test.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-04",
+      "resolved": "2026-06-08",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-3979",
+      "type": "Bug",
+      "summary": "Fix bug",
+      "description_excerpt": "freshness check false alarm around midnight IST",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-15",
+      "resolved": "2026-06-22",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-3987",
+      "type": "Story",
+      "summary": "Null-rate validator",
+      "description_excerpt": "Threshold per column in dq/thresholds.yaml.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-19",
+      "resolved": "2026-07-01",
+      "labels": [],
+      "story_points": 5
+    },
+    {
+      "key": "DATA-4011",
+      "type": "Bug",
+      "summary": "Memory spike on large csv",
+      "description_excerpt": "Loader OOM on the 2GB partner file in staging.",
+      "component": "Ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-30",
+      "resolved": "2026-07-07",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-4032",
+      "type": "Bug",
+      "summary": "partner api client skips pages",
+      "description_excerpt": "Cursor does not advance when a page is empty.",
+      "component": "Ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-06",
+      "resolved": "2026-07-13",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-4055",
+      "type": "Task",
+      "summary": "Orders without settlement - check query",
+      "description_excerpt": "Validation query for analytics lead, reviewed before merge.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-10",
+      "resolved": "2026-07-20",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-4075",
+      "type": "Task",
+      "summary": "Add dq group to settlements dag",
+      "description_excerpt": "",
+      "component": "Airflow",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-17",
+      "resolved": "2026-07-29",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-4093",
+      "type": "Task",
+      "summary": "empty file test",
+      "description_excerpt": "Check logs and update the runbook.",
+      "component": "DATA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-27"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-27",
+      "resolved": "2026-08-04",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-4127",
+      "type": "Task",
+      "summary": "Document thresholds yaml",
+      "description_excerpt": "",
+      "component": "Docs",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-05",
+      "resolved": "2026-08-18",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-4202",
+      "type": "Bug",
+      "summary": "Fix bug",
+      "description_excerpt": "test fails on CI sometimes",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-17",
+      "resolved": "2026-08-20",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-4210",
+      "type": "Bug",
+      "summary": "Retry policy retries POST",
+      "description_excerpt": "Found in review of partner client; make retries method-aware.",
+      "component": "Ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-21",
+      "resolved": "2026-09-01",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-4226",
+      "type": "Story",
+      "summary": "Accepted-values validator",
+      "description_excerpt": "",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-28",
+      "resolved": "2026-09-09",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-4234",
+      "type": "Task",
+      "summary": "dup pk fixture",
+      "description_excerpt": "Compare totals after rerun; reviewer requested a null case.",
+      "component": "DATA",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-03",
+      "resolved": "2026-09-11",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-4248",
+      "type": "Story",
+      "summary": "dq summary report json + md",
+      "description_excerpt": "Used by on-call to see failures without opening Airflow logs.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-04",
+      "resolved": "2026-09-18",
+      "labels": [],
+      "story_points": 5
+    },
+    {
+      "key": "DATA-4275",
+      "type": "Task",
+      "summary": "Ageing buckets reconcile",
+      "description_excerpt": "Validation query: gold ageing vs invoice table.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-16",
+      "resolved": "2026-09-30",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-4285",
+      "type": "Task",
+      "summary": "batch size param",
+      "description_excerpt": "",
+      "component": "DATA",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-22",
+      "resolved": "2026-09-29",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-4312",
+      "type": "Task",
+      "summary": "Lint cleanup",
+      "description_excerpt": "ruff B006",
+      "component": "Tooling",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-28",
+      "resolved": "2026-10-02",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-4341",
+      "type": "Task",
+      "summary": "429 handling test",
+      "description_excerpt": "Retry-After header respected.",
+      "component": "Ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-05",
+      "resolved": "2026-10-12",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-4373",
+      "type": "Story",
+      "summary": "Failed row samples in report",
+      "description_excerpt": "Max 20 rows, no PII columns.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-13",
+      "resolved": "2026-10-27",
+      "labels": [],
+      "story_points": 3
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    }
+  ]
+}

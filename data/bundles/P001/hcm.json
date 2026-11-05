@@ -1,0 +1,105 @@
+{
+  "employee_id": "KC-11204",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Priya Sharma",
+  "preferred_name": "Priya Sharma",
+  "emails": [
+    {
+      "email": "priya.sharma@kestrelcloud.com",
+      "from": "2022-11",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Data Platform",
+  "manager_employee_id": "KC-10388",
+  "hire_date": "2022-11-07",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Data Engineer II",
+      "grade": "P2",
+      "from": "2022-11",
+      "to": "2024-09"
+    },
+    {
+      "title": "Senior Data Engineer",
+      "grade": "P3",
+      "from": "2024-10",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Airflow 2 upgrade",
+      "role": "Data Engineer",
+      "from": "2023-03",
+      "to": "2023-10",
+      "allocation_pct": 50
+    },
+    {
+      "project": "Recon v2 data migration",
+      "role": "Data Engineer",
+      "from": "2023-01",
+      "to": "2024-06",
+      "allocation_pct": 80
+    },
+    {
+      "project": "Billing events lakehouse",
+      "role": "Senior Data Engineer",
+      "from": "2024-07",
+      "to": null,
+      "allocation_pct": 70
+    },
+    {
+      "project": "Data platform on-call",
+      "role": "Primary on-call (rotation)",
+      "from": "2023-06",
+      "to": null,
+      "allocation_pct": 10
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Python",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "PySpark",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Apache Airflow",
+      "self_level": 4,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "AWS",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "RV College of Engineering",
+      "degree": "B.E.",
+      "field": "Computer Science and Engineering",
+      "year": 2020
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "linked_employee_id": "KC-12146",
+  "completions": [
+    {
+      "course_title": "ETL in Python and SQL",
+      "provider": "LinkedIn Learning",
+      "completed": "2025-02-21",
+      "time_spent_minutes": 244,
+      "quiz_score_pct": 88,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Settlement model review",
+      "provider": "Kestrel Learn",
+      "completed": "2026-06-18",
+      "time_spent_minutes": 95,
+      "quiz_score_pct": 85,
+      "assigned_by": "manager"
+    }
+  ]
+}

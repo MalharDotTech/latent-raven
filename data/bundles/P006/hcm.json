@@ -1,0 +1,106 @@
+{
+  "employee_id": "KC-12418",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Rohan Mehta",
+  "preferred_name": "Rohan",
+  "emails": [
+    {
+      "email": "rohan.mehta@kestrelcloud.com",
+      "from": "2025-08",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Web Platform",
+  "manager_employee_id": "KC-10934",
+  "hire_date": "2025-08-18",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Software Development Engineer I",
+      "grade": "P1",
+      "from": "2025-08",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "New joiner bootcamp",
+      "role": "Trainee",
+      "from": "2025-08",
+      "to": "2025-09",
+      "allocation_pct": 100
+    },
+    {
+      "project": "web-console squad (billing screens)",
+      "role": "Frontend Engineer",
+      "from": "2025-09",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "JavaScript",
+      "self_level": 3,
+      "declared_on": "2026-04"
+    },
+    {
+      "skill_text": "TypeScript",
+      "self_level": 3,
+      "declared_on": "2026-04"
+    },
+    {
+      "skill_text": "React",
+      "self_level": 3,
+      "declared_on": "2026-04"
+    },
+    {
+      "skill_text": "Node.js",
+      "self_level": 3,
+      "declared_on": "2026-04"
+    },
+    {
+      "skill_text": "Java",
+      "self_level": 3,
+      "declared_on": "2026-04"
+    },
+    {
+      "skill_text": "Python",
+      "self_level": 3,
+      "declared_on": "2026-04"
+    },
+    {
+      "skill_text": "Docker",
+      "self_level": 2,
+      "declared_on": "2026-04"
+    },
+    {
+      "skill_text": "AWS",
+      "self_level": 2,
+      "declared_on": "2026-04"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Jaihind College of Engineering, Kuran",
+      "degree": "B.E.",
+      "field": "Electronics and Telecommunication",
+      "year": 2023
+    },
+    {
+      "institution": "Masai School",
+      "degree": "Certificate",
+      "field": "Full Stack Web Development",
+      "year": 2025
+    }
+  ]
+}

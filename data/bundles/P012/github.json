@@ -1,0 +1,1763 @@
+{
+  "login": "rkumar_kestrel",
+  "account_type": "enterprise",
+  "account_email": "rahul.kumar@kestrelcloud.com",
+  "linked_employee_id": "KC-10412",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 4595,
+      "title": "QA-1512 add login regression suite for billing console",
+      "state": "merged",
+      "created": "2019-10-10",
+      "merged": "2019-10-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 6,
+        ".xml": 2
+      },
+      "additions": 420,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 4700,
+      "title": "TestNG parallel run config, 4 threads",
+      "state": "merged",
+      "created": "2019-11-22",
+      "merged": "2019-11-22",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".xml": 2,
+        ".java": 1
+      },
+      "additions": 38,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 4827,
+      "title": "QA-1611: page object for payment-method modal",
+      "state": "merged",
+      "created": "2020-01-20",
+      "merged": "2020-01-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 4
+      },
+      "additions": 210,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 5074,
+      "title": "fix flaky wait in InvoiceListPage",
+      "state": "merged",
+      "created": "2020-05-19",
+      "merged": "2020-05-22",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 14,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 5442,
+      "title": "Selenium Grid on docker compose for CI",
+      "state": "merged",
+      "created": "2020-11-04",
+      "merged": "2020-11-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 2,
+        ".java": 1,
+        ".md": 1
+      },
+      "additions": 96,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "ci"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 5698,
+      "title": "extent report upgrade 4.x -> 5.x",
+      "state": "merged",
+      "created": "2021-03-17",
+      "merged": "2021-03-25",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".xml": 1,
+        ".java": 3
+      },
+      "additions": 57,
+      "deletions": 41,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 6091,
+      "title": "QA-1842 refund flow tests",
+      "state": "merged",
+      "created": "2021-09-21",
+      "merged": "2021-09-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 5
+      },
+      "additions": 330,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 6513,
+      "title": "fix: stale element in recon table (retry wrapper)",
+      "state": "merged",
+      "created": "2022-05-30",
+      "merged": "2022-05-31",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 31,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6148,
+      "title": "QA-2102 headless chrome flag for jenkins",
+      "state": "merged",
+      "created": "2022-06-13",
+      "merged": "2022-06-15",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".groovy": 1
+      },
+      "additions": 3,
+      "deletions": 1,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 6627,
+      "title": "bump selenium-java 3.141.59 -> 4.1.2",
+      "state": "merged",
+      "created": "2022-07-20",
+      "merged": "2022-07-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".xml": 1,
+        ".java": 14
+      },
+      "additions": 88,
+      "deletions": 102,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 6774,
+      "title": "RECON-2252 recon dashboard filter tests",
+      "state": "merged",
+      "created": "2022-09-21",
+      "merged": "2022-09-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 4,
+        ".json": 1
+      },
+      "additions": 260,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 7065,
+      "title": "api: RestAssured tests for /v2/invoices",
+      "state": "merged",
+      "created": "2023-02-01",
+      "merged": "2023-02-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 6
+      },
+      "additions": 498,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": [
+        "api"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 7209,
+      "title": "revert grid timeout change",
+      "state": "merged",
+      "created": "2023-04-12",
+      "merged": "2023-04-14",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 2,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 7566,
+      "title": "QA-2486 quarantine 6 flaky recon tests",
+      "state": "merged",
+      "created": "2023-09-22",
+      "merged": "2023-09-22",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 24,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 7871,
+      "title": "smoke suite tagging @smoke @regression",
+      "state": "merged",
+      "created": "2024-02-01",
+      "merged": "2024-02-02",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 9,
+        ".xml": 1
+      },
+      "additions": 71,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8278,
+      "title": "QA-2876 relative locators POC (selenium 4)",
+      "state": "merged",
+      "created": "2024-07-24",
+      "merged": "2024-07-31",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 54,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8524,
+      "title": "fix intermittent timeout on ledger report page",
+      "state": "merged",
+      "created": "2024-11-08",
+      "merged": "2024-11-14",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 9,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8716,
+      "title": "QA-3111 playwright poc billing login",
+      "state": "merged",
+      "created": "2025-02-06",
+      "merged": "2025-02-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4,
+        ".json": 2
+      },
+      "additions": 180,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": [
+        "playwright"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8756,
+      "title": "scaffold qa-automation/playwright-ts, config + fixtures",
+      "state": "merged",
+      "created": "2025-02-13",
+      "merged": "2025-02-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 7,
+        ".json": 3,
+        ".md": 1
+      },
+      "additions": 392,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8820,
+      "title": "pw: auth storageState fixture",
+      "state": "merged",
+      "created": "2025-03-06",
+      "merged": "2025-03-07",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 3
+      },
+      "additions": 64,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8867,
+      "title": "QA-3180 migrate invoice list specs to playwright",
+      "state": "merged",
+      "created": "2025-03-24",
+      "merged": "2025-03-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 8,
+        ".java": 8
+      },
+      "additions": 510,
+      "deletions": 430,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8952,
+      "title": "QA-3224 legacy FX report test failing after UI change",
+      "state": "merged",
+      "created": "2025-04-18",
+      "merged": "2025-04-18",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 11,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9022,
+      "title": "fix: trace upload on failure in GHA",
+      "state": "merged",
+      "created": "2025-05-14",
+      "merged": "2025-05-15",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 1,
+        ".ts": 1
+      },
+      "additions": 19,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9044,
+      "title": "chore: remove selenium grid compose",
+      "state": "merged",
+      "created": "2025-05-22",
+      "merged": "2025-05-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 2,
+        ".md": 1
+      },
+      "additions": 4,
+      "deletions": 88,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9098,
+      "title": "WIP try vitest for unit helpers",
+      "state": "closed",
+      "created": "2025-06-10",
+      "closed": "2025-06-22",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 2
+      },
+      "additions": 60,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9144,
+      "title": "migrate login suite from selenium to playwright, delete old java page objects",
+      "state": "merged",
+      "created": "2025-06-30",
+      "merged": "2025-07-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 6,
+        ".java": 19
+      },
+      "additions": 420,
+      "deletions": 1180,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9229,
+      "title": "pw: sharding 4 on CI",
+      "state": "merged",
+      "created": "2025-07-17",
+      "merged": "2025-07-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 1,
+        ".ts": 2
+      },
+      "additions": 41,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9380,
+      "title": "QA-3449 hotfix legacy smoke - login locator changed",
+      "state": "merged",
+      "created": "2025-09-19",
+      "merged": "2025-09-20",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 3,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9467,
+      "title": "flaky: waitForResponse instead of timeout",
+      "state": "merged",
+      "created": "2025-10-15",
+      "merged": "2025-10-17",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 5
+      },
+      "additions": 47,
+      "deletions": 52,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9611,
+      "title": "pw: api request fixture for invoice seeding",
+      "state": "merged",
+      "created": "2025-12-12",
+      "merged": "2025-12-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4
+      },
+      "additions": 233,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9834,
+      "title": "QA-3659 pdf compare for invoice download",
+      "state": "merged",
+      "created": "2026-03-13",
+      "merged": "2026-03-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 3,
+        ".json": 1
+      },
+      "additions": 158,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9961,
+      "title": "bump @playwright/test 1.49 -> 1.52",
+      "state": "merged",
+      "created": "2026-04-28",
+      "merged": "2026-04-30",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 2
+      },
+      "additions": 40,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 4474,
+      "title": "QA-3796 contract smoke via request ctx (pw)",
+      "state": "merged",
+      "created": "2026-06-09",
+      "merged": "2026-06-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 3
+      },
+      "additions": 120,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 10187,
+      "title": "fix: mobile viewport project missing in config",
+      "state": "merged",
+      "created": "2026-07-23",
+      "merged": "2026-07-23",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1
+      },
+      "additions": 8,
+      "deletions": 1,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 10284,
+      "title": "pw: merge junit+html reporter output",
+      "state": "merged",
+      "created": "2026-09-02",
+      "merged": "2026-09-02",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 2,
+        ".yml": 1
+      },
+      "additions": 37,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 4643,
+      "date": "2019-11-05",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "use By.id not xpath here"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 5264,
+      "date": "2020-08-19",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 5928,
+      "date": "2021-07-08",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "thread sleep again? use explicit wait"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 6268,
+      "date": "2021-12-13",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "ok, add tag"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 6651,
+      "date": "2022-07-27",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "this locator breaks on firefox"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 6855,
+      "date": "2022-11-02",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 7149,
+      "date": "2023-03-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "assertion on status only, check body also"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 7437,
+      "date": "2023-07-31",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "nit: rename test"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 8043,
+      "date": "2024-04-17",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "dup of LoginPage.java, reuse"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 8379,
+      "date": "2024-09-09",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 8790,
+      "date": "2025-02-27",
+      "state": "COMMENTED",
+      "comment_count": 5,
+      "sample_comment": "getByRole instead of css, see playwright docs"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 8828,
+      "date": "2025-03-10",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 6,
+      "sample_comment": "no waitForTimeout pls, use expect().toBeVisible"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 8915,
+      "date": "2025-04-08",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "good, merge after CI"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 8984,
+      "date": "2025-05-02",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "fixture leaking state between specs"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 9086,
+      "date": "2025-06-12",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 9156,
+      "date": "2025-07-03",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "test.describe.serial is a smell, make independent"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 9284,
+      "date": "2025-08-06",
+      "state": "APPROVED",
+      "comment_count": 2,
+      "sample_comment": "thanks for the trace link"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 9415,
+      "date": "2025-10-01",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "locator by text will break with i18n"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 9528,
+      "date": "2025-11-18",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "ok"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 9716,
+      "date": "2026-01-22",
+      "state": "COMMENTED",
+      "comment_count": 4,
+      "sample_comment": "retries: 2 hides real failure, why"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 9884,
+      "date": "2026-04-02",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 10062,
+      "date": "2026-06-09",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "snapshot update included by mistake"
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 10233,
+      "date": "2026-08-12",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "lgtm"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2019-08",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 9,
+        ".xml": 2
+      }
+    },
+    {
+      "month": "2019-09",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 12,
+        ".xml": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2019-10",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 9,
+        ".xml": 2
+      }
+    },
+    {
+      "month": "2019-11",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 15,
+        ".xml": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2019-12",
+      "merged_prs": 6,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-01",
+      "merged_prs": 8,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-02",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-03",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-04",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-05",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-06",
+      "merged_prs": 8,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-07",
+      "merged_prs": 8,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-08",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-09",
+      "merged_prs": 8,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-10",
+      "merged_prs": 9,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 27,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2020-11",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2020-12",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-01",
+      "merged_prs": 7,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-02",
+      "merged_prs": 7,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-03",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-04",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-05",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-06",
+      "merged_prs": 6,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-07",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-08",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 27,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-09",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-10",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-11",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-12",
+      "merged_prs": 7,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-01",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 27,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-02",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-03",
+      "merged_prs": 7,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-04",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-05",
+      "merged_prs": 7,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-06",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1,
+        ".groovy": 1
+      }
+    },
+    {
+      "month": "2022-07",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1,
+        ".json": 1
+      }
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 7,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 8,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 15,
+        ".xml": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 8,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 15,
+        ".xml": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 27,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 10,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 10,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 24,
+        ".xml": 5,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 15,
+        ".xml": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 19,
+        ".xml": 4,
+        ".ts": 11,
+        ".json": 5,
+        ".yml": 1,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 23,
+        ".xml": 5,
+        ".ts": 11,
+        ".json": 1,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 18,
+        ".xml": 4,
+        ".ts": 13,
+        ".json": 2,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 14,
+        ".xml": 3,
+        ".ts": 14,
+        ".json": 2,
+        ".yml": 3,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 12,
+        ".xml": 2,
+        ".ts": 19,
+        ".json": 2,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 19,
+        ".xml": 1,
+        ".ts": 18,
+        ".json": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 5,
+        ".xml": 1,
+        ".ts": 23,
+        ".json": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 17,
+        ".json": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 3,
+        ".xml": 1,
+        ".ts": 29,
+        ".json": 4,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 9,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 3,
+        ".xml": 1,
+        ".ts": 29,
+        ".json": 4,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 23,
+        ".json": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 20,
+        ".json": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 7,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 20,
+        ".json": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 11,
+      "reviews": 12,
+      "by_ext": {
+        ".java": 3,
+        ".xml": 1,
+        ".ts": 26,
+        ".json": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 9,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 23,
+        ".json": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 7,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 17,
+        ".json": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 23,
+        ".json": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 17,
+        ".json": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 8,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 20,
+        ".json": 3,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 17,
+        ".json": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 7,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 2,
+        ".ts": 17,
+        ".json": 2,
+        ".yml": 1
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [
+      "selenium-testng-framework-demo"
+    ],
+    "oss_contributions": []
+  }
+}

@@ -1,0 +1,232 @@
+{
+ "pid": "P024",
+ "schema": "truth-v2",
+ "summary": "Ramesh is a dependable L1 agent who gets high ticket counts mostly from auto-routed password, import and how-to cases closed with a stock sentence. He escalates properly with details when needed but has not configured queues or rules. Linux and SQL on his CV are not backed by any work or course effort.",
+ "archetype": "High-volume L1, volume not depth",
+ "batch": "E",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "servicenow",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "snow_ramesh.yadav: L1 incident work every month 2023-07..2026-10 with categories and L2 escalations; many repeated stock resolutions on auto-routed how-to/login tickets; no queue or rule changes; lms ServiceNow Basics for L1. Volume does not raise level. Guided ticket handling = level 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "servicenow:incidents",
+    "servicenow:monthly_activity",
+    "cv_v1:Experience/Kestrel"
+   ],
+   "why": "Works tickets daily with correct categories and escalation fields; nothing shows queue ownership or assignment-rule changes. Counts are inflated by routed repeats."
+  },
+  {
+   "skill_id": "incident_management",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "snow_ramesh.yadav: P1 'Raised P1, paged on-call L2 as per runbook. Updated cust every 30 min' plus P1/P2 escalations to L2 with details across 3+ months; certs_KC-11602 ITIL 4 Foundation verified; lms 'Handling P1 and P2 Incidents'. Guided incident tasks = level 2 line; recovery coordinated by L2/L3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "servicenow:incidents",
+    "certs:ITIL 4 Foundation"
+   ],
+   "why": "Two proper P1/P2 escalations with updates cadence and an ITIL foundation pass; coordinating recovery is done by L2 and L3."
+  },
+  {
+   "skill_id": "linux",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    0,
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_09 'Linux administration' and hcm self 3; no ticket touches a shell (L1 has no server access).",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Skills"
+   ],
+   "why": "L1 has no server access; no ticket involves a shell. Claim sits only in the CV and HCM self-rating."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    0,
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_09 'basic SQL queries', hcm self 2, lms SQL Essential Training completed in 6 minutes. No query evidence.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "lms:SQL Essential Training"
+   ],
+   "why": "A six-minute course tick and no query evidence anywhere."
+  },
+  {
+   "skill_id": "python",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_09 'Python (basic)'; lms Python Essential Training 4 minutes.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "lms:Python Essential Training"
+   ],
+   "why": "Course tick of four minutes, no code anywhere."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only 'Communication skill, Team player' on cv_2025_09 (excluded generic); no stakeholder evidence.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Skills"
+   ],
+   "why": "Only generic communication wording on the CV."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Remedy",
+   "mapped_skill_id": "servicenow",
+   "has_skill": false,
+   "why": "Different ITSM product used at Wipro; no carry over.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_09 Remedy at Wipro; different product.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Networking (TCP/IP, DNS)",
+   "mapped_skill_id": "linux",
+   "has_skill": false,
+   "why": "Basic network triage at best; no mapped taxonomy skill.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_09 'Networking (TCP/IP, DNS)'; no taxonomy skill, not Linux.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F17",
+   "s11_row": "level_off",
+   "skill_id": "servicenow",
+   "plant": "About 1,600 resolved tickets a year, most auto-assigned by rule, with a handful of identical resolution sentences repeated across dozens of records.",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F26",
+   "s11_row": "not_really_held",
+   "skill_id": "sql",
+   "plant": "LinkedIn Learning SQL and Python courses show completion with 4-6 minutes spent, self-assigned.",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "Minute-long course completions must not be extracted as training evidence.",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F01",
+   "s11_row": "not_really_held",
+   "skill_id": "linux",
+   "plant": "CV and HCM list Linux administration; no work record touches it.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F16",
+   "s11_row": "wrong_mapping",
+   "skill_id": "incident_management",
+   "plant": "Customer-pasted vague short descriptions ('sir kindly check', forwarded mail chains) with category chosen by routing.",
+   "expected_engine_behavior": "send_at_level_2",
+   "evidence_expectation": "Vague customer-pasted tickets ('sir kindly check') and routing categories must not be mapped as incident-management evidence.",
+   "v1_expected_engine_behavior": "hold"
+  }
+ ],
+ "unmatched_skills": [
+  "ITIL 4 service management",
+  "Customer support (L1)"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.6,
+  "yes_to_everything": false,
+  "flattery_bias": 0.5,
+  "notes": "Says yes to level 3 on ServiceNow; says no to Python."
+ },
+ "messaging_allowed": true
+}

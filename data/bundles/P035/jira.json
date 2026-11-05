@@ -1,0 +1,371 @@
+{
+  "linked_employee_id": "KC-12307",
+  "issues": [
+    {
+      "key": "PM-1324",
+      "type": "Task",
+      "summary": "Bulk exceptions empty state",
+      "description_excerpt": "Need an empty state for a bank with no exceptions, not the all-banks message.",
+      "component": "Reconciliation workspace",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-12-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-12-11",
+      "resolved": "2024-12-13",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 129",
+        "start": "2024-12-02",
+        "end": "2024-12-13"
+      },
+      "comments": [
+        {
+          "author": "Rhea Thomas",
+          "date": "2024-12-13",
+          "body": "Figma version 18, reconciliation workspace file: status and empty-state components updated. Tanvi handed over redlines; WEB release 2024.12 includes the new empty state."
+        }
+      ]
+    },
+    {
+      "key": "PM-1468",
+      "type": "Task",
+      "summary": "Refund amount component",
+      "description_excerpt": "Amount cell truncates the sign at 100% zoom.",
+      "component": "Reconciliation workspace",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-06",
+      "resolved": "2025-03-10",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 135",
+        "start": "2025-02-24",
+        "end": "2025-03-07"
+      },
+      "comments": [
+        {
+          "author": "Rhea Thomas",
+          "date": "2025-03-10",
+          "body": "Tanvi updated the Figma amount component variants in version 27. Design QA accepted after screenshot comparison; WEB release 2025.03."
+        }
+      ]
+    },
+    {
+      "key": "PM-1609",
+      "type": "Task",
+      "summary": "Exception drawer handoff",
+      "description_excerpt": "Implement drawer states for pending and completed cases.",
+      "component": "Reconciliation workspace",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-20",
+      "resolved": "2025-06-30",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 143",
+        "start": "2025-06-16",
+        "end": "2025-06-27"
+      },
+      "comments": [
+        {
+          "author": "Rhea Thomas",
+          "date": "2025-06-30",
+          "body": "Figma version 41 linked by Tanvi. Engineering used the status and amount components; release 2025.06 accepted after spacing corrections."
+        }
+      ]
+    },
+    {
+      "key": "PM-1633",
+      "type": "Task",
+      "summary": "Bulk action confirm states",
+      "description_excerpt": "Confirm needs separate copy for mixed bank selection.",
+      "component": "Reconciliation workspace",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-07-11",
+      "resolved": "2025-07-21",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 144",
+        "start": "2025-06-30",
+        "end": "2025-07-11"
+      },
+      "comments": [
+        {
+          "author": "Rhea Thomas",
+          "date": "2025-07-21",
+          "body": "Tanvi maintained prototype version 54 and the status component, QA screenshots checked. WEB release 2025.07 accepted."
+        }
+      ]
+    },
+    {
+      "key": "PM-1778",
+      "type": "Task",
+      "summary": "Table density in exception review",
+      "description_excerpt": "Long bank names wrap badly at 1280 width.",
+      "component": "Reconciliation workspace",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-11-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-11-26",
+      "resolved": "2025-12-01",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 154",
+        "start": "2025-11-17",
+        "end": "2025-11-28"
+      },
+      "comments": [
+        {
+          "author": "Rhea Thomas",
+          "date": "2025-12-01",
+          "body": "Figma version 68 and table component updates supplied by Tanvi. Design QA signed off against release 2025.12 screenshots."
+        }
+      ]
+    },
+    {
+      "key": "PM-1925",
+      "type": "Task",
+      "summary": "Review flow final screens",
+      "description_excerpt": "Ship the revised exception review drawer.",
+      "component": "Reconciliation workspace",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-20",
+      "resolved": "2026-03-26",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 162",
+        "start": "2026-03-09",
+        "end": "2026-03-20"
+      },
+      "comments": [
+        {
+          "author": "Rhea Thomas",
+          "date": "2026-03-26",
+          "body": "Tanvi delivered Figma version 83, linked prototypes and component variants. WEB release 2026.03 accepted with final amount spacing fix."
+        }
+      ]
+    },
+    {
+      "key": "PM-2235",
+      "type": "Task",
+      "summary": "Search empty state followup",
+      "description_excerpt": "Search with trailing spaces gives a confusing empty page.",
+      "component": "Reconciliation workspace",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-12",
+      "resolved": "2026-10-21",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 177",
+        "start": "2026-10-05",
+        "end": "2026-10-16"
+      },
+      "comments": [
+        {
+          "author": "Rhea Thomas",
+          "date": "2026-10-21",
+          "body": "Prototype version 89, Figma shared amount and status components checked at handoff. WEB release 2026.10 included the final screens."
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    }
+  ],
+  "exported": "2026-10-31"
+}

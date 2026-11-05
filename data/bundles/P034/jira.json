@@ -1,0 +1,953 @@
+{
+  "linked_employee_id": "KC-12146",
+  "issues": [
+    {
+      "key": "DATA-2688",
+      "type": "Task",
+      "summary": "Feed rejected numeric settlement date",
+      "description_excerpt": "Bank B sent numeric dates in the xlsx export. Current parser rejects the full file.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-06-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-06-28",
+      "resolved": "2024-07-11",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 117",
+        "start": "2024-06-17",
+        "end": "2024-06-28"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2024-07-11",
+          "body": "Tests include leap day."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/11316"
+        }
+      ]
+    },
+    {
+      "key": "DATA-2758",
+      "type": "Bug",
+      "summary": "Repeated upload adds settlement rows",
+      "description_excerpt": "The same bank file can be uploaded under a new filename. It should not append another settlement.",
+      "component": "Settlement ingestion",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-08-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-08-16",
+      "resolved": "2024-08-26",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 121",
+        "start": "2024-08-12",
+        "end": "2024-08-23"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2024-08-26",
+          "body": "Replayed both duplicate and corrected file variants; source count agrees after replacement."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/11501"
+        }
+      ]
+    },
+    {
+      "key": "DATA-2800",
+      "type": "Task",
+      "summary": "Backfill skips day after failed load",
+      "description_excerpt": "A failed load followed by a manual clear skips the next missing partition. Need a restart from committed manifest.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-09-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-09-16",
+      "resolved": "2024-10-03",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 123",
+        "start": "2024-09-09",
+        "end": "2024-09-20"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2024-10-03",
+          "body": "Cleared the failed task and replayed three partitions with no duplicates."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/11665"
+        }
+      ]
+    },
+    {
+      "key": "DATA-2878",
+      "type": "Story",
+      "summary": "Refund join drops leading zero ids",
+      "description_excerpt": "Refunds whose reference starts with zero disappear from the report after the source join.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-10-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-10-30",
+      "resolved": "2024-11-14",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 126",
+        "start": "2024-10-21",
+        "end": "2024-11-01"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2024-11-14",
+          "body": "Compared source control totals and the unmatched output before deploying."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/6285"
+        }
+      ]
+    },
+    {
+      "key": "DATA-2984",
+      "type": "Story",
+      "summary": "Settlement fact grain checks",
+      "description_excerpt": "Add source and grain checks before we switch the settlement dashboard to the new fact.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-01-08",
+      "resolved": "2025-01-20",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 131",
+        "start": "2024-12-30",
+        "end": "2025-01-10"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-01-20",
+          "body": "Successful CI build and source totals attached."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/6456"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3085",
+      "type": "Task",
+      "summary": "Parser crashes on empty last line",
+      "description_excerpt": "Bank sent an otherwise valid feed with a blank final line. Parser treats that line as a broken trailer.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-03",
+      "resolved": "2025-03-12",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 135",
+        "start": "2025-02-24",
+        "end": "2025-03-07"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-03-12",
+          "body": "Added malformed input fixtures and reran the daily ingestion task."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/12306"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3122",
+      "type": "Bug",
+      "summary": "Backfill saturates settlement pool",
+      "description_excerpt": "Manual backfill occupies every slot in the settlement pool. Daily load cannot start.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-12",
+      "resolved": "2025-03-26",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 136",
+        "start": "2025-03-10",
+        "end": "2025-03-21"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-03-26",
+          "body": "Run history for the next backfill has no queued daily load."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/12390"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3255",
+      "type": "Story",
+      "summary": "Dashboard scans full refund history",
+      "description_excerpt": "Refund report spends most of its time scanning old dates although dashboard requests one week.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-02"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-02",
+      "resolved": "2025-06-06",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 142",
+        "start": "2025-06-02",
+        "end": "2025-06-13"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-06-06",
+          "body": "Changed to a bounded range on the date column; same totals, fewer scanned partitions."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/6760"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3341",
+      "type": "Story",
+      "summary": "Morning load credits jump",
+      "description_excerpt": "Morning load and finance reporting compete on the same warehouse. Check queue time and credit use.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-07-14",
+      "resolved": "2025-07-28",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 145",
+        "start": "2025-07-14",
+        "end": "2025-07-25"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-07-28",
+          "body": "Split load and reporting warehouses, tested auto-suspend; deployed after the cost comparison."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/6874"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3359",
+      "type": "Task",
+      "summary": "Refund model key review",
+      "description_excerpt": "Need the model grain written down. Retry rows have the same payment id but are not new refund events.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-07-21",
+      "resolved": "2025-07-28",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 145",
+        "start": "2025-07-14",
+        "end": "2025-07-25"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-07-28",
+          "body": "Leena corrected relationship cardinality; SQL reconciliation checks joined totals per tenant."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/6882"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3397",
+      "type": "Bug",
+      "summary": "UTC date sent to bank feed path",
+      "description_excerpt": "Bank file path for the midnight run uses tomorrow in UTC while bank still expects the local day.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-08-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-08-20",
+      "resolved": "2025-09-01",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 147",
+        "start": "2025-08-11",
+        "end": "2025-08-22"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-09-01",
+          "body": "Python path builder uses bank timezone; the production runtime fault reproduced with a near-midnight fixture."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/13023"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3488",
+      "type": "Story",
+      "summary": "Sensor hammers bank status API",
+      "description_excerpt": "Status sensor retries too often during bank outage. Backfill and scheduled run should both recover cleanly.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-10-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-10-10",
+      "resolved": "2025-10-27",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 151",
+        "start": "2025-10-06",
+        "end": "2025-10-17"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-10-27",
+          "body": "Deployed DAG and checked a simulated outage followed by successful backfill."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/13277"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3578",
+      "type": "Bug",
+      "summary": "No stale-source failure on refunds",
+      "description_excerpt": "Refund source can be two days stale without dbt failing. Add freshness and source checks.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-12-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-12-04",
+      "resolved": "2025-12-18",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 155",
+        "start": "2025-12-01",
+        "end": "2025-12-12"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-12-18",
+          "body": "Changed the source relation after CI identified the old database alias."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/7184"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3644",
+      "type": "Story",
+      "summary": "Cancelled rows counted twice",
+      "description_excerpt": "Cancelled and replacement settlement both count in the daily amount. Source total agrees only after removing one manually.",
+      "component": "Settlement ingestion",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-01-19",
+      "resolved": "2026-01-27",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 158",
+        "start": "2026-01-12",
+        "end": "2026-01-23"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2026-01-27",
+          "body": "Query plan and per-bank balance diff attached to ticket."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/7297"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3739",
+      "type": "Story",
+      "summary": "Empty archive crashes ingest",
+      "description_excerpt": "Empty archive is a valid no-settlement day for this bank. Currently ingestion crashes before recording the day.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-09"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-09",
+      "resolved": "2026-03-23",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 162",
+        "start": "2026-03-09",
+        "end": "2026-03-20"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2026-03-23",
+          "body": "Production reprocessing completed."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/13865"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3801",
+      "type": "Bug",
+      "summary": "Reporting warehouse does not resume",
+      "description_excerpt": "Reporting task resumes against the load warehouse after timeout. Check task warehouse and role binding.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-01",
+      "resolved": "2026-04-07",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 163",
+        "start": "2026-03-23",
+        "end": "2026-04-03"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2026-04-07",
+          "body": "Corrected warehouse binding and checked query history after deployment."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/7466"
+        }
+      ]
+    },
+    {
+      "key": "DATA-3854",
+      "type": "Bug",
+      "summary": "Bank C run remains incomplete",
+      "description_excerpt": "Bank C partition is still incomplete after the failed Friday run. Need replay and trailer reconciliation.",
+      "component": "Settlement ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-30",
+      "resolved": "2026-05-15",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 165",
+        "start": "2026-04-20",
+        "end": "2026-05-01"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2026-05-15",
+          "body": "Reconciled row count and bank trailer amount before marking the partition complete."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/14162"
+        }
+      ]
+    },
+    {
+      "key": "DATA-4024",
+      "type": "Bug",
+      "summary": "Null merchant ids in settlement model",
+      "description_excerpt": "Null merchant reference is reaching settlement fact. Put the rejection in a place support can find.",
+      "component": "Settlement ingestion",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-03",
+      "resolved": "2026-07-13",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 170",
+        "start": "2026-06-29",
+        "end": "2026-07-10"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2026-07-13",
+          "body": "Leena reviewed the model diagram and the source-to-fact reconciliation."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/7679"
+        }
+      ]
+    },
+    {
+      "key": "DATA-4141",
+      "type": "Story",
+      "summary": "Large settlement amount rejected",
+      "description_excerpt": "One large amount fails decimal conversion in the bank parser. Preserve source scale in the error sample.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-06",
+      "resolved": "2026-08-21",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 172",
+        "start": "2026-07-27",
+        "end": "2026-08-07"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2026-08-21",
+          "body": "Rerun wrote the missing bank partition."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/data-platform/pull/14761"
+        }
+      ]
+    },
+    {
+      "key": "DATA-4350",
+      "type": "Bug",
+      "summary": "Refund report scans unused fields",
+      "description_excerpt": "The report join carries all source attributes even though dashboard needs six fields. Profile before changing it.",
+      "component": "Settlement ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-06",
+      "resolved": "2026-10-16",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 177",
+        "start": "2026-10-05",
+        "end": "2026-10-16"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2026-10-16",
+          "body": "Snowflake query profile and control total comparison checked in staging then deployed."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/analytics-dbt/pull/7941"
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 12,
+      "reported": 2
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 10,
+      "reported": 0
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 12,
+      "reported": 1
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 10,
+      "reported": 0
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 10,
+      "reported": 0
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 14,
+      "reported": 2
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    }
+  ],
+  "exported": "2026-10-31"
+}

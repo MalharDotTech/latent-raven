@@ -1,0 +1,74 @@
+{
+  "employee_id": "KC-10931",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Rahul Anil Verma",
+  "preferred_name": "Rahul Verma",
+  "emails": [
+    {
+      "email": "rahul.verma@kestrelcloud.com",
+      "from": "2021-03",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Customer Success",
+  "manager_employee_id": "KC-10544",
+  "hire_date": "2021-03-08",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Customer Success Associate",
+      "grade": "S1",
+      "from": "2021-03",
+      "to": "2023-04"
+    },
+    {
+      "title": "Customer Success Manager",
+      "grade": "S2",
+      "from": "2023-05",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Mid-market onboarding pod",
+      "role": "CSM",
+      "from": "2022-01",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Customer onboarding",
+      "self_level": 3,
+      "declared_on": "2025-05"
+    },
+    {
+      "skill_text": "Account management",
+      "self_level": 3,
+      "declared_on": "2025-05"
+    },
+    {
+      "skill_text": "Salesforce",
+      "self_level": 3,
+      "declared_on": "2025-05"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Savitribai Phule Pune University",
+      "degree": "B.E.",
+      "field": "Information Technology",
+      "year": 2016
+    }
+  ]
+}

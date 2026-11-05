@@ -1,0 +1,44 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Support Onboarding (L1)",
+      "provider": "Kestrel Learn",
+      "completed": "2022-02-04",
+      "time_spent_minutes": 540,
+      "quiz_score_pct": 84,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2022",
+      "provider": "Kestrel Learn",
+      "completed": "2022-01-21",
+      "time_spent_minutes": 40,
+      "quiz_score_pct": 90,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Escalation and Major Incident Communication",
+      "provider": "Kestrel Learn",
+      "completed": "2023-07-19",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": 90,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "SQL Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2023-10-03",
+      "time_spent_minutes": 280,
+      "quiz_score_pct": null,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-03-10",
+      "time_spent_minutes": 37,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    }
+  ]
+}

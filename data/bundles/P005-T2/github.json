@@ -1,0 +1,1352 @@
+{
+  "login": "siyer-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11512",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 2103,
+      "title": "RECON-2594 fix: return 409 on duplicate idempotency key",
+      "state": "merged",
+      "created": "2023-09-26",
+      "merged": "2023-09-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 35,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 2188,
+      "title": "add table-driven tests for balance calc",
+      "state": "merged",
+      "created": "2023-10-19",
+      "merged": "2023-10-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 160,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 2306,
+      "title": "RECON-2658: bulk posting endpoint (POST /v1/postings:batch)",
+      "state": "merged",
+      "created": "2023-11-22",
+      "merged": "2023-11-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 7,
+        ".proto": 1,
+        ".sql": 1
+      },
+      "additions": 610,
+      "deletions": 42,
+      "co_authors": [],
+      "review_comments_received": 12,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 2347,
+      "title": "use pgx CopyFrom for batch insert",
+      "state": "merged",
+      "created": "2023-12-04",
+      "merged": "2023-12-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3,
+        ".mod": 1,
+        ".sum": 1
+      },
+      "additions": 118,
+      "deletions": 74,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 2468,
+      "title": "go.mod: bump pgx v5.4.3 -> v5.5.1",
+      "state": "merged",
+      "created": "2024-01-12",
+      "merged": "2024-01-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".mod": 1,
+        ".sum": 1
+      },
+      "additions": 8,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7757,
+      "title": "RECON-2759 matcher: partial payment tolerance rule",
+      "state": "merged",
+      "created": "2024-02-26",
+      "merged": "2024-02-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 5,
+        ".yaml": 1
+      },
+      "additions": 280,
+      "deletions": 31,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7808,
+      "title": "fix: context cancel not propagated to bank adapter calls",
+      "state": "merged",
+      "created": "2024-03-22",
+      "merged": "2024-03-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 29,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7868,
+      "title": "RECON-2833 kafka: commit offsets only after db tx commit",
+      "state": "merged",
+      "created": "2024-04-26",
+      "merged": "2024-04-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3
+      },
+      "additions": 91,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7890,
+      "title": "add pprof endpoint behind DEBUG_PPROF flag",
+      "state": "merged",
+      "created": "2024-05-02",
+      "merged": "2024-05-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 44,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "obs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7963,
+      "title": "RECON-2903 fix goroutine leak in settlement matcher worker pool",
+      "state": "merged",
+      "created": "2024-06-11",
+      "merged": "2024-06-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3
+      },
+      "additions": 120,
+      "deletions": 66,
+      "co_authors": [],
+      "review_comments_received": 11,
+      "labels": [
+        "bug",
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 7988,
+      "title": "chore: golangci-lint 1.58 and fix findings",
+      "state": "merged",
+      "created": "2024-07-03",
+      "merged": "2024-07-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 14,
+        ".yaml": 1
+      },
+      "additions": 98,
+      "deletions": 120,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "chore"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8077,
+      "title": "metrics: histogram for match latency per rule",
+      "state": "merged",
+      "created": "2024-08-16",
+      "merged": "2024-08-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3
+      },
+      "additions": 77,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "obs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8154,
+      "title": "wip: rule dsl parser",
+      "state": "closed",
+      "created": "2024-09-25",
+      "closed": "2024-09-27",
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".go": 4
+      },
+      "additions": 210,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "wip"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8227,
+      "title": "RECON-3051 rule dsl: parse tolerance expressions",
+      "state": "merged",
+      "created": "2024-10-28",
+      "merged": "2024-10-31",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 6
+      },
+      "additions": 340,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8258,
+      "title": "fix race in rule cache (go test -race)",
+      "state": "merged",
+      "created": "2024-11-26",
+      "merged": "2024-11-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 31,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8343,
+      "title": "RECON-3168 shard matching by tenant hash",
+      "state": "merged",
+      "created": "2025-01-29",
+      "merged": "2025-01-31",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 8,
+        ".sql": 1
+      },
+      "additions": 466,
+      "deletions": 130,
+      "co_authors": [],
+      "review_comments_received": 10,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 3278,
+      "title": "ledger-api: grpc deadline defaults + retry interceptor",
+      "state": "merged",
+      "created": "2025-02-14",
+      "merged": "2025-02-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 4,
+        ".yaml": 1
+      },
+      "additions": 133,
+      "deletions": 20,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8413,
+      "title": "bump golang 1.21 -> 1.22 in ci + dockerfile",
+      "state": "merged",
+      "created": "2025-03-11",
+      "merged": "2025-03-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 2,
+        "Dockerfile": 1,
+        ".mod": 1
+      },
+      "additions": 14,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "chore"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8529,
+      "title": "RECON-3331 backpressure when matcher queue > 80%",
+      "state": "merged",
+      "created": "2025-05-27",
+      "merged": "2025-05-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3
+      },
+      "additions": 112,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8585,
+      "title": "RECON-3374 reconcile with tolerance in minor units (no float)",
+      "state": "merged",
+      "created": "2025-06-27",
+      "merged": "2025-06-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 5
+      },
+      "additions": 188,
+      "deletions": 76,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8608,
+      "title": "Bump github.com/segmentio/kafka-go from 0.4.42 to 0.4.47",
+      "state": "merged",
+      "created": "2025-07-10",
+      "merged": "2025-07-14",
+      "merged_by": "other",
+      "author_type": "bot",
+      "files_ext": {
+        ".mod": 1,
+        ".sum": 1
+      },
+      "additions": 6,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "dependencies"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8644,
+      "title": "fix flaky TestMatcherShutdown",
+      "state": "merged",
+      "created": "2025-08-12",
+      "merged": "2025-08-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 1
+      },
+      "additions": 12,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8698,
+      "title": "RECON-3516 eu region go-live: region config + flags",
+      "state": "merged",
+      "created": "2025-09-26",
+      "merged": "2025-09-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3,
+        ".yaml": 3
+      },
+      "additions": 160,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "eu"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8756,
+      "title": "add data residency guard: refuse cross-region writes",
+      "state": "merged",
+      "created": "2025-10-27",
+      "merged": "2025-10-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3
+      },
+      "additions": 140,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": [
+        "eu"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8793,
+      "title": "RECON-3570 helm: resource limits + pdb for matcher",
+      "state": "merged",
+      "created": "2025-11-28",
+      "merged": "2025-12-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 41,
+      "deletions": 12,
+      "co_authors": [
+        "arun.k@kestrelcloud.com"
+      ],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8874,
+      "title": "RECON-3681 batch ack for bank feed consumer",
+      "state": "merged",
+      "created": "2026-01-30",
+      "merged": "2026-01-31",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 4
+      },
+      "additions": 230,
+      "deletions": 70,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8886,
+      "title": "sandbox seed script for SE demos",
+      "state": "merged",
+      "created": "2026-02-02",
+      "merged": "2026-02-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2,
+        ".sh": 1,
+        ".md": 1
+      },
+      "additions": 190,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "tools"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 4138,
+      "title": "RECON-3745 fix off-by-one in pagination cursor",
+      "state": "merged",
+      "created": "2026-03-03",
+      "merged": "2026-03-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 22,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 9032,
+      "title": "RECON-3812 explain-match api (why did txn match rule X)",
+      "state": "merged",
+      "created": "2026-04-24",
+      "merged": "2026-04-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 7,
+        ".proto": 1
+      },
+      "additions": 420,
+      "deletions": 35,
+      "co_authors": [],
+      "review_comments_received": 10,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 9127,
+      "title": "fix leak: ticker not stopped in retry loop",
+      "state": "merged",
+      "created": "2026-06-11",
+      "merged": "2026-06-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 1
+      },
+      "additions": 6,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 9189,
+      "title": "RECON-3916 rule cache: sync.Map -> sharded rwmutex",
+      "state": "merged",
+      "created": "2026-07-27",
+      "merged": "2026-07-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 3
+      },
+      "additions": 130,
+      "deletions": 61,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 9282,
+      "title": "RECON-4039 tolerance rules per currency",
+      "state": "merged",
+      "created": "2026-09-21",
+      "merged": "2026-09-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 5,
+        ".yaml": 1
+      },
+      "additions": 260,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 9324,
+      "title": "cleanup deprecated v2 matcher",
+      "state": "merged",
+      "created": "2026-10-16",
+      "merged": "2026-10-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".go": 12
+      },
+      "additions": 12,
+      "deletions": 880,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "cleanup"
+      ]
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 7663,
+      "date": "2023-12-14",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "is this goroutine ever joined? looks like it outlives the request"
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "pr_number": 2541,
+      "date": "2024-02-08",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 7847,
+      "date": "2024-04-15",
+      "state": "APPROVED",
+      "comment_count": 2
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 7908,
+      "date": "2024-05-08",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 5,
+      "sample_comment": "err is shadowed on line 88, the retry never sees it"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8048,
+      "date": "2024-08-07",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "nit: accept interfaces return structs"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8136,
+      "date": "2024-09-20",
+      "state": "APPROVED",
+      "comment_count": 1
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8206,
+      "date": "2024-10-22",
+      "state": "APPROVED",
+      "comment_count": 5,
+      "sample_comment": "LGTM"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8307,
+      "date": "2025-01-13",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "close the rows! defer rows.Close() missing"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8367,
+      "date": "2025-02-21",
+      "state": "APPROVED",
+      "comment_count": 2
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "pr_number": 3388,
+      "date": "2025-03-20",
+      "state": "APPROVED",
+      "comment_count": 5,
+      "sample_comment": "approved"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8459,
+      "date": "2025-04-14",
+      "state": "APPROVED",
+      "comment_count": 2
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8503,
+      "date": "2025-05-19",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "add test for ctx timeout case"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8590,
+      "date": "2025-07-01",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "ok"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8666,
+      "date": "2025-09-04",
+      "state": "COMMENTED",
+      "comment_count": 5,
+      "sample_comment": "can we avoid a global here"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8738,
+      "date": "2025-10-15",
+      "state": "APPROVED",
+      "comment_count": 3
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "pr_number": 3821,
+      "date": "2025-11-21",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "LGTM"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8848,
+      "date": "2026-01-16",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "wg.Add inside the goroutine is a race, move it above"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8908,
+      "date": "2026-02-19",
+      "state": "APPROVED",
+      "comment_count": 2
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8949,
+      "date": "2026-03-06",
+      "state": "APPROVED",
+      "comment_count": 2,
+      "sample_comment": "lgtm, thanks"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 9022,
+      "date": "2026-04-24",
+      "state": "APPROVED",
+      "comment_count": 5
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 9068,
+      "date": "2026-05-26",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 5,
+      "sample_comment": "metric label cardinality: tenant_id is unbounded"
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 9093,
+      "date": "2026-06-03",
+      "state": "APPROVED",
+      "comment_count": 5
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 9177,
+      "date": "2026-07-24",
+      "state": "APPROVED",
+      "comment_count": 5
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 9225,
+      "date": "2026-08-25",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "LGTM"
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "pr_number": 4784,
+      "date": "2026-09-21",
+      "state": "COMMENTED",
+      "comment_count": 0,
+      "sample_comment": "nit"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-09",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".go": 73,
+        ".sql": 20,
+        ".yaml": 65,
+        ".mod": 30,
+        ".proto": 54,
+        ".md": 56
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 7,
+      "reviews": 0,
+      "by_ext": {
+        ".yaml": 221,
+        ".mod": 104,
+        ".proto": 208,
+        ".md": 44,
+        ".go": 2
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 116,
+        ".sql": 140,
+        ".yaml": 82,
+        ".mod": 83,
+        ".proto": 146,
+        ".md": 48
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".go": 145,
+        ".sql": 118,
+        ".yaml": 73,
+        ".mod": 110,
+        ".proto": 137,
+        ".md": 99,
+        ".sum": 1
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 11,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 177,
+        ".sql": 172,
+        ".yaml": 166,
+        ".mod": 117,
+        ".md": 163,
+        ".sum": 1
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 33,
+        ".sql": 39,
+        ".yaml": 67,
+        ".mod": 62,
+        ".md": 51
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 338,
+        ".sql": 78,
+        ".md": 205
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 43,
+        ".sql": 177,
+        ".yaml": 35,
+        ".mod": 88,
+        ".proto": 158,
+        ".md": 157
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 210,
+        ".sql": 123,
+        ".yaml": 232,
+        ".mod": 181,
+        ".md": 139
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 12,
+      "reviews": 2,
+      "by_ext": {
+        ".go": 100,
+        ".sql": 73,
+        ".mod": 135,
+        ".proto": 86,
+        ".md": 137
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 234,
+        ".sql": 146,
+        ".mod": 239,
+        ".proto": 127,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".go": 73,
+        ".sql": 146,
+        ".yaml": 185,
+        ".md": 134
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".sql": 69,
+        ".yaml": 123,
+        ".mod": 105,
+        ".proto": 99
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 10,
+      "reviews": 4,
+      "by_ext": {
+        ".go": 132,
+        ".sql": 117,
+        ".mod": 293,
+        ".proto": 362,
+        ".md": 235
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 11,
+      "reviews": 3,
+      "by_ext": {
+        ".go": 232,
+        ".sql": 193,
+        ".yaml": 160,
+        ".mod": 104
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".go": 34,
+        ".mod": 107,
+        ".proto": 112,
+        ".md": 49
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 90,
+        ".yaml": 60,
+        ".mod": 143,
+        ".proto": 167,
+        ".md": 163,
+        ".sql": 1
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".go": 42,
+        ".sql": 119,
+        ".yaml": 28,
+        ".mod": 78,
+        ".proto": 81,
+        ".md": 129
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 155,
+        ".sql": 102,
+        ".mod": 98,
+        ".md": 120,
+        ".yaml": 2,
+        "Dockerfile": 1
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 9,
+      "reviews": 10,
+      "by_ext": {
+        ".go": 40,
+        ".sql": 177,
+        ".yaml": 128,
+        ".proto": 174,
+        ".md": 47
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 16,
+      "reviews": 12,
+      "by_ext": {
+        ".go": 366,
+        ".sql": 197,
+        ".yaml": 325,
+        ".mod": 248,
+        ".proto": 364
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 12,
+      "reviews": 13,
+      "by_ext": {
+        ".go": 144,
+        ".sql": 266,
+        ".yaml": 315,
+        ".proto": 230,
+        ".md": 83
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 11,
+      "reviews": 12,
+      "by_ext": {
+        ".go": 107,
+        ".sql": 137,
+        ".yaml": 169,
+        ".proto": 200,
+        ".mod": 1,
+        ".sum": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 9,
+      "reviews": 11,
+      "by_ext": {
+        ".go": 56,
+        ".sql": 72,
+        ".mod": 33,
+        ".md": 79
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 7,
+      "reviews": 16,
+      "by_ext": {
+        ".go": 57,
+        ".sql": 72,
+        ".yaml": 67,
+        ".md": 114
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".sql": 162,
+        ".yaml": 170,
+        ".proto": 148,
+        ".md": 156,
+        ".go": 3
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 17,
+      "reviews": 8,
+      "by_ext": {
+        ".go": 138,
+        ".sql": 146,
+        ".yaml": 377,
+        ".mod": 135,
+        ".md": 422
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 8,
+      "reviews": 12,
+      "by_ext": {
+        ".sql": 84,
+        ".mod": 35,
+        ".proto": 81,
+        ".md": 77,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 11,
+      "reviews": 10,
+      "by_ext": {
+        ".go": 51,
+        ".sql": 199,
+        ".yaml": 227,
+        ".mod": 188,
+        ".proto": 124,
+        ".md": 130
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 11,
+      "reviews": 10,
+      "by_ext": {
+        ".go": 73,
+        ".sql": 120,
+        ".yaml": 113,
+        ".mod": 67,
+        ".proto": 78,
+        ".sh": 1,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 12,
+      "reviews": 6,
+      "by_ext": {
+        ".sql": 343,
+        ".yaml": 342,
+        ".proto": 209,
+        ".md": 307,
+        ".go": 2
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 10,
+      "reviews": 12,
+      "by_ext": {
+        ".go": 73,
+        ".sql": 41,
+        ".yaml": 68,
+        ".mod": 165,
+        ".proto": 177,
+        ".md": 63
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".go": 128,
+        ".yaml": 178,
+        ".mod": 201,
+        ".proto": 207,
+        ".md": 159
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 5,
+      "reviews": 6,
+      "by_ext": {
+        ".sql": 119,
+        ".proto": 77,
+        ".md": 62,
+        ".go": 1
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 160,
+        ".sql": 119,
+        ".mod": 167,
+        ".proto": 31
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 13,
+      "reviews": 9,
+      "by_ext": {
+        ".go": 104,
+        ".sql": 105,
+        ".yaml": 97,
+        ".mod": 115,
+        ".proto": 173
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".go": 52,
+        ".sql": 111,
+        ".yaml": 47,
+        ".mod": 97,
+        ".proto": 63,
+        ".md": 94
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 9,
+      "reviews": 10,
+      "by_ext": {
+        ".go": 112,
+        ".sql": 111,
+        ".yaml": 62,
+        ".mod": 141,
+        ".proto": 105,
+        ".md": 196
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [
+      "go-bank-statement-parser (2022, 4 stars)"
+    ],
+    "oss_contributions": [
+      {
+        "repo": "gocarina/gocsv",
+        "title": "fix: header with BOM not detected",
+        "merged": "2023-04"
+      }
+    ]
+  }
+}

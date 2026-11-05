@@ -1,0 +1,499 @@
+{
+  "issues": [
+    {
+      "key": "WEB-4591",
+      "type": "Bug",
+      "summary": "Typo in invoice empty state",
+      "component": "Invoices",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-01",
+      "resolved": "2025-09-15",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "WEB-4627",
+      "type": "Bug",
+      "summary": "Status chip misaligned",
+      "component": "Invoices",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-26",
+      "resolved": "2025-09-29",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "WEB-4671",
+      "type": "Bug",
+      "summary": "Date picker wrong month Safari",
+      "component": "Components",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-10-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-10-15",
+      "resolved": "2025-10-20",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "WEB-4691",
+      "type": "Story",
+      "summary": "Loading skeleton recon dashboard",
+      "component": "Recon UI",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-10-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-10-23",
+      "resolved": "2025-11-03",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-4736",
+      "type": "Task",
+      "summary": "Currency formatting helper adoption",
+      "component": "Components",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-11-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-11-20",
+      "resolved": "2025-11-21",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-4766",
+      "type": "Story",
+      "summary": "Notification preferences form",
+      "component": "Settings",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-11-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-11-28",
+      "resolved": "2025-12-12",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "WEB-4796",
+      "type": "Bug",
+      "summary": "React key warning in line items",
+      "component": "Invoices",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-12-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-12-22",
+      "resolved": "2025-12-25",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "WEB-4819",
+      "type": "Bug",
+      "summary": "Filter bar re-renders forever",
+      "component": "Components",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-09"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-01-09",
+      "resolved": "2026-01-15",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "WEB-4850",
+      "type": "Story",
+      "summary": "Client side CSV export invoices",
+      "component": "Invoices",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-01-19",
+      "resolved": "2026-01-27",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-4871",
+      "type": "Bug",
+      "summary": "Fix bug",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-06",
+      "resolved": "2026-02-09",
+      "labels": []
+    },
+    {
+      "key": "WEB-4908",
+      "type": "Story",
+      "summary": "EU invoice labels i18n",
+      "component": "i18n",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-05",
+      "resolved": "2026-03-17",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "WEB-4927",
+      "type": "Task",
+      "summary": "Tooltip copy for tax breakdown",
+      "component": "Invoices",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-12",
+      "resolved": "2026-03-18",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "WEB-4995",
+      "type": "Bug",
+      "summary": "Credit note amount sign wrong",
+      "component": "Invoices",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-21",
+      "resolved": "2026-05-07",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "WEB-5043",
+      "type": "Story",
+      "summary": "Audit log pagination",
+      "component": "Audit",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-22",
+      "resolved": "2026-06-02",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "WEB-5082",
+      "type": "Task",
+      "summary": "Remove feature flag useNewNav",
+      "component": "Navigation",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-17",
+      "resolved": "2026-06-18",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "WEB-5140",
+      "type": "Task",
+      "summary": "Debounce tenant switcher search",
+      "component": "Navigation",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-28",
+      "resolved": "2026-07-29",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "WEB-5149",
+      "type": "Task",
+      "summary": "Icon buttons need aria-labels",
+      "component": "Accessibility",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-03",
+      "resolved": "2026-08-07",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "WEB-5193",
+      "type": "Story",
+      "summary": "Recon dashboard date range filter",
+      "component": "Recon UI",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-11",
+      "resolved": "2026-09-24",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "WEB-5253",
+      "type": "Bug",
+      "summary": "Modal ignores Escape",
+      "component": "Components",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-21",
+      "resolved": "2026-10-31",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "WEB-5265",
+      "type": "Bug",
+      "summary": "Fix bug",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-22",
+      "resolved": "2026-10-23",
+      "labels": []
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+ "pid": "P032",
+ "schema": "truth-v2",
+ "summary": "Finance analyst maintains a genuine linked planning model and uses basic SQL with help. The requested evaluation excludes generic office work, leaving little sendable evidence.",
+ "archetype": "finance_coverage",
+ "batch": "F",
+ "generator": "codex gpt-6.1-terra",
+ "skills": [
+  {
+   "skill_id": "excel_modeling",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "docs_finance-forecast_md: linked assumptions -> forecast sheets, dated snapshots, checks/reconciliation tab, scenario summary signed off by FP&A manager, June mapping fault corrected and rerun; docs_cost-centre-mapping-changes_md change log; hcm_KC-11732 'Monthly forecast and variance pack' allocation since 2022; hcm self 'Excel modelling' 3. The generic cv_2026 'Excel, PowerPoint, Word' line is not the basis. Authored + organisation at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast",
+    "lms:Advanced Excel for Finance Teams"
+   ],
+   "why": "The private and authored workbook process includes linked assumptions, scenarios and reconciled outputs."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "docs_cost-centre-mapping-changes_md 'I have edited the department filter in the query a few times, always sending him the diff'; cv_2026 'SQL: basic queries with data team help'; lms SQL for Finance 74% (2025-09); hcm self 2. Guided query edits reconciled to control totals = level 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast",
+    "docs:cost-centre-mapping-changes",
+    "lms:SQL for Finance"
+   ],
+   "why": "Adjusts filters only with review and reconciles results."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "docs_headcount-plan-inputs_md: quarterly input collection from ~22 department owners, reminder/call cadence, HR reconciliation, FP&A manager review; hcm self 2. Reviewed action process = level 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast",
+    "docs:headcount-plan-inputs"
+   ],
+   "why": "Collects inputs and follows up with department owners."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "Four authored procedure pages edited across 2023-2026 (docs_finance-forecast_md, docs_headcount-plan-inputs_md, docs_cost-centre-mapping-changes_md, docs_variance-commentary-guide_md) with named reviewers; no task-validation record for 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast",
+    "docs:variance-commentary-guide"
+   ],
+   "why": "Documents a reproducible monthly process."
+  },
+  {
+   "skill_id": "agile_delivery",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only lms 'internal: Planning Cycle Basics' (2022), which is finance planning; no delivery practice records.",
+    "missing_source": null
+   },
+   "last_used": "2022-07",
+   "evidence_refs": [
+    "lms:Planning Cycle Basics"
+   ],
+   "why": "Understands planning cadence but does not manage delivery."
+  },
+  {
+   "skill_id": "data_modeling",
+   "has_skill": false,
+   "true_level": null,
+   "self_perceived_level": null,
+   "would_accept_levels": [],
+   "assessed_level": null,
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "docs_cost-centre-mapping-changes_md describes a spreadsheet lookup table, not data model design.",
+    "missing_source": null
+   },
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast"
+   ],
+   "why": "Spreadsheet modelling does not establish data warehouse modelling."
+  },
+  {
+   "skill_id": "python",
+   "has_skill": false,
+   "true_level": null,
+   "self_perceived_level": null,
+   "would_accept_levels": [],
+   "assessed_level": null,
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Python is not mentioned in any bundle source.",
+    "missing_source": null
+   },
+   "last_used": "2026-07",
+   "evidence_refs": [],
+   "why": "No Python work or training. Scoping assumption only."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Data modeling",
+   "mapped_skill_id": "data_modeling",
+   "has_skill": false,
+   "why": "Financial forecast formulas are not data model design.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Forecast formulas and a mapping table are not data models.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F06",
+   "s11_row": "invented",
+   "skill_id": "excel_modeling",
+   "plant": "CV has a generic Office list and declaration; the separate model record has greater detail.",
+   "expected_engine_behavior": "send_at_level_3",
+   "evidence_expectation": "The CV's generic Office list must not be the basis; the workbook notes and project allocation are.",
+   "v1_expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "agile_delivery",
+   "plant": "Old planning orientation is not evidence of current delivery practice.",
+   "expected_engine_behavior": "hold"
+  }
+ ],
+ "unmatched_skills": [
+  "Budgeting and forecasting (FP&A)",
+  "Variance analysis",
+  "Tally (basic)"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.65,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Would distinguish spreadsheet planning from technical data engineering."
+ },
+ "messaging_allowed": true
+}

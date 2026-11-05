@@ -1,0 +1,61 @@
+{
+  "exported_on": "2026-10-31",
+  "employee_id": "KC-11121",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Tom Fischer",
+  "preferred_name": "Tom Fischer",
+  "emails": [
+    {
+      "email": "tom.fischer@kestrelcloud.com",
+      "from": "2023-02",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Berlin",
+  "country": "DE",
+  "department": "Platform Engineering",
+  "manager_employee_id": "KC-10014",
+  "hire_date": "2023-02-06",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Site Reliability Engineer",
+      "grade": "P3",
+      "from": "2023-02",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "EU platform reliability",
+      "role": "Site Reliability Engineer",
+      "from": "2025-01",
+      "to": null,
+      "allocation_pct": 80
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": false,
+    "recorded_on": "2026-09-15",
+    "purpose": "Employee skill confirmation outreach"
+  },
+  "self_declared_skills": [
+    {
+      "skill_text": "Kubernetes",
+      "self_level": 3,
+      "declared_on": "2026-06"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technische Universität Berlin",
+      "degree": "B.Sc.",
+      "field": "Computer Science",
+      "year": 2018
+    }
+  ]
+}

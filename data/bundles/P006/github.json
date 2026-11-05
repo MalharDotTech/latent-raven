@@ -1,0 +1,762 @@
+{
+  "login": "rohanm-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-12418",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9409,
+      "title": "WEB-4591 fix typo in invoice empty state",
+      "state": "merged",
+      "created": "2025-09-12",
+      "merged": "2025-09-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1
+      },
+      "additions": 2,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "good-first-issue"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9450,
+      "title": "WEB-4627 align status chip on invoices table",
+      "state": "merged",
+      "created": "2025-09-29",
+      "merged": "2025-09-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1,
+        ".css": 1
+      },
+      "additions": 14,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9477,
+      "title": "update snapshots",
+      "state": "merged",
+      "created": "2025-10-07",
+      "merged": "2025-10-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".snap": 4
+      },
+      "additions": 120,
+      "deletions": 118,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9491,
+      "title": "WEB-4671 fix: date picker shows wrong month on Safari",
+      "state": "merged",
+      "created": "2025-10-16",
+      "merged": "2025-10-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2
+      },
+      "additions": 22,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9512,
+      "title": "WEB-4691 add loading skeleton to recon dashboard",
+      "state": "merged",
+      "created": "2025-10-24",
+      "merged": "2025-10-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".css": 1
+      },
+      "additions": 96,
+      "deletions": 8,
+      "co_authors": [
+        "meera.n@kestrelcloud.com"
+      ],
+      "review_comments_received": 9,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9596,
+      "title": "WEB-4766 settings page: notification preferences form",
+      "state": "merged",
+      "created": "2025-11-28",
+      "merged": "2025-11-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 5,
+        ".ts": 2
+      },
+      "additions": 312,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 14,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9568,
+      "title": "WEB-4736 use formatCurrency helper everywhere",
+      "state": "merged",
+      "created": "2025-11-20",
+      "merged": "2025-11-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 9,
+        ".ts": 1
+      },
+      "additions": 57,
+      "deletions": 61,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9604,
+      "title": "wip: settings page",
+      "state": "closed",
+      "created": "2025-11-28",
+      "closed": "2025-11-28",
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 4
+      },
+      "additions": 210,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "wip"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9675,
+      "title": "WEB-4796 fix key warning in LineItems list",
+      "state": "merged",
+      "created": "2025-12-24",
+      "merged": "2025-12-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1
+      },
+      "additions": 3,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9686,
+      "title": "address review comments",
+      "state": "merged",
+      "created": "2025-12-25",
+      "merged": "2025-12-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2
+      },
+      "additions": 18,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9728,
+      "title": "WEB-4819 fix: useEffect infinite loop in FilterBar",
+      "state": "merged",
+      "created": "2026-01-20",
+      "merged": "2026-01-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1
+      },
+      "additions": 9,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9762,
+      "title": "revert WEB-4819 (broke filters)",
+      "state": "merged",
+      "created": "2026-01-26",
+      "merged": "2026-01-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1
+      },
+      "additions": 6,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9768,
+      "title": "WEB-4850 export CSV button on invoices (client side)",
+      "state": "merged",
+      "created": "2026-01-28",
+      "merged": "2026-01-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".ts": 2
+      },
+      "additions": 150,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9825,
+      "title": "Bump eslint-plugin-react-hooks from 4.6.0 to 5.0.0",
+      "state": "merged",
+      "created": "2026-02-13",
+      "merged": "2026-02-13",
+      "merged_by": "other",
+      "author_type": "bot",
+      "files_ext": {
+        ".json": 1
+      },
+      "additions": 5,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "dependencies"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9839,
+      "title": "WEB-4871 reapply FilterBar fix with deps array + test",
+      "state": "merged",
+      "created": "2026-02-16",
+      "merged": "2026-02-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".test.tsx": 1
+      },
+      "additions": 64,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9890,
+      "title": "WEB-4908 add i18n keys for EU invoice labels",
+      "state": "merged",
+      "created": "2026-03-19",
+      "merged": "2026-03-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 4,
+        ".tsx": 3
+      },
+      "additions": 133,
+      "deletions": 20,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9911,
+      "title": "WEB-4927 tooltip text for tax breakdown",
+      "state": "merged",
+      "created": "2026-03-25",
+      "merged": "2026-03-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".json": 1
+      },
+      "additions": 41,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9952,
+      "title": "WEB-4995 fix: negative amounts render with wrong sign in credit notes",
+      "state": "merged",
+      "created": "2026-04-23",
+      "merged": "2026-04-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".ts": 1
+      },
+      "additions": 27,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10047,
+      "title": "WEB-5043 pagination for audit log table",
+      "state": "merged",
+      "created": "2026-05-28",
+      "merged": "2026-05-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".ts": 2,
+        ".test.tsx": 1
+      },
+      "additions": 260,
+      "deletions": 31,
+      "co_authors": [],
+      "review_comments_received": 11,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10079,
+      "title": "fix lint",
+      "state": "merged",
+      "created": "2026-06-04",
+      "merged": "2026-06-09",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3
+      },
+      "additions": 7,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10098,
+      "title": "WEB-5082 remove unused feature flag useNewNav",
+      "state": "merged",
+      "created": "2026-06-19",
+      "merged": "2026-06-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 5,
+        ".ts": 1
+      },
+      "additions": 4,
+      "deletions": 61,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10165,
+      "title": "WEB-5140 debounce search input in tenant switcher",
+      "state": "merged",
+      "created": "2026-07-28",
+      "merged": "2026-07-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1,
+        ".ts": 1
+      },
+      "additions": 28,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10200,
+      "title": "WEB-5149 a11y: labels for icon buttons",
+      "state": "merged",
+      "created": "2026-08-05",
+      "merged": "2026-08-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 8
+      },
+      "additions": 52,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10326,
+      "title": "WEB-5193 recon dashboard: filter by date range",
+      "state": "merged",
+      "created": "2026-09-23",
+      "merged": "2026-09-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 4,
+        ".ts": 2,
+        ".test.tsx": 2
+      },
+      "additions": 288,
+      "deletions": 20,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10392,
+      "title": "WEB-5253 fix: modal does not close on Esc",
+      "state": "merged",
+      "created": "2026-10-23",
+      "merged": "2026-10-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1
+      },
+      "additions": 6,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10361,
+      "title": "WEB-5231 update dependency types @types/react",
+      "state": "merged",
+      "created": "2026-10-02",
+      "merged": "2026-10-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 1,
+        ".tsx": 2
+      },
+      "additions": 9,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9663,
+      "date": "2025-12-26",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9802,
+      "date": "2026-02-09",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "looks good to me"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9854,
+      "date": "2026-03-04",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "nit: extra space"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10007,
+      "date": "2026-05-11",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "LGTM"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10062,
+      "date": "2026-06-03",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "approved"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10230,
+      "date": "2026-08-31",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "can you add a test?"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10283,
+      "date": "2026-09-17",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm!"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10345,
+      "date": "2026-10-01",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "ok"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2025-08",
+      "merged_prs": 1,
+      "reviews": 0,
+      "by_ext": {
+        ".tsx": 32,
+        ".ts": 36,
+        ".json": 6,
+        ".snap": 20
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 2,
+      "reviews": 0,
+      "by_ext": {
+        ".tsx": 22,
+        ".ts": 8,
+        ".css": 18,
+        ".snap": 33
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 3,
+      "reviews": 0,
+      "by_ext": {
+        ".tsx": 45,
+        ".ts": 93,
+        ".css": 24,
+        ".json": 68,
+        ".snap": 4
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 5,
+      "reviews": 0,
+      "by_ext": {
+        ".tsx": 237,
+        ".ts": 52,
+        ".css": 214,
+        ".json": 86
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 7,
+      "reviews": 1,
+      "by_ext": {
+        ".tsx": 140,
+        ".ts": 125,
+        ".css": 126,
+        ".json": 45
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 7,
+      "reviews": 0,
+      "by_ext": {
+        ".tsx": 29,
+        ".ts": 49,
+        ".json": 114,
+        ".snap": 37
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".tsx": 108,
+        ".ts": 50,
+        ".css": 85,
+        ".snap": 85,
+        ".json": 1,
+        ".test.tsx": 1
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".tsx": 154,
+        ".ts": 110,
+        ".css": 100,
+        ".json": 38,
+        ".snap": 86
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".tsx": 39,
+        ".ts": 46,
+        ".css": 42,
+        ".json": 67,
+        ".snap": 39
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".tsx": 128,
+        ".ts": 158,
+        ".css": 179,
+        ".json": 114,
+        ".snap": 204,
+        ".test.tsx": 1
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".tsx": 119,
+        ".ts": 23,
+        ".css": 43,
+        ".json": 31,
+        ".snap": 45
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 3,
+      "reviews": 3,
+      "by_ext": {
+        ".tsx": 114,
+        ".css": 29,
+        ".snap": 69,
+        ".ts": 1
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".tsx": 30,
+        ".ts": 97,
+        ".css": 100,
+        ".json": 101,
+        ".snap": 77
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 8,
+      "reviews": 2,
+      "by_ext": {
+        ".tsx": 99,
+        ".ts": 38,
+        ".css": 17,
+        ".json": 100,
+        ".snap": 86,
+        ".test.tsx": 2
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 7,
+      "reviews": 1,
+      "by_ext": {
+        ".tsx": 42,
+        ".ts": 110,
+        ".css": 118,
+        ".json": 99
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [
+      "ai-expense-tracker (capstone, 2 stars)",
+      "movie-recommender-flask",
+      "ecommerce-microservices (forked tutorial, 1 commit)",
+      "chat-app-socketio"
+    ],
+    "oss_contributions": []
+  }
+}

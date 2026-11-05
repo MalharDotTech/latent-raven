@@ -1,0 +1,43 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Sales Foundations",
+      "provider": "Kestrel Learn",
+      "completed": "2022-09-02",
+      "time_spent_minutes": 410,
+      "quiz_score_pct": 88,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Deal Desk and Discounting Policy",
+      "provider": "Kestrel Learn",
+      "completed": "2022-10-11",
+      "time_spent_minutes": 35,
+      "quiz_score_pct": 80,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: MEDDICC Workshop (Mid-Market)",
+      "provider": "Kestrel Learn",
+      "completed": "2024-02-14",
+      "time_spent_minutes": 300,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Code of Conduct and POSH 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-06-05",
+      "time_spent_minutes": 28,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Salesforce Forecasting Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2025-02-20",
+      "time_spent_minutes": 50,
+      "quiz_score_pct": 75,
+      "assigned_by": "manager"
+    }
+  ]
+}

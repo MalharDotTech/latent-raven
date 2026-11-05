@@ -1,0 +1,14 @@
+{
+  "certificates": [
+    {
+      "name": "AWS Certified Developer - Associate",
+      "issuer": "AWS",
+      "code": "DVA-C02",
+      "issued": "2024-03",
+      "expires": "2027-03",
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/e8f4ced7-2ac1-4cca-a314-f86a76dc1024",
+      "verification_status": "verified"
+    }
+  ]
+}

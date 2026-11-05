@@ -1,0 +1,1111 @@
+{
+  "login": "ayesha-khan-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11111",
+  "exported_on": "2026-10-31",
+  "sample_scope": "Selected PRs and review threads; monthly activity covers complete membership, including zero months.",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 6438,
+      "title": "DATA-1021 reject bad settlement header",
+      "state": "merged",
+      "created": "2020-08-13",
+      "merged": "2020-08-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 19,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python header parser checks delimiter and required fields; file quarantine regression test."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 6742,
+      "title": "fix: bank timestamp offset",
+      "state": "merged",
+      "created": "2020-11-16",
+      "merged": "2020-11-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 56,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python datetime parser retains supplied offset instead of local timezone."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 7124,
+      "title": "Dedup settlement rows by bank ref",
+      "state": "merged",
+      "created": "2021-03-14",
+      "merged": "2021-03-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 93,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "PySpark window chooses latest event by bank sequence; reconciled source counts."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 7532,
+      "title": "DATA-1401 backfill uses logical date",
+      "state": "merged",
+      "created": "2021-07-16",
+      "merged": "2021-07-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 130,
+      "deletions": 36,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Airflow task previously read wall clock; tested replay over month boundary."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 7931,
+      "title": "fix: SQL null branch in fee totals",
+      "state": "merged",
+      "created": "2021-11-17",
+      "merged": "2021-11-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 167,
+      "deletions": 47,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL CASE handles missing fee code; reconciliation attached."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 8295,
+      "title": "Handle skewed settlement tenant",
+      "state": "merged",
+      "created": "2022-03-13",
+      "merged": "2022-03-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 204,
+      "deletions": 58,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "PySpark plan isolated hot tenant and bounded partitions; run reduced from 71m to 29m."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 8702,
+      "title": "DATA-1740 quarantine unknown schema",
+      "state": "merged",
+      "created": "2022-07-14",
+      "merged": "2022-07-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 241,
+      "deletions": 69,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python validator detects changed header before PySpark conversion; source file retained."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 8993,
+      "title": "fix: retries publish partial output",
+      "state": "merged",
+      "created": "2022-10-17",
+      "merged": "2022-10-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 278,
+      "deletions": 80,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Airflow publish waits for row-count gate; replayed failed partition before deploy."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 9310,
+      "title": "Add replay checklist",
+      "state": "merged",
+      "created": "2023-01-15",
+      "merged": "2023-01-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 34,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Airflow backfill handover; teammate replayed December run with documented checks."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13754,
+      "title": "fix: settlement schema v3 tests",
+      "state": "merged",
+      "created": "2026-02-20",
+      "merged": "2026-02-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 71,
+      "deletions": 23,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python parser update after return; reviewer showed new registry helper and requested fixture change."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13829,
+      "title": "DATA-3741 dedup late bank events",
+      "state": "merged",
+      "created": "2026-03-10",
+      "merged": "2026-03-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 108,
+      "deletions": 34,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "PySpark latest-event key omitted bank sequence; corrected key, replayed 4 days, counts reconciled."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13888,
+      "title": "fix: casts before amount filter",
+      "state": "merged",
+      "created": "2026-03-22",
+      "merged": "2026-03-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 145,
+      "deletions": 45,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "PySpark decimal casts applied before comparison; quarantined 19 malformed values."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14017,
+      "title": "Backfill only missing settlement dates",
+      "state": "merged",
+      "created": "2026-04-16",
+      "merged": "2026-04-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 182,
+      "deletions": 56,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Airflow partial backfill uses partition manifest; repaired failed run without replaying published days."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14156,
+      "title": "DATA-3879 preserve scale in fee sum",
+      "state": "merged",
+      "created": "2026-05-12",
+      "merged": "2026-05-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 219,
+      "deletions": 67,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "SQL decimal type retained through aggregate; checked source and target net amounts."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14324,
+      "title": "fix: renamed bank column breaks parse",
+      "state": "merged",
+      "created": "2026-06-14",
+      "merged": "2026-06-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 256,
+      "deletions": 78,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Python alias lookup with explicit schema version; added old/new file tests and deployed."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14504,
+      "title": "Keep lineage id on rejected records",
+      "state": "merged",
+      "created": "2026-07-08",
+      "merged": "2026-07-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 293,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "PySpark quarantine includes source file and row hash; checked rejected count against input."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14767,
+      "title": "DATA-4189 retries must reuse manifest",
+      "state": "merged",
+      "created": "2026-08-19",
+      "merged": "2026-08-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 49,
+      "deletions": 21,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "Airflow retries use original input manifest; recovered interrupted batch and checked no duplicate writes."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14979,
+      "title": "fix: assume-role expires during upload",
+      "state": "merged",
+      "created": "2026-09-16",
+      "merged": "2026-09-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 86,
+      "deletions": 32,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "AWS S3 multipart upload wrapper now refreshes credentials; platform reviewer helped configure role lifetime."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15179,
+      "title": "Fix shuffle spill on settlement replay",
+      "state": "merged",
+      "created": "2026-10-16",
+      "merged": "2026-10-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ayesha-khan-kc",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 2
+      },
+      "additions": 123,
+      "deletions": 43,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "data"
+      ],
+      "body_excerpt": "PySpark hot bank partition isolated; run log 46m to 24m, input/output counts and net sums match."
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 13893,
+      "date": "2026-03-26",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "This cast turns malformed amounts into nulls; count and quarantine them before the sum.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 13993,
+      "date": "2026-04-16",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "Retry must use the original file manifest; the bank can upload another file between attempts.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14100,
+      "date": "2026-05-08",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "The timestamp has an offset. Converting after truncation shifts the partition.",
+      "author_followup": "Checks passed on updated change."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14338,
+      "date": "2026-06-21",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "This cast turns malformed amounts into nulls; count and quarantine them before the sum.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14444,
+      "date": "2026-07-01",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "Retry must use the original file manifest; the bank can upload another file between attempts.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14698,
+      "date": "2026-08-12",
+      "state": "APPROVED",
+      "comment_count": 2,
+      "sample_comment": "The timestamp has an offset. Converting after truncation shifts the partition.",
+      "author_followup": "Checks passed on updated change."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14902,
+      "date": "2026-09-14",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "This cast turns malformed amounts into nulls; count and quarantine them before the sum.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 15095,
+      "date": "2026-10-08",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "Retry must use the original file manifest; the bank can upload another file between attempts.",
+      "author_followup": "Added regression fixture and reran checks."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2020-06",
+      "merged_prs": 2,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 12,
+        ".sql": 6
+      }
+    },
+    {
+      "month": "2020-07",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    },
+    {
+      "month": "2020-08",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 32,
+        ".sql": 16
+      }
+    },
+    {
+      "month": "2020-09",
+      "merged_prs": 11,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 44,
+        ".sql": 22
+      }
+    },
+    {
+      "month": "2020-10",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 28,
+        ".sql": 14
+      }
+    },
+    {
+      "month": "2020-11",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 24,
+        ".sql": 12
+      }
+    },
+    {
+      "month": "2020-12",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    },
+    {
+      "month": "2021-01",
+      "merged_prs": 6,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 32,
+        ".sql": 16
+      }
+    },
+    {
+      "month": "2021-02",
+      "merged_prs": 10,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 44,
+        ".sql": 22
+      }
+    },
+    {
+      "month": "2021-03",
+      "merged_prs": 5,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 28,
+        ".sql": 14
+      }
+    },
+    {
+      "month": "2021-04",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 24,
+        ".sql": 12
+      }
+    },
+    {
+      "month": "2021-05",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    },
+    {
+      "month": "2021-06",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 32,
+        ".sql": 16
+      }
+    },
+    {
+      "month": "2021-07",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 44,
+        ".sql": 22
+      }
+    },
+    {
+      "month": "2021-08",
+      "merged_prs": 6,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 28,
+        ".sql": 14
+      }
+    },
+    {
+      "month": "2021-09",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 24,
+        ".sql": 12
+      }
+    },
+    {
+      "month": "2021-10",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    },
+    {
+      "month": "2021-11",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 32,
+        ".sql": 16
+      }
+    },
+    {
+      "month": "2021-12",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 44,
+        ".sql": 22
+      }
+    },
+    {
+      "month": "2022-01",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 28,
+        ".sql": 14
+      }
+    },
+    {
+      "month": "2022-02",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 24,
+        ".sql": 12
+      }
+    },
+    {
+      "month": "2022-03",
+      "merged_prs": 10,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    },
+    {
+      "month": "2022-04",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 32,
+        ".sql": 16
+      }
+    },
+    {
+      "month": "2022-05",
+      "merged_prs": 13,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 44,
+        ".sql": 22
+      }
+    },
+    {
+      "month": "2022-06",
+      "merged_prs": 7,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 28,
+        ".sql": 14
+      }
+    },
+    {
+      "month": "2022-07",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 24,
+        ".sql": 12
+      }
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 11,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 32,
+        ".sql": 16
+      }
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 14,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 44,
+        ".sql": 22
+      }
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 9,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 28,
+        ".sql": 14
+      }
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 24,
+        ".sql": 12
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 9,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 12,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 44,
+        ".sql": 22
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 6,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 28,
+        ".sql": 14
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 6,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 24,
+        ".sql": 12
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 9,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 32,
+        ".sql": 16
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 12,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 44,
+        ".sql": 22
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 6,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 28,
+        ".sql": 14
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 24,
+        ".sql": 12
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 10,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 36,
+        ".sql": 18
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [],
+    "oss_contributions": []
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "pid": "P030",
+  "summary": "Rehired under a new identifier after leaving in 2022. During the interruption he ran family operations; Spark expertise has faded while Python and SQL were rebuilt.",
+  "archetype": "boomerang",
+  "batch": "F",
+  "generator": "codex gpt-6.1-terra",
+  "skills": [
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:#1736",
+        "jira:DATA-3412"
+      ],
+      "why": "Recent pipeline fixes and operational tasks establish independent use."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:#1540"
+      ],
+      "why": "Recent reconciliation and query work are routine."
+    },
+    {
+      "skill_id": "airflow",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:#1754"
+      ],
+      "why": "Maintains backfill and scheduling changes."
+    },
+    {
+      "skill_id": "pyspark",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2022-08",
+      "evidence_refs": [
+        "cv_v1:Data Engineer",
+        "github:#557",
+        "lms:Spark Performance Tuning"
+      ],
+      "why": "Former batch work is substantially stale and has not been refreshed."
+    },
+    {
+      "skill_id": "data_modeling",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "jira:DATA-3141"
+      ],
+      "why": "Makes bounded data checks with review."
+    },
+    {
+      "skill_id": "agile_delivery",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "jira:DATA-3182"
+      ],
+      "why": "Delivers planned platform tasks."
+    },
+    {
+      "skill_id": "kafka",
+      "has_skill": false,
+      "true_level": null,
+      "self_perceived_level": null,
+      "would_accept_levels": [],
+      "assessed_level": null,
+      "last_used": "2022-08",
+      "evidence_refs": [
+        "cv_v1:Technical"
+      ],
+      "why": "A CV mention alone; he did not operate Kafka."
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Kafka",
+      "mapped_skill_id": "kafka",
+      "has_skill": false,
+      "why": "Listed without actual hands-on use."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F23",
+      "s11_row": "wrong_person",
+      "skill_id": "python",
+      "plant": "Archived and active Workday records carry different IDs linked by rehire and email history.",
+      "expected_engine_behavior": "join_neither"
+    },
+    {
+      "fault_id": "F28",
+      "s11_row": "skill_decay",
+      "skill_id": "pyspark",
+      "plant": "Spark work stopped at departure; the interruption is explicit.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F01",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "kafka",
+      "plant": "CV lists Kafka without work history.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F16",
+      "s11_row": "wrong_mapping",
+      "skill_id": "sql",
+      "plant": "Generic issue summaries and General component omit stack details.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.75,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Would qualify old experience as rusty."
+  },
+  "messaging_allowed": true
+}

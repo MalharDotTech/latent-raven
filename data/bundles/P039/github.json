@@ -1,0 +1,1066 @@
+{
+  "login": "pallavi-kulkarni-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-12018",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 7472,
+      "title": "QA-2438 wait for invoice row not spinner",
+      "body": "Explicit wait targets the invoice row after search. 40 repeat runs passed, including the slow-response fixture.",
+      "state": "merged",
+      "created": "2023-08-08",
+      "merged": "2023-08-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 32,
+      "deletions": 23,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "QA-2438"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 7635,
+      "title": "add refund auth checks",
+      "body": "RestAssured suite now checks missing scope and cross-tenant invoice IDs. Scope defect raised before the release candidate went out.",
+      "state": "merged",
+      "created": "2023-10-18",
+      "merged": "2023-10-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 4
+      },
+      "additions": 82,
+      "deletions": 13,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "QA-2518"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 7759,
+      "title": "QA-2575 seed invoices per worker",
+      "body": "Allocate a tenant fixture per worker. No collisions across 30 full parallel runs.",
+      "state": "merged",
+      "created": "2023-12-11",
+      "merged": "2023-12-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 35,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "QA-2575"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 7898,
+      "title": "fix: stale element in refund modal",
+      "body": "Re-query the confirmation button after the amount update. Repeat-run report attached for chrome and firefox.",
+      "state": "merged",
+      "created": "2024-02-06",
+      "merged": "2024-02-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 126,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "commits": 5,
+      "issue_keys": [
+        "QA-2662"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8066,
+      "title": "test duplicate refund retry",
+      "body": "RestAssured checks timeout then retry and ledger totals; the seeded service bug failed in CI before release.",
+      "state": "merged",
+      "created": "2024-04-19",
+      "merged": "2024-04-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 145,
+      "deletions": 23,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "tests"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "QA-2758"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8180,
+      "title": "fix tenant join in assertions",
+      "body": "SQL validation query now joins on tenant and invoice. Data engineer reviewed the query and source totals on the sample database.",
+      "state": "merged",
+      "created": "2024-06-14",
+      "merged": "2024-06-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3,
+        ".sql": 4
+      },
+      "additions": 71,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "QA-2829"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8213,
+      "title": "QA-2847 upload test report on failure",
+      "body": "Added GitHub Actions always() report step with build engineer; failed-run artifacts now include the junit report.",
+      "state": "merged",
+      "created": "2024-06-28",
+      "merged": "2024-07-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 4
+      },
+      "additions": 68,
+      "deletions": 24,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "QA-2847"
+      ],
+      "review_comments": [
+        {
+          "user": "deepak-basu-kc",
+          "date": "2024-07-01",
+          "body": "Use always() on upload, otherwise the failed run has no report.",
+          "path": ".yml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8413,
+      "title": "fixture api: reject negative totals",
+      "body": "Fixture controller and tests under Deepak review; changed validation order after reviewer found null amount returned 500.",
+      "state": "merged",
+      "created": "2024-09-16",
+      "merged": "2024-09-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 57,
+      "deletions": 20,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "QA-2953"
+      ],
+      "review_comments": [
+        {
+          "user": "deepak-basu-kc",
+          "date": "2024-09-18",
+          "body": "Check null before comparing amount; null should return 400 too.",
+          "path": ".java"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8540,
+      "title": "avoid cached element on tab switch",
+      "body": "Page object now resolves within active panel. Tested 50 tab-switch repetitions without stale reference.",
+      "state": "merged",
+      "created": "2024-11-14",
+      "merged": "2024-11-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 87,
+      "deletions": 34,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "QA-3012"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8741,
+      "title": "check refund contract on 409",
+      "body": "API contract test checks request ID and error shape on conflict. CI run exposed response mapper regression in the release candidate.",
+      "state": "merged",
+      "created": "2025-02-13",
+      "merged": "2025-02-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2,
+        ".json": 2
+      },
+      "additions": 25,
+      "deletions": 49,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "QA-3123"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8898,
+      "title": "query totals by value date",
+      "body": "Reviewed SQL query uses bank value date, compared sum and count against supplied reconciliation sheet.",
+      "state": "merged",
+      "created": "2025-04-01",
+      "merged": "2025-04-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 4,
+        ".java": 1
+      },
+      "additions": 51,
+      "deletions": 53,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "QA-3189"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 8907,
+      "title": "retry only the browser setup step",
+      "body": "Changed pipeline retry stage with build engineer review. Assertion failures no longer rerun, setup failures retry once.",
+      "state": "merged",
+      "created": "2025-04-02",
+      "merged": "2025-04-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 1
+      },
+      "additions": 54,
+      "deletions": 70,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "QA-3202"
+      ],
+      "review_comments": [
+        {
+          "user": "deepak-basu-kc",
+          "date": "2025-04-03",
+          "body": "Put retry around setup only. An assertion failure must stay failed.",
+          "path": ".yml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9168,
+      "title": "fix download wait",
+      "body": "Selenium suite waits on download completion rather than fixed sleep. Repeat run includes delayed response and empty invoice list.",
+      "state": "merged",
+      "created": "2025-07-01",
+      "merged": "2025-07-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 41,
+      "deletions": 33,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "QA-3314"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9208,
+      "title": "test revoked token response",
+      "body": "RestAssured failure-path checks distinguish expired and revoked tokens, with assertions on response schema and audit ID.",
+      "state": "merged",
+      "created": "2025-07-15",
+      "merged": "2025-07-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 163,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "tests"
+      ],
+      "commits": 1,
+      "issue_keys": [
+        "QA-3333"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9393,
+      "title": "clear worker fixture in finally",
+      "body": "Java fixture handler cleanup, reviewed by Deepak. Controller test forces validation failure and confirms the lock is released.",
+      "state": "merged",
+      "created": "2025-09-24",
+      "merged": "2025-09-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 106,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "QA-3423"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9673,
+      "title": "fix: invoice badge locator",
+      "body": "Selector uses data-testid instead of translated label. Full locale matrix and repeat-run reports passed.",
+      "state": "merged",
+      "created": "2026-01-06",
+      "merged": "2026-01-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 117,
+      "deletions": 50,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "commits": 5,
+      "issue_keys": [
+        "QA-3579"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9746,
+      "title": "refund rounding assertions",
+      "body": "API checks compare BigDecimal totals and the ledger snapshot for partial refunds; caught the one-paisa regression in preprod.",
+      "state": "merged",
+      "created": "2026-02-02",
+      "merged": "2026-02-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 173,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "QA-3622"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 9844,
+      "title": "handle missing bank id in fixture API",
+      "body": "Java fixture controller now returns 400. Reviewer corrected the null check and test covers missing and empty values.",
+      "state": "merged",
+      "created": "2026-03-13",
+      "merged": "2026-03-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 35,
+      "deletions": 17,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "QA-3671"
+      ],
+      "review_comments": [
+        {
+          "user": "deepak-basu-kc",
+          "date": "2026-03-17",
+          "body": "Do the null check before isEmpty. Add separate tests for both.",
+          "path": ".java"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 10030,
+      "title": "remove sleep from invoice paging",
+      "body": "Selenium expected condition watches active page and row key. 60 repeat runs passed on slow staging.",
+      "state": "merged",
+      "created": "2026-05-25",
+      "merged": "2026-05-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 4
+      },
+      "additions": 44,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "QA-3782"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 10120,
+      "title": "fix test report retention",
+      "body": "Pipeline retention edited with build engineer guidance; checked report was available after the next nightly run.",
+      "state": "merged",
+      "created": "2026-06-26",
+      "merged": "2026-06-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 1
+      },
+      "additions": 30,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "QA-3826"
+      ],
+      "review_comments": [
+        {
+          "user": "deepak-basu-kc",
+          "date": "2026-06-30",
+          "body": "Use the QA signoff retention value and check it on the next nightly.",
+          "path": ".yml"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 10228,
+      "title": "QA-3880 test webhook signature errors",
+      "body": "RestAssured suite covers absent and invalid signature. Pre-release CI caught raw exception content in response.",
+      "state": "merged",
+      "created": "2026-08-11",
+      "merged": "2026-08-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3,
+        ".json": 1
+      },
+      "additions": 74,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "tests"
+      ],
+      "commits": 5,
+      "issue_keys": [
+        "QA-3880"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 10377,
+      "title": "QA-3983 compare open balance query",
+      "body": "SQL query reviewed for credit-note join and reconciled against the supplied tenant totals.",
+      "state": "merged",
+      "created": "2026-10-15",
+      "merged": "2026-10-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 2
+      },
+      "additions": 139,
+      "deletions": 39,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "QA-3983"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "number": 10417,
+      "title": "split slow browser job",
+      "body": "Opened for the next iteration. Waiting for maintainer review.",
+      "state": "open",
+      "created": "2026-10-29",
+      "merged": null,
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 1
+      },
+      "additions": 90,
+      "deletions": 13,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [],
+      "commits": 5,
+      "draft": false,
+      "updated": "2026-10-30"
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 7773,
+      "date": "2023-12-19",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "This fixture is shared by four workers. The delete in finally can remove another test data.",
+      "author_reply_excerpt": "Created invoice per worker and moved cleanup to the worker fixture.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 8767,
+      "date": "2025-02-21",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "A fixed sleep will still fail on slow CI. Can we wait on the actual row?",
+      "author_reply_excerpt": "Changed to explicit wait on row ID; repeat run passed.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 9598,
+      "date": "2025-12-12",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "We assert 409 but not that the balance stayed same. That would miss a second posting.",
+      "author_reply_excerpt": "Added balance and posting-count assertions; seeded duplicate now fails.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/qa-automation",
+      "pr_number": 10098,
+      "date": "2026-06-23",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "Catching Exception here makes a failed assertion pass the test.",
+      "author_reply_excerpt": "Removed catch, kept cleanup in finally. Assertion failure visible in CI.",
+      "thread_resolved": true
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-08",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 6,
+        ".json": 1,
+        ".xml": 9,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 15,
+        ".json": 13,
+        ".xml": 14,
+        ".yml": 15
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 14,
+        ".json": 8,
+        ".xml": 5,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 8,
+        ".json": 10,
+        ".xml": 12,
+        ".yml": 12
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 8,
+        ".json": 3,
+        ".xml": 3,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 12,
+        ".json": 2,
+        ".xml": 4,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 14,
+        ".json": 6,
+        ".xml": 13,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 14,
+        ".json": 5,
+        ".xml": 12,
+        ".yml": 14
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 6,
+        ".json": 6,
+        ".xml": 5,
+        ".yml": 7
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 12,
+        ".json": 6,
+        ".xml": 20,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 9,
+        ".json": 3,
+        ".sql": 4,
+        ".xml": 8,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 12,
+        ".json": 18,
+        ".xml": 5,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 4,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 7,
+        ".json": 7,
+        ".xml": 7,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 9,
+        ".json": 13,
+        ".xml": 14,
+        ".yml": 10
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 7,
+        ".json": 9,
+        ".xml": 11,
+        ".yml": 5
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 8,
+        ".json": 6,
+        ".xml": 3,
+        ".yml": 10
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 2,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 4,
+        ".json": 2,
+        ".xml": 2,
+        ".yml": 3
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 7,
+        ".json": 4,
+        ".xml": 4,
+        ".yml": 12
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 10,
+        ".json": 9,
+        ".xml": 16,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 11,
+        ".json": 12,
+        ".xml": 12,
+        ".yml": 13
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 15,
+        ".json": 8,
+        ".sql": 4,
+        ".xml": 9,
+        ".yml": 13
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 9,
+        ".json": 11,
+        ".xml": 11,
+        ".yml": 11
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 11,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 19,
+        ".json": 17,
+        ".xml": 15,
+        ".yml": 17
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 9,
+        ".json": 6,
+        ".xml": 9,
+        ".yml": 5
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 10,
+        ".json": 8,
+        ".xml": 10,
+        ".yml": 17
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 8,
+        ".json": 5,
+        ".xml": 6,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 2,
+        ".json": 1,
+        ".xml": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 5,
+        ".json": 9,
+        ".xml": 14,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 8,
+        ".json": 12,
+        ".xml": 7,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 15,
+        ".json": 15,
+        ".xml": 11,
+        ".yml": 12
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 11,
+        ".json": 12,
+        ".xml": 6,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 10,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 18,
+        ".json": 20,
+        ".xml": 12,
+        ".yml": 12
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 12,
+        ".json": 4,
+        ".xml": 4,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 12,
+        ".json": 6,
+        ".xml": 9,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 3,
+        ".json": 5,
+        ".xml": 8,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 4,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 4,
+        ".json": 7,
+        ".xml": 5,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 10,
+        ".json": 6,
+        ".xml": 7,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 6,
+        ".json": 9,
+        ".xml": 6,
+        ".yml": 8
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 8,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 16,
+        ".json": 14,
+        ".sql": 2,
+        ".xml": 11,
+        ".yml": 18
+      }
+    }
+  ],
+  "exported": "2026-10-31"
+}

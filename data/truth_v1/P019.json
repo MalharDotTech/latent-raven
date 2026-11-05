@@ -1,0 +1,229 @@
+{
+  "summary": "Lakshmi is the same employee behind an expanded payroll name, an initialled Jira name and reversed GitHub display order. She teaches tenant-access controls and independently maintains the scanner export, but paired Java work and network verification can be mistaken for service or Kubernetes ownership.",
+  "archetype": "Security specialist with name-order variants",
+  "skills": [
+    {
+      "skill_id": "security_fundamentals",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review billing-core#8301",
+        "jira:SEC-2911",
+        "docs/ENG-419"
+      ],
+      "why": "Other service maintainers adopted her negative-test method and exception controls.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#1903",
+        "github:#1910",
+        "github:#1914"
+      ],
+      "why": "Owns a scheduled reporting module and resolves pagination, expiry and runtime failures.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "api_testing",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:SEC-2901",
+        "jira:SEC-2908",
+        "docs/ENG-419"
+      ],
+      "why": "Independently builds and executes negative API checks which catch tenant leakage.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "aws",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#1902",
+        "jira:SEC-2902"
+      ],
+      "why": "Independently diagnoses and remediates IAM access failures; certification is supporting context only.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "terraform",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#1905",
+        "jira:SEC-2910"
+      ],
+      "why": "Uses platform correction for configuration mechanics and validates the resulting access behaviour.",
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "linux",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:SEC-2907",
+        "cv_v1:Before this"
+      ],
+      "why": "Current host-access remediation plus sustained operations experience support independent service administration.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review billing-core#8301",
+        "github:review data-platform#8303"
+      ],
+      "why": "Her security reviews catch deployable defects; evidence does not establish general reviewer coaching.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/ENG-419",
+        "jira:SEC-2912"
+      ],
+      "why": "Support can execute the revised procedure with the expected diagnostics.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "java",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#1901",
+        "github:#1904"
+      ],
+      "why": "Privately she can modify a bounded assertion or endpoint with help; the co-author owns lifecycle and middleware design.",
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "incident_management",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:Before this"
+      ],
+      "why": "Private assessor observed her run two containment handovers in 2026. Restricted incident records were excluded, so the visible export is inadequate for confident outreach.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-08"
+    },
+    {
+      "skill_id": "kubernetes",
+      "has_skill": false,
+      "evidence_refs": [
+        "jira:SEC-2909"
+      ],
+      "why": "She ran an outbound probe after platform remediation, with no cluster operation or retained Kubernetes knowledge.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Kubernetes",
+      "mapped_skill_id": "kubernetes",
+      "has_skill": false,
+      "why": "Network-policy verification was a security check performed after someone else repaired the cluster."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": null,
+      "s11_row": "wrong_person",
+      "skill_id": null,
+      "plant": "Payroll expands Lakshmi’s name; Jira uses an initial and GitHub reverses the order. Dated alias records share KC-10919.",
+      "expected_engine_behavior": "join_by_verified_alias_and_employee_id",
+      "roster_case": "name_order_variance",
+      "catalog_note": "No exact name-order entry exists in F01-F36. F22 concerns a changed name, which did not occur here."
+    },
+    {
+      "fault_id": "F14",
+      "s11_row": "wrong_person",
+      "skill_id": "kubernetes",
+      "plant": "The scanner egress issue has a late transfer to Lakshmi after the platform engineer repairs the network policy.",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F13",
+      "s11_row": "level_off",
+      "skill_id": "java",
+      "plant": "Two Java PRs explicitly split security assertions from middleware and fixture work performed by a co-author.",
+      "expected_engine_behavior": "send_at_level_2"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Checks the wording carefully; will clarify scope of Java work and decline cluster ownership. Does not recognise an identity split as two people."
+  },
+  "pid": "P019",
+  "batch": "D",
+  "generator": "codex (GPT-6; runtime submodel not exposed)",
+  "messaging_allowed": true
+}

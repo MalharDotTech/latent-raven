@@ -1,0 +1,29 @@
+{
+  "person_ref": "P041",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-12109",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_ritika-shah-kc_1",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P041",
+      "received": "2026-10-07"
+    },
+    {
+      "source_id": "jira_KC-12109",
+      "source_type": "jira",
+      "path": "jira.json"
+    },
+    {
+      "source_id": "doc_ENG-2891",
+      "source_type": "authored_doc",
+      "path": "docs/fi-close.md"
+    }
+  ]
+}

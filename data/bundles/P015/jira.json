@@ -1,0 +1,436 @@
+{
+  "issues": [
+    {
+      "key": "PLAT-4009",
+      "type": "Task",
+      "summary": "Tagging policy: cost-center on s3",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-05-16"
+        }
+      ],
+      "created": "2024-05-16",
+      "component": "Cloud Cost",
+      "resolution": "Done",
+      "resolved": "2024-06-14",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4092",
+      "type": "Task",
+      "summary": "Bastion SG rule for data team",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-08-05"
+        }
+      ],
+      "created": "2024-08-01",
+      "component": "Networking",
+      "resolution": "Done",
+      "resolved": "2024-08-20",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4182",
+      "type": "Task",
+      "summary": "Access request: read-only prod logs",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-10-04"
+        }
+      ],
+      "created": "2024-10-04",
+      "component": "Access",
+      "resolution": "Done",
+      "resolved": "2024-10-04",
+      "resolved_by_self": true,
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4394",
+      "type": "Story",
+      "summary": "IAM role for Airflow in data-platform",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-03-19"
+        },
+        {
+          "assignee": "self",
+          "from": "2025-03-19"
+        }
+      ],
+      "created": "2025-03-19",
+      "component": "IAM",
+      "resolution": "Done",
+      "resolved": "2025-04-01",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4562",
+      "type": "Task",
+      "summary": "Nodegroup instance type refresh stg",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-24"
+        }
+      ],
+      "created": "2025-07-24",
+      "component": "EKS",
+      "resolution": "Done",
+      "resolved": "2025-08-08",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4624",
+      "type": "Story",
+      "summary": "Org CloudTrail baseline",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-09-08"
+        },
+        {
+          "assignee": "self",
+          "from": "2025-09-15"
+        },
+        {
+          "assignee": "other",
+          "from": "2025-10-06"
+        }
+      ],
+      "created": "2025-09-08",
+      "component": "Security",
+      "resolution": "Done",
+      "resolved": "2025-10-28",
+      "resolved_by_self": false,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4704",
+      "type": "Task",
+      "summary": "Set resource limits on cronjobs",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-11-11"
+        }
+      ],
+      "created": "2025-11-11",
+      "component": "Kubernetes",
+      "resolution": "Done",
+      "resolved": "2025-11-28",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4770",
+      "type": "Task",
+      "summary": "fix alarm",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-09"
+        }
+      ],
+      "created": "2026-01-07",
+      "component": "General",
+      "resolution": "Done",
+      "resolved": "2026-01-13",
+      "resolved_by_self": true,
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4842",
+      "type": "Task",
+      "summary": "Terraform plan on PR via GHA",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-02"
+        }
+      ],
+      "created": "2026-03-02",
+      "component": "CI",
+      "resolution": "Done",
+      "resolved": "2026-03-31",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "PLAT-4898",
+      "type": "Story",
+      "summary": "Spot nodegroup for non-prod EKS",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-04-05"
+        },
+        {
+          "assignee": "self",
+          "from": "2026-04-05"
+        }
+      ],
+      "created": "2026-04-05",
+      "component": "EKS",
+      "resolution": "Done",
+      "resolved": "2026-05-12",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "PLAT-5100",
+      "type": "Task",
+      "summary": "Sandbox account tfvars",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-20"
+        }
+      ],
+      "created": "2026-07-13",
+      "component": "Accounts",
+      "resolution": "Done",
+      "resolved": "2026-08-04",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "PLAT-5224",
+      "type": "Task",
+      "summary": "Nonprod scheduler weekend skip",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-10"
+        }
+      ],
+      "created": "2026-09-10",
+      "component": "Cloud Cost",
+      "resolution": "Done",
+      "resolved": "2026-09-23",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    }
+  ]
+}

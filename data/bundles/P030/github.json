@@ -1,0 +1,1842 @@
+{
+  "login": "iqureshi-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11730",
+  "legacy_employee_ids": [
+    "KC-10830"
+  ],
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 5271,
+      "title": "DATA-741 add README for ingestion/ job layout",
+      "state": "merged",
+      "created": "2019-08-08",
+      "merged": "2019-08-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 44,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "docs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 5369,
+      "title": "DATA-766 pyspark: dedupe events by (tenant_id, event_id)",
+      "state": "merged",
+      "created": "2019-09-09",
+      "merged": "2019-09-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3,
+        ".txt": 1
+      },
+      "additions": 118,
+      "deletions": 31,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 5444,
+      "title": "fix schema drift in billing_events parquet read",
+      "state": "merged",
+      "created": "2019-10-03",
+      "merged": "2019-10-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 37,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 5585,
+      "title": "DATA-833 sessionize udf + unit tests",
+      "state": "merged",
+      "created": "2019-11-15",
+      "merged": "2019-11-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 210,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 5770,
+      "title": "airflow: billing_events_daily DAG (1.10.x)",
+      "state": "merged",
+      "created": "2020-01-15",
+      "merged": "2020-01-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".yaml": 1
+      },
+      "additions": 156,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "airflow"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 5975,
+      "title": "DATA-929 tune shuffle partitions for recon_summary (200 -> 64)",
+      "state": "merged",
+      "created": "2020-03-18",
+      "merged": "2020-03-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1,
+        ".cfg": 1
+      },
+      "additions": 9,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 5990,
+      "title": "salting for skewed tenant join in recon_summary",
+      "state": "merged",
+      "created": "2020-03-20",
+      "merged": "2020-03-31",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 88,
+      "deletions": 41,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 6503,
+      "title": "DATA-1046 snappy -> zstd for silver tables",
+      "state": "merged",
+      "created": "2020-09-02",
+      "merged": "2020-09-02",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 21,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 6754,
+      "title": "refactor: pull spark session builder into common/",
+      "state": "merged",
+      "created": "2020-11-16",
+      "merged": "2020-11-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 7
+      },
+      "additions": 176,
+      "deletions": 160,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "refactor"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 7022,
+      "title": "DATA-1214 late-arriving files: reprocess window of 3 days",
+      "state": "merged",
+      "created": "2021-02-09",
+      "merged": "2021-02-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3,
+        ".yaml": 1
+      },
+      "additions": 142,
+      "deletions": 30,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 7146,
+      "title": "spark 2.4 -> 3.0 : fix deprecated DataFrame API usage",
+      "state": "merged",
+      "created": "2021-03-16",
+      "merged": "2021-03-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 11,
+        ".txt": 1
+      },
+      "additions": 201,
+      "deletions": 189,
+      "co_authors": [],
+      "review_comments_received": 10,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 7479,
+      "title": "DATA-1374 broadcast hint for dim_tenant lookup",
+      "state": "merged",
+      "created": "2021-06-29",
+      "merged": "2021-07-02",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 6,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 7746,
+      "title": "fix: job fails when input partition is empty",
+      "state": "merged",
+      "created": "2021-09-21",
+      "merged": "2021-09-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 34,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 8197,
+      "title": "DATA-1590 write dq summary table after each batch",
+      "state": "merged",
+      "created": "2022-02-11",
+      "merged": "2022-02-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 4,
+        ".sql": 1
+      },
+      "additions": 251,
+      "deletions": 44,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 8623,
+      "title": "handover notes: data-platform ingestion",
+      "state": "merged",
+      "created": "2022-06-23",
+      "merged": "2022-06-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 2
+      },
+      "additions": 120,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "docs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11144,
+      "title": "DATA-2615 docs: refresh local dev setup (docker-compose)",
+      "state": "merged",
+      "created": "2024-05-28",
+      "merged": "2024-06-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 57,
+      "deletions": 33,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "docs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11276,
+      "title": "test: empty input for load_settlements",
+      "state": "merged",
+      "created": "2024-06-28",
+      "merged": "2024-06-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 64,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11260,
+      "title": "fix typo in dag_id (settlemnt -> settlement)",
+      "state": "merged",
+      "created": "2024-06-27",
+      "merged": "2024-07-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 2,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11392,
+      "title": "DATA-2710 check source watermark before load",
+      "state": "merged",
+      "created": "2024-07-26",
+      "merged": "2024-07-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3,
+        ".yaml": 1
+      },
+      "additions": 97,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11531,
+      "title": "backfill dag params (start_date/end_date)",
+      "state": "merged",
+      "created": "2024-08-24",
+      "merged": "2024-08-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".yaml": 1
+      },
+      "additions": 83,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "airflow"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11482,
+      "title": "DATA-2765 airflow: retry sensor with exponential backoff",
+      "state": "merged",
+      "created": "2024-08-19",
+      "merged": "2024-08-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 14,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "airflow"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11738,
+      "title": "bump apache-airflow 2.7.3 -> 2.9.2 (constraints)",
+      "state": "merged",
+      "created": "2024-10-17",
+      "merged": "2024-10-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".txt": 1,
+        ".toml": 1,
+        ".py": 3
+      },
+      "additions": 40,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11900,
+      "title": "DATA-2891 partition filter on events_raw scan",
+      "state": "merged",
+      "created": "2024-11-26",
+      "merged": "2024-12-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 2,
+        ".py": 1
+      },
+      "additions": 58,
+      "deletions": 26,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12125,
+      "title": "fix null account id in recon_staging",
+      "state": "merged",
+      "created": "2025-01-24",
+      "merged": "2025-01-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".sql": 1
+      },
+      "additions": 47,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12243,
+      "title": "DATA-3039 add reconciliation query for settlement totals",
+      "state": "merged",
+      "created": "2025-02-20",
+      "merged": "2025-02-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 3,
+        ".py": 1
+      },
+      "additions": 138,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12312,
+      "title": "DATA-3039 follow-up: tolerate 1 paisa rounding diff",
+      "state": "merged",
+      "created": "2025-03-06",
+      "merged": "2025-03-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 1
+      },
+      "additions": 12,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12600,
+      "title": "dq: freshness check for gold.invoices",
+      "state": "merged",
+      "created": "2025-05-09",
+      "merged": "2025-05-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".yaml": 2
+      },
+      "additions": 102,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12758,
+      "title": "DATA-3265 move s3 paths to config",
+      "state": "merged",
+      "created": "2025-06-20",
+      "merged": "2025-06-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 6,
+        ".yaml": 2
+      },
+      "additions": 144,
+      "deletions": 119,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": [
+        "refactor"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12932,
+      "title": "airflow: pool for snowflake loads, limit 4",
+      "state": "merged",
+      "created": "2025-08-01",
+      "merged": "2025-08-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1,
+        ".yaml": 1
+      },
+      "additions": 11,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "airflow"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13153,
+      "title": "DATA-3457 handle duplicate settlement ids in loader",
+      "state": "merged",
+      "created": "2025-09-24",
+      "merged": "2025-09-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 73,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13441,
+      "title": "pin pandas<2.2 for dq job",
+      "state": "merged",
+      "created": "2025-12-02",
+      "merged": "2025-12-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".txt": 1
+      },
+      "additions": 1,
+      "deletions": 1,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13695,
+      "title": "DATA-3650 python: retry extraction on 429 from partner API",
+      "state": "merged",
+      "created": "2026-02-05",
+      "merged": "2026-02-09",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 68,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13837,
+      "title": "DATA-3717 backfill CLI: refuse overlapping ranges",
+      "state": "merged",
+      "created": "2026-03-11",
+      "merged": "2026-03-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 116,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "airflow"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14085,
+      "title": "chore: ruff config + fix lint",
+      "state": "merged",
+      "created": "2026-04-30",
+      "merged": "2026-04-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 12,
+        ".toml": 1
+      },
+      "additions": 88,
+      "deletions": 95,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "chore"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14332,
+      "title": "DATA-3964 fix timezone drift in daily partition key",
+      "state": "merged",
+      "created": "2026-06-15",
+      "merged": "2026-06-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".sql": 1
+      },
+      "additions": 39,
+      "deletions": 15,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14686,
+      "title": "DATA-4105 vendor file: skip BOM in csv header",
+      "state": "merged",
+      "created": "2026-08-06",
+      "merged": "2026-08-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 9,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14951,
+      "title": "DATA-4218 add row-count assertions to settlement loader",
+      "state": "merged",
+      "created": "2026-09-15",
+      "merged": "2026-09-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".sql": 1
+      },
+      "additions": 77,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15079,
+      "title": "DATA-4292 monthly partition cleanup script",
+      "state": "merged",
+      "created": "2026-10-06",
+      "merged": "2026-10-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1,
+        ".md": 1
+      },
+      "additions": 124,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "ops"
+      ]
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 5478,
+      "date": "2019-10-17",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "why collect() here, this pulls everything to the driver"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 5817,
+      "date": "2020-02-04",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 6241,
+      "date": "2020-06-12",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "cache() on a df used once?"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 6628,
+      "date": "2020-10-12",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "ok to merge after the rename"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 6955,
+      "date": "2021-01-22",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "job overwrites the whole table, needs partitionOverwriteMode=dynamic"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 7330,
+      "date": "2021-05-14",
+      "state": "APPROVED",
+      "comment_count": 0
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 7780,
+      "date": "2021-10-06",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "add a test with an empty df"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 8343,
+      "date": "2022-03-31",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "looks good"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 11401,
+      "date": "2024-07-31",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "is this idempotent on rerun?"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 11849,
+      "date": "2024-11-14",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 12051,
+      "date": "2025-01-11",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "dag_id change resets run history, mention in description"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 12524,
+      "date": "2025-04-30",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "fine, but add a comment on the magic number"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 12799,
+      "date": "2025-07-04",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "sensor should be mode=reschedule"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 13258,
+      "date": "2025-10-17",
+      "state": "APPROVED",
+      "comment_count": 0
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 13645,
+      "date": "2026-01-28",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "what happens with a null settlement_id?"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14196,
+      "date": "2026-05-22",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14912,
+      "date": "2026-09-15",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "query plan looks fine, please add the index to the PR"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2019-07",
+      "merged_prs": 3,
+      "reviews": 0,
+      "by_ext": {
+        ".py": 15,
+        ".sql": 18,
+        ".yaml": 2,
+        ".md": 3,
+        ".txt": 3
+      }
+    },
+    {
+      "month": "2019-08",
+      "merged_prs": 16,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 184,
+        ".sql": 27,
+        ".yaml": 46,
+        ".md": 16,
+        ".txt": 25
+      }
+    },
+    {
+      "month": "2019-09",
+      "merged_prs": 14,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 754,
+        ".sql": 127,
+        ".yaml": 139,
+        ".md": 19,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2019-10",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 164,
+        ".sql": 10,
+        ".yaml": 66,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2019-11",
+      "merged_prs": 7,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 66,
+        ".sql": 14,
+        ".yaml": 9,
+        ".md": 7,
+        ".txt": 6
+      }
+    },
+    {
+      "month": "2019-12",
+      "merged_prs": 2,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 47,
+        ".sql": 20,
+        ".yaml": 13,
+        ".txt": 4
+      }
+    },
+    {
+      "month": "2020-01",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 326,
+        ".md": 15,
+        ".txt": 6,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2020-02",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 93,
+        ".sql": 24,
+        ".yaml": 35,
+        ".md": 9,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2020-03",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".sql": 36,
+        ".md": 6,
+        ".txt": 13,
+        ".py": 3,
+        ".cfg": 1
+      }
+    },
+    {
+      "month": "2020-04",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 25,
+        ".sql": 9,
+        ".yaml": 12,
+        ".md": 3,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2020-05",
+      "merged_prs": 1,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 29,
+        ".sql": 10,
+        ".yaml": 5,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2020-06",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 217,
+        ".sql": 12,
+        ".yaml": 21,
+        ".md": 5,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2020-07",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 182,
+        ".sql": 6,
+        ".yaml": 12,
+        ".md": 5,
+        ".txt": 5
+      }
+    },
+    {
+      "month": "2020-08",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 16,
+        ".sql": 36,
+        ".yaml": 26,
+        ".md": 1,
+        ".txt": 4
+      }
+    },
+    {
+      "month": "2020-09",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 327,
+        ".sql": 5,
+        ".yaml": 16,
+        ".md": 13
+      }
+    },
+    {
+      "month": "2020-10",
+      "merged_prs": 4,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 73,
+        ".sql": 42,
+        ".yaml": 27,
+        ".md": 6,
+        ".txt": 7
+      }
+    },
+    {
+      "month": "2020-11",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 31,
+        ".sql": 67,
+        ".yaml": 17,
+        ".md": 7,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2020-12",
+      "merged_prs": 2,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 152,
+        ".sql": 6,
+        ".yaml": 7,
+        ".md": 4,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2021-01",
+      "merged_prs": 8,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 548,
+        ".sql": 46,
+        ".yaml": 25,
+        ".md": 9
+      }
+    },
+    {
+      "month": "2021-02",
+      "merged_prs": 13,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 337,
+        ".sql": 136,
+        ".yaml": 80,
+        ".md": 20,
+        ".txt": 5
+      }
+    },
+    {
+      "month": "2021-03",
+      "merged_prs": 5,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 327,
+        ".sql": 67,
+        ".yaml": 11,
+        ".md": 7,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2021-04",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 174,
+        ".sql": 40,
+        ".yaml": 65,
+        ".md": 8,
+        ".txt": 4
+      }
+    },
+    {
+      "month": "2021-05",
+      "merged_prs": 4,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 94,
+        ".sql": 16,
+        ".yaml": 3,
+        ".md": 8,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2021-06",
+      "merged_prs": 11,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 211,
+        ".sql": 59,
+        ".yaml": 108,
+        ".md": 30,
+        ".txt": 7
+      }
+    },
+    {
+      "month": "2021-07",
+      "merged_prs": 11,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 204,
+        ".sql": 89,
+        ".yaml": 15,
+        ".md": 26,
+        ".txt": 6
+      }
+    },
+    {
+      "month": "2021-08",
+      "merged_prs": 2,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 102,
+        ".sql": 11,
+        ".yaml": 19,
+        ".md": 5,
+        ".txt": 4
+      }
+    },
+    {
+      "month": "2021-09",
+      "merged_prs": 21,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 775,
+        ".sql": 106,
+        ".yaml": 10,
+        ".md": 30,
+        ".txt": 32
+      }
+    },
+    {
+      "month": "2021-10",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 143,
+        ".sql": 18,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2021-11",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 103,
+        ".sql": 16,
+        ".yaml": 29,
+        ".md": 2,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2021-12",
+      "merged_prs": 3,
+      "reviews": 0,
+      "by_ext": {
+        ".py": 52,
+        ".sql": 4,
+        ".yaml": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-01",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 423,
+        ".sql": 26,
+        ".yaml": 59,
+        ".txt": 6
+      }
+    },
+    {
+      "month": "2022-02",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 37,
+        ".sql": 10,
+        ".yaml": 62,
+        ".md": 13,
+        ".txt": 15
+      }
+    },
+    {
+      "month": "2022-03",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".sql": 83,
+        ".yaml": 38,
+        ".md": 22
+      }
+    },
+    {
+      "month": "2022-04",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 170,
+        ".sql": 14,
+        ".md": 1,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2022-05",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 464,
+        ".sql": 40,
+        ".yaml": 32,
+        ".md": 4,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2022-06",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 63,
+        ".sql": 9,
+        ".yaml": 15,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2022-07",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 281,
+        ".sql": 59,
+        ".md": 31,
+        ".txt": 20
+      }
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 77,
+        ".sql": 5,
+        ".yaml": 5
+      }
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 51,
+        ".sql": 12,
+        ".yaml": 4,
+        ".md": 3,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 145,
+        ".sql": 13,
+        ".yaml": 2,
+        ".md": 3,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 3,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 218,
+        ".sql": 38,
+        ".yaml": 18,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 8,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 120,
+        ".sql": 16,
+        ".yaml": 55,
+        ".md": 4,
+        ".txt": 24
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 38,
+        ".sql": 31,
+        ".yaml": 10,
+        ".md": 1,
+        ".txt": 4
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 2,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 149,
+        ".sql": 13,
+        ".yaml": 8,
+        ".md": 4,
+        ".txt": 1,
+        ".toml": 1
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 2,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 58,
+        ".sql": 11,
+        ".yaml": 11,
+        ".md": 1,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 52,
+        ".sql": 2,
+        ".yaml": 4,
+        ".md": 4,
+        ".txt": 7
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 71,
+        ".sql": 11,
+        ".md": 3,
+        ".txt": 3
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 10,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 100,
+        ".sql": 84,
+        ".yaml": 26,
+        ".md": 19
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 210,
+        ".sql": 81,
+        ".yaml": 85,
+        ".md": 4,
+        ".txt": 4
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 1,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 31,
+        ".sql": 9,
+        ".md": 1,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 184,
+        ".sql": 3,
+        ".yaml": 9,
+        ".md": 1,
+        ".txt": 8
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 120,
+        ".sql": 33,
+        ".yaml": 7,
+        ".md": 6,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 87,
+        ".sql": 10,
+        ".yaml": 50,
+        ".md": 23,
+        ".txt": 13
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 159,
+        ".yaml": 18,
+        ".md": 7,
+        ".txt": 5
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 9,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 431,
+        ".sql": 109,
+        ".yaml": 40,
+        ".md": 7,
+        ".txt": 13
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 341,
+        ".sql": 5,
+        ".yaml": 48,
+        ".md": 19,
+        ".txt": 7
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 148,
+        ".sql": 28,
+        ".yaml": 20,
+        ".txt": 4
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 10,
+        ".sql": 27,
+        ".yaml": 10,
+        ".txt": 1
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 11,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 108,
+        ".sql": 25,
+        ".yaml": 47,
+        ".md": 13
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 228,
+        ".sql": 7,
+        ".yaml": 47,
+        ".md": 21,
+        ".txt": 15
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 12,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 322,
+        ".sql": 148,
+        ".yaml": 40,
+        ".txt": 22
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 115,
+        ".sql": 19,
+        ".yaml": 41,
+        ".md": 5,
+        ".txt": 3,
+        ".toml": 1
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 10,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 459,
+        ".sql": 101,
+        ".yaml": 47,
+        ".md": 13,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 67,
+        ".sql": 22,
+        ".yaml": 26,
+        ".md": 9,
+        ".txt": 5
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 263,
+        ".sql": 26,
+        ".yaml": 6,
+        ".txt": 2
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 214,
+        ".sql": 29,
+        ".yaml": 6,
+        ".md": 9,
+        ".txt": 6
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 7,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 365,
+        ".sql": 62,
+        ".yaml": 50,
+        ".md": 21,
+        ".txt": 7
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".py": 29,
+        ".sql": 1,
+        ".yaml": 12,
+        ".md": 6
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [],
+    "oss_contributions": []
+  }
+}

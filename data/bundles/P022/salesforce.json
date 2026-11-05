@@ -1,0 +1,1085 @@
+{
+  "user": "arvind.shetty@kestrelcloud.com",
+  "user_title_in_crm": "Senior Account Executive",
+  "user_title_changed": "2025-04",
+  "note": "export of opportunities where user is owner/contributor; opportunity export for the period",
+  "opportunities": [
+    {
+      "opp_id": "006000000009376AAA",
+      "account_industry": "BFSI",
+      "stage": "Closed Lost",
+      "amount_band": "90L-2Cr INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2022-10-03",
+      "close_date": "2022-11-30",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Champion = AP manager, EB = CFO (not met yet). Trying to get 30 min. "
+    },
+    {
+      "opp_id": "006000000009434AAA",
+      "account_industry": "Hospitality",
+      "stage": "Closed Won",
+      "amount_band": "<5L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2022-10-31",
+      "close_date": "2023-02-19",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Champion = AP manager, EB = CFO (not met yet). Trying to get 30 min. "
+    },
+    {
+      "opp_id": "006000000009496AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Lost",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2022-12-01",
+      "close_date": "2023-02-25",
+      "products": [
+        "Ledger API"
+      ],
+      "notes_excerpt": "verbal yes from MD, waiting PO. 'diwali after' he says"
+    },
+    {
+      "opp_id": "006000000009561AAA",
+      "account_industry": "BFSI",
+      "stage": "Discovery",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2022-12-25",
+      "close_date": "2023-04-21",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Demo done. Their CFO asked about GST e-invoice flow. Said will check w/ product. Waiting for reply from SE"
+    },
+    {
+      "opp_id": "006000000009628AAA",
+      "account_industry": "Healthcare",
+      "stage": "Proposal/Price Quote",
+      "amount_band": "15-40L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2023-02-06",
+      "close_date": "2023-06-16",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Demo done. Their CFO asked about GST e-invoice flow. Said will check w/ product. Waiting for reply from SE"
+    },
+    {
+      "opp_id": "006000000009683AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 80,
+      "created": "2023-03-16",
+      "close_date": "2023-07-17",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "No response after 3 follow ups. Moved to nurture || [SE] POC scoped: 2 bank accounts, 60 days data, success = >85% auto match. Sandbox tenant created.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 20
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000009720AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Lost",
+      "amount_band": "90L-2Cr INR",
+      "role": "owner",
+      "credit_split_pct": 75,
+      "created": "2023-04-14",
+      "close_date": "2023-08-01",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "No response after 3 follow ups. Moved to nurture || [SE] Ran sandbox demo of recon API against their NEFT/RTGS statement formats. 91% auto-match on sample file, remaining are narration mismatches. Wrote mapping sheet, shared in drive.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 25
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000009794AAA",
+      "account_industry": "Logistics",
+      "stage": "Negotiation/Review",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2023-05-11",
+      "close_date": "2023-07-16",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "verbal yes from MD, waiting PO. 'diwali after' he says"
+    },
+    {
+      "opp_id": "006000000009903AAA",
+      "account_industry": "Pharma distribution",
+      "stage": "Negotiation/Review",
+      "amount_band": "90L-2Cr INR",
+      "role": "owner",
+      "credit_split_pct": 75,
+      "created": "2023-06-24",
+      "close_date": "2023-09-02",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Renewal of pilot converted to full licence. 3 more entities to be added in Q4 || [SE] Technical call w/ their dev team (2 ppl). Webhook retries + idempotency keys explained. They are fine with REST, no SFTP needed.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 25
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000010013AAA",
+      "account_industry": "Healthcare",
+      "stage": "Closed Won",
+      "amount_band": "<5L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2023-07-29",
+      "close_date": "2023-12-13",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Champion = AP manager, EB = CFO (not met yet). Trying to get 30 min. "
+    },
+    {
+      "opp_id": "006000000010117AAA",
+      "account_industry": "Pharma distribution",
+      "stage": "Closed Lost",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2023-08-24",
+      "close_date": "2024-01-10",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Legal redlines on liability clause. Sent to Kestrel legal. Cust wants 24 month price lock."
+    },
+    {
+      "opp_id": "006000000010264AAA",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 70,
+      "created": "2023-09-24",
+      "close_date": "2023-12-11",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Champion = AP manager, EB = CFO (not met yet). Trying to get 30 min.  || [SE] Technical call w/ their dev team (2 ppl). Webhook retries + idempotency keys explained. They are fine with REST, no SFTP needed.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 30
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000010349AAA",
+      "account_industry": "EdTech",
+      "stage": "Closed Won",
+      "amount_band": "<5L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2023-10-26",
+      "close_date": "2023-12-08",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "PO received. Moving to Closed Won. Handoff to CS - sent kickoff mail to Pooja"
+    },
+    {
+      "opp_id": "006000000010420AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Discovery",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2023-11-20",
+      "close_date": "2024-03-17",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Intro call w/ finance head. Using Tally + 3 excel sheets for collections. Pain: 8 day recon lag. Sent deck + pricing slab. Fup Thu"
+    },
+    {
+      "opp_id": "006000000010489AAA",
+      "account_industry": "Healthcare",
+      "stage": "Closed Won",
+      "amount_band": "5-15L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2023-12-24",
+      "close_date": "2024-03-04",
+      "products": [
+        "Ledger API"
+      ],
+      "notes_excerpt": "No response after 3 follow ups. Moved to nurture"
+    },
+    {
+      "opp_id": "006000000010613AAA",
+      "account_industry": "EdTech",
+      "stage": "Closed Won",
+      "amount_band": "5-15L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-02-05",
+      "close_date": "2024-06-24",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Budget freeze till april. Told them price valid till 31st."
+    },
+    {
+      "opp_id": "006000000010681AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-03-05",
+      "close_date": "2024-05-22",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "No response after 3 follow ups. Moved to nurture"
+    },
+    {
+      "opp_id": "006000000010818AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-04-15",
+      "close_date": "2024-08-16",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "verbal yes from MD, waiting PO. 'diwali after' he says"
+    },
+    {
+      "opp_id": "006000000010955AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 75,
+      "created": "2024-05-30",
+      "close_date": "2024-07-24",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Budget freeze till april. Told them price valid till 31st. || [SE] Competitive notes: their current tool has no multi-currency, we do. Positioned on exceptions queue.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 25
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000011038AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Lost",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-07-06",
+      "close_date": "2024-11-23",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "notes_excerpt": "Call w/ IT head - security questionnaire pending (SIG lite). Sent to infosec"
+    },
+    {
+      "opp_id": "006000000011146AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "5-15L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-07-31",
+      "close_date": "2024-12-15",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "notes_excerpt": "PO received. Moving to Closed Won. Handoff to CS - sent kickoff mail to Pooja"
+    },
+    {
+      "opp_id": "006000000011240AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "<5L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-09-11",
+      "close_date": "2025-01-11",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Met at Mumbai fintech meetup, referred by existing cust. Warm."
+    },
+    {
+      "opp_id": "006000000011299AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-10-05",
+      "close_date": "2024-11-29",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Proposal v3 shared. They want quarterly billing not annual - ok'd by deal desk"
+    },
+    {
+      "opp_id": "006000000011407AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Lost",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-11-16",
+      "close_date": "2025-01-31",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Lost - went with incumbent (bank's in house tool). Dec maker changed after reorg. Revisit in Q3"
+    },
+    {
+      "opp_id": "006000000011474AAA",
+      "account_industry": "Hospitality",
+      "stage": "Discovery",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2024-12-18",
+      "close_date": "2025-03-05",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Legal redlines on liability clause. Sent to Kestrel legal. Cust wants 24 month price lock."
+    },
+    {
+      "opp_id": "006000000011573AAA",
+      "account_industry": "Hospitality",
+      "stage": "Closed Lost",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 70,
+      "created": "2025-01-20",
+      "close_date": "2025-05-03",
+      "products": [
+        "Ledger API"
+      ],
+      "notes_excerpt": "Call w/ IT head - security questionnaire pending (SIG lite). Sent to infosec || [SE] Answered security questionnaire sections 4-7, data residency = Mumbai region.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 30
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000011616AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Lost",
+      "amount_band": "5-15L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2025-02-26",
+      "close_date": "2025-06-23",
+      "products": [
+        "Ledger API"
+      ],
+      "notes_excerpt": "Call w/ IT head - security questionnaire pending (SIG lite). Sent to infosec"
+    },
+    {
+      "opp_id": "006000000011688AAA",
+      "account_industry": "EdTech",
+      "stage": "Closed Lost",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2025-03-28",
+      "close_date": "2025-06-10",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Met at Mumbai fintech meetup, referred by existing cust. Warm."
+    },
+    {
+      "opp_id": "006000000011790AAA",
+      "account_industry": "Pharma distribution",
+      "stage": "Negotiation/Review",
+      "amount_band": "15-40L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2025-04-26",
+      "close_date": "2025-07-16",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "notes_excerpt": "verbal yes from MD, waiting PO. 'diwali after' he says"
+    },
+    {
+      "opp_id": "006000000011878AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2025-05-23",
+      "close_date": "2025-08-10",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Demo done. Their CFO asked about GST e-invoice flow. Said will check w/ product. Waiting for reply from SE"
+    },
+    {
+      "opp_id": "006000000011982AAA",
+      "account_industry": "EdTech",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2025-07-04",
+      "close_date": "2025-08-25",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Budget freeze till april. Told them price valid till 31st."
+    },
+    {
+      "opp_id": "006000000012064AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "90L-2Cr INR",
+      "role": "owner",
+      "credit_split_pct": 70,
+      "created": "2025-07-21",
+      "close_date": "2025-11-14",
+      "products": [
+        "Billing",
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "notes_excerpt": "Indian parent, US sub in Texas goes live on same contract. Jason (US SE) handled the US entity tech calls, I am on commercials + India entities. Contract signed 14 Nov. Kickoff handed to CS.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 30
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000012163AAA",
+      "account_industry": "Healthcare",
+      "stage": "Closed Won",
+      "amount_band": "5-15L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2025-08-13",
+      "close_date": "2025-10-14",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Price objection - comparing w/ Zoho Books + manual recon. Offered 12% off on 2yr. Mgr approval taken"
+    },
+    {
+      "opp_id": "006000000012295AAA",
+      "account_industry": "Pharma distribution",
+      "stage": "Negotiation/Review",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 80,
+      "created": "2025-09-24",
+      "close_date": "2025-10-29",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Renewal of pilot converted to full licence. 3 more entities to be added in Q4 || [SE] Answered security questionnaire sections 4-7, data residency = Mumbai region.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 20
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000012378AAA",
+      "account_industry": "Healthcare",
+      "stage": "Closed Won",
+      "amount_band": "<5L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2025-10-19",
+      "close_date": "2026-01-31",
+      "products": [
+        "Ledger API"
+      ],
+      "notes_excerpt": "Legal redlines on liability clause. Sent to Kestrel legal. Cust wants 24 month price lock."
+    },
+    {
+      "opp_id": "006000000012459AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Lost",
+      "amount_band": "90L-2Cr INR",
+      "role": "owner",
+      "credit_split_pct": 75,
+      "created": "2025-11-22",
+      "close_date": "2026-03-03",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Lost - went with incumbent (bank's in house tool). Dec maker changed after reorg. Revisit in Q3 || [SE] Competitive notes: their current tool has no multi-currency, we do. Positioned on exceptions queue.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 25
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000012608AAA",
+      "account_industry": "EdTech",
+      "stage": "Closed Won",
+      "amount_band": "90L-2Cr INR",
+      "role": "owner",
+      "credit_split_pct": 75,
+      "created": "2026-01-04",
+      "close_date": "2026-05-11",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "notes_excerpt": "Call w/ IT head - security questionnaire pending (SIG lite). Sent to infosec || [SE] POC scoped: 2 bank accounts, 60 days data, success = >85% auto match. Sandbox tenant created.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 25
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000012648AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 70,
+      "created": "2026-01-19",
+      "close_date": "2026-04-09",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "notes_excerpt": "Add-on to above family of cos - Ledger API for their ERP integration. SE call w/ Jason on retries/webhooks went well. Signed.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 30
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000012726AAA",
+      "account_industry": "Pharma distribution",
+      "stage": "Closed Lost",
+      "amount_band": "90L-2Cr INR",
+      "role": "owner",
+      "credit_split_pct": 70,
+      "created": "2026-02-07",
+      "close_date": "2026-06-23",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Met at Mumbai fintech meetup, referred by existing cust. Warm. || [SE] Ran sandbox demo of recon API against their NEFT/RTGS statement formats. 91% auto-match on sample file, remaining are narration mismatches. Wrote mapping sheet, shared in drive.",
+      "other_roles_on_deal": [
+        {
+          "role": "overlay_se",
+          "credit_split_pct": 30
+        }
+      ]
+    },
+    {
+      "opp_id": "006000000012769AAA",
+      "account_industry": "Pharma distribution",
+      "stage": "Closed Lost",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2026-03-11",
+      "close_date": "2026-07-23",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "notes_excerpt": "Lost - went with incumbent (bank's in house tool). Dec maker changed after reorg. Revisit in Q3"
+    },
+    {
+      "opp_id": "006000000012829AAA",
+      "account_industry": "Pharma distribution",
+      "stage": "Proposal/Price Quote",
+      "amount_band": "40-90L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2026-04-09",
+      "close_date": "2026-07-29",
+      "products": [
+        "Ledger API"
+      ],
+      "notes_excerpt": "Legal redlines on liability clause. Sent to Kestrel legal. Cust wants 24 month price lock."
+    },
+    {
+      "opp_id": "006000000012947AAA",
+      "account_industry": "EdTech",
+      "stage": "Negotiation/Review",
+      "amount_band": "15-40L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2026-05-15",
+      "close_date": "2026-09-19",
+      "products": [
+        "Ledger API"
+      ],
+      "notes_excerpt": "Renewal of pilot converted to full licence. 3 more entities to be added in Q4"
+    },
+    {
+      "opp_id": "006000000013072AAA",
+      "account_industry": "Logistics",
+      "stage": "Proposal/Price Quote",
+      "amount_band": "15-40L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2026-06-17",
+      "close_date": "2026-09-26",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Lost - went with incumbent (bank's in house tool). Dec maker changed after reorg. Revisit in Q3"
+    },
+    {
+      "opp_id": "006000000013183AAA",
+      "account_industry": "EdTech",
+      "stage": "Negotiation/Review",
+      "amount_band": "5-15L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2026-07-31",
+      "close_date": "2026-10-26",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "notes_excerpt": "Champion = AP manager, EB = CFO (not met yet). Trying to get 30 min. "
+    },
+    {
+      "opp_id": "006000000013317AAA",
+      "account_industry": "EdTech",
+      "stage": "Negotiation/Review",
+      "amount_band": "5-15L INR",
+      "role": "owner",
+      "credit_split_pct": 100,
+      "created": "2026-09-09",
+      "close_date": "2026-10-17",
+      "products": [
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Price objection - comparing w/ Zoho Books + manual recon. Offered 12% off on 2yr. Mgr approval taken"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-08",
+      "opps_created": 2,
+      "opps_closed": 2,
+      "calls_logged": 55,
+      "emails_logged": 83
+    },
+    {
+      "month": "2022-09",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 45,
+      "emails_logged": 43
+    },
+    {
+      "month": "2022-10",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 31,
+      "emails_logged": 60
+    },
+    {
+      "month": "2022-11",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 47,
+      "emails_logged": 122
+    },
+    {
+      "month": "2022-12",
+      "opps_created": 2,
+      "opps_closed": 2,
+      "calls_logged": 64,
+      "emails_logged": 48
+    },
+    {
+      "month": "2023-01",
+      "opps_created": 3,
+      "opps_closed": 0,
+      "calls_logged": 55,
+      "emails_logged": 81
+    },
+    {
+      "month": "2023-02",
+      "opps_created": 1,
+      "opps_closed": 2,
+      "calls_logged": 22,
+      "emails_logged": 56
+    },
+    {
+      "month": "2023-03",
+      "opps_created": 1,
+      "opps_closed": 0,
+      "calls_logged": 59,
+      "emails_logged": 86
+    },
+    {
+      "month": "2023-04",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 22,
+      "emails_logged": 37
+    },
+    {
+      "month": "2023-05",
+      "opps_created": 3,
+      "opps_closed": 1,
+      "calls_logged": 34,
+      "emails_logged": 70
+    },
+    {
+      "month": "2023-06",
+      "opps_created": 1,
+      "opps_closed": 0,
+      "calls_logged": 56,
+      "emails_logged": 58
+    },
+    {
+      "month": "2023-07",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 48,
+      "emails_logged": 100
+    },
+    {
+      "month": "2023-08",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 25,
+      "emails_logged": 61
+    },
+    {
+      "month": "2023-09",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 40,
+      "emails_logged": 85
+    },
+    {
+      "month": "2023-10",
+      "opps_created": 1,
+      "opps_closed": 0,
+      "calls_logged": 50,
+      "emails_logged": 92
+    },
+    {
+      "month": "2023-11",
+      "opps_created": 2,
+      "opps_closed": 2,
+      "calls_logged": 26,
+      "emails_logged": 79
+    },
+    {
+      "month": "2023-12",
+      "opps_created": 2,
+      "opps_closed": 3,
+      "calls_logged": 43,
+      "emails_logged": 48
+    },
+    {
+      "month": "2024-01",
+      "opps_created": 0,
+      "opps_closed": 2,
+      "calls_logged": 33,
+      "emails_logged": 51
+    },
+    {
+      "month": "2024-02",
+      "opps_created": 3,
+      "opps_closed": 0,
+      "calls_logged": 50,
+      "emails_logged": 73
+    },
+    {
+      "month": "2024-03",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 50,
+      "emails_logged": 77
+    },
+    {
+      "month": "2024-04",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 54,
+      "emails_logged": 48
+    },
+    {
+      "month": "2024-05",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 41,
+      "emails_logged": 67
+    },
+    {
+      "month": "2024-06",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 39,
+      "emails_logged": 99
+    },
+    {
+      "month": "2024-07",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 28,
+      "emails_logged": 93
+    },
+    {
+      "month": "2024-08",
+      "opps_created": 0,
+      "opps_closed": 1,
+      "calls_logged": 45,
+      "emails_logged": 86
+    },
+    {
+      "month": "2024-09",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 47,
+      "emails_logged": 30
+    },
+    {
+      "month": "2024-10",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 48,
+      "emails_logged": 92
+    },
+    {
+      "month": "2024-11",
+      "opps_created": 1,
+      "opps_closed": 2,
+      "calls_logged": 26,
+      "emails_logged": 52
+    },
+    {
+      "month": "2024-12",
+      "opps_created": 1,
+      "opps_closed": 2,
+      "calls_logged": 49,
+      "emails_logged": 86
+    },
+    {
+      "month": "2025-01",
+      "opps_created": 1,
+      "opps_closed": 2,
+      "calls_logged": 42,
+      "emails_logged": 99
+    },
+    {
+      "month": "2025-02",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 42,
+      "emails_logged": 40
+    },
+    {
+      "month": "2025-03",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 61,
+      "emails_logged": 73
+    },
+    {
+      "month": "2025-04",
+      "opps_created": 3,
+      "opps_closed": 0,
+      "calls_logged": 41,
+      "emails_logged": 42
+    },
+    {
+      "month": "2025-05",
+      "opps_created": 1,
+      "opps_closed": 2,
+      "calls_logged": 34,
+      "emails_logged": 38
+    },
+    {
+      "month": "2025-06",
+      "opps_created": 1,
+      "opps_closed": 2,
+      "calls_logged": 60,
+      "emails_logged": 99
+    },
+    {
+      "month": "2025-07",
+      "opps_created": 2,
+      "opps_closed": 2,
+      "calls_logged": 26,
+      "emails_logged": 93
+    },
+    {
+      "month": "2025-08",
+      "opps_created": 2,
+      "opps_closed": 2,
+      "calls_logged": 42,
+      "emails_logged": 87
+    },
+    {
+      "month": "2025-09",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 55,
+      "emails_logged": 80
+    },
+    {
+      "month": "2025-10",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 44,
+      "emails_logged": 102
+    },
+    {
+      "month": "2025-11",
+      "opps_created": 1,
+      "opps_closed": 2,
+      "calls_logged": 34,
+      "emails_logged": 102
+    },
+    {
+      "month": "2025-12",
+      "opps_created": 2,
+      "opps_closed": 2,
+      "calls_logged": 55,
+      "emails_logged": 78
+    },
+    {
+      "month": "2026-01",
+      "opps_created": 2,
+      "opps_closed": 2,
+      "calls_logged": 25,
+      "emails_logged": 75
+    },
+    {
+      "month": "2026-02",
+      "opps_created": 1,
+      "opps_closed": 0,
+      "calls_logged": 41,
+      "emails_logged": 77
+    },
+    {
+      "month": "2026-03",
+      "opps_created": 2,
+      "opps_closed": 1,
+      "calls_logged": 28,
+      "emails_logged": 48
+    },
+    {
+      "month": "2026-04",
+      "opps_created": 3,
+      "opps_closed": 2,
+      "calls_logged": 32,
+      "emails_logged": 37
+    },
+    {
+      "month": "2026-05",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 60,
+      "emails_logged": 87
+    },
+    {
+      "month": "2026-06",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 35,
+      "emails_logged": 79
+    },
+    {
+      "month": "2026-07",
+      "opps_created": 1,
+      "opps_closed": 1,
+      "calls_logged": 24,
+      "emails_logged": 82
+    },
+    {
+      "month": "2026-08",
+      "opps_created": 0,
+      "opps_closed": 2,
+      "calls_logged": 25,
+      "emails_logged": 69
+    },
+    {
+      "month": "2026-09",
+      "opps_created": 3,
+      "opps_closed": 0,
+      "calls_logged": 52,
+      "emails_logged": 74
+    },
+    {
+      "month": "2026-10",
+      "opps_created": 0,
+      "opps_closed": 0,
+      "calls_logged": 31,
+      "emails_logged": 43
+    }
+  ]
+}

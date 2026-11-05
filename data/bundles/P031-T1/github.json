@@ -1,0 +1,934 @@
+{
+  "login": "sghosh-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11731",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14173,
+      "title": "DATA-3866 docs: add data_checks usage example",
+      "state": "merged",
+      "created": "2026-05-14",
+      "merged": "2026-05-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 31,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "docs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14217,
+      "title": "DATA-3892 row count validator for settlements",
+      "state": "merged",
+      "created": "2026-05-22",
+      "merged": "2026-05-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 96,
+      "deletions": 0,
+      "co_authors": [
+        "Ananth Rao"
+      ],
+      "review_comments_received": 9,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14242,
+      "title": "fix typo in dq/README",
+      "state": "merged",
+      "created": "2026-05-28",
+      "merged": "2026-05-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 1,
+      "deletions": 1,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14279,
+      "title": "DATA-3934 test: validator handles empty dataframe",
+      "state": "merged",
+      "created": "2026-06-03",
+      "merged": "2026-06-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 44,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14288,
+      "title": "DATA-3943 fix: generator reused after exhaustion in dq runner",
+      "state": "merged",
+      "created": "2026-06-05",
+      "merged": "2026-06-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 29,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14312,
+      "title": "add typing to dq/ package + mypy in pre-commit",
+      "state": "merged",
+      "created": "2026-06-12",
+      "merged": "2026-06-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 9,
+        ".toml": 1,
+        ".yaml": 1
+      },
+      "additions": 143,
+      "deletions": 87,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "chore"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14363,
+      "title": "DATA-3979 freshness check: handle tz-naive vs tz-aware timestamps",
+      "state": "merged",
+      "created": "2026-06-18",
+      "merged": "2026-06-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 58,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14394,
+      "title": "DATA-3987 null-rate validator with configurable threshold",
+      "state": "merged",
+      "created": "2026-06-24",
+      "merged": "2026-06-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3,
+        ".yaml": 1
+      },
+      "additions": 187,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14430,
+      "title": "use ExitStack for multi-file validation",
+      "state": "merged",
+      "created": "2026-06-26",
+      "merged": "2026-06-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 22,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "refactor"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14468,
+      "title": "DATA-4011 fix: csv reader loads full file into memory",
+      "state": "merged",
+      "created": "2026-07-02",
+      "merged": "2026-07-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 51,
+      "deletions": 26,
+      "co_authors": [],
+      "review_comments_received": 10,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14479,
+      "title": "test for chunked csv reader (10MB fixture)",
+      "state": "merged",
+      "created": "2026-07-03",
+      "merged": "2026-07-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1,
+        ".txt": 1
+      },
+      "additions": 73,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14517,
+      "title": "DATA-4032 partner api client: cursor not advanced on empty page",
+      "state": "merged",
+      "created": "2026-07-09",
+      "merged": "2026-07-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 34,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14561,
+      "title": "DATA-4055 validation query: orders without settlement",
+      "state": "merged",
+      "created": "2026-07-14",
+      "merged": "2026-07-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 1,
+        ".py": 1
+      },
+      "additions": 48,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14573,
+      "title": "dq: fail fast on duplicate primary keys",
+      "state": "merged",
+      "created": "2026-07-16",
+      "merged": "2026-07-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 61,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14609,
+      "title": "DATA-4075 airflow: dq_check_group task for settlements dag",
+      "state": "merged",
+      "created": "2026-07-21",
+      "merged": "2026-07-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1,
+        ".yaml": 1
+      },
+      "additions": 39,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "airflow"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14645,
+      "title": "improve error message when schema file missing",
+      "state": "merged",
+      "created": "2026-07-30",
+      "merged": "2026-08-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 8,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14722,
+      "title": "DATA-4127 docs: dq thresholds yaml reference",
+      "state": "merged",
+      "created": "2026-08-12",
+      "merged": "2026-08-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1,
+        ".yaml": 1
+      },
+      "additions": 88,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "docs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14770,
+      "title": "fix flaky test_freshness (frozen time)",
+      "state": "merged",
+      "created": "2026-08-19",
+      "merged": "2026-08-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 17,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14818,
+      "title": "DATA-4210 retry only on idempotent http methods",
+      "state": "merged",
+      "created": "2026-08-26",
+      "merged": "2026-09-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 42,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14852,
+      "title": "DATA-4226 accepted-values validator",
+      "state": "merged",
+      "created": "2026-09-02",
+      "merged": "2026-09-02",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".yaml": 1
+      },
+      "additions": 112,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14874,
+      "title": "handle unicode BOM in header check",
+      "state": "merged",
+      "created": "2026-09-04",
+      "merged": "2026-09-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 9,
+      "deletions": 1,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14897,
+      "title": "DATA-4234 test: duplicate pk fixture with nulls",
+      "state": "merged",
+      "created": "2026-09-08",
+      "merged": "2026-09-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 58,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14924,
+      "title": "DATA-4248 report: write dq summary as json + md",
+      "state": "merged",
+      "created": "2026-09-10",
+      "merged": "2026-09-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".md": 1
+      },
+      "additions": 134,
+      "deletions": 17,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14962,
+      "title": "refactor validators registry (dict -> entry points)",
+      "state": "merged",
+      "created": "2026-09-15",
+      "merged": "2026-09-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 6,
+        ".toml": 1
+      },
+      "additions": 201,
+      "deletions": 168,
+      "co_authors": [
+        "Ananth Rao"
+      ],
+      "review_comments_received": 11,
+      "labels": [
+        "refactor"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15014,
+      "title": "DATA-4275 validation query: ageing buckets reconcile with invoices",
+      "state": "merged",
+      "created": "2026-09-23",
+      "merged": "2026-09-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 71,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "data"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15035,
+      "title": "DATA-4285 batch size param for load_settlements",
+      "state": "merged",
+      "created": "2026-09-25",
+      "merged": "2026-09-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".yaml": 1
+      },
+      "additions": 27,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15055,
+      "title": "DATA-4312 ruff: fix B006 mutable default args",
+      "state": "merged",
+      "created": "2026-10-01",
+      "merged": "2026-10-02",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 5
+      },
+      "additions": 22,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "chore"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15115,
+      "title": "DATA-4341 test: partner api 429 with retry-after header",
+      "state": "merged",
+      "created": "2026-10-08",
+      "merged": "2026-10-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 97,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15169,
+      "title": "dq: skip checks when upstream partition missing",
+      "state": "merged",
+      "created": "2026-10-15",
+      "merged": "2026-10-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 45,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15230,
+      "title": "DATA-4373 summary report: include failed row samples (max 20)",
+      "state": "merged",
+      "created": "2026-10-22",
+      "merged": "2026-10-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 66,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": []
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14371,
+      "date": "2026-06-20",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "is there a reason we dont use pathlib here?"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14464,
+      "date": "2026-07-08",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "Can we add the null case to the test?"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14596,
+      "date": "2026-07-22",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm, thanks for the fixture"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14801,
+      "date": "2026-08-27",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "this retries POST too, can that double-post?"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 9540,
+      "date": "2026-09-02",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "nit: docstring says list, returns tuple"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14888,
+      "date": "2026-09-11",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "the generator is consumed twice in report(), I think"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 15024,
+      "date": "2026-09-29",
+      "state": "APPROVED",
+      "comment_count": 0
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 15062,
+      "date": "2026-10-06",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "missing test for empty input"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 15122,
+      "date": "2026-10-13",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "looks good"
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 15209,
+      "date": "2026-10-20",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "could we log the partition instead of the whole df?"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2026-05",
+      "merged_prs": 3,
+      "reviews": 0,
+      "by_ext": {
+        ".py": 17,
+        ".sql": 6,
+        ".yaml": 1,
+        ".md": 4
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".py": 37,
+        ".sql": 43,
+        ".yaml": 35,
+        ".md": 2,
+        ".toml": 1
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 9,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 71,
+        ".sql": 19,
+        ".txt": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".py": 47,
+        ".sql": 20,
+        ".yaml": 16,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 131,
+        ".sql": 20,
+        ".yaml": 36,
+        ".md": 11,
+        ".toml": 1
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 202,
+        ".sql": 1,
+        ".md": 12
+      }
+    }
+  ],
+  "public_profile": {
+    "profile": {
+      "login": "rahul-verma",
+      "created": "2021-08",
+      "followers": 41,
+      "public_repos": 11,
+      "contributions_last_12_months": 587
+    },
+    "personal_repos": [
+      {
+        "repo": "github.com/rahul-verma/data-checks",
+        "description": "Python data validation CLI (csv/parquet), plugin checks, JUnit-style report output",
+        "created": "2023-01",
+        "last_activity": "2026-04",
+        "stars": 38,
+        "commits": 412,
+        "releases": "0.1 - 0.8",
+        "languages": {
+          "Python": 0.96,
+          "YAML": 0.04
+        },
+        "evidence": "Maintainer. Issue #41 (streaming memory growth on large csv) diagnosed with tracemalloc and fixed in 0.6; issue #57 (check ordering nondeterministic under multiprocessing) fixed in 0.7. 61 closed issues, 3 external contributors, README names three downstream projects."
+      },
+      {
+        "repo": "github.com/rahul-verma/airflow-provider-sandbox",
+        "description": "Pytest fixtures and docker-free harness for testing Airflow provider hooks against recorded responses",
+        "created": "2024-03",
+        "last_activity": "2026-02",
+        "stars": 12,
+        "commits": 133,
+        "languages": {
+          "Python": 1.0
+        },
+        "evidence": "Used while preparing provider PRs; records HTTP cassettes and replays them in hook tests."
+      },
+      {
+        "repo": "github.com/rahul-verma/retry-jitter",
+        "description": "Small retry decorator with full-jitter backoff and per-exception policies",
+        "created": "2024-09",
+        "last_activity": "2025-05",
+        "stars": 7,
+        "commits": 58,
+        "languages": {
+          "Python": 1.0
+        }
+      },
+      {
+        "repo": "github.com/rahul-verma/dsa-notes",
+        "description": "Leetcode and algorithms notes in Python",
+        "created": "2021-09",
+        "last_activity": "2023-04",
+        "stars": 3,
+        "commits": 204,
+        "languages": {
+          "Python": 1.0
+        }
+      }
+    ],
+    "oss_contributions": [
+      {
+        "repo": "apache/airflow",
+        "pr_number": 34871,
+        "title": "Fix typo in HttpSensor docstring",
+        "date": "2023-10-12",
+        "state": "merged",
+        "description": "First contribution; docs only."
+      },
+      {
+        "repo": "apache/airflow",
+        "pr_number": 35302,
+        "title": "Add missing type hints to HttpOperator.execute",
+        "date": "2023-11-02",
+        "state": "merged",
+        "description": "Type annotations, no behaviour change."
+      },
+      {
+        "repo": "apache/airflow",
+        "pr_number": 36118,
+        "title": "SFTPSensor: do not raise on first poke when remote path is missing",
+        "date": "2023-12-09",
+        "state": "merged",
+        "description": "Reproduced failure with a fake SFTP server, added regression test, review changed the exception handling twice."
+      },
+      {
+        "repo": "pandas-dev/pandas",
+        "pr_number": 56789,
+        "title": "DOC: fix example output in DataFrame.melt docstring",
+        "date": "2024-01-18",
+        "state": "merged",
+        "description": "Docs."
+      },
+      {
+        "repo": "jd/tenacity",
+        "pr_number": 440,
+        "title": "retry_if_exception_cause_type: handle exceptions with no cause",
+        "date": "2024-04-03",
+        "state": "merged",
+        "description": "AttributeError when __cause__ is None; added tests for chained and unchained cases."
+      },
+      {
+        "repo": "apache/airflow",
+        "pr_number": 39877,
+        "title": "S3Hook.load_file_obj: close temp file when upload raises",
+        "date": "2024-06-01",
+        "state": "merged",
+        "description": "Resource leak fix with test using a failing client."
+      },
+      {
+        "repo": "pytest-dev/pytest",
+        "pr_number": 12744,
+        "title": "doc: clarify tmp_path_factory lifetime with xdist",
+        "date": "2024-08-20",
+        "state": "merged",
+        "description": "Docs."
+      },
+      {
+        "repo": "apache/airflow",
+        "pr_number": 44012,
+        "title": "HttpHook: respect Retry-After header in run_with_advanced_retry",
+        "date": "2024-11-14",
+        "state": "closed",
+        "description": "Closed after maintainers asked for a smaller scope; split into the next PR."
+      },
+      {
+        "repo": "apache/airflow",
+        "pr_number": 44390,
+        "title": "HttpHook: wait for Retry-After seconds on 429 responses",
+        "date": "2024-11-27",
+        "state": "merged",
+        "description": "Smaller scope; unit tests with mocked responses and a time-freezing fixture."
+      },
+      {
+        "repo": "apache/airflow",
+        "pr_number": 49120,
+        "title": "FTPHook: avoid leaking connection when list_directory raises",
+        "date": "2025-04-09",
+        "state": "merged",
+        "description": "Reproduced with a flaky stub server, wrapped in context manager, added test."
+      },
+      {
+        "repo": "jd/tenacity",
+        "pr_number": 488,
+        "title": "Fix wait_exponential_jitter max not honoured when jitter large",
+        "date": "2025-06-17",
+        "state": "merged",
+        "description": "Boundary bug with extra tests."
+      },
+      {
+        "repo": "apache/airflow",
+        "pr_number": 57412,
+        "title": "Fix pagination in provider hook when next_page token is empty string",
+        "date": "2025-11-21",
+        "state": "merged",
+        "description": "Authored fix and regression tests after reproducing a timeout in a long-running DAG; handled maintainer feedback on backward compatibility."
+      },
+      {
+        "repo": "apache/airflow",
+        "pr_number": 60288,
+        "title": "Retry transient API errors in hook with bounded attempts",
+        "date": "2026-02-12",
+        "state": "merged",
+        "description": "Implemented bounded retries and tests after triaging a user report; merged after two review rounds."
+      }
+    ],
+    "oss_reviews_and_triage": {
+      "airflow_prs_reviewed_or_commented": 34,
+      "airflow_issues_triaged": 46,
+      "note": "Mostly provider hooks and sensors; answers in GitHub Discussions."
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "employee_id": "KC-12754",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Devansh Sahu",
+  "preferred_name": "Devansh",
+  "emails": [
+    {
+      "email": "devansh.sahu@kestrelcloud.com",
+      "from": "2026-04",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Platform Engineering",
+  "manager_employee_id": "KC-10471",
+  "hire_date": "2026-04-01",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Graduate Engineer Trainee",
+      "grade": "P1",
+      "from": "2026-04",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Platform enablement",
+      "role": "Graduate Engineer Trainee",
+      "from": "2026-04",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Savitribai Phule Pune University",
+      "degree": "B.E.",
+      "field": "Information Technology",
+      "year": 2025
+    }
+  ],
+  "exported": "2026-10-31"
+}

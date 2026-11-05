@@ -1,0 +1,3600 @@
+{
+ "_meta": {
+  "source": "gh api repos/{repo}/pulls?state=closed (most recently updated merged PRs), /files, /reviews, /commits",
+  "collected": "2026-11-05",
+  "note": "No usernames stored. Sample is recency-biased, ~20 per repo; not random.",
+  "summary": {
+   "total": 177,
+   "bots": 30,
+   "coauthored": 37,
+   "mean_reviews": 3.04,
+   "zero_review": 28,
+   "per_repo": {
+    "apache/airflow": {
+     "n": 17,
+     "bot": 0,
+     "coauth": 4,
+     "reviews": 44
+    },
+    "fastapi/fastapi": {
+     "n": 20,
+     "bot": 16,
+     "coauth": 0,
+     "reviews": 1
+    },
+    "grafana/grafana": {
+     "n": 20,
+     "bot": 1,
+     "coauth": 7,
+     "reviews": 51
+    },
+    "kubernetes/kubernetes": {
+     "n": 20,
+     "bot": 0,
+     "coauth": 0,
+     "reviews": 158
+    },
+    "hashicorp/terraform-provider-aws": {
+     "n": 20,
+     "bot": 1,
+     "coauth": 4,
+     "reviews": 95
+    },
+    "facebook/react": {
+     "n": 20,
+     "bot": 0,
+     "coauth": 7,
+     "reviews": 43
+    },
+    "microsoft/playwright": {
+     "n": 20,
+     "bot": 8,
+     "coauth": 0,
+     "reviews": 59
+    },
+    "dbt-labs/dbt-core": {
+     "n": 20,
+     "bot": 3,
+     "coauth": 11,
+     "reviews": 49
+    },
+    "langchain-ai/langchain": {
+     "n": 20,
+     "bot": 1,
+     "coauth": 4,
+     "reviews": 38
+    }
+   }
+  }
+ },
+ "samples": [
+  {
+   "repo": "apache/airflow",
+   "title": "Cache the dialect on PostgresHook and MsSqlHook",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:providers",
+    "provider:postgres",
+    "provider:microsoft-mssql"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Sync v3-4-stable with v3-4-test to release 3.4.0rc3",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:scheduler",
+    "area:providers",
+    "area:dev-tools",
+    "area:API",
+    "kind:documentation",
+    "area:production-image",
+    "area:UI",
+    "provider:snowflake",
+    "provider:databricks",
+    "provider:openlineage",
+    "area:Executors-core",
+    "area:task-sdk",
+    "area:kubernetes-tests",
+    "area:translations",
+    "translation:default",
+    "translation:de",
+    "translation:pl",
+    "translation:zh-TW",
+    "translation:he",
+    "translation:ko",
+    "translation:ar",
+    "translation:fr",
+    "translation:es",
+    "translation:ca",
+    "translation:hi",
+    "translation:zh-CN",
+    "translation:it",
+    "translation:el",
+    "allow provider dependency bump",
+    "provider:common-ai",
+    "area:registry",
+    "area:coordinator",
+    "area:ts-sdk",
+    "area:java-sdk",
+    "area:e2e-tests"
+   ],
+   "file_extensions": [
+    ".ci",
+    ".json",
+    ".md",
+    ".png",
+    ".py",
+    ".rst",
+    ".toml",
+    ".yaml",
+    ".yml",
+    "Dockerfile"
+   ],
+   "changed_files": 100,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Import TriggerRule from airflow.sdk in docs examples",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind:documentation",
+    "backport-to-v3-4-test"
+   ],
+   "file_extensions": [
+    ".rst"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Add unit tests for PrestoToGCSOperator",
+   "merged_month": "2026-11",
+   "labels": [
+    "provider:google",
+    "area:providers"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 9,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Apply note before state in bulk Dag run update so listeners see it",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:API",
+    "backport-to-v3-4-test"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 6,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Add unit tests for Dataproc, GKE and Translate provider links",
+   "merged_month": "2026-11",
+   "labels": [
+    "provider:google",
+    "area:providers"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "[v3-4-test] Fix async engine datetimes being shifted on non-UTC MySQL servers (#76505)",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Apply timeout_seconds and connection proxies to dbt Cloud sync requests",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:providers",
+    "provider:dbt-cloud"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Escape Rich markup in airflowctl variable and pool commands",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:airflow-ctl",
+    "backport-to-airflow-ctl/v0-1-test"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Fix async engine datetimes being shifted on non-UTC MySQL servers",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:API",
+    "backport-to-v3-4-test"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Load Java Dags from a bundle path that holds a colon",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:task-sdk",
+    "area:coordinator",
+    "backport-to-v3-4-test"
+   ],
+   "file_extensions": [
+    ".py",
+    ".rst"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Clarify Dag bundle permission upgrade notes",
+   "merged_month": "2026-11",
+   "labels": [
+    "skip newsfragment check"
+   ],
+   "file_extensions": [
+    ".rst"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Fix Google Cloud connection IdP extra request parameters being ignored",
+   "merged_month": "2026-11",
+   "labels": [
+    "provider:google",
+    "area:providers"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 6,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Remove machine-global pnpm config causing .pnpm-store dir to be created in places",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:dev-tools",
+    "area:ts-sdk",
+    "backport-to-v3-4-test"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Ship the Dag bundle permission in Airflow 3.4.1",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:providers",
+    "kind:documentation",
+    "provider:fab",
+    "provider:keycloak"
+   ],
+   "file_extensions": [
+    ".py",
+    ".rst"
+   ],
+   "changed_files": 8,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Lower severity of handled XCom misses",
+   "merged_month": "2026-11",
+   "labels": [
+    "area:task-sdk",
+    "backport-to-v3-4-test"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "apache/airflow",
+   "title": "Refresh expired AWS credentials in AwsDuckDBHook",
+   "merged_month": "2026-11",
+   "labels": [
+    "provider:amazon",
+    "area:providers",
+    "kind:documentation"
+   ],
+   "file_extensions": [
+    ".lock",
+    ".py",
+    ".rst",
+    ".toml"
+   ],
+   "changed_files": 6,
+   "author_type": "human",
+   "review_count": 4,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\u2b06\ufe0f Bump pillow to 13.0.0 and dnspython to 2.9.2",
+   "merged_month": "2026-11",
+   "labels": [
+    "dependencies",
+    "internal",
+    "python:uv"
+   ],
+   "file_extensions": [
+    ".lock"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83d\udcdd Update FastAPI Cloud docs banner for general availability",
+   "merged_month": "2026-11",
+   "labels": [
+    "internal"
+   ],
+   "file_extensions": [
+    ".md",
+    ".png",
+    ".yml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83d\udd27 Update sponsors: add Encore",
+   "merged_month": "2026-11",
+   "labels": [
+    "internal"
+   ],
+   "file_extensions": [
+    ".md",
+    ".png",
+    ".yml"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83d\udd25 Remove conference rail component and related styles",
+   "merged_month": "2026-11",
+   "labels": [
+    "internal"
+   ],
+   "file_extensions": [
+    ".css",
+    ".html"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83d\udc65 Update FastAPI People - Sponsors",
+   "merged_month": "2026-11",
+   "labels": [
+    "internal"
+   ],
+   "file_extensions": [
+    ".yml"
+   ],
+   "changed_files": 1,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83d\udc65 Update FastAPI GitHub topic repositories",
+   "merged_month": "2026-11",
+   "labels": [
+    "internal"
+   ],
+   "file_extensions": [
+    ".yml"
+   ],
+   "changed_files": 1,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for zh-hant (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-zh-hant"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for uk (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-uk"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for de (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-de"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for pt (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-pt"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for fr (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-fr"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for tr (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-tr"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for ja (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-ja"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for zh (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-zh"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for hi (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-hi"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for es (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-es"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\ud83c\udf10 Update translations for ru (update-outdated)",
+   "merged_month": "2026-11",
+   "labels": [
+    "lang-all",
+    "lang-ru"
+   ],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 22,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\u2b06 Bump the github-actions group with 7 updates",
+   "merged_month": "2026-11",
+   "labels": [
+    "dependencies",
+    "github_actions",
+    "internal"
+   ],
+   "file_extensions": [
+    ".yml"
+   ],
+   "changed_files": 14,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\u2b06 Bump pre-commit hooks",
+   "merged_month": "2026-11",
+   "labels": [
+    "dependencies",
+    "internal",
+    "pre-commit"
+   ],
+   "file_extensions": [
+    ".yaml"
+   ],
+   "changed_files": 1,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "title": "\u2b06 Bump authlib from 1.7.2 to 1.9.1",
+   "merged_month": "2026-11",
+   "labels": [
+    "dependencies",
+    "internal",
+    "python:uv"
+   ],
+   "file_extensions": [
+    ".lock"
+   ],
+   "changed_files": 1,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "LegacyWatch: Resolve the namespace from the context",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Annotations: Keep annotation ids as strings and drop id from the legacy PUT body",
+   "merged_month": "2026-09",
+   "labels": [
+    "area/frontend",
+    "area/panel/timeseries"
+   ],
+   "file_extensions": [
+    ".ts",
+    ".tsx"
+   ],
+   "changed_files": 15,
+   "author_type": "human",
+   "review_count": 11,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "unified-storage: update UnixTimestamp to return database time in sqlkv.go",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Unified storage: Serve legacy SQL watches from NATS",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 7,
+   "author_type": "human",
+   "review_count": 5,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Query Editor: Give the query editor 55% of the height by default",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/frontend"
+   ],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 4,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Query Editor: Split \"+ Add\" button in the sidebar Queries & Expressions header",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/frontend"
+   ],
+   "file_extensions": [
+    ".json",
+    ".ts",
+    ".tsx"
+   ],
+   "changed_files": 10,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Unified search: check access flags against the user, not the calling service",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "[release-13.0.13] Provisioning: allow same-host URL change on connection-backed repositories",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend",
+    "add to changelog",
+    "backport"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 8,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Dashboards: Don't dim every panel when pending changes edit no panel e.g. on layout only change",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/frontend"
+   ],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Dashboards: keep Composer frames and pins off the dashboard controls",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/frontend"
+   ],
+   "file_extensions": [
+    ".ts",
+    ".tsx"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Dashboards: Redirect links tab from the dashboard settings to the sidebar",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/frontend",
+    "no-changelog",
+    "no-check-frontend-test-coverage"
+   ],
+   "file_extensions": [
+    ".json",
+    ".ts",
+    ".tsx"
+   ],
+   "changed_files": 6,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Dashboards: Use only icon buttons in edit action popovers",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/frontend",
+    "no-changelog",
+    "no-check-frontend-test-coverage",
+    "deploy-frontend-preview"
+   ],
+   "file_extensions": [
+    ".json",
+    ".ts",
+    ".tsx"
+   ],
+   "changed_files": 13,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "[release-13.2.6] Provisioning: allow same-host URL change on connection-backed repositories",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend",
+    "add to changelog",
+    "backport"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 7,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "test(angulardetectorsprovider): run periodic job test on a fake clock",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "fix: improve discovery ttl for nats",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go",
+    ".ini"
+   ],
+   "changed_files": 7,
+   "author_type": "human",
+   "review_count": 4,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Docs: Clarify unified storage gRPC error handling",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go",
+    ".md"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "[release-13.3.1] Docs: docs for new annotations API",
+   "merged_month": "2026-11",
+   "labels": [
+    "type/docs",
+    "area/backend",
+    "backport",
+    "tests/flaky"
+   ],
+   "file_extensions": [
+    ".go",
+    ".json",
+    ".md"
+   ],
+   "changed_files": 6,
+   "author_type": "bot",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "[release-13.1.10] Provisioning: allow same-host URL change on connection-backed repositories",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend",
+    "add to changelog",
+    "backport"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 7,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Unified Storage: Use returned gRPC errors in remaining API callers",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 39,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "grafana/grafana",
+   "title": "Dashboards: Use returned gRPC errors for unified storage calls",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/backend"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 11,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "scheduler: honor pod-level and resize feature gates in NodeResourcesFit scorer",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/bug",
+    "sig/scheduling",
+    "lgtm",
+    "sig/node",
+    "release-note",
+    "size/XL",
+    "approved",
+    "cncf-cla: yes",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "scheduler: make NewSnapshot node order deterministic",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/cleanup",
+    "sig/scheduling",
+    "lgtm",
+    "release-note",
+    "size/L",
+    "approved",
+    "cncf-cla: yes",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 11,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "Benchmark freshness waiter",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/cleanup",
+    "area/apiserver",
+    "lgtm",
+    "sig/api-machinery",
+    "size/L",
+    "release-note-none",
+    "approved",
+    "cncf-cla: yes",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "InterPodAffinity: handle namespaceSelector in assigned-pod queueing hints",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/bug",
+    "sig/scheduling",
+    "lgtm",
+    "release-note",
+    "size/L",
+    "approved",
+    "cncf-cla: yes",
+    "ok-to-test",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 4,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "Report alias name instead of binary name on alias flag error",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/bug",
+    "priority/backlog",
+    "area/kubectl",
+    "lgtm",
+    "release-note",
+    "size/M",
+    "approved",
+    "sig/cli",
+    "cncf-cla: yes",
+    "ok-to-test",
+    "triage/accepted"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "scheduler: don't regress PodGroup Scheduled condition from stale cache",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/bug",
+    "area/test",
+    "sig/scheduling",
+    "lgtm",
+    "release-note",
+    "size/XL",
+    "kind/flake",
+    "approved",
+    "cncf-cla: yes",
+    "sig/testing",
+    "ok-to-test",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 7,
+   "author_type": "human",
+   "review_count": 47,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "apiserver: rate limit all active watches during shutdown",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/bug",
+    "area/apiserver",
+    "lgtm",
+    "sig/api-machinery",
+    "release-note",
+    "size/L",
+    "approved",
+    "cncf-cla: yes",
+    "ok-to-test",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 9,
+   "author_type": "human",
+   "review_count": 12,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "memorymanager: preserve restored pod allocations",
+   "merged_month": "2026-08",
+   "labels": [
+    "kind/bug",
+    "priority/critical-urgent",
+    "area/kubelet",
+    "lgtm",
+    "sig/node",
+    "size/S",
+    "release-note-none",
+    "approved",
+    "cncf-cla: yes",
+    "triage/accepted"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 5,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "kubelet: keep rotated log when compressing it fails at close",
+   "merged_month": "2026-10",
+   "labels": [
+    "kind/bug",
+    "area/kubelet",
+    "lgtm",
+    "sig/node",
+    "release-note",
+    "size/M",
+    "approved",
+    "cncf-cla: yes",
+    "ok-to-test",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "Add the OCI seccomp profile type behind SecurityProfileOCI",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/test",
+    "priority/important-soon",
+    "sig/scheduling",
+    "area/kubectl",
+    "lgtm",
+    "sig/node",
+    "sig/api-machinery",
+    "release-note",
+    "sig/autoscaling",
+    "size/XXL",
+    "kind/api-change",
+    "kind/feature",
+    "sig/apps",
+    "approved",
+    "sig/cli",
+    "cncf-cla: yes",
+    "sig/testing",
+    "area/code-generation",
+    "api-review",
+    "area/dependency",
+    "triage/accepted"
+   ],
+   "file_extensions": [
+    ".go",
+    ".json",
+    ".md",
+    ".pb",
+    ".proto",
+    ".yaml"
+   ],
+   "changed_files": 100,
+   "author_type": "human",
+   "review_count": 26,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "KEP-5936: Beta support of atomic write volume user fields behind a feature gate AtomicWriteVolumeUserFields",
+   "merged_month": "2026-11",
+   "labels": [
+    "priority/important-soon",
+    "lgtm",
+    "sig/storage",
+    "sig/api-machinery",
+    "release-note",
+    "size/L",
+    "kind/api-change",
+    "kind/feature",
+    "sig/apps",
+    "approved",
+    "cncf-cla: yes",
+    "area/code-generation",
+    "api-review",
+    "triage/accepted"
+   ],
+   "file_extensions": [
+    ".go",
+    ".json",
+    ".md",
+    ".proto",
+    ".yaml"
+   ],
+   "changed_files": 22,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "apimachinery: compile the wildcard DNS-1123 subdomain regexp once",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/cleanup",
+    "lgtm",
+    "sig/api-machinery",
+    "size/S",
+    "release-note-none",
+    "approved",
+    "cncf-cla: yes",
+    "ok-to-test",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "Run declarative validation on kubelet static pods",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/kubelet",
+    "kind/cleanup",
+    "area/apiserver",
+    "lgtm",
+    "sig/node",
+    "sig/api-machinery",
+    "release-note",
+    "size/L",
+    "approved",
+    "cncf-cla: yes",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 8,
+   "author_type": "human",
+   "review_count": 6,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "client-go: use default dialer when connrotation dial is nil",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/bug",
+    "lgtm",
+    "sig/api-machinery",
+    "release-note",
+    "size/M",
+    "approved",
+    "cncf-cla: yes",
+    "ok-to-test",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "Avoid allocating schema properties map on single-field lookups",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/cleanup",
+    "area/apiserver",
+    "lgtm",
+    "sig/api-machinery",
+    "release-note",
+    "size/XL",
+    "approved",
+    "cncf-cla: yes",
+    "ok-to-test",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 13,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "DRA Device Binding Conditions: graduate to GA",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/test",
+    "sig/scheduling",
+    "lgtm",
+    "sig/node",
+    "sig/api-machinery",
+    "release-note",
+    "size/XL",
+    "kind/api-change",
+    "kind/feature",
+    "approved",
+    "cncf-cla: yes",
+    "sig/testing",
+    "area/code-generation",
+    "ok-to-test",
+    "needs-priority",
+    "needs-triage",
+    "wg/device-management"
+   ],
+   "file_extensions": [
+    ".go",
+    ".json",
+    ".md",
+    ".proto",
+    ".yaml"
+   ],
+   "changed_files": 31,
+   "author_type": "human",
+   "review_count": 20,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "Fix ResourceQuota admission admitting denied requests after a conflict retry",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/bug",
+    "area/apiserver",
+    "lgtm",
+    "sig/api-machinery",
+    "release-note",
+    "size/M",
+    "approved",
+    "cncf-cla: yes",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "kubelet: checkpoint pod volumes into actuated state, and use it for ASOW reconstruction",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/kubelet",
+    "kind/cleanup",
+    "lgtm",
+    "sig/storage",
+    "sig/node",
+    "size/XL",
+    "kind/feature",
+    "release-note-none",
+    "approved",
+    "cncf-cla: yes",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go",
+    ".md",
+    ".yaml"
+   ],
+   "changed_files": 27,
+   "author_type": "human",
+   "review_count": 19,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "Ensure host pod lands on the same node as the client pod",
+   "merged_month": "2026-11",
+   "labels": [
+    "area/test",
+    "sig/network",
+    "lgtm",
+    "size/XS",
+    "kind/flake",
+    "release-note-none",
+    "approved",
+    "cncf-cla: yes",
+    "sig/testing",
+    "kind/failing-test",
+    "needs-priority",
+    "needs-triage"
+   ],
+   "file_extensions": [
+    ".go"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "title": "Add sig-api-machinery OWNERS for pkg/admission/plugin",
+   "merged_month": "2026-11",
+   "labels": [
+    "kind/cleanup",
+    "lgtm",
+    "sig/api-machinery",
+    "size/XS",
+    "release-note-none",
+    "approved",
+    "cncf-cla: yes",
+    "needs-priority",
+    "triage/accepted"
+   ],
+   "file_extensions": [
+    "OWNERS"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "docs: Use on-demand capacity mode in aws_kinesis_stream examples",
+   "merged_month": "2026-10",
+   "labels": [
+    "documentation",
+    "size/M",
+    "service/dynamodb",
+    "service/kinesis",
+    "service/kinesisanalytics",
+    "service/pinpoint",
+    "service/chime",
+    "service/events",
+    "service/rekognition",
+    "service/workspacesweb",
+    "partner",
+    "service/chimesdkmediapipelines"
+   ],
+   "file_extensions": [
+    ".markdown"
+   ],
+   "changed_files": 11,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "[chore][ci bug] Install tools when the cache doesn't match .ci/tools",
+   "merged_month": "2026-10",
+   "labels": [
+    "bug",
+    "documentation",
+    "size/S",
+    "repository",
+    "github_actions",
+    "prioritized"
+   ],
+   "file_extensions": [
+    ".md",
+    ".yml"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "New Service: Add AWS Continuum client",
+   "merged_month": "2026-11",
+   "labels": [
+    "documentation",
+    "size/XL",
+    "tests",
+    "service/cloudfront",
+    "provider",
+    "linter",
+    "sweeper",
+    "repository",
+    "client-connections",
+    "generators",
+    "github_actions",
+    "new-service",
+    "partner",
+    "prioritized"
+   ],
+   "file_extensions": [
+    ".go",
+    ".hcl",
+    ".kt",
+    ".markdown",
+    ".mod",
+    ".sum",
+    ".tf",
+    ".txt",
+    ".yml"
+   ],
+   "changed_files": 28,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "r/`aws_ec2_capacity_manager`: New Resource",
+   "merged_month": "2026-11",
+   "labels": [
+    "documentation",
+    "new-resource",
+    "size/XL",
+    "tests",
+    "service/ec2",
+    "generators",
+    "rnd-ind-provider"
+   ],
+   "file_extensions": [
+    ".go",
+    ".gtpl",
+    ".markdown",
+    ".tf",
+    ".txt"
+   ],
+   "changed_files": 12,
+   "author_type": "human",
+   "review_count": 8,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "feat: add support for unmanaged_vcpus to aws_batch_compute_environment",
+   "merged_month": "2026-10",
+   "labels": [
+    "enhancement",
+    "documentation",
+    "size/L",
+    "tests",
+    "service/batch",
+    "external-maintainer"
+   ],
+   "file_extensions": [
+    ".go",
+    ".markdown",
+    ".txt"
+   ],
+   "changed_files": 7,
+   "author_type": "human",
+   "review_count": 9,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "r/aws_amplify_app: increase token max length to 4096",
+   "merged_month": "2026-11",
+   "labels": [
+    "bug",
+    "size/XS",
+    "service/amplify"
+   ],
+   "file_extensions": [
+    ".go",
+    ".txt"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "r/aws_cloudfront_origin_access_control: Document and test Lambda Web Function origins \ud83e\udd16\ud83e\udd16\ud83e\udd16",
+   "merged_month": "2026-10",
+   "labels": [
+    "enhancement",
+    "documentation",
+    "size/M",
+    "tests",
+    "service/cloudfront"
+   ],
+   "file_extensions": [
+    ".go",
+    ".markdown"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "`lambdaweb` resources",
+   "merged_month": "2026-10",
+   "labels": [
+    "documentation",
+    "new-resource",
+    "new-data-source",
+    "size/XL",
+    "tests",
+    "sweeper",
+    "tags",
+    "generators",
+    "service/cloudcontrol",
+    "partner",
+    "service/lambdacore",
+    "service/lambdaweb"
+   ],
+   "file_extensions": [
+    ".go",
+    ".gtpl",
+    ".hcl",
+    ".markdown",
+    ".tf",
+    ".txt",
+    ".zip"
+   ],
+   "changed_files": 100,
+   "author_type": "human",
+   "review_count": 10,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "r/aws_organizations_policy: Document GUARDDUTY_POLICY and add acceptance test",
+   "merged_month": "2026-11",
+   "labels": [
+    "documentation",
+    "size/S",
+    "tests",
+    "service/organizations",
+    "partner"
+   ],
+   "file_extensions": [
+    ".go",
+    ".markdown"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "[Enhancement] : `aws_elasticache_global_replication_group` tagging support",
+   "merged_month": "2026-11",
+   "labels": [
+    "enhancement",
+    "documentation",
+    "size/L",
+    "tests",
+    "service/elasticache",
+    "tags",
+    "generators",
+    "partner"
+   ],
+   "file_extensions": [
+    ".go",
+    ".markdown",
+    ".txt"
+   ],
+   "changed_files": 8,
+   "author_type": "human",
+   "review_count": 5,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "feat: add support for CloudTrail recursive logging",
+   "merged_month": "2026-11",
+   "labels": [
+    "enhancement",
+    "documentation",
+    "size/M",
+    "tests",
+    "service/cloudtrail",
+    "external-maintainer"
+   ],
+   "file_extensions": [
+    ".go",
+    ".markdown",
+    ".txt"
+   ],
+   "changed_files": 5,
+   "author_type": "human",
+   "review_count": 7,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "Bump github.com/shopspring/decimal from 1.5.0 to 1.6.0",
+   "merged_month": "2026-11",
+   "labels": [
+    "dependencies",
+    "size/XS",
+    "go"
+   ],
+   "file_extensions": [
+    ".mod",
+    ".sum"
+   ],
+   "changed_files": 2,
+   "author_type": "bot",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "New resource and list resource: `aws_rds_tenant_database`",
+   "merged_month": "2026-10",
+   "labels": [
+    "documentation",
+    "new-resource",
+    "size/XL",
+    "tests",
+    "service/rds",
+    "generators",
+    "new-list-resource"
+   ],
+   "file_extensions": [
+    ".go",
+    ".gtpl",
+    ".hcl",
+    ".markdown",
+    ".tf",
+    ".txt"
+   ],
+   "changed_files": 19,
+   "author_type": "human",
+   "review_count": 15,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "Prepare v6.72.0 Release",
+   "merged_month": "2026-11",
+   "labels": [
+    "documentation",
+    "size/XS",
+    "provider",
+    "rnd-ind-provider"
+   ],
+   "file_extensions": [
+    ".md",
+    "VERSION"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "New Resource `aws_quicksight_account_custom_permission`",
+   "merged_month": "2026-11",
+   "labels": [
+    "documentation",
+    "size/XL",
+    "tests",
+    "service/quicksight",
+    "sweeper",
+    "generators"
+   ],
+   "file_extensions": [
+    ".go",
+    ".gtpl",
+    ".hcl",
+    ".markdown",
+    ".tf",
+    ".txt"
+   ],
+   "changed_files": 21,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "r/`aws_networksecuritymanager_scope`: New Resource",
+   "merged_month": "2026-11",
+   "labels": [
+    "documentation",
+    "new-resource",
+    "size/XL",
+    "tests",
+    "sweeper",
+    "generators",
+    "partner",
+    "rnd-ind-provider",
+    "new-list-resource",
+    "service/networksecuritymanager"
+   ],
+   "file_extensions": [
+    ".go",
+    ".gtpl",
+    ".hcl",
+    ".markdown",
+    ".tf",
+    ".txt"
+   ],
+   "changed_files": 39,
+   "author_type": "human",
+   "review_count": 6,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "Docs: Update valid values for various enums",
+   "merged_month": "2026-11",
+   "labels": [
+    "documentation",
+    "size/M",
+    "service/s3",
+    "service/ecs",
+    "service/guardduty",
+    "service/codebuild",
+    "service/mediaconvert",
+    "service/organizations",
+    "service/storagegateway",
+    "service/cloudsearch",
+    "service/glue",
+    "service/kms",
+    "service/ecr",
+    "service/sfn",
+    "service/connect",
+    "service/s3control",
+    "service/datasync",
+    "service/amplify",
+    "service/appmesh",
+    "service/fsx",
+    "service/ivs",
+    "service/appflow",
+    "service/networkfirewall",
+    "service/apprunner",
+    "service/ce",
+    "service/finspace"
+   ],
+   "file_extensions": [
+    ".markdown"
+   ],
+   "changed_files": 30,
+   "author_type": "human",
+   "review_count": 4,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "List Resource: `aws_s3_bucket_cors_configuration`",
+   "merged_month": "2026-10",
+   "labels": [
+    "documentation",
+    "size/XL",
+    "tests",
+    "service/s3",
+    "generators"
+   ],
+   "file_extensions": [
+    ".go",
+    ".hcl",
+    ".markdown",
+    ".md",
+    ".tf",
+    ".txt"
+   ],
+   "changed_files": 13,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "r/`aws_bedrockdataautomation_blueprint`: New resource and list resource",
+   "merged_month": "2026-10",
+   "labels": [
+    "documentation",
+    "new-resource",
+    "size/XL",
+    "tests",
+    "sweeper",
+    "tags",
+    "generators",
+    "new-list-resource",
+    "service/bedrockdataautomation"
+   ],
+   "file_extensions": [
+    ".go",
+    ".gtpl",
+    ".hcl",
+    ".markdown",
+    ".tf",
+    ".txt"
+   ],
+   "changed_files": 32,
+   "author_type": "human",
+   "review_count": 4,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "hashicorp/terraform-provider-aws",
+   "title": "r/`aws_networksecuritymanager_rule`: New Resource",
+   "merged_month": "2026-11",
+   "labels": [
+    "documentation",
+    "new-resource",
+    "size/XL",
+    "tests",
+    "sweeper",
+    "tags",
+    "generators",
+    "partner",
+    "rnd-ind-provider",
+    "new-list-resource",
+    "service/networksecuritymanager"
+   ],
+   "file_extensions": [
+    ".go",
+    ".gtpl",
+    ".hcl",
+    ".markdown",
+    ".tf",
+    ".txt"
+   ],
+   "changed_files": 32,
+   "author_type": "human",
+   "review_count": 12,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[DevTools] Find non-resource hoistable instances in the facade",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[DevTools] Normalize BigInt values in facade inspection results",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[DevTools] Keep unmatched console specifiers literal in single-string formatter",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[Fizz] Forward `crossOrigin` to the external runtime script",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "Disable unsupported Server Reference decoding in the FB Flight bundler",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 5,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[test] remove defaultValue option not supported in node < v24",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "Remove duplicate dynamic scheduler flags",
+   "merged_month": "2024-01",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "Fix crash when a deleted hidden Activity's suspended data resolves",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 4,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[Fizz] Preserve the external runtime configuration when resuming",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[Fiber] Ping a throttled retry when a new render cancels its timeout",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[compiler] Preserve AST source offsets and declarator ranges",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js",
+    ".json",
+    ".md",
+    ".rs",
+    ".ts",
+    ".tsx",
+    ".yml"
+   ],
+   "changed_files": 51,
+   "author_type": "human",
+   "review_count": 8,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "View Transitions: update error message classification for Chrome 153",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[rust-compiler] Fix non-ASCII panic in is_ref_like_name",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js",
+    ".md",
+    ".rs"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[RN] Call dispatchNativeEvent when the event target is null",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 5,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[19.3.x][Flight] Improve transport protocol",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".js",
+    ".json"
+   ],
+   "changed_files": 31,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[compiler] Preserve signed zero in constant propagation and code generation",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js",
+    ".md",
+    ".rs",
+    ".ts"
+   ],
+   "changed_files": 11,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[DOM] Use SyntheticTransitionEvent for onTransitionRun, onTransitionStart, and onTransitionCancel",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "Fix CI",
+   "merged_month": "2025-06",
+   "labels": [
+    "CLA Signed",
+    "React Core Team"
+   ],
+   "file_extensions": [
+    ".yml"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[compiler] Type react-native PanResponder.create to fix react-hooks/refs false positive",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".rs",
+    ".ts"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "facebook/react",
+   "title": "[compiler] Allow ref access in PerformanceObserver / ReportingObserver callbacks",
+   "merged_month": "2026-10",
+   "labels": [
+    "CLA Signed"
+   ],
+   "file_extensions": [
+    ".js",
+    ".md",
+    ".rs",
+    ".ts"
+   ],
+   "changed_files": 10,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "fix(trace-viewer): reject unsafe snapshot attribute names",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "fix(zip): never write through a symlink when extracting",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "chore: add skill that rolls runtime deps flagged by npm audit",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".md",
+    ".mjs"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "feat(chromium): roll to r1254",
+   "merged_month": "2026-11",
+   "labels": [
+    "CQ1"
+   ],
+   "file_extensions": [
+    ".json",
+    ".md"
+   ],
+   "changed_files": 3,
+   "author_type": "bot",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "chore(mcp): fold the v2 relay handler into the relay and BrowserModel",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "docs(release-notes): update Chromium version for 1.65",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "chore(deps): bump runtime deps",
+   "merged_month": "2026-11",
+   "labels": [
+    "needs-revision"
+   ],
+   "file_extensions": [
+    ".json"
+   ],
+   "changed_files": 2,
+   "author_type": "bot",
+   "review_count": 4,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "feat(firefox): roll to r1573",
+   "merged_month": "2026-11",
+   "labels": [
+    "CQ1"
+   ],
+   "file_extensions": [
+    ".js",
+    ".json"
+   ],
+   "changed_files": 2,
+   "author_type": "bot",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "fix(recorder): coalesce highlight resolutions and update highlights atomically",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "test(android): skip NA-051 and report a missing device clearly",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "feat(locator): add a context-wide visibility default",
+   "merged_month": "2026-11",
+   "labels": [
+    "needs-revision"
+   ],
+   "file_extensions": [
+    ".md",
+    ".ts",
+    ".yml"
+   ],
+   "changed_files": 26,
+   "author_type": "bot",
+   "review_count": 4,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "devops(bots): let a publish-calls pull request go to a branch",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".md",
+    ".ts"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "chore: roll browser_patches to c0c14044b",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".diff",
+    ".sh"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "chore: mark 1.66.0-next",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".json"
+   ],
+   "changed_files": 12,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "fix(test runner): track shared ESM dependencies for only-changed",
+   "merged_month": "2026-11",
+   "labels": [
+    "needs-revision"
+   ],
+   "file_extensions": [
+    ".list",
+    ".ts"
+   ],
+   "changed_files": 8,
+   "author_type": "bot",
+   "review_count": 16,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "fix(clock): cancel real-time timer when replay ends paused",
+   "merged_month": "2026-11",
+   "labels": [
+    "needs-revision"
+   ],
+   "file_extensions": [
+    ".md",
+    ".ts"
+   ],
+   "changed_files": 8,
+   "author_type": "bot",
+   "review_count": 10,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "fix(route): wait for all active handlers before disabling interception",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 3,
+   "author_type": "bot",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "docs: release notes for v1.65",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".md"
+   ],
+   "changed_files": 5,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "fix(chromium): honor Linux config directories for channel connections",
+   "merged_month": "2026-11",
+   "labels": [
+    "needs-revision"
+   ],
+   "file_extensions": [
+    ".md",
+    ".ts"
+   ],
+   "changed_files": 7,
+   "author_type": "bot",
+   "review_count": 5,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "microsoft/playwright",
+   "title": "Revert \"fix(test-runner): disallow skips in after hooks\"",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".ts"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "Backport State config schema coverage to 1.11",
+   "merged_month": "2026-11",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".json",
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 5,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "chore: sync JSON schemas from dbt-fusion",
+   "merged_month": "2026-11",
+   "labels": [
+    "cla:yes",
+    "community"
+   ],
+   "file_extensions": [
+    ".json",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "Backport State config schema coverage to 1.12",
+   "merged_month": "2026-11",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".json",
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 7,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "[Backport 1.13.latest] Drop support for Python 3.10",
+   "merged_month": "2026-11",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".md",
+    ".py",
+    ".test",
+    ".toml",
+    ".yaml",
+    ".yml"
+   ],
+   "changed_files": 10,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "Drop support for Python 3.10",
+   "merged_month": "2026-11",
+   "labels": [
+    "cla:yes",
+    "backport 1.13.latest"
+   ],
+   "file_extensions": [
+    ".md",
+    ".py",
+    ".test",
+    ".toml",
+    ".yaml",
+    ".yml"
+   ],
+   "changed_files": 10,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "[Backport 1.12.latest] Recognize Databricks Python model ACL config keys",
+   "merged_month": "2026-11",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "[Backport 1.13.latest] Recognize Databricks Python model ACL config keys",
+   "merged_month": "2026-11",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "Prepare dbt-oss 2.0.11 on 2.0.latest",
+   "merged_month": "2026-11",
+   "labels": [],
+   "file_extensions": [
+    ".md",
+    ".yaml"
+   ],
+   "changed_files": 100,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "Update test durations for pytest-split",
+   "merged_month": "2026-11",
+   "labels": [
+    "cla:yes",
+    "Skip Changelog",
+    "community"
+   ],
+   "file_extensions": [
+    ".test_durations"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "[Backport 1.11.latest] Pass git package fields to clone and remote cmds",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "bot",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "[Backport 1.12.latest] Pass git package fields to clone and remote cmds",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "bot",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "[Backport 1.13.latest] Pass git package fields to clone and remote cmds",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "bot",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "Revert \"Pass git package fields to clone and remote cmds\"",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "Pass git package fields to clone and remote cmds",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes",
+    "backport 1.11.latest",
+    "backport 1.12.latest",
+    "backport 1.13.latest"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "chore: sync JSON schemas from dbt-fusion",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes",
+    "community"
+   ],
+   "file_extensions": [
+    ".json",
+    ".yaml"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "chore: sync JSON schemas from dbt-fusion",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes",
+    "community"
+   ],
+   "file_extensions": [
+    ".json",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "Update issue template version options; drop Core/Fusion names",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".yml"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "fix: scope compile/show/docs generate relation-cache population to selected schemas",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 6,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "chore: sync JSON schemas from dbt-fusion",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes",
+    "community"
+   ],
+   "file_extensions": [
+    ".json",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "dbt-labs/dbt-core",
+   "title": "[Backport 1.13.latest] Fix macro resolution regression: adapter/root overrides ignored when search package is internal",
+   "merged_month": "2026-10",
+   "labels": [
+    "cla:yes"
+   ],
+   "file_extensions": [
+    ".py",
+    ".yaml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "release(core): 1.7.6",
+   "merged_month": "2026-11",
+   "labels": [
+    "core",
+    "release",
+    "dependencies",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".lock",
+    ".py",
+    ".toml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "perf(core): merge streamed `AIMessageChunk`s once when accumulating runnable streams",
+   "merged_month": "2026-11",
+   "labels": [
+    "core",
+    "performance",
+    "internal",
+    "size: L"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 0,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "fix(core): stop `merge_content` from changing the first message's content",
+   "merged_month": "2026-10",
+   "labels": [
+    "core",
+    "fix",
+    "internal",
+    "size: L"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 5,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "perf(core): stop `parse_partial_json` from retrying one character at a time",
+   "merged_month": "2026-11",
+   "labels": [
+    "core",
+    "performance",
+    "internal",
+    "size: S"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 3,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "fix(fireworks): report streamed token usage once",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "fix",
+    "fireworks",
+    "internal",
+    "size: S"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "fix(langchain): omit trace inputs from `ModelRefusalMiddleware`",
+   "merged_month": "2026-11",
+   "labels": [
+    "langchain",
+    "fix",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "fix(infra): use published `langchain` in min-version release check",
+   "merged_month": "2026-11",
+   "labels": [
+    "infra",
+    "github_actions",
+    "fix",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".yml"
+   ],
+   "changed_files": 1,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "release(fireworks): 1.7.2",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "release",
+    "dependencies",
+    "fireworks",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".lock",
+    ".py",
+    ".toml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "fix(fireworks): report the served model in response metadata",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "fix",
+    "fireworks",
+    "external",
+    "size: S",
+    "bypass-issue-check"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "release(langchain): 1.4.9",
+   "merged_month": "2026-11",
+   "labels": [
+    "langchain",
+    "release",
+    "dependencies",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".lock",
+    ".py",
+    ".toml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "release(anthropic): 1.7.10",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "release",
+    "dependencies",
+    "anthropic",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".lock",
+    ".py",
+    ".toml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "release(openai): 1.7.4",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "release",
+    "dependencies",
+    "openai",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".lock",
+    ".py",
+    ".toml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "chore(deps): require `langchain-core>=1.7.5` for refusal handling",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "langchain",
+    "infra",
+    "dependencies",
+    "anthropic",
+    "openai",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".lock",
+    ".toml"
+   ],
+   "changed_files": 6,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "chore(model-profiles): refresh model profile data",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "infra",
+    "model-profiles",
+    "fireworks",
+    "huggingface",
+    "internal",
+    "openrouter",
+    "bot",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 3,
+   "author_type": "bot",
+   "review_count": 0,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "feat(typesafe): accept a `classifier` in experimental middleware",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "feature",
+    "internal",
+    "size: XS",
+    "typesafe"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 4,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "release(core): 1.7.5",
+   "merged_month": "2026-11",
+   "labels": [
+    "core",
+    "release",
+    "dependencies",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".lock",
+    ".py",
+    ".toml"
+   ],
+   "changed_files": 3,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "feat(core): translate Gemini safety blocks to refusal content blocks",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "core",
+    "feature",
+    "anthropic",
+    "internal",
+    "size: S"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 5,
+   "author_type": "human",
+   "review_count": 8,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "refactor(core): drop fixed `index` from refusal blocks",
+   "merged_month": "2026-11",
+   "labels": [
+    "integration",
+    "core",
+    "refactor",
+    "anthropic",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 5,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "fix(infra): pin optional deps in min-version release checks",
+   "merged_month": "2026-11",
+   "labels": [
+    "infra",
+    "fix",
+    "internal",
+    "size: XS"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 1,
+   "has_coauthored_by_trailer": false,
+   "source": "gh api"
+  },
+  {
+   "repo": "langchain-ai/langchain",
+   "title": "fix(core): end tool run on cancellation",
+   "merged_month": "2026-11",
+   "labels": [
+    "core",
+    "fix",
+    "internal",
+    "size: S"
+   ],
+   "file_extensions": [
+    ".py"
+   ],
+   "changed_files": 2,
+   "author_type": "human",
+   "review_count": 2,
+   "has_coauthored_by_trailer": true,
+   "source": "gh api"
+  }
+ ]
+}

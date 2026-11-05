@@ -1,0 +1,239 @@
+{
+ "pid": "P031",
+ "schema": "truth-v2",
+ "summary": "Intern with substantial independent open-source maintenance before joining Kestrel. Her title and internal supervision understate her Python ability; other technologies remain introductory.",
+ "archetype": "oss_intern",
+ "batch": "F",
+ "generator": "codex gpt-6.1-terra",
+ "skills": [
+  {
+   "skill_id": "python",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "github_json data-platform Python fixes in 6 consecutive months 2026-05..10 (generator reused after exhaustion, CSV reader memory on 2GB file, cursor not advanced, method-aware retries, tz-naive freshness) with tests; jira_json matching bugs; github_json public_profile: maintainer of data-checks (412 commits, tracemalloc memory fix, multiprocessing ordering fix) and merged Apache Airflow provider fixes. Intern title not used.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:public_profile",
+    "github:#14288"
+   ],
+   "why": "Public maintenance includes diagnosing and fixing real runtime failures before hire."
+  },
+  {
+   "skill_id": "airflow",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "github_json 'airflow: dq_check_group task for settlements dag' with 7 review comments (2026-07); public_profile merged apache/airflow provider PRs (SFTPSensor fix 2023-12 with review changes) and provider test harness; cv_2026. Guided DAG change + OSS provider work -> 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-02",
+   "evidence_refs": [
+    "github:public_profile"
+   ],
+   "why": "Has contributed provider code but needs guidance on Kestrel operations."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "github_json + jira_json validation queries reviewed before merge (orders without settlement 2026-07, ageing buckets reconcile with invoices 2026-09); lms SQL Essential Training (2026-07). Reviewed queries reconciled against totals = level 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "jira:DATA-3934",
+    "jira:DATA-4055"
+   ],
+   "why": "Writes basic validation queries with review."
+  },
+  {
+   "skill_id": "api_testing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only unit tests for her own partner API client (github_json 429 retry-after test, method-aware retries). No API check suite against services; mapping uncertain.",
+    "missing_source": "API test collections / contract checks"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#15115"
+   ],
+   "why": "Adds bounded failure cases under review."
+  },
+  {
+   "skill_id": "agile_delivery",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2026 'Attending sprint planning and standups' only.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "jira:DATA-4075"
+   ],
+   "why": "Completes supervised sprint tasks."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "github_json docs PRs (data_checks usage example 2026-05, dq thresholds yaml reference 2026-08 with 4 review comments); jira_json DATA-3866, DATA-4127. One work group in two months; no other group.",
+    "missing_source": "authored docs / validation"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "lms:Data Platform Onboarding"
+   ],
+   "why": "Can explain validation procedures in short notes."
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": false,
+   "true_level": null,
+   "self_perceived_level": null,
+   "would_accept_levels": [],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2026 'familiar with Docker' only; her test harness is explicitly docker-free.",
+    "missing_source": null
+   },
+   "last_used": "2026-05",
+   "evidence_refs": [
+    "cv_v1:Skills"
+   ],
+   "why": "Familiarity on CV does not demonstrate actual use."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Docker",
+   "mapped_skill_id": "docker",
+   "has_skill": false,
+   "why": "No actual container work is shown or privately known.",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "CV familiarity only.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F20",
+   "s11_row": "level_off",
+   "skill_id": "python",
+   "plant": "Intern title can anchor the assessor below the independent public work.",
+   "expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F01",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "docker",
+   "plant": "CV familiarity is unsupported by work.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F16",
+   "s11_row": "wrong_mapping",
+   "skill_id": "sql",
+   "plant": "A generic task and component do not establish an implementation stack.",
+   "expected_engine_behavior": "send_at_level_2",
+   "evidence_expectation": "'bad row count' / General ticket must not be mapped.",
+   "v1_expected_engine_behavior": "hold"
+  }
+ ],
+ "unmatched_skills": [
+  "pytest",
+  "pandas"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.8,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "May describe internship tasks more modestly than prior OSS work."
+ },
+ "messaging_allowed": true
+}

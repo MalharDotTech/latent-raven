@@ -1,0 +1,20 @@
+<div class="reveal" x-data="panelReveal('{{ outcome }}')" data-outcome="{{ outcome }}">
+{% if demo %}<p class="tiny muted"><span class="badge">DEMO DATA</span> Synthetic example quotes and scores.</p>{% endif %}
+<div class="judges-grid">{% for judge_id, judge_name in judges.items() %}{% set found = skill.judges|selectattr('judge','equalto',judge_id)|list %}{% set judge=found[0] if found else none %}
+<article class="judge-card" x-show="shown >= {{ loop.index }}" x-transition:enter="judge-enter" x-transition:enter-start="judge-enter-start" x-transition:enter-end="judge-enter-end" x-cloak><span class="judge-index">0{{ loop.index }}</span><h3>{{ judge_name }}</h3><p class="judge-blurb">{{ blurbs[judge_id] }}</p><div class="judge-level">{% if judge and judge.level is not none %}<span>{{ judge.level }}</span><small>/ {{ skill.scale_max }}</small>{% else %}<span class="abstains">Abstains</span>{% endif %}</div>
+{% if judge and judge.quote %}<blockquote>“{{ judge.quote }}”</blockquote><span class="source">{{ judge.source_id or 'Source not supplied' }}</span>{% elif judge %}<p class="tiny muted">{{ judge.reason or 'No score from this judge.' }}</p>{% else %}<p class="tiny muted">No decision supplied.</p>{% endif %}</article>{% endfor %}</div>
+<div class="verdict {{ outcome }}" x-show="shown >= 4" x-transition.opacity.duration.500ms x-cloak>
+<div class="panel-numbers"><span>PANEL AVERAGE <strong>{{ '%.2f'|format(avg) if avg is not none else '—' }}</strong></span><span>SPREAD <strong>{{ spread if spread is not none else '—' }}</strong></span><span>YOUR CALL <strong>{{ rating.level }}</strong></span></div>
+{% if outcome == 'latent_winner' %}<p class="eyebrow">✦ LATENT WINNER ✦</p><h3>You know your craft.</h3><p>Within half a level. That’s some well-calibrated confidence.</p>
+{% elif outcome == 'close_call' %}<p class="eyebrow">CLOSE CALL</p><h3>Same neighbourhood.</h3><p>Within one level. A little more evidence could close the gap.</p>
+{% elif outcome == 'reality_check' %}<p class="eyebrow">REALITY CHECK</p><h3>A plot twist, with receipts.</h3><p>{% if avg > rating.level %}Your imposter syndrome has requested a second opinion.{% else %}Your confidence arrived a little ahead of your paperwork.{% endif %} Tell us what the panel missed.</p>
+{% else %}<p class="eyebrow">PANEL ABSTAINS</p><h3>The panel won’t score this.</h3><p>Bring proof: {{ missing }}.</p>{% endif %}
+</div>
+<div class="feedback-area" x-show="shown >= 4" x-transition.opacity x-cloak>{% if answer %}{% include 'thanks.html' %}{% else %}
+<form class="feedback-form" hx-post="/play/{{ sid }}/skills/{{ skill.skill_id }}/feedback" hx-target="this" hx-swap="outerHTML">
+<div class="feedback-title"><span class="eyebrow">NOW YOU JUDGE US</span><h3>Did the panel get it right?</h3></div>
+<fieldset><legend>Do you have this skill?</legend><div class="pill-options"><label><input type="radio" name="has_skill" value="yes" required><span>Yes</span></label><label><input type="radio" name="has_skill" value="no" required><span>No</span></label></div></fieldset>
+<fieldset><legend>Panel’s level is…</legend><div class="pill-options">{% for value, label in [('too_low','Too low'),('right','Right'),('too_high','Too high')] %}<label><input type="radio" name="level_feedback" value="{{ value }}" required><span>{{ label }}</span></label>{% endfor %}{% if outcome == 'panel_abstains' %}<label><input type="radio" name="level_feedback" value="unscored" required><span>Agree with abstention</span></label>{% endif %}</div></fieldset>
+<button class="button secondary" type="submit">Save my feedback →</button>
+{% if demo %}<p class="tiny muted">Demo feedback is saved separately and excluded from live pilot statistics.</p>{% endif %}
+</form>{% endif %}</div></div>

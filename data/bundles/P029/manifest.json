@@ -1,0 +1,54 @@
+{
+  "person_ref": "P029",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-11729",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_2026",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P029",
+      "received": "2026-06-01"
+    },
+    {
+      "source_id": "docs_recon-research_md",
+      "source_type": "authored_doc",
+      "path": "docs/recon-research.md"
+    },
+    {
+      "source_id": "docs_billing-settings_md",
+      "source_type": "authored_doc",
+      "path": "docs/billing-settings.md"
+    },
+    {
+      "source_id": "lms_KC-11729",
+      "source_type": "lms",
+      "path": "lms.json"
+    },
+    {
+      "source_id": "docs_research-recruitment-playbook_md",
+      "source_type": "authored_doc",
+      "path": "docs/research-recruitment-playbook.md"
+    },
+    {
+      "source_id": "docs_invoice-templates-interviews_md",
+      "source_type": "authored_doc",
+      "path": "docs/invoice-templates-interviews.md"
+    },
+    {
+      "source_id": "docs_q1-2026-research-readout_md",
+      "source_type": "authored_doc",
+      "path": "docs/q1-2026-research-readout.md"
+    },
+    {
+      "source_id": "docs_release-26-3-design-qa_md",
+      "source_type": "authored_doc",
+      "path": "docs/release-26-3-design-qa.md"
+    }
+  ]
+}

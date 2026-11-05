@@ -1,0 +1,21 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Architecture Clinic Facilitation",
+      "provider": "Kestrel Learn",
+      "completed": "2025-02-11",
+      "time_spent_minutes": 110,
+      "assigned_by": "manager",
+      "quiz_score_pct": 88
+    },
+    {
+      "course_title": "internal: Writing Recovery Decisions",
+      "provider": "Kestrel Learn",
+      "completed": "2026-03-04",
+      "time_spent_minutes": 75,
+      "assigned_by": "manager",
+      "quiz_score_pct": 92
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "person_ref": "P016",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-11517",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_2023_03",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P016",
+      "received": "2023-03-02"
+    },
+    {
+      "source_id": "gh_mpillai_kestrel",
+      "source_type": "github",
+      "path": "github.json"
+    },
+    {
+      "source_id": "jira_mpillai",
+      "source_type": "jira",
+      "path": "jira.json"
+    },
+    {
+      "source_id": "certs_P016",
+      "source_type": "certs",
+      "path": "certs.json"
+    },
+    {
+      "source_id": "lms_P016",
+      "source_type": "lms",
+      "path": "lms.json"
+    },
+    {
+      "source_id": "tara_P016",
+      "source_type": "assessments",
+      "path": "assessments.json"
+    },
+    {
+      "source_id": "doc_ENG_5120",
+      "source_type": "authored_doc",
+      "path": "docs/ENG-5120.md"
+    },
+    {
+      "source_id": "doc_ENG_5388",
+      "source_type": "authored_doc",
+      "path": "docs/ENG-5388.md"
+    }
+  ]
+}

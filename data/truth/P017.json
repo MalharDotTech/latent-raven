@@ -1,0 +1,311 @@
+{
+ "pid": "P017",
+ "schema": "truth-v2",
+ "summary": "Karthik still reasons deeply about production failure modes and develops reviewers across teams. His authored change count is low because most of his contribution is review and design feedback; an old frontend project and current release duty do not make him a React practitioner today.",
+ "archetype": "Review-heavy principal architect",
+ "batch": "D",
+ "generator": "codex (GPT-6; runtime submodel not exposed)",
+ "skills": [
+  {
+   "skill_id": "system_design",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 4,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "P017_ARCH-118 accepted ADR (retry ownership, outbox, rejected options) with service leads drawing unknown-result branches; P017_jira BILL-5709 recon lead revised design, BILL-6448 leads used failure table in next designs; P017_github 350-450 reviews/yr with design-level CHANGES_REQUESTED. Level 4 from work + authored; PR count not used.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "docs/ARCH-118:decision and adoption",
+    "jira:BILL-5782"
+   ],
+   "why": "Multiple teams changed boundaries and recovery assumptions after his intervention."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 4,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "P017_github reviews_given 345-454/yr 2022-2026 (queue bounding, ctx to row iterator, outbox ordering, explain-plan full scan); P017_jira BILL-5886 reviewer checklist adopted by Java and Go teams with follow-up check; P017_ARCH-142 review clinic notes. Level 4 line.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review billing-core#8751",
+    "docs/ARCH-142:clinic follow-up"
+   ],
+   "why": "Reviewer coaching has concrete later catches, beyond raw review totals."
+  },
+  {
+   "skill_id": "technical_leadership",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 4,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "P017_jira BILL-6448 'Recon and billing leads used failure table in their next component designs; missing recovery owner corrected', BILL-5886 clinic follow-ups; P017_ARCH-142 design clinic; P017_lms clinic facilitation. Adopted practices with documented outcomes.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:BILL-5886",
+    "jira:BILL-6448",
+    "docs/ARCH-118"
+   ],
+   "why": "Service leads reuse his decision process with recorded corrections."
+  },
+  {
+   "skill_id": "java",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 4,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "P017_github authored Java fixes 2025-2026 (idempotency key, retry exponent overflow, bounded executor queue, interrupt status) + Java concurrency reviews; P017_ARCH-142 Java interrupt guidance; P017_jira BILL-5886 Java reviewers adopt cancellation test; hcm self 4. Work + authored at 4.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review billing-core#8440",
+    "github:#8784",
+    "docs/ARCH-142"
+   ],
+   "why": "Current concurrency guidance, working patches and adopted Java checks support continued depth."
+  },
+  {
+   "skill_id": "go",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "P017_github: two small Go PRs (one where the maintainer corrected defer placement) + Go cancellation reviews (2026-03, 2026-09); P017_ARCH-142 Go pattern reused by ledger; P017_cv_v1 'Go (reviewing)'. Ceiling 4 (adopted pattern), floor 3 -> 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review recon-engine#8972",
+    "github:review recon-engine#9258"
+   ],
+   "why": "His cancellation feedback becomes a pattern used in other workers, despite modest direct Go authorship."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "P017_github review on explain-plan full scan (2026-06); P017_jira BILL-6323 revised composite index; P017_cv_v1 lists SQL. One review-level tuning episode + CV listing: floor 2, ceiling 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review billing-core#8666",
+    "jira:BILL-6323"
+   ],
+   "why": "He can tune production joins independently; one index intervention does not establish organisation-wide SQL teaching."
+  },
+  {
+   "skill_id": "aws",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P017_github infra-live docs PR 'no Terraform edits' and one IAM review comment; P017_jira BILL-6570 'Platform owns IAM implementation'; P017_cv_v1 lists AWS. No AWS change records of his own.",
+    "missing_source": "AWS change records"
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review infra-live#11710",
+    "jira:BILL-6570"
+   ],
+   "why": "Knows and can change bounded access policies with platform assistance; he is not the account guardrail owner."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P017_jira BILL-6380 Finance accepted replay window and owners signed recovery steps (one decision record); otherwise engineering design reviews. Soft skill with one direct record.",
+    "missing_source": "decision logs / stakeholder records"
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:BILL-6380"
+   ],
+   "why": "Finance agreed a recovery boundary and completed ownership assignments after his negotiation."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P017_ARCH-118 and P017_ARCH-142 (159/188 views) used by service leads (P017_jira BILL-6448); P017_github docs PRs (retry ownership table, rollout checklist v3, replay example corrected after maintainer report). Authored + work, user use recorded.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "docs/ARCH-118",
+    "docs/ARCH-142"
+   ],
+   "why": "Decision and review guides are usable by the receiving leads; no evidence of a broader writing programme."
+  },
+  {
+   "skill_id": "react",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P017_cv_v1 'React - last hands-on was a small support console in 2018, need to refresh hooks'; P017_github merge_events web-console squash merge authored by console-maintainer-kc (release duty). Outside decay window; merge is not his work.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "cv_v1:Tools",
+    "github:merge web-console#10288"
+   ],
+   "why": "The old console work has not survived as usable current React competence. Release approval did not involve reading the component logic."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "React",
+   "mapped_skill_id": "react",
+   "has_skill": false,
+   "why": "Old personal coding and present merge duty cannot establish current framework ability.",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "2018 CV mention + release-duty merge only.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": null,
+   "s11_row": "level_off",
+   "skill_id": "system_design",
+   "plant": "P017 combines roughly two authored PRs monthly with over four hundred annual reviews and two adopted architecture pages.",
+   "expected_engine_behavior": "send_at_level_4",
+   "roster_case": "review_document_depth",
+   "catalog_note": "No F01-F36 entry covers underestimating review-led architecture work; roster section 6 is the authority."
+  },
+  {
+   "fault_id": "F12",
+   "s11_row": "wrong_person",
+   "skill_id": "react",
+   "plant": "A web-console squash event records Karthik as merger but names a different implementation author.",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "Release-duty squash merge of another author's React PR must not be extracted as his work.",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "react",
+   "plant": "The CV dates frontend implementation to 2018; no later React development is available.",
+   "expected_engine_behavior": "hold"
+  }
+ ],
+ "unmatched_skills": [],
+ "answer_behavior": {
+  "reply_probability": 0.64,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Will confirm architecture and review practice; asks for scope on language labels. Rejects React claims."
+ },
+ "messaging_allowed": true
+}

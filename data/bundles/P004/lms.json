@@ -1,0 +1,60 @@
+{
+  "completions": [
+    {
+      "course_title": "Agile Foundations",
+      "provider": "LinkedIn Learning",
+      "completed": "2019-04-18",
+      "time_spent_minutes": 150,
+      "quiz_score_pct": null,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Kestrel Managers Essentials",
+      "provider": "Kestrel Learn",
+      "completed": "2022-08-26",
+      "time_spent_minutes": 600,
+      "quiz_score_pct": 90,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Interviewer Certification",
+      "provider": "Kestrel Learn",
+      "completed": "2022-09-14",
+      "time_spent_minutes": 140,
+      "quiz_score_pct": 94,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Giving Feedback that Lands",
+      "provider": "Kestrel Learn",
+      "completed": "2023-03-02",
+      "time_spent_minutes": 95,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Unconscious Bias at Work",
+      "provider": "Kestrel Learn",
+      "completed": "2023-09-12",
+      "time_spent_minutes": 55,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2024-08-20",
+      "time_spent_minutes": 30,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Performance Calibration for Managers",
+      "provider": "Kestrel Learn",
+      "completed": "2025-05-29",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    }
+  ]
+}

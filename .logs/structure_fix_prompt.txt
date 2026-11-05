@@ -1,0 +1,18 @@
+Working dir: /Users/malhar/swadharma/Code/imocha-raven. You are fixing the STRUCTURE (not the prose, not the labels) of a realistic employee evidence dataset.
+
+Read: data/spec/PERSONA_SPEC.md (sections 2-5 and 8), docs/research/08-codex-dataset-audit.md and docs/research/09-opus-realism-review.md (the structural defects), scripts/validate_personas.py.
+
+Known structural defects in data/bundles/P001..P032 (NOT twins P0xx-T*, NOT P033+ which another agent is writing now - never touch those):
+- PR numbers encode the PID (batch A), are not globally chronological per repo, or collide across personas.
+- Dates are generated: all PRs on the 12th (batch D), weekday clustering (P016), flat yearly totals (P017), monthly_activity smaller than listed items.
+- Chronology breaks: PRs created/merged before the Jira ticket they reference exists; Ledgerly referenced before the 2024-03 acquisition; ticket keys reused across people (QA-2877 twice); Jira keys outside the spec's project list (e.g. LEDGER-210 in a PR title).
+
+Task 1 - scripts/fix_structure.py (deterministic, seeded, idempotent):
+- Collect every PR in data/bundles/P0[0-3][0-9]/github.json (P001-P032 only). Per repo, renumber PRs so numbers increase with created date across ALL personas, starting from a plausible repo base (2000-9000), with realistic gaps (other unseen authors). Never derive numbers from the PID.
+- Jira/ServiceNow/Salesforce keys: unique across personas, per-project increasing with created date, project keys only from spec section 3 (map stray keys to the right project).
+- Re-date items whose dates are visibly generated: jitter within the same sprint (two-week sprints), fewer on weekends and Indian holidays, keep the month and year so the person's history and decay signals stay intact. Keep merged >= created and created >= linked ticket created (move the PR, not the ticket).
+- Recompute monthly_activity so it is never below listed items and yearly totals vary.
+- Fix Ledgerly-before-2024-03 references by moving the dated item or rewording the reference minimally.
+- Apply every ID change everywhere the old ID appears in that persona's bundle (json and md files: PR titles, Jira keys in CV/docs text). Write the full mapping to data/notes/id_remap.json as {pid: {old_id: new_id}}. Do NOT edit data/truth/ (another agent is rewriting it; the remap will be applied later).
+Task 2 - validator v2: extend scripts/validate_personas.py with cross-source coherence checks (keep all existing checks): PR created >= referenced ticket created; merged >= created; PR numbers unique per repo across all personas and monotonic with created date per repo; issue keys unique across personas; Jira project keys within the allowed list; monthly_activity >= listed items per month; no single day-of-month holding > 40% of a persona's PRs; Ledgerly mentions dated >= 2024-03. Report these as ERROR. Make cross-persona checks run when validating all PIDs.
+Then run python3 -I scripts/fix_structure.py, then python3 -I scripts/validate_personas.py P001 ... P032 (list them) until no ERRORs for P001-P032. Do not regenerate twins (the parent will). Final message: what changed (counts), remaining WARNs, anything you could not fix.

@@ -1,0 +1,298 @@
+{
+  "pid": "P014-T1",
+  "schema": "truth-v2",
+  "summary": "Hyderabad mobile engineer, 5.5 yrs at Kestrel, React Native on the billing app. Team pairs constantly with Karan Nayak and the lead Dinesh squash-merges almost everything, so merger and co-author data hide who did the work. She is a real independent mid-senior builder, with solo fixes and her own release docs.",
+  "archetype": "pair-programmed, lead-merged work; real owner",
+  "batch": "C",
+  "generator": "claude-sonnet-5-5",
+  "skills": [
+    {
+      "skill_id": "react",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          3,
+          4
+        ],
+        "basis": "gh_fsheikh_kestrel: React Native components/hooks shipped 2021-2026, many solo (Android back button, FlatList perf, cold-start crash, stale auth token, pdf viewer OOM, -220ms cold start) plus paired features where she is PR author; jira_fsheikh MOB stories resolved; hcm self 'React Native' 3. React Native -> react is the closest taxonomy fit (mobile scope).",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "github:#8951",
+        "github:#9545",
+        "github:#10558",
+        "github:#9831"
+      ],
+      "why": "Genuine React Native component and hooks work (offline cache, widget screens, perf fixes); no web React in the record, taxonomy has no separate RN entry so this is the closest fit."
+    },
+    {
+      "skill_id": "javascript",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_fsheikh_kestrel: JS runtime work in the mobile app - sync queue retry/backoff, startup perf (lazy SDK init), async token refresh fixes, 2022-2026; cv_2024_02 JavaScript. Work at 3 in 3+ months.",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "github:#10359",
+        "github:#10831"
+      ],
+      "why": "Daily JS runtime work in mobile app: startup perf, async queues, native bridges."
+    },
+    {
+      "skill_id": "typescript",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_fsheikh_kestrel: typed navigation params (2023-11), typed hooks and screens with review comments 2021-2026; hcm self 3. Floor 2, ceiling 3.",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "github:#9607",
+        "github:#9742"
+      ],
+      "why": "Writes typed code and added navigation types, but PRs show guided review fixes on typing and loose types remain."
+    },
+    {
+      "skill_id": "cicd",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_fsheikh_kestrel + jira_fsheikh: fastlane build number from CI (2024-08), codepush per env (2024-12), iOS match cert rotation (2026-04); doc_ENG_mobile_release (ENG-4412) release train steps. Lead owns pipeline design. Floor 2, ceiling 3.",
+        "missing_source": null
+      },
+      "last_used": "2026-04",
+      "evidence_refs": [
+        "github:#9966",
+        "github:#10769",
+        "doc:ENG-4412"
+      ],
+      "why": "Maintains fastlane lanes and the release train with review; the lead owns the pipeline design."
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "gh_fsheikh_kestrel reviews_given (~50-60/yr): mostly short, some catches (deeplink null check 2023-12, native module needs release note 2025-03, retry-exhaustion test 2026-04). Floor 2, ceiling 3.",
+        "missing_source": null
+      },
+      "last_used": "2026-07",
+      "evidence_refs": [
+        "github:reviews_given"
+      ],
+      "why": "About 60 reviews a year, mostly short but a few catch native-module issues."
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2,
+          3
+        ],
+        "basis": "doc_ENG_mobile_release (ENG-4412): release checklist + rollback authored 2023, maintained to 2026-08, 187 views, contributors Karan Nayak/Dinesh Rathod; cv_2024_02 'Documented release checklist'. Authored + self at 2; no validation records for 3.",
+        "missing_source": null
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "doc:ENG-4412"
+      ],
+      "why": "Wrote and kept updated the release checklist with rollback steps; one solid page."
+    },
+    {
+      "skill_id": "observability",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_fsheikh_kestrel: Crashlytics breadcrumbs for nav events (2023-04), Sentry breadcrumb migration (2026-03, co-authored) with reviews; jira_fsheikh MOB-4507; cv_2024_02 Firebase Crashlytics. Reviewed instrumentation = level 2 line.",
+        "missing_source": null
+      },
+      "last_used": "2026-03",
+      "evidence_refs": [
+        "github:#9349",
+        "github:#10688"
+      ],
+      "why": "Wires crash reporting breadcrumbs; no dashboards or alert design."
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Kotlin",
+      "mapped_skill_id": null,
+      "has_skill": false,
+      "why": "CV 'basic'; the few .kt edits are small paired native patches",
+      "oracle": {
+        "action": "not_extract",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_2024_02 'Kotlin (basic)'; small .kt edits in gh_fsheikh_kestrel. No taxonomy skill.",
+        "missing_source": null
+      }
+    },
+    {
+      "skill_text": "Swift",
+      "mapped_skill_id": null,
+      "has_skill": false,
+      "why": "CV 'basic'; one paired file",
+      "oracle": {
+        "action": "not_extract",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_2024_02 'Swift (basic)'. No taxonomy skill.",
+        "missing_source": null
+      }
+    },
+    {
+      "skill_text": "Redux Toolkit",
+      "mapped_skill_id": null,
+      "has_skill": false,
+      "why": "not in taxonomy",
+      "oracle": {
+        "action": "not_extract",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_2024_02 'Redux Toolkit'. No taxonomy skill.",
+        "missing_source": null
+      }
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F11",
+      "s11_row": "wrong_person",
+      "skill_id": "react",
+      "plant": "About 90% of her authored PRs are squash-merged by the team lead, so merger credit would go to him",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F13",
+      "s11_row": "wrong_person",
+      "skill_id": "react",
+      "plant": "Karan Nayak's PRs list her via personal unlinked e-mail in co-author trailers; her own PRs list him as co-author; ten such entries sit in the unlinked list",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F14",
+      "s11_row": "wrong_person",
+      "skill_id": "react",
+      "plant": "MOB-3424 and MOB-3524 pass through several assignees; the final assignee is not the one who did the work",
+      "expected_engine_behavior": "send_at_level_3",
+      "evidence_expectation": "Multi-assignee MOB-3424 (resolved_by_self false) must not be credited; final assignee is not the doer.",
+      "v1_expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F10",
+      "s11_row": "wrong_person",
+      "skill_id": null,
+      "plant": "Two renovate-authored dependency PRs approved and merged by her",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F25",
+      "s11_row": "wrong_mapping",
+      "skill_id": "react",
+      "plant": "Skill is 'React Native' in HCM and CV; taxonomy only has React for the web library",
+      "expected_engine_behavior": "send_at_level_3"
+    }
+  ],
+  "unmatched_skills": [
+    "React Native (mobile-specific)",
+    "Fastlane",
+    "Detox",
+    "Kotlin (basic)"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.75,
+    "yes_to_everything": false,
+    "flattery_bias": -0.1,
+    "notes": "Slight underclaimer on pair work; will say 'we did it together' and decline credit for solo items."
+  },
+  "messaging_allowed": true,
+  "identity_expectation": "Co-author trailers with her personal email (unlinked) may be attached only if the engine verifies the alias; never by name alone.",
+  "twin_of": "P014",
+  "twin_swap": {
+    "first": "Rahul",
+    "last": "Verma",
+    "gender": "M",
+    "university": null
+  }
+}

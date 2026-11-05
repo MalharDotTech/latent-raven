@@ -1,0 +1,185 @@
+{
+ "pid": "P014",
+ "summary": "Hyderabad mobile engineer, 5.5 yrs at Kestrel, React Native on the billing app. Team pairs constantly with Karan Nayak and the lead Dinesh squash-merges almost everything, so merger and co-author data hide who did the work. She is a real independent mid-senior builder, with solo fixes and her own release docs.",
+ "archetype": "pair-programmed, lead-merged work; real owner",
+ "batch": "C",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "react",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#1288",
+    "github:#1842",
+    "github:#3018",
+    "github:#2190"
+   ],
+   "why": "Genuine React Native component and hooks work (offline cache, widget screens, perf fixes); no web React in the record, taxonomy has no separate RN entry so this is the closest fit."
+  },
+  {
+   "skill_id": "javascript",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3
+   ],
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#2801",
+    "github:#3340"
+   ],
+   "why": "Daily JS runtime work in mobile app: startup perf, async queues, native bridges."
+  },
+  {
+   "skill_id": "typescript",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#1923",
+    "github:#2101"
+   ],
+   "why": "Writes typed code and added navigation types, but PRs show guided review fixes on typing and loose types remain."
+  },
+  {
+   "skill_id": "cicd",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "github:#2334",
+    "github:#3262",
+    "doc:ENG-4412"
+   ],
+   "why": "Maintains fastlane lanes and the release train with review; the lead owns the pipeline design."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "github:reviews_given"
+   ],
+   "why": "About 60 reviews a year, mostly short but a few catch native-module issues."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "doc:ENG-4412"
+   ],
+   "why": "Wrote and kept updated the release checklist with rollback steps; one solid page."
+  },
+  {
+   "skill_id": "observability",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "last_used": "2026-03",
+   "evidence_refs": [
+    "github:#1654",
+    "github:#3170"
+   ],
+   "why": "Wires crash reporting breadcrumbs; no dashboards or alert design."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Kotlin",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV 'basic'; the few .kt edits are small paired native patches"
+  },
+  {
+   "skill_text": "Swift",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV 'basic'; one paired file"
+  },
+  {
+   "skill_text": "Redux Toolkit",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "not in taxonomy"
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F11",
+   "s11_row": "wrong_person",
+   "skill_id": "react",
+   "plant": "About 90% of her authored PRs are squash-merged by the team lead, so merger credit would go to him",
+   "expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F13",
+   "s11_row": "wrong_person",
+   "skill_id": "react",
+   "plant": "Karan Nayak's PRs list her via personal unlinked e-mail in co-author trailers; her own PRs list him as co-author; ten such entries sit in the unlinked list",
+   "expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F14",
+   "s11_row": "wrong_person",
+   "skill_id": "react",
+   "plant": "MOB-701 and MOB-901 pass through several assignees; the final assignee is not the one who did the work",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F10",
+   "s11_row": "wrong_person",
+   "skill_id": null,
+   "plant": "Two renovate-authored dependency PRs approved and merged by her",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "react",
+   "plant": "Skill is 'React Native' in HCM and CV; taxonomy only has React for the web library",
+   "expected_engine_behavior": "send_at_level_3"
+  }
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.75,
+  "yes_to_everything": false,
+  "flattery_bias": -0.1,
+  "notes": "Slight underclaimer on pair work; will say 'we did it together' and decline credit for solo items."
+ },
+ "messaging_allowed": true
+}

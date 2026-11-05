@@ -1,0 +1,21 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "Git: Branches, Merges, and Remotes",
+      "provider": "LinkedIn Learning",
+      "completed": "2024-07-13",
+      "time_spent_minutes": 130,
+      "quiz_score_pct": 86,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Dedicated client access handling",
+      "provider": "Kestrel Learn",
+      "completed": "2024-06-12",
+      "time_spent_minutes": 45,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    }
+  ]
+}

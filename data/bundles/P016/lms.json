@@ -1,0 +1,27 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Secure Coding Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2023-04-24",
+      "time_spent_minutes": 52,
+      "quiz_score_pct": 82,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Learning Git and GitHub",
+      "provider": "LinkedIn Learning",
+      "completed": "2023-05-19",
+      "time_spent_minutes": 88,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Observability 101 (Grafana, Prometheus)",
+      "provider": "Kestrel Learn",
+      "completed": "2024-02-15",
+      "time_spent_minutes": 140,
+      "quiz_score_pct": 91,
+      "assigned_by": "manager"
+    }
+  ]
+}

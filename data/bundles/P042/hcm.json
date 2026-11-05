@@ -1,0 +1,58 @@
+{
+  "employee_id": "KC-11058",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Vivek Narang",
+  "preferred_name": "Vivek",
+  "emails": [
+    {
+      "email": "vivek.narang@kestrelcloud.com",
+      "from": "2020-11",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Reconciliation Engineering",
+  "manager_employee_id": "KC-10037",
+  "hire_date": "2020-11-09",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Software Engineer",
+      "grade": "P3",
+      "from": "2020-11",
+      "to": "2022-12"
+    },
+    {
+      "title": "Engineering Manager",
+      "grade": "M1",
+      "from": "2023-01",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Reconciliation services",
+      "role": "Engineering Manager",
+      "from": "2020-11",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "NIT Surathkal",
+      "degree": "B.Tech",
+      "field": "Computer Science and Engineering",
+      "year": 2017
+    }
+  ],
+  "exported": "2026-10-31"
+}

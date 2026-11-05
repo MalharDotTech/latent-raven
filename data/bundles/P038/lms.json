@@ -1,0 +1,21 @@
+{
+  "linked_employee_id": "KC-12754",
+  "completions": [
+    {
+      "course_title": "internal: Platform starter lab",
+      "provider": "Kestrel Learn",
+      "completed": "2026-04-10",
+      "time_spent_minutes": 210,
+      "quiz_score_pct": 76,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "Git Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2026-04-22",
+      "time_spent_minutes": 87,
+      "quiz_score_pct": 85,
+      "assigned_by": "manager"
+    }
+  ]
+}

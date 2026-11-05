@@ -1,0 +1,674 @@
+{
+  "linked_worker_id": "KC-10909",
+  "exported_on": "2026-10-31",
+  "issues": [
+    {
+      "key": "DATA-2110",
+      "type": "Bug",
+      "summary": "DATA-2110 fix signed credit totals",
+      "description_excerpt": "SQL report included voided credits; reconciled invoice and credit totals with finance export.",
+      "component": "Revenue marts",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-05-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-05-08",
+      "resolved": "2023-05-09",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#9761"
+      ]
+    },
+    {
+      "key": "DATA-2258",
+      "type": "Task",
+      "summary": "Use account timezone in daily extract",
+      "description_excerpt": "SQL dates derived after timezone conversion; reconciled midnight sample.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-08-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-08-14",
+      "resolved": "2023-08-16",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#10135"
+      ]
+    },
+    {
+      "key": "DATA-2382",
+      "type": "Bug",
+      "summary": "fix: null segment drops accounts",
+      "description_excerpt": "Left join preserves unclassified accounts; checked against source row counts.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-11-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-11-19",
+      "resolved": "2023-11-22",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#10455"
+      ]
+    },
+    {
+      "key": "DATA-2489",
+      "type": "Bug",
+      "summary": "DATA-2489 add refund bridge query",
+      "description_excerpt": "SQL refund bridge at transaction grain, checked by finance against January export.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-02-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-02-06",
+      "resolved": "2024-02-07",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#10740"
+      ]
+    },
+    {
+      "key": "DATA-2621",
+      "type": "Task",
+      "summary": "Keep fx date with ledger rows",
+      "description_excerpt": "SQL exchange-rate join now uses posting date, not statement date.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-05-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-05-12",
+      "resolved": "2024-05-14",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#11101"
+      ]
+    },
+    {
+      "key": "DATA-2794",
+      "type": "Bug",
+      "summary": "fix: reversed invoice counted twice",
+      "description_excerpt": "SQL anti-join removes cancelled/reissued invoice pair; totals reconciled.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-09-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-09-15",
+      "resolved": "2024-09-18",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "data-platform#11611"
+      ]
+    },
+    {
+      "key": "DATA-2941",
+      "type": "Bug",
+      "summary": "Add tests for invoice daily model",
+      "description_excerpt": "First dbt contribution; reviewer supplied source freshness config and corrected unique key.",
+      "component": "Revenue marts",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-12-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-12-10",
+      "resolved": "2024-12-11",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#6370"
+      ]
+    },
+    {
+      "key": "DATA-2992",
+      "type": "Task",
+      "summary": "DATA-2992 revenue mart incremental key",
+      "description_excerpt": "dbt unique key includes tenant and line id; reconciliation covers partial refunds. Component retained from old queue; job runs in dbt on Snowflake.",
+      "component": "Spark",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-01-13",
+      "resolved": "2025-01-15",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#6478"
+      ]
+    },
+    {
+      "key": "DATA-3101",
+      "type": "Bug",
+      "summary": "fix: credit memo reloaded after cutoff",
+      "description_excerpt": "dbt merge includes late-arriving updates; compared full-refresh and incremental outputs.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-09"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-09",
+      "resolved": "2025-03-12",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#6571"
+      ]
+    },
+    {
+      "key": "DATA-3234",
+      "type": "Bug",
+      "summary": "Prune invoice scan by posted_date",
+      "description_excerpt": "Snowflake query profile reduced scanned partitions from 812 to 67; finance totals unchanged.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-20",
+      "resolved": "2025-05-21",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#6740"
+      ]
+    },
+    {
+      "key": "DATA-3345",
+      "type": "Task",
+      "summary": "Add currency to revenue grain",
+      "description_excerpt": "Data model separates invoice currency from reporting currency; foreign-key and history checks attached.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-07-14",
+      "resolved": "2025-07-16",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#6860"
+      ]
+    },
+    {
+      "key": "DATA-3426",
+      "type": "Task",
+      "summary": "DATA-3426 grant mart role to finance",
+      "description_excerpt": "Snowflake role change reviewed by platform; verified restricted source tables remain inaccessible.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-07",
+      "resolved": "2025-09-10",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#6975"
+      ]
+    },
+    {
+      "key": "DATA-3548",
+      "type": "Bug",
+      "summary": "fix: snapshot hard-delete handling",
+      "description_excerpt": "dbt snapshot keeps valid-to on removed accounts; checked history against source extracts.",
+      "component": "Revenue marts",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-11-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-11-18",
+      "resolved": "2025-11-19",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#7128"
+      ]
+    },
+    {
+      "key": "DATA-3627",
+      "type": "Task",
+      "summary": "Move close adjustment out of base revenue",
+      "description_excerpt": "dbt models now preserve posted ledger grain; finance adjustment table reconciled separately.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-01-12",
+      "resolved": "2026-01-14",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#7280"
+      ]
+    },
+    {
+      "key": "DATA-3751",
+      "type": "Bug",
+      "summary": "fix: duplicate credits on rerun",
+      "description_excerpt": "dbt incremental delete/insert key corrected; reran affected days and checked net value.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-15",
+      "resolved": "2026-03-18",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#7425"
+      ]
+    },
+    {
+      "key": "DATA-3902",
+      "type": "Bug",
+      "summary": "DATA-3902 lower warehouse auto_suspend",
+      "description_excerpt": "Snowflake query-history sample checked before reducing idle timeout; dashboard latency held.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-12",
+      "resolved": "2026-05-13",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#7554"
+      ]
+    },
+    {
+      "key": "DATA-4158",
+      "type": "Task",
+      "summary": "Do not fan out invoice tags",
+      "description_excerpt": "SQL aggregates tags before joining fact table; counted stable fact rows on multi-tag invoices.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-10",
+      "resolved": "2026-08-12",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#7773"
+      ]
+    },
+    {
+      "key": "DATA-4336",
+      "type": "Bug",
+      "summary": "fix: close totals for backdated credits",
+      "description_excerpt": "SQL posting period and event period retained separately; finance signed off September rerun.",
+      "component": "Revenue marts",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-04",
+      "resolved": "2026-10-07",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "analytics-dbt#7889"
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    }
+  ],
+  "export_scope": "Selected resolved issues; aggregate months include all issues visible to the project export."
+}

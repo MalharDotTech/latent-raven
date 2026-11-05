@@ -1,0 +1,106 @@
+{
+  "employee_id": "KC-11111",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Deepa Menon",
+  "preferred_name": "Deepa",
+  "emails": [
+    {
+      "email": "deepa.menon@kestrelcloud.com",
+      "from": "2020-06",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Data Platform",
+  "manager_employee_id": "KC-10012",
+  "hire_date": "2020-06-15",
+  "rehire_dates": [
+    "2026-02-02"
+  ],
+  "job_history": [
+    {
+      "title": "Data Engineer",
+      "grade": "P2",
+      "from": "2020-06",
+      "to": "2023-01"
+    },
+    {
+      "title": "Data Engineer",
+      "grade": "P2",
+      "from": "2026-02",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Settlement ingestion",
+      "role": "Data Engineer",
+      "from": "2020-06",
+      "to": "2023-01",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Settlement ingestion",
+      "role": "Data Engineer",
+      "from": "2026-02",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Government College of Engineering, Amravati",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2015
+    }
+  ],
+  "exported_on": "2026-10-31",
+  "employment_spells": [
+    {
+      "start": "2020-06-15",
+      "end": "2023-01-31"
+    },
+    {
+      "start": "2026-02-02",
+      "end": null
+    }
+  ],
+  "career_breaks": [
+    {
+      "start": "2023-02-01",
+      "end": "2026-02-01",
+      "reason": "Personal career break"
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Python",
+      "self_level": 2,
+      "declared_on": "2026-02-03"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 2,
+      "declared_on": "2026-02-03"
+    },
+    {
+      "skill_text": "PySpark",
+      "self_level": 2,
+      "declared_on": "2026-02-03"
+    },
+    {
+      "skill_text": "Airflow",
+      "self_level": 2,
+      "declared_on": "2026-02-03"
+    }
+  ]
+}

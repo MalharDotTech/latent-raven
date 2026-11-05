@@ -1,0 +1,612 @@
+{
+  "issues": [
+    {
+      "key": "QA-2364",
+      "type": "Task",
+      "summary": "Perf run: recon flow nightly regression",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-06-08"
+        }
+      ],
+      "created": "2023-06-08",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2023-06-30",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "QA-2413",
+      "type": "Bug",
+      "summary": "Invoice list p95 2.8s at 200 vus",
+      "description_excerpt": "Missing index on invoice(tenant_id, due_date). 200 vus, 30min, cold cache.",
+      "priority": "High",
+      "status": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2023-07-21"
+        }
+      ],
+      "created": "2023-07-21",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2023-09-04",
+      "resolved_by_self": false,
+      "labels": []
+    },
+    {
+      "key": "QA-2561",
+      "type": "Task",
+      "summary": "Token refresh sampler for jmeter",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-11-20"
+        }
+      ],
+      "created": "2023-11-20",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2023-12-05",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "QA-2625",
+      "type": "Task",
+      "summary": "retest",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-01-09"
+        }
+      ],
+      "created": "2024-01-05",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2024-01-10",
+      "resolved_by_self": true,
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "QA-2690",
+      "type": "Bug",
+      "summary": "DB connection pool exhausted at 600 vus (invoice create)",
+      "description_excerpt": "",
+      "priority": "High",
+      "status": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-02-20"
+        }
+      ],
+      "created": "2024-02-20",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2024-03-26",
+      "resolved_by_self": false,
+      "labels": []
+    },
+    {
+      "key": "QA-2781",
+      "type": "Task",
+      "summary": "Perf baseline billing-core 24.2",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-05-02"
+        }
+      ],
+      "created": "2024-05-01",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2024-05-27",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "QA-2900",
+      "type": "Story",
+      "summary": "Recon nightly batch perf scenario",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-08-06"
+        }
+      ],
+      "created": "2024-08-06",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2024-09-02",
+      "resolved_by_self": true,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "QA-3018",
+      "type": "Task",
+      "summary": "Perf run for release",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-11-08"
+        }
+      ],
+      "created": "2024-11-08",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2024-11-13",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "QA-3093",
+      "type": "Bug",
+      "summary": "GC pauses > 1s on recon-engine under load",
+      "description_excerpt": "",
+      "priority": "High",
+      "status": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-01-13"
+        }
+      ],
+      "created": "2025-01-13",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2025-03-11",
+      "resolved_by_self": false,
+      "labels": []
+    },
+    {
+      "key": "QA-3083",
+      "type": "Story",
+      "summary": "k6 PR smoke with thresholds",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-07"
+        }
+      ],
+      "created": "2025-01-07",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2025-02-04",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "QA-3164",
+      "type": "Epic",
+      "summary": "Release performance gate",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-17"
+        }
+      ],
+      "created": "2025-03-12",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2025-06-23",
+      "resolved_by_self": true,
+      "labels": []
+    },
+    {
+      "key": "QA-3352",
+      "type": "Task",
+      "summary": "SharedArray token pool for k6",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-21"
+        }
+      ],
+      "created": "2025-07-14",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2025-08-24",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "QA-3437",
+      "type": "Task",
+      "summary": "retest after config change",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-18"
+        }
+      ],
+      "created": "2025-09-18",
+      "component": "General",
+      "resolution": "Done",
+      "resolved": "2025-09-18",
+      "resolved_by_self": true,
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "QA-3596",
+      "type": "Story",
+      "summary": "Gate scenario ledger-api",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-05"
+        }
+      ],
+      "created": "2026-01-05",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2026-02-05",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "QA-3681",
+      "type": "Bug",
+      "summary": "Kafka consumer lag grows during recon batch peak",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-03-04"
+        },
+        {
+          "assignee": "other",
+          "from": "2026-03-30"
+        }
+      ],
+      "created": "2026-03-04",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2026-04-28",
+      "resolved_by_self": false,
+      "labels": []
+    },
+    {
+      "key": "QA-3704",
+      "type": "Task",
+      "summary": "Update recon batch scenario for 2.1M rows",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-30"
+        }
+      ],
+      "created": "2026-03-24",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2026-04-24",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "QA-3923",
+      "type": "Task",
+      "summary": "Perf signoff 26.9",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-14"
+        }
+      ],
+      "created": "2026-09-08",
+      "component": "Performance",
+      "resolution": "Done",
+      "resolved": "2026-09-30",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "QA-3969",
+      "type": "Bug",
+      "summary": "Export endpoint timeouts > 30s with 50 concurrent",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Open",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-10-12"
+        }
+      ],
+      "created": "2026-10-12",
+      "component": "Performance",
+      "labels": []
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 8,
+      "reported": 4
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 7,
+      "reported": 5
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 10,
+      "reported": 3
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 9,
+      "reported": 4
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 11,
+      "reported": 3
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 12,
+      "reported": 3
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 9,
+      "reported": 4
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 8,
+      "reported": 5
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 4,
+      "reported": 4
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 6,
+      "reported": 4
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 9,
+      "reported": 5
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 8,
+      "reported": 5
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 5,
+      "reported": 5
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 6,
+      "reported": 5
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    }
+  ]
+}

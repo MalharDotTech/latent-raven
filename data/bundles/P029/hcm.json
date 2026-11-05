@@ -1,0 +1,99 @@
+{
+  "employee_id": "KC-11729",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Divya Krishnamurthy",
+  "preferred_name": "Divya Krishnamurthy",
+  "emails": [
+    {
+      "email": "divya.krishnamurthy@kestrelcloud.com",
+      "from": "2021-08",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Product Design",
+  "manager_employee_id": "KC-10120",
+  "hire_date": "2021-08-09",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Product Designer",
+      "grade": "P2",
+      "from": "2021-08",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Payment exceptions redesign",
+      "role": "Product Designer",
+      "from": "2024-09",
+      "to": "2025-08",
+      "allocation_pct": 60
+    },
+    {
+      "project": "Invoice templates discovery",
+      "role": "Product Designer",
+      "from": "2024-09",
+      "to": "2025-02",
+      "allocation_pct": 30
+    },
+    {
+      "project": "Billing settings and permissions",
+      "role": "Product Designer",
+      "from": "2025-10",
+      "to": null,
+      "allocation_pct": 60
+    },
+    {
+      "project": "Customer research programme",
+      "role": "Design Researcher",
+      "from": "2023-03",
+      "to": null,
+      "allocation_pct": 20
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "self_declared_skills": [
+    {
+      "skill_text": "User research",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Usability testing",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Product discovery",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Workshop facilitation",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Technical writing",
+      "self_level": 2,
+      "declared_on": "2025-04"
+    }
+  ],
+  "education": [
+    {
+      "institution": "IDC School of Design, IIT Bombay",
+      "degree": "M.Des",
+      "field": "Interaction Design",
+      "year": 2018
+    }
+  ]
+}

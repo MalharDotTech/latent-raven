@@ -1,0 +1,29 @@
+{
+  "linked_employee_id": "KC-11058",
+  "completions": [
+    {
+      "course_title": "internal: First time manager workshop",
+      "provider": "Kestrel Learn",
+      "completed": "2023-02-23",
+      "time_spent_minutes": 360,
+      "quiz_score_pct": 86,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Feedback conversations",
+      "provider": "Kestrel Learn",
+      "completed": "2025-07-10",
+      "time_spent_minutes": 140,
+      "quiz_score_pct": 90,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Hiring panel calibration",
+      "provider": "Kestrel Learn",
+      "completed": "2026-08-06",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": 88,
+      "assigned_by": "manager"
+    }
+  ]
+}

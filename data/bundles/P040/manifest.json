@@ -1,0 +1,31 @@
+{
+  "person_ref": "P040",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-12072",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_isha-sethi-kc_1",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P040",
+      "received": "2026-10-19",
+      "original_format": "two_column_pdf",
+      "extraction_quality": "mixed"
+    },
+    {
+      "source_id": "gh_isha-sethi-kc",
+      "source_type": "github",
+      "path": "github.json"
+    },
+    {
+      "source_id": "jira_KC-12072",
+      "source_type": "jira",
+      "path": "jira.json"
+    }
+  ]
+}

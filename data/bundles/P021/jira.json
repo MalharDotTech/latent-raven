@@ -1,0 +1,522 @@
+{
+  "exported_on": "2026-10-31",
+  "linked_employee_id": "KC-11121",
+  "issues": [
+    {
+      "key": "PLAT-4332",
+      "type": "Bug",
+      "summary": "Drain hangs on export",
+      "description_excerpt": "Active job blocked eviction. Changed drain hook; reproduced rollback and completed upgrade without partial files.",
+      "component": "eu-platform",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-07",
+      "resolved": "2025-02-28",
+      "story_points": 3,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-4370",
+      "type": "Task",
+      "summary": "EU worker conntrack drops",
+      "description_excerpt": "Latency rose with conntrack saturation; checked sysctl counters, raised limit, replayed load. Drops cleared.",
+      "component": "eu-platform",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-07",
+      "resolved": "2025-03-24",
+      "story_points": 2,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-4417",
+      "type": "Task",
+      "summary": "Recovery role cannot read prefix",
+      "description_excerpt": "Object listing worked but GetObject denied on recovery prefix. Changed IAM policy and repeated restore.",
+      "component": "eu-platform",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-04-03",
+      "resolved": "2025-04-21",
+      "story_points": 5,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-4463",
+      "type": "Bug",
+      "summary": "State split staging",
+      "description_excerpt": "Rehearsed address map against saved state; production plan had no unintended destroys.",
+      "component": "eu-platform",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-13",
+      "resolved": "2025-05-21",
+      "story_points": 1,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-4812",
+      "type": "Task",
+      "summary": "Paging same error twice",
+      "description_excerpt": "Burn alert and per-pod alert covered same failed requests. Replayed incident, removed redundant page.",
+      "component": "eu-platform",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-02",
+      "resolved": "2026-02-27",
+      "story_points": 3,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-4856",
+      "type": "Task",
+      "summary": "Restore object check",
+      "description_excerpt": "Python job now compares hashes as well as counts; injected mismatch fails run.",
+      "component": "eu-platform",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-07",
+      "resolved": "2026-03-26",
+      "story_points": 2,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-4892",
+      "type": "Bug",
+      "summary": "Pune upgrade drill",
+      "description_excerpt": "Pune rotation used drain/rollback guide without Tom driving. Caught missing gateway check and revised procedure.",
+      "component": "eu-platform",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-04",
+      "resolved": "2026-04-27",
+      "story_points": 5,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-4968",
+      "type": "Task",
+      "summary": "disk pressure again",
+      "description_excerpt": "Journal retention exhausted root filesystem. Confirmed open deleted files before restart, capped retention, checked next rotation.",
+      "component": "eu-platform",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-08",
+      "resolved": "2026-05-18",
+      "story_points": 1,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-5032",
+      "type": "Task",
+      "summary": "Provider update window",
+      "description_excerpt": "Pin provider and run plans in staging. Platform partner owns rollback review.",
+      "component": "eu-platform",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-10",
+      "resolved": "2026-06-19",
+      "story_points": 3,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-5072",
+      "type": "Bug",
+      "summary": "Restore count false green",
+      "description_excerpt": "Missing manifest had produced empty comparison. Fail with explicit error before validation.",
+      "component": "eu-platform",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-03",
+      "resolved": "2026-07-14",
+      "story_points": 2,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-5148",
+      "type": "Task",
+      "summary": "Service probe during replay",
+      "description_excerpt": "Startup checks too short for long replay; changed startup probe, retained steady-state liveness.",
+      "component": "eu-platform",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-07",
+      "resolved": "2026-08-28",
+      "story_points": 5,
+      "labels": [
+        "eu-platform"
+      ]
+    },
+    {
+      "key": "PLAT-5207",
+      "type": "Task",
+      "summary": "Alert audit September",
+      "description_excerpt": "Other team reused burn-window checklist. Follow-up monthly count shows fewer duplicate pages.",
+      "component": "eu-platform",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-02",
+      "resolved": "2026-09-23",
+      "story_points": 1,
+      "labels": [
+        "eu-platform"
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 5,
+      "reported": 5
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 11,
+      "reported": 6
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 5,
+      "reported": 5
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 6,
+      "reported": 4
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 8,
+      "reported": 4
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 9,
+      "reported": 5
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 10,
+      "reported": 4
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 4,
+      "reported": 4
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 3,
+      "reported": 4
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 8,
+      "reported": 4
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 8,
+      "reported": 4
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 3,
+      "reported": 3
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 8,
+      "reported": 4
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 8,
+      "reported": 5
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    }
+  ],
+  "export_scope": "Representative issues; monthly_activity covers complete Kestrel tenure. Reporter and assignee counts are separate."
+}

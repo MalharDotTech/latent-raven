@@ -1,0 +1,76 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Information Security Awareness 2022",
+      "provider": "Kestrel Learn",
+      "completed": "2022-05-04",
+      "time_spent_minutes": 35,
+      "quiz_score_pct": 90,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2022-05-10",
+      "time_spent_minutes": 31,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Planning Cycle Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2022-07-15",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": 85,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Advanced Excel for Finance Teams",
+      "provider": "Kestrel Learn",
+      "completed": "2022-09-08",
+      "time_spent_minutes": 150,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2023",
+      "provider": "Kestrel Learn",
+      "completed": "2023-06-06",
+      "time_spent_minutes": 34,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Finance Data Handling",
+      "provider": "Kestrel Learn",
+      "completed": "2023-07-18",
+      "time_spent_minutes": 70,
+      "quiz_score_pct": 90,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Expense and Procurement Policy Update",
+      "provider": "Kestrel Learn",
+      "completed": "2024-02-19",
+      "time_spent_minutes": 40,
+      "quiz_score_pct": 88,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-06-03",
+      "time_spent_minutes": 32,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: SQL for Finance",
+      "provider": "Kestrel Learn",
+      "completed": "2025-09-12",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": 74,
+      "assigned_by": "manager"
+    }
+  ]
+}

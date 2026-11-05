@@ -1,0 +1,1702 @@
+{
+ "_meta": {
+  "sources": [
+   "https://issues.apache.org/jira REST API v2 (SPARK, KAFKA, FLINK)",
+   "gh api repos/*/issues"
+  ],
+  "collected": "2026-11-05",
+  "note": "No assignee/reporter names stored. body_200 is first 200 chars; Jira wiki markup retained."
+ },
+ "samples": [
+  {
+   "key": "SPARK-60921",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60921",
+   "title": "Make data types in Spark Connect Rust compare and hash as PySpark's do",
+   "body_200": "In PySpark, two data types are equal when they are of the same class and have the same attributes ({{DataType.__eq__}}), and a data type hashes as {{hash(str(self))}}. The Rust-backed Python client's ",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Duplicate",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60920",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60920",
+   "title": "Make reader/writer setters mutate in place like PySpark in the Spark Connect Rust drop-in",
+   "body_200": "In the spark-connect-rust Python drop-in, {{DataFrameReader}}, {{DataStreamReader}}, {{DataFrameWriter}}, {{DataFrameWriterV2}}, {{DataStreamWriter}} and {{MergeIntoWriter}} are consuming builders. Ea",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60919",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60919",
+   "title": "Make Row hashable like a tuple in the Spark Connect Rust drop-in",
+   "body_200": "In the spark-connect-rust Python drop-in, {{Row}} defines {{__eq__}} but no {{__hash__}}, so {{hash(Row(a=1))}} raises {{TypeError: unhashable type: 'builtins.Row'}}.\n\nIn PySpark, {{Row}} subclasses {",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60918",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60918",
+   "title": "Make == and hash() of Spark Connect Rust data types match PySpark",
+   "body_200": "In the Rust-backed Python drop-in, the data type classes ({{DataType}} and every concrete type such as {{LongType}}, {{StructType}}) define no {{__eq__}}/{{__hash__}}, so equality falls back to object",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60917",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60917",
+   "title": "Reduce cached artifact upload copies and accelerate SHA-256 in Spark Connect Rust",
+   "body_200": "Following SPARK-60675, cached Arrow input upload has two avoidable client costs: sha2 0.10 uses software SHA-256 on aarch64 without its asm feature, and cache artifact framing copies serialized IPC bu",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60912",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60912",
+   "title": "Make Row in Spark Connect Rust behave as PySpark's Row",
+   "body_200": "PySpark's {{Row}} is a {{tuple}} subclass. The Rust-backed Python client's {{Row}} differs from it in these PySpark 4.3.0 results:\n\n* {{repr()}} and {{str()}} give {{Row(x=1, y='a')}}, with the {{repr",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60911",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60911",
+   "title": "Raise server errors in Spark Connect Rust with the exception class and details PySpark gives",
+   "body_200": "PySpark Connect builds the exception for a server error from the error's {{ErrorInfo}}, and from {{FetchErrorDetails}} when the server has more. It picks the class by walking the server's exception cl",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60909",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60909",
+   "title": "Run spark.sql() statements eagerly in Spark Connect Rust as PySpark does",
+   "body_200": "In PySpark Connect, {{SparkSession.sql}} sends the statement to the server at once, so a command takes effect when {{sql()}} is called. The Rust-backed Python client builds a lazy relation instead, so",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60907",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60907",
+   "title": "Send reader schemas in Spark Connect Rust as PySpark does, and accept a StructType in schema()",
+   "body_200": "In PySpark Connect, {{DataFrameReader.schema}} and {{DataStreamReader.schema}} take a StructType, which is sent as its JSON, or a string, which is sent as is; anything else raises {{NOT_EXPECTED_TYPE}",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60906",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60906",
+   "title": "Make str(), repr() and fromDDL of Spark Connect Rust data types match PySpark",
+   "body_200": "Data types of the Rust-backed Python client differ from PySpark Connect 4.3.0 in three related ways:\n\n* PySpark data types define only {{__repr__}}, so {{str()}} of a data type is its repr: {{str(Long",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60902",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60902",
+   "title": "Apply column-name lists and pandas columns in Spark Connect Rust createDataFrame as PySpark does",
+   "body_200": "The Rust-backed Python client's {{createDataFrame}} applies column-name lists and the columns of a pandas DataFrame differently from PySpark Connect 4.3.0:\n\n* PySpark applies {{toDF}} when it has colu",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60900",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60900",
+   "title": "Make dev/create_spark_jira.py file spark-connect-rust JIRAs on the connect-rust version line",
+   "body_200": "{{dev/create_spark_jira.py}} sets Affects Version/s to the newest unreleased core Spark x.y.z version. {{detect_affected_version}} only matches version names that start with a number, so it never pick",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Project Infra"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60899",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60899",
+   "title": "Replace APIs deprecated in Java 19 with their Java 21 counterparts",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "MLlib",
+    "Spark Core",
+    "SQL",
+    "YARN"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60898",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60898",
+   "title": "Keep plan IDs stable across re-executions in Spark Connect Rust to reuse the server plan cache",
+   "body_200": "In the SPARK-60675 benchmark (https://github.com/apache/spark-connect-rust/pull/118), warmed aggregations over a 136 MB cached Arrow input took 3043.90 ms (median) with the Rust client and 2042.50 ms ",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60897",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60897",
+   "title": "Fix Hive 4 metastore clients failing with `No suitable driver` when another class loader initialized `DriverManager`",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "SQL"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60929",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60929",
+   "title": "next_day and last_day wrap around instead of failing when the result is later than the maximum DATE",
+   "body_200": "Spark stores a DATE as the Int number of days since 1970-01-01, so the supported range is -5877641-06-23 (Int.MinValue) to +5881580-07-11 (Int.MaxValue). {{next_day}} and {{last_day}} compute their re",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "SQL"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60928",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60928",
+   "title": "Upgrade Guava to 33.8.0-jre",
+   "body_200": "",
+   "type": "Dependency upgrade",
+   "priority": "Major",
+   "components": [
+    "Build"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60927",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60927",
+   "title": "Keep the keys of map values typed and in order in Spark Connect Rust",
+   "body_200": "PySpark Connect reads a map value into a dict of its entries, in the order that the server sent them, with keys of their own type. The Rust-backed Python client keeps a map value as string keys, sorte",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60926",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60926",
+   "title": "Push the filters of streaming queries down to the scans of Data Source V2 streaming sources",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "Structured Streaming"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60925",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60925",
+   "title": "Executors tab is empty in the Spark UI when spark-core runs on a non-filesystem classpath (OSGi/shaded), because REST API package scanning fails",
+   "body_200": "Description:\r\nh3. Problem\r\nThe Spark status REST API registers its JAX-RS resources via Jersey *package\r\nscanning*:\r\n\r\n\u00a0\r\n\r\n\u00a0 ApiRootResource.scala\u00a0 (context \"/api\"):\r\n\u00a0\u00a0\u00a0 holder.setInitParameter(Serv",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Bug"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60924",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60924",
+   "title": "Use GraphQL to count commits for post-merge CI sampling",
+   "body_200": "The master post-merge CI sampling job downloads the entire Spark Git history just to calculate git rev-list --count HEAD. This checkout runs on every master push, including the nine out of ten pushes ",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "Project Infra"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60923",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60923",
+   "title": "Upgrade the scheduled no-GIL Python build to Python 3.15",
+   "body_200": "Upgrade the scheduled no-GIL Python build from Python 3.14 to Python 3.15. Select the python-315-nogil image and python3.15t interpreter with PYTHON_GIL=0, and update the Dockerfile and infrastructure",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "Project Infra"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60922",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60922",
+   "title": "Construct GeometryType and GeographyType in Spark Connect Rust as PySpark does",
+   "body_200": "PySpark's {{GeometryType(srid)}} and {{GeographyType(srid)}} take an SRID that their spatial reference system mapper knows, or {{\"ANY\"}} for a mixed SRID, and raise {{ST_INVALID_SRID_VALUE}} for any o",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60916",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60916",
+   "title": "Parquet filter pushdown of IN (..., NULL) on a BOOLEAN column drops matching rows when the list is longer than spark.sql.parquet.pushdown.inFilterThreshold",
+   "body_200": "{code:python}\r\nfrom pyspark.sql import SparkSession\r\nspark = SparkSession.builder.getOrCreate()\r\npath = \"/tmp/bool_in_null\"\r\nspark.sql(\"SELECT * FROM VALUES (true), (false) AS t(b)\").coalesce(1).write",
+   "type": "Bug",
+   "priority": "Minor",
+   "components": [
+    "SQL"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60915",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60915",
+   "title": "Send the call sites of DataFrame API calls in Spark Connect Rust, so that errors carry DataFrame query contexts as in PySpark",
+   "body_200": "PySpark Connect records, for each expression that a function of {{pyspark.sql.functions}} or a {{Column}} operator builds, the name of the function and its call site in user code ({{_with_origin}} and",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60914",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60914",
+   "title": "YarnAllocator never removes a recommissioned node from decommissioningNodesCache, so a second decommissioning of the same node is ignored",
+   "body_200": "YarnAllocator keeps a \\{{decommissioningNodesCache}} (added in SPARK-39018) so that the driver is notified only once per node that enters the DECOMMISSIONING state. Hosts are only ever added to the ca",
+   "type": "Bug",
+   "priority": "Minor",
+   "components": [
+    "YARN"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60913",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60913",
+   "title": "Format spark.sql() queries with keyword arguments in Spark Connect Rust as PySpark does",
+   "body_200": "In PySpark Connect, the keyword arguments of {{SparkSession.sql(sqlQuery, args=None, **kwargs)}} format the query string, as {{str.format}} does: a DataFrame becomes a reference that the server resolv",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60910",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60910",
+   "title": "datediff silently wraps around on integer overflow",
+   "body_200": "{{datediff}} / {{date_diff}} subtract the two day counts as an {{INT}}, so a difference that does\r\nnot fit in an {{INT}} silently wraps around, with ANSI mode on or off and in both interpreted and\r\nge",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "SQL"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60908",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60908",
+   "title": "Infer createDataFrame types in Spark Connect Rust by merging all rows as PySpark does",
+   "body_200": "PySpark Connect infers the schema of local rows in {{createDataFrame}} by inferring each row's type and merging them ({{_infer_type}} and {{_merge_type}}). The Rust-backed Python client takes each top",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connect"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "SPARK-60905",
+   "source_url": "https://issues.apache.org/jira/browse/SPARK-60905",
+   "title": "Fix streaming query restarts from checkpoints before Spark 4.4 when a filter uses a Python UDF",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "Structured Streaming"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21413",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21413",
+   "title": "Remove onCompleteCallback from PersisterStateManager",
+   "body_200": "The onCompleteCallback in PersisterStateManagerHandler has never been used since it was added in KAFKA-17329 (2024). So it is time to cleanup :)\r\n\r\n\u00a0\r\n\r\n\u00a0\r\n{code:java}\r\n  \u00a0 public abstract class Persi",
+   "type": "Improvement",
+   "priority": "Trivial",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21410",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21410",
+   "title": "Log cleaner ignores a committed tombstone after an earlier aborted transaction of the same producer; the deleted key comes back",
+   "body_200": "On a compacted topic written by transactional producers, the log cleaner can ignore a tombstone (or a newer value) that a producer committed. It keeps the key's older value, removes the tombstone afte",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "log"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21403",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21403",
+   "title": "Add --mirror-state-decoder support to kafka-dump-log.sh",
+   "body_200": "Extend {{kafka-dump-log.sh}} with a {{--mirror-state-decoder}} flag to decode records from the {{__mirror_state}} internal topic.\r\n\r\n[https://cwiki.apache.org/confluence/spaces/KAFKA/pages/406620973/K",
+   "type": "Sub-task",
+   "priority": "Minor",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21398",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21398",
+   "title": "Fix the docs of UUIDSerializer",
+   "body_200": "\u00a0\r\n{code:java}\r\n/**\r\n\u00a0* \u00a0We are converting UUID to String before serializing. String encoding defaults to UTF8 and can be customized by setting\r\n\u00a0* \u00a0the property key.deserializer.encoding, value.deser",
+   "type": "Improvement",
+   "priority": "Trivial",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21395",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21395",
+   "title": "Backport fix for CVE-2026-111115",
+   "body_200": "Looks like KAFKA-21392 already covers the backport work as upstream commit [ea1f10a713|https://github.com/apache/kafka/commit/ea1f10a71306653fc9418a9bc1a835f8bdc32b8e] and [d89cb613d0|https://github.c",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21392",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21392",
+   "title": "Backport fix for CVE-2026-111108",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21390",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21390",
+   "title": "Backport fix for CVE-2026-110985",
+   "body_200": "Nothing to do as 3.9 is not affected",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Not A Problem",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21386",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21386",
+   "title": "Backport fix for CVE-2026-111073",
+   "body_200": "The fix was already backported to 3.9 in [https://github.com/apache/kafka/commit/1c85bc563121b0135e948328f54d939eaae3740b]\r\n\r\n\u00a0",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21385",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21385",
+   "title": "Backport fix for CVE-2026-110952",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Won't Do",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21383",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21383",
+   "title": "Backport fix for CVE-2026-111496",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21382",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21382",
+   "title": "Backport fix for CVE-2026-83525",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21379",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21379",
+   "title": "Add mirror coordinator record schemas and serde",
+   "body_200": "Add the version 0 MirrorPartitionState and LastMirrorEpochs\u00a0 key/value schemas for __mirror_state, as specified by [KIP-1279|https://cwiki.apache.org/confluence/spaces/KAFKA/pages/406620973/KIP-1279+C",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21376",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21376",
+   "title": "Move AdminUtils#fetchOrWaitForLeader to clients test fixtures and consolidate it with ClusterInstance#getLeaderBrokerId",
+   "body_200": "We have the test fixtures source set in clients now, so {{AdminUtils#fetchOrWaitForLeader}} can be moved there. Also, {{ClusterInstance#getLeaderBrokerId}} does the same thing but throws NPE when the ",
+   "type": "Improvement",
+   "priority": "Minor",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21370",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21370",
+   "title": "Return STREAMS_INVALID_TOPOLOGY_EPOCH instead of INVALID_REQUEST for topology epoch mismatches in streams groups",
+   "body_200": "KIP-1071 defines the error code STREAMS_INVALID_TOPOLOGY_EPOCH (131) for a member that sends a topology that doesn't match the group's topology at the same epoch. The error code and StreamsInvalidTopo",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "streams"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21368",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21368",
+   "title": "Missing InterfaceAudience.Public annotations",
+   "body_200": "KIP-1265 introduced @InterfaceAudience annotations for properly marking public interfaces. o.a.k.clients.CommonClientConfigs appears to have been missed. We should check for others too.",
+   "type": "Improvement",
+   "priority": "Minor",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "KAFKA-21431",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21431",
+   "title": "Update assignment in classic group heartbeat to consumer group",
+   "body_200": "A consumer group may contain only classic protocol members when downgrades are disabled. We must trigger delayed assignments on heartbeats to accommodate groups like these.\r\n\r\nThe impact isn't actuall",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "group-coordinator"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21430",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21430",
+   "title": "Include metadata offset in Metadata responses to help clients detect stale metadata",
+   "body_200": "*Background*\r\n\r\nIn KRaft mode, brokers may have applied the metadata log up to different offsets. As a result, a client may receive a Metadata response representing an older state than the information",
+   "type": "Improvement",
+   "priority": "Minor",
+   "components": [
+    "clients",
+    "core"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21429",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21429",
+   "title": "Add assignment failure rate metric",
+   "body_200": "Will require an update to KIP-1263 or a new KIP",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "group-coordinator"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21428",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21428",
+   "title": "Add assignment build time metric",
+   "body_200": "Will require an amendment to KIP-1263 or a new KIP",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "group-coordinator"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21427",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21427",
+   "title": "Expose per-task metrics to group coordinator executor completion callback",
+   "body_200": "... in order to log queue time, task time, completion queue time when an offloaded assignment completes.\r\n\r\nNote that we already calculate some of the metrics we want in {{CoordinatorBackgroundThreadP",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "group-coordinator"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21426",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21426",
+   "title": "kafka-features.sh upgrade --release-version upgrades kraft.version and converts static quorums to dynamic",
+   "body_200": "During an upgrade, after installing the new binaries, we instruct to run the \"bin/kafka-features.sh upgrade --release-version <version>\" command. [0]\r\n\r\nThis command upgrades all features including kr",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "kraft"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21425",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21425",
+   "title": "MAX_TIMESTAMP can return an offset below the log start offset",
+   "body_200": "After DeleteRecords advances the log start offset into a segment,\r\na MAX_TIMESTAMP lookup can return a logically deleted record because\r\nthe segment's cached maximum timestamp still includes that reco",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21424",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21424",
+   "title": "Revisit the delayed operation metrics in monitoring.md",
+   "body_200": "\u00a0\r\n{code:java}\r\nThe number of expired remote fetches per second. Omitting 'topic=(...)' will yield the all-topic rate\r\n</td> \u00a0\r\n<td>kafka.server:type=DelayedRemoteFetchMetrics,name=ExpiresPerSec,topic",
+   "type": "Improvement",
+   "priority": "Trivial",
+   "components": [],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21423",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21423",
+   "title": "Replace mkMap and mkEntry with Map.of",
+   "body_200": "KAFKA-21121 showed the drawback of mkMap: it silently de-duplicates keys, so a test may end up checking something different from what it intends. We should replace them with Map.of to get a more moder",
+   "type": "Improvement",
+   "priority": "Trivial",
+   "components": [],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21422",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21422",
+   "title": "One failing entry in a WriteTxnMarkers response shouldn't block the rest",
+   "body_200": "In [onComplete|https://github.com/apache/kafka/blob/6c3a5952a1a0a13d828a4d7ba6692a9b3da368e8/core/src/main/scala/kafka/coordinator/transaction/TransactionMarkerRequestCompletionHandler.scala#L94], we ",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21421",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21421",
+   "title": "ConfigDef.parse trims whitespace but raw config usage doesn't",
+   "body_200": "Discovered by [~xvrl]\r\n\r\nKAFKA-1057 introduced trimming of leading and trailing whitespace in config values in Kafka 0.9. In many places, we try to parse config values ourselves using\u00a0{{Boolean.parseB",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "config",
+    "connect",
+    "group-coordinator",
+    "streams"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21420",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21420",
+   "title": "Remove setGenerateCallback",
+   "body_200": "{{setGenerateCallback}} is a testing-only method which provides a way to observe the {{nodeRPCMap}} before generating the requests. However, the true issue we care about is whether those RPCs are batc",
+   "type": "Improvement",
+   "priority": "Minor",
+   "components": [],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21419",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21419",
+   "title": "KRaft controller drops still-adding replicas from addingReplicas when an in-progress reassignment is overridden",
+   "body_200": "When a partition reassignment is still in progress and a new reassignment for the same partition is submitted (for example with {{{}kafka-reassign-partitions.sh --execute --additional{}}}, which Cruis",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "controller",
+    "kraft"
+   ],
+   "status": "Patch Available",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21418",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21418",
+   "title": "Cleanup DelegationTokenCache and CredentialCache",
+   "body_200": "# the `tokenIdHmacCache` can be removed if `tokenCache` store `DelegationToken` instead of `TokenInformation`\r\n # the generic type parameter of CredentialCache has only ever been used with ScramCreden",
+   "type": "Improvement",
+   "priority": "Trivial",
+   "components": [],
+   "status": "In Progress",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "KAFKA-21417",
+   "source_url": "https://issues.apache.org/jira/browse/KAFKA-21417",
+   "title": "Backport fix for CVE-2026-114349",
+   "body_200": "",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41331",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41331",
+   "title": "Move python header installation to docker image",
+   "body_200": "currently there is a separate task in ci",
+   "type": "Technical Debt",
+   "priority": "Major",
+   "components": [
+    "Build System / CI"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41323",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41323",
+   "title": "Add a binary encoding for a VARIANT column in the raw format",
+   "body_200": "The {{raw}} format reads and writes a VARIANT column as a JSON document. The sink renders the value with {{Variant#toJson}} and the source parses it like {{PARSE_JSON}}. JSON has no type for dates, ti",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "Formats (JSON, Avro, Parquet, ORC, SequenceFile)",
+    "Table SQL / Runtime"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41317",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41317",
+   "title": "[pipeline-connector/kafka] NullPointerException when serializing REPLACE events in canal-json and debezium-json",
+   "body_200": "The Kafka pipeline sink fails with a NullPointerException when it receives a {{REPLACE}} event.\n\n{{CanalJsonSerializationSchema}} and {{DebeziumJsonSerializationSchema}} handle {{UPDATE}} and {{REPLAC",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Flink CDC"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41314",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41314",
+   "title": "Release Testing: Verify FLIP-591: Introducing Python DataFrame API in PyFlink",
+   "body_200": "Steps:\r\n\r\n- Follow the [pyflink-df-tests README|https://github.com/auroflow/pyflink-df-tests] to build Flink from the `release-2.4` branch, install the matching PyFlink packages in your Python environ",
+   "type": "Sub-task",
+   "priority": "Blocker",
+   "components": [],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41305",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41305",
+   "title": "Require UTF-8 for a VARIANT column in the raw format and parse it from bytes",
+   "body_200": "The {{raw}} format reads a VARIANT column by decoding the message with {{raw.charset}} into a {{String}} and parsing that text. With {{raw.line-delimiter}} it decodes the whole message, splits it, enc",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "Formats (JSON, Avro, Parquet, ORC, SequenceFile)",
+    "Table SQL / Runtime"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41298",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41298",
+   "title": "Document and test that JSON input is read only up to its first value",
+   "body_200": "{{PARSE_JSON}}, {{TRY_PARSE_JSON}}, the {{raw}} format's VARIANT column and the JSON functions read the first JSON value of their input and ignore what follows. This is the intended behavior, but no d",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "API / Core",
+    "Table SQL / Runtime"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41291",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41291",
+   "title": "Bump snappy-java to 1.1.10.12",
+   "body_200": "it has some security fixes\r\nmore details https://github.com/xerial/snappy-java/releases",
+   "type": "Technical Debt",
+   "priority": "Major",
+   "components": [
+    "Build System"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41281",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41281",
+   "title": "Allow CAST from a VARIANT timestamp to the other temporal types",
+   "body_200": "h3. Problem\n\nA cast from {{VARIANT}} accepts a timestamp only for its own type. A variant {{TIMESTAMP_LTZ}} casts to {{TIMESTAMP_LTZ(p)}} and fails for every other temporal target. With the session ti",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "Table SQL / API"
+   ],
+   "status": "Closed",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "FLINK-41280",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41280",
+   "title": "CAST of a TIMESTAMP before 1970 to DATE, TIME or a lower precision returns a wrong value",
+   "body_200": "h3. Problem\n\nThree cast paths divide the epoch milliseconds of a {{TIMESTAMP}} with {{/}} or {{%}}, which Java rounds toward zero. A {{TIMESTAMP}} before 1970 has negative epoch milliseconds, so it mo",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Table SQL / Planner",
+    "Table SQL / Runtime"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "FLINK-41277",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41277",
+   "title": "test_file_sink.sh hangs in the second OpenSSL linkage run",
+   "body_200": "{{test_file_sink.sh}} runs the test twice: first with dynamic, then with static OpenSSL linkage. stop_cluster doesn't stop every TaskManager from the first run. In the second run the test may kill one",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Build System / CI",
+    "Tests"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "FLINK-41276",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41276",
+   "title": "Make License check CI parallel ",
+   "body_200": "Currently it runs in a single thread and takes about 1h20min e.g. https://dev.azure.com/apache-flink/apache-flink/_build/results?buildId=80739&view=results",
+   "type": "Technical Debt",
+   "priority": "Major",
+   "components": [
+    "Build System / CI"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "FLINK-41275",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41275",
+   "title": "Start containers in e2e per class rather than per test in SQL e2e",
+   "body_200": "It will speed up e2e tests",
+   "type": "Technical Debt",
+   "priority": "Major",
+   "components": [
+    "Test Infrastructure",
+    "Tests"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "FLINK-41274",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41274",
+   "title": "Release Testing Verify: FLIP-565: Improve ProcessTableFunctions for late data handling and state access",
+   "body_200": "* Create a Flink SQL job that uses a PTF with broadcast tables, state and ValueView. E.g. implementing an rule based aggregation\r\n * Insert some rows and stop the job with a savepoint\r\n * Resume from ",
+   "type": "Sub-task",
+   "priority": "Blocker",
+   "components": [
+    "Tests"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "FLINK-41266",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41266",
+   "title": "Upgrade Java versions for CVE-2026-91403",
+   "body_200": "The OpenJDK Vulnerability Group published a security advisory on October 21, 2026, covering *CVE-2026-91403* in the {{java.security}} component.\r\n\r\nAccording to the advisory, multiple JDK versions are",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [],
+   "status": "Closed",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "FLINK-41260",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41260",
+   "title": "ARRAY_AGG/JSON_ARRAYAGG with ORDER BY ignores the ordering",
+   "body_200": "`ARRAY_AGG(x ORDER BY y)` and its sibling `JSON_ARRAY_AGG(...)` both pass SQL validation even though Flink does not support the ORDER BY clause in ARRAY_AGG/JSON_ARRAY_AGG, as the documentation says. ",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Table SQL / Planner"
+   ],
+   "status": "Resolved",
+   "resolution": "Fixed",
+   "created_month": "2026-10"
+  },
+  {
+   "key": "FLINK-41362",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41362",
+   "title": "Reject VARIANT in primary key columns",
+   "body_200": "Flink rejects {{VARIANT}} where a query needs equality, such as {{GROUP BY}}, {{DISTINCT}}, join keys and {{=}} (FLINK-40910). A {{PRIMARY KEY}} needs equality too, but {{DefaultSchemaResolver}} accep",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Table SQL / API"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41361",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41361",
+   "title": "Bound VARIANT object and array sizes by the value length before allocating",
+   "body_200": "A malformed VARIANT value whose object or array header claims more elements than its bytes hold makes readers allocate arrays of that size.\n\nExample: metadata {{01 00 00}} and value {{42 ff ff ff 7f}}",
+   "type": "Bug",
+   "priority": "Minor",
+   "components": [
+    "API / Core"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41360",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41360",
+   "title": "'raw.line-delimiter' leaves a U+FEFF on each value in UTF-16, does not unescape '\\n' and splits on an empty value",
+   "body_200": "The 'raw.line-delimiter' option from FLINK-39401 has three problems with a STRING column. Each one was reproduced through {{RawFormatFactory}} on master at c59810c04f8.\n\nh3. 1. UTF-16 leaves a U+FEFF ",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Formats (JSON, Avro, Parquet, ORC, SequenceFile)",
+    "Table SQL / Runtime"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41359",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41359",
+   "title": "ORC format: filter push-down on a DOUBLE column drops rows when the column holds NaN (orc-core 1.5.6, ORC-629)",
+   "body_200": "{code:sql}\r\nSET 'execution.runtime-mode' = 'batch';\r\nSET 'parallelism.default' = '1';\r\nCREATE TABLE o1 (x DOUBLE) WITH ('connector' = 'filesystem', 'path' = 'file:///tmp/o1', 'format' = 'orc');\r\nCREAT",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Formats (JSON, Avro, Parquet, ORC, SequenceFile)"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41358",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41358",
+   "title": "Streaming OVER window ordered by a non-time column (RANGE frame) drops all equal rows from the aggregate when one of them is retracted",
+   "body_200": "{code:python}\r\nfrom pyflink.table import EnvironmentSettings, TableEnvironment\r\nt_env = TableEnvironment.create(EnvironmentSettings.in_streaming_mode())\r\nt_env.get_config().set(\"parallelism.default\", ",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Table SQL / Runtime"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41357",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41357",
+   "title": "FLIP-608: Flink on Ray \u2014 Ray Resource Backend For Flink",
+   "body_200": "Umbrella issue for [FLIP-608: Flink on Ray \u2014 Ray Resource Backend For Flink|https://cwiki.apache.org/confluence/spaces/FLINK/pages/449286348/FLIP-608+Flink+on+Ray+%E2%80%94+Ray+Resource+Backend+For+Fl",
+   "type": "New Feature",
+   "priority": "Major",
+   "components": [
+    "Runtime / Coordination"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41356",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41356",
+   "title": "Support early fire in the async state interval join",
+   "body_200": "h2. Motivation\r\nFLINK-41355 adds async state versions of the SQL interval join, selected by table.exec.async-state.enabled, but keeps the synchronous functions for a join with the EARLY_FIRE hint (FLI",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "Table SQL / Planner",
+    "Table SQL / Runtime"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41355",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41355",
+   "title": "Introduce async state version of StreamExecIntervalJoin",
+   "body_200": "h2. Motivation\r\nFLIP-473 (FLINK-36157) moves SQL operators to the async state API, selected by table.exec.async-state.enabled. The interval join has no async version: StreamExecIntervalJoin always bui",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "Table SQL / Planner",
+    "Table SQL / Runtime"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41354",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41354",
+   "title": "Dispatcher never terminates when it is stopped while a cleanup retry is pending, so the next leader never starts",
+   "body_200": "If the Dispatcher is stopped while the cleanup of a globally terminated job is waiting for a retry, it never finishes stopping. With Kubernetes HA this leaves the JobManager holding the leader lease w",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Runtime / Coordination"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41353",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41353",
+   "title": "[Kafka] KafkaSource rejects auto.offset.reset=by_duration:<duration> since FLINK-39888",
+   "body_200": "Kafka 4.0 added a third reset strategy to auto.offset.reset, by_duration:<ISO-8601 duration> (KIP-1106). The connector already builds against kafka-clients 4.2.0, which accepts it. Starting with 5.1.0",
+   "type": "Bug",
+   "priority": "Major",
+   "components": [
+    "Connectors / Kafka"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41352",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41352",
+   "title": "[mongodb] Support change events larger than 16MB with $changeStreamSplitLargeEvent",
+   "body_200": "When a change event is larger than 16MB, e.g. an update whose looked-up full document ({{fullDocument: updateLookup}}) plus update description exceed the limit, MongoDB fails the getMore with BSONObje",
+   "type": "Improvement",
+   "priority": "Major",
+   "components": [
+    "Flink CDC"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41351",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41351",
+   "title": "Release Testing: Verify FLIP-578: In-place Table to Materialized Table conversion",
+   "body_200": "[FLIP-578|https://cwiki.apache.org/confluence/display/FLINK/FLIP-578%3A+In-place+Table+to+Materialized+Table+conversion] lets {{CREATE OR ALTER MATERIALIZED TABLE}} turn an existing regular table into",
+   "type": "Sub-task",
+   "priority": "Blocker",
+   "components": [
+    "Table SQL / Gateway"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41350",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41350",
+   "title": "A materialized table left SUSPENDED by a failed table conversion cannot be resumed",
+   "body_200": "When the refresh job of a converted table fails to start, the SQL Gateway keeps the materialized table and sets it to {{SUSPENDED}}, as documented. No job ever ran, so the table has no refresh handler",
+   "type": "Bug",
+   "priority": "Minor",
+   "components": [
+    "Table SQL / Gateway"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41349",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41349",
+   "title": "Document building and editing VARIANT values in Java",
+   "body_200": "Adds a guide for UDF and DataStream code that builds or edits a VARIANT with the API from FLINK-41338.\n\nScope:\n* How a builder works: handles, recorded edits, one write in build(), and a source value ",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "API / Core",
+    "Documentation"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "FLINK-41348",
+   "source_url": "https://issues.apache.org/jira/browse/FLINK-41348",
+   "title": "Merge nested VARIANT modification calls into one pass",
+   "body_200": "Each modification function reads a whole VARIANT and writes a new one. In a nested chain, each inner result is written only for the next call to read. A planner rule replaces the chain with one intern",
+   "type": "Sub-task",
+   "priority": "Major",
+   "components": [
+    "Table SQL / Planner"
+   ],
+   "status": "Open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "apache/airflow#76530",
+   "source_url": "https://github.com/apache/airflow/issues/76530",
+   "title": "Execution API re-runs fail_fast handling after it fails during a task state update",
+   "body_200": "### Under which category would you file this issue?\n\nAirflow Core\n\n### Apache Airflow version\n\nmain; the same code path is present in 3.3.2\n\n### What happened and how to reproduce it?\n\nFollow-up from ",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "kind:bug",
+    "needs-triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "apache/airflow#76529",
+   "source_url": "https://github.com/apache/airflow/issues/76529",
+   "title": "Scheduler exits when handle_failure raises for a single task instance",
+   "body_200": "### Under which category would you file this issue?\n\nAirflow Core\n\n### Apache Airflow version\n\nmain; the same code path is present in 3.3.2\n\n### What happened and how to reproduce it?\n\nFollow-up from ",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "kind:bug",
+    "needs-triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "apache/airflow#76520",
+   "source_url": "https://github.com/apache/airflow/issues/76520",
+   "title": "DateTimeSensorAsync with start_from_trigger=True waits for the wrong time when target_time is a naive datetime and the OS timezone differs from core.default_timezone",
+   "body_200": "### Under which category would you file this issue?\n\nProviders\n\n### Apache Airflow version\n\n3.3.2\n\n### What happened and how to reproduce it?\n\nI ran into this while using Airflow with `core.default_ti",
+   "type": "issue",
+   "priority": null,
+   "components": [],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "apache/airflow#76512",
+   "source_url": "https://github.com/apache/airflow/issues/76512",
+   "title": "Editing a Variable in the UI can move masked secrets between list items",
+   "body_200": "### Under which category would you file this issue?\n\nAirflow Core\n\n### Apache Airflow version\n\nmain and v3-4-test (adb86572b9)\n\n### What happened and how to reproduce it?\n\n#76012 restores masked value",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "kind:bug",
+    "needs-triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17040",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17040",
+   "title": "[Feature] Add a null-handling config for user-defined functions (RETURNS NULL ON NULL INPUT / CALLED ON NULL INPUT)",
+   "body_200": "### Which version of dbt is this feature for?\n\ndbt v2.x (the function configs are shared with dbt v1.x)\n\n### Describe the feature\n\ndbt functions can set `volatility`, but there is no way to set how th",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17038",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17038",
+   "title": "[v2 Bug] `source freshness` do not run in parallel (up to N `threads`) unlike on v1",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "type:bug",
+    "status:triage",
+    "area:adapters",
+    "engine:v2",
+    "source:customer",
+    "triage",
+    "snowflake",
+    "v2"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17037",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17037",
+   "title": "[Feature] Fusion Snowflake adapter: make driver HTTP retry limits (MaxRetryCount / retry timeout) configurable",
+   "body_200": "### Is this your first time submitting a feature request?\n\n- [x] I have read the [expectations for open source contributors](https://docs.getdbt.com/docs/contributing/oss-expectations)\n- [x] I have se",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17036",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17036",
+   "title": "[v2 Bug] Snowflake: static_analysis strict changes the timestamp type from dbt_utils.union_relations(), breaking downstream UNIONs",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "type:bug",
+    "adapter:snowflake",
+    "status:triage",
+    "area:adapters",
+    "engine:v2",
+    "source:customer",
+    "triage",
+    "snowflake",
+    "v2"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17035",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17035",
+   "title": "[v2 Bug] Snowflake: dbt seed rewrites \"YYYY-MM-DD HH:MM:SS.ff\" strings as ISO timestamps in an existing VARCHAR column",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "type:bug",
+    "adapter:snowflake",
+    "status:triage",
+    "area:adapters",
+    "engine:v2",
+    "source:customer",
+    "triage",
+    "snowflake",
+    "v2"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17031",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17031",
+   "title": "[v2 Bug] BigQuery get_dataset_location requires project-level metadata access unlike dbt v1",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "type:bug",
+    "status:triage",
+    "area:adapters",
+    "engine:v2",
+    "triage",
+    "bigquery",
+    "v2"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17029",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17029",
+   "title": "[v2 Bug] `pytz` is going to break in v1, but not in v2",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "type:bug",
+    "status:triage",
+    "engine:v2",
+    "triage",
+    "v2"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17028",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17028",
+   "title": "[1.x Bug] `pytz` is going to break in 2038",
+   "body_200": "### Is this a new bug in dbt-core?\n\n- [x] I believe this is a new bug in dbt-core\n- [x] I have searched the existing issues, and I could not find an existing issue for this bug\n\n### Current Behavior\n\n",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "type:bug",
+    "status:triage",
+    "engine:v1",
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17026",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17026",
+   "title": "[SQL] BigQuery multi-column UNPIVOT: all value columns inferred as the type of the last column",
+   "body_200": "### Before you submit\n\n- [x] I have searched the existing issues and could not find a duplicate\n\n### SQL that dbt Fusion doesn't understand\n\n```sql\nWITH src AS (\n  SELECT\n    DATE '2026-01-01' AS d1,\n",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "type:bug",
+    "status:triage",
+    "area:adapters",
+    "area:static-analysis",
+    "engine:v2",
+    "triage",
+    "bigquery",
+    "v2",
+    "SQL_understanding"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17025",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17025",
+   "title": "[v2 Bug] --use-v2-parser writes empty doc_blocks on nodes and columns in manifest.json",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17024",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17024",
+   "title": "[v2 Bug] Unit test expected rows lose a numeric column's precision and scale, so decimals are cast to integer",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "area:adapters",
+    "triage",
+    "postgres"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17023",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17023",
+   "title": "[v2 Bug] Foreign key `to: ref()` on versioned models does not create a DAG dependency (follow-up to #13975)",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "bug",
+   "priority": null,
+   "components": [
+    "type:bug",
+    "status:triage",
+    "area:adapters",
+    "engine:v2",
+    "triage",
+    "databricks",
+    "v2"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17013",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17013",
+   "title": "[PORT-OVER] Cache the new table before post-hooks when replacing another type",
+   "body_200": "Port of https://github.com/databricks/dbt-databricks/pull/1708, the follow-up to https://github.com/databricks/dbt-databricks/pull/1704.\n\nDatabricks table and incremental models never call `get_replac",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "area:adapters",
+    "adapter:databricks",
+    "engine:v2",
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17012",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17012",
+   "title": "[PORT-OVER] Cache the replaced relation before post-hooks",
+   "body_200": "Port of https://github.com/databricks/dbt-databricks/pull/1704.\n\nWhen a Databricks view, materialized view, streaming table, or metric view model replaces an existing relation of another type, the rel",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "area:adapters",
+    "adapter:databricks",
+    "engine:v2",
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17011",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17011",
+   "title": "[v2 Bug] [Databricks] Replacing a materialized view with a table or view fails because DESCRIBE reports it as MANAGED",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "area:adapters",
+    "adapter:databricks",
+    "engine:v2",
+    "triage",
+    "databricks"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17010",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17010",
+   "title": "[Feature] Postgres partial indexes: `where` condition in `indexes` config",
+   "body_200": "### Is this your first time submitting a feature request?\n\n- [x] I have read the [expectations for open source contributors](https://docs.getdbt.com/docs/contributing/oss-expectations)\n- [x] I have se",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "type:feature",
+    "status:triage",
+    "engine:v2",
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17009",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17009",
+   "title": "[v2 Bug] Python UDF from functions/ ships dbt scaffolding and build-time project identifiers in its deployed body",
+   "body_200": "### Summary\n\nFusion appends Python-model scaffolding to a BigQuery Python UDF built from a `functions/` resource. The scaffolding reaches the deployed function body. dbt-core emits only the user code.",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17008",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17008",
+   "title": "[Feature] Support table_format: iceberg for dbt-redshift",
+   "body_200": "### Describe the feature\n\nAdd support for the `table_format: iceberg` config to dbt-redshift, the same way it already works for Databricks, Snowflake, Spark, and DuckDB:\n\n```sql\n{{\n  config(\n    mater",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "type:feature",
+    "adapter:redshift",
+    "engine:v2",
+    "proj:catalog-v2"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17007",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17007",
+   "title": "[v2 Bug] Unit test requires the fixture-replaced relation to exist in the warehouse",
+   "body_200": "### Summary\n\nDuring unit test schema inference, Fusion resolves and introspects a relation that a `given` fixture replaces. The relation must exist in the warehouse, or the unit test fails. dbt-core d",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17005",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17005",
+   "title": "[PORT-OVER] Unset tags on columns removed by a Databricks table or full-refresh replace",
+   "body_200": "Port of https://github.com/databricks/dbt-databricks/pull/1707 (resolves databricks/dbt-databricks#1684 there).\n\nUnity Catalog rejects any DDL that removes a column carrying a governed tag with `CANNO",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "area:adapters",
+    "adapter:databricks",
+    "engine:v2",
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17003",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17003",
+   "title": "[v2 Bug] The Fusion JSON schema for dbt_project.yml rejects Jinja in boolean configs such as +enabled",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "adapter:snowflake",
+    "area:adapters",
+    "engine:v2",
+    "triage",
+    "snowflake"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17002",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17002",
+   "title": "[v2 Bug] The Fusion JSON schema for profiles.yml rejects every profile",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "area:adapters",
+    "triage",
+    "duckdb"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  },
+  {
+   "key": "dbt-labs/dbt-core#17001",
+   "source_url": "https://github.com/dbt-labs/dbt/issues/17001",
+   "title": "[v2 Bug] Reusing the partial-parse cache gives hooks an empty `config.dependencies` (breaks elementary on `docs generate`)",
+   "body_200": "### Is this a new bug in dbt v2.x compared to the latest version of dbt v1.x?\n\n- [x] I believe this is a new bug in dbt v2.x\n- [x] I have searched the existing issues and could not find a duplicate\n\n#",
+   "type": "issue",
+   "priority": null,
+   "components": [
+    "triage"
+   ],
+   "status": "open",
+   "resolution": null,
+   "created_month": "2026-11"
+  }
+ ]
+}

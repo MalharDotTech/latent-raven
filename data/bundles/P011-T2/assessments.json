@@ -1,0 +1,15 @@
+{
+  "results": [
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Data engineering return-to-work check",
+      "skill_text": "Python",
+      "date": "2026-02-11",
+      "raw_score_pct": 78,
+      "percentile": 68,
+      "vendor_proficiency_label": "Proficient",
+      "proctoring_flags": [],
+      "reviewer_notes": "Parser task passed. New schema helper needed orientation; coding tests completed without hints."
+    }
+  ]
+}

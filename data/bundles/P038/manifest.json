@@ -1,0 +1,36 @@
+{
+  "person_ref": "P038",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-12754",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_devansh-sahu-kc_1",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P038",
+      "received": "2026-10-12",
+      "original_format": "scanned_pdf",
+      "extraction_quality": "low"
+    },
+    {
+      "source_id": "gh_devansh-sahu-kc",
+      "source_type": "github",
+      "path": "github.json"
+    },
+    {
+      "source_id": "jira_KC-12754",
+      "source_type": "jira",
+      "path": "jira.json"
+    },
+    {
+      "source_id": "lms_KC-12754",
+      "source_type": "lms",
+      "path": "lms.json"
+    }
+  ]
+}

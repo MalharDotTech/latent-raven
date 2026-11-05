@@ -1,0 +1,404 @@
+{
+ "pid": "P001",
+ "schema": "truth-v2",
+ "summary": "Consistent, honest senior DE. Claims match work. Serves as the control: clean multi-source agreement, a verified cert and an assessment in line with the work record. Only quirk is two CV versions from one lineage.",
+ "archetype": "control_positive_senior_de",
+ "batch": "A",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "python",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": 3,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "gh_psharma-kc: merged data-platform Python PRs every year 2022-2026 incl. production fixes (late-file backfill, settlement skew, backfill overlap guard); jira_priya.sharma: resolved DATA bugs in 3+ months; tara_KC-11204: Python Advanced 82% (2026-04). Floor 3 from work in 3+ months; ceiling 4 (reviews) -> floor.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:data-platform PRs",
+    "tara:python",
+    "cv_v2:Experience/Kestrel"
+   ],
+   "why": "Years of merged Python changes, reviews and prod fixes; assessment agrees; no evidence of teaching Python patterns beyond data repo"
+  },
+  {
+   "skill_id": "pyspark",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "gh_psharma-kc: partitioned parquet writer, settlement-join salting skew fix, compaction DAG, spark session refactor (2023-2024), shuffle tuning (2026-04); jira_priya.sharma: settlement join skew OOM bug; cv_2026_03 runtime cut via partition pruning/broadcast joins. Work at level 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "github:#recon v2 writer, skew fix",
+    "jira:DATA settlement skew"
+   ],
+   "why": "Maintains production PySpark jobs, fixed skew and small-file issues"
+  },
+  {
+   "skill_id": "spark",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "gh_psharma-kc: skew salting fix, small-file compaction, partition pruning fix (2024-08), shuffle partition tuning (2026-04); jira_priya.sharma: events_silver full-scan bug, skew OOM bug. Execution-level tuning across 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "github:shuffle partition tuning",
+    "jira:DATA events_silver"
+   ],
+   "why": "Tuning and execution-plan level work on prod jobs"
+  },
+  {
+   "skill_id": "airflow",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 4,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "doc_DATA-airflow-dag-standards: authored DAG standards enforced by dag-lint + CI (212 views, retry/sensor rules); gh_psharma-kc: Airflow 2 upgrade PRs, lint-rules PR, Airflow review comments (task_id history, retries=0, xcom DataFrame); jira_priya.sharma: Airflow 2 upgrade epic. Level 4 backed by work + authored groups.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:DATA-airflow-dag-standards",
+    "github:airflow2 PRs",
+    "github:reviews"
+   ],
+   "why": "Led the 2.x upgrade, wrote standards adopted by lint + CI, reviews peers DAGs"
+  },
+  {
+   "skill_id": "aws",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "certs_KC-11204: DVA-C02 verified, current to 2027-03; gh_psharma-kc: infra-live Glue catalog and least-privilege IAM role PRs, S3-based pipelines on-call; reviews catching broad bucket policy; cv_2026_03 S3/Glue/EMR/IAM. Two groups at 2, work shows independent S3/IAM fixes -> 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "certs:DVA-C02 verified",
+    "github:infra-live iam/glue"
+   ],
+   "why": "S3/Glue/IAM in production; cert current and verified but cert alone not the basis"
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": 3,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "gh_psharma-kc: SQL in incremental merge, partition-pruning predicate fix, idempotent load, partition spec change (2024-2026); tara_KC-11204: SQL Intermediate 74% (2026-04) supports floor. Work at level 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "tara:sql",
+    "github:.sql files"
+   ],
+   "why": "Daily SQL on Athena/Snowflake, merge logic"
+  },
+  {
+   "skill_id": "data_modeling",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "No explicit modelling claim in cv_2022_10/cv_2026_03 or hcm; only inferred from gh_psharma-kc schema-evolution and partition-spec PRs (one group). Mapping and level both uncertain (2 vs 3).",
+    "missing_source": "design review records / ARCH data model reviews"
+   },
+   "last_used": "2025-06",
+   "evidence_refs": [
+    "github:schema evolution PR"
+   ],
+   "why": "Modelling decisions mostly follow lead architect; selfperceived higher"
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "gh_psharma-kc reviews_given: ~140-180 reviews/yr 2023-2026 with defect catches (driver collect, empty-partition test, tiny files, broad bucket policy, real S3 in tests). Independent review across 3+ months; cv_2026_03 claims reviewer role.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:reviews_given"
+   ],
+   "why": "Substantive review threads that change code, ~150 per year"
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "doc_DATA-airflow-dag-standards: authored standards page (2024-10, edited 2026-06, 212 views, enforced by lint/CI) + jira_priya.sharma DATA-2865 'Write DAG authoring standards page'. Authored + work groups at 2; level 3 needs user task validation, not shown. Floor 2, ceiling 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-06",
+   "evidence_refs": [
+    "doc:DATA-airflow-dag-standards"
+   ],
+   "why": "Authored standards page with real usage"
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Docker appears only in the cv_2026_03 skills line; no Dockerfile PRs in gh_psharma-kc, no tickets. Listed only.",
+    "missing_source": "GitHub Dockerfile/CI changes"
+   },
+   "last_used": "2025-02",
+   "evidence_refs": [
+    "cv_v2:Skills"
+   ],
+   "why": "Thin: local images for tests, little operational evidence"
+  },
+  {
+   "skill_id": "terraform",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "gh_psharma-kc: infra-live Terraform PRs (Glue catalog db 2023-07, least-priv IAM role 2025-01) merged by others with review comments; cv_2026_03 'Terraform (basic)'. Two groups at level 2; reviewed changes = level 2 line.",
+    "missing_source": null
+   },
+   "last_used": "2025-01",
+   "evidence_refs": [
+    "github:infra-live PRs"
+   ],
+   "why": "Three small IAM/Glue changes under review guidance"
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Kubernetes (basic)",
+   "mapped_skill_id": "kubernetes",
+   "has_skill": false,
+   "why": "listed in the 2026 CV only; no manifests, no tickets, no course",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2026_03 lists 'Kubernetes (basic)'; nothing else in any source. Maps correctly but listed-only.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Hive, Hadoop",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "2020-22 Infosys era only; no taxonomy skill; dated",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2022_10/cv_2026_03 Infosys block mentions Hive/Hadoop; no taxonomy skill.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "dbt (reading/reviewing)",
+   "mapped_skill_id": "dbt",
+   "has_skill": false,
+   "why": "one source-definition PR and a few review comments; not authoring models",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2026_03 'dbt (reading/reviewing)'; gh_psharma-kc one analytics-dbt source PR and one review comment. No model authoring.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "none:cv_lineage_duplicate",
+   "s11_row": "duplicate_counting",
+   "skill_id": "airflow",
+   "plant": "cv_v1 (2022) and cv_v2 (2026) share lineage_key cv-P001 and carry the same Infosys block verbatim, so Airflow/PySpark mentions appear in both.",
+   "expected_engine_behavior": "send_at_level_4",
+   "evidence_expectation": "cv_2022_10 and cv_2026_03 share lineage_key cv-P001: count as one self-stated record; the 2022 'basic DAGs' line is superseded, not a contradiction.",
+   "v1_expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F18",
+   "s11_row": "wrong_person",
+   "skill_id": "python",
+   "plant": "Same display name as P002 (HR Business Partner, priya.sharma2@). Only this record has github/jira/Tara data.",
+   "expected_engine_behavior": "send_at_level_3",
+   "evidence_expectation": "Join by employee_id KC-11204 / linked_employee_id; never merge P002 (KC-different, priya.sharma2@) by name.",
+   "v1_expected_engine_behavior": "join_neither"
+  },
+  {
+   "fault_id": "F10",
+   "s11_row": "wrong_person",
+   "skill_id": "aws",
+   "plant": "Three dependabot-authored bump PRs in github.json carry merged_by self; they are not her work.",
+   "expected_engine_behavior": "send_at_level_3",
+   "evidence_expectation": "Bot-authored bump PRs (boto3, airflow-providers-amazon, renovate) merged_by self must not be extracted as her work.",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F16",
+   "s11_row": "wrong_mapping",
+   "skill_id": "python",
+   "plant": "Jira issues titled 'Fix bug' with component 'General' (two of them).",
+   "expected_engine_behavior": "send_at_level_3",
+   "evidence_expectation": "'Fix bug' tickets with component General must not be mapped to any skill.",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F01",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "kubernetes",
+   "plant": "'Kubernetes (basic)' appears in the CV v2 skills list with no corroboration.",
+   "expected_engine_behavior": "hold"
+  }
+ ],
+ "unmatched_skills": [
+  "Hive",
+  "Shell scripting"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.8,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Honest; may push back if offered level 4 for Python; accepts Airflow 4 readily"
+ },
+ "messaging_allowed": true
+}

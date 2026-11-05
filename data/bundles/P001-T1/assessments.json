@@ -1,0 +1,26 @@
+{
+  "assessments": [
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Python (Advanced) - Data Engineering",
+      "skill_text": "Python",
+      "date": "2026-04-16",
+      "raw_score_pct": 82,
+      "percentile": 88,
+      "vendor_proficiency_label": "Advanced",
+      "proctoring_flags": []
+    },
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "SQL (Intermediate)",
+      "skill_text": "SQL",
+      "date": "2026-04-16",
+      "raw_score_pct": 74,
+      "percentile": 71,
+      "vendor_proficiency_label": "Intermediate",
+      "proctoring_flags": [
+        "tab_switch:1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1006 @@
+{
+  "assignee": "arjun.nair",
+  "records": [
+    {
+      "number": "RITM0005030",
+      "short_description": "Laptop and access request - new joiner",
+      "category": "Hardware",
+      "assignment_group": "IT Helpdesk",
+      "resolved_by_self": false,
+      "resolution_notes_excerpt": "Standard onboarding.",
+      "reassignment_count": 0,
+      "opened": "2022-01-03",
+      "resolved": "2022-01-03",
+      "priority": "4 - Low"
+    },
+    {
+      "number": "INC0002736",
+      "short_description": "Recon report not generating for tenant",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Re-ran recon job for the affected merchant account. Matched counts verified. Customer informed.",
+      "reassignment_count": 0,
+      "opened": "2022-02-15",
+      "resolved": "2022-02-15",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0002682",
+      "short_description": "Unable to login - SSO redirect loop",
+      "category": "Access",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Followed KB0010342. Cleared cache and asked customer to re-login. Working now.",
+      "reassignment_count": 0,
+      "opened": "2022-02-01",
+      "resolved": "2022-02-01",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0002789",
+      "short_description": "Settlement file upload failed",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "File had BOM char at start. Removed and re-uploaded as per KB0010388.",
+      "reassignment_count": 0,
+      "opened": "2022-03-03",
+      "resolved": "2022-03-03",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0002847",
+      "short_description": "Invoice PDF missing logo",
+      "category": "Billing",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Issue resolved. Confirmed with customer over call. Closing the ticket.",
+      "reassignment_count": 0,
+      "opened": "2022-04-15",
+      "resolved": "2022-04-15",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0002891",
+      "short_description": "Webhook not firing for payment.captured",
+      "category": "API",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Customer endpoint returned 403. Informed customer to whitelist our IPs. Closed after confirmation.",
+      "reassignment_count": 0,
+      "opened": "2022-05-10",
+      "resolved": "2022-05-10",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0002945",
+      "short_description": "Recon dashboard shows yesterdays data",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": false,
+      "resolution_notes_excerpt": "Re-ran recon job for the affected merchant account. Matched counts verified. Customer informed.",
+      "reassignment_count": 1,
+      "opened": "2022-06-17",
+      "resolved": "2022-06-20",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0002982",
+      "short_description": "API 429 errors in prod for merchant 4471",
+      "category": "API",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Rate limit raised for tenant as approved by CSM (see comments).",
+      "reassignment_count": 1,
+      "opened": "2022-07-21",
+      "resolved": "2022-07-22",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0003060",
+      "short_description": "Export to CSV timeout (large date range)",
+      "category": "Reports",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Asked customer to split range to 7 days. Raised BILL ticket for async export.",
+      "reassignment_count": 0,
+      "opened": "2022-09-02",
+      "resolved": "2022-09-02",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0003162",
+      "short_description": "Duplicate invoice generated for same period",
+      "category": "Billing",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": false,
+      "resolution_notes_excerpt": "Duplicate voided via admin console. RCA pending from engineering.",
+      "reassignment_count": 2,
+      "opened": "2022-11-22",
+      "resolved": "2022-11-22",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0003210",
+      "short_description": "Recon job stuck in RUNNING for 6h",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Worker was hung. Restarted recon-worker from ops console per RB-114. Job completed on retry.",
+      "reassignment_count": 0,
+      "opened": "2023-01-05",
+      "resolved": "2023-01-05",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0003275",
+      "short_description": "Tenant on EU region slow response",
+      "category": "Performance",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": false,
+      "resolution_notes_excerpt": "Issue resolved. Confirmed with customer over call. Closing the ticket.",
+      "reassignment_count": 2,
+      "opened": "2023-02-02",
+      "resolved": "2023-02-02",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0003340",
+      "short_description": "Bank statement parser fails for HDFC csv",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Format change from bank (extra header row). Config updated for parser profile, tested with sample.",
+      "reassignment_count": 0,
+      "opened": "2023-03-23",
+      "resolved": "2023-03-27",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0003398",
+      "short_description": "Login failed MFA code not received",
+      "category": "Access",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Followed KB0010342. Cleared cache and asked customer to re-login. Working now.",
+      "reassignment_count": 0,
+      "opened": "2023-05-02",
+      "resolved": "2023-05-02",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0003494",
+      "short_description": "Refund API returns 500",
+      "category": "API",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Reproduced in staging with customer payload. Null in optional field. Raised RECON ticket, workaround shared with customer.",
+      "reassignment_count": 0,
+      "opened": "2023-07-05",
+      "resolved": "2023-07-05",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0003567",
+      "short_description": "Scheduled report email not received",
+      "category": "Reports",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Mail bounced - customer mailbox full. Informed customer.",
+      "reassignment_count": 0,
+      "opened": "2023-08-14",
+      "resolved": "2023-08-14",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0003665",
+      "short_description": "Pod CrashLoopBackOff for tenant cluster tc-eu-03",
+      "category": "Platform",
+      "assignment_group": "Platform SRE",
+      "resolved_by_self": false,
+      "resolution_notes_excerpt": "Not in my access. Assigned to Platform SRE queue. Customer updated.",
+      "reassignment_count": 1,
+      "opened": "2023-09-07",
+      "resolved": "2023-09-07",
+      "priority": "1 - Critical"
+    },
+    {
+      "number": "INC0003795",
+      "short_description": "Unmatched transactions count mismatch with ERP",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Rule priority issue in matching config. Reordered rule 4 and 5 for tenant, reran. Variance 0.",
+      "reassignment_count": 0,
+      "opened": "2023-10-27",
+      "resolved": "2023-10-27",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0003881",
+      "short_description": "Ledger API timeout on bulk post",
+      "category": "API",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Batch size 5000 too high. Advised 500. Customer confirmed ok.",
+      "reassignment_count": 0,
+      "opened": "2023-11-22",
+      "resolved": "2023-11-24",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0004069",
+      "short_description": "Month end close report totals differ from dashboard",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Timezone cutoff difference (IST vs UTC). Explained to customer and shared KB.",
+      "reassignment_count": 0,
+      "opened": "2024-01-05",
+      "resolved": "2024-01-05",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0004179",
+      "short_description": "Cannot add new user - seat limit",
+      "category": "Access",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Seat limit reached per contract. Routed to CSM for upsell.",
+      "reassignment_count": 0,
+      "opened": "2024-02-06",
+      "resolved": "2024-02-08",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0004261",
+      "short_description": "Recon worker restart needed - memory",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Restarted recon-worker deployment as per RB-114 (rollout restart via ops console). Monitored 30 min.",
+      "reassignment_count": 0,
+      "opened": "2024-03-13",
+      "resolved": "2024-03-13",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0004361",
+      "short_description": "Invoice tax calculation wrong for Karnataka",
+      "category": "Billing",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": false,
+      "resolution_notes_excerpt": "Tax rule table outdated. Engineering patch BILL ticket linked. Credit note issued by finance.",
+      "reassignment_count": 2,
+      "opened": "2024-04-15",
+      "resolved": "2024-04-15",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0004506",
+      "short_description": "SFTP connection refused",
+      "category": "Integration",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Customer key rotated. Updated authorized keys with customer, tested upload.",
+      "reassignment_count": 0,
+      "opened": "2024-05-17",
+      "resolved": "2024-05-17",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0004595",
+      "short_description": "Duplicate webhook events",
+      "category": "API",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Retries from our side after customer 5xx. Explained idempotency key usage.",
+      "reassignment_count": 0,
+      "opened": "2024-06-13",
+      "resolved": "2024-06-13",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0004622",
+      "short_description": "Unable to login - SSO redirect loop",
+      "category": "Access",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Followed KB0010342. Cleared cache and asked customer to re-login. Working now.",
+      "reassignment_count": 0,
+      "opened": "2024-07-02",
+      "resolved": "2024-07-02",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0004727",
+      "short_description": "P1 - recon pipeline delayed for all tenants",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Major incident bridge. Comms owner: updates every 30 min to affected customers. Root cause upstream queue lag, Platform fixed. See PIR.",
+      "reassignment_count": 1,
+      "opened": "2024-08-06",
+      "resolved": "2024-08-06",
+      "priority": "1 - Critical"
+    },
+    {
+      "number": "INC0004849",
+      "short_description": "Report scheduler skipping weekends",
+      "category": "Reports",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Issue resolved. Confirmed with customer over call. Closing the ticket.",
+      "reassignment_count": 0,
+      "opened": "2024-09-17",
+      "resolved": "2024-09-17",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0004965",
+      "short_description": "API key rotation request",
+      "category": "Access",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Rotated key via admin console, shared securely.",
+      "reassignment_count": 0,
+      "opened": "2024-10-15",
+      "resolved": "2024-10-15",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "RITM0005941",
+      "short_description": "Assignment rule: route EU tenant recon incidents to Berlin shift",
+      "category": "Workflow change",
+      "assignment_group": "ITSM Admin",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Rule drafted in sub-prod, tested with 6 sample tickets, approved by queue manager, moved to prod via update set.",
+      "reassignment_count": 0,
+      "opened": "2024-10-21",
+      "resolved": "2024-10-21",
+      "priority": "4 - Low"
+    },
+    {
+      "number": "INC0005051",
+      "short_description": "Settlement mismatch of 2 txns",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Re-ran recon job for the affected merchant account. Matched counts verified. Customer informed.",
+      "reassignment_count": 0,
+      "opened": "2024-11-13",
+      "resolved": "2024-11-13",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0005254",
+      "short_description": "Data export missing columns after upgrade",
+      "category": "Reports",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Known issue in release 24.12. Hotfix shipped, re-exported.",
+      "reassignment_count": 0,
+      "opened": "2025-01-01",
+      "resolved": "2025-01-01",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0005392",
+      "short_description": "Customer asks for audit log older than 90 days",
+      "category": "Compliance",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Pulled from archive via runbook RB-052. Delivered securely.",
+      "reassignment_count": 0,
+      "opened": "2025-02-11",
+      "resolved": "2025-02-12",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0005458",
+      "short_description": "Pod restart loop for tenant cluster tc-us-01",
+      "category": "Platform",
+      "assignment_group": "Platform SRE",
+      "resolved_by_self": false,
+      "resolution_notes_excerpt": "Platform SRE took over. Customer updated every hour.",
+      "reassignment_count": 1,
+      "opened": "2025-03-06",
+      "resolved": "2025-03-06",
+      "priority": "1 - Critical"
+    },
+    {
+      "number": "INC0005646",
+      "short_description": "Recon rule not matching partial payments",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Added tolerance rule 0.5 percent as requested by customer finance. Tested on last month data.",
+      "reassignment_count": 0,
+      "opened": "2025-04-17",
+      "resolved": "2025-04-21",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "RITM0006202",
+      "short_description": "Add category Integration - Bank Feed to incident form",
+      "category": "Workflow change",
+      "assignment_group": "ITSM Admin",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Choice added in sub-prod, approved, promoted.",
+      "reassignment_count": 0,
+      "opened": "2025-04-23",
+      "resolved": "2025-04-23",
+      "priority": "4 - Low"
+    },
+    {
+      "number": "INC0005820",
+      "short_description": "Invoice email goes to spam",
+      "category": "Billing",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "SPF record on customer domain missing. Shared DNS record details.",
+      "reassignment_count": 0,
+      "opened": "2025-05-23",
+      "resolved": "2025-05-23",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0005935",
+      "short_description": "Bulk upload stuck at 87 percent",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Re-ran recon job for the affected merchant account. Matched counts verified. Customer informed.",
+      "reassignment_count": 0,
+      "opened": "2025-06-26",
+      "resolved": "2025-06-26",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0006020",
+      "short_description": "Unable to login - SSO redirect loop",
+      "category": "Access",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Followed KB0010342. Cleared cache and asked customer to re-login. Working now.",
+      "reassignment_count": 0,
+      "opened": "2025-07-21",
+      "resolved": "2025-07-22",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0006132",
+      "short_description": "Ledger sync delay > 15 min",
+      "category": "API",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Queue lag during peak. Observed normal after 20 min. Raised PLAT ticket for alert threshold.",
+      "reassignment_count": 0,
+      "opened": "2025-08-14",
+      "resolved": "2025-08-14",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0006213",
+      "short_description": "Duplicate settlement posted",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Reversal posted through admin console after finance approval. RCA sent.",
+      "reassignment_count": 2,
+      "opened": "2025-09-10",
+      "resolved": "2025-09-12",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0006275",
+      "short_description": "Webhook signature mismatch",
+      "category": "API",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Customer was verifying with old secret. Guided to new secret.",
+      "reassignment_count": 0,
+      "opened": "2025-10-02",
+      "resolved": "2025-10-02",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0006398",
+      "short_description": "Dashboard blank on Safari",
+      "category": "Reports",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Known UI bug WEB ticket. Workaround use Chrome.",
+      "reassignment_count": 0,
+      "opened": "2025-11-04",
+      "resolved": "2025-11-06",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0006543",
+      "short_description": "Year end statement generation slow",
+      "category": "Reports",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Large tenants queued behind. Prioritised job via ops console.",
+      "reassignment_count": 0,
+      "opened": "2025-12-25",
+      "resolved": "2025-12-25",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0006609",
+      "short_description": "Recon job stuck in RUNNING for 5h",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Worker was hung. Restarted recon-worker from ops console per RB-114. Job completed on retry.",
+      "reassignment_count": 0,
+      "opened": "2026-01-06",
+      "resolved": "2026-01-06",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0006710",
+      "short_description": "Bank feed missing for 2 days",
+      "category": "Integration",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Bank API was down, backfilled when restored. Verified counts.",
+      "reassignment_count": 0,
+      "opened": "2026-02-10",
+      "resolved": "2026-02-10",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0006863",
+      "short_description": "Cannot see sub-account in hierarchy",
+      "category": "Access",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Permission mapping missing, added role. Customer confirmed.",
+      "reassignment_count": 0,
+      "opened": "2026-03-16",
+      "resolved": "2026-03-16",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0006960",
+      "short_description": "EU tenant data residency question",
+      "category": "Compliance",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Shared policy doc. Routed to CSM and Security for formal reply.",
+      "reassignment_count": 1,
+      "opened": "2026-04-10",
+      "resolved": "2026-04-10",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0007089",
+      "short_description": "Refund status stuck in PENDING",
+      "category": "Billing",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Gateway callback missed. Re-synced status via admin tool, 14 refunds fixed.",
+      "reassignment_count": 0,
+      "opened": "2026-05-22",
+      "resolved": "2026-05-22",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0007131",
+      "short_description": "Unable to login - SSO redirect loop",
+      "category": "Access",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Followed KB0010342. Cleared cache and asked customer to re-login. Working now.",
+      "reassignment_count": 0,
+      "opened": "2026-06-10",
+      "resolved": "2026-06-10",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0007210",
+      "short_description": "Settlement file upload failed",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "File had BOM char at start. Removed and re-uploaded as per KB0010388.",
+      "reassignment_count": 0,
+      "opened": "2026-07-13",
+      "resolved": "2026-07-14",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0007306",
+      "short_description": "Node memory pressure alert on tenant cluster tc-in-02",
+      "category": "Platform",
+      "assignment_group": "Platform SRE",
+      "resolved_by_self": false,
+      "resolution_notes_excerpt": "Platform SRE queue. Customer updated.",
+      "reassignment_count": 1,
+      "opened": "2026-08-13",
+      "resolved": "2026-08-13",
+      "priority": "2 - High"
+    },
+    {
+      "number": "INC0007362",
+      "short_description": "Ledger report differs from bank statement by 1 txn",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Timing difference, txn posted next day. Explained and closed.",
+      "reassignment_count": 0,
+      "opened": "2026-09-17",
+      "resolved": "2026-09-17",
+      "priority": "3 - Moderate"
+    },
+    {
+      "number": "INC0007493",
+      "short_description": "Recon dashboard shows yesterdays data",
+      "category": "Reconciliation",
+      "assignment_group": "Support L2 Pune",
+      "resolved_by_self": true,
+      "resolution_notes_excerpt": "Re-ran recon job for the affected merchant account. Matched counts verified. Customer informed.",
+      "reassignment_count": 0,
+      "opened": "2026-10-16",
+      "resolved": "2026-10-16",
+      "priority": "3 - Moderate"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-01",
+      "incidents_resolved_by_self": 17,
+      "incidents_assigned": 42,
+      "reassigned_out": 10,
+      "ritm_raised": 1
+    },
+    {
+      "month": "2022-02",
+      "incidents_resolved_by_self": 25,
+      "incidents_assigned": 39,
+      "reassigned_out": 10
+    },
+    {
+      "month": "2022-03",
+      "incidents_resolved_by_self": 18,
+      "incidents_assigned": 28,
+      "reassigned_out": 7
+    },
+    {
+      "month": "2022-04",
+      "incidents_resolved_by_self": 37,
+      "incidents_assigned": 62,
+      "reassigned_out": 9
+    },
+    {
+      "month": "2022-05",
+      "incidents_resolved_by_self": 23,
+      "incidents_assigned": 64,
+      "reassigned_out": 5
+    },
+    {
+      "month": "2022-06",
+      "incidents_resolved_by_self": 37,
+      "incidents_assigned": 59,
+      "reassigned_out": 8
+    },
+    {
+      "month": "2022-07",
+      "incidents_resolved_by_self": 49,
+      "incidents_assigned": 69,
+      "reassigned_out": 18
+    },
+    {
+      "month": "2022-08",
+      "incidents_resolved_by_self": 61,
+      "incidents_assigned": 69,
+      "reassigned_out": 4
+    },
+    {
+      "month": "2022-09",
+      "incidents_resolved_by_self": 66,
+      "incidents_assigned": 95,
+      "reassigned_out": 19
+    },
+    {
+      "month": "2022-10",
+      "incidents_resolved_by_self": 68,
+      "incidents_assigned": 68,
+      "reassigned_out": 7
+    },
+    {
+      "month": "2022-11",
+      "incidents_resolved_by_self": 52,
+      "incidents_assigned": 63,
+      "reassigned_out": 4
+    },
+    {
+      "month": "2022-12",
+      "incidents_resolved_by_self": 63,
+      "incidents_assigned": 90,
+      "reassigned_out": 4
+    },
+    {
+      "month": "2023-01",
+      "incidents_resolved_by_self": 51,
+      "incidents_assigned": 54,
+      "reassigned_out": 10
+    },
+    {
+      "month": "2023-02",
+      "incidents_resolved_by_self": 45,
+      "incidents_assigned": 57,
+      "reassigned_out": 11
+    },
+    {
+      "month": "2023-03",
+      "incidents_resolved_by_self": 56,
+      "incidents_assigned": 89,
+      "reassigned_out": 8
+    },
+    {
+      "month": "2023-04",
+      "incidents_resolved_by_self": 52,
+      "incidents_assigned": 87,
+      "reassigned_out": 15
+    },
+    {
+      "month": "2023-05",
+      "incidents_resolved_by_self": 55,
+      "incidents_assigned": 71,
+      "reassigned_out": 5
+    },
+    {
+      "month": "2023-06",
+      "incidents_resolved_by_self": 55,
+      "incidents_assigned": 78,
+      "reassigned_out": 11
+    },
+    {
+      "month": "2023-07",
+      "incidents_resolved_by_self": 66,
+      "incidents_assigned": 78,
+      "reassigned_out": 3
+    },
+    {
+      "month": "2023-08",
+      "incidents_resolved_by_self": 73,
+      "incidents_assigned": 110,
+      "reassigned_out": 14
+    },
+    {
+      "month": "2023-09",
+      "incidents_resolved_by_self": 70,
+      "incidents_assigned": 98,
+      "reassigned_out": 4
+    },
+    {
+      "month": "2023-10",
+      "incidents_resolved_by_self": 65,
+      "incidents_assigned": 90,
+      "reassigned_out": 14
+    },
+    {
+      "month": "2023-11",
+      "incidents_resolved_by_self": 71,
+      "incidents_assigned": 90,
+      "reassigned_out": 9
+    },
+    {
+      "month": "2023-12",
+      "incidents_resolved_by_self": 58,
+      "incidents_assigned": 96,
+      "reassigned_out": 6
+    },
+    {
+      "month": "2024-01",
+      "incidents_resolved_by_self": 53,
+      "incidents_assigned": 63,
+      "reassigned_out": 6
+    },
+    {
+      "month": "2024-02",
+      "incidents_resolved_by_self": 51,
+      "incidents_assigned": 69,
+      "reassigned_out": 12
+    },
+    {
+      "month": "2024-03",
+      "incidents_resolved_by_self": 61,
+      "incidents_assigned": 76,
+      "reassigned_out": 8
+    },
+    {
+      "month": "2024-04",
+      "incidents_resolved_by_self": 72,
+      "incidents_assigned": 76,
+      "reassigned_out": 12
+    },
+    {
+      "month": "2024-05",
+      "incidents_resolved_by_self": 78,
+      "incidents_assigned": 78,
+      "reassigned_out": 12
+    },
+    {
+      "month": "2024-06",
+      "incidents_resolved_by_self": 68,
+      "incidents_assigned": 77,
+      "reassigned_out": 12
+    },
+    {
+      "month": "2024-07",
+      "incidents_resolved_by_self": 67,
+      "incidents_assigned": 95,
+      "reassigned_out": 17
+    },
+    {
+      "month": "2024-08",
+      "incidents_resolved_by_self": 76,
+      "incidents_assigned": 79,
+      "reassigned_out": 13
+    },
+    {
+      "month": "2024-09",
+      "incidents_resolved_by_self": 66,
+      "incidents_assigned": 81,
+      "reassigned_out": 10
+    },
+    {
+      "month": "2024-10",
+      "incidents_resolved_by_self": 66,
+      "incidents_assigned": 77,
+      "reassigned_out": 13,
+      "ritm_raised": 1
+    },
+    {
+      "month": "2024-11",
+      "incidents_resolved_by_self": 69,
+      "incidents_assigned": 106,
+      "reassigned_out": 3
+    },
+    {
+      "month": "2024-12",
+      "incidents_resolved_by_self": 68,
+      "incidents_assigned": 88,
+      "reassigned_out": 10
+    },
+    {
+      "month": "2025-01",
+      "incidents_resolved_by_self": 50,
+      "incidents_assigned": 72,
+      "reassigned_out": 7
+    },
+    {
+      "month": "2025-02",
+      "incidents_resolved_by_self": 45,
+      "incidents_assigned": 63,
+      "reassigned_out": 11
+    },
+    {
+      "month": "2025-03",
+      "incidents_resolved_by_self": 60,
+      "incidents_assigned": 91,
+      "reassigned_out": 7
+    },
+    {
+      "month": "2025-04",
+      "incidents_resolved_by_self": 51,
+      "incidents_assigned": 65,
+      "reassigned_out": 12,
+      "ritm_raised": 1
+    },
+    {
+      "month": "2025-05",
+      "incidents_resolved_by_self": 52,
+      "incidents_assigned": 62,
+      "reassigned_out": 9
+    },
+    {
+      "month": "2025-06",
+      "incidents_resolved_by_self": 57,
+      "incidents_assigned": 80,
+      "reassigned_out": 3
+    },
+    {
+      "month": "2025-07",
+      "incidents_resolved_by_self": 60,
+      "incidents_assigned": 64,
+      "reassigned_out": 10
+    },
+    {
+      "month": "2025-08",
+      "incidents_resolved_by_self": 53,
+      "incidents_assigned": 76,
+      "reassigned_out": 9
+    },
+    {
+      "month": "2025-09",
+      "incidents_resolved_by_self": 54,
+      "incidents_assigned": 69,
+      "reassigned_out": 12
+    },
+    {
+      "month": "2025-10",
+      "incidents_resolved_by_self": 56,
+      "incidents_assigned": 70,
+      "reassigned_out": 7
+    },
+    {
+      "month": "2025-11",
+      "incidents_resolved_by_self": 49,
+      "incidents_assigned": 62,
+      "reassigned_out": 4
+    },
+    {
+      "month": "2025-12",
+      "incidents_resolved_by_self": 59,
+      "incidents_assigned": 74,
+      "reassigned_out": 7
+    },
+    {
+      "month": "2026-01",
+      "incidents_resolved_by_self": 66,
+      "incidents_assigned": 103,
+      "reassigned_out": 12
+    },
+    {
+      "month": "2026-02",
+      "incidents_resolved_by_self": 59,
+      "incidents_assigned": 73,
+      "reassigned_out": 13
+    },
+    {
+      "month": "2026-03",
+      "incidents_resolved_by_self": 69,
+      "incidents_assigned": 98,
+      "reassigned_out": 4
+    },
+    {
+      "month": "2026-04",
+      "incidents_resolved_by_self": 57,
+      "incidents_assigned": 83,
+      "reassigned_out": 9
+    },
+    {
+      "month": "2026-05",
+      "incidents_resolved_by_self": 63,
+      "incidents_assigned": 75,
+      "reassigned_out": 7
+    },
+    {
+      "month": "2026-06",
+      "incidents_resolved_by_self": 60,
+      "incidents_assigned": 69,
+      "reassigned_out": 3
+    },
+    {
+      "month": "2026-07",
+      "incidents_resolved_by_self": 63,
+      "incidents_assigned": 85,
+      "reassigned_out": 15
+    },
+    {
+      "month": "2026-08",
+      "incidents_resolved_by_self": 73,
+      "incidents_assigned": 89,
+      "reassigned_out": 11
+    },
+    {
+      "month": "2026-09",
+      "incidents_resolved_by_self": 61,
+      "incidents_assigned": 84,
+      "reassigned_out": 8
+    },
+    {
+      "month": "2026-10",
+      "incidents_resolved_by_self": 81,
+      "incidents_assigned": 90,
+      "reassigned_out": 6
+    }
+  ]
+}

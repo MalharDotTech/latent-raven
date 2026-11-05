@@ -1,0 +1,86 @@
+{
+  "certificates": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "AWS",
+      "code": "CLF-C02",
+      "issued": "2024-06",
+      "expires": "2027-06",
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/6f1d2a7e-3b84-4c1e-9a52-0d7e8b1c4a90",
+      "verification_status": "verified"
+    },
+    {
+      "name": "AWS Certified Solutions Architect - Associate",
+      "issuer": "AWS",
+      "code": "SAA-C03",
+      "issued": "2024-10",
+      "expires": "2027-10",
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/c93b0e55-17aa-42d8-8e6f-5b2f9d03a1e7",
+      "verification_status": "verified"
+    },
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "code": "AZ-900",
+      "issued": "2024-08",
+      "expires": null,
+      "evidence_form": "pdf_upload",
+      "verification_status": "unverifiable"
+    },
+    {
+      "name": "Microsoft Certified: Azure Administrator Associate",
+      "issuer": "Microsoft",
+      "code": "AZ-104",
+      "issued": "2025-01",
+      "expires": "2026-01",
+      "evidence_form": "pdf_upload",
+      "verification_status": "unverifiable"
+    },
+    {
+      "name": "Terraform Associate",
+      "issuer": "HashiCorp",
+      "issued": "2025-03",
+      "expires": "2027-03",
+      "evidence_form": "pdf_upload",
+      "verification_status": "unverifiable"
+    },
+    {
+      "name": "Kubernetes and Cloud Native Associate",
+      "issuer": "Linux Foundation / CNCF",
+      "code": "KCNA",
+      "issued": "2025-05",
+      "expires": null,
+      "evidence_form": "pdf_upload",
+      "verification_status": "unverifiable"
+    },
+    {
+      "name": "Certified Kubernetes Application Developer",
+      "issuer": "Linux Foundation / CNCF",
+      "code": "CKAD",
+      "issued": "2025-09",
+      "expires": null,
+      "evidence_form": "pdf_upload",
+      "verification_status": "failed"
+    },
+    {
+      "name": "Associate Cloud Engineer",
+      "issuer": "Google Cloud",
+      "issued": "2025-12",
+      "expires": "2028-12",
+      "evidence_form": "pdf_upload",
+      "verification_status": "unverifiable"
+    },
+    {
+      "name": "AWS Certified Developer - Associate",
+      "issuer": "AWS",
+      "code": "DVA-C02",
+      "issued": "2026-04",
+      "expires": "2029-04",
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/1a8e47d3-b6c2-4f09-a7d1-93e5c20b6f48",
+      "verification_status": "verified"
+    }
+  ]
+}

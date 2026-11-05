@@ -1,0 +1,275 @@
+{
+ "pid": "P009",
+ "schema": "truth-v2",
+ "summary": "Kavya moved from reporting into production analytics engineering in January 2025. The HR profile never caught up, an old Spark AR project is unrelated to distributed processing, and the completed Python course was skipped through.",
+ "archetype": "Analyst transition with lexical ambiguity and stale HCM",
+ "batch": "B",
+ "generator": "codex gpt-6.1-sol",
+ "skills": [
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P009_github_3/P009_jira_4: production SQL fixes every few months 2023-2026 (signed credit totals, timezone, anti-join for reissued invoices, fanout fix, close totals) reconciled with finance; Snowflake partition-pruning tune (2025-05). Work at 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#10135",
+    "github:#7773",
+    "jira:DATA-4336"
+   ],
+   "why": "Production joins, signed totals and query-shape repairs demonstrate independent transformations."
+  },
+  {
+   "skill_id": "dbt",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P009_github_3/P009_jira_4: first guided dbt PR 2024-12, then independent incremental-key, late-update merge, snapshot hard-delete and duplicate-credit fixes 2025-01..2026-10 with full-refresh comparisons. Job title 'Data Analyst' in P009_hcm_1 is stale (title_sync_note) and not used.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#6478",
+    "github:#7425"
+   ],
+   "why": "Incremental bugs, history checks and reconciled rebuilds support ownership beyond her initial guided contribution."
+  },
+  {
+   "skill_id": "snowflake",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P009_github_3/P009_jira_4: query-profile pruning 812->67 partitions (2025-05), role grant verified (2025-09), auto_suspend lowered after query-history check (2026-05). Work at 3 in 3 months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#6740",
+    "github:#7554"
+   ],
+   "why": "Query profiles and measured warehouse-idle changes justify workload operation."
+  },
+  {
+   "skill_id": "data_modeling",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P009_github_3: revenue grain with currency split + FK/history checks (2025-07), snapshot valid-to handling (2025-11), posted-ledger grain (2026-01); P009_authored_doc_6 (DATA-4403) grain and bridge rules. Work + authored at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#6860",
+    "docs/DATA-4403.md"
+   ],
+   "why": "Ledger grain, many-to-many tags and history validation have deployed consequences."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P009_github_3 reviews_given (70-90/yr 2025-2026): CHANGES_REQUESTED catching many-to-many fanout, missing incremental vs full-refresh comparison, currency source. Defect catches in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:reviews_given"
+   ],
+   "why": "She catches fanout and incremental comparison gaps before merge."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P009_authored_doc_6 (DATA-4403): grain/late-credit procedure; 2026-10-09 entry records Finance reproducing the September adjustment from these steps (user validation); P009_jira_4 related tasks. Level 3 line met.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "docs/DATA-4403.md"
+   ],
+   "why": "Finance successfully repeated a close reconciliation using her page."
+  },
+  {
+   "skill_id": "spark",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P009_cv_2 'Spark - Spark AR face filter ... No distributed data processing'; P009_jira_4 DATA-2992 component 'Spark' retained from old queue while work is dbt on Snowflake.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "cv_v1:Other skills/projects",
+    "jira:DATA-2992"
+   ],
+   "why": "AR filter tooling and a stale queue component provide no Apache runtime exposure."
+  },
+  {
+   "skill_id": "python",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P009_lms_5 'Python Essential Training' completed in 3 minutes (2026-03); P009_cv_2 mentions it. Training only, no code.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "lms:Python Essential Training"
+   ],
+   "why": "Private interview: unable to explain a function or list iteration; completion came from skipping the material."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Spark",
+   "mapped_skill_id": "spark",
+   "has_skill": false,
+   "why": "College face-filter project refers to Spark AR; no Apache Spark claim is warranted.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P009_cv_2 Spark AR project.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Python",
+   "mapped_skill_id": "python",
+   "has_skill": false,
+   "why": "Three-minute completion is not demonstrated understanding.",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P009_lms_5 3-minute completion.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F16",
+   "s11_row": "wrong_mapping",
+   "skill_id": "spark",
+   "plant": "CV explicitly contextualises Spark as AR; DATA-2992 still carries the misleading old Spark component despite dbt implementation.",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F19",
+   "s11_row": "level_off",
+   "skill_id": "dbt",
+   "plant": "HCM profile still says analyst while allocations and recent changes show an analytics-engineer role.",
+   "expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F26",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "python",
+   "plant": "Learning portal marks a substantial Python course complete after three minutes; no coding artifact corroborates it.",
+   "expected_engine_behavior": "hold"
+  }
+ ],
+ "unmatched_skills": [],
+ "answer_behavior": {
+  "reply_probability": 0.8,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Corrects Spark mapping and does not agree to Python proficiency."
+ },
+ "messaging_allowed": true
+}

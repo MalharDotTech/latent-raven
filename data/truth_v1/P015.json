@@ -1,0 +1,229 @@
+{
+ "pid": "P015",
+ "summary": "Bengaluru cloud engineer, 2.5 yrs, joined as a fresher. Collects certificates fast (nine in 22 months, most as uploaded PDFs) and does short Udemy runs, while the actual work in infra-live is small tagging, tfvars and copy-adapted IAM or cron changes with heavy reviewer rewriting. A bright junior who is a level or two below what the CV and profile say.",
+ "archetype": "certificate collector with thin hands-on work",
+ "batch": "C",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "aws",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#3301",
+    "github:#4044",
+    "github:#4177",
+    "jira:PLAT-1560",
+    "certs:SAA-C03"
+   ],
+   "why": "Does bounded AWS changes in Terraform (tags, SG, alarms, a Lambda scheduler) with visible reviewer corrections; three AWS certs verified, but practical depth is guided work.",
+   "assessed_level": 2
+  },
+  {
+   "skill_id": "terraform",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#3702",
+    "github:#3740",
+    "github:#4366"
+   ],
+   "why": "Edits modules and tfvars; IAM PR was reworked by reviewers after a copy-paste revert; no module authoring or state repair."
+  },
+  {
+   "skill_id": "kubernetes",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "github:#1402",
+    "github:#1511",
+    "assessments:kubernetes"
+   ],
+   "why": "Edits helm values and resource limits; scored low on a fundamentals test; CKAD document failed verification.",
+   "assessed_level": 1
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "last_used": "2025-06",
+   "evidence_refs": [
+    "lms:docker-courses"
+   ],
+   "why": "Course runs only; no Dockerfile work in the record."
+  },
+  {
+   "skill_id": "azure",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "last_used": "2025-01",
+   "evidence_refs": [
+    "certs:AZ-900",
+    "lms:azure-foundations"
+   ],
+   "why": "Kestrel runs on AWS; Azure knowledge comes from study and a lapsed associate cert, no workplace Azure use."
+  },
+  {
+   "skill_id": "gcp",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "last_used": null,
+   "evidence_refs": [
+    "certs:associate-cloud-engineer"
+   ],
+   "why": "Only an unverifiable PDF; nothing in work systems and no course trail."
+  },
+  {
+   "skill_id": "cicd",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#4290",
+    "github:#4620"
+   ],
+   "why": "Extends an existing GitHub Actions workflow for plan-on-PR with review."
+  },
+  {
+   "skill_id": "linux",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-05",
+   "evidence_refs": [
+    "jira:PLAT-1340"
+   ],
+   "why": "Routine admin and access tasks; no kernel or tuning evidence."
+  },
+  {
+   "skill_id": "observability",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "last_used": "2025-11",
+   "evidence_refs": [
+    "github:#3512"
+   ],
+   "why": "Adds CloudWatch alarms from templates; no dashboards design."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Ansible",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV only"
+  },
+  {
+   "skill_text": "ArgoCD",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV only"
+  },
+  {
+   "skill_text": "Prometheus / Grafana",
+   "mapped_skill_id": "observability",
+   "has_skill": false,
+   "why": "CV only; one helm values bump for a Grafana pod is not usage"
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F27",
+   "s11_row": "not_held",
+   "skill_id": "kubernetes",
+   "plant": "Six of nine certificates are PDF uploads; one (CKAD) fails lookup, others unverifiable; the verified three are all AWS",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F01",
+   "s11_row": "not_held",
+   "skill_id": "kubernetes",
+   "plant": "CV rates Kubernetes and Terraform as Advanced; GCP and Azure listed as cloud experience; work evidence does not support it",
+   "expected_engine_behavior": "send_at_level_1"
+  },
+  {
+   "fault_id": "F24",
+   "s11_row": "decay",
+   "skill_id": "azure",
+   "plant": "Azure admin associate lapsed in 2026-01 yet listed without date on the CV",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F26",
+   "s11_row": "not_held",
+   "skill_id": "kubernetes",
+   "plant": "Udemy courses of 25+ hours show 35-130 minutes spent, completed same week",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "aws",
+   "plant": "Self-declared level 3 on five cloud skills in Jan 2026",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "gcp",
+   "plant": "Associate Cloud Engineer certificate (PDF) only; no work",
+   "expected_engine_behavior": "not_extract"
+  }
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.85,
+  "yes_to_everything": false,
+  "flattery_bias": 0.8,
+  "notes": "Says yes to levels up to 3 on everything cloud; eager and responsive."
+ },
+ "messaging_allowed": true
+}

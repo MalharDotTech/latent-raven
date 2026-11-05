@@ -1,0 +1,1145 @@
+{
+  "login": "mpillai_kestrel",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11517",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3205,
+      "title": "billing-core invoice create scenario, 200 vus",
+      "state": "merged",
+      "created": "2023-05-11",
+      "merged": "2023-05-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 1,
+        ".csv": 1
+      },
+      "additions": 840,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3312,
+      "title": "QA-2364 add think time + pacing to recon flow",
+      "state": "merged",
+      "created": "2023-06-30",
+      "merged": "2023-06-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 1
+      },
+      "additions": 55,
+      "deletions": 31,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3387,
+      "title": "csv data set for 5k tenants",
+      "state": "merged",
+      "created": "2023-08-03",
+      "merged": "2023-08-10",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".csv": 2
+      },
+      "additions": 5002,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3496,
+      "title": "fix jmx assertion regex for 201",
+      "state": "merged",
+      "created": "2023-09-22",
+      "merged": "2023-09-22",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 1
+      },
+      "additions": 3,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3579,
+      "title": "grafana dashboard json: jmeter + influx",
+      "state": "merged",
+      "created": "2023-10-29",
+      "merged": "2023-10-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 2
+      },
+      "additions": 612,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3670,
+      "title": "QA-2561 custom sampler for token refresh",
+      "state": "merged",
+      "created": "2023-12-07",
+      "merged": "2023-12-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2,
+        ".xml": 1,
+        ".jmx": 1
+      },
+      "additions": 148,
+      "deletions": 0,
+      "co_authors": [
+        "Sanjay Jadhav <sanjay.jadhav@kestrelcloud.com>"
+      ],
+      "review_comments_received": 9,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3781,
+      "title": "groovy: jsr223 correlation helper",
+      "state": "merged",
+      "created": "2024-01-23",
+      "merged": "2024-01-24",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".groovy": 2,
+        ".jmx": 1
+      },
+      "additions": 96,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3872,
+      "title": "QA-2690 soak test 8h config",
+      "state": "merged",
+      "created": "2024-02-29",
+      "merged": "2024-03-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 1,
+        ".yaml": 1
+      },
+      "additions": 70,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 3908,
+      "title": "db pool size param via -J",
+      "state": "merged",
+      "created": "2024-03-13",
+      "merged": "2024-03-15",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 1,
+        ".md": 1
+      },
+      "additions": 12,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 4050,
+      "title": "k6: poc ledger-api /v1/entries",
+      "state": "merged",
+      "created": "2024-05-15",
+      "merged": "2024-05-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 2,
+        ".md": 1
+      },
+      "additions": 190,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "k6"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 4161,
+      "title": "jmeter backend listener -> influxdb v2",
+      "state": "merged",
+      "created": "2024-07-01",
+      "merged": "2024-07-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 2,
+        ".yaml": 1
+      },
+      "additions": 44,
+      "deletions": 30,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 4307,
+      "title": "QA-2900 recon nightly batch perf scenario",
+      "state": "merged",
+      "created": "2024-08-28",
+      "merged": "2024-09-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1
+      },
+      "additions": 410,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 4433,
+      "title": "fix: ramp-up too steep, errors at 30s",
+      "state": "merged",
+      "created": "2024-10-14",
+      "merged": "2024-10-17",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 1
+      },
+      "additions": 6,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 4520,
+      "title": "docs: how to run perf-tests locally",
+      "state": "merged",
+      "created": "2024-11-20",
+      "merged": "2024-11-27",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 88,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 4663,
+      "title": "k6 thresholds p95<450ms in GHA",
+      "state": "merged",
+      "created": "2025-01-24",
+      "merged": "2025-01-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 2,
+        ".yml": 1
+      },
+      "additions": 120,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "k6"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 4777,
+      "title": "k6: ramping-arrival-rate for payments webhook",
+      "state": "merged",
+      "created": "2025-03-10",
+      "merged": "2025-03-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 3
+      },
+      "additions": 210,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 4910,
+      "title": "perf gate in release pipeline (fail on p95 regression > 15%)",
+      "state": "merged",
+      "created": "2025-05-13",
+      "merged": "2025-05-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 2,
+        ".yml": 2,
+        ".py": 1
+      },
+      "additions": 260,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 12,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5006,
+      "title": "reports: html summary export script",
+      "state": "merged",
+      "created": "2025-06-26",
+      "merged": "2025-06-27",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 97,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5089,
+      "title": "QA-3352 k6 token pool via SharedArray",
+      "state": "merged",
+      "created": "2025-08-01",
+      "merged": "2025-08-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 2
+      },
+      "additions": 84,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5207,
+      "title": "chore: k6 0.49 -> 0.54",
+      "state": "merged",
+      "created": "2025-09-26",
+      "merged": "2025-09-26",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 2
+      },
+      "additions": 4,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5308,
+      "title": "k6 operator job yaml (platform-k8s sandbox)",
+      "state": "merged",
+      "created": "2025-11-11",
+      "merged": "2025-11-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 2,
+        ".js": 1
+      },
+      "additions": 131,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5464,
+      "title": "QA-3596 gate scenario for ledger-api",
+      "state": "merged",
+      "created": "2026-01-16",
+      "merged": "2026-01-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 2,
+        ".yml": 1
+      },
+      "additions": 176,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5551,
+      "title": "fix: threshold tag mismatch (flow vs scenario)",
+      "state": "merged",
+      "created": "2026-02-24",
+      "merged": "2026-02-27",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 1
+      },
+      "additions": 3,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5683,
+      "title": "QA-3704 recon batch 2.1M rows scenario update",
+      "state": "merged",
+      "created": "2026-04-14",
+      "merged": "2026-04-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".jmx": 1,
+        ".groovy": 1,
+        ".csv": 1
+      },
+      "additions": 300,
+      "deletions": 120,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5793,
+      "title": "fix intermittent 401 in token setup",
+      "state": "merged",
+      "created": "2026-06-01",
+      "merged": "2026-06-10",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 1
+      },
+      "additions": 14,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 5975,
+      "title": "summary json -> grafana annotations",
+      "state": "merged",
+      "created": "2026-08-21",
+      "merged": "2026-08-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 1,
+        ".py": 1
+      },
+      "additions": 58,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "number": 6106,
+      "title": "chore: bump influx client",
+      "state": "merged",
+      "created": "2026-10-18",
+      "merged": "2026-10-18",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 1
+      },
+      "additions": 5,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 3191,
+      "date": "2023-05-11",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 3619,
+      "date": "2023-11-15",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "which env is this pointing to"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 3816,
+      "date": "2024-02-08",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "ok"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 3994,
+      "date": "2024-04-22",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "think time missing in this flow"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 4192,
+      "date": "2024-07-15",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 4341,
+      "date": "2024-09-11",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "hardcoded host, use -J"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 4699,
+      "date": "2025-02-10",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "thresholds look ok"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 4918,
+      "date": "2025-05-21",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "avg is useless here use p95"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 5107,
+      "date": "2025-08-13",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 5376,
+      "date": "2025-12-11",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "vus too high for runner, will throttle"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 5604,
+      "date": "2026-03-16",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/perf-tests",
+      "pr_number": 5873,
+      "date": "2026-07-09",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-04",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 0,
+        ".groovy": 0,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 0,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 2,
+        ".groovy": 0,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 4,
+      "reviews": 0,
+      "by_ext": {
+        ".jmx": 3,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".jmx": 4,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 2,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".jmx": 4,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0,
+        ".java": 2,
+        ".xml": 1
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".jmx": 4,
+        ".csv": 1,
+        ".groovy": 2,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".jmx": 3,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 3,
+      "reviews": 4,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 1,
+        ".js": 2
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".jmx": 3,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 4,
+      "reviews": 4,
+      "by_ext": {
+        ".jmx": 3,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".jmx": 4,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".jmx": 4,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 3,
+      "reviews": 3,
+      "by_ext": {
+        ".jmx": 2,
+        ".csv": 1,
+        ".groovy": 1,
+        ".json": 0,
+        ".md": 0
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 3,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 2,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".js": 4,
+        ".jmx": 2,
+        ".yml": 2,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 4,
+        ".jmx": 2,
+        ".yml": 2,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".js": 4,
+        ".jmx": 2,
+        ".yml": 2,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 4,
+        ".jmx": 2,
+        ".yml": 2,
+        ".py": 1,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 3,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 3,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 1,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".js": 2,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 3,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 2,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 3,
+      "reviews": 4,
+      "by_ext": {
+        ".js": 3,
+        ".jmx": 1,
+        ".yml": 2,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 3,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 3,
+      "reviews": 4,
+      "by_ext": {
+        ".js": 2,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0,
+        ".yaml": 2
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 4,
+        ".jmx": 2,
+        ".yml": 2,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 4,
+      "reviews": 5,
+      "by_ext": {
+        ".js": 3,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".js": 2,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".js": 2,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 3,
+      "reviews": 5,
+      "by_ext": {
+        ".js": 2,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 1,
+        ".csv": 1
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".js": 4,
+        ".jmx": 2,
+        ".yml": 2,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".js": 4,
+        ".jmx": 2,
+        ".yml": 2,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 4,
+        ".jmx": 2,
+        ".yml": 2,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 3,
+      "reviews": 3,
+      "by_ext": {
+        ".js": 3,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 1,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".js": 2,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 4,
+      "reviews": 7,
+      "by_ext": {
+        ".js": 3,
+        ".jmx": 1,
+        ".yml": 1,
+        ".py": 0,
+        ".groovy": 0,
+        ".json": 1
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [],
+    "oss_contributions": []
+  }
+}

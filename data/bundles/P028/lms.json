@@ -1,0 +1,84 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Information Security Awareness 2022",
+      "provider": "Kestrel Learn",
+      "completed": "2022-06-28",
+      "time_spent_minutes": 38,
+      "quiz_score_pct": 90,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2022-07-06",
+      "time_spent_minutes": 30,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Git: Branches, Merges, and Remotes",
+      "provider": "LinkedIn Learning",
+      "completed": "2022-08-04",
+      "time_spent_minutes": 52,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "Agile Foundations",
+      "provider": "LinkedIn Learning",
+      "completed": "2022-09-12",
+      "time_spent_minutes": 64,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Billing API Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2023-02-10",
+      "time_spent_minutes": 115,
+      "quiz_score_pct": 78,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2023",
+      "provider": "Kestrel Learn",
+      "completed": "2023-06-14",
+      "time_spent_minutes": 35,
+      "quiz_score_pct": 85,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2024",
+      "provider": "Kestrel Learn",
+      "completed": "2024-06-19",
+      "time_spent_minutes": 31,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-06-24",
+      "time_spent_minutes": 29,
+      "quiz_score_pct": 90,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Kubernetes Orientation",
+      "provider": "Kestrel Learn",
+      "completed": "2025-08-05",
+      "time_spent_minutes": 3,
+      "quiz_score_pct": 60,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Secure Coding",
+      "provider": "Kestrel Learn",
+      "completed": "2026-01-12",
+      "time_spent_minutes": 90,
+      "quiz_score_pct": 80,
+      "assigned_by": "manager"
+    }
+  ]
+}

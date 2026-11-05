@@ -1,0 +1,86 @@
+{
+  "employee_id": "KC-11042",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Arjun Nair",
+  "preferred_name": "Arjun",
+  "emails": [
+    {
+      "email": "arjun.nair@kestrelcloud.com",
+      "from": "2022-01",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Customer Support",
+  "manager_employee_id": "KC-10771",
+  "hire_date": "2022-01-10",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Support Engineer L1",
+      "grade": "S1",
+      "from": "2022-01",
+      "to": "2023-06"
+    },
+    {
+      "title": "Support Engineer L2",
+      "grade": "S2",
+      "from": "2023-07",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Customer support - Recon queue",
+      "role": "Support Engineer",
+      "from": "2022-01",
+      "to": null,
+      "allocation_pct": 90
+    },
+    {
+      "project": "Support runbook refresh",
+      "role": "Contributor",
+      "from": "2025-02",
+      "to": "2025-06",
+      "allocation_pct": 10
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "ServiceNow",
+      "self_level": 3,
+      "declared_on": "2024-02"
+    },
+    {
+      "skill_text": "Linux",
+      "self_level": 2,
+      "declared_on": "2024-02"
+    },
+    {
+      "skill_text": "Kubernetes",
+      "self_level": 2,
+      "declared_on": "2024-02"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 2,
+      "declared_on": "2024-02"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Pune Institute of Computer Technology",
+      "degree": "B.E.",
+      "field": "Information Technology",
+      "year": 2019
+    }
+  ]
+}

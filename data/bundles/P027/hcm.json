@@ -1,0 +1,79 @@
+{
+  "employee_id": "KC-12011",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Jason Michael Lee",
+  "preferred_name": "Jason Lee",
+  "emails": [
+    {
+      "email": "jason.lee@kestrelcloud.com",
+      "from": "2023-04",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Austin, TX",
+  "country": "US",
+  "department": "Sales Engineering - US",
+  "manager_employee_id": "KC-10402",
+  "hire_date": "2023-04-17",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Sales Engineer",
+      "grade": "S3",
+      "from": "2023-04",
+      "to": "2025-03"
+    },
+    {
+      "title": "Senior Sales Engineer",
+      "grade": "S4",
+      "from": "2025-04",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "US mid-market overlay coverage",
+      "role": "Overlay Sales Engineer",
+      "from": "2023-04",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "API testing",
+      "self_level": 3,
+      "declared_on": "2025-05"
+    },
+    {
+      "skill_text": "Consultative solution selling",
+      "self_level": 3,
+      "declared_on": "2025-05"
+    },
+    {
+      "skill_text": "Salesforce",
+      "self_level": 2,
+      "declared_on": "2025-05"
+    },
+    {
+      "skill_text": "Python",
+      "self_level": 2,
+      "declared_on": "2025-05"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "University of Texas at Austin",
+      "degree": "B.S.",
+      "field": "Computer Science",
+      "year": 2016
+    }
+  ]
+}

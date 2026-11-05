@@ -1,0 +1,325 @@
+{
+ "pid": "P007",
+ "schema": "truth-v2",
+ "summary": "Ananya owns a working forecasting component and a small production LLM pilot. Her cloud credential claim outlived her GCP practice; the operational GCP work ended in 2022, while one architecture page mostly belongs to platform engineers.",
+ "archetype": "ML engineer with substantive authored evidence and stale cloud claims",
+ "batch": "B",
+ "generator": "codex gpt-6.1-sol",
+ "skills": [
+  {
+   "skill_id": "python",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P007_github_3: ml-forecasting Python PRs each quarter 2022-2026 fixing production faults (NaT dtype batch failure, shard retry double-write, citation dedup, cache key); P007_jira_4 matching bugs resolved by self. Work at 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#3926",
+    "github:#6045"
+   ],
+   "why": "Runtime and retrieval corrections show sustained module ownership."
+  },
+  {
+   "skill_id": "machine_learning",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P007_github_3: fold cutoff pinning, tenant-salted holdout, late-label backtest, drift by cohort; P007_authored_doc_7 (ENG-2388) on label leakage and cohort-gated deployment approval; P007_lms_5 NPTEL ML. Work + authored at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#4387",
+    "docs/ENG-2388.md"
+   ],
+   "why": "Fold construction, delayed labels and production cohort monitoring justify independent model delivery."
+  },
+  {
+   "skill_id": "llm_engineering",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P007_github_3: tenant filter before retrieval, citation verifier, labelled 180-question eval with no-answer cases, stale-index release gate, prompt/eval version pinning (2025-2026); P007_authored_doc_6 (ENG-2741) acceptance checks. Work + authored at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#5164",
+    "github:#6206",
+    "docs/ENG-2741.md"
+   ],
+   "why": "Tenant isolation, labelled failure slices and operational rollback establish application delivery; no cross-team coaching claim."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "SQL appears only as a phrase in P007_github_3/P007_jira_4 bodies ('SQL input selection') and P007_authored_doc_7, plus P007_cv_2 tools line; no .sql changes or reviewed queries.",
+    "missing_source": "SQL file changes / reviewed queries"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#4138"
+   ],
+   "why": "Input selection works under data-team review; complex warehouse tuning is outside her remit."
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "P007_github_3 + P007_jira_4: 'refresh scorer base image' - Docker build failure fixed by pinning base digest and smoke test (2024-07); P007_cv_2 lists Docker. One fix in one month: work + self pin 2; ceiling 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#4778"
+   ],
+   "why": "She maintains scorer packaging and diagnosed a real image failure."
+  },
+  {
+   "skill_id": "gcp",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P007_cv_2: GCP use at Freshworks ended 2022-06; credential scan shows GCP ML Engineer cert valid to 2024-05 with no renewal (expired); P007_hcm_1 self 3 (2026-06); P007_authored_doc_7 says scorer runs on AWS, old GCP job not in path. Decayed + expired cert + self-claim 2 off.",
+    "missing_source": "current GCP work or assessment"
+   },
+   "last_used": "2022-06",
+   "evidence_refs": [
+    "cv_v1:Freshworks",
+    "docs/ENG-2388.md",
+    "cv_v1:Credential scan"
+   ],
+   "why": "Private calibration: can still explain service identities but cannot deploy reliably without retraining; historical credential is not current operation."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P007_authored_doc_6 (ENG-2741) and P007_authored_doc_7 (ENG-2388): procedures with recorded user validation (Rohit ran the rollback in staging 2026-08-19; Operations reproduced pending counts 2026-06-17); P007_cv_2 'Wrote the eval checklist and pilot rollback notes'. Level 3 line shown literally.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "docs/ENG-2741.md",
+    "docs/ENG-2388.md"
+   ],
+   "why": "Other engineers reproduced the rollback and label replay from her procedures."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P007_github_3 reviews_given (110-140/yr): CHANGES_REQUESTED catching leakage (paid_at in fold), denominator errors, cache-key isolation, 2025-07..2026-10. Defect catches in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:reviews_given"
+   ],
+   "why": "Review corrections address leakage, cache isolation and misleading evaluation denominators."
+  },
+  {
+   "skill_id": "system_design",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P007_authored_doc_6 (ENG-2741): retrieval design decisions (filter before ranking, cache key with tenant/period/revision, verifier, no-answer path, bundled rollback) validated in production; P007_github_3 implementing PRs and release gate. Authored + work at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "docs/ENG-2741.md"
+   ],
+   "why": "Application failure handling and tested restoration support a bounded deployed design."
+  },
+  {
+   "skill_id": "terraform",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only P007_authored_doc_8 (ARCH-0190) mentions it; edit history shows platform-network-team replaced 92% of the text. Not her content.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "docs/ARCH-0190.md"
+   ],
+   "why": "Network template authorship is administrative; she has never authored infrastructure modules."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Terraform",
+   "mapped_skill_id": "terraform",
+   "has_skill": false,
+   "why": "A template page is mostly platform-written and contains no infrastructure implementation by Ananya.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P007_authored_doc_8 edit_history: page body written by platform-network-team.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F24",
+   "s11_row": "skill_decay",
+   "skill_id": "gcp",
+   "plant": "June resume retains a current-credential claim beside scan metadata ending in May 2024; only the self-report is exported, with no renewal evidence.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "gcp",
+   "plant": "Freshworks usage ends mid-2022 and current scoring is on AWS, despite the elevated HCM cloud self-rating.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F34",
+   "s11_row": "wrong_person",
+   "skill_id": "terraform",
+   "plant": "ARCH-0190 creator is Ananya but edit history attributes almost all content to platform.",
+   "expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "pandas",
+  "scikit-learn"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.78,
+  "yes_to_everything": false,
+  "flattery_bias": 0.2,
+  "notes": "Willing to discuss current ML work; may initially repeat the old cloud rating."
+ },
+ "messaging_allowed": true
+}

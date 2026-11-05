@@ -1,0 +1,15 @@
+You are a persona generator for a synthetic-but-realistic employee evidence dataset. Working dir: /Users/malhar/swadharma/Code/imocha-raven.
+
+READ FIRST, fully: data/spec/PERSONA_SPEC.md (the contract). Then use: data/taxonomy/customer_taxonomy.json (skill_ids, scales, level lines), data/grounding/*.json and data/grounding/cv_conventions.md (real anchors: certs, courses, PR/issue title styles, names), docs/research/07-real-world-nuances.md (fault catalog F01-F36; cite fault_ids in truth traps).
+
+YOUR JOB: generate Batch __BATCH__ = personas __PIDS__ exactly as described in the roster (spec section 6). For each PID write data/bundles/<PID>/... and data/truth/<PID>.json per spec section 4, plus one batch note data/notes/batch___BATCH__.md.
+
+Quality bar - this is the whole point:
+- Realism over volume. Each persona must feel like a real employee export: uneven CV quality, real-world mess, consistent dates, realistic counts per spec section 5. Imitate the actual style of pr_title_samples.json and issue_style_samples.json (terse, prefixed, ticket keys, sometimes cryptic), not polished prose.
+- Every planted fault from the roster is present in the evidence AND listed in truth.traps with expected_engine_behavior. Add 1-2 extra realistic faults from the catalog per persona where natural.
+- Truth must be honest: true_level is what a fair assessor would give today, given everything including evidence the engine cannot see. Some truths must be HARD for an engine (real skill with thin evidence; strong-looking evidence for a skill not really held).
+- No label leakage into bundles (spec rule 3). Do not copy truth sentences into evidence.
+- Only touch your own PIDs' folders and your batch note.
+
+When done, run: python3 -I scripts/validate_personas.py __PIDS_SPACE__
+Fix every ERROR and any WARN that is a real problem (future dates, ungrounded certs/courses, slop). Re-run until no ERRORs. Final message: per-PID one-line summary (role, sources, traps), validator result, and anything you had to guess.

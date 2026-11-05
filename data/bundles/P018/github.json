@@ -1,0 +1,763 @@
+{
+  "exported_on": "2026-10-31",
+  "login": "nbansal-lgr",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11818",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 4994,
+      "title": "fix: blank invoice date",
+      "state": "merged",
+      "created": "2025-01-04",
+      "merged": "2025-01-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 1
+      },
+      "additions": 18,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Reject blank dates before Date.parse; reviewer supplied timezone cases."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5046,
+      "title": "BILL-5719 dont retry 400",
+      "state": "merged",
+      "created": "2025-02-11",
+      "merged": "2025-02-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 2
+      },
+      "additions": 47,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Separate client validation errors from retryable responses."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5081,
+      "title": "test: duplicate upload rows",
+      "state": "merged",
+      "created": "2025-03-14",
+      "merged": "2025-03-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 3
+      },
+      "additions": 93,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Fixture contains the same invoice twice with different whitespace."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5109,
+      "title": "fix: await webhook send",
+      "state": "merged",
+      "created": "2025-04-09",
+      "merged": "2025-04-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 1
+      },
+      "additions": 8,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Unawaited promise caused successful status before send failed."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5149,
+      "title": "chore: drop unused csv helper",
+      "state": "merged",
+      "created": "2025-05-05",
+      "merged": "2025-05-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 2
+      },
+      "additions": 126,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Removed the parser used only by the retired import endpoint."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5192,
+      "title": "fix(sql): tenant filter in dup check",
+      "state": "merged",
+      "created": "2025-06-13",
+      "merged": "2025-06-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".sql": 3
+      },
+      "additions": 31,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Reviewer added the tenant predicate and advised covering index; checked against saved totals."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5225,
+      "title": "BILL-5988 retain original filename",
+      "state": "merged",
+      "created": "2025-07-02",
+      "merged": "2025-07-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 1
+      },
+      "additions": 18,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Keep display name but store object under generated ID."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5280,
+      "title": "fix: content-type on webhook",
+      "state": "merged",
+      "created": "2025-08-13",
+      "merged": "2025-08-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 2
+      },
+      "additions": 47,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Explicit JSON content type for the new bank sandbox."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5319,
+      "title": "test: timeout rejects once",
+      "state": "merged",
+      "created": "2025-09-15",
+      "merged": "2025-09-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 3
+      },
+      "additions": 93,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Fake timers reproduce callback racing promise rejection."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5451,
+      "title": "build: nonroot import worker",
+      "state": "merged",
+      "created": "2026-01-16",
+      "merged": "2026-01-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        "Dockerfile": 1
+      },
+      "additions": 8,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Platform reviewer supplied ownership fix for tmp dir; smoke run passed."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5506,
+      "title": "fix: close stream on parse error",
+      "state": "merged",
+      "created": "2026-02-18",
+      "merged": "2026-02-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 2
+      },
+      "additions": 126,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Destroy upload stream after invalid row; verified no open handle remains."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5534,
+      "title": "BILL-6337 accept lowercase tax code",
+      "state": "merged",
+      "created": "2026-03-11",
+      "merged": "2026-03-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 3
+      },
+      "additions": 31,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Normalise lookup key, preserve uploaded value in error report."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5594,
+      "title": "fix: empty page has next=false",
+      "state": "merged",
+      "created": "2026-04-17",
+      "merged": "2026-04-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 1
+      },
+      "additions": 18,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Stop pagination when importer reaches an empty page."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5625,
+      "title": "test: signed header whitespace",
+      "state": "merged",
+      "created": "2026-05-04",
+      "merged": "2026-05-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 2
+      },
+      "additions": 47,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Added fixtures matching sandbox callbacks."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5668,
+      "title": "chore: update import error text",
+      "state": "merged",
+      "created": "2026-06-04",
+      "merged": "2026-06-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 3
+      },
+      "additions": 93,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Support requested row number before field name."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5716,
+      "title": "fix: decimal amount as string",
+      "state": "merged",
+      "created": "2026-07-08",
+      "merged": "2026-07-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 1
+      },
+      "additions": 8,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Avoid float round trip before submitting to downstream ledger."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5762,
+      "title": "BILL-6617 retry failed chunks only",
+      "state": "merged",
+      "created": "2026-08-18",
+      "merged": "2026-08-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 2
+      },
+      "additions": 126,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Bounded change following billing design; replay does not resend accepted chunks."
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "number": 5799,
+      "title": "fix: cleanup temp file on abort",
+      "state": "merged",
+      "created": "2026-09-15",
+      "merged": "2026-09-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nbansal-lgr",
+      "author_employee_id": "KC-11818",
+      "files_ext": {
+        ".js": 3
+      },
+      "additions": 31,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Request close hook removes partial upload; validated repeated aborts."
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "pr_number": 5498,
+      "date": "2026-02-20",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "Can we test empty csv also?",
+      "thread_followup": {
+        "date": "2026-02-24",
+        "text": "Senior reviewer confirmed this case and added malformed encoding case."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "pr_number": 5549,
+      "date": "2026-03-20",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "Ran import with the sample file. Rows look ok.",
+      "thread_followup": {
+        "date": "2026-03-24",
+        "text": "Billing reviewer later caught duplicate IDs; approval reopened."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/ledgerly-legacy",
+      "pr_number": 5589,
+      "date": "2026-04-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "Missing await means route returns before callback fails. Add rejected promise test.",
+      "thread_followup": {
+        "date": "2026-04-24",
+        "text": "Author added await and test; mentor confirmed review."
+      }
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-03",
+      "merged_prs": 12,
+      "reviews": 18,
+      "by_ext": {
+        ".js": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 8,
+      "reviews": 16,
+      "by_ext": {
+        ".js": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".js": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 7,
+      "reviews": 15,
+      "by_ext": {
+        ".js": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 11,
+      "reviews": 12,
+      "by_ext": {
+        ".js": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".js": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 6,
+      "reviews": 10,
+      "by_ext": {
+        ".js": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".js": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 11,
+      "reviews": 20,
+      "by_ext": {
+        ".js": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 10,
+      "reviews": 11,
+      "by_ext": {
+        ".js": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 11,
+      "reviews": 7,
+      "by_ext": {
+        ".js": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".js": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".js": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".js": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 10,
+      "reviews": 11,
+      "by_ext": {
+        ".js": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".js": 16,
+        ".md": 2,
+        ".sql": 3
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 5,
+      "reviews": 10,
+      "by_ext": {
+        ".js": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 8,
+      "reviews": 12,
+      "by_ext": {
+        ".js": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 6,
+      "reviews": 9,
+      "by_ext": {
+        ".js": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 4,
+      "reviews": 14,
+      "by_ext": {
+        ".js": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".js": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 11,
+      "reviews": 14,
+      "by_ext": {
+        ".js": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 7,
+      "reviews": 14,
+      "by_ext": {
+        ".js": 16,
+        ".md": 2,
+        "Dockerfile": 1
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 6,
+      "reviews": 15,
+      "by_ext": {
+        ".js": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 6,
+      "reviews": 9,
+      "by_ext": {
+        ".js": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 5,
+      "reviews": 15,
+      "by_ext": {
+        ".js": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 11,
+      "reviews": 16,
+      "by_ext": {
+        ".js": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 6,
+      "reviews": 8,
+      "by_ext": {
+        ".js": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 5,
+      "reviews": 11,
+      "by_ext": {
+        ".js": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 10,
+      "reviews": 13,
+      "by_ext": {
+        ".js": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 5,
+      "reviews": 12,
+      "by_ext": {
+        ".js": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".js": 10,
+        ".md": 1
+      }
+    }
+  ],
+  "export_scope": {
+    "pull_requests": "Representative merged changes, not a complete event log",
+    "monthly_activity": "All authored merged PRs and submitted reviews since Kestrel hire; excludes other-author merges"
+  },
+  "historical_employee_ids": [
+    {
+      "employee_id": "LGR-0318",
+      "from": "2024-03",
+      "to": "2024-08"
+    }
+  ]
+}

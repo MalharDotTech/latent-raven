@@ -1,0 +1,1125 @@
+{
+  "login": "nirav-deshpande-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11682",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6446,
+      "title": "fix: reject empty adjustment reason",
+      "body": "Spring Boot controller validates trimmed reason. Integration checks cover a blank and a whitespace-only request.",
+      "state": "merged",
+      "created": "2022-12-05",
+      "merged": "2022-12-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 99,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "commits": 4,
+      "issue_keys": [
+        "BILL-4634"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6633,
+      "title": "BILL-4773 keep tenant id in refund lookup",
+      "body": "SQL lookup now binds tenant_id before invoice_id; the query test has the same invoice number in two tenants.",
+      "state": "merged",
+      "created": "2023-03-21",
+      "merged": "2023-03-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2,
+        ".sql": 4
+      },
+      "additions": 101,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "BILL-4773"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6752,
+      "title": "round tax after summing line amounts",
+      "body": "Use BigDecimal through the accumulator; round at the invoice boundary. Reconciled the six failing invoice fixtures.",
+      "state": "merged",
+      "created": "2023-05-15",
+      "merged": "2023-05-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 82,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "BILL-4846"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6867,
+      "title": "BILL-4942 add idempotency check for adjustments",
+      "body": "RestAssured suite sends the same idempotency key twice and checks one posting; the different-payload case returns 409.",
+      "state": "merged",
+      "created": "2023-07-24",
+      "merged": "2023-07-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 120,
+      "deletions": 54,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "BILL-4942"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6936,
+      "title": "move export reader to bounded batches",
+      "body": "Heap dump showed retained invoice rows in ArrayList. Changed the reader to 500-row pages and ran the 420k-row snapshot with bounded heap.",
+      "state": "merged",
+      "created": "2023-08-25",
+      "merged": "2023-08-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 18,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "BILL-4979"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7067,
+      "title": "BILL-5090 fix: readiness while posting queue is paused",
+      "body": "Spring Boot readiness health group includes posting-worker state. Verified the deployment stops taking jobs until the worker starts.",
+      "state": "merged",
+      "created": "2023-11-13",
+      "merged": "2023-11-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2,
+        ".yaml": 2
+      },
+      "additions": 25,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "bug"
+      ],
+      "commits": 3,
+      "issue_keys": [
+        "BILL-5090"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7183,
+      "title": "Bump runtime base to 21",
+      "body": "Updated Dockerfile with Nilesh; used the same tzdata in build and runtime images. CI container starts and /actuator/health returns UP.",
+      "state": "merged",
+      "created": "2024-01-25",
+      "merged": "2024-01-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        "Dockerfile": 1,
+        ".yaml": 1
+      },
+      "additions": 7,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "BILL-5181"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2024-01-29",
+          "body": "Keep tzdata in the runtime stage as well, then check /actuator/health in the image.",
+          "path": "Dockerfile"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7301,
+      "title": "use index for invoice search by date",
+      "body": "SQL EXPLAIN ANALYZE moved from a sequential scan to tenant/date index scan, 840ms to 46ms on the release snapshot.",
+      "state": "merged",
+      "created": "2024-03-22",
+      "merged": "2024-03-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 3,
+        ".java": 1
+      },
+      "additions": 17,
+      "deletions": 45,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "BILL-5264"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7400,
+      "title": "BILL-5373 fix: transaction rollback on posting failure",
+      "body": "Spring transaction now includes the ledger enqueue row. Fault injection after insert leaves neither row committed.",
+      "state": "merged",
+      "created": "2024-05-31",
+      "merged": "2024-06-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 93,
+      "deletions": 70,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "commits": 3,
+      "issue_keys": [
+        "BILL-5373"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7434,
+      "title": "BILL-5388 test: adjustment expiry boundary",
+      "body": "API checks run before and at expiry, with fixed clock and Asia/Kolkata date. Included missing auth and cross-tenant IDs.",
+      "state": "merged",
+      "created": "2024-06-18",
+      "merged": "2024-06-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 53,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "tests"
+      ],
+      "commits": 3,
+      "issue_keys": [
+        "BILL-5388"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7596,
+      "title": "BILL-5542 stop retrying validation exceptions",
+      "body": "Split permanent validation failures from transient transport exceptions. Queue depth returned to normal after deploy; checked one failed item was parked.",
+      "state": "merged",
+      "created": "2024-10-16",
+      "merged": "2024-10-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 108,
+      "deletions": 49,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "BILL-5542"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7708,
+      "title": "BILL-5621 close resultset on failed export",
+      "body": "Java stack samples showed export threads waiting for a connection. try-with-resources closes the cursor on cancellation and timeout.",
+      "state": "merged",
+      "created": "2024-12-26",
+      "merged": "2024-12-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 105,
+      "deletions": 46,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "BILL-5621"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7847,
+      "title": "BILL-5751 normalise currency before key lookup",
+      "body": "Normalise the request code before matching. Kept the original value in validation error, added mixed-case controller tests.",
+      "state": "merged",
+      "created": "2025-03-06",
+      "merged": "2025-03-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 124,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "BILL-5751"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7947,
+      "title": "BILL-5846 fix: lock order for concurrent credit notes",
+      "body": "Acquire invoice row before balance row on both paths. Parallel integration run has 200 paired requests without deadlock.",
+      "state": "merged",
+      "created": "2025-05-02",
+      "merged": "2025-05-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2,
+        ".sql": 1
+      },
+      "additions": 116,
+      "deletions": 30,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "commits": 1,
+      "issue_keys": [
+        "BILL-5846"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8035,
+      "title": "BILL-5938 healthcheck port in image",
+      "body": "Adjusted Docker HEALTHCHECK to the management port following Nilesh review. Checked startup and shutdown with docker run.",
+      "state": "merged",
+      "created": "2025-06-05",
+      "merged": "2025-06-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        "Dockerfile": 1
+      },
+      "additions": 18,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "BILL-5938"
+      ],
+      "review_comments": [
+        {
+          "user": "nilesh-kamat-kc",
+          "date": "2025-06-09",
+          "body": "Use management port 9091 for this check, the app port does not expose health.",
+          "path": "Dockerfile"
+        }
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8172,
+      "title": "test refund conflict response",
+      "body": "Added API checks for failure response contract and duplicate refund on a partially paid invoice. CI caught the missing conflict code before release.",
+      "state": "merged",
+      "created": "2025-09-04",
+      "merged": "2025-09-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2,
+        ".json": 1
+      },
+      "additions": 92,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "tests"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "BILL-6050"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8210,
+      "title": "BILL-6090 rename pendingAmount local",
+      "body": "Rename only, no behaviour change. Existing amount parameterised tests pass.",
+      "state": "merged",
+      "created": "2025-09-30",
+      "merged": "2025-10-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 1,
+      "deletions": 112,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "BILL-6090"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8339,
+      "title": "BILL-6216 keep adjustment sequence on rollback",
+      "body": "Moved sequence allocation behind successful validation. Verified rollback and same-key replay in staging.",
+      "state": "merged",
+      "created": "2026-01-08",
+      "merged": "2026-01-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3,
+        ".sql": 4
+      },
+      "additions": 143,
+      "deletions": 51,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "BILL-6216"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8462,
+      "title": "BILL-6305 set lower fetch size for audit export",
+      "body": "JDBC driver was ignoring fetch size with autocommit. Explicit read transaction now streams rows. RSS stayed below the pod limit on replay.",
+      "state": "merged",
+      "created": "2026-03-02",
+      "merged": "2026-03-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 137,
+      "deletions": 50,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "BILL-6305"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8683,
+      "title": "BILL-6529 fix: reject refund against void invoice",
+      "body": "Controller accepts request but service validates invoice status within the transaction. Added state transition regression checks.",
+      "state": "merged",
+      "created": "2026-06-29",
+      "merged": "2026-07-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 119,
+      "deletions": 34,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "commits": 5,
+      "issue_keys": [
+        "BILL-6529"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8732,
+      "title": "test bank timeout then retry",
+      "body": "Two-step API test uses a timeout response followed by success and asserts only one ledger posting. QA verified the seeded duplicate case fails.",
+      "state": "merged",
+      "created": "2026-07-30",
+      "merged": "2026-08-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 102,
+      "deletions": 27,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "tests"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "BILL-6591"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8748,
+      "title": "chore: switch test cache key",
+      "body": "Closing this; the current runner setup already keys the cache on the lockfile.",
+      "state": "closed",
+      "created": "2026-08-06",
+      "merged": null,
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3,
+        ".sql": 1,
+        ".yaml": 2
+      },
+      "additions": 46,
+      "deletions": 34,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 4,
+      "closed": "2026-08-07"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8917,
+      "title": "remove unused adjustment mapper",
+      "body": "Deleted obsolete mapper and mapping tests after callers moved to the new request shape.",
+      "state": "merged",
+      "created": "2026-10-28",
+      "merged": "2026-10-31",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 6,
+      "deletions": 139,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "BILL-6710"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8915,
+      "title": "chore: test image refresh",
+      "body": "Opened for the next iteration. Waiting for maintainer review.",
+      "state": "open",
+      "created": "2026-10-28",
+      "merged": null,
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 4
+      },
+      "additions": 80,
+      "deletions": 24,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [],
+      "commits": 5,
+      "draft": false,
+      "updated": "2026-10-29"
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 6843,
+      "date": "2023-07-12",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "The update can succeed then enqueue can fail. Can both inserts share the transaction?",
+      "author_reply_excerpt": "Moved enqueue insert into the same transaction, rollback integration check added.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 7408,
+      "date": "2024-06-07",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "This join is missing tenant_id. Same invoice id exists in another tenant.",
+      "author_reply_excerpt": "Added tenant key to join and the two-tenant fixture.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8262,
+      "date": "2025-11-14",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "Closing the stream here will skip the failure path. Please use try-with-resources.",
+      "author_reply_excerpt": "Resultset now closes in both success and error paths.",
+      "thread_resolved": true
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8770,
+      "date": "2026-08-11",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "BigDecimal from double will carry the binary error. Parse the decimal string.",
+      "author_reply_excerpt": "Changed constructor and added 0.1/0.2 regression case.",
+      "thread_resolved": true
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-11",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 9,
+        ".sql": 6,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 8,
+        ".sql": 3,
+        ".yaml": 10
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 13,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 17,
+        ".sql": 19,
+        ".yaml": 22
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 7,
+        ".sql": 13,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 12,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 16,
+        ".sql": 17,
+        ".yaml": 13
+      }
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 11,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 14,
+        ".sql": 21,
+        ".yaml": 15
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 5,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 8,
+        ".sql": 5,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 14,
+        ".sql": 19,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 7,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 12,
+        ".sql": 9,
+        ".yaml": 10
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 19,
+        ".sql": 12,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 11,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 18,
+        ".sql": 16,
+        ".yaml": 13
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 12,
+        ".sql": 9,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 7,
+        ".sql": 3,
+        ".yaml": 14
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 10,
+        ".sql": 9,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 13,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 15,
+        ".sql": 7,
+        ".yaml": 14,
+        "Dockerfile": 1
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 6,
+        ".sql": 10,
+        ".yaml": 15
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 11,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 18,
+        ".sql": 14,
+        ".yaml": 21
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 18,
+        ".sql": 13,
+        ".yaml": 17
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 13,
+        ".sql": 16,
+        ".yaml": 16
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 11,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 16,
+        ".sql": 13,
+        ".yaml": 13
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 11,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 17,
+        ".sql": 11,
+        ".yaml": 12
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 7,
+        ".sql": 7,
+        ".yaml": 12
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 10,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 27,
+        ".sql": 18,
+        ".yaml": 17
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 6,
+        ".sql": 10,
+        ".yaml": 7
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 10,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 20,
+        ".sql": 11,
+        ".yaml": 16
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 6,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 12,
+        ".sql": 9,
+        ".yaml": 8
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 9,
+        ".sql": 6,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 17,
+        ".sql": 15,
+        ".yaml": 14
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 21,
+        ".sql": 15,
+        ".yaml": 10
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 10,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 23,
+        ".sql": 12,
+        ".yaml": 18
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 19,
+        ".sql": 16,
+        ".yaml": 19
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 8,
+        ".sql": 5,
+        ".yaml": 12,
+        "Dockerfile": 1
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 7,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 8,
+        ".sql": 12,
+        ".yaml": 4
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 11,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 18,
+        ".sql": 14,
+        ".yaml": 20
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 20,
+        ".json": 1,
+        ".sql": 17,
+        ".yaml": 10
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 5,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 9,
+        ".sql": 6,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 2,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 2,
+        ".sql": 3,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 12,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 28,
+        ".sql": 18,
+        ".yaml": 20
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 11,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 19,
+        ".sql": 17,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 10,
+      "reviews": 12,
+      "by_ext": {
+        ".java": 17,
+        ".sql": 17,
+        ".yaml": 14
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 4,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 7,
+        ".sql": 9,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 5,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 4,
+        ".sql": 3,
+        ".yaml": 10
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 3,
+        ".sql": 8,
+        ".yaml": 6
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 11,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 19,
+        ".sql": 27,
+        ".yaml": 24
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 12,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 28,
+        ".sql": 12,
+        ".yaml": 19
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 7,
+        ".sql": 7,
+        ".yaml": 9
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 13,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 23,
+        ".sql": 27,
+        ".yaml": 23
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 11,
+        ".sql": 8,
+        ".yaml": 12
+      }
+    }
+  ],
+  "exported": "2026-10-31"
+}

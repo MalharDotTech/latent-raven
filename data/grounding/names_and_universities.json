@@ -1,0 +1,332 @@
+{
+ "_meta": {
+  "collected": "2026-11-05",
+  "warning": "Forebears lists are all-India incidence, skewed to the general population (e.g. Devi, Khatun, Bai, Begam) and not to the urban tech workforce. No regional split obtained; no gender labels (Forebears gender % column ambiguous).",
+  "gaps": [
+   "Global names, global universities, 40 Indian universities with tier: NOT obtained (NIRF returned 403), omitted",
+   "Only 5 employers verified"
+  ]
+ },
+ "indian_surnames": {
+  "source_url": "https://forebears.io/india/surnames",
+  "items": [
+   {
+    "name": "Devi",
+    "incidence": 70362192
+   },
+   {
+    "name": "Singh",
+    "incidence": 34838027
+   },
+   {
+    "name": "Kumar",
+    "incidence": 31111248
+   },
+   {
+    "name": "Das",
+    "incidence": 11368810
+   },
+   {
+    "name": "Kaur",
+    "incidence": 9480229
+   },
+   {
+    "name": "Ram",
+    "incidence": 7228601
+   },
+   {
+    "name": "Yadav",
+    "incidence": 6993402
+   },
+   {
+    "name": "Kumari",
+    "incidence": 6615155
+   },
+   {
+    "name": "Lal",
+    "incidence": 5669679
+   },
+   {
+    "name": "Bai",
+    "incidence": 5339803
+   },
+   {
+    "name": "Khatun",
+    "incidence": 5276481
+   },
+   {
+    "name": "Mandal",
+    "incidence": 5168020
+   },
+   {
+    "name": "Ali",
+    "incidence": 5119011
+   },
+   {
+    "name": "Sharma",
+    "incidence": 5025045
+   },
+   {
+    "name": "Ray",
+    "incidence": 4740466
+   },
+   {
+    "name": "Mondal",
+    "incidence": 4655155
+   },
+   {
+    "name": "Khan",
+    "incidence": 4569403
+   },
+   {
+    "name": "Sah",
+    "incidence": 4551188
+   },
+   {
+    "name": "Patel",
+    "incidence": 4215909
+   },
+   {
+    "name": "Prasad",
+    "incidence": 3934526
+   },
+   {
+    "name": "Patil",
+    "incidence": 3680454
+   },
+   {
+    "name": "Ghosh",
+    "incidence": 3640391
+   },
+   {
+    "name": "Pal",
+    "incidence": 2968653
+   },
+   {
+    "name": "Sahu",
+    "incidence": 2841127
+   },
+   {
+    "name": "Gupta",
+    "incidence": 2835996
+   },
+   {
+    "name": "Shaikh",
+    "incidence": 2814126
+   },
+   {
+    "name": "Biswas",
+    "incidence": 2256464
+   },
+   {
+    "name": "Sarkar",
+    "incidence": 2247125
+   },
+   {
+    "name": "Ansari",
+    "incidence": 2096249
+   },
+   {
+    "name": "Nayak",
+    "incidence": 2078522
+   },
+   {
+    "name": "Rathod",
+    "incidence": 2054799
+   },
+   {
+    "name": "Jadhav",
+    "incidence": 2054727
+   }
+  ]
+ },
+ "indian_forenames": {
+  "source_url": "https://forebears.io/india/forenames",
+  "items": [
+   {
+    "name": "Ram",
+    "incidence": 5648344
+   },
+   {
+    "name": "Mohammed",
+    "incidence": 4230997
+   },
+   {
+    "name": "Sunita",
+    "incidence": 4065176
+   },
+   {
+    "name": "Anita",
+    "incidence": 3501631
+   },
+   {
+    "name": "Santosh",
+    "incidence": 3415372
+   },
+   {
+    "name": "Sanjay",
+    "incidence": 3188335
+   },
+   {
+    "name": "Sunil",
+    "incidence": 3048070
+   },
+   {
+    "name": "Rajesh",
+    "incidence": 2910994
+   },
+   {
+    "name": "Gita",
+    "incidence": 2867531
+   },
+   {
+    "name": "Ramesh",
+    "incidence": 2758505
+   },
+   {
+    "name": "Ashok",
+    "incidence": 2714496
+   },
+   {
+    "name": "Rekha",
+    "incidence": 2703278
+   },
+   {
+    "name": "Manoj",
+    "incidence": 2692760
+   },
+   {
+    "name": "Anil",
+    "incidence": 2634591
+   },
+   {
+    "name": "Suresh",
+    "incidence": 2633934
+   },
+   {
+    "name": "Vijay",
+    "incidence": 2553987
+   },
+   {
+    "name": "Lakshmi",
+    "incidence": 2545932
+   },
+   {
+    "name": "Abdul",
+    "incidence": 2420419
+   },
+   {
+    "name": "Raju",
+    "incidence": 2283163
+   },
+   {
+    "name": "Manju",
+    "incidence": 2248857
+   },
+   {
+    "name": "Shanti",
+    "incidence": 2134734
+   },
+   {
+    "name": "Vinod",
+    "incidence": 2117531
+   },
+   {
+    "name": "Suman",
+    "incidence": 2015154
+   },
+   {
+    "name": "Rajendra",
+    "incidence": 1981905
+   },
+   {
+    "name": "Usha",
+    "incidence": 1847832
+   },
+   {
+    "name": "Asha",
+    "incidence": 1846348
+   },
+   {
+    "name": "Dinesh",
+    "incidence": 1810379
+   },
+   {
+    "name": "Rakesh",
+    "incidence": 1784228
+   },
+   {
+    "name": "Krishna",
+    "incidence": 1752237
+   },
+   {
+    "name": "Kiran",
+    "incidence": 1647333
+   },
+   {
+    "name": "Dilip",
+    "incidence": 1640113
+   },
+   {
+    "name": "Pushpa",
+    "incidence": 1628982
+   },
+   {
+    "name": "Ajay",
+    "incidence": 1616498
+   },
+   {
+    "name": "Laxmi",
+    "incidence": 1564213
+   },
+   {
+    "name": "Urmila",
+    "incidence": 1553348
+   }
+  ]
+ },
+ "indian_institutions_seen_in_sources": [
+  {
+   "name": "IIT Kharagpur",
+   "tier": null,
+   "source_url": "https://nptel.ac.in/domains/discipline/106?course=106_1"
+  },
+  {
+   "name": "IIT Madras",
+   "tier": null,
+   "source_url": "https://nptel.ac.in/domains/discipline/106?course=106_1"
+  },
+  {
+   "name": "IIT Bombay",
+   "tier": null,
+   "source_url": "https://archive.nptel.ac.in/noc/courses/106/"
+  },
+  {
+   "name": "Chennai Mathematical Institute",
+   "tier": null,
+   "source_url": "https://nptel.ac.in/courses/106106145"
+  }
+ ],
+ "employers": [
+  {
+   "name": "Infosys",
+   "source_url": "https://www.designgurus.io/blog/infosys-job-levels"
+  },
+  {
+   "name": "TCS",
+   "source_url": "https://networkinterview.com/technical-hierarchy-tcs-it-companies/"
+  },
+  {
+   "name": "Freshworks",
+   "source_url": "https://www.levels.fyi/company/Freshworks/salaries/Software-Engineer/"
+  },
+  {
+   "name": "Zoho",
+   "source_url": "https://www.levels.fyi/companies/zoho/salaries/software-engineer"
+  },
+  {
+   "name": "Razorpay",
+   "source_url": "https://www.levels.fyi/companies/razorpay/salaries/software-engineering-manager"
+  }
+ ]
+}

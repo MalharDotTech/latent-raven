@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#12100d"><title>{% block title %}Raven · Just Latent{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js" defer></script>
+  <script src="/static/app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="/" aria-label="Raven home"><span class="brand-mark">R</span> RAVEN <span class="brand-caption">THE LATENT MODE</span></a><nav aria-label="Main"><a href="/play">Play</a><a href="/leaderboard">Leaderboard</a><a href="/scoreboard">Engine room <span aria-hidden="true">↗</span></a></nav></header>
+<main id="main" class="{% block main_class %}container{% endblock %}">{% block content %}{% endblock %}</main>
+<footer class="site-footer"><span>Raven / Skill inference, with receipts.</span><span>A local pilot. A human gets the final word.</span></footer>
+<div id="network-message" class="toast" role="alert" hidden></div>
+</body></html>

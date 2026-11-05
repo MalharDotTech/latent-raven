@@ -1,0 +1,68 @@
+{
+  "exported_on": "2026-10-31",
+  "employee_id": "KC-10919",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Lakshmi Narayanan",
+  "preferred_name": "Lakshmi Narayanan",
+  "emails": [
+    {
+      "email": "lakshmi.narayanan@kestrelcloud.com",
+      "from": "2023-06",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Hyderabad",
+  "country": "IN",
+  "department": "Security",
+  "manager_employee_id": "KC-10014",
+  "hire_date": "2023-06-12",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Security Engineer",
+      "grade": "P3",
+      "from": "2023-06",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Tenant access and scanner controls",
+      "role": "Security Engineer",
+      "from": "2025-01",
+      "to": null,
+      "allocation_pct": 70
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "directory_aliases": [
+    {
+      "display_name": "N. Lakshmi",
+      "system": "Jira",
+      "account_id": "jira-sec-919",
+      "verified_on": "2023-06-12",
+      "employee_id": "KC-10919"
+    },
+    {
+      "display_name": "Narayanan, Lakshmi",
+      "system": "GitHub SSO",
+      "login": "nlakshmi-kc",
+      "verified_on": "2023-06-12",
+      "employee_id": "KC-10919"
+    }
+  ],
+  "education": [
+    {
+      "institution": "VIT Vellore",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2020
+    }
+  ]
+}

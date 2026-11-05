@@ -1,0 +1,117 @@
+{
+  "employee_id": "KC-10047",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Vikram Reddy",
+  "preferred_name": "Vikram",
+  "emails": [
+    {
+      "email": "vikram.reddy@kestrelcloud.com",
+      "from": "2016-03",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Billing Engineering",
+  "manager_employee_id": "KC-10112",
+  "hire_date": "2016-03-07",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Software Engineer",
+      "grade": "P2",
+      "from": "2016-03",
+      "to": "2018-03"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "grade": "P3",
+      "from": "2018-04",
+      "to": "2020-06"
+    },
+    {
+      "title": "Tech Lead",
+      "grade": "P4",
+      "from": "2020-07",
+      "to": "2022-06"
+    },
+    {
+      "title": "Engineering Manager",
+      "grade": "M2",
+      "from": "2022-07",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Billing core rewrite (Spring Boot 2)",
+      "role": "Tech Lead",
+      "from": "2018-06",
+      "to": "2021-09",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Invoice numbering service",
+      "role": "Sponsor / design reviewer",
+      "from": "2023-02",
+      "to": "2023-11",
+      "allocation_pct": 10
+    },
+    {
+      "project": "Billing Engineering team (7 engineers)",
+      "role": "Engineering Manager",
+      "from": "2022-07",
+      "to": null,
+      "allocation_pct": 100
+    },
+    {
+      "project": "Backend hiring 2024",
+      "role": "Hiring manager",
+      "from": "2024-01",
+      "to": "2024-12",
+      "allocation_pct": 15
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Java",
+      "self_level": 4,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Spring Boot",
+      "self_level": 4,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "System design",
+      "self_level": 4,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Technical leadership",
+      "self_level": 4,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Agile delivery",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "NIT Warangal",
+      "degree": "B.Tech",
+      "field": "Computer Science and Engineering",
+      "year": 2013
+    }
+  ]
+}

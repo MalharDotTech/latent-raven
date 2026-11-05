@@ -1,0 +1,93 @@
+{
+  "employee_id": "KC-11284",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Rahul Kumar",
+  "preferred_name": "Rahul K",
+  "emails": [
+    {
+      "email": "rahul.kumar2@kestrelcloud.com",
+      "from": "2022-07",
+      "to": "2024-03"
+    },
+    {
+      "email": "rahul.kumar@kestrelcloud.com",
+      "from": "2024-03",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Frontend Engineering",
+  "manager_employee_id": "KC-10980",
+  "hire_date": "2022-07-04",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Software Engineer",
+      "grade": "P2",
+      "from": "2022-07",
+      "to": "2024-06"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "grade": "P3",
+      "from": "2024-07",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Web console redesign",
+      "role": "Frontend Engineer",
+      "from": "2022-08",
+      "to": "2024-03",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Recon UI v2",
+      "role": "Frontend Engineer",
+      "from": "2024-04",
+      "to": "2025-09",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Billing settings revamp",
+      "role": "Frontend Engineer",
+      "from": "2025-10",
+      "to": null,
+      "allocation_pct": 90
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "React",
+      "self_level": 3,
+      "declared_on": "2025-01"
+    },
+    {
+      "skill_text": "TypeScript",
+      "self_level": 3,
+      "declared_on": "2025-01"
+    },
+    {
+      "skill_text": "JavaScript",
+      "self_level": 4,
+      "declared_on": "2025-01"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "PES University",
+      "degree": "B.E.",
+      "field": "Computer Science and Engineering",
+      "year": 2020
+    }
+  ]
+}

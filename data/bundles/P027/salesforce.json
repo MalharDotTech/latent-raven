@@ -1,0 +1,1084 @@
+{
+  "user": "jason.lee@kestrelcloud.com",
+  "user_title_in_crm": "Senior Sales Engineer",
+  "note": "opportunities where user is overlay SE; owner (AE) credit = remainder",
+  "opportunities": [
+    {
+      "opp_id": "006000000009785AAA",
+      "account_industry": "SaaS",
+      "stage": "Closed Lost",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2023-05-08",
+      "close_date": "2023-09-14",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "POC wk3: 88% auto match. Misses are partial refunds with split payouts - need a custom rule. Wrote rule, re-ran, 93%."
+    },
+    {
+      "opp_id": "006000000009844AAA",
+      "account_industry": "Property management",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2023-05-28",
+      "close_date": "2023-09-26",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Postman monitor failing on their staging because of 429s, told them to use bulk endpoint. Fixed on call."
+    },
+    {
+      "opp_id": "006000000009925AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Lost",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2023-06-25",
+      "close_date": "2023-09-02",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Security review: sent SOC2 report + pen test summary. Their IT wants SSO via Okta, confirmed supported."
+    },
+    {
+      "opp_id": "006000000009964AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "$150-300k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2023-07-14",
+      "close_date": "2023-11-14",
+      "products": [
+        "Billing"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Technical win logged. AE going for pricing call tomorrow."
+    },
+    {
+      "opp_id": "006000000010049AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Won",
+      "amount_band": "$150-300k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2023-08-12",
+      "close_date": "2023-10-24",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Technical win logged. AE going for pricing call tomorrow."
+    },
+    {
+      "opp_id": "006000000010160AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2023-08-31",
+      "close_date": "2023-12-30",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "POC wk3: 88% auto match. Misses are partial refunds with split payouts - need a custom rule. Wrote rule, re-ran, 93%."
+    },
+    {
+      "opp_id": "006000000010243AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Lost",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2023-09-24",
+      "close_date": "2024-01-03",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Answered their dev's questions on idempotency keys and webhook signature verification (HMAC). Sent code sample."
+    },
+    {
+      "opp_id": "006000000010314AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Lost",
+      "amount_band": "$150-300k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2023-10-26",
+      "close_date": "2023-12-28",
+      "products": [
+        "Billing"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Late stage procurement q's - data residency US region. Confirmed."
+    },
+    {
+      "opp_id": "006000000010408AAA",
+      "account_industry": "Healthcare",
+      "stage": "Closed Won",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2023-11-15",
+      "close_date": "2024-01-11",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Demo to 6 ppl incl. CFO. CFO cared about close time not API. AE led the business case, I stayed on integration part."
+    },
+    {
+      "opp_id": "006000000010475AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Lost",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2023-12-16",
+      "close_date": "2024-04-19",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Answered their dev's questions on idempotency keys and webhook signature verification (HMAC). Sent code sample."
+    },
+    {
+      "opp_id": "006000000010529AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2024-01-12",
+      "close_date": "2024-03-05",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Ran 20 min API walkthrough using Postman collection (auth > import > poll job > matches > webhook). They asked about rate limits, said 100 rps burst fine for them."
+    },
+    {
+      "opp_id": "006000000010574AAA",
+      "account_industry": "Insurance",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2024-01-31",
+      "close_date": "2024-07-08",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "POC kickoff. Success = 85% auto match on payout file + exceptions queue < 50. Sandbox tenant created, API key shared w/ their dev."
+    },
+    {
+      "opp_id": "006000000010659AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-02-18",
+      "close_date": "2024-06-03",
+      "products": [
+        "Billing"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Late stage procurement q's - data residency US region. Confirmed."
+    },
+    {
+      "opp_id": "006000000010738AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Lost",
+      "amount_band": "$150-300k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2024-03-22",
+      "close_date": "2024-06-27",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Postman monitor failing on their staging because of 429s, told them to use bulk endpoint. Fixed on call."
+    },
+    {
+      "opp_id": "006000000010799AAA",
+      "account_industry": "SaaS",
+      "stage": "Closed Lost",
+      "amount_band": "$150-300k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2024-04-11",
+      "close_date": "2024-07-06",
+      "products": [
+        "Billing"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "POC wk3: 88% auto match. Misses are partial refunds with split payouts - need a custom rule. Wrote rule, re-ran, 93%."
+    },
+    {
+      "opp_id": "006000000010881AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2024-05-08",
+      "close_date": "2024-09-22",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Lost: they chose in-house build per CTO. Left sandbox open for 30d just in case."
+    },
+    {
+      "opp_id": "006000000010925AAA",
+      "account_industry": "SaaS",
+      "stage": "Closed Won",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-05-29",
+      "close_date": "2024-10-15",
+      "products": [
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "POC wk3: 88% auto match. Misses are partial refunds with split payouts - need a custom rule. Wrote rule, re-ran, 93%."
+    },
+    {
+      "opp_id": "006000000011014AAA",
+      "account_industry": "Healthcare",
+      "stage": "Closed Won",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2024-06-19",
+      "close_date": "2024-08-29",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Competitive: they also looked at a recon module of their ERP. Showed multi currency and webhooks, ERP module has no API."
+    },
+    {
+      "opp_id": "006000000011059AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Won",
+      "amount_band": "$150-300k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2024-07-07",
+      "close_date": "2024-08-26",
+      "products": [
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Discovery tech call w/ their eng lead + controller. Currently Stripe payouts + NetSuite, recon via CSV in sheets, 3 FTE days/month. Demoed API import + matching rules in sandbox. Agreed POC: 2 months of payout reports."
+    },
+    {
+      "opp_id": "006000000011116AAA",
+      "account_industry": "SaaS",
+      "stage": "Closed Won",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2024-07-26",
+      "close_date": "2024-11-18",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Technical win logged. AE going for pricing call tomorrow."
+    },
+    {
+      "opp_id": "006000000011218AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Lost",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2024-08-27",
+      "close_date": "2024-10-14",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Postman monitor failing on their staging because of 429s, told them to use bulk endpoint. Fixed on call."
+    },
+    {
+      "opp_id": "006000000011269AAA",
+      "account_industry": "Property management",
+      "stage": "Closed Lost",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2024-09-27",
+      "close_date": "2025-02-12",
+      "products": [
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "POC wk3: 88% auto match. Misses are partial refunds with split payouts - need a custom rule. Wrote rule, re-ran, 93%."
+    },
+    {
+      "opp_id": "006000000011320AAA",
+      "account_industry": "Property management",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2024-10-15",
+      "close_date": "2025-02-03",
+      "products": [
+        "Billing"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Discovery tech call w/ their eng lead + controller. Currently Stripe payouts + NetSuite, recon via CSV in sheets, 3 FTE days/month. Demoed API import + matching rules in sandbox. Agreed POC: 2 months of payout reports."
+    },
+    {
+      "opp_id": "006000000011369AAA",
+      "account_industry": "Property management",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2024-11-15",
+      "close_date": "2025-03-07",
+      "products": [
+        "Billing"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Competitive: they also looked at a recon module of their ERP. Showed multi currency and webhooks, ERP module has no API."
+    },
+    {
+      "opp_id": "006000000011510AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2024-12-19",
+      "close_date": "2025-02-25",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Technical win logged. AE going for pricing call tomorrow."
+    },
+    {
+      "opp_id": "006000000011553AAA",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2025-01-06",
+      "close_date": "2025-04-26",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Lost: they chose in-house build per CTO. Left sandbox open for 30d just in case."
+    },
+    {
+      "opp_id": "006000000011581AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Lost",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2025-01-25",
+      "close_date": "2025-05-01",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Postman monitor failing on their staging because of 429s, told them to use bulk endpoint. Fixed on call."
+    },
+    {
+      "opp_id": "006000000011647AAA",
+      "account_industry": "Insurance",
+      "stage": "Closed Lost",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2025-02-27",
+      "close_date": "2025-05-06",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Security review: sent SOC2 report + pen test summary. Their IT wants SSO via Okta, confirmed supported."
+    },
+    {
+      "opp_id": "006000000011727AAA",
+      "account_industry": "Property management",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2025-04-01",
+      "close_date": "2025-08-13",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Lost: they chose in-house build per CTO. Left sandbox open for 30d just in case."
+    },
+    {
+      "opp_id": "006000000011815AAA",
+      "account_industry": "SaaS",
+      "stage": "Closed Won",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2025-05-01",
+      "close_date": "2025-09-20",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Answered their dev's questions on idempotency keys and webhook signature verification (HMAC). Sent code sample."
+    },
+    {
+      "opp_id": "006000000011910AAA",
+      "account_industry": "Insurance",
+      "stage": "Closed Lost",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2025-05-31",
+      "close_date": "2025-10-07",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Answered their dev's questions on idempotency keys and webhook signature verification (HMAC). Sent code sample."
+    },
+    {
+      "opp_id": "006000000011959AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2025-06-24",
+      "close_date": "2025-08-11",
+      "products": [
+        "Billing"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Discovery tech call w/ their eng lead + controller. Currently Stripe payouts + NetSuite, recon via CSV in sheets, 3 FTE days/month. Demoed API import + matching rules in sandbox. Agreed POC: 2 months of payout reports."
+    },
+    {
+      "opp_id": "006000000012027AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Won",
+      "amount_band": "$150-300k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2025-07-15",
+      "close_date": "2025-10-07",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Answered their dev's questions on idempotency keys and webhook signature verification (HMAC). Sent code sample."
+    },
+    {
+      "opp_id": "006000000012095AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "90L-2Cr INR",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2025-07-21",
+      "close_date": "2025-11-14",
+      "products": [
+        "Billing",
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "US subsidiary (Texas) of an Indian customer, same master contract as AE Arvind in Mumbai. I ran tech calls for the Dallas entity - ACH + wire formats, webhook into their TMS. India entities handled by Arvind's SE side. Signed 14 Nov."
+    },
+    {
+      "opp_id": "006000000012183AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-08-14",
+      "close_date": "2025-10-29",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Postman monitor failing on their staging because of 429s, told them to use bulk endpoint. Fixed on call."
+    },
+    {
+      "opp_id": "006000000012243AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2025-09-05",
+      "close_date": "2026-01-16",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Demo to 6 ppl incl. CFO. CFO cared about close time not API. AE led the business case, I stayed on integration part."
+    },
+    {
+      "opp_id": "006000000012327AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-10-03",
+      "close_date": "2025-11-20",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Security review: sent SOC2 report + pen test summary. Their IT wants SSO via Okta, confirmed supported."
+    },
+    {
+      "opp_id": "006000000012399AAA",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2025-10-24",
+      "close_date": "2026-03-27",
+      "products": [
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Security review: sent SOC2 report + pen test summary. Their IT wants SSO via Okta, confirmed supported."
+    },
+    {
+      "opp_id": "006000000012492AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2025-11-22",
+      "close_date": "2026-02-04",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Postman monitor failing on their staging because of 429s, told them to use bulk endpoint. Fixed on call."
+    },
+    {
+      "opp_id": "006000000012541AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2025-12-13",
+      "close_date": "2026-04-16",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Late stage procurement q's - data residency US region. Confirmed."
+    },
+    {
+      "opp_id": "006000000012626AAA",
+      "account_industry": "Insurance",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2026-01-14",
+      "close_date": "2026-06-16",
+      "products": [
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Postman monitor failing on their staging because of 429s, told them to use bulk endpoint. Fixed on call."
+    },
+    {
+      "opp_id": "006000000012665AAA",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2026-01-19",
+      "close_date": "2026-04-09",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Add-on to the family of companies above. Ledger API for ERP integration, did retries / webhook walkthrough with Arvind on the call. Postman collection reused."
+    },
+    {
+      "opp_id": "006000000012692AAA",
+      "account_industry": "Fintech",
+      "stage": "Closed Lost",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2026-02-06",
+      "close_date": "2026-05-29",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Technical win logged. AE going for pricing call tomorrow."
+    },
+    {
+      "opp_id": "006000000012751AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Lost",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-03-01",
+      "close_date": "2026-07-11",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "POC wk3: 88% auto match. Misses are partial refunds with split payouts - need a custom rule. Wrote rule, re-ran, 93%."
+    },
+    {
+      "opp_id": "006000000012805AAA",
+      "account_industry": "Property management",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-04-02",
+      "close_date": "2026-08-03",
+      "products": [
+        "Billing"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Technical win logged. AE going for pricing call tomorrow."
+    },
+    {
+      "opp_id": "006000000012873AAA",
+      "account_industry": "Insurance",
+      "stage": "Closed Lost",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 25,
+      "created": "2026-04-21",
+      "close_date": "2026-06-19",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Demo to 6 ppl incl. CFO. CFO cared about close time not API. AE led the business case, I stayed on integration part."
+    },
+    {
+      "opp_id": "006000000012930AAA",
+      "account_industry": "Property management",
+      "stage": "Closed Won",
+      "amount_band": "$25-75k",
+      "role": "overlay_se",
+      "credit_split_pct": 15,
+      "created": "2026-05-10",
+      "close_date": "2026-08-29",
+      "products": [
+        "Payments Recon",
+        "Ledger API"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Technical win logged. AE going for pricing call tomorrow."
+    },
+    {
+      "opp_id": "006000000013038AAA",
+      "account_industry": "Insurance",
+      "stage": "Closed Won",
+      "amount_band": "$75-150k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2026-06-10",
+      "close_date": "2026-10-28",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "Technical win logged. AE going for pricing call tomorrow."
+    },
+    {
+      "opp_id": "006000000013098AAA",
+      "account_industry": "Retail",
+      "stage": "Closed Lost",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-06-30",
+      "close_date": "2026-10-27",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "Yes",
+      "notes_excerpt": "POC wk3: 88% auto match. Misses are partial refunds with split payouts - need a custom rule. Wrote rule, re-ran, 93%."
+    },
+    {
+      "opp_id": "006000000013222AAA",
+      "account_industry": "Healthcare",
+      "stage": "Negotiation/Review",
+      "amount_band": "$300-600k",
+      "role": "overlay_se",
+      "credit_split_pct": 20,
+      "created": "2026-08-02",
+      "close_date": "2026-10-30",
+      "products": [
+        "Payments Recon"
+      ],
+      "technical_win": "No",
+      "notes_excerpt": "Demo to 6 ppl incl. CFO. CFO cared about close time not API. AE led the business case, I stayed on integration part."
+    },
+    {
+      "opp_id": "006000000013277AAA",
+      "account_industry": "Insurance",
+      "stage": "Technical Validation",
+      "amount_band": "$150-300k",
+      "role": "overlay_se",
+      "credit_split_pct": 30,
+      "created": "2026-08-31",
+      "close_date": "2026-10-30",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "technical_win": "In progress",
+      "notes_excerpt": "Competitive: they also looked at a recon module of their ERP. Showed multi currency and webhooks, ERP module has no API."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-04",
+      "opps_touched": 5,
+      "calls_logged": 8
+    },
+    {
+      "month": "2023-05",
+      "opps_touched": 3,
+      "calls_logged": 23,
+      "opps_created": 2
+    },
+    {
+      "month": "2023-06",
+      "opps_touched": 5,
+      "calls_logged": 18,
+      "opps_created": 1
+    },
+    {
+      "month": "2023-07",
+      "opps_touched": 2,
+      "calls_logged": 13,
+      "opps_created": 1
+    },
+    {
+      "month": "2023-08",
+      "opps_touched": 3,
+      "calls_logged": 20,
+      "opps_created": 2
+    },
+    {
+      "month": "2023-09",
+      "opps_touched": 4,
+      "calls_logged": 15,
+      "opps_closed": 3,
+      "opps_created": 1
+    },
+    {
+      "month": "2023-10",
+      "opps_touched": 4,
+      "calls_logged": 23,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2023-11",
+      "opps_touched": 6,
+      "calls_logged": 24,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2023-12",
+      "opps_touched": 6,
+      "calls_logged": 9,
+      "opps_closed": 2,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-01",
+      "opps_touched": 4,
+      "calls_logged": 12,
+      "opps_closed": 2,
+      "opps_created": 2
+    },
+    {
+      "month": "2024-02",
+      "opps_touched": 10,
+      "calls_logged": 22,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-03",
+      "opps_touched": 5,
+      "calls_logged": 22,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-04",
+      "opps_touched": 6,
+      "calls_logged": 23,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-05",
+      "opps_touched": 4,
+      "calls_logged": 12,
+      "opps_created": 2
+    },
+    {
+      "month": "2024-06",
+      "opps_touched": 8,
+      "calls_logged": 16,
+      "opps_closed": 2,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-07",
+      "opps_touched": 8,
+      "calls_logged": 9,
+      "opps_closed": 2,
+      "opps_created": 2
+    },
+    {
+      "month": "2024-08",
+      "opps_touched": 3,
+      "calls_logged": 8,
+      "opps_closed": 2,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-09",
+      "opps_touched": 4,
+      "calls_logged": 22,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-10",
+      "opps_touched": 4,
+      "calls_logged": 26,
+      "opps_closed": 2,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-11",
+      "opps_touched": 8,
+      "calls_logged": 16,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2024-12",
+      "opps_touched": 4,
+      "calls_logged": 16,
+      "opps_created": 1
+    },
+    {
+      "month": "2025-01",
+      "opps_touched": 11,
+      "calls_logged": 10,
+      "opps_created": 2
+    },
+    {
+      "month": "2025-02",
+      "opps_touched": 7,
+      "calls_logged": 8,
+      "opps_closed": 3,
+      "opps_created": 1
+    },
+    {
+      "month": "2025-03",
+      "opps_touched": 9,
+      "calls_logged": 12,
+      "opps_closed": 1
+    },
+    {
+      "month": "2025-04",
+      "opps_touched": 7,
+      "calls_logged": 18,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2025-05",
+      "opps_touched": 4,
+      "calls_logged": 17,
+      "opps_closed": 2,
+      "opps_created": 2
+    },
+    {
+      "month": "2025-06",
+      "opps_touched": 8,
+      "calls_logged": 22,
+      "opps_created": 1
+    },
+    {
+      "month": "2025-07",
+      "opps_touched": 7,
+      "calls_logged": 15,
+      "opps_created": 2
+    },
+    {
+      "month": "2025-08",
+      "opps_touched": 7,
+      "calls_logged": 12,
+      "opps_closed": 2,
+      "opps_created": 1
+    },
+    {
+      "month": "2025-09",
+      "opps_touched": 4,
+      "calls_logged": 12,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2025-10",
+      "opps_touched": 7,
+      "calls_logged": 11,
+      "opps_closed": 3,
+      "opps_created": 2
+    },
+    {
+      "month": "2025-11",
+      "opps_touched": 5,
+      "calls_logged": 21,
+      "opps_closed": 2,
+      "opps_created": 1
+    },
+    {
+      "month": "2025-12",
+      "opps_touched": 8,
+      "calls_logged": 23,
+      "opps_created": 1
+    },
+    {
+      "month": "2026-01",
+      "opps_touched": 9,
+      "calls_logged": 10,
+      "opps_closed": 1,
+      "opps_created": 2
+    },
+    {
+      "month": "2026-02",
+      "opps_touched": 6,
+      "calls_logged": 30,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2026-03",
+      "opps_touched": 3,
+      "calls_logged": 31,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2026-04",
+      "opps_touched": 4,
+      "calls_logged": 23,
+      "opps_closed": 2,
+      "opps_created": 2
+    },
+    {
+      "month": "2026-05",
+      "opps_touched": 10,
+      "calls_logged": 17,
+      "opps_closed": 1,
+      "opps_created": 1
+    },
+    {
+      "month": "2026-06",
+      "opps_touched": 5,
+      "calls_logged": 17,
+      "opps_closed": 2,
+      "opps_created": 2
+    },
+    {
+      "month": "2026-07",
+      "opps_touched": 4,
+      "calls_logged": 17,
+      "opps_closed": 1
+    },
+    {
+      "month": "2026-08",
+      "opps_touched": 11,
+      "calls_logged": 21,
+      "opps_closed": 2,
+      "opps_created": 2
+    },
+    {
+      "month": "2026-09",
+      "opps_touched": 4,
+      "calls_logged": 17
+    },
+    {
+      "month": "2026-10",
+      "opps_touched": 6,
+      "calls_logged": 10,
+      "opps_closed": 2
+    }
+  ]
+}

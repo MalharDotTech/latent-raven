@@ -1,0 +1,41 @@
+{
+  "completions": [
+    {
+      "course_title": "Git Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2019-09-20",
+      "time_spent_minutes": 95,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "SQL Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2020-05-08",
+      "time_spent_minutes": 210,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "Agile Foundations",
+      "provider": "LinkedIn Learning",
+      "completed": "2021-04-02",
+      "time_spent_minutes": 70,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Kestrel Secure Coding Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2025-02-11",
+      "time_spent_minutes": 55,
+      "quiz_score_pct": 90,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Playwright Migration Workshop",
+      "provider": "Kestrel Learn",
+      "completed": "2025-03-07",
+      "time_spent_minutes": 180,
+      "assigned_by": "manager"
+    }
+  ]
+}

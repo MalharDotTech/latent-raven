@@ -1,0 +1,34 @@
+{
+  "person_ref": "P036",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-11529",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_aman-bhatia-kc_1",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P036",
+      "received": "2026-10-14"
+    },
+    {
+      "source_id": "jira_KC-11529",
+      "source_type": "jira",
+      "path": "jira.json"
+    },
+    {
+      "source_id": "doc_SALES-218",
+      "source_type": "authored_doc",
+      "path": "docs/partner-replay.md"
+    },
+    {
+      "source_id": "salesforce_KC-11529",
+      "source_type": "salesforce",
+      "path": "salesforce.json"
+    }
+  ]
+}

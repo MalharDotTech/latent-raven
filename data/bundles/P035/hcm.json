@@ -1,0 +1,64 @@
+{
+  "employee_id": "KC-12307",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Tanvi Menon",
+  "preferred_name": "Tanvi",
+  "emails": [
+    {
+      "email": "tanvi.menon@kestrelcloud.com",
+      "from": "2024-10",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Product Design",
+  "manager_employee_id": "KC-10561",
+  "hire_date": "2024-10-07",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Product Designer",
+      "grade": "P2",
+      "from": "2024-10",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Reconciliation workspace",
+      "role": "Product Designer",
+      "from": "2024-10",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Osmania University",
+      "degree": "B.Pharm",
+      "field": "Pharmacy",
+      "year": 2022
+    }
+  ],
+  "exported": "2026-10-31",
+  "self_declared_skills": [
+    {
+      "skill_text": "Figma",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    },
+    {
+      "skill_text": "UX Research",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    }
+  ]
+}

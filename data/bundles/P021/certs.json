@@ -1,0 +1,18 @@
+{
+  "exported_on": "2026-10-31",
+  "certificates": [
+    {
+      "name": "Certified Kubernetes Administrator",
+      "issuer": "Linux Foundation / CNCF",
+      "code": "CKA",
+      "issued": "2025-03",
+      "expires": "2027-03",
+      "evidence_form": "pdf_upload",
+      "verification_status": "verified",
+      "verified_on": "2025-03-24",
+      "verification_method": "Issuer portal checked by People Ops; certificate number retained in restricted credential store",
+      "holder_name": "Tom Fischer",
+      "linked_employee_id": "KC-11121"
+    }
+  ]
+}

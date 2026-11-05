@@ -1,0 +1,1078 @@
+{
+  "linked_employee_id": "KC-12072",
+  "issues": [
+    {
+      "key": "WEB-3706",
+      "type": "Task",
+      "summary": "Invoice download has wrong extension",
+      "description_excerpt": "Downloaded invoice is saved as download.bin despite server sending filename. Also check leaving page mid-request.",
+      "component": "Merchant console",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-09-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-09-11",
+      "resolved": "2023-09-27",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 97",
+        "start": "2023-09-11",
+        "end": "2023-09-22"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2023-09-27",
+          "body": "Tested slow response and aborted navigation; released with console patch."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8285"
+        }
+      ]
+    },
+    {
+      "key": "WEB-3787",
+      "type": "Story",
+      "summary": "List paging drops bank filter",
+      "description_excerpt": "Bank filter resets after next page. Search and pagination need to use the same state.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-11-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-11-20",
+      "resolved": "2023-12-01",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 102",
+        "start": "2023-11-20",
+        "end": "2023-12-01"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2023-12-01",
+          "body": "Component tests cover paging then changing bank."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8377"
+        }
+      ]
+    },
+    {
+      "key": "WEB-3829",
+      "type": "Bug",
+      "summary": "Optional amount crashes row render",
+      "description_excerpt": "Optional amount from API throws during row formatting. Remove assertion around that field.",
+      "component": "Merchant console",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-12-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-12-19",
+      "resolved": "2024-01-01",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 104",
+        "start": "2023-12-18",
+        "end": "2023-12-29"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2024-01-01",
+          "body": "Guard missing amount before money formatting; removed unsafe assertion and added regression test."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8436"
+        }
+      ]
+    },
+    {
+      "key": "WEB-3943",
+      "type": "Task",
+      "summary": "Old search result replaces new one",
+      "description_excerpt": "Quickly change search twice on slow network. Older response replaces newer results.",
+      "component": "Merchant console",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-03-25"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-03-25",
+      "resolved": "2024-04-09",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 111",
+        "start": "2024-03-25",
+        "end": "2024-04-05"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2024-04-09",
+          "body": "JavaScript test resolves requests in reverse order and the React screen retains current results."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8572"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4008",
+      "type": "Bug",
+      "summary": "Timeout screen has no recovery action",
+      "description_excerpt": "Bank timeout page has no retry action. QA needs timeout and missing-auth states in the test plan.",
+      "component": "Merchant console",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-05-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-05-20",
+      "resolved": "2024-06-03",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 115",
+        "start": "2024-05-20",
+        "end": "2024-05-31"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2024-06-03",
+          "body": "QA corrected the expected timeout error code."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8664"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4031",
+      "type": "Story",
+      "summary": "Selection remains after tenant change",
+      "description_excerpt": "Selected credit notes survive switching tenants. Row actions then refer to the old tenant.",
+      "component": "Merchant console",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-06-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-06-03",
+      "resolved": "2024-06-17",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 116",
+        "start": "2024-06-03",
+        "end": "2024-06-14"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2024-06-17",
+          "body": "State reset follows tenant key; released with component tests for switching tenant and filter."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8695"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4097",
+      "type": "Story",
+      "summary": "Refund status accepts unknown string",
+      "description_excerpt": "Refund status is typed as string everywhere. Need explicit variants at the response boundary.",
+      "component": "Merchant console",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-07-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-07-30",
+      "resolved": "2024-08-09",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 120",
+        "start": "2024-07-29",
+        "end": "2024-08-09"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2024-08-09",
+          "body": "Discriminated union replaces string casts; exhaustive test handles pending and rejected variants."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8769"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4212",
+      "type": "Bug",
+      "summary": "Exception table rerenders on hover",
+      "description_excerpt": "Hovering one action rerenders the entire exception table. Profile before adding more memo wrappers.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-10-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-10-28",
+      "resolved": "2024-11-13",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 126",
+        "start": "2024-10-21",
+        "end": "2024-11-01"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2024-11-13",
+          "body": "Stable callbacks cut unnecessary row commits; verified in released screen."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8903"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4287",
+      "type": "Story",
+      "summary": "Empty response breaks refund details",
+      "description_excerpt": "No-content response breaks the refund drawer. Review empty and malformed responses with QA.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-01-06",
+      "resolved": "2025-01-13",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 131",
+        "start": "2024-12-30",
+        "end": "2025-01-10"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2025-01-13",
+          "body": "API error-state checks added with QA review, recorded 204 and malformed body responses in the component test run."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/8999"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4297",
+      "type": "Task",
+      "summary": "Preview build misses type errors",
+      "description_excerpt": "Preview builds run without checking the console workspace types. Add typecheck stage with release engineer.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-09"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-01-09",
+      "resolved": "2025-01-17",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 131",
+        "start": "2024-12-30",
+        "end": "2025-01-10"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2025-01-17",
+          "body": "Passing run linked after fixing workspace command."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9007"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4367",
+      "type": "Task",
+      "summary": "Delayed search runs after navigation",
+      "description_excerpt": "A debounced search runs after leaving the page. Timer cleanup missing on unmount.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-26",
+      "resolved": "2025-03-06",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 135",
+        "start": "2025-02-24",
+        "end": "2025-03-07"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2025-03-06",
+          "body": "Debounce cleanup cancels the pending promise callback; regression test moves route before timer fires."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9099"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4443",
+      "type": "Story",
+      "summary": "Focus lost after closing drawer",
+      "description_excerpt": "Closing refund drawer leaves keyboard focus on body. Return to the opening button.",
+      "component": "Merchant console",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-04-28",
+      "resolved": "2025-05-08",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 139",
+        "start": "2025-04-21",
+        "end": "2025-05-02"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2025-05-08",
+          "body": "Component tests include keyboard close and pending request."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9182"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4501",
+      "type": "Story",
+      "summary": "Unsafe cast hides missing bank field",
+      "description_excerpt": "Exception parser casts bank object even when absent. Need the missing-bank regression.",
+      "component": "Merchant console",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-13",
+      "resolved": "2025-06-27",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 142",
+        "start": "2025-06-02",
+        "end": "2025-06-13"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2025-06-27",
+          "body": "Regression test covers missing bank object."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9263"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4585",
+      "type": "Task",
+      "summary": "Disabled action has no reason",
+      "description_excerpt": "Disabled action has no explanation because the tooltip does not open. Keep reason accessible.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-08-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-08-28",
+      "resolved": "2025-09-03",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 148",
+        "start": "2025-08-25",
+        "end": "2025-09-05"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2025-09-03",
+          "body": "Released with component checks at narrow viewport."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9385"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4642",
+      "type": "Bug",
+      "summary": "Preview artifacts overwrite each other",
+      "description_excerpt": "Two preview jobs overwrite the artifact name. Include the PR ref and check parallel jobs.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-29"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-29",
+      "resolved": "2025-10-07",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 150",
+        "start": "2025-09-22",
+        "end": "2025-10-03"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2025-10-07",
+          "body": "With release engineer changed workflow artifact name to include PR ref; checked simultaneous runs retain separate bundles."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9468"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4772",
+      "type": "Task",
+      "summary": "Cancelled refund shows success toast",
+      "description_excerpt": "Cancel refund, then delayed success response shows a green toast. Cancellation must win.",
+      "component": "Merchant console",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-12-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-12-01",
+      "resolved": "2025-12-15",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 155",
+        "start": "2025-12-01",
+        "end": "2025-12-12"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2025-12-15",
+          "body": "Production async defect reproduced and regression test merged."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9637"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4830",
+      "type": "Bug",
+      "summary": "Rate limit error state",
+      "description_excerpt": "Review 429 retry behaviour with QA. We have no check for absent Retry-After header.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-01-15",
+      "resolved": "2026-01-27",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 158",
+        "start": "2026-01-12",
+        "end": "2026-01-23"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2026-01-27",
+          "body": "Expected delay corrected following review."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9742"
+        }
+      ]
+    },
+    {
+      "key": "WEB-4946",
+      "type": "Task",
+      "summary": "Column actions rebuilt on selection",
+      "description_excerpt": "Selecting a row recreates every column action. Capture profiler output on the long table.",
+      "component": "Merchant console",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-18",
+      "resolved": "2026-03-27",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 162",
+        "start": "2026-03-09",
+        "end": "2026-03-20"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2026-03-27",
+          "body": "Shipped in console release."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9920"
+        }
+      ]
+    },
+    {
+      "key": "WEB-5008",
+      "type": "Bug",
+      "summary": "Encoded bank ref displayed twice",
+      "description_excerpt": "Bank reference is decoded by both adapter and component. Literal percent signs can break it.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-23",
+      "resolved": "2026-04-30",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 165",
+        "start": "2026-04-20",
+        "end": "2026-05-01"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2026-04-30",
+          "body": "TypeScript response adapter does one decode, regression tests preserve literal percent signs and malformed input."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/9984"
+        }
+      ]
+    },
+    {
+      "key": "WEB-5099",
+      "type": "Story",
+      "summary": "Polling continues after drawer closes",
+      "description_excerpt": "Status polling keeps running after closing drawer. Check interval and in-flight request cleanup.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-30",
+      "resolved": "2026-07-15",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 170",
+        "start": "2026-06-29",
+        "end": "2026-07-10"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2026-07-15",
+          "body": "React effect clears interval and aborts pending request; test advances timers after close and asserts no new call."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/10139"
+        }
+      ]
+    },
+    {
+      "key": "WEB-5173",
+      "type": "Task",
+      "summary": "Old summary component unused",
+      "description_excerpt": "Old invoice summary component has no route after migration. Remove it and its styles.",
+      "component": "Merchant console",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-24",
+      "resolved": "2026-09-07",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 174",
+        "start": "2026-08-24",
+        "end": "2026-09-04"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2026-09-07",
+          "body": "Existing screen tests pass."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/10242"
+        }
+      ]
+    },
+    {
+      "key": "WEB-5202",
+      "type": "Task",
+      "summary": "Offline retry leaves spinner running",
+      "description_excerpt": "Offline retry leaves spinner running forever. Add failure and recovery checks with QA.",
+      "component": "Merchant console",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-14",
+      "resolved": "2026-09-24",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 175",
+        "start": "2026-09-07",
+        "end": "2026-09-18"
+      },
+      "comments": [
+        {
+          "author": "Isha Sethi",
+          "date": "2026-09-24",
+          "body": "QA confirmed the UI returns to retry state."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/web-console/pull/10311"
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 11,
+      "reported": 1
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 10,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 13,
+      "reported": 1
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    }
+  ],
+  "exported": "2026-10-31"
+}

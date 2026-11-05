@@ -1,0 +1,302 @@
+{
+  "pr_final_counters": {
+    "kestrel-cloud/analytics-dbt": 2422,
+    "kestrel-cloud/billing-core": 3572,
+    "kestrel-cloud/data-platform": 2824,
+    "kestrel-cloud/infra-live": 2146,
+    "kestrel-cloud/platform-k8s": 2172,
+    "kestrel-cloud/qa-automation": 2820,
+    "kestrel-cloud/recon-engine": 3188,
+    "kestrel-cloud/web-console": 3161
+  },
+  "numbering_scope": "All Batch G listed/unlisted PRs and review targets, globally ordered per repository; A-F keys reserved against collisions.",
+  "sources": {
+    "P033": [
+      {
+        "source_id": "hcm_KC-11682",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_nirav-deshpande-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P033",
+        "received": "2026-10-16"
+      },
+      {
+        "source_id": "gh_nirav-deshpande-kc",
+        "source_type": "github",
+        "path": "github.json"
+      },
+      {
+        "source_id": "jira_KC-11682",
+        "source_type": "jira",
+        "path": "jira.json"
+      }
+    ],
+    "P034": [
+      {
+        "source_id": "hcm_KC-12146",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_sravya-dutta-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P034",
+        "received": "2026-09-09"
+      },
+      {
+        "source_id": "cv_sravya-dutta-kc_2",
+        "source_type": "cv",
+        "path": "cv_v2.md",
+        "lineage_key": "cv-P034",
+        "received": "2026-09-23"
+      },
+      {
+        "source_id": "gh_sravya-dutta-kc",
+        "source_type": "github",
+        "path": "github.json"
+      },
+      {
+        "source_id": "jira_KC-12146",
+        "source_type": "jira",
+        "path": "jira.json"
+      },
+      {
+        "source_id": "lms_KC-12146",
+        "source_type": "lms",
+        "path": "lms.json"
+      }
+    ],
+    "P035": [
+      {
+        "source_id": "hcm_KC-12307",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_tanvi-menon-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "self-tanvi-design",
+        "received": "2026-10-05"
+      },
+      {
+        "source_id": "jira_KC-12307",
+        "source_type": "jira",
+        "path": "jira.json"
+      },
+      {
+        "source_id": "doc_PM-1841",
+        "source_type": "authored_doc",
+        "path": "docs/review-flow.md",
+        "lineage_key": "self-tanvi-design"
+      },
+      {
+        "source_id": "lms_KC-12307",
+        "source_type": "lms",
+        "path": "lms.json"
+      }
+    ],
+    "P036": [
+      {
+        "source_id": "hcm_KC-11529",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_aman-bhatia-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P036",
+        "received": "2026-10-14"
+      },
+      {
+        "source_id": "jira_KC-11529",
+        "source_type": "jira",
+        "path": "jira.json"
+      },
+      {
+        "source_id": "doc_SALES-218",
+        "source_type": "authored_doc",
+        "path": "docs/partner-replay.md"
+      },
+      {
+        "source_id": "salesforce_KC-11529",
+        "source_type": "salesforce",
+        "path": "salesforce.json"
+      }
+    ],
+    "P037": [
+      {
+        "source_id": "hcm_KC-11863",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_sanket-jadhav-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P037",
+        "received": "2026-08-17"
+      },
+      {
+        "source_id": "jira_KC-11863",
+        "source_type": "jira",
+        "path": "jira.json"
+      }
+    ],
+    "P038": [
+      {
+        "source_id": "hcm_KC-12754",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_devansh-sahu-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P038",
+        "received": "2026-10-12",
+        "original_format": "scanned_pdf",
+        "extraction_quality": "low"
+      },
+      {
+        "source_id": "gh_devansh-sahu-kc",
+        "source_type": "github",
+        "path": "github.json"
+      },
+      {
+        "source_id": "jira_KC-12754",
+        "source_type": "jira",
+        "path": "jira.json"
+      },
+      {
+        "source_id": "lms_KC-12754",
+        "source_type": "lms",
+        "path": "lms.json"
+      }
+    ],
+    "P039": [
+      {
+        "source_id": "hcm_KC-12018",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_pallavi-kulkarni-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P039",
+        "received": "2026-10-08"
+      },
+      {
+        "source_id": "gh_pallavi-kulkarni-kc",
+        "source_type": "github",
+        "path": "github.json"
+      },
+      {
+        "source_id": "jira_KC-12018",
+        "source_type": "jira",
+        "path": "jira.json"
+      },
+      {
+        "source_id": "certs_KC-12018",
+        "source_type": "certs",
+        "path": "certs.json"
+      }
+    ],
+    "P040": [
+      {
+        "source_id": "hcm_KC-12072",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_isha-sethi-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P040",
+        "received": "2026-10-19",
+        "original_format": "two_column_pdf",
+        "extraction_quality": "mixed"
+      },
+      {
+        "source_id": "gh_isha-sethi-kc",
+        "source_type": "github",
+        "path": "github.json"
+      },
+      {
+        "source_id": "jira_KC-12072",
+        "source_type": "jira",
+        "path": "jira.json"
+      }
+    ],
+    "P041": [
+      {
+        "source_id": "hcm_KC-12109",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_ritika-shah-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P041",
+        "received": "2026-10-07"
+      },
+      {
+        "source_id": "jira_KC-12109",
+        "source_type": "jira",
+        "path": "jira.json"
+      },
+      {
+        "source_id": "doc_ENG-2891",
+        "source_type": "authored_doc",
+        "path": "docs/fi-close.md"
+      }
+    ],
+    "P042": [
+      {
+        "source_id": "hcm_KC-11058",
+        "source_type": "hcm",
+        "path": "hcm.json"
+      },
+      {
+        "source_id": "cv_vivek-narang-kc_1",
+        "source_type": "cv",
+        "path": "cv_v1.md",
+        "lineage_key": "cv-P042",
+        "received": "2026-10-28"
+      },
+      {
+        "source_id": "gh_vivek-narang-kc",
+        "source_type": "github",
+        "path": "github.json"
+      },
+      {
+        "source_id": "jira_KC-11058",
+        "source_type": "jira",
+        "path": "jira.json"
+      },
+      {
+        "source_id": "doc_ARCH-407",
+        "source_type": "authored_doc",
+        "path": "docs/bank-isolation.md"
+      },
+      {
+        "source_id": "doc_ENG-2936",
+        "source_type": "authored_doc",
+        "path": "docs/oncall-guide.md"
+      },
+      {
+        "source_id": "lms_KC-11058",
+        "source_type": "lms",
+        "path": "lms.json"
+      }
+    ]
+  }
+}

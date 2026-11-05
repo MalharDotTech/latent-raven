@@ -1,0 +1,214 @@
+{
+ "pid": "P022",
+ "schema": "truth-v2",
+ "summary": "Arvind is a competent mid-market new-logo AE working from Mumbai. He runs his own cycles for sub-40L deals but on the larger ones the technical discovery and objection handling sits with a overlay sales engineer who also holds a share of credit. Renewals and expansions are mostly picked up by CS, so account planning is thin.",
+ "archetype": "AE with split credit and slightly inflated self-rating",
+ "batch": "E",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "salesforce",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2
+    ],
+    "basis": "sfdc_KC-11874: 45 owned opportunities 2022-2026 with his own stage/close-date maintenance and monthly activity every month; cv_2025_04 'maintaining pipeline and forecast in Salesforce, weekly forecast call'; lms Salesforce Forecasting Basics. Independent maintenance = K3 level 2; no audits/reports for 3. hcm self 3 is one off; K3 needs exact 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "salesforce:opportunities",
+    "salesforce:monthly_activity",
+    "hcm:self_declared_skills"
+   ],
+   "why": "Four years of steady stage and close-date maintenance on own opps; no sign he audits others' pipelines or builds reports."
+  },
+  {
+   "skill_id": "solution_selling",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2
+    ],
+    "basis": "sfdc_KC-11874: own discovery and objection notes on sub-40L deals (pain discovery, price objection vs Zoho Books with approved discount, deal desk billing terms, EB/CFO pursuit), 2022-2026; SE-authored [SE] notes and 20-30% SE credit on large deals are excluded. K3 level 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "salesforce:opportunities",
+    "cv_v1:Experience/Kestrel"
+   ],
+   "why": "Runs discovery and objections independently on small and mid deals; on big deals the technical mapping notes are the SE's, so only part of that evidence is his. Not coaching anyone."
+  },
+  {
+   "skill_id": "account_management",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "sfdc_KC-11874 notes 'Renewal of pilot converted to full licence. 3 more entities in Q4' repeat as template text on a few opps; renewals owned by CS; no account plan or reviewed risk notes. cv_2025_04 lists it; hcm self 2.",
+    "missing_source": "account plans / renewal records"
+   },
+   "last_used": "2026-06",
+   "evidence_refs": [
+    "salesforce:opportunities"
+   ],
+   "why": "A couple of pilot-to-full-licence expansions with guidance from manager; renewals are owned by CS."
+  },
+  {
+   "skill_id": "customer_onboarding",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_04 'customer onboarding coordination', hcm self 2; sfdc_KC-11874 shows only 'Handoff to CS - sent kickoff mail'.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Experience/Kestrel"
+   ],
+   "why": "He only hands closed deals to CS and attends kickoff; CV phrase is coordination, not delivery."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "sfdc_KC-11874 notes mention EB/CFO pursuit, legal redlines sent to Kestrel legal, deal desk approvals; no stakeholder plan or decision record of his own. Soft-skill mapping from CRM notes is uncertain.",
+    "missing_source": "decision records / account stakeholder maps"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "salesforce:opportunities"
+   ],
+   "why": "Notes show him finding the economic buyer, getting legal and deal desk to move, and pushing a champion for a CFO meeting without hand-holding."
+  },
+  {
+   "skill_id": "excel_modeling",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_04 'MS Office, Excel' only; generic spreadsheet use is on the exclude list; no model anywhere.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Skills"
+   ],
+   "why": "Spreadsheet use for quote sheets only; no forecasting model or scenario work anywhere."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "MEDDICC",
+   "mapped_skill_id": "solution_selling",
+   "has_skill": false,
+   "why": "A methodology name and a workshop completion; not separate proof of the selling skill.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_04 'MEDDICC' + lms MEDDICC workshop: methodology name, not separate selling evidence.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F33",
+   "s11_row": "wrong_person",
+   "skill_id": "solution_selling",
+   "plant": "Largest opportunities show him as owner at 70-80% credit with an overlay SE at 20-30%, and SE-authored technical notes sit inside his opportunity records. Two cross-region deals are shared with the US SE (P027).",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "salesforce",
+   "plant": "Self-declared HCM levels are 3 on Salesforce and solution selling; the K3 scale needs an exact match so sending level 3 would be a miss.",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F02",
+   "s11_row": "level_off",
+   "skill_id": "account_management",
+   "plant": "CV gives Kestrel start as May 2022; HCM hire date is Aug 2022. Prior employer end date matches CV, so a three-month gap exists.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F19",
+   "s11_row": "level_off",
+   "skill_id": "solution_selling",
+   "plant": "HCM title is still Account Executive; the CRM user title shows Senior Account Executive since 2025-04.",
+   "expected_engine_behavior": "send_at_level_2",
+   "evidence_expectation": "CRM user title 'Senior Account Executive' (2025-04) must not set the level; HCM title is AE.",
+   "v1_expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "Negotiation",
+  "LinkedIn Sales Navigator"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.75,
+  "yes_to_everything": false,
+  "flattery_bias": 0.4,
+  "notes": "Accepts a level above his true one readily on selling skills; corrects downwards on onboarding."
+ },
+ "messaging_allowed": true
+}

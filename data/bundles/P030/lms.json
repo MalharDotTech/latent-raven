@@ -1,0 +1,84 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Information Security Awareness 2019",
+      "provider": "Kestrel Learn",
+      "completed": "2019-07-24",
+      "time_spent_minutes": 36,
+      "quiz_score_pct": 90,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2019-08-02",
+      "time_spent_minutes": 31,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Python Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2019-09-30",
+      "time_spent_minutes": 210,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Spark Performance Tuning",
+      "provider": "Kestrel Learn",
+      "completed": "2020-02-18",
+      "time_spent_minutes": 150,
+      "quiz_score_pct": 82,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2021",
+      "provider": "Kestrel Learn",
+      "completed": "2021-04-13",
+      "time_spent_minutes": 34,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2024",
+      "provider": "Kestrel Learn",
+      "completed": "2024-06-11",
+      "time_spent_minutes": 37,
+      "quiz_score_pct": 85,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "ETL in Python and SQL",
+      "provider": "LinkedIn Learning",
+      "completed": "2024-06-21",
+      "time_spent_minutes": 195,
+      "quiz_score_pct": null,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Data Pipeline Operations",
+      "provider": "Kestrel Learn",
+      "completed": "2024-08-12",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": 85,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Warehouse Data Checks",
+      "provider": "Kestrel Learn",
+      "completed": "2025-03-13",
+      "time_spent_minutes": 95,
+      "quiz_score_pct": 81,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-05-20",
+      "time_spent_minutes": 33,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    }
+  ]
+}

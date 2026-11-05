@@ -1,0 +1,71 @@
+{
+  "employee_id": "KC-11874",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Arvind Ramakrishna Shetty",
+  "preferred_name": "Arvind Shetty",
+  "emails": [
+    {
+      "email": "arvind.shetty@kestrelcloud.com",
+      "from": "2022-08",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Mumbai (remote)",
+  "country": "IN",
+  "department": "Sales - Mid-Market India",
+  "manager_employee_id": "KC-10388",
+  "hire_date": "2022-08-16",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Account Executive",
+      "grade": "S2",
+      "from": "2022-08",
+      "to": null
+    }
+  ],
+  "project_allocations": [],
+  "self_declared_skills": [
+    {
+      "skill_text": "Salesforce CRM",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Consultative solution selling",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Account management",
+      "self_level": 2,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Customer onboarding",
+      "self_level": 2,
+      "declared_on": "2025-04"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "University of Mumbai",
+      "degree": "B.Com",
+      "field": "Commerce",
+      "year": 2017
+    },
+    {
+      "institution": "NMIMS Mumbai (distance)",
+      "degree": "PG Diploma",
+      "field": "Sales & Marketing Management",
+      "year": 2020
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "employee_id": "KC-11902",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Aditya Verma",
+  "preferred_name": "Aditya",
+  "emails": [
+    {
+      "email": "aditya.verma@kestrelcloud.com",
+      "from": "2024-04",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Cloud Platform",
+  "manager_employee_id": "KC-10410",
+  "hire_date": "2024-04-22",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Associate Cloud Engineer",
+      "grade": "P1",
+      "from": "2024-04",
+      "to": "2025-12"
+    },
+    {
+      "title": "Cloud Engineer",
+      "grade": "P2",
+      "from": "2026-01",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Cloud cost and tagging hygiene",
+      "role": "Cloud Engineer",
+      "from": "2024-06",
+      "to": "2025-06",
+      "allocation_pct": 60
+    },
+    {
+      "project": "EKS nodegroup refresh",
+      "role": "Cloud Engineer",
+      "from": "2025-07",
+      "to": "2026-02",
+      "allocation_pct": 50
+    },
+    {
+      "project": "Non-prod environment automation",
+      "role": "Cloud Engineer",
+      "from": "2026-03",
+      "to": null,
+      "allocation_pct": 70
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "AWS",
+      "self_level": 3,
+      "declared_on": "2026-01"
+    },
+    {
+      "skill_text": "Kubernetes",
+      "self_level": 3,
+      "declared_on": "2026-01"
+    },
+    {
+      "skill_text": "Terraform",
+      "self_level": 3,
+      "declared_on": "2026-01"
+    },
+    {
+      "skill_text": "Azure",
+      "self_level": 3,
+      "declared_on": "2026-01"
+    },
+    {
+      "skill_text": "GCP",
+      "self_level": 2,
+      "declared_on": "2026-01"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Manipal Institute of Technology",
+      "degree": "B.Tech",
+      "field": "Information Technology",
+      "year": 2024
+    }
+  ]
+}

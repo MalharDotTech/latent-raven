@@ -1,0 +1,136 @@
+{
+  "employee_id": "KC-11728",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Harsh Agarwal",
+  "preferred_name": "Harsh Agarwal",
+  "emails": [
+    {
+      "email": "harsh.agarwal@kestrelcloud.com",
+      "from": "2022-06",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Billing Engineering",
+  "manager_employee_id": "KC-10120",
+  "hire_date": "2022-06-13",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Software Development Engineer II",
+      "grade": "P2",
+      "from": "2022-06",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Invoice engine v2",
+      "role": "Backend Engineer",
+      "from": "2022-07",
+      "to": "2023-03",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Credit notes and refunds",
+      "role": "Backend Engineer",
+      "from": "2023-04",
+      "to": "2024-10",
+      "allocation_pct": 80
+    },
+    {
+      "project": "Billing API hardening",
+      "role": "Backend Engineer",
+      "from": "2024-11",
+      "to": "2025-08",
+      "allocation_pct": 70
+    },
+    {
+      "project": "Spring Boot 3 upgrade (billing-core)",
+      "role": "Backend Engineer",
+      "from": "2025-02",
+      "to": "2025-04",
+      "allocation_pct": 30
+    },
+    {
+      "project": "Billing sustaining",
+      "role": "Backend Engineer",
+      "from": "2025-09",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "self_declared_skills": [
+    {
+      "skill_text": "Java",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "Spring Boot",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "Kubernetes",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "AWS",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "System design",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "LLM application engineering",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "API testing",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "Agile delivery",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "Secure coding",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "Microservices",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Manipal Institute of Technology",
+      "degree": "B.Tech",
+      "field": "Computer Science and Engineering",
+      "year": 2021
+    }
+  ]
+}

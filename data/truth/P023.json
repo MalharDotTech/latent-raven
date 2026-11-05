@@ -1,0 +1,281 @@
+{
+ "pid": "P023",
+ "schema": "truth-v2",
+ "summary": "Pooja is a seasoned CSM who came from Zoho implementations and genuinely owns onboarding for the mid-market pod; her playbook is used by peers. Her CRM logging is poor and a CS ops coordinator writes most of her activity entries from her dictation, so CRM hygiene is not her skill.",
+ "archetype": "Onboarding specialist with assistant-logged CRM",
+ "batch": "E",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "customer_onboarding",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3
+    ],
+    "basis": "doc_DOC-SALES-2231 onboarding playbook v3 with phase exit criteria and acceptance checks 'used by every CSM since v2' (187 views); sfdc_KC-10931 Onboarding opportunities 2021-2025 with go-live to acceptance; cv_2025_05 playbook used by 5 CSMs, mentoring 2 joiners; hcm self 3. Adopted playbook = K3 level 3 (exact).",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:DOC-SALES-2231",
+    "salesforce:opportunities",
+    "cv_v1:Experience/Kestrel"
+   ],
+   "why": "Wrote the pod's playbook with exit criteria and acceptance checks that other CSMs follow; onboarding opps show completed go-lives to criteria."
+  },
+  {
+   "skill_id": "account_management",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2
+    ],
+    "basis": "sfdc_KC-10931 Renewal/Expansion records 2022-2026 with her risk actions (champion left -> mapped new FP&A head, exec sponsor call; uplift accepted after match-rate report; credit note save) and her own logged escalations; cv_2025_05 29 accounts, renewals. Independent renewal risk handling = K3 level 2; no coaching of account owners.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "salesforce:opportunities",
+    "salesforce:activities",
+    "doc:DOC-SALES-2307"
+   ],
+   "why": "Runs renewals and risk saves on 29 accounts alone; not reviewing other CSMs' account strategy except informal mentoring of two joiners."
+  },
+  {
+   "skill_id": "salesforce",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 1,
+    "accept_levels": [
+     1
+    ],
+    "basis": "sfdc_KC-10931 activities: about one third created by her (462 of 1,393 by monthly counts), the rest by CS Ops Coordinator 'per Pooja' (not credited); her own entries are activity logs on assigned accounts, no stage or forecast maintenance; lms Salesforce for CS Teams (2023). Own updates without independent upkeep = K3 level 1 (exact). hcm self 3 not used.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "salesforce:activities",
+    "salesforce:monthly_activity"
+   ],
+   "why": "Under two fifths of the activity records are her own entries; most are written by the coordinator, so independent CRM upkeep is not shown."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "sfdc_KC-10931 her own activity records: exec sponsor calls, escalation with 4-hourly updates, new FP&A head mapped after champion left; cv_2025_05 'Stakeholder management', QBRs and exec sponsor calls. Work + self at 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "salesforce:activities",
+    "doc:DOC-SALES-2307"
+   ],
+   "why": "Exec sponsor calls, escalations with update cadence, backup owner rule; handled alone, not teaching negotiation."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "doc_DOC-SALES-2231 has four contributors (coordinator and two CSMs added sections) and doc_DOC-SALES-2307 two; her share of the writing is not separable; no validation records.",
+    "missing_source": "page revision history"
+   },
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "doc:DOC-SALES-2231"
+   ],
+   "why": "Clear procedures with changelog and field fixes; used by colleagues, but nobody has measured task completion from it."
+  },
+  {
+   "skill_id": "servicenow",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "No ServiceNow use of hers in the bundle; doc_DOC-SALES-2307 says a coordinator pulls the INC list.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "salesforce:activities"
+   ],
+   "why": "Raises tickets for customers as a requester only."
+  },
+  {
+   "skill_id": "solution_selling",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "sfdc_KC-10931 Expansion records with 10-25% CSM credit; notes say AE handles commercials and her part is onboarding the new entities. No discovery or deal plans of hers; mapping from expansion credit is uncertain.",
+    "missing_source": "discovery / deal plans"
+   },
+   "last_used": null,
+   "evidence_refs": [],
+   "why": "Expansion is passed to the AE; no discovery or deal planning on her side."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_05 'SQL (basic)' only.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Skills"
+   ],
+   "why": "CV says basic; nothing in any system uses it."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Zoho CRM",
+   "mapped_skill_id": "salesforce",
+   "has_skill": false,
+   "why": "A different CRM product from her earlier job; must not carry over as Salesforce.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_05 Zoho CRM implementations at Zoho; different product.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Onboarding of new joiners",
+   "mapped_skill_id": "customer_onboarding",
+   "has_skill": false,
+   "why": "Peer induction mentoring, not customer onboarding.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_05 'Mentoring 2 new joiners in onboarding process' is employee onboarding, not customer onboarding.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F14",
+   "s11_row": "wrong_person",
+   "skill_id": "salesforce",
+   "plant": "About 60 percent of activity records have created_by = CS Ops Coordinator with description 'per Pooja'; assigned_to is Pooja on all.",
+   "expected_engine_behavior": "send_at_level_1",
+   "evidence_expectation": "Coordinator-created activities ('per Pooja') must not be credited as her CRM upkeep."
+  },
+  {
+   "fault_id": "F34",
+   "s11_row": "wrong_person",
+   "skill_id": "technical_writing",
+   "plant": "Playbook has four contributors including coordinator and two CSMs who added sections; author field is her.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "customer_onboarding",
+   "plant": "Level 3 is exact-match on K3 and rests on the playbook adoption evidence, while HCM self-rating also says 3.",
+   "expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "salesforce",
+   "plant": "CV lists Zoho CRM implementation experience and Salesforce in one line.",
+   "expected_engine_behavior": "send_at_level_1",
+   "evidence_expectation": "Zoho CRM implementation experience must not be mapped to Salesforce.",
+   "v1_expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "Zoho CRM / Zoho Books implementation",
+  "QBR facilitation"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.8,
+  "yes_to_everything": false,
+  "flattery_bias": 0.2,
+  "notes": "Answers precisely on onboarding; over-accepts on Salesforce."
+ },
+ "messaging_allowed": true
+}

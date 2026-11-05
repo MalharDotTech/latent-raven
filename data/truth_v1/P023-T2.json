@@ -1,0 +1,200 @@
+{
+  "summary": "Pooja is a seasoned CSM who came from Zoho implementations and genuinely owns onboarding for the mid-market pod; her playbook is used by peers. Her CRM logging is poor and a CS ops coordinator writes most of her activity entries from her dictation, so CRM hygiene is not her skill.",
+  "archetype": "Onboarding specialist with assistant-logged CRM",
+  "skills": [
+    {
+      "skill_id": "customer_onboarding",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        3
+      ],
+      "assessed_level": null,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "doc:DOC-SALES-2231",
+        "salesforce:opportunities",
+        "cv_v1:Experience/Kestrel"
+      ],
+      "why": "Wrote the pod's playbook with exit criteria and acceptance checks that other CSMs follow; onboarding opps show completed go-lives to criteria."
+    },
+    {
+      "skill_id": "account_management",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "salesforce:opportunities",
+        "salesforce:activities",
+        "doc:DOC-SALES-2307"
+      ],
+      "why": "Runs renewals and risk saves on 29 accounts alone; not reviewing other CSMs' account strategy except informal mentoring of two joiners."
+    },
+    {
+      "skill_id": "salesforce",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "salesforce:activities",
+        "salesforce:monthly_activity"
+      ],
+      "why": "Under two fifths of the activity records are her own entries; most are written by the coordinator, so independent CRM upkeep is not shown."
+    },
+    {
+      "skill_id": "stakeholder_management",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "salesforce:activities",
+        "doc:DOC-SALES-2307"
+      ],
+      "why": "Exec sponsor calls, escalations with update cadence, backup owner rule; handled alone, not teaching negotiation."
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": null,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": null,
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "doc:DOC-SALES-2231"
+      ],
+      "why": "Clear procedures with changelog and field fixes; used by colleagues, but nobody has measured task completion from it."
+    },
+    {
+      "skill_id": "servicenow",
+      "has_skill": false,
+      "true_level": 0,
+      "self_perceived_level": null,
+      "would_accept_levels": [
+        0,
+        1
+      ],
+      "assessed_level": null,
+      "last_used": null,
+      "evidence_refs": [
+        "salesforce:activities"
+      ],
+      "why": "Raises tickets for customers as a requester only."
+    },
+    {
+      "skill_id": "solution_selling",
+      "has_skill": false,
+      "true_level": 0,
+      "self_perceived_level": null,
+      "would_accept_levels": [
+        0,
+        1
+      ],
+      "assessed_level": null,
+      "last_used": null,
+      "evidence_refs": [],
+      "why": "Expansion is passed to the AE; no discovery or deal planning on her side."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": false,
+      "true_level": 0,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        0,
+        1
+      ],
+      "assessed_level": null,
+      "last_used": null,
+      "evidence_refs": [
+        "cv_v1:Skills"
+      ],
+      "why": "CV says basic; nothing in any system uses it."
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Zoho CRM",
+      "mapped_skill_id": "salesforce",
+      "has_skill": false,
+      "why": "A different CRM product from her earlier job; must not carry over as Salesforce."
+    },
+    {
+      "skill_text": "Onboarding of new joiners",
+      "mapped_skill_id": "customer_onboarding",
+      "has_skill": false,
+      "why": "Peer induction mentoring, not customer onboarding."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F14",
+      "s11_row": "wrong_person",
+      "skill_id": "salesforce",
+      "plant": "About 60 percent of activity records have created_by = CS Ops Coordinator with description 'per Pooja'; assigned_to is Pooja on all.",
+      "expected_engine_behavior": "send_at_level_1"
+    },
+    {
+      "fault_id": "F34",
+      "s11_row": "wrong_person",
+      "skill_id": "technical_writing",
+      "plant": "Playbook has four contributors including coordinator and two CSMs who added sections; author field is her.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F29",
+      "s11_row": "level_off",
+      "skill_id": "customer_onboarding",
+      "plant": "Level 3 is exact-match on K3 and rests on the playbook adoption evidence, while HCM self-rating also says 3.",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F25",
+      "s11_row": "wrong_mapping",
+      "skill_id": "salesforce",
+      "plant": "CV lists Zoho CRM implementation experience and Salesforce in one line.",
+      "expected_engine_behavior": "not_extract"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.8,
+    "yes_to_everything": false,
+    "flattery_bias": 0.2,
+    "notes": "Answers precisely on onboarding; over-accepts on Salesforce."
+  },
+  "messaging_allowed": true,
+  "pid": "P023-T2",
+  "batch": "E",
+  "generator": "claude-sonnet-5-5",
+  "twin_of": "P023",
+  "twin_swap": {
+    "first": "Ayesha",
+    "last": "Khan",
+    "gender": "F",
+    "university": null
+  }
+}

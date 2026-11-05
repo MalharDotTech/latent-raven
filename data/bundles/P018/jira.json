@@ -1,0 +1,420 @@
+{
+  "exported_on": "2026-10-31",
+  "linked_employee_id": "KC-11818",
+  "issues": [
+    {
+      "key": "BILL-5693",
+      "type": "Bug",
+      "summary": "Blank date accepted",
+      "description_excerpt": "Date.parse accepts whitespace after normalisation. Added validation and reviewed timezone fixture.",
+      "component": "legacy-import",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-05",
+      "resolved": "2025-02-25",
+      "story_points": 3,
+      "labels": [
+        "legacy-import"
+      ]
+    },
+    {
+      "key": "BILL-5770",
+      "type": "Task",
+      "summary": "Webhook resolves too early",
+      "description_excerpt": "Send promise not awaited; import status says success before rejection. Reproduced and fixed.",
+      "component": "legacy-import",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-02",
+      "resolved": "2025-03-30",
+      "story_points": 2,
+      "labels": [
+        "legacy-import"
+      ]
+    },
+    {
+      "key": "BILL-5812",
+      "type": "Task",
+      "summary": "Invoice dup count wrong",
+      "description_excerpt": "Analyst supplied join correction; compared output to supplied tenant totals.",
+      "component": "legacy-import",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-04-01",
+      "resolved": "2025-04-30",
+      "story_points": 5,
+      "labels": [
+        "legacy-import"
+      ]
+    },
+    {
+      "key": "BILL-5901",
+      "type": "Bug",
+      "summary": "Import worker nonroot",
+      "description_excerpt": "Platform suggested chown before USER. Built and ran sandbox import with reviewer.",
+      "component": "legacy-import",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-13",
+      "resolved": "2025-05-22",
+      "story_points": 1,
+      "labels": [
+        "legacy-import"
+      ]
+    },
+    {
+      "key": "BILL-6270",
+      "type": "Task",
+      "summary": "Tax code case mismatch",
+      "description_excerpt": "Lowercase tax code rejected by lookup; kept raw value in uploaded error report.",
+      "component": "legacy-import",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-05",
+      "resolved": "2026-02-27",
+      "story_points": 3,
+      "labels": [
+        "legacy-import"
+      ]
+    },
+    {
+      "key": "BILL-6326",
+      "type": "Task",
+      "summary": "Timeout path hangs",
+      "description_excerpt": "One callback never settles after request abort. Added single-settlement check and tests.",
+      "component": "legacy-import",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-06",
+      "resolved": "2026-03-31",
+      "story_points": 2,
+      "labels": [
+        "legacy-import"
+      ]
+    },
+    {
+      "key": "BILL-6374",
+      "type": "Bug",
+      "summary": "Release sheet cleanup",
+      "description_excerpt": "Covered standup for three days; billing lead set order and rollback condition.",
+      "component": "legacy-import",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-03",
+      "resolved": "2026-04-24",
+      "story_points": 5,
+      "labels": [
+        "legacy-import"
+      ]
+    },
+    {
+      "key": "BILL-6460",
+      "type": "Task",
+      "summary": "Wrong bucket principal",
+      "description_excerpt": "Platform engineer wrote and applied IAM policy. Nikhil attached import smoke result and closed item.",
+      "component": "legacy-import",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-05-13"
+        },
+        {
+          "assignee": "self",
+          "from": "2026-05-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-13",
+      "resolved": "2026-05-24",
+      "story_points": 1,
+      "labels": [
+        "legacy-import"
+      ],
+      "comments": [
+        {
+          "date": "2026-05-24",
+          "author_employee_id": "KC-11818",
+          "body": "Smoke passed. Closing remaining sprint items per billing lead."
+        }
+      ]
+    },
+    {
+      "key": "BILL-6508",
+      "type": "Task",
+      "summary": "Chunk retry duplicates",
+      "description_excerpt": "Implemented accepted-chunk filter from reviewed design; failure replay passed.",
+      "component": "legacy-import",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-10",
+      "resolved": "2026-06-15",
+      "story_points": 3,
+      "labels": [
+        "legacy-import"
+      ]
+    },
+    {
+      "key": "BILL-6552",
+      "type": "Bug",
+      "summary": "New import component",
+      "description_excerpt": "Draft revised after lead rejected shared mutable retry list. Scope reduced to one route and fixtures.",
+      "component": "legacy-import",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-08",
+      "resolved": "2026-07-13",
+      "story_points": 2,
+      "labels": [
+        "legacy-import"
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 4,
+      "reported": 4
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 5,
+      "reported": 5
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 4,
+      "reported": 4
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 11,
+      "reported": 6
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 9,
+      "reported": 4
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 6,
+      "reported": 6
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 8,
+      "reported": 4
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 6,
+      "reported": 4
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 9,
+      "reported": 5
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 10,
+      "reported": 3
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    }
+  ],
+  "export_scope": "Representative issues; monthly_activity covers complete Kestrel tenure. Reporter and assignee counts are separate."
+}

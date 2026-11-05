@@ -1,0 +1,893 @@
+{
+  "exported_on": "2026-10-31",
+  "login": "tfischer-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11121",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5208,
+      "title": "PLAT-4287 drain: wait for exports",
+      "state": "merged",
+      "created": "2025-01-06",
+      "merged": "2025-01-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".yaml": 1
+      },
+      "additions": 18,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Drain hook waits on active export gauge before eviction."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10282,
+      "title": "fix: move eu state addresses",
+      "state": "merged",
+      "created": "2025-02-19",
+      "merged": "2025-02-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 47,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "State move tested against plan; no destroy actions after import."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5384,
+      "title": "fix: conntrack max for eu workers",
+      "state": "merged",
+      "created": "2025-03-21",
+      "merged": "2025-03-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 93,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Confirmed drops stopped under replay load after sysctl change."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10460,
+      "title": "fix: restore role object read",
+      "state": "merged",
+      "created": "2025-04-18",
+      "merged": "2025-04-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 8,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Restored missing prefix read on recovery role; sandbox restore completed."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12576,
+      "title": "fix: restore check skips delete markers",
+      "state": "merged",
+      "created": "2025-05-06",
+      "merged": "2025-05-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 126,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Compares current object versions; tests include tombstones."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5574,
+      "title": "chore: tune export pdb",
+      "state": "merged",
+      "created": "2025-06-13",
+      "merged": "2025-06-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 31,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "One unavailable worker allowed; rehearsed with a long export in flight."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10689,
+      "title": "PLAT-4534 split staging state",
+      "state": "merged",
+      "created": "2025-07-05",
+      "merged": "2025-07-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 18,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Moved resources to separate backend with lock and rollback file."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5714,
+      "title": "fix: page on burn, not single 5xx",
+      "state": "merged",
+      "created": "2025-08-12",
+      "merged": "2025-08-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".yaml": 2
+      },
+      "additions": 47,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Alert evaluated over short and long windows; replayed previous incident."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13109,
+      "title": "test: restore hash mismatch",
+      "state": "merged",
+      "created": "2025-09-15",
+      "merged": "2025-09-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 93,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Fails validation if a single restored object differs."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11234,
+      "title": "fix: prevent public recovery bucket",
+      "state": "merged",
+      "created": "2026-01-23",
+      "merged": "2026-01-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 8,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Guardrail checked on plan and runtime access probe."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6163,
+      "title": "docs: eu rollback order",
+      "state": "merged",
+      "created": "2026-02-18",
+      "merged": "2026-02-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".md": 2
+      },
+      "additions": 126,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Runbook corrected after Pune drill missed gateway check."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6224,
+      "title": "fix: avoid double paging export lag",
+      "state": "merged",
+      "created": "2026-03-12",
+      "merged": "2026-03-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 31,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Group overlapping symptoms under service alert."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11437,
+      "title": "PLAT-4912 pin module source",
+      "state": "merged",
+      "created": "2026-04-06",
+      "merged": "2026-04-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 18,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Same module revision in rehearsal and production."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14117,
+      "title": "fix: handle missing restore manifest",
+      "state": "merged",
+      "created": "2026-05-06",
+      "merged": "2026-05-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 47,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Exit before comparing empty result; error says which manifest is absent."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6461,
+      "title": "fix: disk pressure cleanup limit",
+      "state": "merged",
+      "created": "2026-06-09",
+      "merged": "2026-06-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 93,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Caps log retention; verified node recovery without deleting live logs."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11695,
+      "title": "test: disallow eu wildcard principal",
+      "state": "merged",
+      "created": "2026-07-09",
+      "merged": "2026-07-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 8,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Plan assertion protects recovery trust policy."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6667,
+      "title": "docs: recover interrupted drain",
+      "state": "merged",
+      "created": "2026-08-18",
+      "merged": "2026-08-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".md": 2
+      },
+      "additions": 126,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Resume procedure checked on a replacement worker."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6745,
+      "title": "fix: keep startup probe during replay",
+      "state": "merged",
+      "created": "2026-09-11",
+      "merged": "2026-09-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "tfischer-kc",
+      "author_employee_id": "KC-11121",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 31,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Replay workload no longer killed by initial liveness delay."
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "pr_number": 6144,
+      "date": "2026-02-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "This PDB blocks the last eviction indefinitely. Rehearse with an active export and prove the abort path.",
+      "thread_followup": {
+        "date": "2026-02-24",
+        "text": "Pune team ran revised drain drill and attached successful recovery timings."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11380,
+      "date": "2026-03-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "Please include the old state addresses. A clean plan in an empty workspace does not test the move.",
+      "thread_followup": {
+        "date": "2026-03-24",
+        "text": "Author rehearsed with state copy; team added state-address mapping to change template."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "pr_number": 6307,
+      "date": "2026-04-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "Both alerts fire on the same failed requests. Keep burn-rate page and make the per-pod one a dashboard panel.",
+      "thread_followup": {
+        "date": "2026-04-24",
+        "text": "Platform team reused alert grouping; duplicate pages dropped from 11 to 3 in the following month."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11554,
+      "date": "2026-05-20",
+      "state": "APPROVED",
+      "comment_count": 5,
+      "sample_comment": "Restore completed with the restricted role. Checked random object hashes, not just counts.",
+      "thread_followup": {
+        "date": "2026-05-24",
+        "text": "Restore sign-off attached by rotation partner."
+      }
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-02",
+      "merged_prs": 10,
+      "reviews": 18,
+      "by_ext": {
+        ".tf": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".tf": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 13,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 10,
+      "reviews": 12,
+      "by_ext": {
+        ".tf": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 10,
+      "reviews": 9,
+      "by_ext": {
+        ".tf": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 7,
+      "reviews": 9,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 10,
+      "reviews": 19,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 10,
+      "reviews": 8,
+      "by_ext": {
+        ".tf": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 8,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 9,
+      "reviews": 10,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".tf": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 6,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 11,
+      "reviews": 7,
+      "by_ext": {
+        ".tf": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".tf": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 6,
+      "reviews": 10,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 4,
+      "reviews": 8,
+      "by_ext": {
+        ".tf": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".tf": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 7,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 5,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 6,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 7,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 8,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 6,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 5,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 10,
+        ".md": 1,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 9,
+      "reviews": 7,
+      "by_ext": {
+        ".tf": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 7,
+      "reviews": 17,
+      "by_ext": {
+        ".tf": 16,
+        ".md": 2,
+        ".py": 2
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 10,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 22,
+        ".md": 3,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 5,
+      "reviews": 12,
+      "by_ext": {
+        ".tf": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".tf": 16,
+        ".md": 2,
+        ".yaml": 2
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 4,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 10,
+        ".md": 1,
+        ".py": 3
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".tf": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".tf": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 9,
+      "reviews": 10,
+      "by_ext": {
+        ".tf": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 6,
+      "reviews": 10,
+      "by_ext": {
+        ".tf": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 9,
+      "reviews": 10,
+      "by_ext": {
+        ".tf": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 7,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 12,
+        ".md": 2,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 12,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 11,
+      "reviews": 10,
+      "by_ext": {
+        ".tf": 22,
+        ".md": 3,
+        ".py": 2
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 5,
+      "reviews": 18,
+      "by_ext": {
+        ".tf": 12,
+        ".md": 2,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 10,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 12,
+      "reviews": 17,
+      "by_ext": {
+        ".tf": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 7,
+      "reviews": 17,
+      "by_ext": {
+        ".tf": 14,
+        ".md": 2,
+        ".yaml": 3
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 5,
+      "reviews": 7,
+      "by_ext": {
+        ".tf": 10,
+        ".md": 1
+      }
+    }
+  ],
+  "export_scope": {
+    "pull_requests": "Representative merged changes, not a complete event log",
+    "monthly_activity": "All authored merged PRs and submitted reviews since Kestrel hire; excludes other-author merges"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "employee_id": "KC-11602",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Ramesh Suresh Yadav",
+  "preferred_name": "Ramesh Yadav",
+  "emails": [
+    {
+      "email": "ramesh.yadav@kestrelcloud.com",
+      "from": "2023-06",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Customer Support",
+  "manager_employee_id": "KC-10790",
+  "hire_date": "2023-06-12",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Support Associate",
+      "grade": "S1",
+      "from": "2023-06",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "L1 Support - Pune queue",
+      "role": "Support Associate",
+      "from": "2023-06",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "ServiceNow",
+      "self_level": 3,
+      "declared_on": "2025-09"
+    },
+    {
+      "skill_text": "Linux",
+      "self_level": 3,
+      "declared_on": "2025-09"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 2,
+      "declared_on": "2025-09"
+    },
+    {
+      "skill_text": "Incident management",
+      "self_level": 3,
+      "declared_on": "2025-09"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Savitribai Phule Pune University",
+      "degree": "B.Sc.",
+      "field": "Information Technology",
+      "year": 2021
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+ "pid": "P019",
+ "schema": "truth-v2",
+ "summary": "Lakshmi is the same employee behind an expanded payroll name, an initialled Jira name and reversed GitHub display order. She teaches tenant-access controls and independently maintains the scanner export, but paired Java work and network verification can be mistaken for service or Kubernetes ownership.",
+ "archetype": "Security specialist with name-order variants",
+ "batch": "D",
+ "generator": "codex (GPT-6; runtime submodel not exposed)",
+ "skills": [
+  {
+   "skill_id": "security_fundamentals",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 4,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "P019_jira SEC-3175 recon maintainers added her revoked-user case to their tests, SEC-3372 billing and recon owners used her tenant matrix and expired suppressions now block merge; P019_ENG-419 negative-check method (160 views, used by maintainers); P019_github security CHANGES_REQUESTED reviews (possession is not authorisation, trust policy, token logging). Adopted patterns = level 4.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review billing-core#8447",
+    "jira:SEC-3372",
+    "docs/ENG-419"
+   ],
+   "why": "Other service maintainers adopted her negative-test method and exception controls."
+  },
+  {
+   "skill_id": "python",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P019_github data-platform scanner export module she owns: suppression expiry UTC fix (2025-03), token redaction (2025-06), pagination fix reconciled to console totals (2026-02), 429 retry (2026-06); P019_jira SEC-2928, SEC-3130. Work at 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#12353",
+    "github:#13725",
+    "github:#14260"
+   ],
+   "why": "Owns a scheduled reporting module and resolves pagination, expiry and runtime failures."
+  },
+  {
+   "skill_id": "api_testing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P019_jira SEC-2857 and SEC-3257 negative API checks catching tenant leakage, regression asserts 403 with no filename; P019_github paired negative API tests (2025-01/04); P019_ENG-419 procedure; P019_cv_v1 'API testing'. Work + authored at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:SEC-2857",
+    "jira:SEC-3257",
+    "docs/ENG-419"
+   ],
+   "why": "Independently builds and executes negative API checks which catch tenant leakage."
+  },
+  {
+   "skill_id": "aws",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P019_github infra-live IAM fixes (deny stale export role 2025-02, external-id condition 2025-05, stale scanner principal after CloudTrail check 2025-07, report bucket scoping 2026-03); P019_jira SEC-2891 negative assume-role tests; P019_certs SCS-C02 verified (2025-06). Access faults resolved in 3+ months + verified cert.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#10294",
+    "jira:SEC-2891"
+   ],
+   "why": "Independently diagnoses and remediates IAM access failures; certification is supporting context only."
+  },
+  {
+   "skill_id": "terraform",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "P019_github infra-live .tf changes with platform review (trust policy, TTL guard); P019_jira SEC-3341 'Platform reviewer corrected Terraform interpolation'; P019_cv_v1 'Terraform changes reviewed by platform'. Guided changes in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#10500",
+    "jira:SEC-3341"
+   ],
+   "why": "Uses platform correction for configuration mechanics and validates the resulting access behaviour."
+  },
+  {
+   "skill_id": "linux",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "P019_jira SEC-3216 removed stale SSH key, checked fresh session, runbook checked by on-call (2026-04); P019_cv_v1 Infosys Linux service support and patch windows (2020-2023). One current ticket + self: floor 2, ceiling 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:SEC-3216",
+    "cv_v1:Before this"
+   ],
+   "why": "Current host-access remediation plus sustained operations experience support independent service administration."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P019_github reviews 116-166/yr; listed security reviews catch deployable defects (tenant check before signing, external-id wildcard, bearer token in exception) 2026-02..2026-05. Defect catches in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review billing-core#8447",
+    "github:review data-platform#14036"
+   ],
+   "why": "Her security reviews catch deployable defects; evidence does not establish general reviewer coaching."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P019_ENG-419 attachment negative-check procedure; P019_jira SEC-3416 support user followed the curl steps on a clean account, error corrected and republished (user validation); P019_github docs PRs. Level 3 line met.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "docs/ENG-419",
+    "jira:SEC-3416"
+   ],
+   "why": "Support can execute the revised procedure with the expected diagnostics."
+  },
+  {
+   "skill_id": "java",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only two co-authored billing-core Java PRs (2025-01, 2025-04) where co-author billing-maintainer-kc did middleware and fixture lifecycle; her own review says 'get the billing maintainer to review the Java lifecycle'; P019_cv_v1 'Don't ask me to maintain Java billing code alone'. Co-authored work cannot be credited to pin a level.",
+    "missing_source": "solo Java changes"
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#7749",
+    "github:#7916"
+   ],
+   "why": "Privately she can modify a bounded assertion or endpoint with help; the co-author owns lifecycle and middleware design."
+  },
+  {
+   "skill_id": "incident_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "No incident records in the bundle: restricted incident records were excluded from export; P019_jira SEC items are security bugs, not incident timelines; P019_cv_v1 patch windows at Infosys.",
+    "missing_source": "restricted security incident records (ServiceNow/SEC incident timelines)"
+   },
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "cv_v1:Before this"
+   ],
+   "why": "Private assessor observed her run two containment handovers in 2026. Restricted incident records were excluded, so the visible export is inadequate for confident outreach."
+  },
+  {
+   "skill_id": "kubernetes",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only P019_jira SEC-3295: platform owner traced and fixed the network policy, she repeated an outbound probe after transfer. Kubernetes is never named by her.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "jira:SEC-3295"
+   ],
+   "why": "She ran an outbound probe after platform remediation, with no cluster operation or retained Kubernetes knowledge."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Kubernetes",
+   "mapped_skill_id": "kubernetes",
+   "has_skill": false,
+   "why": "Network-policy verification was a security check performed after someone else repaired the cluster.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "SEC-3295 late transfer after platform fix.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": null,
+   "s11_row": "wrong_person",
+   "skill_id": null,
+   "plant": "Payroll expands Lakshmi’s name; Jira uses an initial and GitHub reverses the order. Dated alias records share KC-10919.",
+   "expected_engine_behavior": "join_by_verified_alias_and_employee_id",
+   "roster_case": "name_order_variance",
+   "catalog_note": "No exact name-order entry exists in F01-F36. F22 concerns a changed name, which did not occur here."
+  },
+  {
+   "fault_id": "F14",
+   "s11_row": "wrong_person",
+   "skill_id": "kubernetes",
+   "plant": "The scanner egress issue has a late transfer to Lakshmi after the platform engineer repairs the network policy.",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F13",
+   "s11_row": "level_off",
+   "skill_id": "java",
+   "plant": "Two Java PRs explicitly split security assertions from middleware and fixture work performed by a co-author.",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "Co-author contribution split must keep Java credit from her.",
+   "v1_expected_engine_behavior": "send_at_level_2"
+  }
+ ],
+ "unmatched_skills": [],
+ "answer_behavior": {
+  "reply_probability": 0.78,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Checks the wording carefully; will clarify scope of Java work and decline cluster ownership. Does not recognise an identity split as two people."
+ },
+ "messaging_allowed": true,
+ "identity_expectation": "One person KC-10919: payroll 'Lakshmi Narayanan', Jira 'N. Lakshmi', GitHub 'Narayanan, Lakshmi' via hcm directory_aliases and linked_employee_id."
+}

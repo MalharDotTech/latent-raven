@@ -1,0 +1,824 @@
+{
+  "exported_on": "2026-10-31",
+  "login": "nlakshmi-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-10919",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7749,
+      "title": "SEC-2823 bind attachment token to tenant",
+      "state": "merged",
+      "created": "2025-01-08",
+      "merged": "2025-01-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 18,
+      "deletions": 4,
+      "co_authors": [
+        {
+          "login": "billing-maintainer-kc",
+          "email": "billing.maintainer@kestrelcloud.com",
+          "contribution": "Java middleware and test fixture lifecycle"
+        }
+      ],
+      "review_comments_received": 2,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Security patch paired with service owner; owner implemented Java middleware, Lakshmi supplied reproduction and negative API tests.",
+      "author_contribution": "Exploit reproduction, expected security assertions and paired regression checks"
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10294,
+      "title": "fix(iam): deny stale export role",
+      "state": "merged",
+      "created": "2025-02-21",
+      "merged": "2025-02-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 47,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Removed wildcard resource on export role; validated denied cross-account requests."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12353,
+      "title": "fix: expire scan suppressions",
+      "state": "merged",
+      "created": "2025-03-14",
+      "merged": "2025-03-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 93,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Exception export compares expiry in UTC; owns the scheduled job."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7916,
+      "title": "test: reject other tenants attachment",
+      "state": "merged",
+      "created": "2025-04-18",
+      "merged": "2025-04-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 8,
+      "deletions": 2,
+      "co_authors": [
+        {
+          "login": "billing-maintainer-kc",
+          "email": "billing.maintainer@kestrelcloud.com",
+          "contribution": "Java middleware and test fixture lifecycle"
+        }
+      ],
+      "review_comments_received": 3,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Security cases written jointly; Java fixtures corrected by billing maintainer.",
+      "author_contribution": "Exploit reproduction, expected security assertions and paired regression checks"
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10500,
+      "title": "SEC-2980 require external id",
+      "state": "merged",
+      "created": "2025-05-07",
+      "merged": "2025-05-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 126,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Added explicit external ID condition with platform review of role trust policy."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12714,
+      "title": "fix: redact token from scan log",
+      "state": "merged",
+      "created": "2025-06-10",
+      "merged": "2025-06-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 31,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Only hash prefix logged on failure; regression checks error paths."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10705,
+      "title": "chore: remove stale scanner principal",
+      "state": "merged",
+      "created": "2025-07-08",
+      "merged": "2025-07-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 18,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Revoked old role after CloudTrail check."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12991,
+      "title": "test: malformed exception expiry",
+      "state": "merged",
+      "created": "2025-08-18",
+      "merged": "2025-08-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 47,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Invalid dates now fail closed into manual queue."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8384,
+      "title": "docs: attachment access checks",
+      "state": "merged",
+      "created": "2026-01-22",
+      "merged": "2026-01-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".md": 3
+      },
+      "additions": 93,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Testing instructions for tenant mismatch and revoked access."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13725,
+      "title": "SEC-3147 paginate findings export",
+      "state": "merged",
+      "created": "2026-02-12",
+      "merged": "2026-02-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 8,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Fixed missing findings beyond first API page; reconciliation against console totals."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11367,
+      "title": "fix: restrict report bucket read",
+      "state": "merged",
+      "created": "2026-03-13",
+      "merged": "2026-03-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 126,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Scoped policy after reviewed plan; verified expected deny cases."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13956,
+      "title": "fix: skip disabled repos in report",
+      "state": "merged",
+      "created": "2026-04-06",
+      "merged": "2026-04-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 31,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Disabled repos listed separately, not silently counted as scanned."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8578,
+      "title": "docs: remove token from curl example",
+      "state": "merged",
+      "created": "2026-05-11",
+      "merged": "2026-05-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 18,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Example now reads environment variable."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14260,
+      "title": "fix: retry 429 from scanner",
+      "state": "merged",
+      "created": "2026-06-01",
+      "merged": "2026-06-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 47,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Bounded retry respects server delay and emits exhausted counter."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11668,
+      "title": "SEC-3334 shorten exception policy ttl",
+      "state": "merged",
+      "created": "2026-07-03",
+      "merged": "2026-07-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".tf": 3
+      },
+      "additions": 93,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Expiry guard checked by platform reviewer."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14736,
+      "title": "test: suppression owner required",
+      "state": "merged",
+      "created": "2026-08-13",
+      "merged": "2026-08-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "nlakshmi-kc",
+      "author_employee_id": "KC-10919",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 8,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "security"
+      ],
+      "body_excerpt": "Reject ownerless exception requests; audit row retained."
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8447,
+      "date": "2026-02-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "The object key is opaque, but possession is not authorisation. Check tenant membership before signing the URL; test the revoked-user case too.",
+      "thread_followup": {
+        "date": "2026-02-24",
+        "text": "Billing and recon maintainers adopted the access-check matrix."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11393,
+      "date": "2026-03-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "Trust policy accepts every external id. Constrain it to this integration and prove another value gets AccessDenied.",
+      "thread_followup": {
+        "date": "2026-03-24",
+        "text": "Platform narrowed condition and attached negative test."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14036,
+      "date": "2026-04-20",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "Do not print the full bearer token in the exception. Hash prefix is enough to correlate retries.",
+      "thread_followup": {
+        "date": "2026-04-24",
+        "text": "Author changed log field; scanner checklist updated."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8607,
+      "date": "2026-05-20",
+      "state": "COMMENTED",
+      "comment_count": 5,
+      "sample_comment": "Auth review only. Route compiles but please get the billing maintainer to review the Java lifecycle changes.",
+      "thread_followup": {
+        "date": "2026-05-24",
+        "text": "Service owner reviewed Java separately."
+      }
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-06",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 7,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 5,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 6,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 10,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 5,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 6,
+      "reviews": 17,
+      "by_ext": {
+        ".py": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 10,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 11,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 7,
+      "reviews": 14,
+      "by_ext": {
+        ".py": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 6,
+      "reviews": 14,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 11,
+      "reviews": 16,
+      "by_ext": {
+        ".py": 22,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 7,
+      "reviews": 20,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 6,
+      "reviews": 19,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 6,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 12,
+      "reviews": 15,
+      "by_ext": {
+        ".py": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 10,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 22,
+        ".md": 3,
+        ".java": 1
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 8,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 18,
+        ".md": 3,
+        ".tf": 2
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 5,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 22,
+        ".md": 3,
+        ".java": 1
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 5,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 14,
+        ".md": 2,
+        ".tf": 2
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 10,
+        ".md": 1,
+        ".tf": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 6,
+      "reviews": 15,
+      "by_ext": {
+        ".py": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 8,
+      "reviews": 14,
+      "by_ext": {
+        ".py": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 4,
+      "reviews": 16,
+      "by_ext": {
+        ".py": 10,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 6,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 5,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 12,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 16,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 11,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 22,
+        ".md": 3,
+        ".tf": 2
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 9,
+      "reviews": 14,
+      "by_ext": {
+        ".py": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 10,
+      "reviews": 12,
+      "by_ext": {
+        ".py": 16,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 7,
+      "reviews": 15,
+      "by_ext": {
+        ".py": 14,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 14,
+        ".md": 2,
+        ".tf": 3
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 10,
+      "reviews": 13,
+      "by_ext": {
+        ".py": 20,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 9,
+      "reviews": 16,
+      "by_ext": {
+        ".py": 18,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 5,
+      "reviews": 11,
+      "by_ext": {
+        ".py": 10,
+        ".md": 1
+      }
+    }
+  ],
+  "export_scope": {
+    "pull_requests": "Representative merged changes, not a complete event log",
+    "monthly_activity": "All authored merged PRs and submitted reviews since Kestrel hire; excludes other-author merges"
+  },
+  "display_name": "Narayanan, Lakshmi",
+  "sso_subject": "KC-10919"
+}

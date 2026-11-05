@@ -1,0 +1,83 @@
+{
+  "employee_id": "KC-10896",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Fatima Sheikh",
+  "preferred_name": "Fatima",
+  "emails": [
+    {
+      "email": "fatima.sheikh@kestrelcloud.com",
+      "from": "2021-03",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Hyderabad",
+  "country": "IN",
+  "department": "Mobile Engineering",
+  "manager_employee_id": "KC-10544",
+  "hire_date": "2021-03-15",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Software Engineer",
+      "grade": "P2",
+      "from": "2021-03",
+      "to": "2023-06"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "grade": "P3",
+      "from": "2023-07",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Mobile app v3 (invoices & payments)",
+      "role": "Mobile Engineer",
+      "from": "2021-03",
+      "to": "2023-03",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Mobile offline mode",
+      "role": "Mobile Engineer",
+      "from": "2023-04",
+      "to": "2024-09",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Mobile app platform & release",
+      "role": "Mobile Engineer",
+      "from": "2024-10",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "React Native",
+      "self_level": 3,
+      "declared_on": "2025-02"
+    },
+    {
+      "skill_text": "TypeScript",
+      "self_level": 3,
+      "declared_on": "2025-02"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Government College of Engineering, Amravati",
+      "degree": "B.E.",
+      "field": "Computer Science",
+      "year": 2019
+    }
+  ]
+}

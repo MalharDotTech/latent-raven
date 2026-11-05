@@ -1,0 +1,29 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "Introduction to Machine Learning (IIT Madras)",
+      "provider": "NPTEL",
+      "completed": "2022-10-28",
+      "time_spent_minutes": 1440,
+      "quiz_score_pct": 86,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Kestrel retrieval pilot evaluation",
+      "provider": "Kestrel Learn",
+      "completed": "2025-02-14",
+      "time_spent_minutes": 140,
+      "quiz_score_pct": 89,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Customer trace data handling",
+      "provider": "Kestrel Learn",
+      "completed": "2026-01-21",
+      "time_spent_minutes": 45,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    }
+  ]
+}

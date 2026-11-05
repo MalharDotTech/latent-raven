@@ -1,0 +1,27 @@
+You are a persona generator for a realistic employee evidence dataset. Working dir: /Users/malhar/swadharma/Code/imocha-raven.
+
+READ FIRST, fully: data/spec/PERSONA_SPEC.md (the contract; section 8 "v2 decisions" and 8.1 truth-v2 schema OVERRIDE earlier sections). Then docs/research/10-real-cv-observations.md - patterns observed in 8 REAL people's CVs (RO-01..RO-16). This is your realism target: your output must look like those real documents, not like test fixtures. Also use data/taxonomy/customer_taxonomy.json (skill_ids, level lines), data/grounding/* (real certs, courses, PR/issue title styles, cv_conventions.md), docs/research/07-real-world-nuances.md (fault ids).
+Look at 2-3 existing bundles (data/bundles/P012, P022) for format only. Their known defects (from docs/research/08-codex-dataset-audit.md and 09-opus-realism-review.md, read both): PID-coded PR numbers, every PR on the same day of month, flat monthly totals, PRs merged before their ticket exists, evidence narrating its own trap, Jira keys outside the spec's project list. Do NOT repeat any of these.
+
+YOUR JOB: Batch G = P033-P042, ten Kestrel Cloud employees. This batch exists to fix two problems: (1) earlier batches are a trap zoo, so half of G must be ORDINARY people with ordinary mess (the kind of mess in RO-01..RO-16 that every real workforce has), and (2) every earlier persona was in-taxonomy and clean-markdown. Roster:
+| PID | Persona | Realism focus |
+| P033 | Backend SDE-2, Java/Spring Boot, 4y, Pune. Ordinary solid engineer. | Control. Skills list ~40% unsupported (RO-03). Nothing else planted. |
+| P034 | Data engineer, 3y, Hyderabad. Python, SQL, Airflow, Snowflake. | Two CV versions targeted at different roles (data eng vs analytics eng) with a 2-4 month date drift on one job between them (RO-01, RO-02). |
+| P035 | Product designer, 2y at Kestrel, pharmacy degree (career pivot RO-07). Figma, UX research, product discovery. | Freelance gigs concurrent with job (RO-05). Self-authored portfolio-style authored_doc repeats CV numbers (RO-15). Self-rating bars in CV (RO-09). |
+| P036 | Solutions engineer (sales_cs family, K3) in payments-integration pod, 6y, Bengaluru. | Rhetoric-heavy JD-mapped CV prose (RO-08), but real evidence in salesforce.json and jira.json. Shares a side business with P040 (RO-06). |
+| P037 | Workplace/facilities engineer who ran the Pune office fit-out. Civil degree. AutoCAD, site supervision, vendor management. | Off-taxonomy (RO-11): oracle sends nothing; list real skills in unmatched_skills; MS Office is excluded. CV with DOB, marital status, declaration (RO-12). |
+| P038 | Graduate engineer trainee, 7 months, platform team. | Exposure dressed as experience (RO-10): 3-week internship "observed", seminars as projects. CV is an OCR'd scan with extraction damage (RO-13: broken lines, a split URL, a mangled glyph) - write the cv file as the damaged extracted text. |
+| P039 | QA engineer, 5y, Selenium Java and API testing. Ordinary. | Cert issuer confusion (RO-04: a vendor cert attributed to a prep-course site, no credential ID). Otherwise clean. |
+| P040 | Frontend engineer, React/TypeScript, 3y. | Concurrent role: co-runs a small D2C side business with P036 (RO-05, RO-06). Two-column CV whose extracted text interleaves columns (RO-13). |
+| P041 | Finance analyst (FP&A), 4y. Excel modelling, SAP FI, some SQL. | Ordinary. Quantified claims with no artifact (RO-14). |
+| P042 | Engineering manager, 9y, ex-IC Go engineer. | Ordinary leadership evidence (reviews, docs, Jira reporter); current-month end dates (RO-16). Go decayed honestly. |
+
+Rules:
+- truth files MUST follow truth-v2 (spec 8.1): every skill row has true_level (hidden ability) AND oracle {action, level, accept_levels, basis (source_ids), missing_source}. Apply D-U2 literally: level = the taxonomy level line the bundle shows; applied work with guidance is 2 not 1; a test alone shows at most 1. Apply D-U3/D-U4.
+- Ordinary personas (P033, P039, P041, P042) must have most core skills sendable (oracle send) - real employees with decent evidence. Do not plant extra traps in them.
+- Structure must be generated, not hand-typed: write a small script under .logs/batch_G_gen/ that produces PR/issue numbers per repo/project in global chronological order (PR numbers for kestrel-cloud repos must be in the range 2000-9000 and increase with created date; do not encode the PID), dates from a realistic sprint calendar (two-week sprints, fewer commits on weekends and Indian holidays like Diwali 2025-10-20 and Holi 2026-03-04, bursts before releases), PRs created on or after their linked ticket's created date, monthly_activity derived from the listed items plus unlisted volume (never less than listed).
+- Jira project keys only from spec section 3. Ledgerly references only after 2024-03.
+- No label leakage; evidence never explains its own trap. Prose plain and uneven like the real CVs, typos allowed, no slop words.
+- Only write data/bundles/P033..P042, data/truth/P033..P042.json, data/notes/batch_G.md, .logs/batch_G_gen/.
+
+When done run: python3 -I scripts/validate_personas.py P033 P034 P035 P036 P037 P038 P039 P040 P041 P042 and fix every ERROR. Final message: per-PID one-line summary, validator result, what you guessed.

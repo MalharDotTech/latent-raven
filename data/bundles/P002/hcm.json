@@ -1,0 +1,88 @@
+{
+  "employee_id": "KC-11389",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Priya Sharma",
+  "preferred_name": "Priya Sharma",
+  "emails": [
+    {
+      "email": "priya.sharma2@kestrelcloud.com",
+      "from": "2023-05",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Hyderabad",
+  "country": "IN",
+  "department": "People Operations",
+  "manager_employee_id": "KC-10555",
+  "hire_date": "2023-05-15",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "HR Business Partner",
+      "grade": "P3",
+      "from": "2023-05",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Workday talent module rollout",
+      "role": "HRBP - business owner",
+      "from": "2023-07",
+      "to": "2024-03",
+      "allocation_pct": 30
+    },
+    {
+      "project": "Annual compensation cycle",
+      "role": "HRBP",
+      "from": "2024-02",
+      "to": "2024-05",
+      "allocation_pct": 40
+    },
+    {
+      "project": "Hyderabad office expansion hiring",
+      "role": "HRBP",
+      "from": "2025-01",
+      "to": "2025-09",
+      "allocation_pct": 25
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Workday HCM",
+      "self_level": 3,
+      "declared_on": "2024-01"
+    },
+    {
+      "skill_text": "Python",
+      "self_level": 2,
+      "declared_on": "2023-08"
+    },
+    {
+      "skill_text": "Stakeholder management",
+      "self_level": 3,
+      "declared_on": "2024-01"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Institute of Public Enterprise, Hyderabad",
+      "degree": "MBA",
+      "field": "Human Resource Management",
+      "year": 2019
+    },
+    {
+      "institution": "Osmania University",
+      "degree": "B.Com",
+      "field": "Commerce",
+      "year": 2017
+    }
+  ]
+}

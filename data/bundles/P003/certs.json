@@ -1,0 +1,23 @@
+{
+  "certificates": [
+    {
+      "name": "ITIL 4 Foundation",
+      "issuer": "PeopleCert / Axelos",
+      "code": null,
+      "issued": "2022-03",
+      "expires": "2025-03",
+      "evidence_form": "pdf_upload",
+      "verification_status": "not_checked"
+    },
+    {
+      "name": "ServiceNow Certified System Administrator (CSA)",
+      "issuer": "ServiceNow",
+      "code": "CSA",
+      "issued": "2024-09",
+      "expires": null,
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/38b1f9a3-5c28-45ba-8f0f-9d8c7f51c46e",
+      "verification_status": "verified"
+    }
+  ]
+}

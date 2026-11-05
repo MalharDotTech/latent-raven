@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Java coding assessment",
+      "skill_text": "Java",
+      "date": "2026-04-10",
+      "raw_score_pct": 54,
+      "percentile": 45,
+      "vendor_proficiency_label": "Developing",
+      "proctoring_flags": [],
+      "rubric_feedback": "Completed bounded endpoint with hints; concurrency and error handling incomplete."
+    },
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Spring Boot assessment",
+      "skill_text": "Spring Boot",
+      "date": "2026-04-10",
+      "raw_score_pct": 51,
+      "percentile": 43,
+      "vendor_proficiency_label": "Developing",
+      "proctoring_flags": [],
+      "rubric_feedback": "Controller exercise passed after configuration prompts."
+    },
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Kubernetes fundamentals",
+      "skill_text": "Kubernetes",
+      "date": "2026-04-10",
+      "raw_score_pct": 27,
+      "percentile": 14,
+      "vendor_proficiency_label": "Beginner",
+      "proctoring_flags": [],
+      "rubric_feedback": "Could describe pods and deployments; did not complete the manifest or troubleshooting tasks."
+    },
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Kubernetes fundamentals",
+      "skill_text": "Kubernetes",
+      "date": "2026-04-10",
+      "raw_score_pct": 27,
+      "percentile": 14,
+      "vendor_proficiency_label": "Beginner",
+      "proctoring_flags": [],
+      "rubric_feedback": "Could describe pods and deployments; did not complete the manifest or troubleshooting tasks."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "checks": 22348,
+  "errors": [],
+  "summary": [
+    {
+      "pid": "P033",
+      "name": "Nirav Deshpande",
+      "skills": 10,
+      "oracle": {
+        "send": 6,
+        "hold": 4
+      },
+      "prs": 24,
+      "tickets": 22
+    },
+    {
+      "pid": "P034",
+      "name": "Sravya Dutta",
+      "skills": 7,
+      "oracle": {
+        "send": 7
+      },
+      "prs": 21,
+      "tickets": 20
+    },
+    {
+      "pid": "P035",
+      "name": "Tanvi Menon",
+      "skills": 6,
+      "oracle": {
+        "send": 1,
+        "hold": 5
+      },
+      "prs": 0,
+      "tickets": 7
+    },
+    {
+      "pid": "P036",
+      "name": "Aman Bhatia",
+      "skills": 9,
+      "oracle": {
+        "send": 7,
+        "hold": 2
+      },
+      "prs": 0,
+      "tickets": 9
+    },
+    {
+      "pid": "P037",
+      "name": "Sanket Jadhav",
+      "skills": 0,
+      "oracle": {},
+      "prs": 0,
+      "tickets": 6
+    },
+    {
+      "pid": "P038",
+      "name": "Devansh Sahu",
+      "skills": 7,
+      "oracle": {
+        "send": 5,
+        "hold": 1,
+        "not_extract": 1
+      },
+      "prs": 16,
+      "tickets": 15
+    },
+    {
+      "pid": "P039",
+      "name": "Pallavi Kulkarni",
+      "skills": 6,
+      "oracle": {
+        "send": 6
+      },
+      "prs": 23,
+      "tickets": 22
+    },
+    {
+      "pid": "P040",
+      "name": "Isha Sethi",
+      "skills": 6,
+      "oracle": {
+        "send": 6
+      },
+      "prs": 24,
+      "tickets": 22
+    },
+    {
+      "pid": "P041",
+      "name": "Ritika Shah",
+      "skills": 6,
+      "oracle": {
+        "send": 5,
+        "hold": 1
+      },
+      "prs": 0,
+      "tickets": 11
+    },
+    {
+      "pid": "P042",
+      "name": "Vivek Narang",
+      "skills": 7,
+      "oracle": {
+        "send": 6,
+        "hold": 1
+      },
+      "prs": 16,
+      "tickets": 25
+    }
+  ],
+  "listed_prs": 124,
+  "listed_issues": 159,
+  "ledger_prs": 1515,
+  "ledger_issues": 1998,
+  "ledger_reviews": 1437,
+  "weekend_prs": 19
+}

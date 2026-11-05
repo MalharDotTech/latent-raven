@@ -1,0 +1,13 @@
+{
+  "certificates": [
+    {
+      "name": "ITIL 4 Foundation",
+      "issuer": "PeopleCert / Axelos",
+      "issued": "2024-02",
+      "expires": null,
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/8ef2e588-b2b3-e3ad-3b59-054a6e8736ec",
+      "verification_status": "verified"
+    }
+  ]
+}

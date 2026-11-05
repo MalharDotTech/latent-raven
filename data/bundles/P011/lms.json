@@ -1,0 +1,29 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "ETL in Python and SQL",
+      "provider": "LinkedIn Learning",
+      "completed": "2026-02-09",
+      "time_spent_minutes": 230,
+      "quiz_score_pct": 84,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Settlement schema registry changes",
+      "provider": "Kestrel Learn",
+      "completed": "2026-02-13",
+      "time_spent_minutes": 100,
+      "quiz_score_pct": 91,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "Azure Foundations (path)",
+      "provider": "Pluralsight",
+      "completed": "2026-04-03",
+      "time_spent_minutes": 4,
+      "quiz_score_pct": 100,
+      "assigned_by": "self"
+    }
+  ]
+}

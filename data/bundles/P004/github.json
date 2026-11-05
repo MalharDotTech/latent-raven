@@ -1,0 +1,1932 @@
+{
+  "login": "vreddy-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-10047",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 3668,
+      "title": "BILL-2789 fix NPE in InvoiceLineItemMapper",
+      "state": "merged",
+      "created": "2016-04-20",
+      "merged": "2016-04-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 18,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 3799,
+      "title": "BILL-2948 add paging to invoice list api",
+      "state": "merged",
+      "created": "2016-09-22",
+      "merged": "2016-09-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 5,
+        ".xml": 1
+      },
+      "additions": 142,
+      "deletions": 30,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 3940,
+      "title": "BILL-3044: payment retry w/ exponential backoff",
+      "state": "merged",
+      "created": "2017-03-08",
+      "merged": "2017-03-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 6,
+        ".properties": 1
+      },
+      "additions": 260,
+      "deletions": 41,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 4063,
+      "title": "fix tax rounding on credit notes (HALF_UP vs HALF_EVEN)",
+      "state": "merged",
+      "created": "2017-06-28",
+      "merged": "2017-07-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 44,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 4235,
+      "title": "BILL-3196 hikari pool settings per env",
+      "state": "merged",
+      "created": "2017-11-21",
+      "merged": "2017-11-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 1,
+        ".yml": 3
+      },
+      "additions": 41,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 4416,
+      "title": "BILL-3288 usage metering consumer (kafka) - idempotent writes",
+      "state": "merged",
+      "created": "2018-04-25",
+      "merged": "2018-04-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 11,
+        ".xml": 1
+      },
+      "additions": 780,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 14,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 4538,
+      "title": "JPA n+1 on invoice list, fetch join + dto projection",
+      "state": "merged",
+      "created": "2018-08-28",
+      "merged": "2018-08-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 4
+      },
+      "additions": 96,
+      "deletions": 60,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 4648,
+      "title": "BILL-3487 dedupe usage events by (tenant, event_id)",
+      "state": "merged",
+      "created": "2018-12-03",
+      "merged": "2018-12-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3,
+        ".sql": 1
+      },
+      "additions": 120,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 4761,
+      "title": "Spring Boot 1.5 -> 2.0 : billing-api",
+      "state": "merged",
+      "created": "2019-03-01",
+      "merged": "2019-03-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 19,
+        ".xml": 2,
+        ".yml": 4
+      },
+      "additions": 520,
+      "deletions": 480,
+      "co_authors": [],
+      "review_comments_received": 16,
+      "labels": [
+        "upgrade"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 4903,
+      "title": "BILL-3647: contract tests for invoice api (pact)",
+      "state": "merged",
+      "created": "2019-07-01",
+      "merged": "2019-07-02",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 9
+      },
+      "additions": 410,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5002,
+      "title": "fix duplicate invoice on retry after gateway timeout",
+      "state": "merged",
+      "created": "2019-10-03",
+      "merged": "2019-10-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3,
+        ".sql": 1
+      },
+      "additions": 87,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug",
+        "p1"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5149,
+      "title": "BILL-3830 move tax calc to strategy per jurisdiction",
+      "state": "merged",
+      "created": "2020-02-11",
+      "merged": "2020-02-13",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 14
+      },
+      "additions": 640,
+      "deletions": 330,
+      "co_authors": [],
+      "review_comments_received": 12,
+      "labels": [
+        "refactor"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5257,
+      "title": "upgrade hibernate 5.2 -> 5.4, fix lazy init in invoice export",
+      "state": "merged",
+      "created": "2020-05-01",
+      "merged": "2020-05-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 5,
+        ".xml": 1
+      },
+      "additions": 66,
+      "deletions": 51,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5399,
+      "title": "BILL-3927 async invoice pdf via executor",
+      "state": "merged",
+      "created": "2020-09-04",
+      "merged": "2020-09-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 6
+      },
+      "additions": 230,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5493,
+      "title": "BILL-4038 circuit breaker for tax provider (resilience4j)",
+      "state": "merged",
+      "created": "2020-12-02",
+      "merged": "2020-12-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 5,
+        ".yml": 1
+      },
+      "additions": 190,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5618,
+      "title": "BILL-4119: ledger posting outbox table",
+      "state": "merged",
+      "created": "2021-03-18",
+      "merged": "2021-03-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 8,
+        ".sql": 2
+      },
+      "additions": 420,
+      "deletions": 36,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5711,
+      "title": "spring boot 2.3 -> 2.5",
+      "state": "merged",
+      "created": "2021-06-01",
+      "merged": "2021-06-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 6,
+        ".xml": 1
+      },
+      "additions": 55,
+      "deletions": 48,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5832,
+      "title": "BILL-4222 fix timezone in invoice due date calc",
+      "state": "merged",
+      "created": "2021-09-22",
+      "merged": "2021-09-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 28,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 5928,
+      "title": "BILL-4309 add metrics for outbox lag",
+      "state": "merged",
+      "created": "2021-12-02",
+      "merged": "2021-12-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".java": 3,
+        ".yml": 1
+      },
+      "additions": 75,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6055,
+      "title": "Update CODEOWNERS",
+      "state": "merged",
+      "created": "2022-03-22",
+      "merged": "2022-03-24",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".owners": 1
+      },
+      "additions": 6,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6292,
+      "title": "add PR template + definition of done",
+      "state": "merged",
+      "created": "2022-09-14",
+      "merged": "2022-09-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 2
+      },
+      "additions": 38,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6581,
+      "title": "ADR-014: invoice numbering as separate service",
+      "state": "merged",
+      "created": "2023-02-23",
+      "merged": "2023-02-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 142,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": [
+        "docs",
+        "adr"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 6890,
+      "title": "docs: on-call handbook for billing",
+      "state": "merged",
+      "created": "2023-08-08",
+      "merged": "2023-08-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 2
+      },
+      "additions": 96,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "docs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7265,
+      "title": "update README + ownership matrix",
+      "state": "merged",
+      "created": "2024-03-06",
+      "merged": "2024-03-08",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 2
+      },
+      "additions": 51,
+      "deletions": 20,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "docs"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7619,
+      "title": "chore: update team in CODEOWNERS",
+      "state": "merged",
+      "created": "2024-10-24",
+      "merged": "2024-10-25",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".owners": 1
+      },
+      "additions": 4,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8021,
+      "title": "ADR-021: modular boundaries for billing-core",
+      "state": "merged",
+      "created": "2025-06-05",
+      "merged": "2025-06-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 188,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": [
+        "docs",
+        "adr"
+      ]
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 3930,
+      "date": "2017-03-02",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 5,
+      "sample_comment": "use BigDecimal(String) not double here"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 4116,
+      "date": "2017-08-09",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 4329,
+      "date": "2018-02-14",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "add a test for the zero amount case"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 4566,
+      "date": "2018-09-20",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 4705,
+      "date": "2019-01-17",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "this transaction boundary is too wide, split read part out of @Transactional"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 4844,
+      "date": "2019-05-17",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "LGTM, nice cleanup"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 5066,
+      "date": "2019-11-29",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "what happens on retry? is this idempotent?"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 5197,
+      "date": "2020-03-25",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 0,
+      "sample_comment": "Prefer constructor injection. Also name this Service not Manager"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 5360,
+      "date": "2020-08-14",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "approved"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 5539,
+      "date": "2021-01-05",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "Add index for tenant_id+created_at before this query goes live"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 5692,
+      "date": "2021-05-21",
+      "state": "APPROVED",
+      "comment_count": 2,
+      "sample_comment": "ok"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 5877,
+      "date": "2021-10-28",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 6022,
+      "date": "2022-02-24",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "approving, Sana please own follow ups"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 6378,
+      "date": "2022-11-02",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "Have we thought about backward compat for existing tenants?"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 6682,
+      "date": "2023-04-06",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "design looks ok, not reviewing the code line by line. @sana-m pls"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 7207,
+      "date": "2024-02-14",
+      "state": "COMMENTED",
+      "comment_count": 0,
+      "sample_comment": "How will we roll this back?"
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "pr_number": 2905,
+      "date": "2024-09-13",
+      "state": "COMMENTED",
+      "comment_count": 5,
+      "sample_comment": "Cross-team change, adding Karthik for review of the contract"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 7988,
+      "date": "2025-05-22",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "approved from team side"
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8490,
+      "date": "2026-03-19",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "Fine by me, ship after the freeze"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2016-03",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".xml": 202,
+        ".yml": 55,
+        ".sql": 97,
+        ".md": 75
+      }
+    },
+    {
+      "month": "2016-04",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".java": 66,
+        ".xml": 46,
+        ".yml": 110,
+        ".md": 103
+      }
+    },
+    {
+      "month": "2016-05",
+      "merged_prs": 12,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 51,
+        ".xml": 125,
+        ".yml": 192,
+        ".sql": 154,
+        ".md": 176
+      }
+    },
+    {
+      "month": "2016-06",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 108,
+        ".sql": 31,
+        ".md": 57
+      }
+    },
+    {
+      "month": "2016-07",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 134,
+        ".xml": 228,
+        ".yml": 195,
+        ".sql": 185,
+        ".md": 246
+      }
+    },
+    {
+      "month": "2016-08",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 49,
+        ".xml": 239,
+        ".yml": 175,
+        ".sql": 224
+      }
+    },
+    {
+      "month": "2016-09",
+      "merged_prs": 9,
+      "reviews": 7,
+      "by_ext": {
+        ".xml": 146,
+        ".md": 120,
+        ".java": 5
+      }
+    },
+    {
+      "month": "2016-10",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".xml": 84,
+        ".yml": 170,
+        ".sql": 298,
+        ".md": 273
+      }
+    },
+    {
+      "month": "2016-11",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 125,
+        ".xml": 90,
+        ".yml": 103,
+        ".sql": 47,
+        ".md": 102
+      }
+    },
+    {
+      "month": "2016-12",
+      "merged_prs": 7,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 162,
+        ".yml": 141,
+        ".sql": 56
+      }
+    },
+    {
+      "month": "2017-01",
+      "merged_prs": 10,
+      "reviews": 14,
+      "by_ext": {
+        ".java": 173,
+        ".sql": 164,
+        ".md": 194
+      }
+    },
+    {
+      "month": "2017-02",
+      "merged_prs": 16,
+      "reviews": 13,
+      "by_ext": {
+        ".java": 361,
+        ".xml": 480,
+        ".yml": 403,
+        ".sql": 107
+      }
+    },
+    {
+      "month": "2017-03",
+      "merged_prs": 13,
+      "reviews": 14,
+      "by_ext": {
+        ".java": 137,
+        ".xml": 215,
+        ".yml": 110,
+        ".sql": 174,
+        ".md": 142,
+        ".properties": 1
+      }
+    },
+    {
+      "month": "2017-04",
+      "merged_prs": 9,
+      "reviews": 14,
+      "by_ext": {
+        ".java": 170,
+        ".xml": 44,
+        ".yml": 193,
+        ".md": 125
+      }
+    },
+    {
+      "month": "2017-05",
+      "merged_prs": 15,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 383,
+        ".xml": 103,
+        ".yml": 231,
+        ".sql": 106,
+        ".md": 463
+      }
+    },
+    {
+      "month": "2017-06",
+      "merged_prs": 7,
+      "reviews": 9,
+      "by_ext": {
+        ".xml": 92,
+        ".sql": 140,
+        ".md": 52
+      }
+    },
+    {
+      "month": "2017-07",
+      "merged_prs": 13,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 153,
+        ".xml": 244,
+        ".yml": 235,
+        ".sql": 76,
+        ".md": 261
+      }
+    },
+    {
+      "month": "2017-08",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".xml": 227,
+        ".yml": 244,
+        ".sql": 401,
+        ".md": 413
+      }
+    },
+    {
+      "month": "2017-09",
+      "merged_prs": 10,
+      "reviews": 10,
+      "by_ext": {
+        ".xml": 152,
+        ".yml": 233,
+        ".sql": 247,
+        ".md": 180
+      }
+    },
+    {
+      "month": "2017-10",
+      "merged_prs": 13,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 113,
+        ".xml": 194,
+        ".yml": 254,
+        ".sql": 181,
+        ".md": 108
+      }
+    },
+    {
+      "month": "2017-11",
+      "merged_prs": 12,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 118,
+        ".xml": 123,
+        ".yml": 41,
+        ".sql": 112,
+        ".md": 111
+      }
+    },
+    {
+      "month": "2017-12",
+      "merged_prs": 15,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 213,
+        ".xml": 144,
+        ".yml": 130,
+        ".sql": 244,
+        ".md": 82
+      }
+    },
+    {
+      "month": "2018-01",
+      "merged_prs": 16,
+      "reviews": 6,
+      "by_ext": {
+        ".xml": 163,
+        ".sql": 239,
+        ".md": 142
+      }
+    },
+    {
+      "month": "2018-02",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 61,
+        ".xml": 82,
+        ".yml": 166,
+        ".sql": 108,
+        ".md": 261
+      }
+    },
+    {
+      "month": "2018-03",
+      "merged_prs": 15,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 179,
+        ".xml": 311,
+        ".yml": 235,
+        ".sql": 354,
+        ".md": 279
+      }
+    },
+    {
+      "month": "2018-04",
+      "merged_prs": 14,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 212,
+        ".xml": 124,
+        ".yml": 419,
+        ".sql": 539,
+        ".md": 174
+      }
+    },
+    {
+      "month": "2018-05",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".xml": 362,
+        ".yml": 245,
+        ".sql": 282,
+        ".md": 174
+      }
+    },
+    {
+      "month": "2018-06",
+      "merged_prs": 16,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 60,
+        ".yml": 256,
+        ".md": 150
+      }
+    },
+    {
+      "month": "2018-07",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 146,
+        ".xml": 239,
+        ".yml": 89,
+        ".sql": 343,
+        ".md": 301
+      }
+    },
+    {
+      "month": "2018-08",
+      "merged_prs": 16,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 220,
+        ".xml": 155,
+        ".yml": 312,
+        ".sql": 321,
+        ".md": 190
+      }
+    },
+    {
+      "month": "2018-09",
+      "merged_prs": 10,
+      "reviews": 14,
+      "by_ext": {
+        ".xml": 332,
+        ".yml": 434,
+        ".sql": 271,
+        ".md": 242
+      }
+    },
+    {
+      "month": "2018-10",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 317,
+        ".xml": 189,
+        ".md": 118
+      }
+    },
+    {
+      "month": "2018-11",
+      "merged_prs": 11,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 217,
+        ".xml": 209,
+        ".yml": 92,
+        ".sql": 145,
+        ".md": 93
+      }
+    },
+    {
+      "month": "2018-12",
+      "merged_prs": 12,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 87,
+        ".xml": 68,
+        ".yml": 168,
+        ".sql": 183,
+        ".md": 94
+      }
+    },
+    {
+      "month": "2019-01",
+      "merged_prs": 20,
+      "reviews": 7,
+      "by_ext": {
+        ".yml": 121,
+        ".md": 277
+      }
+    },
+    {
+      "month": "2019-02",
+      "merged_prs": 19,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 110,
+        ".xml": 298,
+        ".yml": 142,
+        ".sql": 146,
+        ".md": 100
+      }
+    },
+    {
+      "month": "2019-03",
+      "merged_prs": 14,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 168,
+        ".xml": 466,
+        ".yml": 254,
+        ".sql": 314,
+        ".md": 271
+      }
+    },
+    {
+      "month": "2019-04",
+      "merged_prs": 18,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 288,
+        ".xml": 338,
+        ".yml": 449,
+        ".sql": 405,
+        ".md": 436
+      }
+    },
+    {
+      "month": "2019-05",
+      "merged_prs": 10,
+      "reviews": 16,
+      "by_ext": {
+        ".java": 113,
+        ".sql": 109,
+        ".md": 104
+      }
+    },
+    {
+      "month": "2019-06",
+      "merged_prs": 18,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 194,
+        ".xml": 402,
+        ".yml": 191,
+        ".md": 460
+      }
+    },
+    {
+      "month": "2019-07",
+      "merged_prs": 11,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 325,
+        ".xml": 90,
+        ".yml": 235,
+        ".sql": 312,
+        ".md": 176
+      }
+    },
+    {
+      "month": "2019-08",
+      "merged_prs": 11,
+      "reviews": 12,
+      "by_ext": {
+        ".java": 266,
+        ".xml": 267,
+        ".yml": 264,
+        ".sql": 135
+      }
+    },
+    {
+      "month": "2019-09",
+      "merged_prs": 11,
+      "reviews": 13,
+      "by_ext": {
+        ".java": 62,
+        ".xml": 70,
+        ".yml": 249,
+        ".sql": 140
+      }
+    },
+    {
+      "month": "2019-10",
+      "merged_prs": 14,
+      "reviews": 17,
+      "by_ext": {
+        ".xml": 84,
+        ".yml": 99,
+        ".sql": 111,
+        ".md": 181,
+        ".java": 3
+      }
+    },
+    {
+      "month": "2019-11",
+      "merged_prs": 17,
+      "reviews": 9,
+      "by_ext": {
+        ".java": 180,
+        ".xml": 105,
+        ".yml": 159,
+        ".sql": 248,
+        ".md": 235
+      }
+    },
+    {
+      "month": "2019-12",
+      "merged_prs": 10,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 203,
+        ".xml": 199,
+        ".yml": 183,
+        ".sql": 37
+      }
+    },
+    {
+      "month": "2020-01",
+      "merged_prs": 11,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 241,
+        ".xml": 100,
+        ".yml": 244,
+        ".md": 278
+      }
+    },
+    {
+      "month": "2020-02",
+      "merged_prs": 13,
+      "reviews": 10,
+      "by_ext": {
+        ".java": 441,
+        ".yml": 368,
+        ".sql": 220,
+        ".md": 419
+      }
+    },
+    {
+      "month": "2020-03",
+      "merged_prs": 12,
+      "reviews": 14,
+      "by_ext": {
+        ".java": 372,
+        ".xml": 354,
+        ".yml": 316,
+        ".sql": 415,
+        ".md": 100
+      }
+    },
+    {
+      "month": "2020-04",
+      "merged_prs": 17,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 398,
+        ".xml": 507,
+        ".yml": 420,
+        ".sql": 444,
+        ".md": 524
+      }
+    },
+    {
+      "month": "2020-05",
+      "merged_prs": 11,
+      "reviews": 11,
+      "by_ext": {
+        ".java": 122,
+        ".sql": 121,
+        ".xml": 1
+      }
+    },
+    {
+      "month": "2020-06",
+      "merged_prs": 11,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 228,
+        ".sql": 225,
+        ".md": 164
+      }
+    },
+    {
+      "month": "2020-07",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".sql": 237,
+        ".md": 158
+      }
+    },
+    {
+      "month": "2020-08",
+      "merged_prs": 17,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 139,
+        ".xml": 155,
+        ".yml": 78,
+        ".sql": 255,
+        ".md": 204
+      }
+    },
+    {
+      "month": "2020-09",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 173,
+        ".xml": 170,
+        ".yml": 47,
+        ".md": 95
+      }
+    },
+    {
+      "month": "2020-10",
+      "merged_prs": 13,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 202,
+        ".xml": 287,
+        ".sql": 466,
+        ".md": 430
+      }
+    },
+    {
+      "month": "2020-11",
+      "merged_prs": 17,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 333,
+        ".xml": 540,
+        ".yml": 331,
+        ".sql": 112,
+        ".md": 143
+      }
+    },
+    {
+      "month": "2020-12",
+      "merged_prs": 14,
+      "reviews": 12,
+      "by_ext": {
+        ".java": 243,
+        ".sql": 134,
+        ".md": 270,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2021-01",
+      "merged_prs": 7,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 251,
+        ".xml": 131,
+        ".yml": 238,
+        ".sql": 182,
+        ".md": 106
+      }
+    },
+    {
+      "month": "2021-02",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 280,
+        ".xml": 267,
+        ".yml": 138,
+        ".sql": 235,
+        ".md": 79
+      }
+    },
+    {
+      "month": "2021-03",
+      "merged_prs": 4,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 116,
+        ".xml": 108,
+        ".yml": 38,
+        ".sql": 35,
+        ".md": 55
+      }
+    },
+    {
+      "month": "2021-04",
+      "merged_prs": 9,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 150,
+        ".xml": 322,
+        ".sql": 206,
+        ".md": 266
+      }
+    },
+    {
+      "month": "2021-05",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 137,
+        ".xml": 132,
+        ".yml": 117,
+        ".sql": 132,
+        ".md": 116
+      }
+    },
+    {
+      "month": "2021-06",
+      "merged_prs": 10,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 285,
+        ".xml": 489,
+        ".sql": 281,
+        ".md": 117
+      }
+    },
+    {
+      "month": "2021-07",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 272,
+        ".xml": 145,
+        ".sql": 212
+      }
+    },
+    {
+      "month": "2021-08",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 196,
+        ".xml": 321,
+        ".yml": 229,
+        ".sql": 411,
+        ".md": 227
+      }
+    },
+    {
+      "month": "2021-09",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 55,
+        ".xml": 139,
+        ".yml": 79,
+        ".md": 131
+      }
+    },
+    {
+      "month": "2021-10",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".java": 283,
+        ".xml": 81,
+        ".yml": 282,
+        ".sql": 92,
+        ".md": 139
+      }
+    },
+    {
+      "month": "2021-11",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".java": 334,
+        ".yml": 290,
+        ".sql": 113,
+        ".md": 173
+      }
+    },
+    {
+      "month": "2021-12",
+      "merged_prs": 5,
+      "reviews": 6,
+      "by_ext": {
+        ".java": 95,
+        ".xml": 41,
+        ".sql": 83,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2022-01",
+      "merged_prs": 4,
+      "reviews": 8,
+      "by_ext": {
+        ".java": 180,
+        ".xml": 123,
+        ".yml": 175,
+        ".sql": 94
+      }
+    },
+    {
+      "month": "2022-02",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".xml": 80,
+        ".yml": 128,
+        ".sql": 172,
+        ".md": 35
+      }
+    },
+    {
+      "month": "2022-03",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".java": 111,
+        ".xml": 122,
+        ".sql": 87,
+        ".md": 73,
+        ".owners": 1
+      }
+    },
+    {
+      "month": "2022-04",
+      "merged_prs": 2,
+      "reviews": 8,
+      "by_ext": {
+        ".xml": 106,
+        ".yml": 29,
+        ".sql": 121,
+        ".md": 26
+      }
+    },
+    {
+      "month": "2022-05",
+      "merged_prs": 2,
+      "reviews": 7,
+      "by_ext": {
+        ".xml": 58,
+        ".yml": 42,
+        ".sql": 24,
+        ".md": 37
+      }
+    },
+    {
+      "month": "2022-06",
+      "merged_prs": 1,
+      "reviews": 7,
+      "by_ext": {
+        ".xml": 11,
+        ".yml": 21,
+        ".sql": 10,
+        ".md": 36
+      }
+    },
+    {
+      "month": "2022-07",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 0,
+      "reviews": 3,
+      "by_ext": {}
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 1,
+      "reviews": 0,
+      "by_ext": {
+        ".xml": 15,
+        ".yml": 8,
+        ".sql": 32,
+        ".md": 39
+      }
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 1,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 17,
+        ".xml": 10,
+        ".yml": 14,
+        ".md": 8
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 21,
+        ".xml": 13,
+        ".yml": 30,
+        ".sql": 6,
+        ".md": 23
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".xml": 13,
+        ".yml": 35,
+        ".sql": 22,
+        ".md": 16
+      }
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 0,
+      "reviews": 3,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 1,
+      "reviews": 0,
+      "by_ext": {
+        ".java": 19,
+        ".xml": 14,
+        ".sql": 24,
+        ".md": 2
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 0,
+      "reviews": 3,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 23,
+        ".xml": 16,
+        ".sql": 29,
+        ".md": 17
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 1,
+      "reviews": 0,
+      "by_ext": {
+        ".java": 11,
+        ".xml": 16,
+        ".yml": 14,
+        ".md": 10
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 10,
+        ".xml": 7,
+        ".yml": 7,
+        ".sql": 8,
+        ".md": 10
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 0,
+      "reviews": 3,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 1,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 9,
+        ".xml": 8,
+        ".md": 8,
+        ".owners": 1
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 0,
+      "reviews": 3,
+      "by_ext": {}
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 0,
+      "reviews": 3,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 12,
+        ".xml": 30,
+        ".yml": 25,
+        ".sql": 9,
+        ".md": 23
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 1,
+      "reviews": 0,
+      "by_ext": {
+        ".yml": 29,
+        ".sql": 33,
+        ".md": 10
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {
+        ".java": 10,
+        ".yml": 9,
+        ".md": 11
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 19,
+        ".xml": 10,
+        ".yml": 40,
+        ".sql": 12,
+        ".md": 41
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 0,
+      "reviews": 1,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 1,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 39,
+        ".xml": 17,
+        ".yml": 21,
+        ".sql": 45
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 0,
+      "reviews": 0,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 1,
+      "reviews": 1,
+      "by_ext": {
+        ".java": 27,
+        ".xml": 23,
+        ".yml": 7,
+        ".sql": 27
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 1,
+      "reviews": 2,
+      "by_ext": {
+        ".java": 29,
+        ".xml": 24,
+        ".yml": 23,
+        ".sql": 11,
+        ".md": 7
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 0,
+      "reviews": 2,
+      "by_ext": {}
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [
+      "spring-microservices-demo (2018, 11 stars, last push 2018-09)"
+    ],
+    "oss_contributions": []
+  }
+}

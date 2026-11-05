@@ -1,0 +1,197 @@
+{
+ "pid": "P016",
+ "summary": "Bengaluru performance tester, 7 yrs overall and 3.5 at Kestrel. Genuinely strong at workload modelling, bottleneck isolation and building the release gate, and her design docs show it. Java is the opposite: the CV and HCM claim expert, but she only writes small JSR223 snippets and a custom sampler that a developer wrote with her, and her own assessment score is low.",
+ "archetype": "strong domain skill with an inflated adjacent language claim",
+ "batch": "C",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "performance_testing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:ENG-5120",
+    "github:#923",
+    "github:#739",
+    "jira:QA-2611",
+    "assessments:performance"
+   ],
+   "why": "Designs workload models from production data, isolates bottlenecks with two signals, verified fixes (pool exhaustion, index) and runs a release gate on regression thresholds. Borderline for 4 since the gate is adopted team-wide, but no cross-team teaching record.",
+   "assessed_level": 3
+  },
+  {
+   "skill_id": "java",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "last_used": "2023-12",
+   "evidence_refs": [
+    "github:#540",
+    "assessments:java",
+    "cv_v1:Core Skills"
+   ],
+   "why": "Java appears as one co-written custom sampler and small utility code; test score in the beginner band; no service or tool code of her own.",
+   "assessed_level": 1
+  },
+  {
+   "skill_id": "javascript",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 0,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "github:#845",
+    "github:#882",
+    "github:#1259",
+    "assessments:javascript"
+   ],
+   "why": "k6 scripts with scenarios, thresholds and shared arrays; mostly one pattern, intermediate quiz result.",
+   "assessed_level": 2
+  },
+  {
+   "skill_id": "observability",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "github:#509",
+    "github:#1259",
+    "doc:ENG-5388",
+    "lms:observability"
+   ],
+   "why": "Builds Grafana/Influx dashboards and reads GC, pool and lag metrics during load analysis; does not design alerting."
+  },
+  {
+   "skill_id": "api_testing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "github:#882",
+    "github:#1109"
+   ],
+   "why": "API load scenarios with auth, correlation and checks; functional contract coverage is not her area."
+  },
+  {
+   "skill_id": "cicd",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-06",
+   "evidence_refs": [
+    "github:#845",
+    "github:#923"
+   ],
+   "why": "Wires gate jobs into GHA and pipeline with review from the platform side."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "doc:ENG-5120",
+    "doc:ENG-5388"
+   ],
+   "why": "Two clear pages with tables, thresholds and gotchas; one has a second contributor."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "LoadRunner",
+   "mapped_skill_id": "performance_testing",
+   "has_skill": false,
+   "why": "Prior employers only; no recent use, adds nothing beyond JMeter/k6 evidence"
+  },
+  {
+   "skill_text": "Spring Boot",
+   "mapped_skill_id": "spring_boot",
+   "has_skill": false,
+   "why": "Never listed on the CV; the lone target service stack is only observed from the outside"
+  },
+  {
+   "skill_text": "Kubernetes",
+   "mapped_skill_id": "kubernetes",
+   "has_skill": false,
+   "why": "k6 operator yaml copied from a sandbox example is not cluster work"
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F01",
+   "s11_row": "not_held",
+   "skill_id": "java",
+   "plant": "CV headline 'Java (Expert)', Workday self-declared 4, JMeter custom sampler language; actual Tara Java 2026-03 scored 38% (Beginner)",
+   "expected_engine_behavior": "send_at_level_1"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "java",
+   "plant": "Self-declared Java four levels above fair rating, declared Jan 2026",
+   "expected_engine_behavior": "send_at_level_1"
+  },
+  {
+   "fault_id": "F13",
+   "s11_row": "wrong_person",
+   "skill_id": "java",
+   "plant": "The only Java PR (#540) carries a co-author trailer for the backend developer who wrote the class",
+   "expected_engine_behavior": "send_at_level_1"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "performance_testing",
+   "plant": "ISTQB foundation certificate, no performance syllabus",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F16",
+   "s11_row": "wrong_mapping",
+   "skill_id": null,
+   "plant": "Tickets summarised 'retest', 'Perf run for release' with no scope; component General once",
+   "expected_engine_behavior": "not_extract"
+  }
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.7,
+  "yes_to_everything": false,
+  "flattery_bias": 0.5,
+  "notes": "Will accept Java 3 or 4 defensively; accurate on performance testing."
+ },
+ "messaging_allowed": true
+}

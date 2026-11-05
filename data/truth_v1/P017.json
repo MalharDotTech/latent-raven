@@ -1,0 +1,208 @@
+{
+  "summary": "Karthik still reasons deeply about production failure modes and develops reviewers across teams. His authored change count is low because most of his contribution is review and design feedback; an old frontend project and current release duty do not make him a React practitioner today.",
+  "archetype": "Review-heavy principal architect",
+  "skills": [
+    {
+      "skill_id": "system_design",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/ARCH-118:decision and adoption",
+        "jira:BILL-2702"
+      ],
+      "why": "Multiple teams changed boundaries and recovery assumptions after his intervention.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review billing-core#8107",
+        "docs/ARCH-142:clinic follow-up"
+      ],
+      "why": "Reviewer coaching has concrete later catches, beyond raw review totals.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "technical_leadership",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:BILL-2704",
+        "jira:BILL-2708",
+        "docs/ARCH-118"
+      ],
+      "why": "Service leads reuse his decision process with recorded corrections.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "java",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review billing-core#8101",
+        "github:#1716",
+        "docs/ARCH-142"
+      ],
+      "why": "Current concurrency guidance, working patches and adopted Java checks support continued depth.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "go",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review recon-engine#8102",
+        "github:review recon-engine#8108"
+      ],
+      "why": "His cancellation feedback becomes a pattern used in other workers, despite modest direct Go authorship.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review billing-core#8105",
+        "jira:BILL-2706"
+      ],
+      "why": "He can tune production joins independently; one index intervention does not establish organisation-wide SQL teaching.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "aws",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review infra-live#8106",
+        "jira:BILL-2710"
+      ],
+      "why": "Knows and can change bounded access policies with platform assistance; he is not the account guardrail owner.",
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "stakeholder_management",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:BILL-2707"
+      ],
+      "why": "Finance agreed a recovery boundary and completed ownership assignments after his negotiation.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/ARCH-118",
+        "docs/ARCH-142"
+      ],
+      "why": "Decision and review guides are usable by the receiving leads; no evidence of a broader writing programme.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "react",
+      "has_skill": false,
+      "evidence_refs": [
+        "cv_v1:Tools",
+        "github:merge web-console#8511"
+      ],
+      "why": "The old console work has not survived as usable current React competence. Release approval did not involve reading the component logic.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "React",
+      "mapped_skill_id": "react",
+      "has_skill": false,
+      "why": "Old personal coding and present merge duty cannot establish current framework ability."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": null,
+      "s11_row": "level_off",
+      "skill_id": "system_design",
+      "plant": "P017 combines roughly two authored PRs monthly with over four hundred annual reviews and two adopted architecture pages.",
+      "expected_engine_behavior": "send_at_level_4",
+      "roster_case": "review_document_depth",
+      "catalog_note": "No F01-F36 entry covers underestimating review-led architecture work; roster section 6 is the authority."
+    },
+    {
+      "fault_id": "F12",
+      "s11_row": "wrong_person",
+      "skill_id": "react",
+      "plant": "A web-console squash event records Karthik as merger but names a different implementation author.",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F28",
+      "s11_row": "skill_decay",
+      "skill_id": "react",
+      "plant": "The CV dates frontend implementation to 2018; no later React development is available.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.64,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Will confirm architecture and review practice; asks for scope on language labels. Rejects React claims."
+  },
+  "pid": "P017",
+  "batch": "D",
+  "generator": "codex (GPT-6; runtime submodel not exposed)",
+  "messaging_allowed": true
+}

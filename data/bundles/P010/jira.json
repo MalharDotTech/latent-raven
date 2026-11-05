@@ -1,0 +1,390 @@
+{
+  "linked_worker_id": "KCC-5070",
+  "exported_on": "2026-10-31",
+  "issues": [
+    {
+      "key": "BILL-5422",
+      "type": "Task",
+      "summary": "BILL: connector handshake",
+      "description_excerpt": "Client acceptance recorded; implementation link requires client access.",
+      "component": "Dedicated connector",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-07-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-07-01",
+      "resolved": "2024-07-15",
+      "story_points": 3,
+      "labels": [
+        "client-dedicated"
+      ],
+      "assignee_external_id": "sj7716",
+      "assignee_worker_id": "KCC-5070"
+    },
+    {
+      "key": "BILL-5530",
+      "type": "Task",
+      "summary": "Retry after callback timeout",
+      "description_excerpt": "Customer test completed. Detailed traces and review in client tracker.",
+      "component": "Dedicated connector",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-10-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-10-01",
+      "resolved": "2024-10-12",
+      "story_points": 3,
+      "labels": [
+        "client-dedicated"
+      ],
+      "assignee_external_id": "sj7716",
+      "assignee_worker_id": "KCC-5070"
+    },
+    {
+      "key": "BILL-5701",
+      "type": "Task",
+      "summary": "Close duplicate posting followup",
+      "description_excerpt": "Client confirmed retest. See restricted delivery attachment.",
+      "component": "Dedicated connector",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-06",
+      "resolved": "2025-02-18",
+      "story_points": 3,
+      "labels": [
+        "client-dedicated"
+      ],
+      "assignee_external_id": "sj7716",
+      "assignee_worker_id": "KCC-5070"
+    },
+    {
+      "key": "BILL-5932",
+      "type": "Task",
+      "summary": "Release connector v2",
+      "description_excerpt": "Deployment accepted; client checklist stored in dedicated project.",
+      "component": "Dedicated connector",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-01",
+      "resolved": "2025-06-25",
+      "story_points": 3,
+      "labels": [
+        "client-dedicated"
+      ],
+      "assignee_external_id": "sj7716",
+      "assignee_worker_id": "KCC-5070"
+    },
+    {
+      "key": "BILL-6102",
+      "type": "Task",
+      "summary": "Fix callback re-entry",
+      "description_excerpt": "Acceptance complete; restricted review URL omitted from cross-tenant export.",
+      "component": "Dedicated connector",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-10-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-10-01",
+      "resolved": "2025-10-07",
+      "story_points": 3,
+      "labels": [
+        "client-dedicated"
+      ],
+      "assignee_external_id": "sj7716",
+      "assignee_worker_id": "KCC-5070"
+    },
+    {
+      "key": "BILL-6279",
+      "type": "Task",
+      "summary": "Connector rollover tests",
+      "description_excerpt": "Client regression passed; no code attachment in Kestrel issue.",
+      "component": "Dedicated connector",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-06",
+      "resolved": "2026-02-09",
+      "story_points": 3,
+      "labels": [
+        "client-dedicated"
+      ],
+      "assignee_external_id": "sj7716",
+      "assignee_worker_id": "KCC-5070"
+    },
+    {
+      "key": "BILL-6486",
+      "type": "Task",
+      "summary": "BILL: retry audit",
+      "description_excerpt": "Client signoff linked from dedicated tracker.",
+      "component": "Dedicated connector",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-02"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-02",
+      "resolved": "2026-06-22",
+      "story_points": 3,
+      "labels": [
+        "client-dedicated"
+      ],
+      "assignee_external_id": "sj7716",
+      "assignee_worker_id": "KCC-5070"
+    },
+    {
+      "key": "BILL-6673",
+      "type": "Task",
+      "summary": "October connector patch",
+      "description_excerpt": "Release accepted. Delivery notes in client workspace.",
+      "component": "Dedicated connector",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-01",
+      "resolved": "2026-10-15",
+      "story_points": 3,
+      "labels": [
+        "client-dedicated"
+      ],
+      "assignee_external_id": "sj7716",
+      "assignee_worker_id": "KCC-5070"
+    },
+    {
+      "key": "BILL-6566",
+      "type": "Task",
+      "summary": "Kafka broker patch signoff",
+      "description_excerpt": "Platform team completed broker patch. Connector team notified. Siddharth bulk-closed customer followups after release acceptance; no broker changes by connector team.",
+      "component": "Kafka",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-07-09"
+        },
+        {
+          "assignee": "self",
+          "from": "2026-07-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-09",
+      "resolved": "2026-07-10",
+      "story_points": 1,
+      "labels": [
+        "administrative-close"
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    }
+  ],
+  "export_scope": "Selected resolved issues; aggregate months include all issues visible to the project export."
+}

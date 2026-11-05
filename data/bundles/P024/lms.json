@@ -1,0 +1,50 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Product Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2023-06-27",
+      "time_spent_minutes": 180,
+      "quiz_score_pct": 82,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: ServiceNow Basics for L1",
+      "provider": "Kestrel Learn",
+      "completed": "2023-06-20",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": 85,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Handling P1 and P2 Incidents",
+      "provider": "Kestrel Learn",
+      "completed": "2024-09-18",
+      "time_spent_minutes": 70,
+      "quiz_score_pct": 72,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "SQL Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2024-03-05",
+      "time_spent_minutes": 6,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "Python Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2025-01-10",
+      "time_spent_minutes": 4,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Code of Conduct and POSH 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-06-04",
+      "time_spent_minutes": 22,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+ "pid": "P006",
+ "schema": "truth-v2",
+ "summary": "A genuine but early frontend engineer fourteen months in. Real skills are limited to React, TypeScript and JavaScript at guided level. The pre-join CV is an LLM-assisted, three-page, 27-skill document with claims in backend, cloud and AI that nothing in his work or training supports.",
+ "archetype": "llm_polished_junior_overclaimer",
+ "batch": "A",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "javascript",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": 2,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "gh_rohanm-kc: web-console UI PRs every month 2025-09..2026-10 with reviewer corrections (Safari date picker, useEffect loop fix + revert + reapply with test, debounce, Esc handling); jira_rohan.mehta WEB bugs resolved; tara_KC-12418 JavaScript 58% 'Basic' (2026-01) supports floor. Guided delivery in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:web-console PRs",
+    "tara:javascript"
+   ],
+   "why": "Merged UI fixes with review corrections visible; assessment Basic"
+  },
+  {
+   "skill_id": "typescript",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "gh_rohanm-kc: .ts/.tsx typed components and helpers (formatCurrency adoption, pagination, CSV export) reviewed with many comments, 2025-09..2026-10. Guided delivery in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:web-console .ts/.tsx PRs"
+   ],
+   "why": "Typed components and helpers, reviewers fix type holes"
+  },
+  {
+   "skill_id": "react",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "gh_rohanm-kc: React screens/components with tests (notification form, audit-log pagination, recon date filter), FilterBar useEffect bug reverted then reapplied with deps + test; heavy review comments. Level 2 across 3+ months; CV length not used.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:web-console PRs",
+    "jira:WEB stories"
+   ],
+   "why": "Delivers screens with guidance; hooks bug needed revert and re-do"
+  },
+  {
+   "skill_id": "nodejs",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_06 capstone (React/Node/Mongo) and hcm self 3; no Node.js in gh_rohanm-kc or jira. CV + self are one group.",
+    "missing_source": "Node.js work in a work system or assessment"
+   },
+   "last_used": "2025-03",
+   "evidence_refs": [
+    "cv_v1:Key Projects"
+   ],
+   "why": "Bootcamp capstone only; none in work systems"
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_06 'SQL', PostgreSQL/MySQL listed; no query artefact anywhere.",
+    "missing_source": "query artefacts / scored SQL test"
+   },
+   "last_used": "2025-03",
+   "evidence_refs": [
+    "cv_v1:Technical Skills"
+   ],
+   "why": "Bootcamp-level knowledge; no query in work artifacts"
+  },
+  {
+   "skill_id": "java",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence. hcm self 3.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Technical Skills",
+    "hcm:self_declared"
+   ],
+   "why": "Listed and self-declared; no Java anywhere in work, courses or bootcamp artifact list"
+  },
+  {
+   "skill_id": "spring_boot",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence. Public repo 'ecommerce-microservices' is a forked tutorial with 1 commit.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Key Projects"
+   ],
+   "why": "Tutorial fork with a single commit"
+  },
+  {
+   "skill_id": "python",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence. hcm self 3; public repo movie-recommender-flask (tutorial).",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Key Projects"
+   ],
+   "why": "A tutorial-level recommender; no work use"
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence. lms Udemy 'Docker and Kubernetes for beginners' completed in 44 minutes (self-assigned); hcm self 2.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "lms:Docker and Kubernetes for beginners"
+   ],
+   "why": "44 minute completion on a course that is many hours; no Dockerfile authored"
+  },
+  {
+   "skill_id": "kubernetes",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence. 44-minute course only.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Key Projects"
+   ],
+   "why": "Same short course; claimed deployment in a project that is a forked tutorial"
+  },
+  {
+   "skill_id": "aws",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "certs_KC-12418 CLF-C02 self_reported, unverifiable (counts as self-stated); cv_2025_06; hcm self 2. No AWS artefact.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "certs:self_reported CLF-C02",
+    "cv_v1:Certifications"
+   ],
+   "why": "Self-reported certificate has no badge or ID; no AWS artifact"
+  },
+  {
+   "skill_id": "terraform",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 0,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Technical Skills"
+   ],
+   "why": "Keyword only"
+  },
+  {
+   "skill_id": "kafka",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 0,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence. Tutorial-fork project only.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Technical Skills"
+   ],
+   "why": "Keyword in a tutorial-fork project"
+  },
+  {
+   "skill_id": "machine_learning",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence. Recommender tutorial.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Technical Skills"
+   ],
+   "why": "A recommender tutorial; no model evidence"
+  },
+  {
+   "skill_id": "llm_engineering",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Listed in cv_2025_06 skills/projects (and hcm self-declared where noted) with no work-system, course or verified evidence. Capstone 'OpenAI API' call.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Technical Skills"
+   ],
+   "why": "Calls an API in a capstone; no work artifact"
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Microservices Architecture",
+   "mapped_skill_id": "system_design",
+   "has_skill": false,
+   "why": "CV project is a forked tutorial; no design work",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_06 'Microservices Architecture' and forked tutorial project; no design work.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Azure",
+   "mapped_skill_id": "azure",
+   "has_skill": false,
+   "why": "listed only",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_06 'Azure' only.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "CI/CD Pipelines, Jenkins",
+   "mapped_skill_id": "cicd",
+   "has_skill": false,
+   "why": "listed only; one lint-fix PR",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_06 'Jenkins, CI/CD Pipelines'; gh_rohanm-kc one lint-fix PR.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Agile/Scrum",
+   "mapped_skill_id": "agile_delivery",
+   "has_skill": false,
+   "why": "attends sprints; no evidence of delivery practice",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_06 'Agile/Scrum'; nothing else.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F04",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "java",
+   "plant": "Three-page polished CV with 27 listed skills and generic achievement bullets in a pre-join document.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F05",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "kubernetes",
+   "plant": "Skills section lists Kubernetes, Terraform, Kafka, Azure, AWS and ML; none appear in work bullets or systems.",
+   "expected_engine_behavior": "hold",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F06",
+   "s11_row": "level_off",
+   "skill_id": "react",
+   "plant": "CV length and richness would suggest a mid-level React developer; actual PRs show guided delivery and a revert.",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F08",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "llm_engineering",
+   "plant": "Generative AI, LLMs and prompt engineering on CV, one capstone API call, no work artifact.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F27",
+   "s11_row": "invented_skill",
+   "skill_id": "aws",
+   "plant": "AWS Certified Cloud Practitioner listed on CV and in certs.json as self_reported with no badge url or credential id.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F26",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "docker",
+   "plant": "LMS Udemy Docker and Kubernetes course 'completed' in 44 minutes, self assigned.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F10",
+   "s11_row": "wrong_person",
+   "skill_id": "javascript",
+   "plant": "One bot dependency PR appears in his authored list.",
+   "expected_engine_behavior": "send_at_level_2",
+   "evidence_expectation": "Bot eslint-plugin bump PR is not his work.",
+   "v1_expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "HTML/CSS",
+  "Redux",
+  "Tailwind CSS"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.9,
+  "yes_to_everything": false,
+  "flattery_bias": 2,
+  "notes": "Eager; accepts one level above true readily and says yes to Java/Python prompts; replies fast"
+ },
+ "messaging_allowed": true
+}

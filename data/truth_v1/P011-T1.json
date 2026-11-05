@@ -1,0 +1,188 @@
+{
+  "summary": "Deepa left paid work for three years, then rejoined on the same worker identifier in February 2026. Her cautious onboarding ratings lag recovered production ability: recent independent repairs support Python, SQL, PySpark and Airflow today, while a short cloud completion means little.",
+  "archetype": "Returning data engineer with conservative self-ratings",
+  "skills": [
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#11015",
+        "assessments:2026-02-11"
+      ],
+      "why": "Current runtime repairs and verified regressions establish recovered independence.",
+      "true_level": 3,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#11014"
+      ],
+      "why": "Recent decimal correction with reconciled amounts supports current transformation ownership.",
+      "true_level": 3,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-05"
+    },
+    {
+      "skill_id": "pyspark",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#11011",
+        "github:#11019"
+      ],
+      "why": "Recent duplicate handling and measured spill repairs show recovered runtime competence.",
+      "true_level": 3,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "airflow",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#11013",
+        "github:#11017"
+      ],
+      "why": "Post-return recovery work repairs backfills and retry manifests in production.",
+      "true_level": 3,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-08"
+    },
+    {
+      "skill_id": "aws",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#11018"
+      ],
+      "why": "Recent S3 credential change needed platform guidance; broader cloud independence is not established.",
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:reviews_given"
+      ],
+      "why": "Current comments identify correctness problems that authors fixed.",
+      "true_level": 3,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2,
+        3
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "data_modeling",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#11007",
+        "github:#11016"
+      ],
+      "why": "Maintains schema lineage and rejection fields with team review, rather than independently owning cross-source models.",
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-07"
+    },
+    {
+      "skill_id": "azure",
+      "has_skill": false,
+      "evidence_refs": [
+        "lms:Azure Foundations (path)"
+      ],
+      "why": "Private followup found no retained platform concepts or hands-on deployment after a skipped course.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Azure",
+      "mapped_skill_id": "azure",
+      "has_skill": false,
+      "why": "Four-minute path completion and no work use do not establish even assessed conceptual skill."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F29",
+      "s11_row": "level_off",
+      "skill_id": "python",
+      "plant": "February Workday declaration is lower than current production ownership and recent defect work.",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F30",
+      "s11_row": "level_off",
+      "skill_id": "pyspark",
+      "plant": "Returning engineer consistently discounts her own capability despite independently checked pipeline repairs; evaluate artifacts rather than her confidence.",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F28",
+      "s11_row": "skill_decay",
+      "skill_id": "airflow",
+      "plant": "Monthly activity is zero throughout the break; post-return backfill and retry fixes re-establish the present level instead of mechanically decaying all old skills.",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F26",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "azure",
+      "plant": "Azure path completion took four minutes and has no corresponding assessed or operational work.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "pid": "P011-T1",
+  "batch": "B",
+  "generator": "codex gpt-6.1-sol",
+  "answer_behavior": {
+    "reply_probability": 0.91,
+    "yes_to_everything": false,
+    "flattery_bias": -1,
+    "notes": "Declines a guiding-others description; accepts current independent delivery after being shown a specific recent example."
+  },
+  "messaging_allowed": true,
+  "twin_of": "P011",
+  "twin_swap": {
+    "first": "Rahul",
+    "last": "Verma",
+    "gender": "M",
+    "university": null
+  }
+}

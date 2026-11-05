@@ -1,0 +1,564 @@
+{
+  "linked_employee_id": "KC-11529",
+  "issues": [
+    {
+      "key": "RECON-2398",
+      "type": "Task",
+      "summary": "Webhook 409 sample",
+      "description_excerpt": "Partner needs repeat-key failure cases in the acceptance collection.",
+      "component": "Payments integration pod",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-01-27"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-01-27",
+      "resolved": "2023-02-09",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 80",
+        "start": "2023-01-16",
+        "end": "2023-01-27"
+      },
+      "comments": [
+        {
+          "author": "Priyanka Rao",
+          "date": "2023-02-09",
+          "body": "Aman updated the API smoke collection: same key/same body, same key/different body, missing auth. CI run 1847 caught the 409 response without error code before release."
+        }
+      ]
+    },
+    {
+      "key": "RECON-2500",
+      "type": "Task",
+      "summary": "Pilot opening balance check",
+      "description_excerpt": "Finance acceptance totals differ by one day for bank B.",
+      "component": "Payments integration pod",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-06-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-06-30",
+      "resolved": "2023-07-10",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 91",
+        "start": "2023-06-19",
+        "end": "2023-06-30"
+      },
+      "comments": [
+        {
+          "author": "Leena Varma",
+          "date": "2023-07-10",
+          "body": "SQL query reviewed by Leena: changed posting_date to value_date and kept the tenant predicate. Reconciled count and sum to customer supplied totals. Aman reran it with the customer."
+        }
+      ]
+    },
+    {
+      "key": "RECON-2622",
+      "type": "Task",
+      "summary": "Duplicate callback in partner test",
+      "description_excerpt": "Two callbacks arrive for the same settlement.",
+      "component": "Payments integration pod",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-10-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-10-04",
+      "resolved": "2023-10-13",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 98",
+        "start": "2023-09-25",
+        "end": "2023-10-06"
+      },
+      "comments": [
+        {
+          "author": "Priyanka Rao",
+          "date": "2023-10-13",
+          "body": "Aman added the repeated callback and timeout-then-retry paths to the maintained API suite. CI run 2094 exposed a second posting; verified the fix before pilot release."
+        }
+      ]
+    },
+    {
+      "key": "RECON-2847",
+      "type": "Task",
+      "summary": "Agree pilot cutoff",
+      "description_excerpt": "Buyer wants same-day acceptance but bank file arrives next morning.",
+      "component": "Payments integration pod",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-04-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-04-17",
+      "resolved": "2024-04-29",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 112",
+        "start": "2024-04-08",
+        "end": "2024-04-19"
+      },
+      "comments": [
+        {
+          "author": "Priyanka Rao",
+          "date": "2024-04-29",
+          "body": "Aman agreed T+1 acceptance at 11am with the controller and integration lead. Product accepted the reporting label change; action list completed before pilot signoff."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3150",
+      "type": "Task",
+      "summary": "Missing scope acceptance check",
+      "description_excerpt": "Partner setup passes with wrong token scope.",
+      "component": "Payments integration pod",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-01-22",
+      "resolved": "2025-01-24",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 132",
+        "start": "2025-01-13",
+        "end": "2025-01-24"
+      },
+      "comments": [
+        {
+          "author": "Priyanka Rao",
+          "date": "2025-01-24",
+          "body": "API smoke suite updated by Aman for missing scope, expired token and cross-tenant ID. CI run 2318 blocked the release candidate on the missing-scope defect."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3344",
+      "type": "Task",
+      "summary": "Pilot invoice totals",
+      "description_excerpt": "Need agreed acceptance query for split merchant setup.",
+      "component": "Payments integration pod",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-28",
+      "resolved": "2025-06-03",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 141",
+        "start": "2025-05-19",
+        "end": "2025-05-30"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-06-03",
+          "body": "SQL joins reviewed by Sravya for tenant and merchant keys. Aman reconciled query output to the two source control totals and recorded customer acceptance."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3753",
+      "type": "Task",
+      "summary": "Close multi-bank pilot actions",
+      "description_excerpt": "Pilot needs replay recovery before acceptance.",
+      "component": "Payments integration pod",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-06",
+      "resolved": "2026-03-16",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 161",
+        "start": "2026-02-23",
+        "end": "2026-03-06"
+      },
+      "comments": [
+        {
+          "author": "Priyanka Rao",
+          "date": "2026-03-16",
+          "body": "Aman negotiated daily replay window with controller and integration lead. New acceptance schedule agreed, replay case passed, owners closed the action list."
+        }
+      ]
+    },
+    {
+      "key": "RECON-3936",
+      "type": "Task",
+      "summary": "Partner replay guide review",
+      "description_excerpt": "Review SALES-218 before the next pilot.",
+      "component": "Payments integration pod",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-20",
+      "resolved": "2026-07-21",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 171",
+        "start": "2026-07-13",
+        "end": "2026-07-24"
+      },
+      "comments": [
+        {
+          "author": "Priyanka Rao",
+          "date": "2026-07-21",
+          "body": "Priyanka reviewed Aman replay procedure, corrected the key reuse after timeout and checked the revised request sequence against the smoke collection. Draft accepted for partner handoff."
+        }
+      ]
+    },
+    {
+      "key": "RECON-4032",
+      "type": "Task",
+      "summary": "Signature error examples",
+      "description_excerpt": "Partner asks for failure contract examples.",
+      "component": "Payments integration pod",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-16",
+      "resolved": "2026-09-24",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 175",
+        "start": "2026-09-07",
+        "end": "2026-09-18"
+      },
+      "comments": [
+        {
+          "author": "Priyanka Rao",
+          "date": "2026-09-24",
+          "body": "Aman updated maintained API smoke checks for invalid signature and missing header. CI run 2670 found the untyped error response; fixed before partner release."
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 1,
+      "reported": 2
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    }
+  ],
+  "exported": "2026-10-31"
+}

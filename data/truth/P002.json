@@ -1,0 +1,243 @@
+{
+ "pid": "P002",
+ "schema": "truth-v2",
+ "summary": "Genuine HR generalist who runs Workday-based review and onboarding processes. Shares an exact display name with the senior data engineer P001. Took a short Python video course for curiosity and never used it again.",
+ "archetype": "name_collision_non_tech",
+ "batch": "A",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "workday",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "doc_PEOPLE-midyear-hrbp-guide: authored Workday procedures (supervisory-org gap report, Change Business Process Participant, transfers), 340 views; hcm_KC-11389: 'Workday talent module rollout' business-owner allocation 2023-07..2024-03; self-declared 3. Two independent groups (authored + organisation) at level 2; no audited transactions to pin 3. Floor 2, ceiling 3 -> 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:PEOPLE-midyear-hrbp-guide",
+    "hcm:project_allocations",
+    "cv_v1:Work Experience"
+   ],
+   "why": "Runs Workday business processes for review cycles and fixes supervisory org and transfer faults; business owner of the talent module rollout"
+  },
+  {
+   "skill_id": "hr_operations",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2023_03 lists lifecycle work at Wipro/Infosys (self-stated, 2019-2023); doc_PEOPLE-midyear-hrbp-guide is review-cycle guidance, not joiner/transfer/exit case records. No work-system HR case evidence.",
+    "missing_source": "HR case records (ServiceNow HR / Workday transaction audit)"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:PEOPLE-midyear-hrbp-guide",
+    "cv_v1:Wipro"
+   ],
+   "why": "Joiner/transfer/exit cases in two employers, plus case handling guidance for others"
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "hcm_KC-11389 self-declared 3 and comp-cycle allocation; doc_PEOPLE-midyear-hrbp-guide escalation section. No decision records.",
+    "missing_source": "decision records / calibration minutes"
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "hcm:project_allocations",
+    "doc:calibration section"
+   ],
+   "why": "Managers, payroll and leadership trade-offs in comp cycle and calibration"
+  },
+  {
+   "skill_id": "talent_acquisition",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "hcm_KC-11389 'Hyderabad office expansion hiring' allocation (25%); lms_KC-11389 Interviewer Certification. No ATS or scorecard records.",
+    "missing_source": "ATS histories / interview scorecards"
+   },
+   "last_used": "2025-09",
+   "evidence_refs": [
+    "lms:Interviewer Certification",
+    "hcm:Hyderabad expansion hiring"
+   ],
+   "why": "Supports hiring panels and offers; recruiters own sourcing"
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "One authored process page (doc_PEOPLE-midyear-hrbp-guide); single group, no revision or validation records. Also borderline mapping (HR process guide, not technical docs).",
+    "missing_source": "doc revision history / review comments"
+   },
+   "last_used": "2026-05",
+   "evidence_refs": [
+    "doc:PEOPLE-midyear-hrbp-guide"
+   ],
+   "why": "Clear process page, not technical documentation"
+  },
+  {
+   "skill_id": "python",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "lms_KC-11389 'Python Essential Training' (2023-07, no quiz) and hcm_KC-11389 self-declared Python 2 (2023-08). Training + self only; never sendable. No GitHub/Jira in this bundle.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "lms:Python Essential Training",
+    "hcm:self_declared"
+   ],
+   "why": "Watched one course, no code, no repo, no tool use; declared self level 2 right after the course"
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Python",
+   "mapped_skill_id": "python",
+   "has_skill": false,
+   "why": "LMS completion plus a self-declared level; zero application anywhere",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "lms_KC-11389 Python course + hcm self-declared 2; no application.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "SuccessFactors",
+   "mapped_skill_id": "sap",
+   "has_skill": false,
+   "why": "HRIS exposure at Wipro; not in taxonomy as its own skill; SAP mapping would be wrong",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2023_03 'HRIS: SuccessFactors' is an HCM product; taxonomy sap is finance modules. Must not map to sap.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Power BI (basic)",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV line only, no artifact; no taxonomy skill",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2023_03 'Power BI (basic)'; no taxonomy skill and no artifact.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F18",
+   "s11_row": "wrong_person",
+   "skill_id": "python",
+   "plant": "Display name equals P001; email differs only by digit (priya.sharma2@). Engine joining on name would credit the data engineer's Python or the HRBP's Workday to the wrong record.",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "Join only by employee_id KC-11389 / priya.sharma2@. Never attach P001's (KC-11204) GitHub, Jira or Tara Python by name. With the stable key this bundle's Python stays course-only -> hold.",
+   "v1_expected_engine_behavior": "join_neither"
+  },
+  {
+   "fault_id": "F26",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "python",
+   "plant": "LMS completion of a Python course and an HCM self-declared Python level 2 shortly after. No usage in any other source.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F06",
+   "s11_row": "message_misread",
+   "skill_id": "workday",
+   "plant": "CV is a Roles-and-Responsibilities list with declaration and personal details; Workday listed as 'exposure' in 2023 CV while the real use is later at Kestrel.",
+   "expected_engine_behavior": "send_at_level_2",
+   "v1_expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "sap",
+   "plant": "SuccessFactors named in the CV as HRIS; a naive mapper may emit the SAP umbrella skill.",
+   "expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "SAP SuccessFactors (HRIS user)"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.6,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Would politely correct a Python question: 'I only did a course'"
+ },
+ "messaging_allowed": true
+}

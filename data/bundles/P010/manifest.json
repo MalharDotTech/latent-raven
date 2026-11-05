@@ -1,0 +1,29 @@
+{
+  "person_ref": "P010",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "P010_hcm_1",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "P010_cv_2",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P010",
+      "received": "2024-05-22"
+    },
+    {
+      "source_id": "P010_jira_3",
+      "source_type": "jira",
+      "path": "jira.json"
+    },
+    {
+      "source_id": "P010_lms_4",
+      "source_type": "lms",
+      "path": "lms.json"
+    }
+  ]
+}

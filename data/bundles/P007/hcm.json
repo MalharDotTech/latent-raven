@@ -1,0 +1,81 @@
+{
+  "employee_id": "KC-10707",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Ananya Krishnan",
+  "preferred_name": "Ananya",
+  "emails": [
+    {
+      "email": "ananya.krishnan@kestrelcloud.com",
+      "from": "2022-07",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Applied ML",
+  "manager_employee_id": "KC-10047",
+  "hire_date": "2022-07-11",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "ML Engineer",
+      "grade": "P3",
+      "from": "2022-07",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Collections forecast",
+      "role": "ML Engineer",
+      "from": "2022-07",
+      "to": "2024-12",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Recon explanation pilot",
+      "role": "ML Engineer",
+      "from": "2025-01",
+      "to": null,
+      "allocation_pct": 80
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "IIT Madras",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2018
+    }
+  ],
+  "exported_on": "2026-10-31",
+  "self_declared_skills": [
+    {
+      "skill_text": "Python",
+      "self_level": 3,
+      "declared_on": "2026-06"
+    },
+    {
+      "skill_text": "Machine Learning",
+      "self_level": 3,
+      "declared_on": "2026-06"
+    },
+    {
+      "skill_text": "GCP",
+      "self_level": 3,
+      "declared_on": "2026-06"
+    },
+    {
+      "skill_text": "LLM application engineering",
+      "self_level": 3,
+      "declared_on": "2026-06"
+    }
+  ]
+}

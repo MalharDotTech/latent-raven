@@ -1,0 +1,156 @@
+{
+ "_meta": {
+  "collected": "2026-11-05",
+  "gaps": [
+   "Co-occurrence / worked-with-and-want data NOT available on opened pages; India-specific SO numbers not found. Only marginal popularity."
+  ]
+ },
+ "stackoverflow_2024": {
+  "source_url": "https://survey.stackoverflow.co/2024/technology",
+  "languages": {
+   "JavaScript": 62.3,
+   "HTML/CSS": 52.9,
+   "Python": 51.0,
+   "SQL": 51.0,
+   "TypeScript": 38.5,
+   "Bash/Shell": 33.9,
+   "Java": 30.3,
+   "C#": 27.1,
+   "C++": 23.0,
+   "C": 20.3,
+   "PHP": 18.2,
+   "PowerShell": 13.8,
+   "Go": 13.5,
+   "Rust": 12.6,
+   "Kotlin": 9.4
+  },
+  "web_frameworks": {
+   "Node.js": 40.8,
+   "React": 39.5,
+   "jQuery": 21.4,
+   "Next.js": 17.9,
+   "Express": 17.8,
+   "Angular": 17.1,
+   "ASP.NET CORE": 16.9,
+   "Vue.js": 15.4,
+   "ASP.NET": 12.9,
+   "Flask": 12.9,
+   "Spring Boot": 12.7,
+   "Django": 12.0,
+   "WordPress": 11.8,
+   "FastAPI": 9.9,
+   "Laravel": 7.9
+  },
+  "databases": {
+   "PostgreSQL": 48.7,
+   "MySQL": 40.3,
+   "SQLite": 33.1,
+   "Microsoft SQL Server": 25.3,
+   "MongoDB": 24.8,
+   "Redis": 20.0,
+   "MariaDB": 17.2,
+   "Elasticsearch": 12.5,
+   "Oracle": 10.1,
+   "DynamoDB": 7.9
+  },
+  "cloud": {
+   "AWS": 48.0,
+   "Azure": 27.8,
+   "Google Cloud": 25.1,
+   "Cloudflare": 15.1,
+   "Firebase": 13.9,
+   "Vercel": 11.9,
+   "DigitalOcean": 11.7,
+   "Heroku": 8.2
+  },
+  "tools": {
+   "Docker": 53.9,
+   "npm": 49.6,
+   "Pip": 32.4,
+   "Kubernetes": 19.4,
+   "Terraform": 10.6,
+   "Ansible": 7.9
+  }
+ },
+ "stackoverflow_2025": {
+  "source_url": "https://survey.stackoverflow.co/2025/technology",
+  "languages": {
+   "JavaScript": 66.0,
+   "HTML/CSS": 61.9,
+   "SQL": 58.6,
+   "Python": 57.9,
+   "Bash/Shell": 48.7,
+   "TypeScript": 43.6,
+   "Java": 29.4,
+   "C#": 27.8,
+   "C++": 23.5,
+   "PowerShell": 23.2,
+   "C": 22.0,
+   "PHP": 18.9,
+   "Go": 16.4,
+   "Rust": 14.8
+  },
+  "web_frameworks": {
+   "Node.js": 48.7,
+   "React": 44.7,
+   "jQuery": 23.4,
+   "Next.js": 20.8,
+   "Express": 19.9,
+   "ASP.NET Core": 19.7,
+   "Angular": 18.2,
+   "Vue.js": 17.6,
+   "FastAPI": 14.8,
+   "Spring Boot": 14.7,
+   "Flask": 14.4,
+   "ASP.NET": 14.2,
+   "WordPress": 13.6,
+   "Django": 12.6
+  },
+  "databases": {
+   "PostgreSQL": 55.6,
+   "MySQL": 40.5,
+   "SQLite": 37.5,
+   "Microsoft SQL Server": 30.1,
+   "Redis": 28.0,
+   "MongoDB": 24.0,
+   "MariaDB": 22.5,
+   "Elasticsearch": 16.7
+  },
+  "cloud_and_tools": {
+   "Docker": 71.1,
+   "npm": 56.8,
+   "AWS": 43.3,
+   "Pip": 40.9,
+   "Kubernetes": 28.5,
+   "Azure": 26.3,
+   "Google Cloud": 24.6,
+   "Terraform": 17.8
+  },
+  "editors": {
+   "Visual Studio Code": 75.9,
+   "Cursor": 17.9,
+   "Claude Code": 9.7
+  }
+ },
+ "github_octoverse_2024": {
+  "source_url": "https://github.blog/news-insights/octoverse/octoverse-2024/",
+  "india": [
+   "17M+ developers on GitHub, 28% YoY growth",
+   "2nd largest developer population behind US; predicted to pass US by 2028",
+   "95% YoY increase in contributions to generative AI projects",
+   "2nd in GitHub Education users and in open source contributions"
+  ],
+  "top_languages_global": [
+   "Python",
+   "JavaScript",
+   "TypeScript",
+   "Java",
+   "C#",
+   "C++",
+   "PHP",
+   "Shell",
+   "C",
+   "Go"
+  ]
+ }
+}

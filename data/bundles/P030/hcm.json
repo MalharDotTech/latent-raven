@@ -1,0 +1,122 @@
+{
+  "employee_id": "KC-11730",
+  "legacy_ids": [
+    "KC-10830"
+  ],
+  "worker_type": "employee",
+  "legal_name": "Imran Qureshi",
+  "preferred_name": "Imran Qureshi",
+  "emails": [
+    {
+      "email": "imran.qureshi@kestrelcloud.com",
+      "from": "2019-07",
+      "to": "2022-08"
+    },
+    {
+      "email": "imran.qureshi@kestrelcloud.com",
+      "from": "2024-05",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Data Platform",
+  "manager_employee_id": "KC-10120",
+  "hire_date": "2019-07-15",
+  "rehire_dates": [
+    "2024-05-13"
+  ],
+  "job_history": [
+    {
+      "title": "Data Engineer",
+      "grade": "P1",
+      "from": "2019-07",
+      "to": "2022-08"
+    },
+    {
+      "title": "Data Engineer II",
+      "grade": "P2",
+      "from": "2024-05",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Ingestion batch refresh",
+      "role": "Data Engineer",
+      "from": "2019-09",
+      "to": "2021-01",
+      "allocation_pct": 100
+    },
+    {
+      "project": "Recon data pipelines",
+      "role": "Data Engineer",
+      "from": "2021-02",
+      "to": "2022-08",
+      "allocation_pct": 90
+    },
+    {
+      "project": "Settlement loaders",
+      "role": "Data Engineer",
+      "from": "2024-06",
+      "to": "2025-08",
+      "allocation_pct": 80
+    },
+    {
+      "project": "Data quality framework",
+      "role": "Data Engineer",
+      "from": "2025-04",
+      "to": "2025-06",
+      "allocation_pct": 30
+    },
+    {
+      "project": "Platform sustaining",
+      "role": "Data Engineer",
+      "from": "2025-09",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "record_link_note": "Rehire matched against archived KC-10830 by HR operations on 2024-05-08; prior assignment ended 2022-08-31.",
+  "self_declared_skills": [
+    {
+      "skill_text": "Python",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Airflow",
+      "self_level": 3,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "PySpark",
+      "self_level": 2,
+      "declared_on": "2025-04"
+    },
+    {
+      "skill_text": "Data modelling",
+      "self_level": 2,
+      "declared_on": "2025-04"
+    }
+  ],
+  "education": [
+    {
+      "institution": "College of Engineering Pune",
+      "degree": "B.E.",
+      "field": "Information Technology",
+      "year": 2019
+    }
+  ]
+}

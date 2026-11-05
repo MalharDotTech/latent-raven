@@ -1,0 +1,307 @@
+{
+ "pid": "P018",
+ "schema": "truth-v2",
+ "summary": "Nikhil received Ledgerly’s lead designation in March 2024 after about two and a half years, coordinating a small import team rather than setting architecture. In October 2026 he is a capable independent Node.js maintainer but still needs help with infrastructure and broader technical decisions; the legacy HR row is a duplicate of his continuing employment.",
+ "archetype": "Acquisition title and duplicate identity",
+ "batch": "D",
+ "generator": "codex (GPT-6; runtime submodel not exposed)",
+ "skills": [
+  {
+   "skill_id": "nodejs",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P018_github ledgerly-legacy Node.js import service fixes 2025-01..2026-09 (stream destroyed on parse error, unawaited webhook promise, single-settlement timeout, temp-file cleanup on abort); P018_jira matching BILL items resolved by self; hcm self 3. Work at 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#5109",
+    "github:#5506",
+    "jira:BILL-5770"
+   ],
+   "why": "Owns the import runtime and fixes stream and asynchronous failures without a recipe."
+  },
+  {
+   "skill_id": "javascript",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P018_github: promise settlement, fake-timer tests, decimal-as-string transport fixes 2025-2026; P018_jira BILL-5770, BILL-6326. Work at 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#5319",
+    "github:#5716"
+   ],
+   "why": "Handles promise settlement and monetary data transport in shipped service changes."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "P018_github 'fix(sql): tenant filter in dup check' - reviewer added the predicate, checked against saved totals (2025-06); P018_jira BILL-5812 analyst supplied join correction, compared to supplied totals; P018_cv_v1. Level 2 line literally.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#5192",
+    "jira:BILL-5812"
+   ],
+   "why": "Correct output depends on analyst or reviewer correction of query grain and tenant conditions."
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "P018_github nonroot import worker Dockerfile, platform reviewer supplied fix, smoke run passed (2026-01); P018_jira BILL-5901; P018_cv_v1 'Dockerfile changes as per review comments'. Work + self at 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:#5451",
+    "jira:BILL-5901"
+   ],
+   "why": "A reviewed image change and working smoke run show bounded assisted application."
+  },
+  {
+   "skill_id": "technical_leadership",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "P018_jira BILL-6374 covered standup for three days while billing lead set order and rollback; BILL-6552 draft revised after lead rejected shared mutable retry list; P018_cv_v1 'Handling daily standup when lead is away and release sheet updation'. Coordinates bounded tasks with guidance = level 2 line. Title 'Tech Lead' (P2) and hcm self 4 are not used for level.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:BILL-6374",
+    "jira:BILL-6552"
+   ],
+   "why": "Coordinates small tasks under the billing lead; title and standup cover overstate his design autonomy."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "P018_github reviews ~120/yr; listed ones are light (empty csv test, ran sample file) with one catch (missing await, 2026-04). Floor 2, ceiling 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:review ledgerly-legacy#5549",
+    "github:review ledgerly-legacy#5589"
+   ],
+   "why": "Can identify some JavaScript defects but relies on a stronger reviewer for broader correctness."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "One authored handover page (P018_ENG-318, 205 views, billing-maintainer contributor) that itself says review changed the design. Single artifact, no other group.",
+    "missing_source": "more docs / review history"
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "docs/ENG-318"
+   ],
+   "why": "The runbook becomes usable after review and a supported walkthrough."
+  },
+  {
+   "skill_id": "aws",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P018_cv_v1 'Deployment to AWS along with platform team'; P018_jira BILL-6460 platform engineer wrote and applied the IAM policy, he attached a smoke result and closed it. No AWS work of his own.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "jira:BILL-6460",
+    "cv_v1:Roles & Responsibilities"
+   ],
+   "why": "He only ran the application smoke check after a platform owner implemented the policy."
+  },
+  {
+   "skill_id": "kubernetes",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P018_cv_v1 bare 'Kubernetes.'; P018_lms Pluralsight course completed in 3 minutes, no quiz.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "lms:Getting Started with Kubernetes",
+    "cv_v1:Roles & Responsibilities"
+   ],
+   "why": "The completion resulted from clicking through an imported course player. Privately he cannot explain or operate a pod."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "AWS",
+   "mapped_skill_id": "aws",
+   "has_skill": false,
+   "why": "Closing the IAM issue and attending deployment did not involve operating cloud resources.",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "CV mention + closure-day IAM ticket.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Kubernetes",
+   "mapped_skill_id": "kubernetes",
+   "has_skill": false,
+   "why": "The course badge and CV mention are unsupported by retained knowledge or practice.",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "3-minute course + bare CV line.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F20",
+   "s11_row": "level_off",
+   "skill_id": "technical_leadership",
+   "plant": "Tech Lead appears in the imported Ledgerly title while parent grading is P2; reviews show design corrections by another lead.",
+   "expected_engine_behavior": "send_at_level_2",
+   "evidence_expectation": "Ledgerly 'Tech Lead' title and self 4 must not set the level."
+  },
+  {
+   "fault_id": "F23",
+   "s11_row": "wrong_person",
+   "skill_id": null,
+   "plant": "An active legacy LGR row survives alongside the KC row; identical worker UUID and dated conversion event establish one employee.",
+   "expected_engine_behavior": "deduplicate_and_join_by_stable_id"
+  },
+  {
+   "fault_id": "F26",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "kubernetes",
+   "plant": "A three-minute LMS completion lacks a quiz and accompanies a bare CV skill claim.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F15",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "aws",
+   "plant": "The IAM item reaches Nikhil only on closure day after the platform engineer completes implementation.",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "BILL-6460 closure after platform implementation must not be extracted as AWS work.",
+   "v1_expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "Express"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.86,
+  "yes_to_everything": false,
+  "flattery_bias": 1,
+  "notes": "Accepts an inflated leadership description because his title says lead. Declines cloud administration when the task is spelled out."
+ },
+ "messaging_allowed": true,
+ "identity_expectation": "One person: KC-11818 with legacy LGR-0318 (same worker_uuid wd-9b318, conversion event PM-2266). Deduplicate the active legacy row; join GitHub/Jira by KC-11818."
+}

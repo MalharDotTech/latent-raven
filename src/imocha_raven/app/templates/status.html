@@ -1,0 +1,6 @@
+{% if row.status == 'running' %}
+<section class="panel reading" hx-get="/play/{{ row.id }}/status" hx-trigger="every 2s" hx-swap="outerHTML" x-data="readingLines">
+<div class="raven-orbit" aria-hidden="true"><span>R</span><i></i><i></i><i></i></div><p class="eyebrow">THREE RAVENS. ONE EVIDENCE PILE.</p><h2>The Ravens are reading<br><em>your evidence…</em></h2><p class="rotating-line" x-text="lines[index]">Sharpening beaks. Checking receipts.</p><p class="tiny muted">Usually 30–90 seconds. Keep this page open.</p><span class="sr-only" role="status">Your evidence is being processed.</span>
+</section>
+{% elif row.status == 'ready' %}<div class="notice">The panel is ready. <a href="/play/{{ row.id }}">Choose your ratings →</a></div>
+{% else %}<div class="notice">{{ row.notice }} <a href="/play">Start again →</a></div>{% endif %}

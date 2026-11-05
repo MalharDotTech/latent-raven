@@ -1,0 +1,75 @@
+{
+  "employee_id": "KC-11682",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Nirav Deshpande",
+  "preferred_name": "Nirav",
+  "emails": [
+    {
+      "email": "nirav.deshpande@kestrelcloud.com",
+      "from": "2022-11",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Billing Engineering",
+  "manager_employee_id": "KC-10264",
+  "hire_date": "2022-11-14",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Software Development Engineer I",
+      "grade": "P2",
+      "from": "2022-11",
+      "to": "2024-10"
+    },
+    {
+      "title": "Software Development Engineer II",
+      "grade": "P3",
+      "from": "2024-11",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Billing adjustments",
+      "role": "Software Development Engineer II",
+      "from": "2022-11",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Savitribai Phule Pune University",
+      "degree": "B.E.",
+      "field": "Computer Engineering",
+      "year": 2022
+    }
+  ],
+  "exported": "2026-10-31",
+  "self_declared_skills": [
+    {
+      "skill_text": "Java",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    },
+    {
+      "skill_text": "Spring Boot",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    },
+    {
+      "skill_text": "SQL",
+      "self_level": 3,
+      "declared_on": "2026-07"
+    }
+  ]
+}

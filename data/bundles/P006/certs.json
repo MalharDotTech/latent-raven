@@ -1,0 +1,13 @@
+{
+  "certificates": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "AWS",
+      "code": "CLF-C02",
+      "issued": "2025-04",
+      "expires": "2028-04",
+      "evidence_form": "self_reported",
+      "verification_status": "unverifiable"
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "exported_on": "2026-10-31",
+  "linked_employee_id": "KC-10919",
+  "issues": [
+    {
+      "key": "SEC-2857",
+      "type": "Bug",
+      "summary": "Attachment URL crosses tenants",
+      "description_excerpt": "Reproduced with two sandbox tenants; access gate now checks membership before signing. Verified revoked-user and old-client cases.",
+      "component": "application-security",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-04",
+      "resolved": "2025-02-27",
+      "story_points": 3,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-2891",
+      "type": "Task",
+      "summary": "Export trust policy too broad",
+      "description_excerpt": "Role accepts unrelated external IDs. Negative assume-role tests fail as expected after constrained condition.",
+      "component": "application-security",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-07",
+      "resolved": "2025-03-25",
+      "story_points": 2,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-2928",
+      "type": "Task",
+      "summary": "Suppression ttl ignored",
+      "description_excerpt": "Python report excluded expired rows before escalation. Fixed UTC comparison and backfilled missed findings.",
+      "component": "application-security",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-04-02",
+      "resolved": "2025-04-28",
+      "story_points": 5,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-2975",
+      "type": "Bug",
+      "summary": "Token in scan failure log",
+      "description_excerpt": "Error path printed header. Sanitised output and checked log search after deployment.",
+      "component": "application-security",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-06",
+      "resolved": "2025-05-23",
+      "story_points": 1,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-3130",
+      "type": "Task",
+      "summary": "Missing findings page 2",
+      "description_excerpt": "Scanner export stops at first page; fixed cursor loop and reconciled all severities.",
+      "component": "application-security",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-06",
+      "resolved": "2026-02-24",
+      "story_points": 3,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-3175",
+      "type": "Task",
+      "summary": "Auth matrix for recon",
+      "description_excerpt": "Walked recon maintainers through attachment exploit. They added revoked-user case to their export tests.",
+      "component": "application-security",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-04",
+      "resolved": "2026-03-30",
+      "story_points": 2,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-3216",
+      "type": "Bug",
+      "summary": "Old ssh key still accepted",
+      "description_excerpt": "Removed unused authorised key and checked fresh session; service restart not required. Follow-up runbook checked by on-call.",
+      "component": "application-security",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-03",
+      "resolved": "2026-04-27",
+      "story_points": 5,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-3257",
+      "type": "Task",
+      "summary": "Tenant scope in attachment lookup",
+      "description_excerpt": "Identical object ID under another tenant returned metadata. API regression now asserts 403 with no filename.",
+      "component": "application-security",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-07",
+      "resolved": "2026-05-29",
+      "story_points": 1,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-3295",
+      "type": "Task",
+      "summary": "Unexpected scanner egress",
+      "description_excerpt": "Platform owner traced network policy and deployed fix before assigning SEC verification. Lakshmi repeated outbound probe only.",
+      "component": "application-security",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-06-05"
+        },
+        {
+          "assignee": "self",
+          "from": "2026-06-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-03",
+      "resolved": "2026-06-23",
+      "story_points": 3,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-3341",
+      "type": "Bug",
+      "summary": "Recovery role exception review",
+      "description_excerpt": "Platform reviewer corrected Terraform interpolation. Tested deny path with expired exception.",
+      "component": "application-security",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-08",
+      "resolved": "2026-07-14",
+      "story_points": 2,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-3372",
+      "type": "Task",
+      "summary": "Security checklist adoption",
+      "description_excerpt": "Billing and recon owners used tenant matrix in release review; expired suppressions now block merge.",
+      "component": "application-security",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-03",
+      "resolved": "2026-08-27",
+      "story_points": 5,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    },
+    {
+      "key": "SEC-3416",
+      "type": "Task",
+      "summary": "Attachment steps stale",
+      "description_excerpt": "Support user followed curl steps on clean account; corrected one expired-token error and published updated instructions.",
+      "component": "application-security",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-03",
+      "resolved": "2026-09-30",
+      "story_points": 1,
+      "labels": [
+        "application-security"
+      ],
+      "assignee_display_name": "N. Lakshmi",
+      "assignee_account_id": "jira-sec-919",
+      "assignee_employee_id": "KC-10919"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 8,
+      "reported": 5
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 7,
+      "reported": 6
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 9,
+      "reported": 4
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 6,
+      "reported": 4
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 3,
+      "reported": 5
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 6,
+      "reported": 5
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 11,
+      "reported": 6
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 12,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 11,
+      "reported": 2
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 10,
+      "reported": 1
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 10,
+      "reported": 5
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 6,
+      "reported": 5
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 6,
+      "reported": 5
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 8,
+      "reported": 4
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 7,
+      "reported": 5
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 10,
+      "reported": 4
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    }
+  ],
+  "export_scope": "Representative issues; monthly_activity covers complete Kestrel tenure. Reporter and assignee counts are separate."
+}

@@ -1,0 +1,910 @@
+{
+  "login": "averma_kestrel",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-11902",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9595,
+      "title": "PLAT-4009 add cost-center tags to s3 buckets",
+      "state": "merged",
+      "created": "2024-05-20",
+      "merged": "2024-05-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 6,
+        ".tfvars": 2
+      },
+      "additions": 58,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9666,
+      "title": "update tfvars stg",
+      "state": "merged",
+      "created": "2024-06-20",
+      "merged": "2024-06-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tfvars": 1
+      },
+      "additions": 4,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9713,
+      "title": "fix typo in variable description",
+      "state": "merged",
+      "created": "2024-07-08",
+      "merged": "2024-07-11",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 1,
+      "deletions": 1,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9843,
+      "title": "PLAT-4092 add sg rule for bastion",
+      "state": "merged",
+      "created": "2024-08-23",
+      "merged": "2024-08-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 12,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9913,
+      "title": "bump terraform-aws-modules/vpc 5.1.0 -> 5.5.1",
+      "state": "merged",
+      "created": "2024-09-26",
+      "merged": "2024-09-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 2,
+        ".lock.hcl": 1
+      },
+      "additions": 8,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9968,
+      "title": "rds: increase allocated_storage stg",
+      "state": "merged",
+      "created": "2024-10-21",
+      "merged": "2024-10-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 2,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10062,
+      "title": "cloudwatch alarm for sqs dlq",
+      "state": "merged",
+      "created": "2024-11-19",
+      "merged": "2024-11-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 64,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5254,
+      "title": "helm values replicas 2 -> 3 (stg)",
+      "state": "merged",
+      "created": "2025-01-23",
+      "merged": "2025-01-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 1
+      },
+      "additions": 1,
+      "deletions": 1,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10248,
+      "title": "chore: pin provider aws ~> 5.40",
+      "state": "merged",
+      "created": "2025-02-04",
+      "merged": "2025-02-04",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 3,
+        ".lock.hcl": 1
+      },
+      "additions": 7,
+      "deletions": 7,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10383,
+      "title": "PLAT-4394 iam role for airflow (copied from recon)",
+      "state": "merged",
+      "created": "2025-03-21",
+      "merged": "2025-03-31",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 3
+      },
+      "additions": 141,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10397,
+      "title": "revert iam change",
+      "state": "merged",
+      "created": "2025-03-25",
+      "merged": "2025-03-26",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 3
+      },
+      "additions": 0,
+      "deletions": 141,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10408,
+      "title": "PLAT-4394 iam role for airflow (least privilege)",
+      "state": "merged",
+      "created": "2025-03-28",
+      "merged": "2025-04-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 3
+      },
+      "additions": 118,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10517,
+      "title": "remove unused eip",
+      "state": "merged",
+      "created": "2025-05-07",
+      "merged": "2025-05-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 0,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10646,
+      "title": "ECR lifecycle policy keep last 30",
+      "state": "merged",
+      "created": "2025-06-18",
+      "merged": "2025-06-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 35,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5670,
+      "title": "PLAT-4562 nodegroup instance type m5.large -> m6i.large (stg)",
+      "state": "merged",
+      "created": "2025-07-27",
+      "merged": "2025-07-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 1,
+        ".tf": 1
+      },
+      "additions": 6,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10823,
+      "title": "s3 lifecycle rule 90d for logs",
+      "state": "merged",
+      "created": "2025-08-27",
+      "merged": "2025-08-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 26,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10941,
+      "title": "PLAT-4624 account baseline: cloudtrail org trail",
+      "state": "merged",
+      "created": "2025-09-28",
+      "merged": "2025-10-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 5
+      },
+      "additions": 302,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 14,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11008,
+      "title": "terraform fmt",
+      "state": "merged",
+      "created": "2025-10-24",
+      "merged": "2025-10-27",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 11
+      },
+      "additions": 60,
+      "deletions": 60,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5910,
+      "title": "PLAT-4704 add resource limits to cronjobs (copied from data-platform)",
+      "state": "merged",
+      "created": "2025-11-11",
+      "merged": "2025-11-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 4
+      },
+      "additions": 48,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11208,
+      "title": "cost: stop nonprod ec2 at night (lambda + eventbridge)",
+      "state": "merged",
+      "created": "2026-01-19",
+      "merged": "2026-01-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 4,
+        ".py": 1
+      },
+      "additions": 220,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 10,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11265,
+      "title": "fix: eventbridge cron tz (UTC vs IST)",
+      "state": "merged",
+      "created": "2026-02-05",
+      "merged": "2026-02-06",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 1
+      },
+      "additions": 1,
+      "deletions": 1,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11344,
+      "title": "PLAT-4842 gha: terraform plan on PR (reuse of workflow)",
+      "state": "merged",
+      "created": "2026-03-11",
+      "merged": "2026-03-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 1
+      },
+      "additions": 74,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11444,
+      "title": "PLAT-4898 eks nodegroup spot for nonprod",
+      "state": "merged",
+      "created": "2026-04-08",
+      "merged": "2026-04-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 95,
+      "deletions": 31,
+      "co_authors": [],
+      "review_comments_received": 15,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11585,
+      "title": "update tags",
+      "state": "merged",
+      "created": "2026-05-27",
+      "merged": "2026-05-28",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 8
+      },
+      "additions": 16,
+      "deletions": 16,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6502,
+      "title": "helm values: bump resources for grafana (stg)",
+      "state": "merged",
+      "created": "2026-06-16",
+      "merged": "2026-06-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yaml": 1
+      },
+      "additions": 6,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11774,
+      "title": "PLAT-5100 tfvars for new sandbox account",
+      "state": "merged",
+      "created": "2026-07-30",
+      "merged": "2026-08-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tfvars": 2,
+        ".tf": 1
+      },
+      "additions": 39,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11898,
+      "title": "nonprod scheduler: skip weekends flag",
+      "state": "merged",
+      "created": "2026-09-18",
+      "merged": "2026-09-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tf": 1,
+        ".py": 1
+      },
+      "additions": 22,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11944,
+      "title": "chore: bump terraform 1.8 -> 1.9 in gha",
+      "state": "merged",
+      "created": "2026-10-09",
+      "merged": "2026-10-16",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 2
+      },
+      "additions": 3,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 9829,
+      "date": "2024-08-26",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 10009,
+      "date": "2024-11-06",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "is this region right?"
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 10304,
+      "date": "2025-02-24",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 10610,
+      "date": "2025-06-06",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "looks fine"
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 10815,
+      "date": "2025-09-01",
+      "state": "COMMENTED",
+      "comment_count": 1,
+      "sample_comment": "plan output attached?"
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11122,
+      "date": "2025-12-24",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11303,
+      "date": "2026-02-24",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11516,
+      "date": "2026-05-06",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "tags missing on the new bucket"
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11825,
+      "date": "2026-08-21",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "approved"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-05",
+      "merged_prs": 1,
+      "reviews": 0,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 2,
+        ".yaml": 0
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 2,
+      "reviews": 0,
+      "by_ext": {
+        ".tf": 3,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 3,
+      "reviews": 0,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 1,
+        ".yaml": 1,
+        ".lock.hcl": 1
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 2,
+      "reviews": 0,
+      "by_ext": {
+        ".tf": 3,
+        ".tfvars": 0,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 1,
+        ".yaml": 1,
+        ".lock.hcl": 1
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 2,
+      "reviews": 2,
+      "by_ext": {
+        ".tf": 3,
+        ".tfvars": 0,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".tf": 16,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 3,
+        ".tfvars": 0,
+        ".yaml": 4
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 2,
+      "reviews": 2,
+      "by_ext": {
+        ".tf": 3,
+        ".tfvars": 0,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 2,
+      "reviews": 2,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1,
+        ".py": 1
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 1,
+        ".yaml": 1,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 3,
+        ".tfvars": 0,
+        ".yaml": 2
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 2,
+      "reviews": 2,
+      "by_ext": {
+        ".tf": 8,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 3,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 5,
+        ".tfvars": 1,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 2,
+        ".yaml": 1
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 3,
+        ".tfvars": 0,
+        ".yaml": 1,
+        ".py": 1
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".tf": 6,
+        ".tfvars": 1,
+        ".yaml": 1,
+        ".yml": 2
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [
+      "aws-3tier-terraform",
+      "k8s-notes"
+    ],
+    "oss_contributions": []
+  }
+}

@@ -1,0 +1,316 @@
+{
+ "pid": "P004",
+ "schema": "truth-v2",
+ "summary": "Was a genuinely strong Java/Spring engineer until the end of 2021 and stopped writing production code when he became a manager in mid 2022. Leadership, hiring, design review and ADR work are real and current. His self profile and CV still present him as a hands-on Java expert.",
+ "archetype": "decayed_expert_now_manager",
+ "batch": "A",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "java",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "gh_vreddy-kc: heavy billing-core Java PRs 2016-2021 (metering consumer, tax strategy, outbox), then only .md/CODEOWNERS PRs since 2022; jira_vikram.reddy self-resolved Java bugs end 2021. cv_2025_03 and hcm_KC-10047 self 'Java (Expert)'/4 contradict the work record. Last applied Java is ~5y old, outside the 2y tool window; current level cannot be pinned.",
+    "missing_source": "current coding assessment"
+   },
+   "last_used": "2021-12",
+   "evidence_refs": [
+    "github:billing-core PRs 2016-2021",
+    "github:monthly_activity 2022+",
+    "cv_v1:Core Competencies"
+   ],
+   "why": "Deep history to 2021, no code since; can still read and review design, cannot be called independent maintainer today"
+  },
+  {
+   "skill_id": "spring_boot",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "gh_vreddy-kc: Spring Boot 1.5->2.0 and 2.3->2.5 upgrades (2019, 2021), nothing since; jira_vikram.reddy BILL-4695 Java 17 upgrade assigned to others. Outside 2y window; cv_2025_03 'Expert' is self-stated.",
+    "missing_source": "current coding assessment"
+   },
+   "last_used": "2021-12",
+   "evidence_refs": [
+    "github:Spring Boot 2 upgrade PRs",
+    "jira:BILL rewrite epic"
+   ],
+   "why": "Led upgrades to 2021; Boot 3 and Java 17 work was done by the team"
+  },
+  {
+   "skill_id": "technical_leadership",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "doc_ARCH-adr-014-invoice-numbering (accepted ADR with named follow-up owner), doc_PEOPLE-backend-hiring-loop (rubric), gh_vreddy-kc PR template/definition-of-done and ADR PRs, jira_vikram.reddy epics reported 2022-2026 + postmortem actions; hcm_KC-10047 Engineering Manager since 2022. Level 3 from authored + work groups; coaching of tech leads and cross-team adoption only in cv_2025_03 (self) -> ceiling 4, floor 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "doc:PEOPLE-backend-hiring-loop",
+    "doc:ARCH-adr-014",
+    "hcm:job_history",
+    "lms:manager courses"
+   ],
+   "why": "Introduced ADR practice and hiring rubric adopted by other teams; coaches two tech leads"
+  },
+  {
+   "skill_id": "system_design",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "doc_ARCH-adr-014-invoice-numbering: options, decision, consequences for gapless numbering service (accepted 2023-03); hcm_KC-10047 'Invoice numbering service' sponsor/design reviewer; gh_vreddy-kc ADR PR and design review comments (transaction boundary, idempotency, rollback). doc_ARCH-billing-core-modular-boundaries is NOT credited (sections written by others).",
+    "missing_source": null
+   },
+   "last_used": "2025-06",
+   "evidence_refs": [
+    "doc:ARCH-adr-014-invoice-numbering",
+    "github:ADR PRs"
+   ],
+   "why": "Authors and reviews ADRs; recent module-boundary page is largely written by engineers"
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_03 'roadmap with Product; quarterly planning with Finance and Support' (self); jira_vikram.reddy reporter of Finance-facing stories. No decision logs or stakeholder records.",
+    "missing_source": "planning decision records"
+   },
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "hcm:project_allocations",
+    "jira:reporter history"
+   ],
+   "why": "Roadmap and trade-offs with Product, Finance and Support"
+  },
+  {
+   "skill_id": "agile_delivery",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "certs_KC-10047 PSM I verified (2019); jira_vikram.reddy reporter/coordinator of team epics and stories every year 2022-2026 incl. postmortem actions; gh_vreddy-kc 'PR template + definition of done'. Verified cert + work records across 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "certs:PSM I",
+    "jira:epics",
+    "lms:Agile Foundations"
+   ],
+   "why": "PSM I verified since 2019, runs sprint cadence"
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "gh_vreddy-kc reviews 2022-2026: ~16-20/yr, design-level questions ('How will we roll this back?', backward compat) and delegated approvals ('not reviewing the code line by line'); defect-catching line reviews are 2017-2021, outside the 5y practice window. Floor 2 from recent reviews in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2024-02",
+   "evidence_refs": [
+    "github:reviews_given 2022+"
+   ],
+   "why": "Reviews since 2022 are design-level comments or delegated approvals; no defects caught line-by-line"
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Authored pages are an ADR (system design) and a hiring rubric (people practice); gh_vreddy-kc on-call handbook and README PRs. No task-validation records; level line 3 not shown and 2 vs 3 not pinned; mapping secondary.",
+    "missing_source": "doc validation / review history"
+   },
+   "last_used": "2025-06",
+   "evidence_refs": [
+    "doc:ARCH-adr-014",
+    "doc:PEOPLE-backend-hiring-loop"
+   ],
+   "why": "Clear ADR and rubric he wrote himself"
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Kafka",
+   "mapped_skill_id": "kafka",
+   "has_skill": false,
+   "why": "built one metering consumer in 2018; nothing since; CV lists it in competencies",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_03 competencies 'Kafka'; gh_vreddy-kc one 2018 Kafka metering consumer PR. Eight years stale.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "AWS, Docker",
+   "mapped_skill_id": "aws",
+   "has_skill": false,
+   "why": "competencies line only; never in his work record",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_03 competencies line 'AWS | Docker' only.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Hiring & Mentoring",
+   "mapped_skill_id": "talent_acquisition",
+   "has_skill": false,
+   "why": "interviewing and deciding as hiring manager is not a talent acquisition function",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2025_03 'Hiring & Mentoring', doc_PEOPLE-backend-hiring-loop: hiring-manager interviewing is not the talent_acquisition skill.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "java",
+   "plant": "billing-core PR volume 2016-2021 is very high; from mid 2022 it is a few markdown and CODEOWNERS PRs. CV (2025) and HCM self profile still say Java expert, level 4.",
+   "expected_engine_behavior": "hold",
+   "v1_expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "spring_boot",
+   "plant": "Same decay for Spring Boot: last real change 2021; self declared 4.",
+   "expected_engine_behavior": "hold",
+   "v1_expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F19",
+   "s11_row": "level_off",
+   "skill_id": "technical_leadership",
+   "plant": "HCM titles show Tech Lead then Engineering Manager; Jira reporter on epics. Leadership is real and should not be down-levelled because code evidence dried up.",
+   "expected_engine_behavior": "send_at_level_3",
+   "v1_expected_engine_behavior": "send_at_level_4"
+  },
+  {
+   "fault_id": "F34",
+   "s11_row": "wrong_person",
+   "skill_id": "system_design",
+   "plant": "ARCH modular-boundaries page is authored/created by Vikram but sections 2-5 were written by the four engineers listed as contributors.",
+   "expected_engine_behavior": "send_at_level_3",
+   "evidence_expectation": "doc_ARCH-billing-core-modular-boundaries must not be credited as his design work (sections 2-5 by contributors).",
+   "v1_expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F15",
+   "s11_row": "not_really_held",
+   "skill_id": "java",
+   "plant": "Epic/story/task issues he reported are Done with other assignees; resolved_by_self false. A reporter or epic closer is not Java evidence.",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "Reporter/epic-closer Jira items with other assignees are not Java evidence.",
+   "v1_expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "People management",
+  "Hiring and interviewing",
+  "MySQL"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.5,
+  "yes_to_everything": false,
+  "flattery_bias": 1,
+  "notes": "Will push back if offered Java 2 ('I built that system'); accepts level 3 reluctantly; likes technical leadership 4"
+ },
+ "messaging_allowed": true
+}

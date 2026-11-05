@@ -1,0 +1,43 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Product Certification (SE Track)",
+      "provider": "Kestrel Learn",
+      "completed": "2023-05-26",
+      "time_spent_minutes": 480,
+      "quiz_score_pct": 89,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Kestrel Sales Foundations",
+      "provider": "Kestrel Learn",
+      "completed": "2023-05-12",
+      "time_spent_minutes": 395,
+      "quiz_score_pct": 84,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "Python Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2023-07-21",
+      "time_spent_minutes": 210,
+      "quiz_score_pct": 80,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Demo Excellence Workshop",
+      "provider": "Kestrel Learn",
+      "completed": "2024-03-14",
+      "time_spent_minutes": 240,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Security and Privacy Awareness (US)",
+      "provider": "Kestrel Learn",
+      "completed": "2025-04-09",
+      "time_spent_minutes": 40,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    }
+  ]
+}

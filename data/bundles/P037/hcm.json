@@ -1,0 +1,66 @@
+{
+  "employee_id": "KC-11863",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Sanket Jadhav",
+  "preferred_name": "Sanket",
+  "emails": [
+    {
+      "email": "sanket.jadhav@kestrelcloud.com",
+      "from": "2023-02",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Workplace",
+  "manager_employee_id": "KC-10647",
+  "hire_date": "2023-02-13",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Facilities Engineer",
+      "grade": "P2",
+      "from": "2023-02",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Pune workplace operations",
+      "role": "Facilities Engineer",
+      "allocation_pct": 100,
+      "from": "2023-02",
+      "to": "2024-07"
+    },
+    {
+      "project": "Pune office fit-out",
+      "role": "Facilities Engineer",
+      "allocation_pct": 100,
+      "from": "2024-08",
+      "to": "2025-03"
+    },
+    {
+      "project": "Pune facilities operations",
+      "role": "Facilities Engineer",
+      "allocation_pct": 100,
+      "from": "2025-04",
+      "to": null
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "College of Engineering Pune",
+      "degree": "B.Tech",
+      "field": "Civil Engineering",
+      "year": 2018
+    }
+  ],
+  "exported": "2026-10-31"
+}

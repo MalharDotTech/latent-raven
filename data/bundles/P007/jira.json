@@ -1,0 +1,769 @@
+{
+  "linked_worker_id": "KC-10707",
+  "exported_on": "2026-10-31",
+  "issues": [
+    {
+      "key": "DATA-1781",
+      "type": "Bug",
+      "summary": "fix: reject missing due_date before feature join",
+      "description_excerpt": "Python validation; NULL due_date had reached the training join. Added a fixture from the rejected batch.",
+      "component": "ML",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-08-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2022-08-17",
+      "resolved": "2022-08-18",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#3354"
+      ]
+    },
+    {
+      "key": "DATA-1873",
+      "type": "Task",
+      "summary": "DATA-1873 pin training cutoff per fold",
+      "description_excerpt": "Python backtest now freezes feature availability at each fold boundary; invoice collection dates excluded from inputs.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-11-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2022-11-07",
+      "resolved": "2022-11-09",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#3525"
+      ]
+    },
+    {
+      "key": "DATA-2000",
+      "type": "Task",
+      "summary": "Handle empty partitions in score export",
+      "description_excerpt": "Empty tenant slice returns schema-only output; covered in Python tests.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-02-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-02-10",
+      "resolved": "2023-02-13",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#3719"
+      ]
+    },
+    {
+      "key": "DATA-2152",
+      "type": "Bug",
+      "summary": "fix: NaT in payment delay features",
+      "description_excerpt": "Production batch failed on an all-null paid_at column; preserve nullable dtype.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-05-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-05-23",
+      "resolved": "2023-05-24",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#3926"
+      ]
+    },
+    {
+      "key": "DATA-2284",
+      "type": "Task",
+      "summary": "Use tenant salt for holdout split",
+      "description_excerpt": "SQL input selection and Python split key aligned; checked 84 tenant folds.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-09-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-09-04",
+      "resolved": "2023-09-06",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#4138"
+      ]
+    },
+    {
+      "key": "DATA-2460",
+      "type": "Task",
+      "summary": "DATA-2460 add late-label backtest",
+      "description_excerpt": "Compared matured labels against previous report; held out last 28 days rather than treating missing collections as negatives.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-01-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-01-14",
+      "resolved": "2024-01-17",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#4387"
+      ]
+    },
+    {
+      "key": "DATA-2570",
+      "type": "Bug",
+      "summary": "fix: score shard retry writes twice",
+      "description_excerpt": "Python writer uses run/shard id and atomic publish; rerun output checks added.",
+      "component": "ML",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-04-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-04-10",
+      "resolved": "2024-04-11",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#4567"
+      ]
+    },
+    {
+      "key": "DATA-2720",
+      "type": "Task",
+      "summary": "chore: refresh scorer base image",
+      "description_excerpt": "Docker build failed with incompatible system library; pinned base digest and smoke-tested scoring image.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-07-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-07-17",
+      "resolved": "2024-07-19",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#4778"
+      ]
+    },
+    {
+      "key": "DATA-2828",
+      "type": "Task",
+      "summary": "Expose forecast drift by cohort",
+      "description_excerpt": "Monitor debt-age cohorts separately; checked alert against replayed label delay.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-10-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-10-05",
+      "resolved": "2024-10-08",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#4946"
+      ]
+    },
+    {
+      "key": "DATA-3008",
+      "type": "Bug",
+      "summary": "DATA-3008 tenant filter before retrieval",
+      "description_excerpt": "LLM retrieval uses authenticated tenant context; request text cannot override it.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-01-21",
+      "resolved": "2025-01-22",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#5164"
+      ]
+    },
+    {
+      "key": "DATA-3107",
+      "type": "Bug",
+      "summary": "fix: citations survive chunk dedup",
+      "description_excerpt": "Keep source invoice ids when adjacent chunks collapse. Added mismatched-citation eval cases.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-10",
+      "resolved": "2025-03-12",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#5275"
+      ]
+    },
+    {
+      "key": "DATA-3223",
+      "type": "Task",
+      "summary": "Add no-answer cases to pilot eval",
+      "description_excerpt": "Labelled 180 question set; report unsupported claims and coverage side by side.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-18",
+      "resolved": "2025-05-21",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#5419"
+      ]
+    },
+    {
+      "key": "DATA-3322",
+      "type": "Bug",
+      "summary": "fix: currency formatting in answer verifier",
+      "description_excerpt": "Reject citation where currency differs even when numeric amount matches.",
+      "component": "ML",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-07-08",
+      "resolved": "2025-07-09",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#5548"
+      ]
+    },
+    {
+      "key": "DATA-3447",
+      "type": "Task",
+      "summary": "DATA-3447 mask bank refs in traces",
+      "description_excerpt": "Python trace exporter removes bank identifiers; sampled trace payloads after deploy.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-15",
+      "resolved": "2025-09-17",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#5695"
+      ]
+    },
+    {
+      "key": "DATA-3572",
+      "type": "Task",
+      "summary": "Do not retry generation after token cap",
+      "description_excerpt": "Return incomplete response marker and no-answer; removed blind retry in LLM workflow.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-12-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-12-01",
+      "resolved": "2025-12-04",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#5866"
+      ]
+    },
+    {
+      "key": "DATA-3677",
+      "type": "Bug",
+      "summary": "fix: period filter on retrieval cache",
+      "description_excerpt": "Cache key includes ledger period and tenant; invalidated old keys on release.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-10",
+      "resolved": "2026-02-11",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#6045"
+      ]
+    },
+    {
+      "key": "DATA-3837",
+      "type": "Task",
+      "summary": "DATA-3837 add stale-index eval slice",
+      "description_excerpt": "Pilot release blocks on stale-source answer count; tested index lag and rebuilt only affected tenant.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-21",
+      "resolved": "2026-04-23",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#6206"
+      ]
+    },
+    {
+      "key": "DATA-3973",
+      "type": "Task",
+      "summary": "Track abstention by tenant cohort",
+      "description_excerpt": "Dashboard separates unsupported response from transport error; production evaluation stored with model revision.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-13",
+      "resolved": "2026-06-16",
+      "story_points": 5,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#6324"
+      ]
+    },
+    {
+      "key": "DATA-4168",
+      "type": "Bug",
+      "summary": "fix: closed invoice still cited",
+      "description_excerpt": "Delete tombstones propagated into index refresh; replayed 34 removed-invoice cases.",
+      "component": "ML",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-11",
+      "resolved": "2026-08-12",
+      "story_points": 2,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#6468"
+      ]
+    },
+    {
+      "key": "DATA-4362",
+      "type": "Task",
+      "summary": "Pin prompt and evaluator versions together",
+      "description_excerpt": "Rollback restores prompt, retrieval settings and labelled eval report as one release.",
+      "component": "ML",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-12",
+      "resolved": "2026-10-14",
+      "story_points": 3,
+      "labels": [],
+      "linked_prs": [
+        "ml-forecasting#6613"
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-07",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 6,
+      "reported": 4
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 9,
+      "reported": 3
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 10,
+      "reported": 4
+    }
+  ],
+  "export_scope": "Selected resolved issues; aggregate months include all issues visible to the project export."
+}

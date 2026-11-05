@@ -1,0 +1,336 @@
+{
+ "_meta": {
+  "count": 30,
+  "collected": "2026-11-05",
+  "gaps": [
+   "Only ~30 verified; target 50+ missed. No HR or sales courses found in searches (LinkedIn Sales/HR Foundations returned nothing). Several Udemy URLs are from search results, not opened pages. Hours null where unknown."
+  ]
+ },
+ "courses": [
+  {
+   "provider": "Coursera",
+   "title": "Google UX Design Professional Certificate",
+   "instructor_or_org": "Google",
+   "approx_hours": 112,
+   "skills": [
+    "UX design",
+    "wireframing",
+    "prototyping",
+    "Figma"
+   ],
+   "source_url": "https://www.coursera.org/professional-certificates/google-ux-design",
+   "level": "beginner",
+   "notes": "8 courses; page also says 200+ hours"
+  },
+  {
+   "provider": "Coursera",
+   "title": "IBM Data Engineering Professional Certificate",
+   "instructor_or_org": "IBM",
+   "approx_hours": null,
+   "skills": [
+    "relational databases",
+    "NoSQL",
+    "Apache Spark"
+   ],
+   "source_url": "https://www.coursera.org/professional-certificates/ibm-data-engineer",
+   "level": "beginner",
+   "notes": "16 courses"
+  },
+  {
+   "provider": "Coursera",
+   "title": "Google Data Analytics Professional Certificate",
+   "instructor_or_org": "Google",
+   "approx_hours": null,
+   "skills": [
+    "data cleaning",
+    "visualization",
+    "R",
+    "SQL"
+   ],
+   "source_url": "https://www.coursera.org/articles/google-vs-ibm-vs-meta-data-analysis-certificates",
+   "level": "beginner",
+   "notes": "9 courses; ~6 months at 10h/week"
+  },
+  {
+   "provider": "Udemy",
+   "title": "Docker & Kubernetes: The Practical Guide",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [],
+   "source_url": "https://www.udemy.com/course/docker-kubernetes-the-practical-guide"
+  },
+  {
+   "provider": "Udemy",
+   "title": "Learn DevOps: Docker, Kubernetes, Terraform and Azure DevOps",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [],
+   "source_url": "https://www.udemy.com/course/devops-with-docker-kubernetes-and-azure-devops"
+  },
+  {
+   "provider": "Udemy",
+   "title": "Decoding DevOps",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [],
+   "source_url": "https://www.udemy.com/course/decodingdevops"
+  },
+  {
+   "provider": "Udemy",
+   "title": "Master DevOps CI/CD, Docker, Kubernetes, Terraform & AWS",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [],
+   "source_url": "https://www.udemy.com/course/master-devops-cicd-docker-kubernetes-terraform-aws"
+  },
+  {
+   "provider": "Udemy",
+   "title": "AWS Infrastructure as Code With Terraform [2024 Updates]",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [],
+   "source_url": "https://www.udemy.com/course/learn-devops-infrastructure-automation-with-terraform"
+  },
+  {
+   "provider": "Udemy",
+   "title": "Docker and Kubernetes for beginners",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [],
+   "source_url": "https://www.udemy.com/course/docker-and-kubernetes-for-beginners-devops-journey",
+   "level": "beginner"
+  },
+  {
+   "provider": "Udemy",
+   "title": "Python for DevOps: Mastering Real-World Automation",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [],
+   "source_url": "search result (url not captured)"
+  },
+  {
+   "provider": "Udemy",
+   "title": "Full Stack AI DevOps + Real Projects",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [],
+   "source_url": "https://www.udemy.com/course/full-stack-devops-for-software-developers-aws-azure-gcp"
+  },
+  {
+   "provider": "LinkedIn Learning",
+   "title": "Python Essential Training",
+   "instructor_or_org": "Ryan Mitchell",
+   "approx_hours": 4.4,
+   "skills": [],
+   "source_url": "https://www.linkedin.com/learning/topics/software-development"
+  },
+  {
+   "provider": "LinkedIn Learning",
+   "title": "SQL Essential Training",
+   "instructor_or_org": "Walter Shields",
+   "approx_hours": 4.6,
+   "skills": [
+    "SQL"
+   ],
+   "source_url": "https://www.linkedin.com/learning/paths/advance-your-skills-in-sql"
+  },
+  {
+   "provider": "LinkedIn Learning",
+   "title": "Git Essential Training",
+   "instructor_or_org": "Barbara Forbes",
+   "approx_hours": 1.4,
+   "skills": [
+    "Git"
+   ],
+   "source_url": "https://www.linkedin.com/learning/topics/git"
+  },
+  {
+   "provider": "LinkedIn Learning",
+   "title": "Learning Git and GitHub",
+   "instructor_or_org": "Ray Villalobos",
+   "approx_hours": 3.8,
+   "skills": [
+    "Git",
+    "GitHub"
+   ],
+   "source_url": "https://www.linkedin.com/learning/topics/git"
+  },
+  {
+   "provider": "LinkedIn Learning",
+   "title": "Git: Branches, Merges, and Remotes",
+   "instructor_or_org": null,
+   "approx_hours": 3.05,
+   "skills": [
+    "Git"
+   ],
+   "source_url": "https://www.linkedin.com/learning/topics/git"
+  },
+  {
+   "provider": "LinkedIn Learning",
+   "title": "Agile Foundations",
+   "instructor_or_org": "Doug Rose",
+   "approx_hours": null,
+   "skills": [
+    "Agile"
+   ],
+   "source_url": "https://www.linkedin.com/learning/topics/software-development"
+  },
+  {
+   "provider": "LinkedIn Learning",
+   "title": "Becoming a Product Manager: A Complete Guide",
+   "instructor_or_org": "Cole Mercer, Evan Kimbrell",
+   "approx_hours": null,
+   "skills": [
+    "product lifecycle",
+    "agile",
+    "scrum",
+    "kanban"
+   ],
+   "source_url": "https://www.linkedin.com/learning/becoming-a-product-manager-a-complete-guide",
+   "domain": "product"
+  },
+  {
+   "provider": "LinkedIn Learning",
+   "title": "ETL in Python and SQL",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [
+    "ETL",
+    "Python",
+    "SQL"
+   ],
+   "source_url": "https://www.linkedin.com/learning/etl-in-python-and-sql"
+  },
+  {
+   "provider": "NPTEL",
+   "title": "Programming, Data Structures And Algorithms Using Python",
+   "instructor_or_org": "Prof. Madhavan Mukund (CMI)",
+   "approx_hours": null,
+   "skills": [
+    "Python",
+    "data structures",
+    "algorithms"
+   ],
+   "source_url": "https://nptel.ac.in/courses/106106145",
+   "notes": "8 weeks"
+  },
+  {
+   "provider": "NPTEL",
+   "title": "Introduction to Machine Learning (IIT Kharagpur)",
+   "instructor_or_org": "Prof. Sudeshna Sarkar",
+   "approx_hours": null,
+   "skills": [
+    "machine learning"
+   ],
+   "source_url": "https://nptel.ac.in/domains/discipline/106?course=106_1",
+   "notes": "8 weeks, noc26-cs119"
+  },
+  {
+   "provider": "NPTEL",
+   "title": "Introduction to Machine Learning (IIT Madras)",
+   "instructor_or_org": "Prof. Balaraman Ravindran",
+   "approx_hours": null,
+   "skills": [
+    "machine learning"
+   ],
+   "source_url": "https://nptel.ac.in/domains/discipline/106?course=106_1",
+   "notes": "12 weeks, noc26-cs133"
+  },
+  {
+   "provider": "NPTEL",
+   "title": "Database Management System (IIT Kharagpur)",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [
+    "relational model",
+    "ER modeling",
+    "SQL",
+    "normalization",
+    "transactions"
+   ],
+   "source_url": "https://onlinecourses.nptel.ac.in/noc26_cs39/preview"
+  },
+  {
+   "provider": "NPTEL",
+   "title": "Cloud Computing (IIT Kharagpur)",
+   "instructor_or_org": "Prof. Soumya Kanti Ghosh",
+   "approx_hours": null,
+   "skills": [
+    "cloud computing"
+   ],
+   "source_url": "https://nptel.ac.in/domains/discipline/106?course=106_0",
+   "notes": "12 weeks, Jan-Apr 2022 run"
+  },
+  {
+   "provider": "NPTEL",
+   "title": "Machine Learning for Core Engineering Disciplines",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [
+    "machine learning"
+   ],
+   "source_url": "https://onlinecourses.nptel.ac.in/noc25_ge77/preview"
+  },
+  {
+   "provider": "Pluralsight",
+   "title": "Getting Started with Kubernetes",
+   "instructor_or_org": "Nigel Poulton",
+   "approx_hours": 2.88,
+   "skills": [
+    "Kubernetes",
+    "pods",
+    "deployments",
+    "services"
+   ],
+   "source_url": "https://www.pluralsight.com/courses/getting-started-kubernetes",
+   "level": "beginner"
+  },
+  {
+   "provider": "Pluralsight",
+   "title": "Docker Fundamentals for Developers (path)",
+   "instructor_or_org": null,
+   "approx_hours": 43,
+   "skills": [
+    "Docker"
+   ],
+   "source_url": "https://www.pluralsight.com/paths/docker-fundamentals-for-developers",
+   "notes": "16 courses"
+  },
+  {
+   "provider": "Pluralsight",
+   "title": "Managing Infrastructure with Terraform (path)",
+   "instructor_or_org": null,
+   "approx_hours": null,
+   "skills": [
+    "Terraform"
+   ],
+   "source_url": "https://www.pluralsight.com/paths/managing-infrastructure-with-terraform",
+   "notes": "starts with Terraform: Getting Started (~1h37m)"
+  },
+  {
+   "provider": "Pluralsight",
+   "title": "Azure Foundations (path)",
+   "instructor_or_org": null,
+   "approx_hours": 9,
+   "skills": [
+    "Azure compute",
+    "networking",
+    "storage",
+    "databases"
+   ],
+   "source_url": "https://www.pluralsight.com/paths/azure-foundations",
+   "notes": "11 courses",
+   "level": "beginner"
+  },
+  {
+   "provider": "Pluralsight",
+   "title": "Kubernetes (path, 24 courses)",
+   "instructor_or_org": null,
+   "approx_hours": 57,
+   "skills": [
+    "Kubernetes"
+   ],
+   "source_url": "https://www.pluralsight.com/paths/kubernetes-tooling-and-techniques"
+  }
+ ]
+}

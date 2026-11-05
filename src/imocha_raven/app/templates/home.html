@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block main_class %}landing{% endblock %}
+{% block content %}
+<div class="spotlight" aria-hidden="true"></div>
+<section class="hero">
+  <p class="eyebrow"><span class="live-dot"></span> THE STAGE IS YOURS</p>
+  <img class="latent-logo" src="/static/latent-logo.png" alt="LATENT — gold wordmark with a laptop" width="700" fetchpriority="high">
+  <h1>How well do you<br><em>know your own skills?</em></h1>
+  <p class="hero-pitch">Rate yourself. Let three Ravens judge. See if you match.</p>
+  <div class="actions"><a class="button gold" href="/play">Play Just Latent <span aria-hidden="true">↗</span></a><a class="button secondary" href="/scoreboard">Engine scoreboard</a></div>
+  <p class="hero-note">Your evidence. Three perspectives. One honest conversation.</p>
+</section>
+<section class="steps" aria-label="How it works"><article><span class="step-number">01</span><h2>Bring the evidence</h2><p>A CV, a few lines of work, a repository. Let your work do the talking.</p></article><article><span class="step-number">02</span><h2>Back yourself</h2><p>Choose your level before you see a single score. Lock it in.</p></article><article><span class="step-number">03</span><h2>Meet the Ravens</h2><p>Three engines show their scores and receipts. Then you tell us what’s right.</p></article></section>
+<div class="landing-footnote"><span class="gold-text">A match within half a level?</span> That’s a Latent winner.</div>
+{% endblock %}

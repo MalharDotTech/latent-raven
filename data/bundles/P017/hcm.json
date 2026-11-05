@@ -1,0 +1,64 @@
+{
+  "exported_on": "2026-10-31",
+  "employee_id": "KC-10717",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Karthik Subramanian",
+  "preferred_name": "Karthik Subramanian",
+  "emails": [
+    {
+      "email": "karthik.subramanian@kestrelcloud.com",
+      "from": "2022-01",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Architecture",
+  "manager_employee_id": "KC-10014",
+  "hire_date": "2022-01-10",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Principal Architect",
+      "grade": "P6",
+      "from": "2022-01",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Billing/recon architecture review",
+      "role": "Principal Architect",
+      "from": "2025-01",
+      "to": null,
+      "allocation_pct": 60
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "self_declared_skills": [
+    {
+      "skill_text": "System design",
+      "self_level": 4,
+      "declared_on": "2026-04"
+    },
+    {
+      "skill_text": "Java",
+      "self_level": 4,
+      "declared_on": "2026-04"
+    }
+  ],
+  "education": [
+    {
+      "institution": "IIT Madras",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2010
+    }
+  ]
+}

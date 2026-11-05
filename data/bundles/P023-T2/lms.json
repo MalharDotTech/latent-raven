@@ -1,0 +1,43 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel CS Foundations",
+      "provider": "Kestrel Learn",
+      "completed": "2021-03-30",
+      "time_spent_minutes": 380,
+      "quiz_score_pct": 91,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Account Health Scoring",
+      "provider": "Kestrel Learn",
+      "completed": "2022-05-18",
+      "time_spent_minutes": 95,
+      "quiz_score_pct": 84,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Coaching Conversations for Team Leads",
+      "provider": "Kestrel Learn",
+      "completed": "2025-03-12",
+      "time_spent_minutes": 240,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Code of Conduct and POSH 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-06-02",
+      "time_spent_minutes": 30,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Salesforce for CS Teams",
+      "provider": "Kestrel Learn",
+      "completed": "2023-02-09",
+      "time_spent_minutes": 64,
+      "quiz_score_pct": 78,
+      "assigned_by": "manager"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "pid": "P039",
+  "schema": "truth-v2",
+  "summary": "Five-year QA engineer with normal independent Selenium and API suite ownership. A certification entry names the preparation provider as issuer, without any credential identifier; actual ability comes from her work.",
+  "archetype": "ordinary_qa",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "selenium",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_pallavi-kulkarni-kc; jira_KC-12018",
+        "missing_source": null
+      },
+      "last_used": "2026-05",
+      "evidence_refs": [
+        "gh_pallavi-kulkarni-kc:#9168",
+        "gh_pallavi-kulkarni-kc:#10030",
+        "jira_KC-12018:QA-2662"
+      ],
+      "why": "Ongoing suite maintenance includes flaky-wait repairs and repeat-run results."
+    },
+    {
+      "skill_id": "java",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_pallavi-kulkarni-kc; jira_KC-12018",
+        "missing_source": null
+      },
+      "last_used": "2026-03",
+      "evidence_refs": [
+        "gh_pallavi-kulkarni-kc:#9844",
+        "jira_KC-12018:QA-3671"
+      ],
+      "why": "Guided Java fixture endpoints include controller tests and reviewer corrections."
+    },
+    {
+      "skill_id": "api_testing",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_pallavi-kulkarni-kc; jira_KC-12018",
+        "missing_source": null
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "gh_pallavi-kulkarni-kc:#7635",
+        "gh_pallavi-kulkarni-kc:#9208",
+        "gh_pallavi-kulkarni-kc:#9746",
+        "gh_pallavi-kulkarni-kc:#10228",
+        "jira_KC-12018:QA-2758",
+        "jira_KC-12018:QA-2953",
+        "jira_KC-12018:QA-3333",
+        "jira_KC-12018:QA-3622"
+      ],
+      "why": "Independent failure-contract suite catches duplicate posting and response faults before shipment."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_pallavi-kulkarni-kc; jira_KC-12018",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "gh_pallavi-kulkarni-kc:#7898",
+        "gh_pallavi-kulkarni-kc:#8180",
+        "gh_pallavi-kulkarni-kc:#8898",
+        "gh_pallavi-kulkarni-kc:#10377",
+        "jira_KC-12018:QA-2829",
+        "jira_KC-12018:QA-3189",
+        "jira_KC-12018:QA-3983"
+      ],
+      "why": "Test queries are reviewed for join and date semantics then compared with control totals."
+    },
+    {
+      "skill_id": "cicd",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_pallavi-kulkarni-kc; jira_KC-12018",
+        "missing_source": null
+      },
+      "last_used": "2026-07",
+      "evidence_refs": [
+        "gh_pallavi-kulkarni-kc:#8213",
+        "gh_pallavi-kulkarni-kc:#8907",
+        "gh_pallavi-kulkarni-kc:#10120",
+        "jira_KC-12018:QA-2847",
+        "jira_KC-12018:QA-3826"
+      ],
+      "why": "Report and retry stages are added with build-engineer checks and passing runs."
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_pallavi-kulkarni-kc",
+        "missing_source": null
+      },
+      "last_used": "2026-06",
+      "evidence_refs": [
+        "gh_pallavi-kulkarni-kc:review#2218",
+        "gh_pallavi-kulkarni-kc:review#2442",
+        "gh_pallavi-kulkarni-kc:review#2626",
+        "gh_pallavi-kulkarni-kc:review#2745"
+      ],
+      "why": "Substantive test reviews catch shared-data and swallowed-assertion defects before merge."
+    }
+  ],
+  "decoys": [],
+  "traps": [
+    {
+      "fault_id": "F25",
+      "s11_row": "level_off",
+      "skill_id": "selenium",
+      "plant": "The self-reported CTFL entry names Udemy and omits credential identifiers. Workplace suite evidence supplies the level; exam prerequisites do not.",
+      "expected_engine_behavior": "send",
+      "observation_ids": [
+        "RO-04"
+      ]
+    }
+  ],
+  "unmatched_skills": [],
+  "realism_observations": [
+    "RO-04"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

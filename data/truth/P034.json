@@ -1,0 +1,246 @@
+{
+  "pid": "P034",
+  "schema": "truth-v2",
+  "summary": "Three-year data engineer with two applications prepared for different target roles in the same month. The earlier TCS job starts three months later in the analytics version; the underlying employment began in August 2023.",
+  "archetype": "ordinary_data_engineer_tailored_cvs",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_sravya-dutta-kc; jira_KC-12146",
+        "missing_source": null
+      },
+      "last_used": "2025-09",
+      "evidence_refs": [
+        "gh_sravya-dutta-kc:#13023",
+        "jira_KC-12146:DATA-3397"
+      ],
+      "why": "Parser ownership includes runtime fault reproduction and production reruns."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_sravya-dutta-kc; jira_KC-12146",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "gh_sravya-dutta-kc:#6285",
+        "gh_sravya-dutta-kc:#7466",
+        "gh_sravya-dutta-kc:#7679",
+        "gh_sravya-dutta-kc:#7941",
+        "jira_KC-12146:DATA-3359",
+        "jira_KC-12146:DATA-3801",
+        "jira_KC-12146:DATA-4350"
+      ],
+      "why": "Deployed transformations have balance reconciliation and query-profile evidence."
+    },
+    {
+      "skill_id": "airflow",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_sravya-dutta-kc",
+        "missing_source": null
+      },
+      "last_used": "2026-05",
+      "evidence_refs": [
+        "gh_sravya-dutta-kc:#11665",
+        "gh_sravya-dutta-kc:#12390",
+        "gh_sravya-dutta-kc:#13277",
+        "gh_sravya-dutta-kc:#14162"
+      ],
+      "why": "Failed backfills are repaired with explicit manifest and run-history checks."
+    },
+    {
+      "skill_id": "snowflake",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_sravya-dutta-kc; jira_KC-12146",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "gh_sravya-dutta-kc:#6760",
+        "gh_sravya-dutta-kc:#6874",
+        "gh_sravya-dutta-kc:#7466",
+        "gh_sravya-dutta-kc:#7941",
+        "jira_KC-12146:DATA-4350"
+      ],
+      "why": "Warehouse binding and workload split changes are supported by operational query history."
+    },
+    {
+      "skill_id": "dbt",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_sravya-dutta-kc; jira_KC-12146",
+        "missing_source": null
+      },
+      "last_used": "2025-12",
+      "evidence_refs": [
+        "gh_sravya-dutta-kc:#6456",
+        "gh_sravya-dutta-kc:#7184",
+        "jira_KC-12146:DATA-3578"
+      ],
+      "why": "Models and source checks are built with analytics-lead corrections."
+    },
+    {
+      "skill_id": "data_modeling",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_sravya-dutta-kc; jira_KC-12146",
+        "missing_source": null
+      },
+      "last_used": "2026-07",
+      "evidence_refs": [
+        "gh_sravya-dutta-kc:#6882",
+        "gh_sravya-dutta-kc:#7679",
+        "jira_KC-12146:DATA-3359",
+        "jira_KC-12146:DATA-4024"
+      ],
+      "why": "Key grain and cardinality are corrected by the model reviewer before reconciliation."
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_sravya-dutta-kc",
+        "missing_source": null
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "gh_sravya-dutta-kc:review#2398",
+        "gh_sravya-dutta-kc:review#2623",
+        "gh_sravya-dutta-kc:review#2768"
+      ],
+      "why": "A second reviewer confirms the bounded data-key and count-check comments."
+    }
+  ],
+  "decoys": [],
+  "traps": [
+    {
+      "fault_id": "F02",
+      "s11_row": "level_off",
+      "skill_id": "data_modeling",
+      "plant": "Two role-targeted CVs share lineage and disagree by three months on the prior job start. Model level rests on reviewed schema work.",
+      "expected_engine_behavior": "send",
+      "observation_ids": [
+        "RO-01",
+        "RO-02"
+      ]
+    }
+  ],
+  "unmatched_skills": [],
+  "realism_observations": [
+    "RO-01",
+    "RO-02"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

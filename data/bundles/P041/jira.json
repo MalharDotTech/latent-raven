@@ -1,0 +1,552 @@
+{
+  "linked_employee_id": "KC-12109",
+  "issues": [
+    {
+      "key": "PM-933",
+      "type": "Task",
+      "summary": "Forecast workbook tie-out",
+      "description_excerpt": "Complete monthly forecast checks before finance review.",
+      "component": "FP&A and management reporting",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-01-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-01-11",
+      "resolved": "2024-01-15",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 105",
+        "start": "2024-01-01",
+        "end": "2024-01-12"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2024-01-15",
+          "body": "Ritika built FCST_v7.xlsx with headcount, rate and FX assumptions linked to base/upside/downside scenarios. Formula check tab is clear; outputs tie to FI actuals. Reviewed by Meenal Shah, Finance Controller, accepted."
+        }
+      ]
+    },
+    {
+      "key": "PM-1060",
+      "type": "Task",
+      "summary": "FI parked document clearing",
+      "description_excerpt": "Two cost centre documents remain parked after close.",
+      "component": "FP&A and management reporting",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-05-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-05-21",
+      "resolved": "2024-05-27",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 115",
+        "start": "2024-05-20",
+        "end": "2024-05-31"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2024-05-27",
+          "body": "Ritika traced failed FI cost-centre validity on the documents, corrected the posting dates with AP and reconciled the reposted entries to the ledger extract. Controller checked the reconciliation."
+        }
+      ]
+    },
+    {
+      "key": "PM-1108",
+      "type": "Task",
+      "summary": "Invoice extract for budget bridge",
+      "description_excerpt": "Need SQL extract for the cost bridge.",
+      "component": "FP&A and management reporting",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-06-27"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-06-27",
+      "resolved": "2024-07-08",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 117",
+        "start": "2024-06-17",
+        "end": "2024-06-28"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2024-07-08",
+          "body": "Ritika SQL query reviewed by Sravya: tenant predicate and reversal-document exclusion corrected. Count and sum match supplied FI control totals. Output used in the budget bridge."
+        }
+      ]
+    },
+    {
+      "key": "PM-1227",
+      "type": "Task",
+      "summary": "Q4 scenario workbook",
+      "description_excerpt": "Update forecast for hiring and infra options.",
+      "component": "FP&A and management reporting",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-09-25"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-09-25",
+      "resolved": "2024-09-30",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 124",
+        "start": "2024-09-23",
+        "end": "2024-10-04"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2024-09-30",
+          "body": "Ritika independently rebuilt FCST_v12.xlsx with separate headcount drivers and three scenarios. Check tab reconciles opening cash and P&L to the finance report. Meenal accepted after checking assumption links."
+        }
+      ]
+    },
+    {
+      "key": "PM-1439",
+      "type": "Task",
+      "summary": "FI accrual mismatch",
+      "description_excerpt": "Accrual reversals not matching the month-end report.",
+      "component": "FP&A and management reporting",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-21",
+      "resolved": "2025-02-27",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 134",
+        "start": "2025-02-10",
+        "end": "2025-02-21"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2025-02-27",
+          "body": "Ritika traced the FI reversal period on six documents and reconciled the corrected postings to the ledger. AP confirmed all document references; controller accepted the close report."
+        }
+      ]
+    },
+    {
+      "key": "PM-1581",
+      "type": "Task",
+      "summary": "Agree cost owner assumptions",
+      "description_excerpt": "Infra and finance have different forecast headcount bases.",
+      "component": "FP&A and management reporting",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-02"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-02",
+      "resolved": "2025-06-16",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 142",
+        "start": "2025-06-02",
+        "end": "2025-06-13"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2025-06-16",
+          "body": "Ritika agreed the start-date basis with infra lead and HR; decision recorded as signed offers only, vacancy upside kept separate. Both owners approved, workbook assumptions and report updated."
+        }
+      ]
+    },
+    {
+      "key": "PM-1681",
+      "type": "Task",
+      "summary": "SQL cost centre mapping check",
+      "description_excerpt": "Compare cost extract with FI totals.",
+      "component": "FP&A and management reporting",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-08-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-08-21",
+      "resolved": "2025-08-25",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 147",
+        "start": "2025-08-11",
+        "end": "2025-08-22"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2025-08-25",
+          "body": "Sravya reviewed Ritika SQL and corrected the effective-date join. Reconciled the result against supplied cost centre totals; unmatched rows are listed for AP."
+        }
+      ]
+    },
+    {
+      "key": "PM-1806",
+      "type": "Task",
+      "summary": "Rolling forecast signoff",
+      "description_excerpt": "Prepare the next rolling forecast.",
+      "component": "FP&A and management reporting",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-12-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-12-11",
+      "resolved": "2025-12-22",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 155",
+        "start": "2025-12-01",
+        "end": "2025-12-12"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2025-12-22",
+          "body": "FCST_v19.xlsx built by Ritika includes scenario switches, circularity check and actuals reconciliation. All formula checks passed and finance report tie-out accepted by Meenal."
+        }
+      ]
+    },
+    {
+      "key": "PM-1969",
+      "type": "Task",
+      "summary": "FI duplicate reference query",
+      "description_excerpt": "Two expense postings share vendor reference.",
+      "component": "FP&A and management reporting",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-20"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-20",
+      "resolved": "2026-04-27",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 165",
+        "start": "2026-04-20",
+        "end": "2026-05-01"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2026-04-27",
+          "body": "Ritika checked SAP FI document history, identified the reversed original and reconciled net expense to the close ledger. No duplicate open payable remains."
+        }
+      ]
+    },
+    {
+      "key": "PM-2057",
+      "type": "Task",
+      "summary": "Close extract procedure review",
+      "description_excerpt": "Review ENG-2891 extraction steps.",
+      "component": "FP&A and management reporting",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-16",
+      "resolved": "2026-06-19",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 169",
+        "start": "2026-06-15",
+        "end": "2026-06-26"
+      },
+      "comments": [
+        {
+          "author": "Sravya Dutta",
+          "date": "2026-06-19",
+          "body": "Meenal reviewed Ritika technical procedure. Parked and posted documents were mixed in the first draft; separate lists and company-code check added. Revised steps checked on the close extract and accepted."
+        }
+      ]
+    },
+    {
+      "key": "PM-2161",
+      "type": "Task",
+      "summary": "Budget owner decision",
+      "description_excerpt": "Sales wants full travel budget restored for Q4.",
+      "component": "FP&A and management reporting",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-01",
+      "resolved": "2026-09-07",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 174",
+        "start": "2026-08-24",
+        "end": "2026-09-04"
+      },
+      "comments": [
+        {
+          "author": "Meenal Shah",
+          "date": "2026-09-07",
+          "body": "Ritika agreed an event-based travel cap with sales director and finance controller. Signed decision and updated monthly phasing accepted by both; owners completed the revised request schedule."
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    }
+  ],
+  "exported": "2026-10-31"
+}

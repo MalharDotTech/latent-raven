@@ -1,0 +1,97 @@
+{
+  "exported_on": "2026-10-31",
+  "employee_id": "KC-11818",
+  "legacy_ids": [
+    "LGR-0318"
+  ],
+  "worker_type": "employee",
+  "legal_name": "Nikhil Bansal",
+  "preferred_name": "Nikhil Bansal",
+  "emails": [
+    {
+      "email": "nikhil.bansal@kestrelcloud.com",
+      "from": "2024-03",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Billing Engineering",
+  "manager_employee_id": "KC-10014",
+  "hire_date": "2024-03-25",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Tech Lead",
+      "grade": "Ledgerly-TL",
+      "from": "2024-03",
+      "to": "2024-08"
+    },
+    {
+      "title": "Tech Lead",
+      "grade": "P2",
+      "from": "2024-09",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Legacy invoice import maintenance",
+      "role": "Tech Lead",
+      "from": "2025-01",
+      "to": null,
+      "allocation_pct": 90
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "original_hire_date": "2021-09-06",
+  "migration_events": [
+    {
+      "date": "2024-09-01",
+      "old_id": "LGR-0318",
+      "new_id": "KC-11818",
+      "reason": "Ledgerly worker conversion",
+      "worker_uuid": "wd-9b318",
+      "ticket": "PM-2266"
+    }
+  ],
+  "worker_uuid": "wd-9b318",
+  "legacy_records": [
+    {
+      "employee_id": "LGR-0318",
+      "legal_name": "Nikhil Bansal",
+      "worker_uuid": "wd-9b318",
+      "email": "nikhil.bansal@kestrelcloud.com",
+      "hire_date": "2021-09-06",
+      "title": "Tech Lead",
+      "record_status": "active",
+      "exported_on": "2026-10-31",
+      "last_updated": "2024-08-30"
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "Node.js",
+      "self_level": 3,
+      "declared_on": "2026-03"
+    },
+    {
+      "skill_text": "Technical leadership",
+      "self_level": 4,
+      "declared_on": "2026-03"
+    }
+  ],
+  "education": [
+    {
+      "institution": "VIT Vellore",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2021
+    }
+  ]
+}

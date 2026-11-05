@@ -1,0 +1,857 @@
+{
+  "login": "sravya-dutta-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-12146",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11316,
+      "title": "DATA-2688 fix date parsing for bank B",
+      "body": "Accept Excel serial dates and ISO strings; explicit exception for dates outside the file month. Tests include leap day.",
+      "state": "merged",
+      "created": "2024-07-05",
+      "merged": "2024-07-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 4
+      },
+      "additions": 101,
+      "deletions": 67,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "DATA-2688"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11501,
+      "title": "dedupe files by bank and checksum",
+      "body": "Manifest key includes bank and checksum. Replayed both duplicate and corrected file variants; source count agrees after replacement.",
+      "state": "merged",
+      "created": "2024-08-20",
+      "merged": "2024-08-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3,
+        ".sql": 2
+      },
+      "additions": 67,
+      "deletions": 23,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "DATA-2758"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 11665,
+      "title": "repair missed settlement partitions",
+      "body": "Airflow backfill selects uncommitted manifest rows instead of yesterday. Cleared the failed task and replayed three partitions with no duplicates.",
+      "state": "merged",
+      "created": "2024-09-25",
+      "merged": "2024-09-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 101,
+      "deletions": 50,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "DATA-2800"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6285,
+      "title": "cast refund id before join",
+      "body": "SQL model keeps bank IDs as text. Compared source control totals and the unmatched output before deploying.",
+      "state": "merged",
+      "created": "2024-11-07",
+      "merged": "2024-11-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 1
+      },
+      "additions": 30,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "DATA-2878"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6456,
+      "title": "add source tests for settlement facts",
+      "body": "dbt fact model and source uniqueness tests, with corrections from Leena on the composite key. Successful CI build and source totals attached.",
+      "state": "merged",
+      "created": "2025-01-17",
+      "merged": "2025-01-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 1,
+        ".yml": 2
+      },
+      "additions": 106,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "DATA-2984"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12306,
+      "title": "DATA-3085 fix: catch malformed trailer",
+      "body": "Separate blank lines from trailer rows. Added malformed input fixtures and reran the daily ingestion task.",
+      "state": "merged",
+      "created": "2025-03-06",
+      "merged": "2025-03-10",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 19,
+      "deletions": 43,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "commits": 3,
+      "issue_keys": [
+        "DATA-3085"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 12390,
+      "title": "limit concurrent backfills",
+      "body": "Airflow pool and max_active_runs changed after a failed catch-up. Run history for the next backfill has no queued daily load.",
+      "state": "merged",
+      "created": "2025-03-21",
+      "merged": "2025-03-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1,
+        ".yaml": 1
+      },
+      "additions": 35,
+      "deletions": 54,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "DATA-3122"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6760,
+      "title": "prune refund date scan",
+      "body": "Snowflake query profile had a full table scan on cast(value_date). Changed to a bounded range on the date column; same totals, fewer scanned partitions.",
+      "state": "merged",
+      "created": "2025-06-05",
+      "merged": "2025-06-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 2
+      },
+      "additions": 51,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "DATA-3255"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6874,
+      "title": "resize morning load warehouse",
+      "body": "Snowflake query history showed short queries waiting behind the wide merge. Split load and reporting warehouses, tested auto-suspend; deployed after the cost comparison.",
+      "state": "merged",
+      "created": "2025-07-22",
+      "merged": "2025-07-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 1,
+        ".yaml": 2
+      },
+      "additions": 31,
+      "deletions": 18,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "DATA-3341"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 6882,
+      "title": "make refund event key explicit",
+      "body": "Reviewed diagram now distinguishes refund event and payment keys. Leena corrected relationship cardinality; SQL reconciliation checks joined totals per tenant.",
+      "state": "merged",
+      "created": "2025-07-25",
+      "merged": "2025-07-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 1
+      },
+      "additions": 136,
+      "deletions": 39,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "DATA-3359"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13023,
+      "title": "fix missing timezone in filename date",
+      "body": "Python path builder uses bank timezone; the production runtime fault reproduced with a near-midnight fixture.",
+      "state": "merged",
+      "created": "2025-08-26",
+      "merged": "2025-08-28",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 3
+      },
+      "additions": 130,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "DATA-3397"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13277,
+      "title": "add retry delay to status sensor",
+      "body": "Airflow retry delay and timeout set independently. Deployed DAG and checked a simulated outage followed by successful backfill.",
+      "state": "merged",
+      "created": "2025-10-17",
+      "merged": "2025-10-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 47,
+      "deletions": 43,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "DATA-3488"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7184,
+      "title": "test freshness for refund source",
+      "body": "dbt source freshness and not-null tests with analytics lead review. Changed the source relation after CI identified the old database alias.",
+      "state": "merged",
+      "created": "2025-12-11",
+      "merged": "2025-12-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 2,
+        ".sql": 3
+      },
+      "additions": 36,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "tests"
+      ],
+      "commits": 5,
+      "issue_keys": [
+        "DATA-3578"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7297,
+      "title": "exclude cancelled settlement from total",
+      "body": "Split cancellation from replacement rows. Query plan and per-bank balance diff attached to ticket.",
+      "state": "merged",
+      "created": "2026-01-23",
+      "merged": "2026-01-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 1
+      },
+      "additions": 32,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "DATA-3644"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 13865,
+      "title": "DATA-3739 handle empty zipped feed",
+      "body": "Return a typed empty result for a valid zero-record archive; corrupt archives still fail. Production reprocessing completed.",
+      "state": "merged",
+      "created": "2026-03-17",
+      "merged": "2026-03-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2
+      },
+      "additions": 55,
+      "deletions": 70,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [],
+      "commits": 1,
+      "issue_keys": [
+        "DATA-3739"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7466,
+      "title": "fix warehouse resume after timeout",
+      "body": "Snowflake task resumed against the load role by mistake. Corrected warehouse binding and checked query history after deployment.",
+      "state": "merged",
+      "created": "2026-04-03",
+      "merged": "2026-04-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 1
+      },
+      "additions": 65,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 3,
+      "issue_keys": [
+        "DATA-3801"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14162,
+      "title": "retry failed bank C partition",
+      "body": "Airflow run repaired from the last committed manifest. Reconciled row count and bank trailer amount before marking the partition complete.",
+      "state": "merged",
+      "created": "2026-05-12",
+      "merged": "2026-05-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 2,
+        ".sql": 2
+      },
+      "additions": 135,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [],
+      "commits": 4,
+      "issue_keys": [
+        "DATA-3854"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7679,
+      "title": "settlement key null check",
+      "body": "Added SQL integrity check and a rejected-row table. Leena reviewed the model diagram and the source-to-fact reconciliation.",
+      "state": "merged",
+      "created": "2026-07-08",
+      "merged": "2026-07-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 3
+      },
+      "additions": 96,
+      "deletions": 11,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [],
+      "commits": 2,
+      "issue_keys": [
+        "DATA-4024"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 14761,
+      "title": "fix: decimal overflow in bank parser",
+      "body": "Use decimal.Decimal with explicit scale; unit test covers the failing amount. Rerun wrote the missing bank partition.",
+      "state": "merged",
+      "created": "2026-08-18",
+      "merged": "2026-08-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".py": 1
+      },
+      "additions": 130,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "commits": 2,
+      "issue_keys": [
+        "DATA-4141"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/analytics-dbt",
+      "number": 7941,
+      "title": "trim unused reporting columns",
+      "body": "SQL projection prunes wide attributes before join. Snowflake query profile and control total comparison checked in staging then deployed.",
+      "state": "merged",
+      "created": "2026-10-14",
+      "merged": "2026-10-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".sql": 6
+      },
+      "additions": 39,
+      "deletions": 50,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [],
+      "commits": 5,
+      "issue_keys": [
+        "DATA-4350"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "number": 15254,
+      "title": "remove old bank D fixtures",
+      "body": "Opened for the next iteration. Waiting for maintainer review.",
+      "state": "open",
+      "created": "2026-10-26",
+      "merged": null,
+      "merged_by": null,
+      "author_type": "human",
+      "files_ext": {
+        ".yml": 3
+      },
+      "additions": 94,
+      "deletions": 20,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [],
+      "commits": 5,
+      "draft": true,
+      "updated": "2026-10-27"
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 12000,
+      "date": "2024-12-26",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "Would this overwrite the earlier day when the file arrives late?",
+      "author_reply_excerpt": "Partition now uses the bank value date; late-file fixture added.",
+      "thread_resolved": true,
+      "second_reviewer_comment": "Agreed with Sravya on the key and reconciliation check."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 13545,
+      "date": "2026-01-01",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "We need tenant in the key as well. Please check count before and after that join.",
+      "author_reply_excerpt": "Composite key corrected; source and joined counts now agree.",
+      "thread_resolved": true,
+      "second_reviewer_comment": "Agreed with Sravya on the key and reconciliation check."
+    },
+    {
+      "repo": "kestrel-cloud/data-platform",
+      "pr_number": 14664,
+      "date": "2026-08-05",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "Empty archive should not be the same as a corrupt zip.",
+      "author_reply_excerpt": "Split empty and invalid archive handling, tests updated.",
+      "thread_resolved": true,
+      "second_reviewer_comment": "Agreed with Sravya on the key and reconciliation check."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2024-06",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 5,
+        ".sql": 1,
+        ".yaml": 6,
+        ".yml": 7
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 13,
+        ".sql": 3,
+        ".yaml": 3,
+        ".yml": 3
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 7,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 11,
+        ".sql": 2,
+        ".yaml": 11
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 11,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 20,
+        ".sql": 6,
+        ".yaml": 15,
+        ".yml": 10
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 2,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 2,
+        ".sql": 3,
+        ".yaml": 3,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 8,
+        ".sql": 5,
+        ".yaml": 2,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 10,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 11,
+        ".sql": 8,
+        ".yaml": 8,
+        ".yml": 10
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 12,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 6,
+        ".sql": 13,
+        ".yaml": 11,
+        ".yml": 17
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 6,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 3,
+        ".sql": 14,
+        ".yaml": 1,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 7,
+        ".sql": 4,
+        ".yaml": 8,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 9,
+        ".sql": 11,
+        ".yaml": 6,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 8,
+        ".sql": 2,
+        ".yaml": 3,
+        ".yml": 5
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 9,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 7,
+        ".sql": 5,
+        ".yaml": 12,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 10,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 7,
+        ".sql": 8,
+        ".yaml": 12,
+        ".yml": 7
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 11,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 12,
+        ".sql": 7,
+        ".yaml": 3,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 2,
+        ".sql": 13,
+        ".yaml": 4,
+        ".yml": 11
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 9,
+        ".sql": 3,
+        ".yaml": 6,
+        ".yml": 3
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 3,
+        ".sql": 1,
+        ".yaml": 3,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".py": 5,
+        ".sql": 7,
+        ".yaml": 12,
+        ".yml": 6
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 10,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 19,
+        ".sql": 9,
+        ".yaml": 15,
+        ".yml": 9
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 10,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 16,
+        ".sql": 5,
+        ".yaml": 9,
+        ".yml": 4
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 4,
+        ".sql": 10,
+        ".yaml": 4,
+        ".yml": 12
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".py": 4,
+        ".sql": 4,
+        ".yaml": 4,
+        ".yml": 3
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".py": 7,
+        ".sql": 5,
+        ".yaml": 5,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 9,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 14,
+        ".sql": 3,
+        ".yaml": 14,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 10,
+      "reviews": 5,
+      "by_ext": {
+        ".py": 6,
+        ".sql": 13,
+        ".yaml": 4,
+        ".yml": 2
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".py": 11,
+        ".sql": 5,
+        ".yaml": 4,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 7,
+      "reviews": 8,
+      "by_ext": {
+        ".py": 13,
+        ".sql": 3,
+        ".yaml": 13,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".py": 11,
+        ".sql": 12,
+        ".yaml": 5,
+        ".yml": 6
+      }
+    }
+  ],
+  "exported": "2026-10-31"
+}

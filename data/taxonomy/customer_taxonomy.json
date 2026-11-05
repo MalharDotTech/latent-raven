@@ -1,0 +1,1724 @@
+{
+  "customer": {
+    "customer_id": "kestrel_cloud",
+    "name": "Kestrel Cloud",
+    "fictitious": true,
+    "headquarters_country": "India",
+    "industry": "B2B SaaS",
+    "approximate_staff": 1800,
+    "functions": [
+      "Engineering",
+      "Data",
+      "QA",
+      "DevOps/SRE",
+      "Product",
+      "Design",
+      "Sales",
+      "Customer success",
+      "Support",
+      "HR",
+      "Finance"
+    ]
+  },
+  "version": "1.0.0",
+  "basis": {
+    "frameworks": [
+      {
+        "name": "SFIA 9",
+        "url": "https://sfia-online.org/en/sfia-9",
+        "levels_url": "https://sfia-online.org/en/sfia-9/responsibilities",
+        "use": "Original customer wording informed by progression in autonomy, complexity and responsibility, and by professional skill areas including development, testing, service operations and stakeholder relationships."
+      },
+      {
+        "name": "European Skills, Competences, Qualifications and Occupations (ESCO)",
+        "url": "https://esco.ec.europa.eu/en/classification/skill-main",
+        "use": "Original skill labels, alternate labels and task descriptions informed by the ESCO distinction between knowledge and demonstrable skills or competences."
+      }
+    ],
+    "adaptation": "K4 and K3 are Kestrel Cloud test scales, not official SFIA levels, SFIA certifications or verbatim ESCO descriptors; technology names are customer specialisms rather than claimed exact framework concept mappings.",
+    "contract_references": [
+      "docs/sprint/01-eval-contract-vs-engine.md: L1.1, L2.3-L2.4, L2.7",
+      "docs/skill-proficiency-inference-engineering-plan.md: STEP-2.A-2.C"
+    ],
+    "acceptance_rule": "K4 uses a tolerance of one level for Yes; K3 requires an exact level match, always conditional on the person actually having the skill.",
+    "mapping_policy": "Aliases are candidates, not proof; resolve ambiguous phrases using the evidence quote, and hold unmatched or unresolved phrases for review rather than forcing a match.",
+    "boundaries": "Do not infer Java from JavaScript, TypeScript from JavaScript, PySpark from Python, or tool proficiency from a related practice; each skill needs its own evidence.",
+    "k3_policy": "The sales and customer success family starts at guided application, then independent application, then leading or teaching; knowledge-only evidence is below K3 level 1 and must be held.",
+    "sap_policy": "SAP is intentionally one umbrella skill for ambiguity testing; keep the evidenced module in the citation and never imply FI, SD or HCM breadth from another module.",
+    "excel_policy": "Excel modelling is a non-generic finance practice requiring linked assumptions, formulas, scenarios and reconciliation; ordinary Excel or MS Office use remains excluded.",
+    "decay_policy": "Decay hints are configurable recency windows in years, not automatic expiry or evidence of absence; tools and languages use two years, domains and practices including soft skills use five years.",
+    "evidence_policy": "Lines describe observable work or assessed demonstrations, not title, tenure or mention counts; hints are artifact pointers, not sufficient send criteria, and authored content requires customer opt-in and author verification.",
+    "approval_status": "Synthetic test fixture; no real customer or HR approval is claimed."
+  },
+  "scales": [
+    {
+      "scale_id": "K4",
+      "levels": [
+        {
+          "value": 1,
+          "name": "Explains the work",
+          "generic_definition": "Demonstrates concepts and recognises errors in an assessed exercise; workplace delivery is not yet demonstrated.",
+          "level_kind": "knows"
+        },
+        {
+          "value": 2,
+          "name": "Delivers with guidance",
+          "generic_definition": "Completes a bounded task using guidance and review, with corrections visible in the work record.",
+          "level_kind": "applies_with_help"
+        },
+        {
+          "value": 3,
+          "name": "Delivers independently",
+          "generic_definition": "Completes work without step-by-step guidance and resolves failures, with checked outputs in operational use.",
+          "level_kind": "applies_alone"
+        },
+        {
+          "value": 4,
+          "name": "Guides others",
+          "generic_definition": "Reviews others work or teaches methods that colleagues adopt, with decisions and follow-through recorded.",
+          "level_kind": "leads_or_teaches"
+        }
+      ]
+    },
+    {
+      "scale_id": "K3",
+      "levels": [
+        {
+          "value": 1,
+          "name": "Delivers with guidance",
+          "generic_definition": "Completes a customer or commercial task using guidance and review, with corrections visible in the work record.",
+          "level_kind": "applies_with_help"
+        },
+        {
+          "value": 2,
+          "name": "Delivers independently",
+          "generic_definition": "Owns a customer or commercial workflow without step-by-step guidance, with checked records and completed commitments.",
+          "level_kind": "applies_alone"
+        },
+        {
+          "value": 3,
+          "name": "Guides others",
+          "generic_definition": "Reviews account or sales practices and coaches colleagues who adopt them, with changes recorded.",
+          "level_kind": "leads_or_teaches"
+        }
+      ]
+    }
+  ],
+  "skill_families": [
+    {
+      "family_id": "software",
+      "name": "Software development",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "data",
+      "name": "Data engineering and analytics",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "platform",
+      "name": "Cloud platforms and reliability",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "ai",
+      "name": "Machine learning and AI",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "quality",
+      "name": "Quality engineering",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "engineering_practice",
+      "name": "Engineering practices",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "product_design",
+      "name": "Product and design",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "sales_cs",
+      "name": "Sales and customer success",
+      "scale_id": "K3"
+    },
+    {
+      "family_id": "service",
+      "name": "Service operations",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "people",
+      "name": "People operations",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "finance",
+      "name": "Finance and business systems",
+      "scale_id": "K4"
+    },
+    {
+      "family_id": "delivery",
+      "name": "Delivery and professional practices",
+      "scale_id": "K4"
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "python",
+      "name": "Python",
+      "family_id": "software",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Python 3",
+        "CPython"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Python",
+          "other_meaning": "A snake or a comedy group rather than the programming language."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Python functions, lists and exceptions in a scored exercise with worked answers.",
+        "2": "Adds a Python script and unit tests with reviewer guidance, shown by a merged pull request and its review comments.",
+        "3": "Independently maintains a production Python module and fixes runtime faults, shown by merged changes and resolved defects.",
+        "4": "Reviews Python module designs and teaches test patterns that colleagues adopt, shown by review decisions and reused examples."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Python.",
+        "2": "A merged pull request and its review comments.",
+        "3": "Merged changes and resolved defects.",
+        "4": "Review decisions and reused examples."
+      }
+    },
+    {
+      "skill_id": "java",
+      "name": "Java",
+      "family_id": "software",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Java SE",
+        "JDK"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Java",
+          "other_meaning": "An island or coffee rather than the programming language."
+        },
+        {
+          "phrase": "JavaScript",
+          "other_meaning": "A separate programming language; JavaScript evidence does not establish Java."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Java classes, collections and exceptions in an assessed coding exercise.",
+        "2": "Implements a Java endpoint and tests with guidance, shown by a merged change and reviewer corrections.",
+        "3": "Independently maintains a production Java service and diagnoses JVM failures, shown by merged fixes and incident records.",
+        "4": "Sets Java service conventions and reviews concurrency changes across teams, shown by adopted guidelines and review decisions."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Java.",
+        "2": "A merged change and reviewer corrections.",
+        "3": "Merged fixes and incident records.",
+        "4": "Adopted guidelines and review decisions."
+      }
+    },
+    {
+      "skill_id": "go",
+      "name": "Go",
+      "family_id": "software",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Golang",
+        "Go language"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Go",
+          "other_meaning": "The board game."
+        },
+        {
+          "phrase": "go",
+          "other_meaning": "The ordinary verb, including go live and go to market."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Go interfaces, goroutines and error handling in a scored exercise.",
+        "2": "Adds a Go handler and tests with guidance, shown by a merged pull request and review feedback.",
+        "3": "Independently operates a production Go service and fixes goroutine leaks, shown by profiles and merged fixes.",
+        "4": "Reviews Go concurrency designs and teaches patterns used by other services, shown by design reviews and adopted examples."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Go.",
+        "2": "A merged pull request and review feedback.",
+        "3": "Profiles and merged fixes.",
+        "4": "Design reviews and adopted examples."
+      }
+    },
+    {
+      "skill_id": "r",
+      "name": "R",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "R language",
+        "R programming"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "R",
+          "other_meaning": "A letter, rating or abbreviation such as R in R&D."
+        },
+        {
+          "phrase": "RStudio",
+          "other_meaning": "An editor name alone does not establish ability to analyse data in R."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains R vectors, data frames and missing values in an assessed notebook.",
+        "2": "Produces an R analysis with guidance, shown by a reviewed script and corrected calculations.",
+        "3": "Independently maintains a reproducible R analysis used for business decisions, shown by versioned scripts and reconciled outputs.",
+        "4": "Reviews R analysis methods and teaches reproducibility practices used by analysts, shown by review records and adopted templates."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for R.",
+        "2": "A reviewed script and corrected calculations.",
+        "3": "Versioned scripts and reconciled outputs.",
+        "4": "Review records and adopted templates."
+      }
+    },
+    {
+      "skill_id": "sql",
+      "name": "SQL",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Structured Query Language",
+        "SQL querying"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains joins, grouping and null handling in a scored SQL exercise.",
+        "2": "Writes SQL queries with guidance and reconciles results against supplied totals in a reviewed analysis.",
+        "3": "Independently maintains production SQL transformations and tunes slow queries, shown by merged changes and query plans.",
+        "4": "Reviews SQL logic and establishes query standards adopted by teams, shown by review decisions and measured query improvements."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for SQL.",
+        "2": "Scored work sample with written answers and rubric feedback for SQL.",
+        "3": "Merged changes and query plans.",
+        "4": "Review decisions and measured query improvements."
+      }
+    },
+    {
+      "skill_id": "javascript",
+      "name": "JavaScript",
+      "family_id": "software",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "JS",
+        "ECMAScript"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "JS",
+          "other_meaning": "Initials or an unrelated abbreviation require programming context."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains JavaScript scope, promises and array methods in a scored coding exercise.",
+        "2": "Implements a JavaScript interaction with guidance, shown by a merged change and tests.",
+        "3": "Independently ships JavaScript features and resolves asynchronous defects in production, shown by release records and fixes.",
+        "4": "Reviews JavaScript runtime designs and teaches error handling patterns adopted by teams, shown by reviews and reused modules."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for JavaScript.",
+        "2": "A merged change and tests.",
+        "3": "Release records and fixes.",
+        "4": "Reviews and reused modules."
+      }
+    },
+    {
+      "skill_id": "typescript",
+      "name": "TypeScript",
+      "family_id": "software",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "TS",
+        "TypeScript programming"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "TS",
+          "other_meaning": "An abbreviation for technical specification or timestamp requires language context."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains TypeScript unions, interfaces and type narrowing in an assessed exercise.",
+        "2": "Adds typed functions with guidance, shown by a reviewed change that passes type checks.",
+        "3": "Independently maintains TypeScript modules and removes unsafe type assumptions, shown by merged changes and regression tests.",
+        "4": "Reviews shared TypeScript contracts and guides migrations across teams, shown by accepted designs and migration records."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for TypeScript.",
+        "2": "A reviewed change that passes type checks.",
+        "3": "Merged changes and regression tests.",
+        "4": "Accepted designs and migration records."
+      }
+    },
+    {
+      "skill_id": "react",
+      "name": "React",
+      "family_id": "software",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "React.js",
+        "ReactJS"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "react",
+          "other_meaning": "An ordinary verb describing a response rather than the UI library."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains React props, state and effects in a scored component exercise.",
+        "2": "Builds a React component with guidance, shown by a merged change and component tests.",
+        "3": "Independently delivers React screens and fixes rendering defects, shown by released components and profiler findings.",
+        "4": "Reviews React component architecture and teaches accessibility patterns adopted by teams, shown by reviews and shared components."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for React.",
+        "2": "A merged change and component tests.",
+        "3": "Released components and profiler findings.",
+        "4": "Reviews and shared components."
+      }
+    },
+    {
+      "skill_id": "nodejs",
+      "name": "Node.js",
+      "family_id": "software",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "NodeJS",
+        "Node js"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Node",
+          "other_meaning": "A graph vertex, cluster host or workflow step without Node.js runtime context."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains the Node.js event loop and asynchronous file access in an assessed exercise.",
+        "2": "Adds a Node.js API route with guidance, shown by a merged change and endpoint tests.",
+        "3": "Independently maintains a production Node.js service and diagnoses event loop stalls, shown by profiles and merged fixes.",
+        "4": "Reviews Node.js service designs and teaches resource management patterns, shown by accepted designs and adopted examples."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Node.js.",
+        "2": "A merged change and endpoint tests.",
+        "3": "Profiles and merged fixes.",
+        "4": "Accepted designs and adopted examples."
+      }
+    },
+    {
+      "skill_id": "spring_boot",
+      "name": "Spring Boot",
+      "family_id": "software",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "SpringBoot",
+        "Spring Boot framework"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Spring Boot dependency injection and configuration in a scored exercise.",
+        "2": "Adds a Spring Boot controller with guidance, shown by a merged change and integration tests.",
+        "3": "Independently maintains a Spring Boot service with transactions and health checks, shown by deployments and resolved defects.",
+        "4": "Reviews Spring Boot service boundaries and teaches configuration patterns adopted across services, shown by reviews and shared starters."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Spring Boot.",
+        "2": "A merged change and integration tests.",
+        "3": "Deployments and resolved defects.",
+        "4": "Reviews and shared starters."
+      }
+    },
+    {
+      "skill_id": "spark",
+      "name": "Apache Spark",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Spark",
+        "Spark SQL"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Spark",
+          "other_meaning": "Spark AR, the augmented reality authoring platform."
+        },
+        {
+          "phrase": "Spark",
+          "other_meaning": "The Spark email client."
+        },
+        {
+          "phrase": "spark",
+          "other_meaning": "An electrical spark or a metaphor for an idea."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Spark partitions, transformations and shuffles in an assessed exercise.",
+        "2": "Builds a Spark batch job with guidance, shown by reviewed code and checked output counts.",
+        "3": "Independently operates production Spark jobs and fixes skew or memory failures, shown by execution plans and deployed changes.",
+        "4": "Reviews Spark workload designs and teaches tuning methods adopted by teams, shown by design reviews and before-and-after run metrics."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Apache Spark.",
+        "2": "Reviewed code and checked output counts.",
+        "3": "Execution plans and deployed changes.",
+        "4": "Design reviews and before-and-after run metrics."
+      }
+    },
+    {
+      "skill_id": "pyspark",
+      "name": "PySpark",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Python Spark API",
+        "PySpark DataFrame API"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Python",
+          "other_meaning": "Python work alone does not establish use of the Spark Python API."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains PySpark DataFrame operations and lazy evaluation in a scored notebook exercise.",
+        "2": "Builds a PySpark transformation with guidance, shown by a reviewed notebook and input-output checks.",
+        "3": "Independently maintains production PySpark pipelines and fixes schema or shuffle failures, shown by merged changes and run logs.",
+        "4": "Reviews PySpark pipeline designs and teaches testing patterns adopted by data teams, shown by reviews and shared test fixtures."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for PySpark.",
+        "2": "A reviewed notebook and input-output checks.",
+        "3": "Merged changes and run logs.",
+        "4": "Reviews and shared test fixtures."
+      }
+    },
+    {
+      "skill_id": "kafka",
+      "name": "Apache Kafka",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Kafka",
+        "Kafka Streams"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Kafka",
+          "other_meaning": "The author Franz Kafka or references to his writing."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Kafka topics, partitions and consumer offsets in an assessed exercise.",
+        "2": "Adds a Kafka producer or consumer with guidance, shown by reviewed code and message checks.",
+        "3": "Independently operates Kafka data flows and fixes replay or lag problems, shown by deployments and incident resolutions.",
+        "4": "Reviews Kafka partitioning and recovery designs and teaches delivery guarantees, shown by accepted designs and recovery drills."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Apache Kafka.",
+        "2": "Reviewed code and message checks.",
+        "3": "Deployments and incident resolutions.",
+        "4": "Accepted designs and recovery drills."
+      }
+    },
+    {
+      "skill_id": "airflow",
+      "name": "Apache Airflow",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Airflow",
+        "Airflow DAGs"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "airflow",
+          "other_meaning": "Ventilation or movement of air."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Airflow DAG dependencies, retries and scheduling in a scored exercise.",
+        "2": "Adds an Airflow DAG with guidance, shown by a reviewed change and successful test runs.",
+        "3": "Independently maintains production Airflow DAGs and repairs failed backfills, shown by deployment records and run histories.",
+        "4": "Reviews Airflow orchestration designs and teaches retry practices adopted by teams, shown by reviews and shared DAG patterns."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Apache Airflow.",
+        "2": "A reviewed change and successful test runs.",
+        "3": "Deployment records and run histories.",
+        "4": "Reviews and shared DAG patterns."
+      }
+    },
+    {
+      "skill_id": "dbt",
+      "name": "dbt",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "dbt Core",
+        "dbt Cloud",
+        "data build tool"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "DBT",
+          "other_meaning": "Dialectical behaviour therapy rather than the data build tool."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains dbt models, sources and tests in an assessed project exercise.",
+        "2": "Adds a dbt model and tests with guidance, shown by a reviewed change and successful builds.",
+        "3": "Independently maintains production dbt models and resolves incremental load defects, shown by merged fixes and reconciled tables.",
+        "4": "Reviews dbt model structure and teaches testing standards adopted by teams, shown by review decisions and shared macros."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for dbt.",
+        "2": "A reviewed change and successful builds.",
+        "3": "Merged fixes and reconciled tables.",
+        "4": "Review decisions and shared macros."
+      }
+    },
+    {
+      "skill_id": "snowflake",
+      "name": "Snowflake",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Snowflake SQL",
+        "Snowflake Data Cloud"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "snowflake",
+          "other_meaning": "An ice crystal or a description of a uniquely configured server."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Snowflake warehouses, roles and storage separation in an assessed exercise.",
+        "2": "Loads data into Snowflake with guidance, shown by reviewed load scripts and reconciled row counts.",
+        "3": "Independently manages Snowflake workloads and tunes warehouse costs, shown by query histories and deployed changes.",
+        "4": "Reviews Snowflake access and workload designs and teaches cost controls, shown by accepted designs and adopted monitoring rules."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Snowflake.",
+        "2": "Reviewed load scripts and reconciled row counts.",
+        "3": "Query histories and deployed changes.",
+        "4": "Accepted designs and adopted monitoring rules."
+      }
+    },
+    {
+      "skill_id": "databricks",
+      "name": "Databricks",
+      "family_id": "data",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Azure Databricks",
+        "Databricks SQL"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Databricks jobs, clusters and Delta tables in an assessed workspace exercise.",
+        "2": "Creates a Databricks job with guidance, shown by a reviewed notebook and checked run output.",
+        "3": "Independently operates Databricks pipelines and fixes job or table failures, shown by run logs and deployed changes.",
+        "4": "Reviews Databricks workspace and job designs and teaches governance practices, shown by accepted reviews and adopted workspace policies."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Databricks.",
+        "2": "A reviewed notebook and checked run output.",
+        "3": "Run logs and deployed changes.",
+        "4": "Accepted reviews and adopted workspace policies."
+      }
+    },
+    {
+      "skill_id": "aws",
+      "name": "AWS",
+      "family_id": "platform",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Amazon Web Services"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains AWS IAM roles, VPCs and compute choices in a scored architecture exercise.",
+        "2": "Deploys an AWS workload with guidance, shown by reviewed infrastructure changes and deployment checks.",
+        "3": "Independently operates an AWS workload and resolves access or availability faults, shown by change records and incident fixes.",
+        "4": "Reviews AWS architectures and teaches account guardrails adopted by teams, shown by accepted designs and implemented policies."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for AWS.",
+        "2": "Reviewed infrastructure changes and deployment checks.",
+        "3": "Change records and incident fixes.",
+        "4": "Accepted designs and implemented policies."
+      }
+    },
+    {
+      "skill_id": "azure",
+      "name": "Azure",
+      "family_id": "platform",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Microsoft Azure"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "azure",
+          "other_meaning": "A colour without Microsoft cloud context."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Azure subscriptions, resource groups and managed identities in a scored exercise.",
+        "2": "Deploys an Azure application with guidance, shown by reviewed templates and deployment checks.",
+        "3": "Independently operates Azure workloads and fixes identity or network faults, shown by change records and incident resolutions.",
+        "4": "Reviews Azure landing zone designs and teaches access controls adopted by teams, shown by accepted designs and implemented policies."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Azure.",
+        "2": "Reviewed templates and deployment checks.",
+        "3": "Change records and incident resolutions.",
+        "4": "Accepted designs and implemented policies."
+      }
+    },
+    {
+      "skill_id": "gcp",
+      "name": "GCP",
+      "family_id": "platform",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Google Cloud",
+        "Google Cloud Platform"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains GCP projects, service accounts and compute choices in a scored exercise.",
+        "2": "Deploys a GCP workload with guidance, shown by reviewed configuration and deployment checks.",
+        "3": "Independently operates GCP workloads and fixes permission or scaling faults, shown by change records and incident fixes.",
+        "4": "Reviews GCP project and network designs and teaches workload controls adopted by teams, shown by accepted designs and implemented policies."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for GCP.",
+        "2": "Reviewed configuration and deployment checks.",
+        "3": "Change records and incident fixes.",
+        "4": "Accepted designs and implemented policies."
+      }
+    },
+    {
+      "skill_id": "kubernetes",
+      "name": "Kubernetes",
+      "family_id": "platform",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "K8s",
+        "Kube"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Kubernetes pods, services and deployments in an assessed lab.",
+        "2": "Deploys a Kubernetes workload with guidance, shown by reviewed manifests and rollout checks.",
+        "3": "Independently operates Kubernetes workloads and repairs failed rollouts, shown by incident records and merged configuration fixes.",
+        "4": "Reviews Kubernetes tenancy and upgrade designs and teaches recovery procedures, shown by accepted designs and completed team drills."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Kubernetes.",
+        "2": "Reviewed manifests and rollout checks.",
+        "3": "Incident records and merged configuration fixes.",
+        "4": "Accepted designs and completed team drills."
+      }
+    },
+    {
+      "skill_id": "docker",
+      "name": "Docker",
+      "family_id": "platform",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Docker Engine",
+        "Docker Compose"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Docker images, containers and volumes in an assessed lab.",
+        "2": "Writes a Dockerfile with guidance, shown by a reviewed change and a successful container run.",
+        "3": "Independently maintains production Docker images and fixes build or runtime defects, shown by release records and merged fixes.",
+        "4": "Reviews Docker image practices and teaches reproducible builds adopted by teams, shown by review decisions and shared base images."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Docker.",
+        "2": "A reviewed change and a successful container run.",
+        "3": "Release records and merged fixes.",
+        "4": "Review decisions and shared base images."
+      }
+    },
+    {
+      "skill_id": "terraform",
+      "name": "Terraform",
+      "family_id": "platform",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "HashiCorp Terraform"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Terraform plans, state and providers in an assessed lab.",
+        "2": "Changes Terraform resources with guidance, shown by a reviewed plan and checked apply output.",
+        "3": "Independently maintains Terraform modules and resolves drift or state faults, shown by merged changes and recovery records.",
+        "4": "Reviews Terraform module boundaries and teaches safe state handling, shown by accepted designs and adopted team procedures."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Terraform.",
+        "2": "A reviewed plan and checked apply output.",
+        "3": "Merged changes and recovery records.",
+        "4": "Accepted designs and adopted team procedures."
+      }
+    },
+    {
+      "skill_id": "cicd",
+      "name": "CI/CD",
+      "family_id": "platform",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Continuous integration and delivery",
+        "Continuous integration and deployment",
+        "Deployment pipelines"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains build, test and deployment stages in an assessed pipeline walkthrough.",
+        "2": "Adds a pipeline step with guidance, shown by reviewed configuration and a passing run.",
+        "3": "Independently maintains release pipelines with test gates and rollback checks, shown by production runs and resolved failures.",
+        "4": "Reviews release pipeline designs and teaches deployment safeguards adopted by teams, shown by accepted reviews and shared pipeline templates."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for CI/CD.",
+        "2": "Reviewed configuration and a passing run.",
+        "3": "Production runs and resolved failures.",
+        "4": "Accepted reviews and shared pipeline templates."
+      }
+    },
+    {
+      "skill_id": "linux",
+      "name": "Linux",
+      "family_id": "platform",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "GNU/Linux",
+        "Linux administration"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Linux permissions, processes and filesystems in an assessed command-line lab.",
+        "2": "Performs Linux service tasks with guidance, shown by reviewed runbook steps and checked command output.",
+        "3": "Independently maintains Linux services and diagnoses disk or process faults, shown by change tickets and resolved incidents.",
+        "4": "Reviews Linux operating procedures and teaches recovery methods adopted by teams, shown by accepted runbooks and completed drills."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Linux.",
+        "2": "Reviewed runbook steps and checked command output.",
+        "3": "Change tickets and resolved incidents.",
+        "4": "Accepted runbooks and completed drills."
+      }
+    },
+    {
+      "skill_id": "observability",
+      "name": "Observability",
+      "family_id": "platform",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Telemetry engineering",
+        "Metrics logs and traces"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains metrics, logs, traces and service indicators in an assessed diagnostic exercise.",
+        "2": "Adds service telemetry with guidance, shown by reviewed instrumentation and checked dashboard output.",
+        "3": "Independently uses telemetry to locate production faults and adjusts alerts, shown by incident timelines and merged instrumentation changes.",
+        "4": "Reviews telemetry designs and teaches alert quality practices adopted by teams, shown by review records and reduced non-actionable alerts."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Observability.",
+        "2": "Reviewed instrumentation and checked dashboard output.",
+        "3": "Incident timelines and merged instrumentation changes.",
+        "4": "Review records and reduced non-actionable alerts."
+      }
+    },
+    {
+      "skill_id": "machine_learning",
+      "name": "Machine Learning",
+      "family_id": "ai",
+      "skill_type": "domain",
+      "decay_hint_years": 5,
+      "aliases": [
+        "ML",
+        "Statistical machine learning"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains training splits, overfitting and evaluation metrics in an assessed modelling exercise.",
+        "2": "Trains and evaluates a baseline model with guidance, shown by a reviewed notebook and held-out results.",
+        "3": "Independently deploys and monitors a model with leakage checks, shown by experiment records and production evaluation reports.",
+        "4": "Reviews model validation designs and teaches deployment criteria adopted by teams, shown by review decisions and shared evaluation protocols."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Machine Learning.",
+        "2": "A reviewed notebook and held-out results.",
+        "3": "Experiment records and production evaluation reports.",
+        "4": "Review decisions and shared evaluation protocols."
+      }
+    },
+    {
+      "skill_id": "llm_engineering",
+      "name": "LLM application engineering",
+      "family_id": "ai",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "LLM app development",
+        "RAG application engineering",
+        "Generative AI application engineering"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Prompting",
+          "other_meaning": "Casual chatbot use alone does not establish application engineering."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains retrieval, prompt context and model evaluation in an assessed application exercise.",
+        "2": "Builds an LLM workflow with guidance, shown by reviewed code and a labelled evaluation set.",
+        "3": "Independently ships an LLM application with grounding checks and failure monitoring, shown by releases and evaluation reports.",
+        "4": "Reviews LLM application designs and teaches evaluation and injection defence methods, shown by accepted reviews and adopted test suites."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for LLM application engineering.",
+        "2": "Reviewed code and a labelled evaluation set.",
+        "3": "Releases and evaluation reports.",
+        "4": "Accepted reviews and adopted test suites."
+      }
+    },
+    {
+      "skill_id": "data_modeling",
+      "name": "Data modeling",
+      "family_id": "data",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Data modelling",
+        "Logical data modelling",
+        "Dimensional modelling"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains keys, relationships and table grain in an assessed schema exercise.",
+        "2": "Drafts a data model with guidance, shown by a reviewed diagram and corrected key definitions.",
+        "3": "Independently implements data models with integrity and history checks, shown by deployed schemas and reconciliation results.",
+        "4": "Reviews cross-team data models and teaches modelling conventions, shown by accepted design reviews and adopted data contracts."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Data modeling.",
+        "2": "A reviewed diagram and corrected key definitions.",
+        "3": "Deployed schemas and reconciliation results.",
+        "4": "Accepted design reviews and adopted data contracts."
+      }
+    },
+    {
+      "skill_id": "selenium",
+      "name": "Selenium",
+      "family_id": "quality",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Selenium WebDriver"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "selenium",
+          "other_meaning": "The chemical element or a dietary supplement."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Selenium locators, waits and browser sessions in an assessed automation exercise.",
+        "2": "Adds a Selenium test with guidance, shown by reviewed test code and a passing run.",
+        "3": "Independently maintains a Selenium regression suite and fixes flaky waits, shown by merged changes and repeat-run reports.",
+        "4": "Reviews Selenium test architecture and teaches locator practices adopted by QA teams, shown by review decisions and shared fixtures."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Selenium.",
+        "2": "Reviewed test code and a passing run.",
+        "3": "Merged changes and repeat-run reports.",
+        "4": "Review decisions and shared fixtures."
+      }
+    },
+    {
+      "skill_id": "playwright",
+      "name": "Playwright",
+      "family_id": "quality",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Microsoft Playwright",
+        "Playwright Test"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "playwright",
+          "other_meaning": "A person who writes plays."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Playwright locators, browser contexts and assertions in an assessed exercise.",
+        "2": "Adds a Playwright test with guidance, shown by reviewed test code and a passing run.",
+        "3": "Independently maintains Playwright browser tests and diagnoses failures with traces, shown by merged fixes and run reports.",
+        "4": "Reviews Playwright suite structure and teaches isolation practices adopted by teams, shown by review decisions and shared fixtures."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Playwright.",
+        "2": "Reviewed test code and a passing run.",
+        "3": "Merged fixes and run reports.",
+        "4": "Review decisions and shared fixtures."
+      }
+    },
+    {
+      "skill_id": "api_testing",
+      "name": "API testing",
+      "family_id": "quality",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "API test automation",
+        "REST API testing"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains API status codes, authentication and response contracts in a scored test exercise.",
+        "2": "Writes API checks with guidance, shown by a reviewed collection and recorded test results.",
+        "3": "Independently maintains API tests covering contracts and failure paths, shown by CI runs and defects found before release.",
+        "4": "Reviews API test strategies and teaches contract coverage methods, shown by accepted test plans and adopted checks across services."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for API testing.",
+        "2": "A reviewed collection and recorded test results.",
+        "3": "CI runs and defects found before release.",
+        "4": "Accepted test plans and adopted checks across services."
+      }
+    },
+    {
+      "skill_id": "performance_testing",
+      "name": "Performance testing",
+      "family_id": "quality",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Load testing",
+        "Stress testing"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains latency percentiles, throughput and load profiles in an assessed test exercise.",
+        "2": "Runs a load test with guidance, shown by a reviewed script and checked results.",
+        "3": "Independently designs representative load tests and isolates bottlenecks, shown by workload models and verified fix measurements.",
+        "4": "Reviews performance test plans and teaches capacity analysis methods, shown by accepted plans and adopted release thresholds."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Performance testing.",
+        "2": "A reviewed script and checked results.",
+        "3": "Workload models and verified fix measurements.",
+        "4": "Accepted plans and adopted release thresholds."
+      }
+    },
+    {
+      "skill_id": "system_design",
+      "name": "System design",
+      "family_id": "engineering_practice",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Software architecture design",
+        "Distributed system design"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains service boundaries, storage choices and failure modes in an assessed design exercise.",
+        "2": "Drafts a component design with guidance, shown by a reviewed diagram and revised trade-off notes.",
+        "3": "Independently designs a deployed service with capacity and failure analysis, shown by accepted decisions and production validation.",
+        "4": "Reviews designs across services and teaches trade-off analysis, shown by architecture decisions and team designs revised after review."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for System design.",
+        "2": "A reviewed diagram and revised trade-off notes.",
+        "3": "Accepted decisions and production validation.",
+        "4": "Architecture decisions and team designs revised after review."
+      }
+    },
+    {
+      "skill_id": "code_review",
+      "name": "Code review",
+      "family_id": "engineering_practice",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Peer code review",
+        "Pull request review"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Identifies correctness and test gaps in a scored review exercise with written comments.",
+        "2": "Reviews a pull request with guidance, shown by comments corrected or confirmed by a second reviewer.",
+        "3": "Independently reviews production changes and catches defects before merge, shown by review threads and author fixes.",
+        "4": "Sets review practices and coaches reviewers across teams, shown by adopted checklists and reviews improved after coaching."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Code review.",
+        "2": "Comments corrected or confirmed by a second reviewer.",
+        "3": "Review threads and author fixes.",
+        "4": "Adopted checklists and reviews improved after coaching."
+      }
+    },
+    {
+      "skill_id": "technical_leadership",
+      "name": "Technical leadership",
+      "family_id": "engineering_practice",
+      "skill_type": "soft",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Engineering technical leadership",
+        "Technical mentoring"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Lead",
+          "other_meaning": "A job title alone or a sales prospect does not establish technical leadership."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains technical decision records and mentoring boundaries in an assessed delivery scenario.",
+        "2": "Coordinates a bounded technical task with guidance, shown by a reviewed plan and resolved dependency tickets.",
+        "3": "Independently guides a team through technical trade-offs and delivery risks, shown by decision records and completed follow-up actions.",
+        "4": "Coaches technical leads and establishes engineering decision practices, shown by adopted practices and documented coaching outcomes."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Technical leadership.",
+        "2": "A reviewed plan and resolved dependency tickets.",
+        "3": "Decision records and completed follow-up actions.",
+        "4": "Adopted practices and documented coaching outcomes."
+      }
+    },
+    {
+      "skill_id": "product_discovery",
+      "name": "Product discovery",
+      "family_id": "product_design",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Customer problem discovery",
+        "Product hypothesis testing"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains problem statements, assumptions and discovery experiments in an assessed product exercise.",
+        "2": "Runs a discovery task with guidance, shown by reviewed interview notes and an experiment summary.",
+        "3": "Independently tests product assumptions and changes a product decision using findings, shown by research synthesis and decision records.",
+        "4": "Reviews discovery plans and teaches experiment design adopted by product teams, shown by accepted plans and subsequent decision records."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Product discovery.",
+        "2": "Reviewed interview notes and an experiment summary.",
+        "3": "Research synthesis and decision records.",
+        "4": "Accepted plans and subsequent decision records."
+      }
+    },
+    {
+      "skill_id": "roadmapping",
+      "name": "Roadmapping",
+      "family_id": "product_design",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Product roadmapping",
+        "Product roadmap planning"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains outcomes, dependencies and prioritisation choices in an assessed roadmap exercise.",
+        "2": "Updates a product roadmap with guidance, shown by reviewed priorities and dependency notes.",
+        "3": "Independently maintains an outcome-based roadmap and revises priorities using results, shown by decision logs and delivery reviews.",
+        "4": "Reviews roadmap trade-offs across products and teaches prioritisation methods, shown by agreed portfolio decisions and adopted planning practices."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Roadmapping.",
+        "2": "Reviewed priorities and dependency notes.",
+        "3": "Decision logs and delivery reviews.",
+        "4": "Agreed portfolio decisions and adopted planning practices."
+      }
+    },
+    {
+      "skill_id": "ux_research",
+      "name": "UX research",
+      "family_id": "product_design",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "User experience research",
+        "User research",
+        "Usability research"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains participant selection, consent and usability tasks in an assessed research exercise.",
+        "2": "Conducts a usability session with guidance, shown by reviewed notes and a corrected findings summary.",
+        "3": "Independently plans and synthesises UX research that changes a design, shown by research plans and linked design decisions.",
+        "4": "Reviews UX research methods and teaches bias checks adopted by teams, shown by accepted research plans and reused research protocols."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for UX research.",
+        "2": "Reviewed notes and a corrected findings summary.",
+        "3": "Research plans and linked design decisions.",
+        "4": "Accepted research plans and reused research protocols."
+      }
+    },
+    {
+      "skill_id": "figma",
+      "name": "Figma",
+      "family_id": "product_design",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Figma Design",
+        "Figma prototyping"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Figma frames, components and auto layout in an assessed design exercise.",
+        "2": "Builds a Figma screen with guidance, shown by version history and reviewer comments.",
+        "3": "Independently maintains Figma prototypes and reusable components used in shipped features, shown by design versions and linked releases.",
+        "4": "Reviews Figma library structure and teaches component practices, shown by library changes adopted by other designers and review records."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Figma.",
+        "2": "Version history and reviewer comments.",
+        "3": "Design versions and linked releases.",
+        "4": "Library changes adopted by other designers and review records."
+      }
+    },
+    {
+      "skill_id": "salesforce",
+      "name": "Salesforce CRM",
+      "family_id": "sales_cs",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Salesforce",
+        "Sales Cloud",
+        "SFDC"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Salesforce",
+          "other_meaning": "The workforce of a sales department rather than the CRM product."
+        },
+        {
+          "phrase": "Salesforce developer",
+          "other_meaning": "A title or platform coding claim alone does not establish CRM pipeline operations."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Updates Salesforce accounts and opportunities with guidance, shown by reviewed CRM changes and corrected field values.",
+        "2": "Independently maintains opportunity stages and forecast inputs, shown by CRM history and reconciled pipeline reviews.",
+        "3": "Reviews Salesforce pipeline hygiene and teaches reporting practices adopted by sales teams, shown by audit findings and reused reports."
+      },
+      "evidence_hints": {
+        "1": "Reviewed CRM changes and corrected field values. K3 begins with guided application; a course completion alone does not meet this level.",
+        "2": "CRM history and reconciled pipeline reviews.",
+        "3": "Audit findings and reused reports."
+      }
+    },
+    {
+      "skill_id": "solution_selling",
+      "name": "Solution selling",
+      "family_id": "sales_cs",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Consultative solution selling",
+        "B2B solution selling"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Runs part of a discovery call with guidance, shown by a reviewed discovery worksheet and corrected solution notes.",
+        "2": "Independently maps buyer needs to a solution and handles objections, shown by opportunity plans and recorded deal-stage decisions.",
+        "3": "Reviews solution strategies and coaches sellers on discovery, shown by revised deal plans and coaching outcomes across accounts."
+      },
+      "evidence_hints": {
+        "1": "A reviewed discovery worksheet and corrected solution notes. K3 begins with guided application; a course completion alone does not meet this level.",
+        "2": "Opportunity plans and recorded deal-stage decisions.",
+        "3": "Revised deal plans and coaching outcomes across accounts."
+      }
+    },
+    {
+      "skill_id": "account_management",
+      "name": "Account management",
+      "family_id": "sales_cs",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "B2B account management",
+        "Customer account planning"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Account management",
+          "other_meaning": "User login administration or bookkeeping rather than customer commercial ownership."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Updates an account plan with guidance, shown by reviewed risk notes and corrected follow-up tasks.",
+        "2": "Independently manages renewal risks and expansion actions, shown by account plans and completed customer commitments.",
+        "3": "Reviews account strategies and coaches account owners, shown by revised renewal plans and adopted account review practices."
+      },
+      "evidence_hints": {
+        "1": "Reviewed risk notes and corrected follow-up tasks. K3 begins with guided application; a course completion alone does not meet this level.",
+        "2": "Account plans and completed customer commitments.",
+        "3": "Revised renewal plans and adopted account review practices."
+      }
+    },
+    {
+      "skill_id": "customer_onboarding",
+      "name": "Customer onboarding",
+      "family_id": "sales_cs",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "SaaS customer onboarding",
+        "Customer implementation onboarding"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Onboarding",
+          "other_meaning": "Employee induction or device enrolment rather than onboarding SaaS customers."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Delivers an onboarding task with guidance, shown by a reviewed checklist and checked customer setup.",
+        "2": "Independently runs customer onboarding to agreed activation criteria, shown by implementation plans and acceptance records.",
+        "3": "Reviews onboarding designs and teaches implementation practices, shown by adopted playbooks and coached teams completing acceptance checks."
+      },
+      "evidence_hints": {
+        "1": "A reviewed checklist and checked customer setup. K3 begins with guided application; a course completion alone does not meet this level.",
+        "2": "Implementation plans and acceptance records.",
+        "3": "Adopted playbooks and coached teams completing acceptance checks."
+      }
+    },
+    {
+      "skill_id": "servicenow",
+      "name": "ServiceNow ITSM",
+      "family_id": "service",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "ServiceNow IT Service Management",
+        "ServiceNow incident workflows"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains ServiceNow ITSM incident, request and change records in an assessed workflow exercise.",
+        "2": "Updates ServiceNow ITSM tickets with guidance, shown by reviewed records and corrected classifications.",
+        "3": "Independently manages ServiceNow queues and configures assignment rules, shown by ticket histories and tested workflow changes.",
+        "4": "Reviews ServiceNow ITSM workflow designs and teaches queue practices, shown by accepted changes and adopted operational procedures."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for ServiceNow ITSM.",
+        "2": "Reviewed records and corrected classifications.",
+        "3": "Ticket histories and tested workflow changes.",
+        "4": "Accepted changes and adopted operational procedures."
+      }
+    },
+    {
+      "skill_id": "incident_management",
+      "name": "Incident management",
+      "family_id": "service",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Production incident management",
+        "Major incident response"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains incident severity, escalation and recovery checks in an assessed response exercise.",
+        "2": "Handles an incident task with guidance, shown by a reviewed ticket timeline and checked recovery steps.",
+        "3": "Independently coordinates incident diagnosis and recovery, shown by incident timelines and completed corrective actions.",
+        "4": "Reviews incident response practices and teaches responders through drills, shown by accepted post-incident actions and drill results."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Incident management.",
+        "2": "A reviewed ticket timeline and checked recovery steps.",
+        "3": "Incident timelines and completed corrective actions.",
+        "4": "Accepted post-incident actions and drill results."
+      }
+    },
+    {
+      "skill_id": "hr_operations",
+      "name": "HR operations",
+      "family_id": "people",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "People operations",
+        "HR service delivery"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains employee lifecycle records and approval controls in an assessed HR case exercise.",
+        "2": "Processes an employee lifecycle change with guidance, shown by reviewed case records and corrected data.",
+        "3": "Independently completes joiner, transfer and exit cases with approval checks, shown by audited HR transactions and reconciled records.",
+        "4": "Reviews HR operating procedures and teaches case quality controls, shown by adopted procedures and closed audit actions."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for HR operations.",
+        "2": "Reviewed case records and corrected data.",
+        "3": "Audited HR transactions and reconciled records.",
+        "4": "Adopted procedures and closed audit actions."
+      }
+    },
+    {
+      "skill_id": "talent_acquisition",
+      "name": "Talent acquisition",
+      "family_id": "people",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Recruitment",
+        "Candidate sourcing and selection"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains sourcing, structured selection and candidate consent in an assessed hiring exercise.",
+        "2": "Runs a recruitment task with guidance, shown by reviewed sourcing notes and corrected interview scorecards.",
+        "3": "Independently manages hiring pipelines using structured selection criteria, shown by ATS histories and completed hiring decisions.",
+        "4": "Reviews recruitment methods and coaches interviewers, shown by adopted scorecards and documented calibration sessions."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Talent acquisition.",
+        "2": "Reviewed sourcing notes and corrected interview scorecards.",
+        "3": "ATS histories and completed hiring decisions.",
+        "4": "Adopted scorecards and documented calibration sessions."
+      }
+    },
+    {
+      "skill_id": "workday",
+      "name": "Workday HCM",
+      "family_id": "people",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "Workday Human Capital Management",
+        "Workday Core HCM"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "workday",
+          "other_meaning": "An ordinary working day without HCM product context."
+        },
+        {
+          "phrase": "Workday Financial Management",
+          "other_meaning": "A separate product scope; finance-only evidence does not establish HCM operations."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains Workday HCM worker records and business process approvals in an assessed sandbox exercise.",
+        "2": "Processes a Workday HCM transaction with guidance, shown by a reviewed sandbox or case record and approval checks.",
+        "3": "Independently maintains Workday HCM processes and resolves worker-data faults, shown by audited transactions and tested configuration changes.",
+        "4": "Reviews Workday HCM process and access designs and teaches administrators, shown by accepted configuration reviews and adopted procedures."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Workday HCM.",
+        "2": "A reviewed sandbox or case record and approval checks.",
+        "3": "Audited transactions and tested configuration changes.",
+        "4": "Accepted configuration reviews and adopted procedures."
+      }
+    },
+    {
+      "skill_id": "sap",
+      "name": "SAP",
+      "family_id": "finance",
+      "skill_type": "tool_or_language",
+      "decay_hint_years": 2,
+      "aliases": [
+        "SAP ERP",
+        "SAP S/4HANA"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "SAP",
+          "other_meaning": "FI financial accounting, SD sales and distribution, and HCM human capital management are distinct module scopes; evidence in one does not establish the others."
+        },
+        {
+          "phrase": "sap",
+          "other_meaning": "Plant fluid or the ordinary verb meaning to drain strength."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains a named SAP module workflow and its records in an assessed sandbox exercise.",
+        "2": "Completes a transaction in a named SAP module with guidance, shown by a reviewed transaction record and checked postings.",
+        "3": "Independently operates and troubleshoots a named SAP module workflow, shown by resolved support cases and reconciled transaction records.",
+        "4": "Reviews SAP process changes within the evidenced module and teaches its controls, shown by accepted change reviews and training exercises."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for SAP.",
+        "2": "A reviewed transaction record and checked postings.",
+        "3": "Resolved support cases and reconciled transaction records.",
+        "4": "Accepted change reviews and training exercises."
+      }
+    },
+    {
+      "skill_id": "excel_modeling",
+      "name": "Excel modelling",
+      "family_id": "finance",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Excel modeling",
+        "Financial modelling in Excel",
+        "Excel financial models"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Excel",
+          "other_meaning": "Everyday spreadsheets, formatting or data entry are generic and excluded."
+        },
+        {
+          "phrase": "excel",
+          "other_meaning": "The ordinary verb meaning to perform well."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains linked forecast assumptions and formula checks in an assessed Excel model exercise.",
+        "2": "Updates an Excel forecast model with guidance, shown by reviewed formulas and reconciled outputs.",
+        "3": "Independently builds Excel forecasts with scenario analysis and error checks, shown by versioned workbooks and reconciled finance reports.",
+        "4": "Reviews Excel model logic and teaches modelling controls, shown by corrected model reviews and templates adopted by finance colleagues."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Excel modelling.",
+        "2": "Reviewed formulas and reconciled outputs.",
+        "3": "Versioned workbooks and reconciled finance reports.",
+        "4": "Corrected model reviews and templates adopted by finance colleagues."
+      }
+    },
+    {
+      "skill_id": "agile_delivery",
+      "name": "Agile delivery",
+      "family_id": "delivery",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Iterative delivery",
+        "Agile team delivery"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains backlog refinement, iteration goals and retrospective actions in an assessed delivery scenario.",
+        "2": "Facilitates an iteration activity with guidance, shown by a reviewed backlog and tracked follow-up actions.",
+        "3": "Independently coordinates iterations and removes delivery blockers, shown by delivery boards and completed retrospective actions.",
+        "4": "Reviews team delivery methods and coaches facilitators, shown by adopted process changes and measured flow improvements."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Agile delivery.",
+        "2": "A reviewed backlog and tracked follow-up actions.",
+        "3": "Delivery boards and completed retrospective actions.",
+        "4": "Adopted process changes and measured flow improvements."
+      }
+    },
+    {
+      "skill_id": "stakeholder_management",
+      "name": "Stakeholder management",
+      "family_id": "delivery",
+      "skill_type": "soft",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Stakeholder engagement",
+        "Stakeholder relationship management"
+      ],
+      "ambiguous_with": [
+        {
+          "phrase": "Communication",
+          "other_meaning": "Generic communication claims do not establish stakeholder planning or negotiated decisions."
+        }
+      ],
+      "generic": false,
+      "level_lines": {
+        "1": "Identifies stakeholder interests and decision rights in an assessed project scenario.",
+        "2": "Maintains a stakeholder action log with guidance, shown by a reviewed plan and corrected responsibility assignments.",
+        "3": "Independently resolves stakeholder trade-offs and secures decisions, shown by decision records and completed agreed actions.",
+        "4": "Coaches teams on stakeholder negotiation and reviews engagement plans, shown by revised plans and documented decisions across teams."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Stakeholder management.",
+        "2": "A reviewed plan and corrected responsibility assignments.",
+        "3": "Decision records and completed agreed actions.",
+        "4": "Revised plans and documented decisions across teams."
+      }
+    },
+    {
+      "skill_id": "technical_writing",
+      "name": "Technical writing",
+      "family_id": "delivery",
+      "skill_type": "practice",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Technical documentation",
+        "Developer documentation"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains task-based documentation and checks a sample procedure in an assessed writing exercise.",
+        "2": "Writes a technical procedure with guidance, shown by a reviewed draft and corrected steps.",
+        "3": "Independently publishes technical guides validated by users completing the tasks, shown by versioned documents and validation results.",
+        "4": "Reviews documentation structure and coaches technical authors, shown by adopted writing standards and drafts improved after review."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Technical writing.",
+        "2": "A reviewed draft and corrected steps.",
+        "3": "Versioned documents and validation results.",
+        "4": "Adopted writing standards and drafts improved after review."
+      }
+    },
+    {
+      "skill_id": "security_fundamentals",
+      "name": "Security fundamentals",
+      "family_id": "engineering_practice",
+      "skill_type": "domain",
+      "decay_hint_years": 5,
+      "aliases": [
+        "Information security fundamentals",
+        "Application security fundamentals"
+      ],
+      "ambiguous_with": [],
+      "generic": false,
+      "level_lines": {
+        "1": "Explains least privilege, secret handling and common application attacks in a scored security exercise.",
+        "2": "Applies a security checklist with guidance, shown by a reviewed change and corrected findings.",
+        "3": "Independently applies access and input controls and remediates security findings, shown by merged fixes and verified checks.",
+        "4": "Reviews baseline security controls and teaches safe implementation patterns, shown by accepted reviews and patterns adopted by teams."
+      },
+      "evidence_hints": {
+        "1": "Scored work sample with written answers and rubric feedback for Security fundamentals.",
+        "2": "A reviewed change and corrected findings.",
+        "3": "Merged fixes and verified checks.",
+        "4": "Accepted reviews and patterns adopted by teams."
+      }
+    }
+  ],
+  "exclude_list": [
+    "MS Office",
+    "Microsoft Office",
+    "Office productivity",
+    "Email",
+    "Communication",
+    "Computer literacy",
+    "Web browsing",
+    "Typing",
+    "Microsoft Teams usage",
+    "Microsoft Word basics",
+    "Microsoft PowerPoint basics",
+    "Microsoft Excel basics",
+    "Excel data entry",
+    "Excel formatting",
+    "Basic spreadsheet use"
+  ]
+}

@@ -1,0 +1,1166 @@
+{
+  "issues": [
+    {
+      "key": "BILL-2852",
+      "type": "Bug",
+      "summary": "NPE when invoice has no line items",
+      "component": "Invoicing",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2016-06-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2016-06-14",
+      "resolved": "2016-06-20",
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "BILL-3044",
+      "type": "Story",
+      "summary": "Payment retry with backoff",
+      "component": "Payments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2017-03-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2017-03-08",
+      "resolved": "2017-03-13",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "BILL-3137",
+      "type": "Bug",
+      "summary": "Tax rounding differs on credit note",
+      "component": "Tax",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2017-10-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2017-10-03",
+      "resolved": "2017-10-19",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "BILL-3288",
+      "type": "Story",
+      "summary": "Usage metering consumer",
+      "component": "Metering",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2018-04-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2018-04-16",
+      "resolved": "2018-05-10",
+      "story_points": 13,
+      "labels": []
+    },
+    {
+      "key": "BILL-3387",
+      "type": "Task",
+      "summary": "Fix N+1 on invoice list",
+      "component": "Invoicing",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2018-08-10"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2018-08-10",
+      "resolved": "2018-08-13",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "BILL-3553",
+      "type": "Epic",
+      "summary": "Billing core rewrite - Spring Boot 2",
+      "component": "Platform",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2019-02-01"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2019-02-01",
+      "resolved": "2020-03-27",
+      "labels": []
+    },
+    {
+      "key": "BILL-3736",
+      "type": "Bug",
+      "summary": "Duplicate invoice after gateway timeout",
+      "component": "Invoicing",
+      "priority": "Highest",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2019-09-25"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2019-09-25",
+      "resolved": "2019-09-27",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "BILL-3830",
+      "type": "Story",
+      "summary": "Per-jurisdiction tax strategy",
+      "component": "Tax",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2020-01-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2020-01-07",
+      "resolved": "2020-01-20",
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "BILL-3980",
+      "type": "Task",
+      "summary": "Circuit breaker around tax provider",
+      "component": "Tax",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2020-10-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2020-10-15",
+      "resolved": "2020-11-02",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "BILL-4119",
+      "type": "Story",
+      "summary": "Ledger posting outbox",
+      "component": "Ledger",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-02-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2021-02-18",
+      "resolved": "2021-03-02",
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "BILL-4222",
+      "type": "Bug",
+      "summary": "Due date wrong near DST/timezone edge",
+      "component": "Invoicing",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-09-15"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2021-09-15",
+      "resolved": "2021-10-01",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "BILL-4485",
+      "type": "Epic",
+      "summary": "Invoice numbering service",
+      "component": "Invoicing",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-08-20"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2022-08-12",
+      "resolved": "2023-02-08",
+      "labels": []
+    },
+    {
+      "key": "BILL-4573",
+      "type": "Story",
+      "summary": "Usage-based pricing tiers v2",
+      "component": "Metering",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-10-12"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2022-10-11",
+      "resolved": "2022-12-12",
+      "story_points": 13,
+      "labels": []
+    },
+    {
+      "key": "BILL-4695",
+      "type": "Task",
+      "summary": "Upgrade to Java 17 (billing-core)",
+      "component": "Platform",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2023-01-16"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2023-01-12",
+      "resolved": "2023-03-23",
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "BILL-4792",
+      "type": "Bug",
+      "summary": "Invoice PDF fonts missing on EU",
+      "component": "Invoicing",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2023-03-22"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2023-03-22",
+      "resolved": "2023-03-27",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "BILL-4887",
+      "type": "Story",
+      "summary": "Credit note workflow",
+      "component": "Invoicing",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2023-06-06"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2023-06-06",
+      "resolved": "2023-07-06",
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "BILL-5189",
+      "type": "Epic",
+      "summary": "Tax engine pluggable providers",
+      "component": "Tax",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-01-18"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2024-01-18",
+      "resolved": "2024-08-05",
+      "labels": []
+    },
+    {
+      "key": "PM-1028",
+      "type": "Task",
+      "summary": "Backend SDE-2 hiring: panel schedule and rubric",
+      "component": "Hiring",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-04-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-04-23",
+      "resolved": "2024-05-01",
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "BILL-5359",
+      "type": "Story",
+      "summary": "Retry policy config per tenant",
+      "component": "Payments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-05-23"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2024-05-23",
+      "resolved": "2024-05-29",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "SEC-2724",
+      "type": "Task",
+      "summary": "Pen test findings - billing api (3 medium)",
+      "component": "Security",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-09-20"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2024-09-09",
+      "resolved": "2024-10-04",
+      "labels": []
+    },
+    {
+      "key": "BILL-5738",
+      "type": "Task",
+      "summary": "Postmortem actions: duplicate proration",
+      "component": "Invoicing",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-02-20"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2025-02-20",
+      "resolved": "2025-02-26",
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "BILL-5958",
+      "type": "Epic",
+      "summary": "Modular boundaries billing-core",
+      "component": "Platform",
+      "priority": "Medium",
+      "status": "In Progress",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-06-16"
+        }
+      ],
+      "created": "2025-06-16",
+      "labels": []
+    },
+    {
+      "key": "BILL-6139",
+      "type": "Bug",
+      "summary": "Fix bug in proration",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-10-21"
+        },
+        {
+          "assignee": "other",
+          "from": "2025-10-21"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2025-10-21",
+      "resolved": "2025-10-27",
+      "labels": []
+    },
+    {
+      "key": "BILL-6416",
+      "type": "Story",
+      "summary": "Metering export for Finance (monthly)",
+      "component": "Metering",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2026-04-21"
+        }
+      ],
+      "resolved_by_self": false,
+      "created": "2026-04-21",
+      "resolved": "2026-04-27",
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "BILL-6625",
+      "type": "Task",
+      "summary": "Capacity plan FY27 billing",
+      "component": "Platform",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-21",
+      "resolved": "2026-08-31",
+      "story_points": 2,
+      "labels": []
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2016-03",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2016-04",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2016-05",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2016-06",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2016-07",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2016-08",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2016-09",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2016-10",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2016-11",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2016-12",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2017-01",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2017-02",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2017-03",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2017-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2017-05",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2017-06",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2017-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2017-08",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2017-09",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2017-10",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2017-11",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2017-12",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2018-01",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2018-02",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2018-03",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2018-04",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2018-05",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2018-06",
+      "resolved_as_assignee": 8,
+      "reported": 3
+    },
+    {
+      "month": "2018-07",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2018-08",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2018-09",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2018-10",
+      "resolved_as_assignee": 11,
+      "reported": 1
+    },
+    {
+      "month": "2018-11",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2018-12",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2019-01",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2019-02",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2019-03",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2019-04",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2019-05",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2019-06",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2019-07",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2019-08",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2019-09",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2019-10",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2019-11",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2019-12",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2020-01",
+      "resolved_as_assignee": 11,
+      "reported": 0
+    },
+    {
+      "month": "2020-02",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2020-03",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2020-04",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2020-05",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2020-06",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2020-07",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2020-08",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2020-09",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2020-10",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2020-11",
+      "resolved_as_assignee": 7,
+      "reported": 3
+    },
+    {
+      "month": "2020-12",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2021-01",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2021-02",
+      "resolved_as_assignee": 9,
+      "reported": 2
+    },
+    {
+      "month": "2021-03",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2021-04",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2021-05",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2021-06",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2021-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2021-08",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2021-09",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2021-10",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2021-11",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2021-12",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2022-01",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2022-02",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2022-03",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2022-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2022-05",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2022-06",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2022-07",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 1,
+      "reported": 4
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 0,
+      "reported": 5
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 1,
+      "reported": 4
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 0,
+      "reported": 4
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 1,
+      "reported": 2
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 1,
+      "reported": 2
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 1,
+      "reported": 4
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 1,
+      "reported": 5
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 1,
+      "reported": 5
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 0,
+      "reported": 4
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 0,
+      "reported": 4
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 1,
+      "reported": 4
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 0,
+      "reported": 4
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 0,
+      "reported": 3
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 0,
+      "reported": 1
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 1,
+      "reported": 4
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 0,
+      "reported": 3
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 0,
+      "reported": 2
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 1,
+      "reported": 5
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 1,
+      "reported": 1
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 1,
+      "reported": 5
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 0,
+      "reported": 3
+    }
+  ]
+}

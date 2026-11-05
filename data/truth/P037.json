@@ -1,0 +1,56 @@
+{
+  "pid": "P037",
+  "schema": "truth-v2",
+  "summary": "Civil-trained workplace engineer responsible for the Pune fit-out. The useful domain capabilities sit outside this customer taxonomy; everyday Office use must not force a mapping.",
+  "archetype": "off_taxonomy_facilities",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [],
+  "decoys": [
+    {
+      "skill_text": "MS Office",
+      "mapped_skill_id": null,
+      "has_skill": true,
+      "why": "Everyday office use is excluded by the customer list.",
+      "oracle": {
+        "action": "not_extract",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_sanket-jadhav-kc_1",
+        "missing_source": null
+      }
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F06",
+      "s11_row": "wrong_mapping",
+      "skill_text": "MS Office",
+      "plant": "Traditional biodata and a generic productivity-tool entry accompany civil/workplace skills outside the taxonomy.",
+      "expected_engine_behavior": "not_extract",
+      "observation_ids": [
+        "RO-11",
+        "RO-12"
+      ]
+    }
+  ],
+  "unmatched_skills": [
+    "AutoCAD",
+    "Site supervision",
+    "Vendor management",
+    "Quantity surveying",
+    "BOQ estimation",
+    "Snagging"
+  ],
+  "realism_observations": [
+    "RO-11",
+    "RO-12"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

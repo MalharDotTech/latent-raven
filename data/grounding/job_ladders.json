@@ -1,0 +1,156 @@
+{
+ "_meta": {
+  "collected": "2026-11-05",
+  "gaps": [
+   "SDE-1/2/3 (Razorpay: only SEM page found), QA/SDET, Data Engineer, Customer Success, SDR/BDR/AE, HR (HR Executive/HRBP), Support L1-L3, Wipro: NOT sourced, omitted. levels.fyi/AmbitionBox/Glassdoor pages not directly opened beyond search results."
+  ]
+ },
+ "ladders": [
+  {
+   "company": "Infosys",
+   "source_url": "https://www.designgurus.io/blog/infosys-job-levels",
+   "note": "Third-party; years conflict across sources (AmbitionBox 3-16 for Tech Lead)",
+   "levels": [
+    {
+     "title": "Systems Engineer",
+     "band": "JL3B",
+     "years": "0-6 (salary-site range)"
+    },
+    {
+     "title": "Senior Systems Engineer",
+     "band": "JL3A",
+     "years": "4-8 (estimates)"
+    },
+    {
+     "title": "Technology Analyst",
+     "band": "JL4",
+     "years": "4-8 typical; one source 1-8"
+    },
+    {
+     "title": "Technology Lead",
+     "band": "JL5",
+     "years": "6-15+ (estimates)"
+    }
+   ]
+  },
+  {
+   "company": "TCS",
+   "source_url": "https://networkinterview.com/technical-hierarchy-tcs-it-companies/",
+   "note": "Informal sources; years conflict",
+   "levels": [
+    {
+     "title": "Assistant System Engineer Trainee",
+     "band": "C1Y",
+     "years": "~1 trainee year"
+    },
+    {
+     "title": "Assistant System Engineer / Systems Engineer",
+     "band": "C1",
+     "years": "~1-3"
+    },
+    {
+     "title": "IT Analyst",
+     "band": "C2",
+     "years": "4-7"
+    },
+    {
+     "title": "Assistant Consultant",
+     "band": "C3A",
+     "years": "7-8+"
+    },
+    {
+     "title": "Associate Consultant",
+     "band": null,
+     "years": null
+    },
+    {
+     "title": "Consultant",
+     "band": null,
+     "years": null
+    },
+    {
+     "title": "Senior Consultant",
+     "band": null,
+     "years": null
+    },
+    {
+     "title": "Principal Consultant",
+     "band": null,
+     "years": null
+    }
+   ]
+  },
+  {
+   "company": "Freshworks",
+   "source_url": "https://www.levels.fyi/company/Freshworks/salaries/Software-Engineer/",
+   "levels": [
+    {
+     "title": "Software Engineer",
+     "years": null
+    },
+    {
+     "title": "Senior Software Engineer",
+     "years": null
+    },
+    {
+     "title": "Lead Software Engineer",
+     "years": null
+    },
+    {
+     "title": "Staff Software Engineer",
+     "years": null
+    }
+   ]
+  },
+  {
+   "company": "Zoho",
+   "source_url": "https://www.levels.fyi/companies/zoho/salaries/software-engineer",
+   "levels": [
+    {
+     "title": "L1",
+     "years": null
+    },
+    {
+     "title": "L2",
+     "years": null
+    },
+    {
+     "title": "L3",
+     "years": null
+    }
+   ],
+   "note": "Zoho uses L1-L3, not SDE-1/2/3"
+  },
+  {
+   "company": "India product-management market (generic)",
+   "source_url": "https://www.weekday.works/post/product-manager-salary-in-india-2026",
+   "note": "Salary-site derived",
+   "levels": [
+    {
+     "title": "APM",
+     "years": "0-2"
+    },
+    {
+     "title": "Product Manager",
+     "years": "~3-5"
+    },
+    {
+     "title": "Senior PM",
+     "years": "5-8"
+    },
+    {
+     "title": "Group PM",
+     "years": "8-11"
+    },
+    {
+     "title": "Director of Product",
+     "years": "11-14"
+    },
+    {
+     "title": "CPO",
+     "years": "15-20+"
+    }
+   ]
+  }
+ ]
+}

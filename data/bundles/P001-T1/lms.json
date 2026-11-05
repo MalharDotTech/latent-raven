@@ -1,0 +1,44 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Data Platform Onboarding",
+      "provider": "Kestrel Learn",
+      "completed": "2022-12-02",
+      "time_spent_minutes": 310,
+      "quiz_score_pct": 90,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2022",
+      "provider": "Kestrel Learn",
+      "completed": "2022-11-18",
+      "time_spent_minutes": 42,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "ETL in Python and SQL",
+      "provider": "LinkedIn Learning",
+      "completed": "2023-02-14",
+      "time_spent_minutes": 205,
+      "quiz_score_pct": null,
+      "assigned_by": "self"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2023-08-30",
+      "time_spent_minutes": 35,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-03-11",
+      "time_spent_minutes": 38,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    }
+  ]
+}

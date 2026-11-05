@@ -1,0 +1,1020 @@
+{
+  "exported_on": "2026-10-31",
+  "login": "ksubramanian-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-10717",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7732,
+      "title": "fix: keep idempotency key after retry",
+      "state": "merged",
+      "created": "2025-01-07",
+      "merged": "2025-01-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 18,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "RetryEnvelope keeps the tenant key across delayed dispatch; regression covers two scheduler attempts."
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8378,
+      "title": "RECON-3200 cancel scan on client close",
+      "state": "merged",
+      "created": "2025-02-20",
+      "merged": "2025-02-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".go": 2
+      },
+      "additions": 47,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Added context propagation in the scan adapter; maintainer corrected defer placement."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7866,
+      "title": "test: duplicate callback after rollback",
+      "state": "merged",
+      "created": "2025-03-12",
+      "merged": "2025-03-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 3
+      },
+      "additions": 93,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Race fixture for rollback followed by duplicate callback."
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 3456,
+      "title": "docs: clarify ledger write ordering",
+      "state": "merged",
+      "created": "2025-04-08",
+      "merged": "2025-04-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".md": 1
+      },
+      "additions": 8,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Document ordering guarantee for callers; no ledger runtime changes."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 7958,
+      "title": "fix: cap retry exponent",
+      "state": "merged",
+      "created": "2025-05-05",
+      "merged": "2025-05-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 126,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Overflow after many attempts sent delay negative. Bounded before shifting."
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8543,
+      "title": "docs: retry ownership table",
+      "state": "merged",
+      "created": "2025-06-06",
+      "merged": "2025-06-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".md": 3
+      },
+      "additions": 31,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Moved caller and worker responsibilities into separate columns."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8093,
+      "title": "refactor: extract operation key",
+      "state": "merged",
+      "created": "2025-07-08",
+      "merged": "2025-07-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 18,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Value object includes tenant ID; rejects whitespace-only keys."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8141,
+      "title": "test: outbox drain with two workers",
+      "state": "merged",
+      "created": "2025-08-12",
+      "merged": "2025-08-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 47,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Two consumers race on a claim; only one may publish at a time."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11218,
+      "title": "docs: failure domains for billing",
+      "state": "merged",
+      "created": "2026-01-21",
+      "merged": "2026-01-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".md": 3
+      },
+      "additions": 93,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Records account boundary and recovery owner; no Terraform edits."
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 8924,
+      "title": "fix: close scan rows on early return",
+      "state": "merged",
+      "created": "2026-02-14",
+      "merged": "2026-02-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".go": 1
+      },
+      "additions": 8,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Avoid pinned connection when decoding a bad row."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8479,
+      "title": "BILL-6340 guard against tenantless retries",
+      "state": "merged",
+      "created": "2026-03-12",
+      "merged": "2026-03-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 126,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Reject deserialised retry requests missing a tenant before reading the store."
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "number": 4288,
+      "title": "docs: replay example, fix sequence",
+      "state": "merged",
+      "created": "2026-04-18",
+      "merged": "2026-04-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".md": 3
+      },
+      "additions": 31,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Corrected example event ordering after maintainer report."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8570,
+      "title": "test: preserve interrupted status",
+      "state": "merged",
+      "created": "2026-05-08",
+      "merged": "2026-05-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 18,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Added cancellation regression for executor shutdown."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8645,
+      "title": "fix: include currency in key comparison",
+      "state": "merged",
+      "created": "2026-06-14",
+      "merged": "2026-06-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 2
+      },
+      "additions": 47,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Currency-specific credit notes had shared equality test fixtures."
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "number": 9154,
+      "title": "docs: rollout checklist v3",
+      "state": "merged",
+      "created": "2026-07-06",
+      "merged": "2026-07-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".md": 3
+      },
+      "additions": 93,
+      "deletions": 38,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "documentation"
+      ],
+      "body_excerpt": "Added shadow replay stopping condition from the design clinic."
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "number": 8784,
+      "title": "fix: bound executor queue at dispatch",
+      "state": "merged",
+      "created": "2026-08-12",
+      "merged": "2026-08-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "ksubramanian-kc",
+      "author_employee_id": "KC-10717",
+      "files_ext": {
+        ".java": 1
+      },
+      "additions": 8,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "bug"
+      ],
+      "body_excerpt": "Reject into the retry queue instead of unbounded memory growth."
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8440,
+      "date": "2026-02-19",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "The executor is shared by all tenants. Bound this queue and add a rejected-submission test; latency timeout does not release the queued work.",
+      "thread_followup": {
+        "date": "2026-02-25",
+        "text": "Author bounded the queue; BILL team added overload case to review checklist."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 8972,
+      "date": "2026-03-19",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "ctx must reach the row iterator. Cancelling only the handler leaves the scan goroutine blocked on send. Include a goroutine-count test.",
+      "thread_followup": {
+        "date": "2026-03-23",
+        "text": "Recon maintainer changed iterator signature; ledger team reused cancellation fixture."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8538,
+      "date": "2026-04-22",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "Commit the outbox entry with the invoice, then publish outside the transaction. Otherwise retry can notify for an invoice that rolled back.",
+      "thread_followup": {
+        "date": "2026-04-28",
+        "text": "Invoice and credit-note teams adopted transactional outbox checklist."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/ledger-api",
+      "pr_number": 4385,
+      "date": "2026-05-18",
+      "state": "COMMENTED",
+      "comment_count": 5,
+      "sample_comment": "Document what the caller should do after an unknown result. A second request ID would defeat the duplicate guard.",
+      "thread_followup": {
+        "date": "2026-05-27",
+        "text": "Lead revised retry decision table and used it in team design review."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8666,
+      "date": "2026-06-24",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 6,
+      "sample_comment": "Explain plan still shows a full scan: tenant_id must be the leading predicate here. Compare with the largest tenant, not the dev fixture.",
+      "thread_followup": {
+        "date": "2026-06-25",
+        "text": "Added tenant predicate and index; p95 fell from 840ms to 130ms on sampled production load."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11710,
+      "date": "2026-07-16",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "Recovery role should not share the primary writer policy. Separate accounts only help if the assume-role chain is also constrained.",
+      "thread_followup": {
+        "date": "2026-07-21",
+        "text": "Platform accepted trust boundary but owns the implementation."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/billing-core",
+      "pr_number": 8751,
+      "date": "2026-08-12",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "Checked shutdown path after your interrupt fix. Include this example in the Java reviewer clinic notes.",
+      "thread_followup": {
+        "date": "2026-08-28",
+        "text": "Two new reviewers subsequently caught swallowed interrupts in separate changes."
+      }
+    },
+    {
+      "repo": "kestrel-cloud/recon-engine",
+      "pr_number": 9258,
+      "date": "2026-09-08",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "A mutex held across the channel send makes cancellation ineffective. Release before send and exercise receiver exit.",
+      "thread_followup": {
+        "date": "2026-09-29",
+        "text": "Maintainer applied pattern in two recon workers."
+      }
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-01",
+      "merged_prs": 1,
+      "reviews": 38,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-02",
+      "merged_prs": 3,
+      "reviews": 37,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-03",
+      "merged_prs": 1,
+      "reviews": 31,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-04",
+      "merged_prs": 3,
+      "reviews": 39,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-05",
+      "merged_prs": 2,
+      "reviews": 32,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-06",
+      "merged_prs": 1,
+      "reviews": 41,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-07",
+      "merged_prs": 2,
+      "reviews": 31,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 2,
+      "reviews": 41,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 1,
+      "reviews": 39,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 3,
+      "reviews": 46,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 1,
+      "reviews": 34,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 2,
+      "reviews": 42,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 0,
+      "reviews": 42,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 3,
+      "reviews": 41,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 1,
+      "reviews": 32,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 3,
+      "reviews": 35,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 2,
+      "reviews": 37,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 2,
+      "reviews": 39,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 2,
+      "reviews": 36,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 2,
+      "reviews": 42,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 1,
+      "reviews": 34,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 3,
+      "reviews": 42,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 1,
+      "reviews": 37,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 3,
+      "reviews": 37,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 1,
+      "reviews": 33,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 2,
+      "reviews": 37,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 1,
+      "reviews": 28,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 3,
+      "reviews": 30,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 1,
+      "reviews": 28,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 1,
+      "reviews": 30,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 1,
+      "reviews": 29,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 1,
+      "reviews": 32,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 1,
+      "reviews": 30,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 2,
+      "reviews": 38,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 1,
+      "reviews": 29,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 2,
+      "reviews": 29,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 1,
+      "reviews": 35,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 1,
+      "reviews": 32,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1,
+        ".go": 2
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 1,
+      "reviews": 28,
+      "by_ext": {
+        ".java": 3,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 3,
+      "reviews": 38,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 1,
+      "reviews": 29,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 1,
+      "reviews": 38,
+      "by_ext": {
+        ".java": 2,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 2,
+      "reviews": 28,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 1,
+      "reviews": 36,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 1,
+      "reviews": 37,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 2,
+      "reviews": 41,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 1,
+      "reviews": 30,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 1,
+      "reviews": 30,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 1,
+      "reviews": 38,
+      "by_ext": {
+        ".java": 2,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 2,
+      "reviews": 34,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1,
+        ".go": 1
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 1,
+      "reviews": 30,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 3,
+      "reviews": 39,
+      "by_ext": {
+        ".java": 6,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 2,
+      "reviews": 33,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 1,
+      "reviews": 36,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 2,
+      "reviews": 32,
+      "by_ext": {
+        ".java": 4,
+        ".md": 3
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 2,
+      "reviews": 32,
+      "by_ext": {
+        ".java": 4,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 0,
+      "reviews": 29,
+      "by_ext": {
+        ".java": 2,
+        ".md": 1
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 2,
+      "reviews": 42,
+      "by_ext": {
+        ".java": 6,
+        ".md": 1
+      }
+    }
+  ],
+  "export_scope": {
+    "pull_requests": "Representative merged changes, not a complete event log",
+    "monthly_activity": "All authored merged PRs and submitted reviews since Kestrel hire; excludes other-author merges"
+  },
+  "merge_events": [
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10288,
+      "title": "fix: memoize account selector",
+      "author_login": "console-maintainer-kc",
+      "author_type": "human",
+      "merged_by": "ksubramanian-kc",
+      "merged": "2026-09-18",
+      "merge_method": "squash",
+      "body_excerpt": "Release duty: required checks green, approved by console owners.",
+      "files_ext": {
+        ".tsx": 4
+      }
+    }
+  ]
+}

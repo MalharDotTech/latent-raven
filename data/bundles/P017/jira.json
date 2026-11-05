@@ -1,0 +1,539 @@
+{
+  "exported_on": "2026-10-31",
+  "linked_employee_id": "KC-10717",
+  "issues": [
+    {
+      "key": "BILL-5709",
+      "type": "Bug",
+      "summary": "Retry after unknown result",
+      "description_excerpt": "Two callers mint a new key on timeout. Agreed stable tenant operation key; recon lead revised design after walkthrough.",
+      "component": "architecture",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-07",
+      "resolved": "2025-02-26",
+      "story_points": 3,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-5782",
+      "type": "Task",
+      "summary": "Outbox boundary signoff",
+      "description_excerpt": "Architecture review accepted separate billing commit and recon consumption; shadow replay matched invoice totals.",
+      "component": "architecture",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-03-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-03-06",
+      "resolved": "2025-03-24",
+      "story_points": 2,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-5825",
+      "type": "Task",
+      "summary": "Bound dispatch queue",
+      "description_excerpt": "Rejected unlimited executor proposal. Load run shows bounded memory and explicit overload response.",
+      "component": "architecture",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-04-03",
+      "resolved": "2025-04-21",
+      "story_points": 5,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-5886",
+      "type": "Bug",
+      "summary": "Review clinic followups",
+      "description_excerpt": "Java and Go reviewers now attach a cancellation or overload test to risky concurrency changes. Checked next two reviews from each team.",
+      "component": "architecture",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-05-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-05-07",
+      "resolved": "2025-05-19",
+      "story_points": 1,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-6266",
+      "type": "Task",
+      "summary": "Cross-currency key collision",
+      "description_excerpt": "Credit-note key omitted currency; reviewed equality change and rollback plan.",
+      "component": "architecture",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-04",
+      "resolved": "2026-02-23",
+      "story_points": 3,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-6323",
+      "type": "Task",
+      "summary": "Large tenant query scan",
+      "description_excerpt": "Reviewed EXPLAIN and revised composite index; deployment sample confirms lower p95.",
+      "component": "architecture",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-03-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-03-05",
+      "resolved": "2026-03-30",
+      "story_points": 2,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-6380",
+      "type": "Bug",
+      "summary": "Replay window decision",
+      "description_excerpt": "Finance accepted 24h automatic replay and manual review beyond that; owners signed recovery steps.",
+      "component": "architecture",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-04",
+      "resolved": "2026-04-28",
+      "story_points": 5,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-6448",
+      "type": "Task",
+      "summary": "ADR checklist rollout",
+      "description_excerpt": "Recon and billing leads used failure table in their next component designs; missing recovery owner corrected.",
+      "component": "architecture",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-05-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-05-13",
+      "resolved": "2026-05-19",
+      "story_points": 1,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-6498",
+      "type": "Task",
+      "summary": "Shutdown race repro",
+      "description_excerpt": "Reproduced lost interrupt on shared pool; billing owner applied patch.",
+      "component": "architecture",
+      "priority": "Major",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-08",
+      "resolved": "2026-06-22",
+      "story_points": 3,
+      "labels": [
+        "architecture"
+      ]
+    },
+    {
+      "key": "BILL-6570",
+      "type": "Bug",
+      "summary": "Recovery boundary review",
+      "description_excerpt": "Platform owns IAM implementation; architecture decision separates writer and restore trust paths.",
+      "component": "architecture",
+      "priority": "Minor",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-09"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-09",
+      "resolved": "2026-07-14",
+      "story_points": 2,
+      "labels": [
+        "architecture"
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-01",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2022-02",
+      "resolved_as_assignee": 3,
+      "reported": 4
+    },
+    {
+      "month": "2022-03",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2022-04",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2022-05",
+      "resolved_as_assignee": 2,
+      "reported": 4
+    },
+    {
+      "month": "2022-06",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2022-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 3,
+      "reported": 4
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 3,
+      "reported": 4
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 2,
+      "reported": 3
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 2,
+      "reported": 4
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 3,
+      "reported": 3
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 2,
+      "reported": 4
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 3,
+      "reported": 3
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 2,
+      "reported": 3
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 2,
+      "reported": 4
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 2,
+      "reported": 4
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 4,
+      "reported": 6
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 2,
+      "reported": 3
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 4,
+      "reported": 5
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 4,
+      "reported": 5
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 4,
+      "reported": 5
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 2,
+      "reported": 5
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 3,
+      "reported": 4
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 2,
+      "reported": 4
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 4,
+      "reported": 4
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 3,
+      "reported": 5
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 2,
+      "reported": 3
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 4,
+      "reported": 4
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 1,
+      "reported": 2
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 2,
+      "reported": 6
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 5,
+      "reported": 4
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 3,
+      "reported": 7
+    }
+  ],
+  "export_scope": "Representative issues; monthly_activity covers complete Kestrel tenure. Reporter and assignee counts are separate."
+}

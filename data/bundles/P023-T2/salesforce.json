@@ -1,0 +1,1158 @@
+{
+  "user": "ayesha.khan@kestrelcloud.com",
+  "accounts_owned_as_csm": 29,
+  "opportunities": [
+    {
+      "opp_id": "006000000008838AAA",
+      "record_type": "Onboarding",
+      "account_industry": "NBFC",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 0,
+      "close_date": "2021-09-06",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Kickoff held, plan v2 shared. Cust wants phased go-live by entity."
+    },
+    {
+      "opp_id": "006000000008867AAA",
+      "record_type": "Onboarding",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "<5L INR",
+      "role": "csm",
+      "credit_split_pct": 0,
+      "close_date": "2021-09-15",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Go-live done in 38 days. 3 bank feeds live, first recon run 93% auto matched. Acceptance mail from cust FP&A."
+    },
+    {
+      "opp_id": "006000000009027AAA",
+      "record_type": "Renewal",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 25,
+      "close_date": "2022-02-06",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Renewal moved to 2 yr after pricing review. AE (Arvind) on commercials."
+    },
+    {
+      "opp_id": "006000000009089AAA",
+      "record_type": "Onboarding",
+      "account_industry": "SaaS reseller",
+      "stage": "Closed Won",
+      "amount_band": "5-15L INR",
+      "role": "csm",
+      "credit_split_pct": 0,
+      "close_date": "2022-03-21",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Go-live done in 38 days. 3 bank feeds live, first recon run 93% auto matched. Acceptance mail from cust FP&A."
+    },
+    {
+      "opp_id": "006000000009121AAA",
+      "record_type": "Expansion",
+      "account_industry": "BFSI",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "csm",
+      "credit_split_pct": 10,
+      "close_date": "2022-04-05",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Churn - moved to parent co's ERP module. Exit call done, reason logged."
+    },
+    {
+      "opp_id": "006000000009238AAA",
+      "record_type": "Renewal",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Lost",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 25,
+      "close_date": "2022-07-04",
+      "products": [
+        "Ledger API"
+      ],
+      "notes_excerpt": "Auto renewed. No touch."
+    },
+    {
+      "opp_id": "006000000009282AAA",
+      "record_type": "Renewal",
+      "account_industry": "Logistics",
+      "stage": "Closed Lost",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 10,
+      "close_date": "2022-08-09",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Renewal moved to 2 yr after pricing review. AE (Arvind) on commercials."
+    },
+    {
+      "opp_id": "006000000009812AAA",
+      "record_type": "Onboarding",
+      "account_industry": "Healthcare",
+      "stage": "Closed Won",
+      "amount_band": "<5L INR",
+      "role": "csm",
+      "credit_split_pct": 0,
+      "close_date": "2023-05-25",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Onboarding delayed - cust IT slow on sftp whitelisting. Go-live moved twice. Finally live, sign off received."
+    },
+    {
+      "opp_id": "006000000010071AAA",
+      "record_type": "Onboarding",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "<5L INR",
+      "role": "csm",
+      "credit_split_pct": 0,
+      "close_date": "2023-08-12",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Kickoff held, plan v2 shared. Cust wants phased go-live by entity."
+    },
+    {
+      "opp_id": "006000000010193AAA",
+      "record_type": "Renewal",
+      "account_industry": "SaaS reseller",
+      "stage": "Closed Lost",
+      "amount_band": "<5L INR",
+      "role": "csm",
+      "credit_split_pct": 10,
+      "close_date": "2023-09-18",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Downsell - dropped Analytics Suite, kept Billing."
+    },
+    {
+      "opp_id": "006000000010222AAA",
+      "record_type": "Renewal",
+      "account_industry": "BFSI",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "csm",
+      "credit_split_pct": 10,
+      "close_date": "2023-09-24",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Renewed 12m. Cust asked for quarterly health review, added to calendar."
+    },
+    {
+      "opp_id": "006000000010750AAA",
+      "record_type": "Expansion",
+      "account_industry": "NBFC",
+      "stage": "Closed Lost",
+      "amount_band": "<5L INR",
+      "role": "csm",
+      "credit_split_pct": 25,
+      "close_date": "2024-03-25",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Renewed w/ 8% uplift, cust accepted after recon match-rate report showed 94%."
+    },
+    {
+      "opp_id": "006000000011178AAA",
+      "record_type": "Expansion",
+      "account_industry": "Manufacturing",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 20,
+      "close_date": "2024-08-15",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Renewal at risk - champion left. Mapped new FP&A head, intro call done. Exec sponsor call w/ Sandeep scheduled."
+    },
+    {
+      "opp_id": "006000000011755AAA",
+      "record_type": "Expansion",
+      "account_industry": "EdTech",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 10,
+      "close_date": "2025-04-02",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Renewed 12m. Cust asked for quarterly health review, added to calendar."
+    },
+    {
+      "opp_id": "006000000012127AAA",
+      "record_type": "Onboarding",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 0,
+      "close_date": "2025-08-12",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Kickoff held, plan v2 shared. Cust wants phased go-live by entity."
+    },
+    {
+      "opp_id": "006000000012201AAA",
+      "record_type": "Renewal",
+      "account_industry": "Logistics",
+      "stage": "Closed Won",
+      "amount_band": "5-15L INR",
+      "role": "csm",
+      "credit_split_pct": 20,
+      "close_date": "2025-08-14",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Expansion: 2 more entities. Onboarding plan for new entities shared, UAT week 2."
+    },
+    {
+      "opp_id": "006000000012278AAA",
+      "record_type": "Renewal",
+      "account_industry": "NBFC",
+      "stage": "Closed Won",
+      "amount_band": "5-15L INR",
+      "role": "csm",
+      "credit_split_pct": 20,
+      "close_date": "2025-09-14",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Cust unhappy about webhook delays in Aug. RCA shared by support, credit note issued. Renewed after."
+    },
+    {
+      "opp_id": "006000000012509AAA",
+      "record_type": "Renewal",
+      "account_industry": "Retail",
+      "stage": "Closed Lost",
+      "amount_band": "<5L INR",
+      "role": "csm",
+      "credit_split_pct": 20,
+      "close_date": "2025-11-28",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Cust unhappy about webhook delays in Aug. RCA shared by support, credit note issued. Renewed after."
+    },
+    {
+      "opp_id": "006000000012573AAA",
+      "record_type": "Renewal",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "5-15L INR",
+      "role": "csm",
+      "credit_split_pct": 20,
+      "close_date": "2026-01-01",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Downsell - dropped Analytics Suite, kept Billing."
+    },
+    {
+      "opp_id": "006000000013002AAA",
+      "record_type": "Renewal",
+      "account_industry": "Healthcare",
+      "stage": "Closed Lost",
+      "amount_band": "5-15L INR",
+      "role": "csm",
+      "credit_split_pct": 25,
+      "close_date": "2026-06-04",
+      "products": [
+        "Billing"
+      ],
+      "notes_excerpt": "Downsell - dropped Analytics Suite, kept Billing."
+    },
+    {
+      "opp_id": "006000000013136AAA",
+      "record_type": "Expansion",
+      "account_industry": "Retail",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 10,
+      "close_date": "2026-07-22",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Expansion: 2 more entities. Onboarding plan for new entities shared, UAT week 2."
+    },
+    {
+      "opp_id": "006000000013261AAA",
+      "record_type": "Renewal",
+      "account_industry": "BFSI",
+      "stage": "Closed Won",
+      "amount_band": "15-40L INR",
+      "role": "csm",
+      "credit_split_pct": 20,
+      "close_date": "2026-08-21",
+      "products": [
+        "Billing",
+        "Analytics Suite"
+      ],
+      "notes_excerpt": "Churn - moved to parent co's ERP module. Exit call done, reason logged."
+    },
+    {
+      "opp_id": "006000000013356AAA",
+      "record_type": "Renewal",
+      "account_industry": "BFSI",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "csm",
+      "credit_split_pct": 25,
+      "close_date": "2026-09-25",
+      "products": [
+        "Billing",
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Auto renewed. No touch."
+    },
+    {
+      "opp_id": "006000000013400AAA",
+      "record_type": "Renewal",
+      "account_industry": "EdTech",
+      "stage": "Closed Won",
+      "amount_band": "40-90L INR",
+      "role": "csm",
+      "credit_split_pct": 10,
+      "close_date": "2026-10-08",
+      "products": [
+        "Payments Recon"
+      ],
+      "notes_excerpt": "Expansion: 2 more entities. Onboarding plan for new entities shared, UAT week 2."
+    }
+  ],
+  "activities": [
+    {
+      "activity_id": "00T000000002571EAA",
+      "type": "Meeting",
+      "subject": "UAT sign-off",
+      "date": "2023-01-27",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "UAT sign-off done. 2 open items, non blocking."
+    },
+    {
+      "activity_id": "00T000000002607EAA",
+      "type": "Email",
+      "subject": "Follow up on training",
+      "date": "2023-02-19",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) Sent recording + the quick reference guide"
+    },
+    {
+      "activity_id": "00T000000002634EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2023-03-07",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000002681EAA",
+      "type": "Meeting",
+      "subject": "Exec sponsor call",
+      "date": "2023-03-31",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Sponsor happy w/ progress, asked for roadmap on multi currency"
+    },
+    {
+      "activity_id": "00T000000002720EAA",
+      "type": "Call",
+      "subject": "Check-in w/ finance controller",
+      "date": "2023-04-09",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) Discussed open exceptions queue, 14 items pending > 5 days. Will send how-to on bulk resolve."
+    },
+    {
+      "activity_id": "00T000000002772EAA",
+      "type": "Email",
+      "subject": "Sent QBR deck",
+      "date": "2023-05-10",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "QBR deck sent. Match rate 92.4% (prev 89.1)"
+    },
+    {
+      "activity_id": "00T000000002809EAA",
+      "type": "Email",
+      "subject": "Sent QBR deck",
+      "date": "2023-05-11",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) QBR deck sent. Match rate 92.4% (prev 89.1)"
+    },
+    {
+      "activity_id": "00T000000002875EAA",
+      "type": "Meeting",
+      "subject": "Kickoff - onboarding",
+      "date": "2023-06-11",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) Kickoff done. Attendees: cust FP&A x2, IT x1, Kestrel CSM, SE. Plan v1 shared, go-live target 6 weeks"
+    },
+    {
+      "activity_id": "00T000000002886EAA",
+      "type": "Task",
+      "subject": "Raise INC for cust - webhook failing",
+      "date": "2023-06-15",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "INC raised on behalf of cust, linked to account. Sev2."
+    },
+    {
+      "activity_id": "00T000000002923EAA",
+      "type": "Email",
+      "subject": "Sent QBR deck",
+      "date": "2023-07-10",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) QBR deck sent. Match rate 92.4% (prev 89.1)"
+    },
+    {
+      "activity_id": "00T000000002997EAA",
+      "type": "Meeting",
+      "subject": "Kickoff - onboarding",
+      "date": "2023-08-15",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Kickoff done. Attendees: cust FP&A x2, IT x1, Kestrel CSM, SE. Plan v1 shared, go-live target 6 weeks"
+    },
+    {
+      "activity_id": "00T000000003039EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2023-08-20",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000003090EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2023-09-14",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000003135EAA",
+      "type": "Email",
+      "subject": "Sent QBR deck",
+      "date": "2023-10-17",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "QBR deck sent. Match rate 92.4% (prev 89.1)"
+    },
+    {
+      "activity_id": "00T000000003235EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2023-12-27",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000003280EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2024-01-07",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000003337EAA",
+      "type": "Meeting",
+      "subject": "Kickoff - onboarding",
+      "date": "2024-02-06",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "Kickoff done. Attendees: cust FP&A x2, IT x1, Kestrel CSM, SE. Plan v1 shared, go-live target 6 weeks"
+    },
+    {
+      "activity_id": "00T000000003394EAA",
+      "type": "Meeting",
+      "subject": "Exec sponsor call",
+      "date": "2024-02-29",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) Sponsor happy w/ progress, asked for roadmap on multi currency"
+    },
+    {
+      "activity_id": "00T000000003406EAA",
+      "type": "Meeting",
+      "subject": "Kickoff - onboarding",
+      "date": "2024-03-02",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) Kickoff done. Attendees: cust FP&A x2, IT x1, Kestrel CSM, SE. Plan v1 shared, go-live target 6 weeks"
+    },
+    {
+      "activity_id": "00T000000003484EAA",
+      "type": "Meeting",
+      "subject": "UAT sign-off",
+      "date": "2024-04-22",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) UAT sign-off done. 2 open items, non blocking."
+    },
+    {
+      "activity_id": "00T000000003544EAA",
+      "type": "Meeting",
+      "subject": "UAT sign-off",
+      "date": "2024-06-12",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "UAT sign-off done. 2 open items, non blocking."
+    },
+    {
+      "activity_id": "00T000000003568EAA",
+      "type": "Task",
+      "subject": "Raise INC for cust - webhook failing",
+      "date": "2024-06-21",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "INC raised on behalf of cust, linked to account. Sev2."
+    },
+    {
+      "activity_id": "00T000000003611EAA",
+      "type": "Call",
+      "subject": "Renewal discussion",
+      "date": "2024-07-03",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "Spoke to CFO. Wants 2 year option. Looping AE."
+    },
+    {
+      "activity_id": "00T000000003647EAA",
+      "type": "Meeting",
+      "subject": "Kickoff - onboarding",
+      "date": "2024-08-02",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) Kickoff done. Attendees: cust FP&A x2, IT x1, Kestrel CSM, SE. Plan v1 shared, go-live target 6 weeks"
+    },
+    {
+      "activity_id": "00T000000003670EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2024-08-12",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000003731EAA",
+      "type": "Meeting",
+      "subject": "UAT sign-off",
+      "date": "2024-09-06",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "UAT sign-off done. 2 open items, non blocking."
+    },
+    {
+      "activity_id": "00T000000003781EAA",
+      "type": "Email",
+      "subject": "Follow up on training",
+      "date": "2024-10-11",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Sent recording + the quick reference guide"
+    },
+    {
+      "activity_id": "00T000000003826EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2024-11-02",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000003866EAA",
+      "type": "Email",
+      "subject": "Sent QBR deck",
+      "date": "2024-12-05",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "QBR deck sent. Match rate 92.4% (prev 89.1)"
+    },
+    {
+      "activity_id": "00T000000003936EAA",
+      "type": "Meeting",
+      "subject": "Kickoff - onboarding",
+      "date": "2025-01-22",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "Kickoff done. Attendees: cust FP&A x2, IT x1, Kestrel CSM, SE. Plan v1 shared, go-live target 6 weeks"
+    },
+    {
+      "activity_id": "00T000000003978EAA",
+      "type": "Call",
+      "subject": "Check-in w/ finance controller",
+      "date": "2025-02-06",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Discussed open exceptions queue, 14 items pending > 5 days. Will send how-to on bulk resolve."
+    },
+    {
+      "activity_id": "00T000000004084EAA",
+      "type": "Meeting",
+      "subject": "UAT sign-off",
+      "date": "2025-04-20",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) UAT sign-off done. 2 open items, non blocking."
+    },
+    {
+      "activity_id": "00T000000004093EAA",
+      "type": "Email",
+      "subject": "Sent QBR deck",
+      "date": "2025-04-22",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "QBR deck sent. Match rate 92.4% (prev 89.1)"
+    },
+    {
+      "activity_id": "00T000000004150EAA",
+      "type": "Call",
+      "subject": "Renewal discussion",
+      "date": "2025-05-15",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Spoke to CFO. Wants 2 year option. Looping AE."
+    },
+    {
+      "activity_id": "00T000000004215EAA",
+      "type": "Email",
+      "subject": "Sent QBR deck",
+      "date": "2025-06-09",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "QBR deck sent. Match rate 92.4% (prev 89.1)"
+    },
+    {
+      "activity_id": "00T000000004238EAA",
+      "type": "Call",
+      "subject": "Health check - low logins",
+      "date": "2025-06-13",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Only 2 users logged in last 30d. Training session proposed."
+    },
+    {
+      "activity_id": "00T000000004313EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2025-07-26",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000004372EAA",
+      "type": "Email",
+      "subject": "Sent QBR deck",
+      "date": "2025-09-11",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "QBR deck sent. Match rate 92.4% (prev 89.1)"
+    },
+    {
+      "activity_id": "00T000000004378EAA",
+      "type": "Task",
+      "subject": "Raise INC for cust - webhook failing",
+      "date": "2025-09-14",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "(per Ayesha) INC raised on behalf of cust, linked to account. Sev2."
+    },
+    {
+      "activity_id": "00T000000004436EAA",
+      "type": "Call",
+      "subject": "Health check - low logins",
+      "date": "2025-10-27",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Only 2 users logged in last 30d. Training session proposed."
+    },
+    {
+      "activity_id": "00T000000004466EAA",
+      "type": "Call",
+      "subject": "Renewal discussion",
+      "date": "2025-11-10",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "Spoke to CFO. Wants 2 year option. Looping AE."
+    },
+    {
+      "activity_id": "00T000000004522EAA",
+      "type": "Task",
+      "subject": "Raise INC for cust - webhook failing",
+      "date": "2025-12-02",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "INC raised on behalf of cust, linked to account. Sev2."
+    },
+    {
+      "activity_id": "00T000000004591EAA",
+      "type": "Email",
+      "subject": "Follow up on training",
+      "date": "2026-01-18",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "Sent recording + the quick reference guide"
+    },
+    {
+      "activity_id": "00T000000004632EAA",
+      "type": "Meeting",
+      "subject": "Exec sponsor call",
+      "date": "2026-02-22",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Sponsor happy w/ progress, asked for roadmap on multi currency"
+    },
+    {
+      "activity_id": "00T000000004689EAA",
+      "type": "Meeting",
+      "subject": "Kickoff - onboarding",
+      "date": "2026-04-06",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Kickoff done. Attendees: cust FP&A x2, IT x1, Kestrel CSM, SE. Plan v1 shared, go-live target 6 weeks"
+    },
+    {
+      "activity_id": "00T000000004761EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2026-06-03",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000004804EAA",
+      "type": "Call",
+      "subject": "Escalation - delayed statement import",
+      "date": "2026-06-30",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Cust upset. Took notes, escalated to support lead, updates every 4 hrs till resolved."
+    },
+    {
+      "activity_id": "00T000000004876EAA",
+      "type": "Call",
+      "subject": "Check-in w/ finance controller",
+      "date": "2026-08-08",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Discussed open exceptions queue, 14 items pending > 5 days. Will send how-to on bulk resolve."
+    },
+    {
+      "activity_id": "00T000000004908EAA",
+      "type": "Email",
+      "subject": "Follow up on training",
+      "date": "2026-08-08",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Sent recording + the quick reference guide"
+    },
+    {
+      "activity_id": "00T000000004942EAA",
+      "type": "Meeting",
+      "subject": "UAT sign-off",
+      "date": "2026-09-05",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "UAT sign-off done. 2 open items, non blocking."
+    },
+    {
+      "activity_id": "00T000000005001EAA",
+      "type": "Meeting",
+      "subject": "UAT sign-off",
+      "date": "2026-10-15",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Neelam Joshi",
+      "created_by_title": "CS Ops Coordinator",
+      "description_excerpt": "UAT sign-off done. 2 open items, non blocking."
+    },
+    {
+      "activity_id": "00T000000005045EAA",
+      "type": "Call",
+      "subject": "Check-in w/ finance controller",
+      "date": "2026-10-28",
+      "assigned_to": "Ayesha Khan",
+      "created_by": "Ayesha Khan",
+      "created_by_title": "Customer Success Manager",
+      "description_excerpt": "Discussed open exceptions queue, 14 items pending > 5 days. Will send how-to on bulk resolve."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2021-09",
+      "activities_total": 0,
+      "activities_created_by_user": 0,
+      "opps_closed": 2
+    },
+    {
+      "month": "2022-02",
+      "activities_total": 0,
+      "activities_created_by_user": 0,
+      "opps_closed": 1
+    },
+    {
+      "month": "2022-03",
+      "activities_total": 0,
+      "activities_created_by_user": 0,
+      "opps_closed": 1
+    },
+    {
+      "month": "2022-04",
+      "activities_total": 0,
+      "activities_created_by_user": 0,
+      "opps_closed": 1
+    },
+    {
+      "month": "2022-07",
+      "activities_total": 0,
+      "activities_created_by_user": 0,
+      "opps_closed": 1
+    },
+    {
+      "month": "2022-08",
+      "activities_total": 0,
+      "activities_created_by_user": 0,
+      "opps_closed": 1
+    },
+    {
+      "month": "2023-01",
+      "activities_total": 33,
+      "activities_created_by_user": 9
+    },
+    {
+      "month": "2023-02",
+      "activities_total": 20,
+      "activities_created_by_user": 9
+    },
+    {
+      "month": "2023-03",
+      "activities_total": 31,
+      "activities_created_by_user": 9
+    },
+    {
+      "month": "2023-04",
+      "activities_total": 22,
+      "activities_created_by_user": 8
+    },
+    {
+      "month": "2023-05",
+      "activities_total": 21,
+      "activities_created_by_user": 6,
+      "opps_closed": 1
+    },
+    {
+      "month": "2023-06",
+      "activities_total": 24,
+      "activities_created_by_user": 11
+    },
+    {
+      "month": "2023-07",
+      "activities_total": 20,
+      "activities_created_by_user": 7
+    },
+    {
+      "month": "2023-08",
+      "activities_total": 27,
+      "activities_created_by_user": 7,
+      "opps_closed": 1
+    },
+    {
+      "month": "2023-09",
+      "activities_total": 25,
+      "activities_created_by_user": 12,
+      "opps_closed": 2
+    },
+    {
+      "month": "2023-10",
+      "activities_total": 39,
+      "activities_created_by_user": 5
+    },
+    {
+      "month": "2023-11",
+      "activities_total": 16,
+      "activities_created_by_user": 4
+    },
+    {
+      "month": "2023-12",
+      "activities_total": 44,
+      "activities_created_by_user": 10
+    },
+    {
+      "month": "2024-01",
+      "activities_total": 24,
+      "activities_created_by_user": 12
+    },
+    {
+      "month": "2024-02",
+      "activities_total": 38,
+      "activities_created_by_user": 14
+    },
+    {
+      "month": "2024-03",
+      "activities_total": 25,
+      "activities_created_by_user": 11,
+      "opps_closed": 1
+    },
+    {
+      "month": "2024-04",
+      "activities_total": 39,
+      "activities_created_by_user": 14
+    },
+    {
+      "month": "2024-05",
+      "activities_total": 26,
+      "activities_created_by_user": 8
+    },
+    {
+      "month": "2024-06",
+      "activities_total": 37,
+      "activities_created_by_user": 5
+    },
+    {
+      "month": "2024-07",
+      "activities_total": 35,
+      "activities_created_by_user": 6
+    },
+    {
+      "month": "2024-08",
+      "activities_total": 35,
+      "activities_created_by_user": 13,
+      "opps_closed": 1
+    },
+    {
+      "month": "2024-09",
+      "activities_total": 28,
+      "activities_created_by_user": 10
+    },
+    {
+      "month": "2024-10",
+      "activities_total": 49,
+      "activities_created_by_user": 16
+    },
+    {
+      "month": "2024-11",
+      "activities_total": 17,
+      "activities_created_by_user": 4
+    },
+    {
+      "month": "2024-12",
+      "activities_total": 30,
+      "activities_created_by_user": 11
+    },
+    {
+      "month": "2025-01",
+      "activities_total": 32,
+      "activities_created_by_user": 5
+    },
+    {
+      "month": "2025-02",
+      "activities_total": 46,
+      "activities_created_by_user": 6
+    },
+    {
+      "month": "2025-03",
+      "activities_total": 41,
+      "activities_created_by_user": 15
+    },
+    {
+      "month": "2025-04",
+      "activities_total": 30,
+      "activities_created_by_user": 10,
+      "opps_closed": 1
+    },
+    {
+      "month": "2025-05",
+      "activities_total": 22,
+      "activities_created_by_user": 14
+    },
+    {
+      "month": "2025-06",
+      "activities_total": 47,
+      "activities_created_by_user": 16
+    },
+    {
+      "month": "2025-07",
+      "activities_total": 24,
+      "activities_created_by_user": 18
+    },
+    {
+      "month": "2025-08",
+      "activities_total": 29,
+      "activities_created_by_user": 14,
+      "opps_closed": 2
+    },
+    {
+      "month": "2025-09",
+      "activities_total": 23,
+      "activities_created_by_user": 6,
+      "opps_closed": 1
+    },
+    {
+      "month": "2025-10",
+      "activities_total": 19,
+      "activities_created_by_user": 12
+    },
+    {
+      "month": "2025-11",
+      "activities_total": 31,
+      "activities_created_by_user": 5,
+      "opps_closed": 1
+    },
+    {
+      "month": "2025-12",
+      "activities_total": 36,
+      "activities_created_by_user": 13
+    },
+    {
+      "month": "2026-01",
+      "activities_total": 26,
+      "activities_created_by_user": 9,
+      "opps_closed": 1
+    },
+    {
+      "month": "2026-02",
+      "activities_total": 18,
+      "activities_created_by_user": 16
+    },
+    {
+      "month": "2026-03",
+      "activities_total": 38,
+      "activities_created_by_user": 6
+    },
+    {
+      "month": "2026-04",
+      "activities_total": 25,
+      "activities_created_by_user": 16
+    },
+    {
+      "month": "2026-05",
+      "activities_total": 27,
+      "activities_created_by_user": 12
+    },
+    {
+      "month": "2026-06",
+      "activities_total": 50,
+      "activities_created_by_user": 11,
+      "opps_closed": 1
+    },
+    {
+      "month": "2026-07",
+      "activities_total": 22,
+      "activities_created_by_user": 6,
+      "opps_closed": 1
+    },
+    {
+      "month": "2026-08",
+      "activities_total": 39,
+      "activities_created_by_user": 7,
+      "opps_closed": 1
+    },
+    {
+      "month": "2026-09",
+      "activities_total": 27,
+      "activities_created_by_user": 10,
+      "opps_closed": 1
+    },
+    {
+      "month": "2026-10",
+      "activities_total": 36,
+      "activities_created_by_user": 14,
+      "opps_closed": 1
+    }
+  ]
+}

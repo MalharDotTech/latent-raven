@@ -1,0 +1,306 @@
+{
+ "pid": "P003",
+ "schema": "truth-v2",
+ "summary": "Solid L2 support engineer who lives in ServiceNow and the ops console. Kubernetes appears in his CV and self profile from a 2019 beginner Udemy course and a minikube lab; every real cluster problem at Kestrel is passed to Platform SRE.",
+ "archetype": "listed_only_stale_course",
+ "batch": "A",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "servicenow",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "snow_arjun.nair: owns Recon queue tickets 2022-2026 (resolved_by_self most months) and RITM assignment-rule change drafted in sub-prod, tested on 6 tickets, promoted via update set (2024-10) plus form-choice RITM (2025-04); certs_KC-11042 CSA verified (2024-09). Work at level 3 in 3+ months + verified cert.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "snow:records",
+    "snow:RITM assignment rule",
+    "certs:CSA verified"
+   ],
+   "why": "Queue owner for the recon queue; drafted and tested an assignment rule change through sub-prod; CSA verified"
+  },
+  {
+   "skill_id": "incident_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "snow_arjun.nair: High/Critical INCs handled across 2023-2026 (recon worker restart per RB-114, ledger sync delay, P1 2024-08 'comms owner, updates every 30 min', PIR follow-up); jira_arjun.nair PLAT PIR-action tickets reported; lms 'Escalation and Major Incident Communication'. Floor 2 (work 3+ months), ceiling 3 (P1 comms role) -> 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-08",
+   "evidence_refs": [
+    "snow:P1 bridge Aug 2024",
+    "lms:Escalation and Major Incident Communication",
+    "jira:PIR action"
+   ],
+   "why": "Acts as comms owner in major incidents and pushes PIR actions"
+  },
+  {
+   "skill_id": "linux",
+   "has_skill": 2,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "tara_KC-11042 Linux Fundamentals 61% 'Intermediate' (2025-10) supports only a level-1 floor (test alone); cv_2021_12 'commands, log reading, cron' and hcm self 2 are self-stated; snow_arjun.nair has one SFTP authorized-keys fix. No Linux work records to pin level 2.",
+    "missing_source": "change tickets / runbook steps with command output"
+   },
+   "last_used": "2025-10",
+   "evidence_refs": [
+    "tara:linux",
+    "cv_v1:Technical Skills"
+   ],
+   "why": "Reads logs and runs commands; ops console does the rest; Tara intermediate"
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2021_12 'SQL queries (select, join, group by)', lms 'SQL Essential Training' (2023), hcm self 2. No query artefacts in any work system.",
+    "missing_source": "reviewed query / analysis output"
+   },
+   "last_used": "2024-06",
+   "evidence_refs": [
+    "lms:SQL Essential Training",
+    "doc:ENG-recon-mismatch-triage-l2"
+   ],
+   "why": "Read-only queries on support replica for counts; no sql in work systems"
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "doc_ENG-recon-mismatch-triage-l2: authored L2 checklist (2025-03, edited 2026-02, contributor Sandeep Kulkarni, 188 views); hcm_KC-11042 'Support runbook refresh' contributor allocation 2025. Authored + organisation groups at level 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-02",
+   "evidence_refs": [
+    "doc:ENG-recon-mismatch-triage-l2"
+   ],
+   "why": "Useful triage checklist reviewed by a colleague"
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only incidental CSM routing in snow_arjun.nair resolution notes; no stakeholder plan or decision record; not claimed in cv or hcm.",
+    "missing_source": "decision records / stakeholder action log"
+   },
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "snow:RITM + CSM approvals"
+   ],
+   "why": "Customer and CSM coordination as a normal part of tickets"
+  },
+  {
+   "skill_id": "kubernetes",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2021_12 lists Kubernetes + 2019 Udemy course + minikube lab; hcm self 2 (2024). snow_arjun.nair cluster INCs say 'Not in my access' / Platform SRE took over; 'rollout restart via ops console' is a runbook button. Listed + stale course only.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Kubernetes",
+    "snow:Platform SRE reassignments"
+   ],
+   "why": "Never operates workloads; rollout restart is done by clicking a runbook action in the ops console; clusters belong to SRE"
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2021_12 'Docker' and the 2019 beginner course only.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Skills"
+   ],
+   "why": "Only the same 2019 beginner course"
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Kubernetes (pods, deployments, troubleshooting)",
+   "mapped_skill_id": "kubernetes",
+   "has_skill": false,
+   "why": "2019 beginner course and a minikube lab; runbook wording 'rollout restart' is an ops console button",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2021_12 + 2019 course + hcm self 2; work records contradict.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Docker",
+   "mapped_skill_id": "docker",
+   "has_skill": false,
+   "why": "same 2019 course, no use since",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2021_12 + 2019 course only.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "AWS (EC2, S3 console)",
+   "mapped_skill_id": "aws",
+   "has_skill": false,
+   "why": "console familiarity from a previous job; nothing here",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2021_12 'AWS (EC2, S3 console)' only.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F01",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "kubernetes",
+   "plant": "CV lists Kubernetes (pods, deployments, troubleshooting) and a 2019 Udemy course; HCM self level 2 added in 2024.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "kubernetes",
+   "plant": "Only course is dated 2019 and the CV minikube lab was self learning before joining.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "kubernetes",
+   "plant": "Resolution notes say 'rollout restart' of recon-worker deployment via ops console; looks like kubectl use but is a runbook button.",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "INC 'rollout restart via ops console per RB-114' must not be extracted as Kubernetes work (runbook button).",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F17",
+   "s11_row": "not_really_held",
+   "skill_id": "servicenow",
+   "plant": "Several resolution notes are reused boilerplate; volume is real but the templated rows add no depth. The RITM and CSA are the real depth signals.",
+   "expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F14",
+   "s11_row": "wrong_person",
+   "skill_id": "incident_management",
+   "plant": "Tickets with 2 reassignments where final assignee did little (resolved_by_self false) sit beside his own.",
+   "expected_engine_behavior": "send_at_level_2",
+   "evidence_expectation": "Reassigned INCs with resolved_by_self false (e.g. Platform SRE takeovers) must not be credited as his incident work.",
+   "v1_expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "ITIL 4 service management"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.75,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Honest when asked directly about Kubernetes: 'I just did a course and a lab'; may say yes if the prompt is framed as 'troubleshooting pods'"
+ },
+ "messaging_allowed": true
+}

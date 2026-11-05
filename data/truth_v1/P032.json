@@ -1,0 +1,154 @@
+{
+ "pid": "P032",
+ "summary": "Finance analyst maintains a genuine linked planning model and uses basic SQL with help. The requested evaluation excludes generic office work, leaving little sendable evidence.",
+ "archetype": "finance_coverage",
+ "batch": "F",
+ "generator": "codex gpt-6.1-terra",
+ "skills": [
+  {
+   "skill_id": "excel_modeling",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": 3,
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast",
+    "lms:Advanced Excel for Finance Teams"
+   ],
+   "why": "The private and authored workbook process includes linked assumptions, scenarios and reconciled outputs."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": 2,
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast",
+    "docs:cost-centre-mapping-changes",
+    "lms:SQL for Finance"
+   ],
+   "why": "Adjusts filters only with review and reconciles results."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": 2,
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast",
+    "docs:headcount-plan-inputs"
+   ],
+   "why": "Collects inputs and follows up with department owners."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": 2,
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast",
+    "docs:variance-commentary-guide"
+   ],
+   "why": "Documents a reproducible monthly process."
+  },
+  {
+   "skill_id": "agile_delivery",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    1,
+    1,
+    2
+   ],
+   "assessed_level": 1,
+   "last_used": "2022-07",
+   "evidence_refs": [
+    "lms:Planning Cycle Basics"
+   ],
+   "why": "Understands planning cadence but does not manage delivery."
+  },
+  {
+   "skill_id": "data_modeling",
+   "has_skill": false,
+   "true_level": null,
+   "self_perceived_level": null,
+   "would_accept_levels": [],
+   "assessed_level": null,
+   "last_used": "2026-07",
+   "evidence_refs": [
+    "docs:finance-forecast"
+   ],
+   "why": "Spreadsheet modelling does not establish data warehouse modelling."
+  },
+  {
+   "skill_id": "python",
+   "has_skill": false,
+   "true_level": null,
+   "self_perceived_level": null,
+   "would_accept_levels": [],
+   "assessed_level": null,
+   "last_used": "2026-07",
+   "evidence_refs": [],
+   "why": "No Python work or training. Scoping assumption only."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Data modeling",
+   "mapped_skill_id": "data_modeling",
+   "has_skill": false,
+   "why": "Financial forecast formulas are not data model design."
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F06",
+   "s11_row": "invented",
+   "skill_id": "excel_modeling",
+   "plant": "CV has a generic Office list and declaration; the separate model record has greater detail.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F28",
+   "s11_row": "skill_decay",
+   "skill_id": "agile_delivery",
+   "plant": "Old planning orientation is not evidence of current delivery practice.",
+   "expected_engine_behavior": "hold"
+  }
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.65,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Would distinguish spreadsheet planning from technical data engineering."
+ },
+ "messaging_allowed": true
+}

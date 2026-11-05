@@ -1,0 +1,34 @@
+{
+  "assessments": [
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Java Programming (Intermediate)",
+      "skill_text": "Java",
+      "date": "2026-03-12",
+      "raw_score_pct": 38,
+      "percentile": 22,
+      "vendor_proficiency_label": "Beginner",
+      "proctoring_flags": []
+    },
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "Performance Testing Concepts",
+      "skill_text": "Performance testing",
+      "date": "2026-03-12",
+      "raw_score_pct": 79,
+      "percentile": 81,
+      "vendor_proficiency_label": "Advanced",
+      "proctoring_flags": []
+    },
+    {
+      "vendor": "iMocha Tara",
+      "assessment_name": "JavaScript (Basic)",
+      "skill_text": "JavaScript",
+      "date": "2026-03-13",
+      "raw_score_pct": 61,
+      "percentile": 52,
+      "vendor_proficiency_label": "Intermediate",
+      "proctoring_flags": []
+    }
+  ]
+}

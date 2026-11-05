@@ -1,0 +1,44 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel New Joiner Bootcamp (Engineering)",
+      "provider": "Kestrel Learn",
+      "completed": "2025-09-26",
+      "time_spent_minutes": 2200,
+      "quiz_score_pct": 78,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-08-29",
+      "time_spent_minutes": 35,
+      "quiz_score_pct": 90,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2025-09-05",
+      "time_spent_minutes": 28,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Git: Branches, Merges, and Remotes",
+      "provider": "LinkedIn Learning",
+      "completed": "2025-10-14",
+      "time_spent_minutes": 185,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "Docker and Kubernetes for beginners",
+      "provider": "Udemy",
+      "completed": "2026-02-20",
+      "time_spent_minutes": 44,
+      "quiz_score_pct": null,
+      "assigned_by": "self"
+    }
+  ]
+}

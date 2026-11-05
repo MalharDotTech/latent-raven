@@ -1,0 +1,226 @@
+{
+  "summary": "Faizal is a capable production SRE, not an operator developer. His release rota adds bot and colleague merges to the legacy activity total, and a late ticket handoff makes a Go change look personally delivered.",
+  "archetype": "SRE with bot-inflated merger metrics",
+  "skills": [
+    {
+      "skill_id": "kubernetes",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#8015",
+        "docs/ENG-3012.md",
+        "certs:CKA"
+      ],
+      "why": "Repeated repaired rollouts and incident checks support independent operation; one drill does not establish organisation-wide leadership.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "terraform",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#8004",
+        "github:#8008",
+        "github:#8012"
+      ],
+      "why": "Lock recovery, safe address moves and drift repairs establish module ownership.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "aws",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#8001",
+        "github:#8007"
+      ],
+      "why": "EBS and role-access incidents include implemented operational corrections.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "linux",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#8005",
+        "github:#8009"
+      ],
+      "why": "Disk diagnosis and checked filesystem changes demonstrate service operations.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "observability",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#8006",
+        "github:#8014"
+      ],
+      "why": "He adjusts alerts using incident causes and tests their lifecycle.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "cicd",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#8011",
+        "github:#8016"
+      ],
+      "why": "Readiness gates and retained failure logs establish pipeline maintenance.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "docker",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#8013"
+      ],
+      "why": "Packaging failure was diagnosed, corrected and checked through a live TLS probe.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2025-09"
+    },
+    {
+      "skill_id": "incident_management",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/ENG-3012.md",
+        "jira:PLAT-8515"
+      ],
+      "why": "Recovered the blocked maintenance sequence and completed its corrective action.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-06"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:reviews_given"
+      ],
+      "why": "State replacement and disruption-budget review comments caused concrete fixes.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10"
+    },
+    {
+      "skill_id": "go",
+      "has_skill": false,
+      "evidence_refs": [
+        "github:#8803",
+        "jira:PLAT-6288"
+      ],
+      "why": "Private calibration confirms no assessed Go understanding; release files and merged bundles belong to maintainers.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Go",
+      "mapped_skill_id": "go",
+      "has_skill": false,
+      "why": "Generated release content includes Go; merger identity and Kubernetes certification do not establish language ability."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F10",
+      "s11_row": "wrong_person",
+      "skill_id": "go",
+      "plant": "Dependency and generated release rows name bot authors while the linked employee performs merges.",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F12",
+      "s11_row": "level_off",
+      "skill_id": "kubernetes",
+      "plant": "Legacy merged_prs includes other authors and bots; CV repeats that dashboard total. Rate individual capability from operational changes instead.",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F14",
+      "s11_row": "wrong_person",
+      "skill_id": "go",
+      "plant": "PLAT-6288 hands off twice before Faizal takes release closure; implementation comment is from operator-maintainer.",
+      "expected_engine_behavior": "not_extract"
+    },
+    {
+      "fault_id": "F25",
+      "s11_row": "wrong_mapping",
+      "skill_id": "go",
+      "plant": "Valid CKA plus generated operator files can tempt transitive language inference; neither is a Go demonstration.",
+      "expected_engine_behavior": "not_extract"
+    }
+  ],
+  "pid": "P008",
+  "batch": "B",
+  "generator": "codex gpt-6.1-sol",
+  "answer_behavior": {
+    "reply_probability": 0.87,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers plainly; corrects any claim that he wrote the operator patch."
+  },
+  "messaging_allowed": true
+}

@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Real people data - never commit
+sample real employee data /
+data/real/
+.DS_Store
+pilot.db
+data/cache/
+runs/
+
+# iMocha interview material - local only
+docs/skill-proficiency-inference-engineering-plan.md
+docs/getting-skills-right-the-plan.md
+.logs/*.jsonl

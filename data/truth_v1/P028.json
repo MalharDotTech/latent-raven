@@ -1,0 +1,220 @@
+{
+  "pid": "P028",
+  "summary": "Overconfident backend engineer whose ordinary guided work is masked by an expansive profile. The assessment is consistent with bounded work, not the leadership implied by self-ratings.",
+  "archetype": "overclaimer",
+  "batch": "F",
+  "generator": "codex gpt-6.1-terra",
+  "skills": [
+    {
+      "skill_id": "java",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "assessments:Java coding assessment",
+        "github:#2662"
+      ],
+      "why": "Guided endpoint work and the exercise support bounded delivery."
+    },
+    {
+      "skill_id": "spring_boot",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "assessments:Spring Boot assessment"
+      ],
+      "why": "Configuration still requires review and prompts."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "jira:BILL-3105"
+      ],
+      "why": "Works with reviewed billing queries."
+    },
+    {
+      "skill_id": "api_testing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:#3334"
+      ],
+      "why": "Adds API regression cases with review."
+    },
+    {
+      "skill_id": "agile_delivery",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "jira:BILL-3102"
+      ],
+      "why": "Participates in scoped sprint tasks."
+    },
+    {
+      "skill_id": "security_fundamentals",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 1,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "lms:Secure Coding"
+      ],
+      "why": "Understands basic secure coding from training."
+    },
+    {
+      "skill_id": "kubernetes",
+      "has_skill": false,
+      "true_level": null,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessed_level": null,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "lms:Kubernetes Orientation",
+        "assessments:Kubernetes fundamentals"
+      ],
+      "why": "Only a brief orientation and a self claim."
+    },
+    {
+      "skill_id": "llm_engineering",
+      "has_skill": false,
+      "true_level": null,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessed_level": null,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "cv_v1:Technical skills"
+      ],
+      "why": "No practical work despite profile claims."
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Kubernetes",
+      "mapped_skill_id": "kubernetes",
+      "has_skill": false,
+      "why": "Orientation completion was perfunctory."
+    },
+    {
+      "skill_text": "LLM engineering",
+      "mapped_skill_id": "llm_engineering",
+      "has_skill": false,
+      "why": "Only a keyword."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F04",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "llm_engineering",
+      "plant": "Generic promotional CV and broad tool inventory.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F05",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "llm_engineering",
+      "plant": "Dense skills list lacks supporting work.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F29",
+      "s11_row": "level_off",
+      "skill_id": "java",
+      "plant": "Workday ratings all four; assessment shows guided performance.",
+      "expected_engine_behavior": "send_at_level_2"
+    },
+    {
+      "fault_id": "F32",
+      "s11_row": "message_misread",
+      "skill_id": "java",
+      "plant": "Simulated affirmative responses regardless of actual fit.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F26",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "kubernetes",
+      "plant": "Three-minute orientation was marked complete.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F14",
+      "s11_row": "wrong_person",
+      "skill_id": "java",
+      "plant": "First billing issue (BILL-1491) was implemented by an earlier assignee; the listed ticket history shows reassignment before closure.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.95,
+    "yes_to_everything": true,
+    "flattery_bias": 1,
+    "notes": "Says yes even to skills never held."
+  },
+  "messaging_allowed": true
+}

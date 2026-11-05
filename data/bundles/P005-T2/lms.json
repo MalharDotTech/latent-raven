@@ -1,0 +1,44 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Information Security Awareness 2023",
+      "provider": "Kestrel Learn",
+      "completed": "2023-09-25",
+      "time_spent_minutes": 41,
+      "quiz_score_pct": 95,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Prevention of Sexual Harassment (POSH)",
+      "provider": "Kestrel Learn",
+      "completed": "2023-10-06",
+      "time_spent_minutes": 33,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Docker Fundamentals for Developers (path)",
+      "provider": "Pluralsight",
+      "completed": "2023-11-17",
+      "time_spent_minutes": 215,
+      "quiz_score_pct": null,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Oncall Training for Service Owners",
+      "provider": "Kestrel Learn",
+      "completed": "2024-03-12",
+      "time_spent_minutes": 180,
+      "quiz_score_pct": 87,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Information Security Awareness 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-03-12",
+      "time_spent_minutes": 39,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    }
+  ]
+}

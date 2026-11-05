@@ -1,0 +1,229 @@
+{
+  "summary": "Tom is a productive Berlin SRE who can teach recovery and alert practices as well as operate the stack. The employee outreach purpose has no EU opt-in, so accurate skill inference must still result in no message. His old Java ability has decayed and the Azure keyword never reflected usable experience.",
+  "archetype": "Strong EU SRE without outreach opt-in",
+  "skills": [
+    {
+      "skill_id": "kubernetes",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:PLAT-3107",
+        "github:review platform-k8s#8401",
+        "docs/ENG-521"
+      ],
+      "why": "Another rotation completes recovery drills using his corrected procedures.",
+      "true_level": 4,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "terraform",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#2102",
+        "github:review infra-live#8402",
+        "docs/ENG-521"
+      ],
+      "why": "Rehearsed state procedures become a team change template after his review.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "observability",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review platform-k8s#8403",
+        "jira:PLAT-3112"
+      ],
+      "why": "Other teams adopt the alert method and record fewer duplicate pages.",
+      "true_level": 4,
+      "self_perceived_level": 4,
+      "would_accept_levels": [
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "aws",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#2104",
+        "jira:PLAT-3103"
+      ],
+      "why": "Independently repairs recovery access and validates restored data.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "linux",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:PLAT-3102",
+        "jira:PLAT-3108"
+      ],
+      "why": "Diagnoses host networking and disk faults with concrete recovery checks.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:#2105",
+        "github:#2114",
+        "jira:PLAT-3110"
+      ],
+      "why": "Maintains the production restore checker and fixes false success paths.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "incident_management",
+      "has_skill": true,
+      "evidence_refs": [
+        "jira:PLAT-3102",
+        "jira:PLAT-3108",
+        "lms:internal: Kestrel EU Incident Commander Drill"
+      ],
+      "why": "Privately owns coordination of the EU incident rota; visible recovery timelines and completed follow-ups support independent response.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "evidence_refs": [
+        "docs/ENG-521",
+        "jira:PLAT-3107"
+      ],
+      "why": "A different rotation executes his recovery procedure and reports a concrete correction.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "evidence_refs": [
+        "github:review infra-live#8402",
+        "github:review platform-k8s#8401"
+      ],
+      "why": "Catches unsafe infrastructure changes; general reviewer coaching is not established.",
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "last_used": "2026-09"
+    },
+    {
+      "skill_id": "java",
+      "has_skill": true,
+      "evidence_refs": [
+        "cv_v1:Earlier and tools"
+      ],
+      "why": "Last used on the former employer’s services in January 2023. Private current exercise confirms concepts but he cannot complete a service change without substantial retraining.",
+      "true_level": 1,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "last_used": "2023-01"
+    },
+    {
+      "skill_id": "azure",
+      "has_skill": false,
+      "evidence_refs": [
+        "cv_v1:Tools"
+      ],
+      "why": "A copied skill-list keyword remained from job-search notes; no usable Azure knowledge or delivery exists.",
+      "would_accept_levels": []
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Azure",
+      "mapped_skill_id": "azure",
+      "has_skill": false,
+      "why": "A single CV keyword is the entire visible basis and is false in private calibration."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": null,
+      "s11_row": "consent",
+      "skill_id": null,
+      "plant": "Berlin location and DE country coincide with an explicit false EU opt-in for employee skill outreach in HCM.",
+      "expected_engine_behavior": "do_not_message",
+      "roster_case": "eu_opt_in_absent",
+      "catalog_note": "Consent is covered by section 4 of the nuance document and the roster, not by any F01-F36 row."
+    },
+    {
+      "fault_id": "F28",
+      "s11_row": "skill_decay",
+      "skill_id": "java",
+      "plant": "CV confines Java to the pre-Kestrel job; current platform work has no Java implementation.",
+      "expected_engine_behavior": "do_not_message",
+      "inference_behavior": "hold_current_java_delivery_claim"
+    },
+    {
+      "fault_id": "F01",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "azure",
+      "plant": "Azure appears in the CV list without work, course or assessment support.",
+      "expected_engine_behavior": "do_not_message",
+      "inference_behavior": "not_extract"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "No outreach permitted. A later authorised assessment could confirm operational skills; hypothetical willingness does not override consent."
+  },
+  "pid": "P021",
+  "batch": "D",
+  "generator": "codex (GPT-6; runtime submodel not exposed)",
+  "messaging_allowed": false
+}

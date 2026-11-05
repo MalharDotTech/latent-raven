@@ -1,0 +1,39 @@
+{
+  "person_ref": "P014-T2",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-10896",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_2024_02",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P014",
+      "received": "2024-02-12"
+    },
+    {
+      "source_id": "gh_fsheikh_kestrel",
+      "source_type": "github",
+      "path": "github.json"
+    },
+    {
+      "source_id": "jira_fsheikh",
+      "source_type": "jira",
+      "path": "jira.json"
+    },
+    {
+      "source_id": "lms_P014",
+      "source_type": "lms",
+      "path": "lms.json"
+    },
+    {
+      "source_id": "doc_ENG_mobile_release",
+      "source_type": "authored_doc",
+      "path": "docs/ENG-4412.md"
+    }
+  ]
+}

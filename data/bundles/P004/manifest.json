@@ -1,0 +1,54 @@
+{
+  "person_ref": "P004",
+  "customer": "kestrel-cloud",
+  "as_of": "2026-10-31",
+  "sources": [
+    {
+      "source_id": "hcm_KC-10047",
+      "source_type": "hcm",
+      "path": "hcm.json"
+    },
+    {
+      "source_id": "cv_2025_03",
+      "source_type": "cv",
+      "path": "cv_v1.md",
+      "lineage_key": "cv-P004",
+      "received": "2025-03-21"
+    },
+    {
+      "source_id": "gh_vreddy-kc",
+      "source_type": "github",
+      "path": "github.json"
+    },
+    {
+      "source_id": "jira_vikram.reddy",
+      "source_type": "jira",
+      "path": "jira.json"
+    },
+    {
+      "source_id": "certs_KC-10047",
+      "source_type": "certs",
+      "path": "certs.json"
+    },
+    {
+      "source_id": "lms_KC-10047",
+      "source_type": "lms",
+      "path": "lms.json"
+    },
+    {
+      "source_id": "doc_ARCH-adr-014-invoice-numbering",
+      "source_type": "authored_doc",
+      "path": "docs/ARCH-adr-014-invoice-numbering.md"
+    },
+    {
+      "source_id": "doc_ARCH-billing-core-modular-boundaries",
+      "source_type": "authored_doc",
+      "path": "docs/ARCH-billing-core-modular-boundaries.md"
+    },
+    {
+      "source_id": "doc_PEOPLE-backend-hiring-loop",
+      "source_type": "authored_doc",
+      "path": "docs/PEOPLE-backend-hiring-loop.md"
+    }
+  ]
+}

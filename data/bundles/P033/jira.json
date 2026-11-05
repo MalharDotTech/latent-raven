@@ -1,0 +1,1128 @@
+{
+  "linked_employee_id": "KC-11682",
+  "issues": [
+    {
+      "key": "BILL-4634",
+      "type": "Task",
+      "summary": "Blank reason accepted on adjustment",
+      "description_excerpt": "POST /adjustments accepts reason=\"   \". We end up with a credit note nobody can explain in the audit view.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-11-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2022-11-24",
+      "resolved": "2022-12-09",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 76",
+        "start": "2022-11-21",
+        "end": "2022-12-02"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2022-12-09",
+          "body": "Integration checks cover a blank and a whitespace-only request."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/6446"
+        }
+      ]
+    },
+    {
+      "key": "BILL-4773",
+      "type": "Story",
+      "summary": "Refund lookup missing tenant filter",
+      "description_excerpt": "Using another tenant invoice number in refund lookup returns its amount. Query needs to stay inside the requesting tenant.",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-03-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-03-13",
+      "resolved": "2023-03-30",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 84",
+        "start": "2023-03-13",
+        "end": "2023-03-24"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2023-03-30",
+          "body": "SQL lookup now binds tenant_id before invoice_id; the query test has the same invoice number in two tenants."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/6633"
+        }
+      ]
+    },
+    {
+      "key": "BILL-4846",
+      "type": "Story",
+      "summary": "Paisa difference on split invoice",
+      "description_excerpt": "Split an amount into three lines, then compare tax on the total. Invoice is off by one paisa for the attached sample.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-05-05"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-05-05",
+      "resolved": "2023-05-22",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 87",
+        "start": "2023-04-24",
+        "end": "2023-05-05"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2023-05-22",
+          "body": "Reconciled the six failing invoice fixtures."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/6752"
+        }
+      ]
+    },
+    {
+      "key": "BILL-4942",
+      "type": "Bug",
+      "summary": "Retry posts a second credit",
+      "description_excerpt": "Client repeats request after a timeout. Both credit notes are visible. Same key with a new amount should not silently succeed either.",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-07-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-07-18",
+      "resolved": "2023-07-26",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 93",
+        "start": "2023-07-17",
+        "end": "2023-07-28"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2023-07-26",
+          "body": "RestAssured suite sends the same idempotency key twice and checks one posting; the different-payload case returns 409."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/6867"
+        }
+      ]
+    },
+    {
+      "key": "BILL-4979",
+      "type": "Task",
+      "summary": "Month end export worker OOM",
+      "description_excerpt": "Export on the large month-end account restarts the worker. Pod memory rises through the whole download. Heap capture attached.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-08-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-08-16",
+      "resolved": "2023-08-30",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 95",
+        "start": "2023-08-14",
+        "end": "2023-08-25"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2023-08-30",
+          "body": "Changed the reader to 500-row pages and ran the 420k-row snapshot with bounded heap."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/6936"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5090",
+      "type": "Task",
+      "summary": "Paused worker still reports ready",
+      "description_excerpt": "Paused posting queue still passes readiness, so deploy starts accepting more jobs before worker is running.",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-11-06"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2023-11-06",
+      "resolved": "2023-11-21",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 101",
+        "start": "2023-11-06",
+        "end": "2023-11-17"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2023-11-21",
+          "body": "Verified the deployment stops taking jobs until the worker starts."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7067"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5181",
+      "type": "Story",
+      "summary": "Billing container fails timezone check",
+      "description_excerpt": "Java 21 image starts with the wrong timezone. Check build/runtime packages before we make it the default.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-01-17"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-01-17",
+      "resolved": "2024-01-31",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 106",
+        "start": "2024-01-15",
+        "end": "2024-01-26"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2024-01-31",
+          "body": "CI container starts and /actuator/health returns UP."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7183"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5264",
+      "type": "Task",
+      "summary": "Search times out on large tenant",
+      "description_excerpt": "Invoice search on a tenant with several years of invoices hits the request timeout. Look at plan for date-range search.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-03-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-03-12",
+      "resolved": "2024-03-25",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 110",
+        "start": "2024-03-11",
+        "end": "2024-03-22"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2024-03-25",
+          "body": "SQL EXPLAIN ANALYZE moved from a sequential scan to tenant/date index scan, 840ms to 46ms on the release snapshot."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7301"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5373",
+      "type": "Bug",
+      "summary": "Adjustment saved without ledger entry",
+      "description_excerpt": "Force ledger enqueue failure after saving the adjustment. Adjustment remains visible even though no posting exists.",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-05-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-05-28",
+      "resolved": "2024-06-04",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 115",
+        "start": "2024-05-20",
+        "end": "2024-05-31"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2024-06-04",
+          "body": "Fault injection after insert leaves neither row committed."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7400"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5388",
+      "type": "Bug",
+      "summary": "Expiry midnight regression",
+      "description_excerpt": "Need regression for expiry at midnight IST, not just a fixed UTC timestamp.",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-06-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-06-07",
+      "resolved": "2024-06-24",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 116",
+        "start": "2024-06-03",
+        "end": "2024-06-14"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2024-06-24",
+          "body": "Included missing auth and cross-tenant IDs."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7434"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5542",
+      "type": "Bug",
+      "summary": "Invalid posting loops in retry queue",
+      "description_excerpt": "Invalid bank code never leaves the retry queue. It is the same validation error on every attempt.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-10-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-10-08",
+      "resolved": "2024-10-21",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 125",
+        "start": "2024-10-07",
+        "end": "2024-10-18"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2024-10-21",
+          "body": "Queue depth returned to normal after deploy; checked one failed item was parked."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7596"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5621",
+      "type": "Story",
+      "summary": "Connection pool exhausts after cancelled download",
+      "description_excerpt": "Cancel several audit exports and then start a refund. Requests wait on the connection pool until the pod is restarted.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-12-16"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-12-16",
+      "resolved": "2024-12-27",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 130",
+        "start": "2024-12-16",
+        "end": "2024-12-27"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2024-12-27",
+          "body": "try-with-resources closes the cursor on cancellation and timeout."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7708"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5751",
+      "type": "Bug",
+      "summary": "lowercase currency fails adjustment",
+      "description_excerpt": "Currency comes as inr from one caller. Other validation treats it as a valid code, adjustment lookup does not.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-24",
+      "resolved": "2025-03-10",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 135",
+        "start": "2025-02-24",
+        "end": "2025-03-07"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2025-03-10",
+          "body": "Kept the original value in validation error, added mixed-case controller tests."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7847"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5846",
+      "type": "Bug",
+      "summary": "Concurrent credits can deadlock",
+      "description_excerpt": "Concurrent credit notes deadlock in staging stress run. Compare lock order on balance and invoice paths.",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-21"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-04-21",
+      "resolved": "2025-05-06",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 139",
+        "start": "2025-04-21",
+        "end": "2025-05-02"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2025-05-06",
+          "body": "Parallel integration run has 200 paired requests without deadlock."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/7947"
+        }
+      ]
+    },
+    {
+      "key": "BILL-5938",
+      "type": "Story",
+      "summary": "New image remains unhealthy",
+      "description_excerpt": "Image healthcheck hits port 8080. Health endpoints moved to the management port.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-02"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-02",
+      "resolved": "2025-06-11",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 142",
+        "start": "2025-06-02",
+        "end": "2025-06-13"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2025-06-11",
+          "body": "Checked startup and shutdown with docker run."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/8035"
+        }
+      ]
+    },
+    {
+      "key": "BILL-6050",
+      "type": "Story",
+      "summary": "Refund conflict response missing details",
+      "description_excerpt": "Conflict response lost its code field last release. Can QA have a contract check for duplicate partial refunds?",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-08-25"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-08-25",
+      "resolved": "2025-09-10",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 148",
+        "start": "2025-08-25",
+        "end": "2025-09-05"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2025-09-10",
+          "body": "CI caught the missing conflict code before release."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/8172"
+        }
+      ]
+    },
+    {
+      "key": "BILL-6090",
+      "type": "Story",
+      "summary": "Adjustment calculator tidy up",
+      "description_excerpt": "pendingAmount local is now a balance after credits. Rename while touching the calculator.",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-23",
+      "resolved": "2025-10-01",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 150",
+        "start": "2025-09-22",
+        "end": "2025-10-03"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2025-10-01",
+          "body": "Existing amount parameterised tests pass."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/8210"
+        }
+      ]
+    },
+    {
+      "key": "BILL-6216",
+      "type": "Task",
+      "summary": "Gap after declined adjustment",
+      "description_excerpt": "Declined adjustment consumes a visible sequence number. Validate before allocation, keeping rollback semantics.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-12-29"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-12-29",
+      "resolved": "2026-01-12",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 157",
+        "start": "2025-12-29",
+        "end": "2026-01-09"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2026-01-12",
+          "body": "Verified rollback and same-key replay in staging."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/8339"
+        }
+      ]
+    },
+    {
+      "key": "BILL-6305",
+      "type": "Bug",
+      "summary": "Audit export memory spike",
+      "description_excerpt": "Audit export spikes RSS again on the JDBC path. Lower fetch size alone did not change it.",
+      "component": "Billing adjustments",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-23",
+      "resolved": "2026-03-05",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 161",
+        "start": "2026-02-23",
+        "end": "2026-03-06"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2026-03-05",
+          "body": "RSS stayed below the pod limit on replay."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/8462"
+        }
+      ]
+    },
+    {
+      "key": "BILL-6529",
+      "type": "Task",
+      "summary": "Void invoice refund accepted",
+      "description_excerpt": "Refund is accepted on an invoice already voided by the posting worker. Check the status inside the transaction.",
+      "component": "Billing adjustments",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-22",
+      "resolved": "2026-07-03",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 169",
+        "start": "2026-06-15",
+        "end": "2026-06-26"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2026-07-03",
+          "body": "Added state transition regression checks."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/8683"
+        }
+      ]
+    },
+    {
+      "key": "BILL-6591",
+      "type": "Task",
+      "summary": "Missing retry coverage for refund",
+      "description_excerpt": "Missing API regression for timeout followed by successful retry. It must also check final posting count.",
+      "component": "Billing adjustments",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-27"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-27",
+      "resolved": "2026-08-05",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 172",
+        "start": "2026-07-27",
+        "end": "2026-08-07"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2026-08-05",
+          "body": "QA verified the seeded duplicate case fails."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/8732"
+        }
+      ]
+    },
+    {
+      "key": "BILL-6710",
+      "type": "Bug",
+      "summary": "Remove old adjustment conversion",
+      "description_excerpt": "Old adjustment mapper has no callers after request migration. Please remove with obsolete tests.",
+      "component": "Billing adjustments",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-10-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-10-26",
+      "resolved": "2026-10-31",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 178",
+        "start": "2026-10-19",
+        "end": "2026-10-30"
+      },
+      "comments": [
+        {
+          "author": "Nirav Deshpande",
+          "date": "2026-10-31",
+          "body": "Deleted obsolete mapper and mapping tests after callers moved to the new request shape."
+        }
+      ],
+      "issue_links": [
+        {
+          "type": "implements",
+          "url": "https://github.com/kestrel-cloud/billing-core/pull/8917"
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 8,
+      "reported": 2
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 10,
+      "reported": 1
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 10,
+      "reported": 0
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 8,
+      "reported": 1
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 10,
+      "reported": 1
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 8,
+      "reported": 4
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 12,
+      "reported": 1
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 11,
+      "reported": 0
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 10,
+      "reported": 1
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 10,
+      "reported": 0
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 11,
+      "reported": 2
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 9,
+      "reported": 1
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 10,
+      "reported": 0
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    }
+  ],
+  "exported": "2026-10-31"
+}

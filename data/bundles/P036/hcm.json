@@ -1,0 +1,52 @@
+{
+  "employee_id": "KC-11529",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Aman Bhatia",
+  "preferred_name": "Aman",
+  "emails": [
+    {
+      "email": "aman.bhatia@kestrelcloud.com",
+      "from": "2022-09",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Solutions Engineering",
+  "manager_employee_id": "KC-10731",
+  "hire_date": "2022-09-12",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Solutions Engineer",
+      "grade": "P3",
+      "from": "2022-09",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Payments integration pod",
+      "role": "Solutions Engineer",
+      "from": "2022-09",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "VIT Vellore",
+      "degree": "B.Tech",
+      "field": "Computer Science and Engineering",
+      "year": 2020
+    }
+  ],
+  "exported": "2026-10-31"
+}

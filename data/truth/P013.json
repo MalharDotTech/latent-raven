@@ -1,0 +1,290 @@
+{
+ "pid": "P013",
+ "schema": "truth-v2",
+ "summary": "Bengaluru frontend engineer, 4 yrs at Kestrel after 2 yrs at Zoho, steady React/TS contributor on web-console. Solid unremarkable mid-senior profile with clean evidence; the only complication is that his name and mailbox collide with the Pune SDET Rahul Kumar after the 2024 e-mail swap in Workday.",
+ "archetype": "clean control with a name-collision twin",
+ "batch": "C",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "react",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "gh_rkumar2_kestrel: shipped React screens 2022-2026 (virtualization, hooks refactor, class->function migration, memo perf 120ms->30ms, revert + v2 of URL-state filters); jira_rkumar2 WEB stories/bugs resolved; reviews catching hook bugs. Work at 3 in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#8068",
+    "github:#8732",
+    "github:#9533",
+    "jira:WEB-4392"
+   ],
+   "why": "Four years of shipped screens, perf work (virtualization, memoization) and hooks refactors; reviews others' components regularly."
+  },
+  {
+   "skill_id": "typescript",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "gh_rkumar2_kestrel + jira_rkumar2: TS strict-mode rollout epic for recon (2024), 'drop any from api client' (2024-08), zod validation (2026-01); review 'strict null: handle undefined, don't cast'. Work at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#8732",
+    "github:#8786",
+    "github:#9781"
+   ],
+   "why": "Led strict-mode rollout for the recon module and removed unsafe casts; typed API client."
+  },
+  {
+   "skill_id": "javascript",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "gh_rkumar2_kestrel: async UI defects fixed in production (IST date picker, stale count after refresh, Safari input), bundle splitting; reviews on debounce and setState-after-unmount. hcm self 4 is one level above work (F29).",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#9625",
+    "github:#10341"
+   ],
+   "why": "Strong day-to-day, but no runtime or tooling level design work; self rating runs a step higher."
+  },
+  {
+   "skill_id": "nodejs",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "gh_rkumar2_kestrel one BFF PR 'cache-control on /me' (2024-03, outside 2y window); cv_2022_06 'Node.js, Express, MongoDB' (self).",
+    "missing_source": "current Node.js service work"
+   },
+   "last_used": "2024-03",
+   "evidence_refs": [
+    "github:#8539"
+   ],
+   "why": "Small BFF edits only (a header, one endpoint); CV lists Express and MongoDB with no matching work."
+  },
+  {
+   "skill_id": "playwright",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 0,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "gh_rkumar2_kestrel one e2e Playwright spec with review (2025-05); nothing else in any source.",
+    "missing_source": "further e2e test work"
+   },
+   "last_used": "2025-05",
+   "evidence_refs": [
+    "github:#9215"
+   ],
+   "why": "One e2e spec merged with reviewer help; not a user of the tool otherwise."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     3,
+     4
+    ],
+    "basis": "gh_rkumar2_kestrel reviews_given (~100-140/yr): stale useEffect deps, key={index}, useless memo, unsafe casts, missing debounce, setState after unmount. Defect catches in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "github:reviews_given"
+   ],
+   "why": "Around 120 reviews a year, comments catch real hook and typing bugs."
+  },
+  {
+   "skill_id": "cicd",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 0,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only lint/bundler config PRs in gh_rkumar2_kestrel (eslint flat config 2025-12, vite bump, vendor chunk split); no pipeline steps. Not CI/CD evidence.",
+    "missing_source": "pipeline configuration changes"
+   },
+   "last_used": "2025-12",
+   "evidence_refs": [
+    "github:#9625"
+   ],
+   "why": "Touches lint and bundler config only; pipeline owned by platform team."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Selenium",
+   "mapped_skill_id": "selenium",
+   "has_skill": false,
+   "why": "Would only appear through the other Rahul Kumar's records after the mailbox swap",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "No Selenium in this bundle; would appear only via a wrong join to P012.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Java",
+   "mapped_skill_id": "java",
+   "has_skill": false,
+   "why": "CV 'basic' plus the other Rahul's Java PRs if joined wrongly",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2022_06 'Java (basic)' only.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Figma",
+   "mapped_skill_id": "figma",
+   "has_skill": false,
+   "why": "CV 'basic' only, no design artifact",
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2022_06 'Figma (basic)' only.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Angular / Vue.js / Next.js",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV tools list padding, no repo or ticket evidence",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2022_06 Angular/Vue/Next.js: no taxonomy skill.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F18",
+   "s11_row": "wrong_person",
+   "skill_id": "react",
+   "plant": "HCM lists the SDET Rahul's mailbox as current here; GitHub/Jira accounts keep rahul.kumar2@, so the e-mail join points two directions",
+   "expected_engine_behavior": "send_at_level_3",
+   "evidence_expectation": "Join GitHub (account_email rahul.kumar2@) and Jira to KC-11284 by linked_employee_id despite the Workday email swap with P012; never by name or email alone. P012's Selenium/Java must not attach.",
+   "v1_expected_engine_behavior": "join_neither"
+  },
+  {
+   "fault_id": "F05",
+   "s11_row": "not_held",
+   "skill_id": null,
+   "plant": "CV tools list includes Angular, Vue, Next.js, MongoDB, Figma with no work trace",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F06",
+   "s11_row": "message_misread",
+   "skill_id": null,
+   "plant": "Indian template CV: objective, DoB, CTC, declaration, 'MS Office, Internet'",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "javascript",
+   "plant": "Self-declared JavaScript one level above the work evidence",
+   "expected_engine_behavior": "send_at_level_3"
+  },
+  {
+   "fault_id": "F16",
+   "s11_row": "wrong_mapping",
+   "skill_id": null,
+   "plant": "Two WEB tickets titled 'UI broken' / 'fix button' with component General",
+   "expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "HTML/CSS/SASS",
+  "Redux",
+  "Jest / React Testing Library",
+  "Storybook"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.65,
+  "yes_to_everything": false,
+  "flattery_bias": 0.3,
+  "notes": "Accepts one level up on JavaScript, otherwise accurate."
+ },
+ "messaging_allowed": true,
+ "identity_expectation": "Join by employee_id KC-11284 / linked_employee_id. Workday email history swapped with P012 in 2024-03."
+}

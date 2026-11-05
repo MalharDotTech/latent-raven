@@ -1,0 +1,104 @@
+{
+  "employee_id": "KC-10077",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Sunita Venkatesh Rao",
+  "preferred_name": "Sunita Rao",
+  "emails": [
+    {
+      "email": "sunita.rao@kestrelcloud.com",
+      "from": "2016-09",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "People - HR Operations",
+  "manager_employee_id": "KC-10033",
+  "hire_date": "2016-09-05",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "HR Executive",
+      "grade": "S1",
+      "from": "2016-09",
+      "to": "2018-08"
+    },
+    {
+      "title": "Senior HR Executive",
+      "grade": "S2",
+      "from": "2018-09",
+      "to": "2021-03"
+    },
+    {
+      "title": "HR Operations Specialist",
+      "grade": "S3",
+      "from": "2021-04",
+      "to": "2023-12"
+    },
+    {
+      "title": "HR Operations Lead",
+      "grade": "M1",
+      "from": "2024-01",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "SuccessFactors to Workday HCM migration",
+      "role": "HR Ops functional lead",
+      "from": "2022-10",
+      "to": "2024-02",
+      "allocation_pct": 60
+    },
+    {
+      "project": "HR Ops service desk redesign",
+      "role": "Process owner",
+      "from": "2024-03",
+      "to": "2025-05",
+      "allocation_pct": 30
+    }
+  ],
+  "self_declared_skills": [
+    {
+      "skill_text": "SAP SuccessFactors",
+      "self_level": 4,
+      "declared_on": "2021-06"
+    },
+    {
+      "skill_text": "Workday HCM",
+      "self_level": 3,
+      "declared_on": "2024-06"
+    },
+    {
+      "skill_text": "HR operations",
+      "self_level": 4,
+      "declared_on": "2024-06"
+    },
+    {
+      "skill_text": "SAP",
+      "self_level": 3,
+      "declared_on": "2021-06"
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "Bangalore University",
+      "degree": "B.Com",
+      "field": "Commerce",
+      "year": 2008
+    },
+    {
+      "institution": "Christ University, Bengaluru",
+      "degree": "MBA",
+      "field": "Human Resource Management",
+      "year": 2011
+    }
+  ]
+}

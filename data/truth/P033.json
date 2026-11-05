@@ -1,0 +1,303 @@
+{
+  "pid": "P033",
+  "schema": "truth-v2",
+  "summary": "Ordinary billing SDE II, nearly four years at Kestrel. Six of ten listed skills have concrete workplace support; the four others are familiar concepts rather than recent delivery.",
+  "archetype": "ordinary_backend_control",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "java",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_nirav-deshpande-kc",
+        "missing_source": null
+      },
+      "last_used": "2024-12",
+      "evidence_refs": [
+        "gh_nirav-deshpande-kc:#6936",
+        "gh_nirav-deshpande-kc:#7708"
+      ],
+      "why": "JVM retention and pool exhaustion repairs establish independent service diagnosis."
+    },
+    {
+      "skill_id": "spring_boot",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_nirav-deshpande-kc",
+        "missing_source": null
+      },
+      "last_used": "2024-06",
+      "evidence_refs": [
+        "gh_nirav-deshpande-kc:#6446",
+        "gh_nirav-deshpande-kc:#7067",
+        "gh_nirav-deshpande-kc:#7400"
+      ],
+      "why": "Transaction failure recovery and deployment readiness are operational service maintenance."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_nirav-deshpande-kc; jira_KC-11682",
+        "missing_source": null
+      },
+      "last_used": "2024-03",
+      "evidence_refs": [
+        "gh_nirav-deshpande-kc:#6633",
+        "gh_nirav-deshpande-kc:#7301",
+        "jira_KC-11682:BILL-4773",
+        "jira_KC-11682:BILL-5264"
+      ],
+      "why": "Production query repair includes a concrete execution-plan comparison."
+    },
+    {
+      "skill_id": "api_testing",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_nirav-deshpande-kc; jira_KC-11682",
+        "missing_source": null
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "gh_nirav-deshpande-kc:#6867",
+        "gh_nirav-deshpande-kc:#7434",
+        "gh_nirav-deshpande-kc:#8172",
+        "gh_nirav-deshpande-kc:#8732",
+        "jira_KC-11682:BILL-4942",
+        "jira_KC-11682:BILL-6591"
+      ],
+      "why": "Maintained failure-path suite finds contract and retry defects before release."
+    },
+    {
+      "skill_id": "code_review",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "gh_nirav-deshpande-kc",
+        "missing_source": null
+      },
+      "last_used": "2026-08",
+      "evidence_refs": [
+        "gh_nirav-deshpande-kc:review#2480",
+        "gh_nirav-deshpande-kc:review#2753",
+        "gh_nirav-deshpande-kc:review#3229",
+        "gh_nirav-deshpande-kc:review#3496"
+      ],
+      "why": "Review threads identify correctness faults and show the corresponding author changes."
+    },
+    {
+      "skill_id": "docker",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "gh_nirav-deshpande-kc; jira_KC-11682",
+        "missing_source": null
+      },
+      "last_used": "2025-06",
+      "evidence_refs": [
+        "gh_nirav-deshpande-kc:#7183",
+        "gh_nirav-deshpande-kc:#8035",
+        "jira_KC-11682:BILL-5938"
+      ],
+      "why": "Container build changes have a named helper and recorded runtime verification."
+    },
+    {
+      "skill_id": "kafka",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_nirav-deshpande-kc_1",
+        "missing_source": "A scored Kafka exercise or reviewed broker/client work."
+      },
+      "last_used": "2022-05",
+      "evidence_refs": [
+        "cv_nirav-deshpande-kc_1:skills/experience"
+      ],
+      "why": "Basic retained knowledge is real; the exported material contains only a tool-list claim."
+    },
+    {
+      "skill_id": "kubernetes",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_nirav-deshpande-kc_1",
+        "missing_source": "Current assessed lab or a reviewed deployment change."
+      },
+      "last_used": "2022-05",
+      "evidence_refs": [
+        "cv_nirav-deshpande-kc_1:skills/experience"
+      ],
+      "why": "Some personal-lab knowledge, without an observable current application record."
+    },
+    {
+      "skill_id": "aws",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_nirav-deshpande-kc_1",
+        "missing_source": "Current cloud exercise or deployment/change record."
+      },
+      "last_used": "2022-05",
+      "evidence_refs": [
+        "cv_nirav-deshpande-kc_1:skills/experience"
+      ],
+      "why": "Recognises core services privately; no cloud operation is established by this export."
+    },
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        2
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_nirav-deshpande-kc_1",
+        "missing_source": "A recent Python coding exercise or reviewed script."
+      },
+      "last_used": "2022-05",
+      "evidence_refs": [
+        "cv_nirav-deshpande-kc_1:skills/experience"
+      ],
+      "why": "University familiarity persists but the listed workplace changes do not establish it."
+    }
+  ],
+  "decoys": [],
+  "traps": [
+    {
+      "fault_id": "F05",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "kafka",
+      "plant": "Four of ten list entries have no applied evidence. They are ordinary list inflation, without fabricated work bullets.",
+      "expected_engine_behavior": "hold",
+      "affected_skill_ids": [
+        "kafka",
+        "kubernetes",
+        "aws",
+        "python"
+      ]
+    }
+  ],
+  "unmatched_skills": [],
+  "realism_observations": [
+    "RO-03"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

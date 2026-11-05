@@ -1,0 +1,1405 @@
+{
+  "login": "faizal-kc",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-10808",
+  "exported_on": "2026-10-31",
+  "sample_scope": "Selected PRs and review threads; monthly activity covers complete membership, including zero months.",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 8307,
+      "title": "PLAT-3290 set gp3 throughput explicitly",
+      "state": "merged",
+      "created": "2021-10-20",
+      "merged": "2021-10-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 19,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Terraform plan checked in staging; applied EBS volume change without replacement."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 4456,
+      "title": "fix: ingress healthcheck path",
+      "state": "merged",
+      "created": "2022-02-09",
+      "merged": "2022-02-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 56,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Kubernetes readiness check pointed to authenticated route; verified rollout after change."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 8551,
+      "title": "Move node role policy into module",
+      "state": "merged",
+      "created": "2022-06-18",
+      "merged": "2022-06-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 93,
+      "deletions": 25,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Terraform module inputs cover worker IAM role; checked plan and apply in staging."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 8796,
+      "title": "PLAT-3585 recover lock after runner crash",
+      "state": "merged",
+      "created": "2022-11-18",
+      "merged": "2022-11-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 130,
+      "deletions": 36,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Recovered stale Terraform lock after confirming no active apply; state serial unchanged."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 4707,
+      "title": "fix: disk alert missing mountpoint",
+      "state": "merged",
+      "created": "2023-03-12",
+      "merged": "2023-03-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 167,
+      "deletions": 47,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Linux root volume alert had aggregated away mountpoint; tested against filled test volume."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9094,
+      "title": "Add failed rollout alert",
+      "state": "merged",
+      "created": "2023-08-11",
+      "merged": "2023-08-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 204,
+      "deletions": 58,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Prometheus alert fires when observed generation lags; linked kubectl diagnostic steps."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9345,
+      "title": "PLAT-3871 use regional STS endpoint",
+      "state": "merged",
+      "created": "2023-12-15",
+      "merged": "2023-12-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 241,
+      "deletions": 69,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "AWS pod credential refresh failed on global endpoint path; verified IAM access after rollout."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 4954,
+      "title": "fix: do not destroy shared security group",
+      "state": "merged",
+      "created": "2024-04-19",
+      "merged": "2024-04-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 278,
+      "deletions": 80,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Terraform lifecycle/import correction after drift; attached before/after state output."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 9813,
+      "title": "Add EBS expansion steps",
+      "state": "merged",
+      "created": "2024-08-19",
+      "merged": "2024-08-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 34,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Linux filesystem expansion runbook tested on staging node; no restart needed."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10049,
+      "title": "PLAT-4225 pin actions by sha",
+      "state": "merged",
+      "created": "2024-11-15",
+      "merged": "2024-11-17",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 71,
+      "deletions": 23,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "CI/CD workflow uses pinned actions with automated update PRs; checked rollback job."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5319,
+      "title": "fix: rollout waits for ready replicas",
+      "state": "merged",
+      "created": "2025-02-19",
+      "merged": "2025-02-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 108,
+      "deletions": 34,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Pipeline had returned success before Kubernetes readiness; failure now blocks next environment."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10581,
+      "title": "PLAT-4488 state mv for node pool",
+      "state": "merged",
+      "created": "2025-06-01",
+      "merged": "2025-06-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 145,
+      "deletions": 45,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Moved Terraform addresses before module rename; plan contains zero resource replacements."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10881,
+      "title": "fix: image has no ca certs",
+      "state": "merged",
+      "created": "2025-09-10",
+      "merged": "2025-09-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 182,
+      "deletions": 56,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Docker image inherited a missing CA bundle; rebuilt base and checked TLS probe."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6074,
+      "title": "Silence drain alert during approved change",
+      "state": "merged",
+      "created": "2026-01-20",
+      "merged": "2026-01-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".yaml": 3
+      },
+      "additions": 219,
+      "deletions": 67,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Observability silence bounded by change id and duration; tested expiry."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11527,
+      "title": "PLAT-4961 preflight PDB before node drain",
+      "state": "merged",
+      "created": "2026-05-08",
+      "merged": "2026-05-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 256,
+      "deletions": 78,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "Kubernetes node drain blocked by one replica PDB. Added capacity check and rollout order; no force eviction."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11962,
+      "title": "fix: plan artifact missing on failed apply",
+      "state": "merged",
+      "created": "2026-10-13",
+      "merged": "2026-10-14",
+      "merged_by": "other",
+      "author_type": "human",
+      "author_login": "faizal-kc",
+      "files_ext": {
+        ".tf": 3,
+        ".yaml": 2
+      },
+      "additions": 293,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "platform"
+      ],
+      "body_excerpt": "CI/CD keeps failed apply logs for recovery; tested failed staging apply."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10187,
+      "title": "chore(deps): bump terraform-aws-modules/eks (1)",
+      "state": "merged",
+      "created": "2025-01-15",
+      "merged": "2025-01-21",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "dependabot[bot]",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 8,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "dependencies"
+      ],
+      "body_excerpt": "Automated dependency update; CI checks passed."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10354,
+      "title": "chore(deps): update helm release metrics-server (2)",
+      "state": "merged",
+      "created": "2025-03-12",
+      "merged": "2025-03-14",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "renovate[bot]",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 8,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "dependencies"
+      ],
+      "body_excerpt": "Automated dependency update; CI checks passed."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5539,
+      "title": "release: platform manifests (3)",
+      "state": "merged",
+      "created": "2025-05-29",
+      "merged": "2025-05-30",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "kestrel-release-bot",
+      "files_ext": {
+        ".yaml": 8,
+        ".go": 6
+      },
+      "additions": 480,
+      "deletions": 320,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "release"
+      ],
+      "body_excerpt": "Generated release manifests and operator files."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10739,
+      "title": "chore(deps): bump terraform-aws-modules/eks (4)",
+      "state": "merged",
+      "created": "2025-07-24",
+      "merged": "2025-07-27",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "dependabot[bot]",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 8,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "dependencies"
+      ],
+      "body_excerpt": "Automated dependency update; CI checks passed."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 10892,
+      "title": "chore(deps): update helm release metrics-server (5)",
+      "state": "merged",
+      "created": "2025-09-12",
+      "merged": "2025-09-19",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "renovate[bot]",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 8,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "dependencies"
+      ],
+      "body_excerpt": "Automated dependency update; CI checks passed."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 5940,
+      "title": "release: platform manifests (6)",
+      "state": "merged",
+      "created": "2025-11-23",
+      "merged": "2025-11-28",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "kestrel-release-bot",
+      "files_ext": {
+        ".yaml": 8,
+        ".go": 6
+      },
+      "additions": 480,
+      "deletions": 320,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "release"
+      ],
+      "body_excerpt": "Generated release manifests and operator files."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11189,
+      "title": "chore(deps): bump terraform-aws-modules/eks (7)",
+      "state": "merged",
+      "created": "2026-01-14",
+      "merged": "2026-01-15",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "dependabot[bot]",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 8,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "dependencies"
+      ],
+      "body_excerpt": "Automated dependency update; CI checks passed."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "number": 11361,
+      "title": "chore(deps): update helm release metrics-server (8)",
+      "state": "merged",
+      "created": "2026-03-11",
+      "merged": "2026-03-21",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "renovate[bot]",
+      "files_ext": {
+        ".tf": 2
+      },
+      "additions": 8,
+      "deletions": 8,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "dependencies"
+      ],
+      "body_excerpt": "Automated dependency update; CI checks passed."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "number": 6406,
+      "title": "release: platform manifests (9)",
+      "state": "merged",
+      "created": "2026-05-19",
+      "merged": "2026-05-26",
+      "merged_by": "self",
+      "author_type": "bot",
+      "author_login": "kestrel-release-bot",
+      "files_ext": {
+        ".yaml": 8,
+        ".go": 6
+      },
+      "additions": 480,
+      "deletions": 320,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "release"
+      ],
+      "body_excerpt": "Generated release manifests and operator files."
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 9801,
+      "date": "2024-08-23",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "This plan replaces the worker pool. Please move state addresses before changing the module name.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 10001,
+      "date": "2024-11-07",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "One replica plus minAvailable=1 cannot drain. Check spare capacity first.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "pr_number": 5294,
+      "date": "2025-02-17",
+      "state": "APPROVED",
+      "comment_count": 3,
+      "sample_comment": "Keep the failed apply output too; we need the serial to diagnose interrupted runs.",
+      "author_followup": "Checks passed on updated change."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 10596,
+      "date": "2025-06-04",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "This plan replaces the worker pool. Please move state addresses before changing the module name.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 10863,
+      "date": "2025-09-09",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 1,
+      "sample_comment": "One replica plus minAvailable=1 cannot drain. Check spare capacity first.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/platform-k8s",
+      "pr_number": 6041,
+      "date": "2026-01-12",
+      "state": "APPROVED",
+      "comment_count": 2,
+      "sample_comment": "Keep the failed apply output too; we need the serial to diagnose interrupted runs.",
+      "author_followup": "Checks passed on updated change."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11493,
+      "date": "2026-05-05",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "This plan replaces the worker pool. Please move state addresses before changing the module name.",
+      "author_followup": "Added regression fixture and reran checks."
+    },
+    {
+      "repo": "kestrel-cloud/infra-live",
+      "pr_number": 11950,
+      "date": "2026-10-15",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "One replica plus minAvailable=1 cannot drain. Check spare capacity first.",
+      "author_followup": "Added regression fixture and reran checks."
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2021-09",
+      "merged_prs": 11,
+      "reviews": 8,
+      "by_ext": {
+        ".tf": 6,
+        ".yaml": 4
+      },
+      "authored_merged_prs": 2,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2021-10",
+      "merged_prs": 21,
+      "reviews": 20,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2021-11",
+      "merged_prs": 18,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2021-12",
+      "merged_prs": 28,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 12,
+      "bot_prs_merged_by_self": 6,
+      "human_prs_merged_by_self": 10
+    },
+    {
+      "month": "2022-01",
+      "merged_prs": 13,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2022-02",
+      "merged_prs": 12,
+      "reviews": 12,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 4,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2022-03",
+      "merged_prs": 17,
+      "reviews": 17,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2022-04",
+      "merged_prs": 18,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2022-05",
+      "merged_prs": 14,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 2,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2022-06",
+      "merged_prs": 13,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2022-07",
+      "merged_prs": 16,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 19,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 14,
+      "reviews": 12,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 20,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 10,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 17,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 19,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 6,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 13,
+      "reviews": 17,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 2,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 17,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 22,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 10,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 21,
+      "reviews": 17,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 7,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 14,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 18,
+      "reviews": 19,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 17,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 22,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 13,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 2,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 16,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 22,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 21,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 6,
+      "human_prs_merged_by_self": 9
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 16,
+      "reviews": 12,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 15,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 14,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 4,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 21,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 6,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 13,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 2,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 19,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 15,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 17,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 14,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 3,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 16,
+      "reviews": 12,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 4,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 20,
+      "reviews": 11,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 5,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 20,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 6,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 34,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 4,
+      "bot_prs_merged_by_self": 26,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 38,
+      "reviews": 18,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 26,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 37,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 22,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 41,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 10,
+      "bot_prs_merged_by_self": 23,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 34,
+      "reviews": 17,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12,
+        ".go": 6
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 25,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 35,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 4,
+      "bot_prs_merged_by_self": 27,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 39,
+      "reviews": 20,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 24,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 38,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 24,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 41,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 28,
+      "human_prs_merged_by_self": 4
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 31,
+      "reviews": 18,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 19,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 35,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10,
+        ".go": 6
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 24,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 35,
+      "reviews": 21,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 7,
+      "bot_prs_merged_by_self": 20,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 43,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 28,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 40,
+      "reviews": 15,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 9,
+      "bot_prs_merged_by_self": 25,
+      "human_prs_merged_by_self": 6
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 38,
+      "reviews": 19,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 5,
+      "bot_prs_merged_by_self": 26,
+      "human_prs_merged_by_self": 7
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 45,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 31,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 35,
+      "reviews": 22,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16,
+        ".go": 6
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 22,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 41,
+      "reviews": 16,
+      "by_ext": {
+        ".tf": 21,
+        ".yaml": 14
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 25,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 41,
+      "reviews": 13,
+      "by_ext": {
+        ".tf": 30,
+        ".yaml": 20
+      },
+      "authored_merged_prs": 12,
+      "bot_prs_merged_by_self": 21,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 43,
+      "reviews": 17,
+      "by_ext": {
+        ".tf": 18,
+        ".yaml": 12
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 29,
+      "human_prs_merged_by_self": 8
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 41,
+      "reviews": 14,
+      "by_ext": {
+        ".tf": 15,
+        ".yaml": 10
+      },
+      "authored_merged_prs": 6,
+      "bot_prs_merged_by_self": 30,
+      "human_prs_merged_by_self": 5
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 38,
+      "reviews": 18,
+      "by_ext": {
+        ".tf": 24,
+        ".yaml": 16
+      },
+      "authored_merged_prs": 8,
+      "bot_prs_merged_by_self": 24,
+      "human_prs_merged_by_self": 6
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [],
+    "oss_contributions": []
+  },
+  "metric_definitions": {
+    "merged_prs": "legacy dashboard: PR author OR merger matches user; counts deduplicated within month",
+    "authored_merged_prs": "human PRs authored by linked user",
+    "by_ext": "files in authored PRs only"
+  }
+}

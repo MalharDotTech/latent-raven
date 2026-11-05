@@ -1,0 +1,159 @@
+{
+ "pid": "P029",
+ "summary": "Researcher and designer runs studies and translates observations into product decisions. She uses a design tool independently in private collaborative files, none of which were exported.",
+ "archetype": "sparse_design",
+ "batch": "F",
+ "generator": "codex gpt-6.1-terra",
+ "skills": [
+  {
+   "skill_id": "ux_research",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": 3,
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "docs:recon-research",
+    "docs:billing-settings"
+   ],
+   "why": "Independent studies and follow-up decisions are documented."
+  },
+  {
+   "skill_id": "figma",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": 3,
+   "last_used": "2026-09",
+   "evidence_refs": [],
+   "why": "Private design files show independent prototyping; unavailable to the engine."
+  },
+  {
+   "skill_id": "product_discovery",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": 3,
+   "last_used": "2025-07",
+   "evidence_refs": [
+    "docs:recon-research",
+    "docs:invoice-templates-interviews"
+   ],
+   "why": "Frames problems and tests product options with customers."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": 3,
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "docs:billing-settings",
+    "docs:q1-2026-research-readout"
+   ],
+   "why": "Coordinates decisions with product and support."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": 2,
+   "last_used": "2025-07",
+   "evidence_refs": [
+    "docs:recon-research",
+    "docs:research-recruitment-playbook"
+   ],
+   "why": "Produces concise reviewed research records."
+  },
+  {
+   "skill_id": "agile_delivery",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": 2,
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "docs:billing-settings",
+    "docs:release-26-3-design-qa"
+   ],
+   "why": "Participates in planned product release work."
+  },
+  {
+   "skill_id": "roadmapping",
+   "has_skill": false,
+   "true_level": null,
+   "self_perceived_level": null,
+   "would_accept_levels": [],
+   "assessed_level": null,
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "docs:billing-settings",
+    "docs:q1-2026-research-readout"
+   ],
+   "why": "Contributes research but does not own the roadmap."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Roadmapping",
+   "mapped_skill_id": "roadmapping",
+   "has_skill": false,
+   "why": "PM owns prioritisation; participation alone is insufficient."
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F09",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "figma",
+   "plant": "Prototype files are outside exported systems and do not identify the tool.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F34",
+   "s11_row": "wrong_person",
+   "skill_id": "ux_research",
+   "plant": "Research records name collaborators alongside the author and describe who did each task.",
+   "expected_engine_behavior": "send_at_level_3"
+  }
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.7,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Prefers concrete examples when confirming."
+ },
+ "messaging_allowed": true
+}

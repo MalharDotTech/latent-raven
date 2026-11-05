@@ -1,0 +1,328 @@
+{
+ "pid": "P020",
+ "schema": "truth-v2",
+ "summary": "Anjali’s employee and Jira account identifiers persist through the July 2025 surname and email change. She makes independent product trade-offs and has stronger research capability than the exported snippets demonstrate; a technical appendix on a page she created was written by an engineer.",
+ "archetype": "Product manager with identity continuity and shared documents",
+ "batch": "D",
+ "generator": "codex (GPT-6; runtime submodel not exposed)",
+ "skills": [
+  {
+   "skill_id": "product_discovery",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P020_jira PM-1402 six observed operator sessions dropped bulk accept and changed pilot to per-row reasons, PM-1558 returning-operator follow-up; P020_PM-220 (decision log, doc_id PM-1543) assumptions vs observed behaviour and success check. Work + authored at 3.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "docs/PM-1543",
+    "jira:PM-1402",
+    "jira:PM-1558"
+   ],
+   "why": "Observed user behaviour causes a real pilot scope change followed by a return-session check."
+  },
+  {
+   "skill_id": "roadmapping",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P020_jira PM-1456 saved filters before scheduler, PM-1870 June scope revised after dependency review, PM-2032 roadmap rebaseline with recorded dissent; P020_PM-220 (decision log, doc_id PM-1543). Work in 3+ months + authored.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:PM-1456",
+    "jira:PM-1870",
+    "jira:PM-2032"
+   ],
+   "why": "Maintains priorities and revises commitments based on adoption and dependencies."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P020_jira PM-1456 sales accepted manual weekly report, PM-1870 revised commitment communicated to sales and support, PM-2032 dissent recorded with final decision; P020_PM-220 (decision log, doc_id PM-1543) sales objection retained. Decision records in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "docs/PM-1543",
+    "jira:PM-1456"
+   ],
+   "why": "Resolves a commercial request against operator needs with an agreed temporary arrangement."
+  },
+  {
+   "skill_id": "agile_delivery",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P020_jira PM-1998 retro action: named acceptance owner, next two iterations had no unowned items; PM-1496 pilot acceptance criteria; P020_cv_v1 sprint acceptance checks (Freshworks). Completed retrospective action = level 3 line.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:PM-1998",
+    "jira:PM-1870"
+   ],
+   "why": "Removes acceptance ownership blockers and tracks the resulting improvement across iterations."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 3,
+    "accept_levels": [
+     2,
+     3,
+     4
+    ],
+    "basis": "P020_jira PM-1950 support completed enablement steps in test tenant, rollback owner clarified after walkthrough; P020_PM-220 (decision log, doc_id PM-1543) release note checked with support; P020_PM-241 acceptance section (her part only). User validation recorded.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:PM-1950",
+    "docs/PM-1543"
+   ],
+   "why": "Support validation establishes that her rollout instructions are usable."
+  },
+  {
+   "skill_id": "ux_research",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "P020_jira PM-1402 six moderated sessions, PM-2174 designer checked participant selection and removed an unsupported generalisation; P020_PM-220 (decision log, doc_id PM-1543) designer removed a leading prompt from her task script; P020_lms discovery consent course. Sessions with reviewer corrections = level 2 line; independent study plans/recordings not exported.",
+    "missing_source": "research plans / session recordings"
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "cv_v1:occasional moderated sessions",
+    "jira:PM-2174"
+   ],
+   "why": "Private recordings and research notes show independent study planning and synthesis. Exported work shows designer review and partial results only; hold a confident independent-research claim until those materials are available."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "P020_jira PM-2093 edited analyst query, analyst corrected join grain before use (2026-07); P020_cv_v1 'can edit an existing query with analyst review'; P020_lms SQL Essential Training (2025-08). Guided query work = level 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-09",
+   "evidence_refs": [
+    "jira:PM-2093",
+    "lms:SQL Essential Training"
+   ],
+   "why": "Can adjust a query with analyst review; training alone would not establish production analysis."
+  },
+  {
+   "skill_id": "system_design",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P020_PM-241 (doc_id PM-1944) says recon-maintainer-kc wrote the API/storage/recovery sections (~85%); P020_jira PM-2123 'PM approved user-visible behaviour only'.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "docs/PM-1944"
+   ],
+   "why": "She approved acceptance wording, not the engineer’s lease or consistency mechanism."
+  },
+  {
+   "skill_id": "go",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P020_jira PM-1902 export retry reported by her, engineering-owned, 'no implementation'. Go not named as her skill.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "jira:PM-1902"
+   ],
+   "why": "Reporting the retry failure did not involve implementing or reviewing Go code."
+  },
+  {
+   "skill_id": "figma",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P020_cv_v1 'Figma: comments and links only' - the quote disclaims practice.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "cv_v1:SQL and Figma"
+   ],
+   "why": "Commenting on linked designs is not the ability to build components or prototypes."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "System design",
+   "mapped_skill_id": "system_design",
+   "has_skill": false,
+   "why": "Page creation metadata conceals the engineering authorship split unless revision notes are considered.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Co-authored addendum.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Go",
+   "mapped_skill_id": "go",
+   "has_skill": false,
+   "why": "Reporter attribution alone does not convey implementation skill.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Reporter only.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Figma",
+   "mapped_skill_id": "figma",
+   "has_skill": false,
+   "why": "A design viewer is not a practitioner of the tool.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Comments only, per her CV.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F22",
+   "s11_row": "wrong_person",
+   "skill_id": null,
+   "plant": "The HCM change event ties both surnames and email intervals to one Jira account and employee key; the older PRD retains its original author name.",
+   "expected_engine_behavior": "join_by_name_change_event"
+  },
+  {
+   "fault_id": "F34",
+   "s11_row": "wrong_person",
+   "skill_id": "system_design",
+   "plant": "The PM-created addendum credits most technical content to recon-maintainer-kc and limits product approval to behaviour.",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "level_off",
+   "skill_id": "sql",
+   "plant": "A completed SQL course sits beside a ticket showing analyst correction; completion must not imply independent querying.",
+   "expected_engine_behavior": "send_at_level_2"
+  }
+ ],
+ "unmatched_skills": [],
+ "answer_behavior": {
+  "reply_probability": 0.73,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Confirms product work; redirects backend design questions to engineering. Research confirmation can succeed despite insufficient exported proof."
+ },
+ "messaging_allowed": true,
+ "identity_expectation": "One person KC-11020 across the 2025-07 name/email change (Gupta -> Kapoor; hcm identity_events, same Jira account jira-pm-1020). Older PRD authored as 'Anjali Gupta' stays with her."
+}

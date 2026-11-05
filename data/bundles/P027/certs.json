@@ -1,0 +1,14 @@
+{
+  "certificates": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "AWS",
+      "code": "CLF-C02",
+      "issued": "2024-09",
+      "expires": "2027-09",
+      "evidence_form": "badge_url",
+      "badge_url": "https://www.credly.com/badges/e02342fe-abf5-ebd1-3b24-2492e0df371b",
+      "verification_status": "verified"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "pid": "P031-T3",
+  "summary": "Intern with substantial independent open-source maintenance before joining Kestrel. Her title and internal supervision understate her Python ability; other technologies remain introductory.",
+  "archetype": "oss_intern",
+  "batch": "F",
+  "generator": "codex gpt-6.1-terra",
+  "skills": [
+    {
+      "skill_id": "python",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "assessed_level": 3,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:public_profile",
+        "github:#1816"
+      ],
+      "why": "Public maintenance includes diagnosing and fixing real runtime failures before hire."
+    },
+    {
+      "skill_id": "airflow",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-02",
+      "evidence_refs": [
+        "github:public_profile"
+      ],
+      "why": "Has contributed provider code but needs guidance on Kestrel operations."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "jira:DATA-3440",
+        "jira:DATA-3475"
+      ],
+      "why": "Writes basic validation queries with review."
+    },
+    {
+      "skill_id": "api_testing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "github:#1896"
+      ],
+      "why": "Adds bounded failure cases under review."
+    },
+    {
+      "skill_id": "agile_delivery",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "assessed_level": 2,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "jira:DATA-3478"
+      ],
+      "why": "Completes supervised sprint tasks."
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 1,
+      "self_perceived_level": 1,
+      "would_accept_levels": [
+        1,
+        1,
+        2
+      ],
+      "assessed_level": 1,
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "lms:Data Platform Onboarding"
+      ],
+      "why": "Can explain validation procedures in short notes."
+    },
+    {
+      "skill_id": "docker",
+      "has_skill": false,
+      "true_level": null,
+      "self_perceived_level": null,
+      "would_accept_levels": [],
+      "assessed_level": null,
+      "last_used": "2026-05",
+      "evidence_refs": [
+        "cv_v1:Skills"
+      ],
+      "why": "Familiarity on CV does not demonstrate actual use."
+    }
+  ],
+  "decoys": [
+    {
+      "skill_text": "Docker",
+      "mapped_skill_id": "docker",
+      "has_skill": false,
+      "why": "No actual container work is shown or privately known."
+    }
+  ],
+  "traps": [
+    {
+      "fault_id": "F20",
+      "s11_row": "level_off",
+      "skill_id": "python",
+      "plant": "Intern title can anchor the assessor below the independent public work.",
+      "expected_engine_behavior": "send_at_level_3"
+    },
+    {
+      "fault_id": "F01",
+      "s11_row": "skill_not_really_held",
+      "skill_id": "docker",
+      "plant": "CV familiarity is unsupported by work.",
+      "expected_engine_behavior": "hold"
+    },
+    {
+      "fault_id": "F16",
+      "s11_row": "wrong_mapping",
+      "skill_id": "sql",
+      "plant": "A generic task and component do not establish an implementation stack.",
+      "expected_engine_behavior": "hold"
+    }
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.8,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "May describe internship tasks more modestly than prior OSS work."
+  },
+  "messaging_allowed": true,
+  "twin_of": "P031",
+  "twin_swap": {
+    "first": null,
+    "last": null,
+    "gender": null,
+    "university": "Government College of Engineering, Amravati"
+  }
+}

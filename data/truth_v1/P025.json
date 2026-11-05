@@ -1,0 +1,156 @@
+{
+ "summary": "Neha is a solid mid-level recruiter who moved from an agency to Kestrel and now runs engineering and data pipelines nearly alone. The only systems the dataset sees are HR records and learning completions, so her real hiring ability is largely invisible; a fair assessor who sat with her ATS would rate her higher than the available records can show.",
+ "archetype": "Competent non-tech practitioner with thin digital footprint",
+ "skills": [
+  {
+   "skill_id": "talent_acquisition",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "hcm:project_allocations",
+    "hcm:self_declared_skills",
+    "cv_v1:Experience/Kestrel",
+    "lms:Structured Interviewing Certification"
+   ],
+   "why": "Six years of end-to-end hiring (three at an agency), lead recruiter for Data roles since 2025, hiring managers rely on her; ATS history not supplied but allocations and course work fit."
+  },
+  {
+   "skill_id": "workday",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "hcm:self_declared_skills",
+    "lms:Workday Recruiting for Recruiters"
+   ],
+   "why": "Uses the Recruiting module daily for requisitions and offers, with training; no HCM transaction processing or configuration."
+  },
+  {
+   "skill_id": "hr_operations",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 1,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "assessed_level": null,
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "hcm:self_declared_skills"
+   ],
+   "why": "Hand-off of joiner details to HR ops only; limited involvement in lifecycle cases."
+  },
+  {
+   "skill_id": "stakeholder_management",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "cv_v1:Experience/Kestrel",
+    "lms:Interview Panel Calibration Workshop"
+   ],
+   "why": "Aligns scorecards and timelines with engineering managers without help; credible but evidence is a CV line and course."
+  },
+  {
+   "skill_id": "excel_modeling",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "last_used": null,
+   "evidence_refs": [
+    "cv_v1:Skills"
+   ],
+   "why": "Uses spreadsheets for trackers only; generic."
+  },
+  {
+   "skill_id": "technical_writing",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": null,
+   "would_accept_levels": [
+    0,
+    1
+   ],
+   "assessed_level": null,
+   "last_used": null,
+   "evidence_refs": [],
+   "why": "Writes job descriptions, which is a different practice."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Java, .Net, testing (roles hired for)",
+   "mapped_skill_id": "java",
+   "has_skill": false,
+   "why": "Names of roles she sourced for at the agency; no technical skill implied."
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F09",
+   "s11_row": "not_really_held",
+   "skill_id": "talent_acquisition",
+   "plant": "No ATS export, no authored docs, no tickets. HCM allocations, a CV and seven learning rows are the whole bundle.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F19",
+   "s11_row": "level_off",
+   "skill_id": "talent_acquisition",
+   "plant": "HCM job title still HR Executive grade S1 though the CV and allocations show a recruiter lead role since 2025.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F06",
+   "s11_row": "message_misread",
+   "skill_id": "hr_operations",
+   "plant": "CV carries photo placeholder, DOB, marital status, declaration, 'as per company norms' CTC line.",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "workday",
+   "plant": "Workday Recruiting course and HCM self rating could be credited as HCM operations.",
+   "expected_engine_behavior": "send_at_level_2"
+  }
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.7,
+  "yes_to_everything": false,
+  "flattery_bias": 0.0,
+  "notes": "Answers honestly; modest on Workday."
+ },
+ "messaging_allowed": true,
+ "pid": "P025",
+ "batch": "E",
+ "generator": "claude-sonnet-5-5"
+}

@@ -1,0 +1,1369 @@
+{
+  "login": "rkumar2_kestrel",
+  "account_type": "enterprise",
+  "account_email": "rahul.kumar2@kestrelcloud.com",
+  "linked_employee_id": "KC-11284",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 7734,
+      "title": "WEB-3286 invoice list: sortable columns",
+      "state": "merged",
+      "created": "2022-08-25",
+      "merged": "2022-08-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 4,
+        ".ts": 2,
+        ".scss": 1
+      },
+      "additions": 310,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": [
+        "frontend"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 7798,
+      "title": "fix: date picker off by one in IST",
+      "state": "merged",
+      "created": "2022-09-30",
+      "merged": "2022-10-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1,
+        ".ts": 1
+      },
+      "additions": 18,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 7876,
+      "title": "WEB-3378 table empty state + loading skeleton",
+      "state": "merged",
+      "created": "2022-11-15",
+      "merged": "2022-11-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".scss": 2
+      },
+      "additions": 145,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 7981,
+      "title": "a11y: focus trap in ConfirmModal",
+      "state": "merged",
+      "created": "2023-02-02",
+      "merged": "2023-02-07",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".ts": 1
+      },
+      "additions": 77,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": [
+        "a11y"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8068,
+      "title": "WEB-3535 invoice table virtualization (react-window)",
+      "state": "merged",
+      "created": "2023-04-12",
+      "merged": "2023-04-24",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".ts": 2,
+        ".json": 1
+      },
+      "additions": 262,
+      "deletions": 88,
+      "co_authors": [],
+      "review_comments_received": 11,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8162,
+      "title": "refactor: useInvoiceFilters hook",
+      "state": "merged",
+      "created": "2023-06-20",
+      "merged": "2023-06-23",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 2,
+        ".tsx": 3
+      },
+      "additions": 120,
+      "deletions": 140,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8228,
+      "title": "WEB-3632 dark mode tokens",
+      "state": "merged",
+      "created": "2023-08-08",
+      "merged": "2023-08-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".scss": 6,
+        ".ts": 2,
+        ".tsx": 4
+      },
+      "additions": 430,
+      "deletions": 95,
+      "co_authors": [],
+      "review_comments_received": 8,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8329,
+      "title": "fix react-hooks/exhaustive-deps warnings",
+      "state": "merged",
+      "created": "2023-10-20",
+      "merged": "2023-10-21",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 9
+      },
+      "additions": 44,
+      "deletions": 41,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8407,
+      "title": "chore: bump react-query 4 -> 5",
+      "state": "merged",
+      "created": "2023-12-15",
+      "merged": "2023-12-15",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 2,
+        ".ts": 14,
+        ".tsx": 11
+      },
+      "additions": 210,
+      "deletions": 198,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8518,
+      "title": "WEB-3875 class -> function components (billing settings)",
+      "state": "merged",
+      "created": "2024-02-20",
+      "merged": "2024-02-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 8
+      },
+      "additions": 380,
+      "deletions": 420,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8539,
+      "title": "bff: cache-control on /me",
+      "state": "merged",
+      "created": "2024-03-05",
+      "merged": "2024-03-05",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 2
+      },
+      "additions": 16,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8633,
+      "title": "storybook stories for Button, Select",
+      "state": "merged",
+      "created": "2024-05-14",
+      "merged": "2024-05-17",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 4,
+        ".mdx": 1
+      },
+      "additions": 190,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8732,
+      "title": "WEB-4020 ts strict on features/recon",
+      "state": "merged",
+      "created": "2024-07-11",
+      "merged": "2024-07-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 22,
+        ".tsx": 18
+      },
+      "additions": 330,
+      "deletions": 310,
+      "co_authors": [],
+      "review_comments_received": 12,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8786,
+      "title": "types: drop any from api client",
+      "state": "merged",
+      "created": "2024-08-21",
+      "merged": "2024-08-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 6
+      },
+      "additions": 88,
+      "deletions": 121,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8841,
+      "title": "WEB-4143 recon route lazy load",
+      "state": "merged",
+      "created": "2024-09-27",
+      "merged": "2024-09-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".ts": 2
+      },
+      "additions": 64,
+      "deletions": 30,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 8920,
+      "title": "perf: memo InvoiceRow, 120ms -> 30ms render",
+      "state": "merged",
+      "created": "2024-11-12",
+      "merged": "2024-11-14",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2
+      },
+      "additions": 37,
+      "deletions": 19,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9029,
+      "title": "test: RTL for PaymentMethodForm",
+      "state": "merged",
+      "created": "2025-01-23",
+      "merged": "2025-01-23",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".ts": 1
+      },
+      "additions": 210,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9081,
+      "title": "fix: Safari date input",
+      "state": "merged",
+      "created": "2025-02-25",
+      "merged": "2025-02-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1,
+        ".scss": 1
+      },
+      "additions": 9,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9140,
+      "title": "WEB-4392 recon filters url state",
+      "state": "merged",
+      "created": "2025-04-10",
+      "merged": "2025-04-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4,
+        ".tsx": 5
+      },
+      "additions": 275,
+      "deletions": 90,
+      "co_authors": [],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9215,
+      "title": "e2e: playwright spec for checkout redirect",
+      "state": "merged",
+      "created": "2025-05-23",
+      "merged": "2025-05-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1
+      },
+      "additions": 73,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9281,
+      "title": "i18n: de keys for billing settings",
+      "state": "merged",
+      "created": "2025-07-02",
+      "merged": "2025-07-04",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 3
+      },
+      "additions": 240,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9342,
+      "title": "Revert \"WEB-4392 recon filters url state\"",
+      "state": "merged",
+      "created": "2025-08-14",
+      "merged": "2025-08-19",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4,
+        ".tsx": 5
+      },
+      "additions": 90,
+      "deletions": 275,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9355,
+      "title": "WEB-4392 recon filters url state (v2)",
+      "state": "merged",
+      "created": "2025-08-19",
+      "merged": "2025-08-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4,
+        ".tsx": 5
+      },
+      "additions": 281,
+      "deletions": 90,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9533,
+      "title": "WEB-4666 billing settings: tax profile form",
+      "state": "merged",
+      "created": "2025-10-29",
+      "merged": "2025-11-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 6,
+        ".ts": 3
+      },
+      "additions": 520,
+      "deletions": 40,
+      "co_authors": [],
+      "review_comments_received": 10,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9625,
+      "title": "chore: eslint 9 flat config",
+      "state": "merged",
+      "created": "2025-12-10",
+      "merged": "2025-12-11",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".js": 2,
+        ".json": 2
+      },
+      "additions": 61,
+      "deletions": 70,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9781,
+      "title": "WEB-4840 form validation with zod",
+      "state": "merged",
+      "created": "2026-01-29",
+      "merged": "2026-01-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 5,
+        ".tsx": 4
+      },
+      "additions": 300,
+      "deletions": 110,
+      "co_authors": [],
+      "review_comments_received": 7,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9874,
+      "title": "fix: stale invoice count after refresh",
+      "state": "merged",
+      "created": "2026-03-09",
+      "merged": "2026-03-19",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1
+      },
+      "additions": 12,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 9970,
+      "title": "WEB-4974 numeric input a11y (aria-describedby)",
+      "state": "merged",
+      "created": "2026-04-24",
+      "merged": "2026-05-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3
+      },
+      "additions": 55,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "a11y"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10118,
+      "title": "perf: split vendor chunk, -180kb",
+      "state": "merged",
+      "created": "2026-06-26",
+      "merged": "2026-06-26",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1,
+        ".json": 1
+      },
+      "additions": 21,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": [
+        "perf"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10186,
+      "title": "WEB-5129 settings: unsaved changes prompt",
+      "state": "merged",
+      "created": "2026-08-01",
+      "merged": "2026-08-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".ts": 1
+      },
+      "additions": 166,
+      "deletions": 20,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "number": 10341,
+      "title": "chore: bump vite 5 -> 6",
+      "state": "merged",
+      "created": "2026-09-24",
+      "merged": "2026-09-28",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 2,
+        ".ts": 1
+      },
+      "additions": 44,
+      "deletions": 41,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 7755,
+      "date": "2022-09-02",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "can we pull this into a shared Table comp?"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 7836,
+      "date": "2022-10-26",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 7953,
+      "date": "2023-01-19",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "useEffect with [] but uses props.id, will go stale"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8036,
+      "date": "2023-03-30",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "nit: file name casing"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8115,
+      "date": "2023-05-24",
+      "state": "COMMENTED",
+      "comment_count": 4,
+      "sample_comment": "memo here is useless, deps change every render"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8223,
+      "date": "2023-08-09",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8344,
+      "date": "2023-11-02",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 5,
+      "sample_comment": "key={index} will break reorder"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8463,
+      "date": "2024-01-16",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "ok"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8582,
+      "date": "2024-04-09",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "why useState for derived value"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8674,
+      "date": "2024-06-13",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8754,
+      "date": "2024-08-01",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 6,
+      "sample_comment": "strict null: handle undefined from api, don't cast"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8814,
+      "date": "2024-09-05",
+      "state": "APPROVED",
+      "comment_count": 2,
+      "sample_comment": "approved w/ comments"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 8870,
+      "date": "2024-10-25",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "can't repro locally, node version?"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9045,
+      "date": "2025-01-30",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "lgtm, ship it"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9162,
+      "date": "2025-04-30",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "debounce missing, api hit on every keystroke"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9290,
+      "date": "2025-07-15",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9431,
+      "date": "2025-09-24",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "split this, 900 lines"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9588,
+      "date": "2025-11-26",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "ok"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 9815,
+      "date": "2026-02-12",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 3,
+      "sample_comment": "setState after unmount warning"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10020,
+      "date": "2026-05-20",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10122,
+      "date": "2026-06-30",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "prefer composition over this prop drilling"
+    },
+    {
+      "repo": "kestrel-cloud/web-console",
+      "pr_number": 10260,
+      "date": "2026-09-09",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "nit: typo in story"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2022-07",
+      "merged_prs": 3,
+      "reviews": 2,
+      "by_ext": {
+        ".tsx": 9,
+        ".ts": 6,
+        ".scss": 2,
+        ".json": 2
+      }
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".tsx": 11,
+        ".ts": 8,
+        ".scss": 2,
+        ".json": 2
+      }
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 4,
+      "reviews": 2,
+      "by_ext": {
+        ".tsx": 11,
+        ".ts": 8,
+        ".scss": 2,
+        ".json": 2
+      }
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".tsx": 11,
+        ".ts": 8,
+        ".scss": 2,
+        ".json": 2
+      }
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 7,
+      "reviews": 1,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 9,
+      "reviews": 2,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".tsx": 20,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".tsx": 14,
+        ".ts": 9,
+        ".scss": 3,
+        ".json": 3
+      }
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".tsx": 22,
+        ".ts": 15,
+        ".scss": 5,
+        ".json": 5
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".tsx": 22,
+        ".ts": 15,
+        ".scss": 5,
+        ".json": 5
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".tsx": 22,
+        ".ts": 15,
+        ".scss": 5,
+        ".json": 5
+      }
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 6,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".tsx": 20,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 7,
+      "reviews": 4,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".tsx": 22,
+        ".ts": 15,
+        ".scss": 5,
+        ".json": 5
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 9,
+      "reviews": 8,
+      "by_ext": {
+        ".tsx": 25,
+        ".ts": 16,
+        ".scss": 6,
+        ".json": 6
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".tsx": 20,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 5,
+      "reviews": 9,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".tsx": 20,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4,
+        ".mdx": 1
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 22,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".tsx": 20,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 5,
+      "reviews": 10,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 8,
+      "reviews": 8,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 6,
+      "reviews": 11,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 9,
+      "reviews": 9,
+      "by_ext": {
+        ".tsx": 25,
+        ".ts": 16,
+        ".scss": 6,
+        ".json": 6
+      }
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".tsx": 22,
+        ".ts": 15,
+        ".scss": 5,
+        ".json": 5
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 9,
+      "reviews": 13,
+      "by_ext": {
+        ".tsx": 22,
+        ".ts": 15,
+        ".scss": 5,
+        ".json": 5
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 10,
+      "reviews": 8,
+      "by_ext": {
+        ".tsx": 20,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 9,
+      "reviews": 12,
+      "by_ext": {
+        ".tsx": 22,
+        ".ts": 15,
+        ".scss": 5,
+        ".json": 5
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 8,
+      "reviews": 13,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 6,
+      "reviews": 14,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 10,
+      "reviews": 13,
+      "by_ext": {
+        ".tsx": 20,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 6,
+      "reviews": 13,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4,
+        ".js": 2
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".tsx": 20,
+        ".ts": 14,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 7,
+      "reviews": 10,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 6,
+      "reviews": 8,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 7,
+      "reviews": 11,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 5,
+      "reviews": 11,
+      "by_ext": {
+        ".tsx": 14,
+        ".ts": 9,
+        ".scss": 3,
+        ".json": 3
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 8,
+      "reviews": 9,
+      "by_ext": {
+        ".tsx": 18,
+        ".ts": 12,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 5,
+      "reviews": 8,
+      "by_ext": {
+        ".tsx": 14,
+        ".ts": 9,
+        ".scss": 3,
+        ".json": 3
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".tsx": 16,
+        ".ts": 10,
+        ".scss": 4,
+        ".json": 4
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 5,
+      "reviews": 12,
+      "by_ext": {
+        ".tsx": 14,
+        ".ts": 9,
+        ".scss": 3,
+        ".json": 3
+      }
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [
+      "react-expense-tracker",
+      "portfolio-site"
+    ],
+    "oss_contributions": []
+  }
+}

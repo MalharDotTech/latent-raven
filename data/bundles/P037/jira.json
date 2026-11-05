@@ -1,0 +1,437 @@
+{
+  "linked_employee_id": "KC-11863",
+  "issues": [
+    {
+      "key": "PM-1158",
+      "type": "Task",
+      "summary": "Pune level 4 partition measurements",
+      "description_excerpt": "Check final partition quantities before running bill.",
+      "component": "Pune office fit-out",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-08-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-08-08",
+      "resolved": "2024-08-14",
+      "story_points": 5,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 120",
+        "start": "2024-07-29",
+        "end": "2024-08-09"
+      },
+      "comments": [
+        {
+          "author": "Sanket Jadhav",
+          "date": "2024-08-14",
+          "body": "Sanket measured 184.6 square metres against the marked-up AutoCAD drawing. Vendor measurement sheet corrected for two door openings; consultant checked and signed the bill quantities."
+        }
+      ]
+    },
+    {
+      "key": "PM-1192",
+      "type": "Task",
+      "summary": "Pune pantry drainage test",
+      "description_excerpt": "Complete ponding test before tile handover.",
+      "component": "Pune office fit-out",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-09-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-09-03",
+      "resolved": "2024-09-16",
+      "story_points": 1,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 122",
+        "start": "2024-08-26",
+        "end": "2024-09-06"
+      },
+      "comments": [
+        {
+          "author": "Sanket Jadhav",
+          "date": "2024-09-16",
+          "body": "Sanket recorded 24-hour test and marked two seepage points on the site drawing. Vendor repaired joints and repeat test accepted by consultant."
+        }
+      ]
+    },
+    {
+      "key": "PM-1291",
+      "type": "Task",
+      "summary": "Meeting room ceiling levels",
+      "description_excerpt": "Check ceiling setting-out before closure.",
+      "component": "Pune office fit-out",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-11-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-11-19",
+      "resolved": "2024-11-29",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 128",
+        "start": "2024-11-18",
+        "end": "2024-11-29"
+      },
+      "comments": [
+        {
+          "author": "Sanket Jadhav",
+          "date": "2024-11-29",
+          "body": "Site inspection by Sanket found one duct clashing with the bulkhead. Revised AutoCAD section issued to contractor; level check completed."
+        }
+      ]
+    },
+    {
+      "key": "PM-1335",
+      "type": "Task",
+      "summary": "Office possession snag list",
+      "description_excerpt": "Walkthrough and closure of fit-out snags.",
+      "component": "Pune office fit-out",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-12-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-12-11",
+      "resolved": "2024-12-23",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 129",
+        "start": "2024-12-02",
+        "end": "2024-12-13"
+      },
+      "comments": [
+        {
+          "author": "Sanket Jadhav",
+          "date": "2024-12-23",
+          "body": "Sanket checked door closers, partition alignment, tile hollowness and as-built drawing set. 37 snags closed, 4 retained for the vendor visit. Consultant signed possession list."
+        }
+      ]
+    },
+    {
+      "key": "PM-1418",
+      "type": "Task",
+      "summary": "As built drawing collection",
+      "description_excerpt": "Collect final civil drawings and measurement sheets.",
+      "component": "Pune office fit-out",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": true,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-02-07",
+      "resolved": "2025-02-10",
+      "story_points": 3,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 133",
+        "start": "2025-01-27",
+        "end": "2025-02-07"
+      },
+      "comments": [
+        {
+          "author": "Sanket Jadhav",
+          "date": "2025-02-10",
+          "body": "Sanket checked the AutoCAD as-built against site measurements and returned the pantry drawing for revision. Final drawing set received from vendor."
+        }
+      ]
+    },
+    {
+      "key": "PM-2061",
+      "type": "Task",
+      "summary": "Waterproofing rectification",
+      "description_excerpt": "Inspection after washroom leak complaint.",
+      "component": "Pune office fit-out",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-18",
+      "resolved": "2026-06-22",
+      "story_points": 2,
+      "labels": [],
+      "sprint": {
+        "name": "Iteration 169",
+        "start": "2026-06-15",
+        "end": "2026-06-26"
+      },
+      "comments": [
+        {
+          "author": "Sanket Jadhav",
+          "date": "2026-06-22",
+          "body": "Sanket supervised tile removal and membrane repair at the threshold. Recorded site quantities and repeat ponding test before closing the vendor bill."
+        }
+      ]
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 1,
+      "reported": 3
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    }
+  ],
+  "exported": "2026-10-31"
+}

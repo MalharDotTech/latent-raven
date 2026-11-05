@@ -1,0 +1,190 @@
+{
+  "pid": "P041",
+  "schema": "truth-v2",
+  "summary": "Four-year finance analyst with good routine model, FI and reviewed-query evidence. Exact savings and forecasting claims in the CV lack supporting measurement artefacts; those numbers are not needed for ordinary core-skill sends.",
+  "archetype": "ordinary_fp_and_a",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "excel_modeling",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "jira_KC-12109",
+        "missing_source": null
+      },
+      "last_used": "2025-12",
+      "evidence_refs": [
+        "jira_KC-12109:PM-933",
+        "jira_KC-12109:PM-1227",
+        "jira_KC-12109:PM-1806"
+      ],
+      "why": "Employer acceptance identifies successive scenario-model versions and reconciled finance outputs."
+    },
+    {
+      "skill_id": "sap",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "jira_KC-12109",
+        "missing_source": null
+      },
+      "last_used": "2026-04",
+      "evidence_refs": [
+        "jira_KC-12109:PM-933",
+        "jira_KC-12109:PM-1439",
+        "jira_KC-12109:PM-1681",
+        "jira_KC-12109:PM-1969"
+      ],
+      "why": "FI workflow faults are traced and cleared with document/ledger reconciliation, scoped to FI."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "jira_KC-12109",
+        "missing_source": null
+      },
+      "last_used": "2025-08",
+      "evidence_refs": [
+        "jira_KC-12109:PM-1108",
+        "jira_KC-12109:PM-1681"
+      ],
+      "why": "Reviewed finance queries have explicit join corrections and checked totals."
+    },
+    {
+      "skill_id": "data_modeling",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_ritika-shah-kc_1",
+        "missing_source": "Reviewed model diagram with corrected grain and key definitions."
+      },
+      "last_used": "2026-06",
+      "evidence_refs": [
+        "cv_ritika-shah-kc_1:skills/experience"
+      ],
+      "why": "Can draft a finance data model with guidance, but extract queries do not demonstrate a reviewed schema."
+    },
+    {
+      "skill_id": "stakeholder_management",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "jira_KC-12109",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "jira_KC-12109:PM-1581",
+        "jira_KC-12109:PM-2161"
+      ],
+      "why": "Budget-owner tradeoffs lead to signed decisions and completed revised plans."
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "doc_ENG-2891; jira_KC-12109",
+        "missing_source": null
+      },
+      "last_used": "2026-06",
+      "evidence_refs": [
+        "doc_ENG-2891:review/validation",
+        "jira_KC-12109:PM-2057"
+      ],
+      "why": "FI extraction procedure receives specific controller corrections."
+    }
+  ],
+  "decoys": [],
+  "traps": [],
+  "unmatched_skills": [],
+  "realism_observations": [
+    "RO-14"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true,
+  "calibration_notes": "No false savings claim was planted. Specific CV numbers are unverified; normal finance acceptance records independently support the core levels."
+}

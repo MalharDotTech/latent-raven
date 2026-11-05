@@ -1,0 +1,59 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Workday Recruiting for Recruiters",
+      "provider": "Kestrel Learn",
+      "completed": "2024-02-02",
+      "time_spent_minutes": 140,
+      "quiz_score_pct": 90,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Structured Interviewing Certification",
+      "provider": "Kestrel Learn",
+      "completed": "2024-02-20",
+      "time_spent_minutes": 260,
+      "quiz_score_pct": 86,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Unconscious Bias in Hiring",
+      "provider": "Kestrel Learn",
+      "completed": "2024-03-11",
+      "time_spent_minutes": 75,
+      "quiz_score_pct": 92,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Candidate Data and DPDP Act Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2025-01-22",
+      "time_spent_minutes": 55,
+      "quiz_score_pct": 88,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Interview Panel Calibration Workshop",
+      "provider": "Kestrel Learn",
+      "completed": "2025-09-17",
+      "time_spent_minutes": 180,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Code of Conduct and POSH 2025",
+      "provider": "Kestrel Learn",
+      "completed": "2025-06-06",
+      "time_spent_minutes": 26,
+      "quiz_score_pct": 100,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "internal: Technical Role Primer for Recruiters (Data and Backend)",
+      "provider": "Kestrel Learn",
+      "completed": "2024-05-14",
+      "time_spent_minutes": 110,
+      "quiz_score_pct": 81,
+      "assigned_by": "self"
+    }
+  ]
+}

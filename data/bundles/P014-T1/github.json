@@ -1,0 +1,1768 @@
+{
+  "login": "fsheikh_kestrel",
+  "account_type": "enterprise",
+  "linked_employee_id": "KC-10896",
+  "pull_requests": [
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 8510,
+      "title": "MOB-3124 biometric login (FaceID / fingerprint)",
+      "state": "merged",
+      "created": "2021-05-11",
+      "merged": "2021-05-12",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".ts": 4,
+        ".kt": 1,
+        ".swift": 1
+      },
+      "additions": 380,
+      "deletions": 20,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 8,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 8571,
+      "title": "fix: android back button closes modal not screen",
+      "state": "merged",
+      "created": "2021-06-30",
+      "merged": "2021-07-02",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2
+      },
+      "additions": 22,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 8649,
+      "title": "MOB-3255 invoice share via whatsapp intent",
+      "state": "merged",
+      "created": "2021-09-01",
+      "merged": "2021-09-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2,
+        ".ts": 2,
+        ".kt": 1
+      },
+      "additions": 170,
+      "deletions": 6,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 5,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 8765,
+      "title": "chore: bump react-native 0.64 -> 0.68",
+      "state": "merged",
+      "created": "2021-12-06",
+      "merged": "2021-12-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 3,
+        ".gradle": 2,
+        ".pbxproj": 1,
+        ".ts": 4
+      },
+      "additions": 410,
+      "deletions": 390,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 9,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 8841,
+      "title": "fix: ios keyboard covers PaymentForm inputs",
+      "state": "merged",
+      "created": "2022-02-18",
+      "merged": "2022-02-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 2
+      },
+      "additions": 31,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 8951,
+      "title": "MOB-3352 push notifications (FCM) failed payment alerts",
+      "state": "merged",
+      "created": "2022-05-18",
+      "merged": "2022-05-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 5,
+        ".tsx": 2,
+        ".kt": 2
+      },
+      "additions": 440,
+      "deletions": 15,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 11,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9037,
+      "title": "perf: FlatList getItemLayout for transactions",
+      "state": "merged",
+      "created": "2022-07-27",
+      "merged": "2022-07-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 1
+      },
+      "additions": 16,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9114,
+      "title": "detox: e2e login + pay flow",
+      "state": "merged",
+      "created": "2022-10-03",
+      "merged": "2022-10-05",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4,
+        ".json": 1
+      },
+      "additions": 330,
+      "deletions": 0,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 6,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9181,
+      "title": "Merge ios build fix (#9190)",
+      "state": "merged",
+      "created": "2022-12-02",
+      "merged": "2022-12-03",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".pbxproj": 1
+      },
+      "additions": 4,
+      "deletions": 4,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9261,
+      "title": "MOB-3613 deeplink invoice/:id cold start",
+      "state": "merged",
+      "created": "2023-02-03",
+      "merged": "2023-02-09",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 2,
+        ".kt": 1,
+        ".swift": 1
+      },
+      "additions": 95,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9349,
+      "title": "crashlytics: breadcrumbs for nav events",
+      "state": "merged",
+      "created": "2023-04-12",
+      "merged": "2023-04-20",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 3
+      },
+      "additions": 60,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9430,
+      "title": "refactor: useAuth hook",
+      "state": "merged",
+      "created": "2023-06-15",
+      "merged": "2023-06-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 3,
+        ".tsx": 5
+      },
+      "additions": 140,
+      "deletions": 160,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9474,
+      "title": "renovate: update dependency react-native-mmkv to v2.10.1",
+      "state": "merged",
+      "created": "2023-07-21",
+      "merged": "2023-07-27",
+      "merged_by": "self",
+      "author_type": "bot",
+      "files_ext": {
+        ".json": 2
+      },
+      "additions": 5,
+      "deletions": 5,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9545,
+      "title": "MOB-3709 offline invoice cache (mmkv)",
+      "state": "merged",
+      "created": "2023-09-18",
+      "merged": "2023-09-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 6,
+        ".tsx": 3
+      },
+      "additions": 590,
+      "deletions": 40,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 13,
+      "labels": [
+        "feature"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9607,
+      "title": "types: navigation params",
+      "state": "merged",
+      "created": "2023-11-15",
+      "merged": "2023-11-18",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 9
+      },
+      "additions": 120,
+      "deletions": 70,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9684,
+      "title": "i18n hi-IN strings",
+      "state": "merged",
+      "created": "2024-01-16",
+      "merged": "2024-01-16",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 2
+      },
+      "additions": 310,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9742,
+      "title": "MOB-3895 sync queue retry/backoff",
+      "state": "merged",
+      "created": "2024-03-01",
+      "merged": "2024-03-06",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4
+      },
+      "additions": 255,
+      "deletions": 30,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 8,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9831,
+      "title": "RN 0.73 upgrade, hermes on android",
+      "state": "merged",
+      "created": "2024-05-13",
+      "merged": "2024-05-29",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 4,
+        ".gradle": 3,
+        ".pbxproj": 2,
+        ".ts": 6,
+        ".kt": 1
+      },
+      "additions": 620,
+      "deletions": 540,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>",
+        "Dinesh Rathod <dinesh.rathod@kestrelcloud.com>"
+      ],
+      "review_comments_received": 14,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9875,
+      "title": "fix: crash on cold start when mmkv key missing",
+      "state": "merged",
+      "created": "2024-06-24",
+      "merged": "2024-06-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 1
+      },
+      "additions": 9,
+      "deletions": 2,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 9966,
+      "title": "MOB-3996 fastlane: build number from CI run",
+      "state": "merged",
+      "created": "2024-08-30",
+      "merged": "2024-08-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".rb": 2,
+        ".yml": 1
+      },
+      "additions": 58,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10022,
+      "title": "MOB-4049 invoice detail screen skeleton",
+      "state": "merged",
+      "created": "2024-10-08",
+      "merged": "2024-10-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".ts": 1
+      },
+      "additions": 210,
+      "deletions": 18,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 5,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10093,
+      "title": "codepush config per env",
+      "state": "merged",
+      "created": "2024-12-03",
+      "merged": "2024-12-11",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 2,
+        ".yml": 1
+      },
+      "additions": 33,
+      "deletions": 12,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10148,
+      "title": "renovate: update dependency @react-navigation/native to v6.1.18",
+      "state": "merged",
+      "created": "2025-01-22",
+      "merged": "2025-01-22",
+      "merged_by": "self",
+      "author_type": "bot",
+      "files_ext": {
+        ".json": 1
+      },
+      "additions": 3,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 0,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10180,
+      "title": "MOB-4145 biometric re-auth after 5 min bg",
+      "state": "merged",
+      "created": "2025-02-19",
+      "merged": "2025-02-19",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 3,
+        ".tsx": 1
+      },
+      "additions": 112,
+      "deletions": 9,
+      "co_authors": [],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10239,
+      "title": "test: jest for sync queue",
+      "state": "merged",
+      "created": "2025-04-02",
+      "merged": "2025-04-04",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 3
+      },
+      "additions": 200,
+      "deletions": 0,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": [
+        "test"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10310,
+      "title": "MOB-4237 payment link deep link (UPI intent)",
+      "state": "merged",
+      "created": "2025-05-27",
+      "merged": "2025-05-30",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 3,
+        ".kt": 1
+      },
+      "additions": 180,
+      "deletions": 20,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 7,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10359,
+      "title": "fix: FCM token refresh on android 13",
+      "state": "merged",
+      "created": "2025-07-01",
+      "merged": "2025-07-11",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".kt": 1,
+        ".ts": 1
+      },
+      "additions": 44,
+      "deletions": 3,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10422,
+      "title": "MOB-4335 accessibility labels invoice list",
+      "state": "merged",
+      "created": "2025-08-22",
+      "merged": "2025-08-22",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 4
+      },
+      "additions": 73,
+      "deletions": 22,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": [
+        "a11y"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10487,
+      "title": "RN 0.76 new arch flag (off), pods cleanup",
+      "state": "merged",
+      "created": "2025-09-30",
+      "merged": "2025-10-08",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".json": 3,
+        ".pbxproj": 2,
+        ".rb": 1
+      },
+      "additions": 230,
+      "deletions": 260,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 8,
+      "labels": [
+        "deps"
+      ]
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10558,
+      "title": "MOB-4415 widget: due-today invoices (android)",
+      "state": "merged",
+      "created": "2025-11-27",
+      "merged": "2025-11-27",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".kt": 4,
+        ".ts": 2
+      },
+      "additions": 370,
+      "deletions": 14,
+      "co_authors": [],
+      "review_comments_received": 9,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10637,
+      "title": "fix: stale auth token after biometric fail",
+      "state": "merged",
+      "created": "2026-01-16",
+      "merged": "2026-01-23",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 2
+      },
+      "additions": 28,
+      "deletions": 10,
+      "co_authors": [],
+      "review_comments_received": 2,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10688,
+      "title": "MOB-4507 sentry replace crashlytics breadcrumbs",
+      "state": "merged",
+      "created": "2026-03-03",
+      "merged": "2026-03-03",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 4,
+        ".json": 1
+      },
+      "additions": 97,
+      "deletions": 60,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 4,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10769,
+      "title": "MOB-4578 fastlane: ios match for cert rotation",
+      "state": "merged",
+      "created": "2026-04-28",
+      "merged": "2026-05-01",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".rb": 2,
+        ".yml": 1
+      },
+      "additions": 66,
+      "deletions": 31,
+      "co_authors": [],
+      "review_comments_received": 3,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10831,
+      "title": "perf: lazy init analytics sdk (-220ms cold start)",
+      "state": "merged",
+      "created": "2026-06-24",
+      "merged": "2026-06-25",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".ts": 2
+      },
+      "additions": 39,
+      "deletions": 17,
+      "co_authors": [],
+      "review_comments_received": 5,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10898,
+      "title": "MOB-4677 receipts screen (pdf viewer)",
+      "state": "merged",
+      "created": "2026-08-09",
+      "merged": "2026-08-21",
+      "merged_by": "other",
+      "author_type": "human",
+      "files_ext": {
+        ".tsx": 3,
+        ".ts": 2
+      },
+      "additions": 320,
+      "deletions": 12,
+      "co_authors": [
+        "Karan Nayak <karan.nayak@kestrelcloud.com>"
+      ],
+      "review_comments_received": 6,
+      "labels": []
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "number": 10962,
+      "title": "fix: pdf viewer oom on low end android",
+      "state": "merged",
+      "created": "2026-09-29",
+      "merged": "2026-09-30",
+      "merged_by": "self",
+      "author_type": "human",
+      "files_ext": {
+        ".kt": 1,
+        ".ts": 1
+      },
+      "additions": 21,
+      "deletions": 6,
+      "co_authors": [],
+      "review_comments_received": 1,
+      "labels": []
+    }
+  ],
+  "reviews_given": [
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 8715,
+      "date": "2021-10-23",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 8896,
+      "date": "2022-04-06",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "this will re-render the whole list"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 9093,
+      "date": "2022-09-15",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 9318,
+      "date": "2023-03-27",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "android only? ios has different permission flow"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 9458,
+      "date": "2023-07-10",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 9639,
+      "date": "2023-12-08",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 2,
+      "sample_comment": "missing null check on deeplink param"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 9805,
+      "date": "2024-04-26",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "ok after rebase"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 9927,
+      "date": "2024-07-30",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "why not useCallback here"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 10070,
+      "date": "2024-11-18",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": "lgtm"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 10203,
+      "date": "2025-03-12",
+      "state": "CHANGES_REQUESTED",
+      "comment_count": 4,
+      "sample_comment": "native module change needs release note + no codepush"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 10341,
+      "date": "2025-06-26",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "nit: remove console.log"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 10459,
+      "date": "2025-09-18",
+      "state": "COMMENTED",
+      "comment_count": 3,
+      "sample_comment": "pods lock changed too, intended?"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 10598,
+      "date": "2025-12-22",
+      "state": "APPROVED",
+      "comment_count": 0,
+      "sample_comment": ""
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 10736,
+      "date": "2026-04-16",
+      "state": "COMMENTED",
+      "comment_count": 2,
+      "sample_comment": "add test for retry exhaustion"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 10862,
+      "date": "2026-07-16",
+      "state": "APPROVED",
+      "comment_count": 1,
+      "sample_comment": "lgtm"
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2021-03",
+      "merged_prs": 2,
+      "reviews": 1,
+      "by_ext": {
+        ".ts": 3,
+        ".tsx": 3,
+        ".json": 1,
+        ".kt": 0,
+        ".gradle": 0
+      }
+    },
+    {
+      "month": "2021-04",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 6,
+        ".tsx": 6,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 0
+      }
+    },
+    {
+      "month": "2021-05",
+      "merged_prs": 4,
+      "reviews": 1,
+      "by_ext": {
+        ".ts": 6,
+        ".tsx": 6,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 0,
+        ".swift": 1
+      }
+    },
+    {
+      "month": "2021-06",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2021-07",
+      "merged_prs": 4,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2021-08",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2021-09",
+      "merged_prs": 5,
+      "reviews": 1,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2021-10",
+      "merged_prs": 8,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2021-11",
+      "merged_prs": 6,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2021-12",
+      "merged_prs": 6,
+      "reviews": 0,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 2,
+        ".pbxproj": 1
+      }
+    },
+    {
+      "month": "2022-01",
+      "merged_prs": 8,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-02",
+      "merged_prs": 5,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-03",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-04",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-05",
+      "merged_prs": 11,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-06",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-07",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-08",
+      "merged_prs": 8,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-09",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-10",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-11",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2022-12",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1,
+        ".pbxproj": 1
+      }
+    },
+    {
+      "month": "2023-01",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-02",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1,
+        ".swift": 1
+      }
+    },
+    {
+      "month": "2023-03",
+      "merged_prs": 8,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-04",
+      "merged_prs": 7,
+      "reviews": 2,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-05",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-06",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-07",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      },
+      "bot_prs_merged_by_self": 1
+    },
+    {
+      "month": "2023-08",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-09",
+      "merged_prs": 8,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-10",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-11",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2023-12",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-01",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-02",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-03",
+      "merged_prs": 5,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-04",
+      "merged_prs": 10,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-05",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 4,
+        ".kt": 1,
+        ".gradle": 3,
+        ".pbxproj": 2
+      }
+    },
+    {
+      "month": "2024-06",
+      "merged_prs": 9,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-07",
+      "merged_prs": 6,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-08",
+      "merged_prs": 8,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1,
+        ".rb": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2024-09",
+      "merged_prs": 6,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-10",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-11",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2024-12",
+      "merged_prs": 8,
+      "reviews": 7,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2025-01",
+      "merged_prs": 5,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      },
+      "bot_prs_merged_by_self": 1
+    },
+    {
+      "month": "2025-02",
+      "merged_prs": 4,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-03",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-04",
+      "merged_prs": 6,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-05",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-06",
+      "merged_prs": 7,
+      "reviews": 3,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-07",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-09",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-10",
+      "merged_prs": 4,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1,
+        ".pbxproj": 2,
+        ".rb": 1
+      }
+    },
+    {
+      "month": "2025-11",
+      "merged_prs": 5,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 4,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2025-12",
+      "merged_prs": 7,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 13,
+        ".tsx": 11,
+        ".json": 3,
+        ".kt": 2,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-01",
+      "merged_prs": 9,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-02",
+      "merged_prs": 9,
+      "reviews": 7,
+      "by_ext": {
+        ".ts": 11,
+        ".tsx": 10,
+        ".json": 3,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-03",
+      "merged_prs": 5,
+      "reviews": 7,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-04",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-05",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1,
+        ".rb": 2,
+        ".yml": 1
+      }
+    },
+    {
+      "month": "2026-06",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-07",
+      "merged_prs": 6,
+      "reviews": 5,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-08",
+      "merged_prs": 7,
+      "reviews": 7,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-09",
+      "merged_prs": 8,
+      "reviews": 6,
+      "by_ext": {
+        ".ts": 10,
+        ".tsx": 8,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    },
+    {
+      "month": "2026-10",
+      "merged_prs": 5,
+      "reviews": 4,
+      "by_ext": {
+        ".ts": 8,
+        ".tsx": 7,
+        ".json": 2,
+        ".kt": 1,
+        ".gradle": 1
+      }
+    }
+  ],
+  "commit_trailers_not_linked_to_account": [
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 1072,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2021-11-03"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 1330,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2022-07-12"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 1478,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2022-11-22"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 1612,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2023-03-07"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 1880,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2023-10-17"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 2080,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2024-02-13"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 2395,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2024-09-17"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 2702,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2025-04-29"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 2988,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2025-10-28"
+    },
+    {
+      "repo": "kestrel-cloud/mobile-app",
+      "pr_number": 3299,
+      "pr_author": "knayak_kestrel",
+      "trailer": "Co-authored-by: Rahul Verma <rahul.verma.dev@gmail.com>",
+      "date": "2026-05-26"
+    }
+  ],
+  "public_profile": {
+    "personal_repos": [],
+    "oss_contributions": []
+  }
+}

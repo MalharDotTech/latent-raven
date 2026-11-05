@@ -1,0 +1,1065 @@
+{
+  "issues": [
+    {
+      "key": "DATA-741",
+      "type": "Task",
+      "summary": "Document ingestion job layout",
+      "description_excerpt": "New joiners keep asking where the jobs live.",
+      "component": "Ingestion",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2019-08-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2019-08-07",
+      "resolved": "2019-08-23",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-766",
+      "type": "Story",
+      "summary": "Dedupe billing events",
+      "description_excerpt": "Duplicates after at-least-once delivery from the app; key is tenant + event id.",
+      "component": "Ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2019-08-28"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2019-08-28",
+      "resolved": "2019-09-17",
+      "labels": [],
+      "story_points": 5
+    },
+    {
+      "key": "DATA-833",
+      "type": "Story",
+      "summary": "Sessionize usage events",
+      "description_excerpt": "Needed by analytics for the usage dashboard.",
+      "component": "Ingestion",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2019-10-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2019-10-30",
+      "resolved": "2019-12-06",
+      "labels": [],
+      "story_points": 8
+    },
+    {
+      "key": "DATA-929",
+      "type": "Bug",
+      "summary": "recon_summary job takes 3h",
+      "description_excerpt": "Skewed tenants; check partitions.",
+      "component": "Performance",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2020-03-03"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2020-03-03",
+      "resolved": "2020-03-31",
+      "labels": [],
+      "story_points": 5
+    },
+    {
+      "key": "DATA-1046",
+      "type": "Task",
+      "summary": "Parquet compression experiment",
+      "description_excerpt": "Compare zstd vs snappy size and read time.",
+      "component": "Storage",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2020-08-26"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2020-08-26",
+      "resolved": "2020-09-24",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-1214",
+      "type": "Bug",
+      "summary": "Late files missing from daily table",
+      "description_excerpt": "Partner files arrive up to 2 days late.",
+      "component": "Ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-01-27"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2021-01-25",
+      "resolved": "2021-02-19",
+      "labels": [],
+      "story_points": 5
+    },
+    {
+      "key": "DATA-1374",
+      "type": "Task",
+      "summary": "dim_tenant lookup slow",
+      "description_excerpt": "",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-06-25"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2021-06-25",
+      "resolved": "2021-07-01",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-1590",
+      "type": "Story",
+      "summary": "Data quality summary table",
+      "description_excerpt": "Row counts and null rates per batch. Spec in Confluence DATA/dq.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2022-01-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2022-01-23",
+      "resolved": "2022-03-10",
+      "labels": [],
+      "story_points": 8
+    },
+    {
+      "key": "DATA-2615",
+      "type": "Task",
+      "summary": "Refresh dev setup docs",
+      "description_excerpt": "Rehire onboarding task.",
+      "component": "Docs",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-05-14"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-05-12",
+      "resolved": "2024-06-04",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-2710",
+      "type": "Task",
+      "summary": "Check source watermark",
+      "description_excerpt": "Load should stop if source watermark is behind.",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-07-09"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-07-09",
+      "resolved": "2024-07-17",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-2736",
+      "type": "Bug",
+      "summary": "watermark drift",
+      "description_excerpt": "Reported by partner team, see thread.",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-07-30"
+        },
+        {
+          "assignee": "self",
+          "from": "2024-08-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-07-30",
+      "resolved": "2024-08-29",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-2765",
+      "type": "Task",
+      "summary": "Sensor retries",
+      "description_excerpt": "",
+      "component": "Airflow",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-08-19"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-08-19",
+      "resolved": "2024-08-26",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-2891",
+      "type": "Task",
+      "summary": "events_raw full scans",
+      "description_excerpt": "Cost spike in Snowflake credits.",
+      "component": "Warehouse",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-11-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-11-08",
+      "resolved": "2024-12-03",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-2962",
+      "type": "Bug",
+      "summary": "Fix bug",
+      "description_excerpt": "Loader fails on weekends.",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-12-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2024-12-24",
+      "resolved": "2024-12-25",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-3039",
+      "type": "Story",
+      "summary": "Settlement totals reconciliation",
+      "description_excerpt": "Compare partner settlement file against warehouse totals per day.",
+      "component": "Recon Data",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-01-30"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-01-30",
+      "resolved": "2025-03-03",
+      "labels": [],
+      "story_points": 5
+    },
+    {
+      "key": "DATA-3178",
+      "type": "Task",
+      "summary": "Data checks for gold.invoices",
+      "description_excerpt": "Add checks; reviewed by analytics lead.",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-25"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-04-25",
+      "resolved": "2025-05-29",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-3265",
+      "type": "Story",
+      "summary": "Move s3 paths to config",
+      "description_excerpt": "Platform hygiene item planned for sprint 25.12.",
+      "component": "Platform",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-06-04"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-06-04",
+      "resolved": "2025-06-20",
+      "labels": [],
+      "story_points": 5
+    },
+    {
+      "key": "DATA-3315",
+      "type": "Task",
+      "summary": "Backfill for June settlements",
+      "description_excerpt": "Rerun after loader fix.",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-08"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-07-08",
+      "resolved": "2025-07-11",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-3383",
+      "type": "Bug",
+      "summary": "source totals",
+      "description_excerpt": "Mismatch of 3 rows vs partner file.",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-08-11"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-08-11",
+      "resolved": "2025-08-14",
+      "labels": [],
+      "story_points": 2
+    },
+    {
+      "key": "DATA-3457",
+      "type": "Bug",
+      "summary": "Duplicate settlement ids",
+      "description_excerpt": "",
+      "component": "Recon Data",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-09-18"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-09-18",
+      "resolved": "2025-09-25",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-3540",
+      "type": "Task",
+      "summary": "Fix bug",
+      "description_excerpt": "",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-11-13"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2025-11-13",
+      "resolved": "2025-11-14",
+      "labels": []
+    },
+    {
+      "key": "DATA-3650",
+      "type": "Bug",
+      "summary": "Partner API 429s",
+      "description_excerpt": "Extraction job fails during their maintenance window.",
+      "component": "Ingestion",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-01-23"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-01-23",
+      "resolved": "2026-02-13",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-3717",
+      "type": "Task",
+      "summary": "Backfill guard",
+      "description_excerpt": "Cli should not start overlapping backfills.",
+      "component": "Airflow",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-24"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-02-24",
+      "resolved": "2026-03-09",
+      "labels": [],
+      "story_points": 5
+    },
+    {
+      "key": "DATA-3810",
+      "type": "Bug",
+      "summary": "Fix bug",
+      "description_excerpt": "Timeout in extraction job; raised ts bump to 120s, then root cause on partner side.",
+      "component": "General",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-07"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-04-07",
+      "resolved": "2026-04-13",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-3964",
+      "type": "Bug",
+      "summary": "Daily partition key shifted by a day",
+      "description_excerpt": "IST vs UTC at midnight.",
+      "component": "Warehouse",
+      "priority": "High",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-06-12"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-06-12",
+      "resolved": "2026-06-15",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-4105",
+      "type": "Bug",
+      "summary": "csv header",
+      "description_excerpt": "Vendor file now has BOM.",
+      "component": "General",
+      "priority": "Low",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-27"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-07-27",
+      "resolved": "2026-08-14",
+      "labels": [],
+      "story_points": 1
+    },
+    {
+      "key": "DATA-4218",
+      "type": "Task",
+      "summary": "Row count assertions",
+      "description_excerpt": "",
+      "component": "Data Quality",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-08-31"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-08-26",
+      "resolved": "2026-09-29",
+      "labels": [],
+      "story_points": 3
+    },
+    {
+      "key": "DATA-4292",
+      "type": "Task",
+      "summary": "Partition cleanup",
+      "description_excerpt": "Monthly, was manual. Script + runbook.",
+      "component": "Platform",
+      "priority": "Medium",
+      "status": "Done",
+      "resolution": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-22"
+        }
+      ],
+      "resolved_by_self": true,
+      "created": "2026-09-22",
+      "resolved": "2026-10-05",
+      "labels": [],
+      "story_points": 3
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2019-07",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2019-08",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2019-09",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2019-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2019-11",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2019-12",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2020-01",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2020-02",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2020-03",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2020-04",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2020-05",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2020-06",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2020-07",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2020-08",
+      "resolved_as_assignee": 9,
+      "reported": 0
+    },
+    {
+      "month": "2020-09",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2020-10",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2020-11",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2020-12",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2021-01",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2021-02",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2021-03",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2021-04",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2021-05",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2021-06",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2021-07",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2021-08",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2021-09",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2021-10",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2021-11",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2021-12",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2022-01",
+      "resolved_as_assignee": 10,
+      "reported": 2
+    },
+    {
+      "month": "2022-02",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2022-03",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2022-04",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2022-05",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2022-06",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2022-07",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 0,
+      "reported": 0
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 8,
+      "reported": 0
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 7,
+      "reported": 4
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 6,
+      "reported": 0
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 2,
+      "reported": 0
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 4,
+      "reported": 0
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 10,
+      "reported": 0
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 7,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 5,
+      "reported": 0
+    }
+  ]
+}

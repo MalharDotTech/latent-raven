@@ -1,0 +1,281 @@
+{
+  "pid": "P036",
+  "schema": "truth-v2",
+  "summary": "Solutions engineer with six years across connector development and pre-sales integration work. The expansive CV hides fairly normal independent SE work, and a small home-linen shop is co-run with Isha Sethi.",
+  "archetype": "payments_solutions_engineer",
+  "batch": "G",
+  "generator": "codex gpt-6",
+  "skills": [
+    {
+      "skill_id": "solution_selling",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2
+        ],
+        "basis": "salesforce_KC-11529",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "salesforce_KC-11529:006HnWQfuv2hEZdVx0",
+        "salesforce_KC-11529:006LTyEsTP1pZYQFRW",
+        "salesforce_KC-11529:006iORZFcSGlAlYIQc"
+      ],
+      "why": "Opportunity decisions show independent buyer-need mapping and handling of objections."
+    },
+    {
+      "skill_id": "salesforce",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2
+        ],
+        "basis": "salesforce_KC-11529",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "salesforce_KC-11529:006HnWQfuv2hEZdVx0",
+        "salesforce_KC-11529:006LTyEsTP1pZYQFRW",
+        "salesforce_KC-11529:006iORZFcSGlAlYIQc"
+      ],
+      "why": "Dated stage changes and reconciled forecast reviews show regular independent CRM maintenance."
+    },
+    {
+      "skill_id": "customer_onboarding",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        2
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          2
+        ],
+        "basis": "salesforce_KC-11529",
+        "missing_source": null
+      },
+      "last_used": "2026-10",
+      "evidence_refs": [
+        "salesforce_KC-11529:006HnWQfuv2hEZdVx0",
+        "salesforce_KC-11529:006LTyEsTP1pZYQFRW",
+        "salesforce_KC-11529:006iORZFcSGlAlYIQc"
+      ],
+      "why": "Activation criteria, completed daily reconciliations and customer acceptance establish independent onboarding."
+    },
+    {
+      "skill_id": "api_testing",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "jira_KC-11529",
+        "missing_source": null
+      },
+      "last_used": "2026-09",
+      "evidence_refs": [
+        "jira_KC-11529:RECON-2398",
+        "jira_KC-11529:RECON-3150",
+        "jira_KC-11529:RECON-3936",
+        "jira_KC-11529:RECON-4032"
+      ],
+      "why": "Maintained integration checks cover failures and block defective release candidates."
+    },
+    {
+      "skill_id": "sql",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "jira_KC-11529",
+        "missing_source": null
+      },
+      "last_used": "2025-06",
+      "evidence_refs": [
+        "jira_KC-11529:RECON-2500",
+        "jira_KC-11529:RECON-3344"
+      ],
+      "why": "Acceptance queries have reviewer corrections and reconciliation to supplied control totals."
+    },
+    {
+      "skill_id": "java",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_aman-bhatia-kc_1",
+        "missing_source": "Recent reviewed Java endpoint change or current practical work sample."
+      },
+      "last_used": "2022-08",
+      "evidence_refs": [
+        "cv_aman-bhatia-kc_1:skills/experience"
+      ],
+      "why": "Past applied Java ability remains, but a prior-job paragraph cannot determine current retained competence."
+    },
+    {
+      "skill_id": "spring_boot",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "hold",
+        "level": null,
+        "accept_levels": [],
+        "basis": "cv_aman-bhatia-kc_1",
+        "missing_source": "A reviewed recent controller/integration-test change or practical assessment."
+      },
+      "last_used": "2022-08",
+      "evidence_refs": [
+        "cv_aman-bhatia-kc_1:skills/experience"
+      ],
+      "why": "Previous guided connector development is real; no current Spring service artefact is exported."
+    },
+    {
+      "skill_id": "stakeholder_management",
+      "has_skill": true,
+      "true_level": 3,
+      "self_perceived_level": 3,
+      "would_accept_levels": [
+        2,
+        3,
+        4
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 3,
+        "accept_levels": [
+          2,
+          3,
+          4
+        ],
+        "basis": "jira_KC-11529",
+        "missing_source": null
+      },
+      "last_used": "2026-03",
+      "evidence_refs": [
+        "jira_KC-11529:RECON-2847",
+        "jira_KC-11529:RECON-3344",
+        "jira_KC-11529:RECON-3753"
+      ],
+      "why": "Customer cutoff and replay decisions have agreed owners and completed actions."
+    },
+    {
+      "skill_id": "technical_writing",
+      "has_skill": true,
+      "true_level": 2,
+      "self_perceived_level": 2,
+      "would_accept_levels": [
+        1,
+        2,
+        3
+      ],
+      "oracle": {
+        "action": "send",
+        "level": 2,
+        "accept_levels": [
+          1,
+          2,
+          3
+        ],
+        "basis": "doc_SALES-218; jira_KC-11529",
+        "missing_source": null
+      },
+      "last_used": "2026-07",
+      "evidence_refs": [
+        "doc_SALES-218:review/validation",
+        "jira_KC-11529:RECON-3936"
+      ],
+      "why": "Integration procedure has a named reviewer correction to the retry-key sequence."
+    }
+  ],
+  "decoys": [],
+  "traps": [
+    {
+      "fault_id": "F06",
+      "s11_row": "level_off",
+      "skill_id": "solution_selling",
+      "plant": "Responsibility prose closely mirrors SE hiring language. Deal decisions, rather than prose density, establish independent K3 work.",
+      "expected_engine_behavior": "send",
+      "observation_ids": [
+        "RO-08"
+      ]
+    },
+    {
+      "fault_id": "F07",
+      "s11_row": "wrong_person",
+      "skill_id": "solution_selling",
+      "plant": "Aman co-runs Mitti Cart concurrently with Isha; shared brand does not make their technical work interchangeable.",
+      "expected_engine_behavior": "send",
+      "observation_ids": [
+        "RO-06"
+      ]
+    }
+  ],
+  "unmatched_skills": [],
+  "realism_observations": [
+    "RO-06",
+    "RO-08"
+  ],
+  "answer_behavior": {
+    "reply_probability": 0.78,
+    "yes_to_everything": false,
+    "flattery_bias": 0,
+    "notes": "Answers about the stated skill, asks for context if the scope is unclear."
+  },
+  "messaging_allowed": true
+}

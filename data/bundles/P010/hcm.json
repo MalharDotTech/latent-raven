@@ -1,0 +1,63 @@
+{
+  "employee_id": "KCC-5070",
+  "legacy_ids": [],
+  "worker_type": "contractor",
+  "legal_name": "Siddharth Joshi",
+  "preferred_name": "Siddharth",
+  "emails": [
+    {
+      "email": "siddharth.joshi@kestrelcloud.com",
+      "from": "2024-06",
+      "to": null
+    }
+  ],
+  "gender": "M",
+  "location": "Pune",
+  "country": "IN",
+  "department": "Customer Engineering",
+  "manager_employee_id": "KC-10073",
+  "hire_date": "2024-06-10",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Senior Software Engineer",
+      "grade": "Contract",
+      "from": "2024-06",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Dedicated billing connector",
+      "role": "Java developer",
+      "from": "2024-06",
+      "to": null,
+      "allocation_pct": 100
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "education": [
+    {
+      "institution": "IIT Bombay",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2013
+    }
+  ],
+  "exported_on": "2026-10-31",
+  "vendor": "TCS",
+  "vendor_worker_id": "TCS-EXT-7716",
+  "identity_links": [
+    {
+      "system": "client Jira guest directory",
+      "external_id": "sj7716",
+      "worker_id": "KCC-5070",
+      "verified_email": "siddharth.joshi@kestrelcloud.com",
+      "verified_on": "2024-06-10"
+    }
+  ]
+}

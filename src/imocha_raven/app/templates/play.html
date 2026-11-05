@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% block title %}Take the stage · Raven{% endblock %}
+{% block content %}
+<div class="page-intro"><p class="eyebrow">JUST LATENT / 01</p><h1>Let your work<br><em>take the stage.</em></h1><p>First, a little evidence. Your self-rating comes next.</p></div>
+<div class="intake-layout"><form class="panel intake-form" action="/play" method="post" enctype="multipart/form-data" x-data="{sending:false}" @submit="if ($el.checkValidity()) sending = true">
+{% if error %}<div class="notice error" role="alert">{{ error }}</div>{% endif %}
+<div class="form-pair"><div><label for="passcode">Your backstage pass</label><input id="passcode" type="password" name="passcode" autocomplete="off" required placeholder="Passcode from your organiser"></div><div><label for="first_name">First name</label><input id="first_name" name="first_name" autocomplete="given-name" maxlength="40" required placeholder="What should we call you?"></div></div>
+<label for="cv">Your CV <span class="muted">PDF · up to 5 MB</span></label><div class="upload-box"><span class="upload-symbol" aria-hidden="true">↑</span><input id="cv" name="cv" type="file" accept="application/pdf,.pdf"><p>Keep it simple. One PDF is plenty.</p></div>
+<label for="cv_text">Or paste your experience <span class="muted">plain text</span></label><textarea id="cv_text" name="cv_text" rows="5" maxlength="100000" placeholder="What have you built, run, improved, or taught? Concrete examples help."></textarea>
+<details class="optional"><summary>Add more evidence <span class="muted">optional</span></summary><div class="form-pair"><div><label for="github_user">GitHub username</label><input id="github_user" name="github_user" maxlength="39" placeholder="octocat"></div><div><label for="portfolio_url">Portfolio URL</label><input id="portfolio_url" name="portfolio_url" type="url" maxlength="1000" placeholder="https://your.site"></div></div></details>
+<label class="consent"><input type="checkbox" name="consent" value="yes" required><span>{{ consent_text }}</span></label>
+<button class="button gold full" type="submit" :disabled="sending"><span x-show="!sending">Send in the Ravens ↗</span><span x-show="sending" x-cloak>Sending your evidence…</span></button>
+</form><aside class="stage-aside"><span class="eyebrow">THE HOUSE RULES</span><h2>Confidence is good.<br><em>Evidence is better.</em></h2><ol><li>You rate yourself first.</li><li>Your choices lock before the reveal.</li><li>Every judge shows a receipt.</li><li>You get the final say.</li></ol><div class="aside-note">The Ravens can disagree. They can also abstain. A missing score means “bring more proof”.</div><p class="tiny muted">This pilot is feedback, not a hiring decision.</p></aside></div>
+{% endblock %}

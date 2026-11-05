@@ -1,0 +1,272 @@
+{
+ "pid": "P010",
+ "schema": "truth-v2",
+ "summary": "Siddharth has substantial current Java and Spring experience in a dedicated client environment that the engine cannot inspect. Private assessor observation confirms concurrency reviews, production JVM diagnosis and shared configuration conventions; the visible export only hints at this work and must remain insufficient for confident outreach.",
+ "archetype": "Senior contractor with externally held evidence",
+ "batch": "B",
+ "generator": "codex gpt-6.1-sol",
+ "skills": [
+  {
+   "skill_id": "java",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P010_hcm_1 project 'Dedicated billing connector', role 'Java developer' (organisation) and P010_cv_2 Java 8/11/17 + duplicate-posting analysis (self). P010_jira_3 connector tasks record client acceptance only, no Java text or code. Org + self is not a route to High; level cannot be pinned.",
+    "missing_source": "client-hosted GitHub/review tracker (restricted, not connected)"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "cv_v1:Roles & Responsibilities",
+    "jira:BILL-6102"
+   ],
+   "why": "Private assessor reviewed client concurrency decisions adopted by two services; visible CV and acceptance stubs alone cannot establish that depth."
+  },
+  {
+   "skill_id": "spring_boot",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P010_cv_2 'Spring Boot configuration, transaction boundaries and health checks' (self) only; P010_jira_3 stubs carry no implementation.",
+    "missing_source": "client-hosted GitHub/review tracker (restricted, not connected)"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "cv_v1:Roles & Responsibilities",
+    "jira:BILL-6673"
+   ],
+   "why": "Hidden client reviews confirm a reused starter with transaction and health-check conventions; export lacks those review records."
+  },
+  {
+   "skill_id": "sql",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P010_cv_2 skills line 'SQL' only.",
+    "missing_source": "client-hosted GitHub/review tracker (restricted, not connected)"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "cv_v1:TECHNICAL SKILLS"
+   ],
+   "why": "Unexported client delivery includes independently repaired duplicate-posting queries and reconciled data."
+  },
+  {
+   "skill_id": "system_design",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P010_cv_2 retry-key scope change (self); P010_jira_3 'Retry after callback timeout', 'Fix callback re-entry' acceptance stubs without design records.",
+    "missing_source": "client-hosted GitHub/review tracker (restricted, not connected) / design docs"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "cv_v1:Roles & Responsibilities",
+    "jira:BILL-5530"
+   ],
+   "why": "Assessor inspected a deployed idempotency design and callback failure analysis in client records."
+  },
+  {
+   "skill_id": "code_review",
+   "has_skill": true,
+   "true_level": 4,
+   "self_perceived_level": 4,
+   "would_accept_levels": [
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P010_cv_2 'Reviewing changes from two developers ... concurrency and retry' (self) only.",
+    "missing_source": "client-hosted GitHub/review tracker (restricted, not connected)"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "cv_v1:Roles & Responsibilities"
+   ],
+   "why": "Private review archive shows two developers adopting his retry and concurrency checklist across releases."
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P010_cv_2 skills line 'Docker' only.",
+    "missing_source": "client-hosted GitHub/review tracker (restricted, not connected)"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "cv_v1:TECHNICAL SKILLS"
+   ],
+   "why": "He adjusts service images with client platform guidance; no evidence of image-policy ownership."
+  },
+  {
+   "skill_id": "api_testing",
+   "has_skill": true,
+   "true_level": 3,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3,
+    4
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Nothing in the bundle beyond P010_jira_3 'Connector rollover tests' / client regression acceptance stubs.",
+    "missing_source": "client CI test runs"
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "jira:BILL-6279"
+   ],
+   "why": "Client CI has independently maintained callback-contract and retry checks, verified privately."
+  },
+  {
+   "skill_id": "kafka",
+   "has_skill": false,
+   "would_accept_levels": [],
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P010_cv_2 'Team responsibilities include Kafka cluster upkeep' is a team duty, not his work; P010_jira_3 BILL-6566 says platform did the broker patch and he only bulk-closed follow-ups.",
+    "missing_source": null
+   },
+   "evidence_refs": [
+    "cv_v1:Roles & Responsibilities",
+    "jira:BILL-6566"
+   ],
+   "why": "Team responsibility prose and release administration conceal zero broker work; private questioning confirmed no practical or assessed fundamentals."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Kafka",
+   "mapped_skill_id": "kafka",
+   "has_skill": false,
+   "why": "Team upkeep and administrative closure belong to platform staff.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Team duty line + bulk-closed ticket.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "MS Office",
+   "mapped_skill_id": "excel_modeling",
+   "has_skill": false,
+   "why": "Generic office use carries no finance modelling practice.",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "P010_cv_2 'MS Office, Internet' is on the taxonomy exclude list.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F09",
+   "s11_row": "skill_not_really_held_false_negative",
+   "skill_id": "java",
+   "plant": "No Kestrel GitHub source is available; client tracker stubs expose acceptance but no implementation or review. Actual high ability is established only privately.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F09",
+   "s11_row": "skill_not_really_held_false_negative",
+   "skill_id": "spring_boot",
+   "plant": "Current Spring work is under a client export restriction; a negative proficiency conclusion would be false, yet a confident level is unsupported.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F21",
+   "s11_row": "wrong_person",
+   "skill_id": "java",
+   "plant": "KCC identity and client guest sj7716 are explicitly linked through a verified email; no KC employee id should be invented.",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F06",
+   "s11_row": "wrong_mapping",
+   "skill_id": "excel_modeling",
+   "plant": "Traditional CV includes generic computer-literacy items and numbered team duties.",
+   "expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F15",
+   "s11_row": "skill_not_really_held",
+   "skill_id": "kafka",
+   "plant": "BILL-6566 was bulk-closed after platform delivery; the senior connector developer did no broker implementation.",
+   "expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "Maven",
+  "JUnit"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.48,
+  "yes_to_everything": false,
+  "flattery_bias": 0,
+  "notes": "Usually misses internal surveys while on client delivery; requests specifics before agreeing."
+ },
+ "messaging_allowed": true,
+ "identity_expectation": "Join by KCC-5070 via hcm identity_links (client guest sj7716, verified email). Contractor ID is a stable key; do not invent a KC- ID."
+}

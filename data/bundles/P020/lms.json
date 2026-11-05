@@ -1,0 +1,29 @@
+{
+  "exported_on": "2026-10-31",
+  "completions": [
+    {
+      "course_title": "Becoming a Product Manager: A Complete Guide",
+      "provider": "LinkedIn Learning",
+      "completed": "2023-04-20",
+      "time_spent_minutes": 640,
+      "assigned_by": "self",
+      "quiz_score_pct": 86
+    },
+    {
+      "course_title": "SQL Essential Training",
+      "provider": "LinkedIn Learning",
+      "completed": "2025-08-21",
+      "time_spent_minutes": 290,
+      "assigned_by": "self",
+      "quiz_score_pct": 81
+    },
+    {
+      "course_title": "internal: Kestrel Discovery Consent and Note Taking",
+      "provider": "Kestrel Learn",
+      "completed": "2026-02-12",
+      "time_spent_minutes": 95,
+      "assigned_by": "manager",
+      "quiz_score_pct": 91
+    }
+  ]
+}

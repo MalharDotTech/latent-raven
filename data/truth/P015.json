@@ -1,0 +1,337 @@
+{
+ "pid": "P015",
+ "schema": "truth-v2",
+ "summary": "Bengaluru cloud engineer, 2.5 yrs, joined as a fresher. Collects certificates fast (nine in 22 months, most as uploaded PDFs) and does short Udemy runs, while the actual work in infra-live is small tagging, tfvars and copy-adapted IAM or cron changes with heavy reviewer rewriting. A bright junior who is a level or two below what the CV and profile say.",
+ "archetype": "certificate collector with thin hands-on work",
+ "batch": "C",
+ "generator": "claude-sonnet-5-5",
+ "skills": [
+  {
+   "skill_id": "aws",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "assessed_level": 2,
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "gh_averma_kestrel + jira_averma: bounded AWS changes in infra-live with heavy review (S3 tags 2024-05, bastion SG 2024-08, SQS DLQ alarm 2024-11, IAM role copied -> reverted -> least-privilege redo 2025-03, nonprod EC2 scheduler 2026-01); certs_P015 CLF-C02, SAA-C03, DVA-C02 verified; tara_P015 AWS Cloud Fundamentals 71% 'Intermediate' (2026-05). Guided work in 3+ months; hcm self 3 not used.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#9843",
+    "github:#10941",
+    "github:#11208",
+    "jira:PLAT-4624",
+    "certs:SAA-C03"
+   ],
+   "why": "Does bounded AWS changes in Terraform (tags, SG, alarms, a Lambda scheduler) with visible reviewer corrections; three AWS certs verified, but practical depth is guided work."
+  },
+  {
+   "skill_id": "terraform",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "gh_averma_kestrel: tfvars/tag/SG/lifecycle edits 2024-2026 with reviewer rewrites (IAM PR 9 then 8 comments, CloudTrail baseline 14 comments, multi-assignee); no module authoring or state repair. certs_P015 Terraform Associate PDF unverifiable (self-stated). Guided work in 3+ months.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#10383",
+    "github:#10408",
+    "github:#11444"
+   ],
+   "why": "Edits modules and tfvars; IAM PR was reworked by reviewers after a copy-paste revert; no module authoring or state repair."
+  },
+  {
+   "skill_id": "kubernetes",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "assessed_level": null,
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "gh_averma_kestrel: small guided helm/nodegroup edits (replicas 2025-01, instance type 2025-07, cronjob limits copied from data-platform 2025-11, spot nodegroup 2026-04). Contradicted by tara_P015 Kubernetes Fundamentals 44% 'Beginner' with tab_switch_x4 (2026-06), certs_P015 CKAD verification failed, KCNA PDF unverifiable; cv 'Advanced' and hcm self 3. Measured result sits 2 levels from self/CV -> hold.",
+    "missing_source": null
+   },
+   "last_used": "2026-04",
+   "evidence_refs": [
+    "github:#5670",
+    "github:#5910",
+    "assessments:kubernetes"
+   ],
+   "why": "Edits helm values and resource limits; scored low on a fundamentals test; CKAD document failed verification."
+  },
+  {
+   "skill_id": "docker",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "lms_P015 Udemy/Pluralsight Docker courses completed in 35-130 minutes; cv_2026_05 'Docker'. No Dockerfile work in gh_averma_kestrel.",
+    "missing_source": null
+   },
+   "last_used": "2025-06",
+   "evidence_refs": [
+    "lms:docker-courses"
+   ],
+   "why": "Course runs only; no Dockerfile work in the record."
+  },
+  {
+   "skill_id": "azure",
+   "has_skill": true,
+   "true_level": 1,
+   "self_perceived_level": 3,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "certs_P015 AZ-900 and AZ-104 PDF uploads, unverifiable, AZ-104 expired 2026-01; lms Azure path; cv_2026_05 lists Azure without date; hcm self 3. No Azure work (Kestrel is on AWS).",
+    "missing_source": null
+   },
+   "last_used": "2025-01",
+   "evidence_refs": [
+    "certs:AZ-900",
+    "lms:azure-foundations"
+   ],
+   "why": "Kestrel runs on AWS; Azure knowledge comes from study and a lapsed associate cert, no workplace Azure use."
+  },
+  {
+   "skill_id": "gcp",
+   "has_skill": false,
+   "true_level": 0,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "certs_P015 Google Associate Cloud Engineer PDF, unverifiable; cv_2026_05 GCP line; hcm self 2. No work.",
+    "missing_source": null
+   },
+   "last_used": null,
+   "evidence_refs": [
+    "certs:associate-cloud-engineer"
+   ],
+   "why": "Only an unverifiable PDF; nothing in work systems and no course trail."
+  },
+  {
+   "skill_id": "cicd",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     2,
+     3
+    ],
+    "basis": "gh_averma_kestrel + jira_averma PLAT-4842: GHA terraform-plan-on-PR reusing an existing workflow with 6 review comments (2026-03), terraform version bump in GHA (2026-10); cv_2026_05 GitHub Actions. Work + self at 2.",
+    "missing_source": null
+   },
+   "last_used": "2026-10",
+   "evidence_refs": [
+    "github:#11344",
+    "github:#11944"
+   ],
+   "why": "Extends an existing GitHub Actions workflow for plan-on-PR with review."
+  },
+  {
+   "skill_id": "linux",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "hold",
+    "level": null,
+    "accept_levels": [],
+    "basis": "Only jira_averma PLAT-4182 access request and cv_2026_05 'Linux (Ubuntu, RHEL)'. No administration records.",
+    "missing_source": "change tickets / runbook steps"
+   },
+   "last_used": "2026-05",
+   "evidence_refs": [
+    "jira:PLAT-4182"
+   ],
+   "why": "Routine admin and access tasks; no kernel or tuning evidence."
+  },
+  {
+   "skill_id": "observability",
+   "has_skill": true,
+   "true_level": 2,
+   "self_perceived_level": 2,
+   "would_accept_levels": [
+    1,
+    2,
+    3
+   ],
+   "oracle": {
+    "action": "send",
+    "level": 2,
+    "accept_levels": [
+     1,
+     2,
+     3
+    ],
+    "basis": "gh_averma_kestrel: CloudWatch alarm for SQS DLQ with 4 review comments (2024-11); jira_averma 'fix alarm' (2026-01); cv_2026_05 'Created CloudWatch alarms'. Reviewed alarm change = level 2 line.",
+    "missing_source": null
+   },
+   "last_used": "2025-11",
+   "evidence_refs": [
+    "github:#10062"
+   ],
+   "why": "Adds CloudWatch alarms from templates; no dashboards design."
+  }
+ ],
+ "decoys": [
+  {
+   "skill_text": "Ansible",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV only",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2026_05 'Ansible'; no taxonomy skill, no work.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "ArgoCD",
+   "mapped_skill_id": null,
+   "has_skill": false,
+   "why": "CV only",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2026_05 'ArgoCD'; no work.",
+    "missing_source": null
+   }
+  },
+  {
+   "skill_text": "Prometheus / Grafana",
+   "mapped_skill_id": "observability",
+   "has_skill": false,
+   "why": "CV only; one helm values bump for a Grafana pod is not usage",
+   "oracle": {
+    "action": "not_extract",
+    "level": null,
+    "accept_levels": [],
+    "basis": "cv_2026_05 'Prometheus, Grafana'; one grafana helm resources bump is not usage. Must not raise observability beyond the CloudWatch evidence.",
+    "missing_source": null
+   }
+  }
+ ],
+ "traps": [
+  {
+   "fault_id": "F27",
+   "s11_row": "not_held",
+   "skill_id": "kubernetes",
+   "plant": "Six of nine certificates are PDF uploads; one (CKAD) fails lookup, others unverifiable; the verified three are all AWS",
+   "expected_engine_behavior": "hold"
+  },
+  {
+   "fault_id": "F01",
+   "s11_row": "not_held",
+   "skill_id": "kubernetes",
+   "plant": "CV rates Kubernetes and Terraform as Advanced; GCP and Azure listed as cloud experience; work evidence does not support it",
+   "expected_engine_behavior": "hold",
+   "v1_expected_engine_behavior": "send_at_level_1"
+  },
+  {
+   "fault_id": "F24",
+   "s11_row": "decay",
+   "skill_id": "azure",
+   "plant": "Azure admin associate lapsed in 2026-01 yet listed without date on the CV",
+   "expected_engine_behavior": "hold",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F26",
+   "s11_row": "not_held",
+   "skill_id": "kubernetes",
+   "plant": "Udemy courses of 25+ hours show 35-130 minutes spent, completed same week",
+   "expected_engine_behavior": "hold",
+   "evidence_expectation": "Minute-long 'completions' of 25h courses must not be extracted as training evidence.",
+   "v1_expected_engine_behavior": "not_extract"
+  },
+  {
+   "fault_id": "F29",
+   "s11_row": "level_off",
+   "skill_id": "aws",
+   "plant": "Self-declared level 3 on five cloud skills in Jan 2026",
+   "expected_engine_behavior": "send_at_level_2"
+  },
+  {
+   "fault_id": "F25",
+   "s11_row": "wrong_mapping",
+   "skill_id": "gcp",
+   "plant": "Associate Cloud Engineer certificate (PDF) only; no work",
+   "expected_engine_behavior": "hold",
+   "v1_expected_engine_behavior": "not_extract"
+  }
+ ],
+ "unmatched_skills": [
+  "CloudFormation",
+  "Bash"
+ ],
+ "answer_behavior": {
+  "reply_probability": 0.85,
+  "yes_to_everything": false,
+  "flattery_bias": 0.8,
+  "notes": "Says yes to levels up to 3 on everything cloud; eager and responsive."
+ },
+ "messaging_allowed": true
+}

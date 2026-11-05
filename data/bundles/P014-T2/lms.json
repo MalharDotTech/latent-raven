@@ -1,0 +1,27 @@
+{
+  "completions": [
+    {
+      "course_title": "internal: Kestrel Secure Coding Basics",
+      "provider": "Kestrel Learn",
+      "completed": "2021-03-30",
+      "time_spent_minutes": 48,
+      "quiz_score_pct": 80,
+      "assigned_by": "compliance"
+    },
+    {
+      "course_title": "Agile Foundations",
+      "provider": "LinkedIn Learning",
+      "completed": "2021-05-14",
+      "time_spent_minutes": 65,
+      "assigned_by": "manager"
+    },
+    {
+      "course_title": "internal: Mobile Security Basics (OWASP MASVS)",
+      "provider": "Kestrel Learn",
+      "completed": "2023-03-02",
+      "time_spent_minutes": 120,
+      "quiz_score_pct": 88,
+      "assigned_by": "manager"
+    }
+  ]
+}

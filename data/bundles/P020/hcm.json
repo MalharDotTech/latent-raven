@@ -1,0 +1,79 @@
+{
+  "exported_on": "2026-10-31",
+  "employee_id": "KC-11020",
+  "legacy_ids": [],
+  "worker_type": "employee",
+  "legal_name": "Anjali Kapoor",
+  "preferred_name": "Anjali Kapoor",
+  "emails": [
+    {
+      "email": "anjali.gupta@kestrelcloud.com",
+      "from": "2022-08",
+      "to": "2025-06"
+    },
+    {
+      "email": "anjali.kapoor@kestrelcloud.com",
+      "from": "2025-07",
+      "to": null
+    }
+  ],
+  "gender": "F",
+  "location": "Bengaluru",
+  "country": "IN",
+  "department": "Product",
+  "manager_employee_id": "KC-10023",
+  "hire_date": "2022-08-08",
+  "rehire_dates": [],
+  "job_history": [
+    {
+      "title": "Product Manager",
+      "grade": "P3",
+      "from": "2022-08",
+      "to": null
+    }
+  ],
+  "project_allocations": [
+    {
+      "project": "Reconciliation exception review",
+      "role": "Product Manager",
+      "from": "2025-01",
+      "to": null,
+      "allocation_pct": 85
+    }
+  ],
+  "messaging_consent": {
+    "notice_given": true,
+    "opted_out": false,
+    "eu_opt_in": null
+  },
+  "name_history": [
+    {
+      "legal_name": "Anjali Gupta",
+      "from": "2022-08",
+      "to": "2025-06"
+    },
+    {
+      "legal_name": "Anjali Kapoor",
+      "from": "2025-07",
+      "to": null
+    }
+  ],
+  "identity_events": [
+    {
+      "date": "2025-07-01",
+      "reason": "Employee name change",
+      "employee_id": "KC-11020",
+      "jira_account_id": "jira-pm-1020",
+      "old_email": "anjali.gupta@kestrelcloud.com",
+      "new_email": "anjali.kapoor@kestrelcloud.com"
+    }
+  ],
+  "education": [
+    {
+      "institution": "IIT Bombay",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "year": 2019
+    }
+  ]
+}

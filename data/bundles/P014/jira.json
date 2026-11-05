@@ -1,0 +1,833 @@
+{
+  "issues": [
+    {
+      "key": "MOB-3124",
+      "type": "Story",
+      "summary": "Biometric login",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-04-30"
+        }
+      ],
+      "created": "2021-04-30",
+      "component": "Auth",
+      "resolution": "Done",
+      "resolved": "2021-05-31",
+      "resolved_by_self": true,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "MOB-3255",
+      "type": "Story",
+      "summary": "Share invoice via WhatsApp",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-08-25"
+        }
+      ],
+      "created": "2021-08-25",
+      "component": "Invoices",
+      "resolution": "Done",
+      "resolved": "2021-09-22",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "MOB-3176",
+      "type": "Bug",
+      "summary": "Android back button behaviour",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2021-06-15"
+        }
+      ],
+      "created": "2021-06-11",
+      "component": "Navigation",
+      "resolution": "Done",
+      "resolved": "2021-07-03",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    },
+    {
+      "key": "MOB-3352",
+      "type": "Story",
+      "summary": "Push notifications failed payments",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-04-21"
+        },
+        {
+          "assignee": "self",
+          "from": "2022-04-25"
+        }
+      ],
+      "created": "2022-04-21",
+      "component": "Notifications",
+      "resolution": "Done",
+      "resolved": "2022-06-03",
+      "resolved_by_self": true,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "MOB-3424",
+      "type": "Bug",
+      "summary": "App crashes on launch Android 8",
+      "description_excerpt": "",
+      "priority": "High",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-06-20"
+        },
+        {
+          "assignee": "self",
+          "from": "2022-06-28"
+        },
+        {
+          "assignee": "other",
+          "from": "2022-07-05"
+        }
+      ],
+      "created": "2022-06-20",
+      "component": "General",
+      "resolution": "Done",
+      "resolved": "2022-07-05",
+      "resolved_by_self": false,
+      "labels": []
+    },
+    {
+      "key": "MOB-3613",
+      "type": "Bug",
+      "summary": "Deep link opens home, not invoice",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-01-27"
+        }
+      ],
+      "created": "2023-01-27",
+      "component": "Navigation",
+      "resolution": "Done",
+      "resolved": "2023-02-24",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "MOB-3524",
+      "type": "Task",
+      "summary": "RN upgrade planning 0.68 -> 0.71",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2022-11-14"
+        },
+        {
+          "assignee": "self",
+          "from": "2022-12-05"
+        }
+      ],
+      "created": "2022-11-10",
+      "component": "Platform",
+      "resolution": "Done",
+      "resolved": "2023-01-11",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "MOB-3709",
+      "type": "Story",
+      "summary": "Offline invoice cache",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-08-18"
+        }
+      ],
+      "created": "2023-08-18",
+      "component": "Offline",
+      "resolution": "Done",
+      "resolved": "2023-10-03",
+      "resolved_by_self": true,
+      "story_points": 13,
+      "labels": []
+    },
+    {
+      "key": "MOB-3803",
+      "type": "Bug",
+      "summary": "wrong amount format hi-IN",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2023-11-23"
+        }
+      ],
+      "created": "2023-11-23",
+      "component": "General",
+      "resolution": "Done",
+      "resolved": "2023-11-29",
+      "resolved_by_self": true,
+      "story_points": 1,
+      "labels": []
+    },
+    {
+      "key": "MOB-3895",
+      "type": "Story",
+      "summary": "Sync queue retry/backoff",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2024-02-20"
+        },
+        {
+          "assignee": "self",
+          "from": "2024-02-20"
+        }
+      ],
+      "created": "2024-02-20",
+      "component": "Offline",
+      "resolution": "Done",
+      "resolved": "2024-03-18",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "MOB-3996",
+      "type": "Task",
+      "summary": "Fastlane build number from CI",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-08-16"
+        }
+      ],
+      "created": "2024-08-16",
+      "component": "Release",
+      "resolution": "Done",
+      "resolved": "2024-09-05",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "MOB-4049",
+      "type": "Story",
+      "summary": "Invoice detail screen skeleton",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2024-09-30"
+        }
+      ],
+      "created": "2024-09-30",
+      "component": "Invoices",
+      "resolution": "Done",
+      "resolved": "2024-10-23",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "MOB-4145",
+      "type": "Story",
+      "summary": "Re-auth after background timeout",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-02-05"
+        }
+      ],
+      "created": "2025-02-05",
+      "component": "Auth",
+      "resolution": "Done",
+      "resolved": "2025-03-04",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "MOB-4185",
+      "type": "Bug",
+      "summary": "Play store rejected: target API level",
+      "description_excerpt": "",
+      "priority": "High",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "other",
+          "from": "2025-03-19"
+        },
+        {
+          "assignee": "self",
+          "from": "2025-03-21"
+        }
+      ],
+      "created": "2025-03-12",
+      "component": "Release",
+      "resolution": "Done",
+      "resolved": "2025-04-18",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "MOB-4237",
+      "type": "Story",
+      "summary": "UPI intent for payment links",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-04-28"
+        }
+      ],
+      "created": "2025-04-28",
+      "component": "Payments",
+      "resolution": "Done",
+      "resolved": "2025-06-07",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "MOB-4335",
+      "type": "Task",
+      "summary": "A11y labels for invoice list",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-07-28"
+        }
+      ],
+      "created": "2025-07-28",
+      "component": "Invoices",
+      "resolution": "Done",
+      "resolved": "2025-08-26",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": [
+        "a11y"
+      ]
+    },
+    {
+      "key": "MOB-4415",
+      "type": "Story",
+      "summary": "Android widget due today",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2025-10-10"
+        }
+      ],
+      "created": "2025-10-10",
+      "component": "Widgets",
+      "resolution": "Done",
+      "resolved": "2025-12-01",
+      "resolved_by_self": true,
+      "story_points": 8,
+      "labels": []
+    },
+    {
+      "key": "MOB-4507",
+      "type": "Task",
+      "summary": "Move breadcrumbs to Sentry",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-02-18"
+        }
+      ],
+      "created": "2026-02-18",
+      "component": "Observability",
+      "resolution": "Done",
+      "resolved": "2026-03-12",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "MOB-4578",
+      "type": "Task",
+      "summary": "iOS cert rotation via match",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-04-17"
+        }
+      ],
+      "created": "2026-04-17",
+      "component": "Release",
+      "resolution": "Done",
+      "resolved": "2026-05-05",
+      "resolved_by_self": true,
+      "story_points": 3,
+      "labels": []
+    },
+    {
+      "key": "MOB-4677",
+      "type": "Story",
+      "summary": "Receipts pdf viewer",
+      "description_excerpt": "",
+      "priority": "Medium",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-07-21"
+        }
+      ],
+      "created": "2026-07-21",
+      "component": "Invoices",
+      "resolution": "Done",
+      "resolved": "2026-08-21",
+      "resolved_by_self": true,
+      "story_points": 5,
+      "labels": []
+    },
+    {
+      "key": "MOB-4750",
+      "type": "Bug",
+      "summary": "pdf viewer crash low-end android",
+      "description_excerpt": "",
+      "priority": "High",
+      "status": "Done",
+      "reporter_is_self": false,
+      "assignee_history": [
+        {
+          "assignee": "self",
+          "from": "2026-09-21"
+        }
+      ],
+      "created": "2026-09-21",
+      "component": "Invoices",
+      "resolution": "Done",
+      "resolved": "2026-10-08",
+      "resolved_by_self": true,
+      "story_points": 2,
+      "labels": []
+    }
+  ],
+  "monthly_activity": [
+    {
+      "month": "2021-03",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2021-04",
+      "resolved_as_assignee": 1,
+      "reported": 0
+    },
+    {
+      "month": "2021-05",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2021-06",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2021-07",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2021-08",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2021-09",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2021-10",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2021-11",
+      "resolved_as_assignee": 3,
+      "reported": 1
+    },
+    {
+      "month": "2021-12",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2022-01",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2022-02",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2022-03",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2022-04",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2022-05",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2022-06",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2022-07",
+      "resolved_as_assignee": 6,
+      "reported": 1
+    },
+    {
+      "month": "2022-08",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2022-09",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2022-10",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2022-11",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2022-12",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2023-01",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2023-02",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2023-03",
+      "resolved_as_assignee": 7,
+      "reported": 1
+    },
+    {
+      "month": "2023-04",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2023-05",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2023-06",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2023-07",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2023-08",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2023-09",
+      "resolved_as_assignee": 7,
+      "reported": 2
+    },
+    {
+      "month": "2023-10",
+      "resolved_as_assignee": 6,
+      "reported": 4
+    },
+    {
+      "month": "2023-11",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2023-12",
+      "resolved_as_assignee": 3,
+      "reported": 3
+    },
+    {
+      "month": "2024-01",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-02",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2024-03",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-04",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2024-05",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2024-06",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2024-07",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-08",
+      "resolved_as_assignee": 2,
+      "reported": 1
+    },
+    {
+      "month": "2024-09",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2024-10",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2024-11",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2024-12",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2025-01",
+      "resolved_as_assignee": 6,
+      "reported": 3
+    },
+    {
+      "month": "2025-02",
+      "resolved_as_assignee": 6,
+      "reported": 4
+    },
+    {
+      "month": "2025-03",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-04",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-05",
+      "resolved_as_assignee": 5,
+      "reported": 1
+    },
+    {
+      "month": "2025-06",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2025-07",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2025-08",
+      "resolved_as_assignee": 5,
+      "reported": 3
+    },
+    {
+      "month": "2025-09",
+      "resolved_as_assignee": 5,
+      "reported": 2
+    },
+    {
+      "month": "2025-10",
+      "resolved_as_assignee": 6,
+      "reported": 2
+    },
+    {
+      "month": "2025-11",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2025-12",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2026-01",
+      "resolved_as_assignee": 3,
+      "reported": 3
+    },
+    {
+      "month": "2026-02",
+      "resolved_as_assignee": 4,
+      "reported": 1
+    },
+    {
+      "month": "2026-03",
+      "resolved_as_assignee": 3,
+      "reported": 2
+    },
+    {
+      "month": "2026-04",
+      "resolved_as_assignee": 4,
+      "reported": 2
+    },
+    {
+      "month": "2026-05",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2026-06",
+      "resolved_as_assignee": 3,
+      "reported": 3
+    },
+    {
+      "month": "2026-07",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    },
+    {
+      "month": "2026-08",
+      "resolved_as_assignee": 3,
+      "reported": 0
+    },
+    {
+      "month": "2026-09",
+      "resolved_as_assignee": 4,
+      "reported": 3
+    },
+    {
+      "month": "2026-10",
+      "resolved_as_assignee": 2,
+      "reported": 2
+    }
+  ]
+}
