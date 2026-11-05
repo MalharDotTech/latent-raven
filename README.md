@@ -17,9 +17,9 @@ Raven infers an employee's skills and proficiency levels from work evidence (CV,
 |---|---|---|---|---|
 | Raven 1 | 56% (49-63) | 98% | 37/68 | 37 |
 | Raven 2 | 76% (53-90) | 14% | 39/68 | 4 |
-| Raven 3 | 93% (84-97) | 58% | 51/68 | 7 |
+| Raven 3 | 94% (83-98) | 47% | 47/68 | 5 |
 
-95% precision is not proven. On the hardest slices (realistic + adversarial personas) Raven 3 is at 87.5%. Details: `data/notes/00-dataset-status.md`.
+95% precision is not proven: the lower bound is 83%. Raven 3 holds any skill whose evidence never shows a level (a middle-level guess passes the ±1 rule 75% of the time; that is gaming the metric, not reading evidence). Before that rule it scored 93% (84-97) at 58% coverage, and 37 of its 139 sends were guesses. The threshold is refitted on the calibration half after every rule change. On the hardest slices (Claude-written and adversarial personas) Raven 3 is at 88% and 86%. Details: `data/notes/00-dataset-status.md`.
 
 ## Tech stack
 

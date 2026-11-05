@@ -1,12 +1,12 @@
 {
- "tau": 0.6076,
+ "tau": 0.364,
  "shift": 1,
  "target_precision": 0.95,
  "calibration_personas": 21,
  "calibration_point": {
-  "tau": 0.6076,
-  "sends": 80,
-  "precision": 0.95,
-  "coverage": 0.6893
+  "tau": 0.364,
+  "sends": 66,
+  "precision": 0.9545,
+  "coverage": 0.5534
  }
 }

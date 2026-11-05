@@ -1,0 +1,10 @@
+wrote /Users/malhar/swadharma/Code/imocha-raven/runs/20261106-034941 and runs/latest; tau=0.364 shift=1; determinism={'raven1': True, 'raven2': True, 'raven3': True}
+--- test
+{'judge': 'raven1', 'sends': 210, 'precision': 0.5619, 'precision_ci': (0.4943, 0.6273), 'coverage': 0.978, 'traps_caught': 37, 'traps_total': 68, 'twin_flips': 37, 'cost_usd': 0.1245, 'tokens': 490277, 'latency_s': 394.9}
+{'judge': 'raven2', 'sends': 17, 'precision': 0.7647, 'precision_ci': (0.5274, 0.9045), 'coverage': 0.1429, 'traps_caught': 39, 'traps_total': 68, 'twin_flips': 4, 'cost_usd': 0.2865, 'tokens': 917447, 'latency_s': 1636.9}
+{'judge': 'raven3', 'sends': 48, 'precision': 0.9375, 'precision_ci': (0.8316, 0.9785), 'coverage': 0.4725, 'traps_caught': 47, 'traps_total': 68, 'twin_flips': 5, 'cost_usd': 0.2865, 'tokens': 917447, 'latency_s': 1636.9}
+--- all
+{'judge': 'raven1', 'sends': 453, 'precision': 0.5651, 'precision_ci': (0.5191, 0.61), 'coverage': 0.9794, 'traps_caught': 74, 'traps_total': 136, 'twin_flips': 61, 'cost_usd': 0.2566, 'tokens': 1011259, 'latency_s': 804.7}
+{'judge': 'raven2', 'sends': 32, 'precision': 0.7812, 'precision_ci': (0.6124, 0.8898), 'coverage': 0.1237, 'traps_caught': 76, 'traps_total': 136, 'twin_flips': 6, 'cost_usd': 0.5985, 'tokens': 2020116, 'latency_s': 3650.3}
+{'judge': 'raven3', 'sends': 114, 'precision': 0.9474, 'precision_ci': (0.8899, 0.9757), 'coverage': 0.5155, 'traps_caught': 94, 'traps_total': 136, 'twin_flips': 16, 'cost_usd': 0.5985, 'tokens': 2020116, 'latency_s': 3650.3}
+raven3 coverage at >=95% precision: {'all': {'tau': 0.3678, 'sends': 112, 'precision': 0.9554, 'coverage': 0.5155}, 'cal': {'tau': 0.364, 'sends': 66, 'precision': 0.9545, 'coverage': 0.5534}, 'test': {'tau': 0.3814, 'sends': 47, 'precision': 0.9574, 'coverage': 0.4725}}

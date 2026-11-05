@@ -24,7 +24,8 @@ def test_raven2_rules():
 def test_raven3_threshold_and_determinism():
     lo, hi = Raven3(0.0), Raven3(0.99)
     a = acts(lo.infer(bundle(), TAX, claims()))
-    assert a["python"][0] == "send" and a["kafka"][0] == "send"  # tau 0 sends everything
+    assert a["python"][0] == "send"  # tau 0 sends everything that shows a level
+    assert a["kafka"] == ("hold", None)  # listed only: no level evidence, no level, even at tau 0
     assert all(v[0] == "hold" for v in acts(hi.infer(bundle(), TAX, claims())).values())
     r1, r2 = Raven3(0.5).infer(bundle(), TAX, claims()), Raven3(0.5).infer(bundle(), TAX, claims())
     assert r1.model_dump_json() == r2.model_dump_json()

@@ -53,7 +53,7 @@ class Raven3:
                 s = src[c.source_id]
                 rows.append((-q, s.lineage_key or s.source_id, cluster_of(c, s), c))
             rows.sort(key=lambda r: (r[0], r[3].quote))
-            seen_q, seen_cluster, miss, contrib = set(), set(), 1.0, []
+            seen_q, seen_cluster, miss, contrib, leveled = set(), set(), 1.0, [], False
             lp = [0.0] * top
             for nq, lin, cluster, c in rows:
                 key = (lin, " ".join(c.quote.lower().split()))
@@ -65,6 +65,7 @@ class Raven3:
                 contrib.append({"type": c.evidence_type, "group": group_of(c, bundle), "q": round(-nq, 3),
                                 "discount": d, "weight": round(w, 3), "level": c.level_seen})
                 if c.level_seen and w > 0:
+                    leveled = True
                     seen = min(top, c.level_seen + (self.shift if c.evidence_type == "applied" else 0))
                     for k in range(top):
                         lp[k] += w * math.log(LEVEL_NOISE[min(abs(k + 1 - seen), 3)])
@@ -79,13 +80,16 @@ class Raven3:
                                 evidence=citations(cl, bundle), reason=f"P(has)={ph:.2f}, level dist={[round(x, 2) for x in pl]}",
                                 trace={"p_has": round(ph, 4), "level_dist": [round(x, 4) for x in pl], "best": best,
                                        "accepted": accepted(best, top), "p_yes": round(p, 4), "tau": self.tau,
-                                       "shift": self.shift, "evidence": contrib[:10]}))
+                                       "shift": self.shift, "level_evidence": leveled, "evidence": contrib[:10]}))
         return out
 
     def infer(self, bundle: Bundle, taxonomy: dict, claims: list[Claim]) -> EngineResult:
         ds = []
         for d in self.candidates(bundle, taxonomy, claims):
-            if d.p_yes >= self.tau:
+            if not d.trace.get("level_evidence", True):
+                # No record shows a level: a middle-level guess is not a reading. Contract: no level evidence, no level.
+                d = d.model_copy(update={"level": None, "reason": f"No level evidence. {d.reason}"})
+            elif d.p_yes >= self.tau:
                 d = d.model_copy(update={"action": "send", "reason": f"p_yes {d.p_yes} >= tau {self.tau}. {d.reason}"})
             else:
                 d = d.model_copy(update={"level": None, "reason": f"p_yes {d.p_yes} < tau {self.tau}. {d.reason}"})

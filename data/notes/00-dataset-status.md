@@ -106,3 +106,17 @@ Engines read with Claude Haiku. If they were rewarded for Claude agreeing with i
 - Same direction for Raven 1 (47% Claude vs 74% Codex) and Raven 2.
 - Reading: no sign of self-agreement bias; a strong generator difficulty effect instead. Codex batches are easier (audits: fixture-like, evidence narrates traps; G is ordinary people by design, 41/41).
 - Honest headline for the hard slices (A/C/E + F): Raven 3 49/56 = 87.5%.
+
+## Raven 3 rule: no level evidence, no level (2026-11-06)
+
+Found through the engine-room trace visual: 37 of Raven 3's 139 sends had a flat level distribution (no record showed a level) and still sent level 3, because a middle guess passes the ±1 rule 75% of the time. Guessed sends scored 86% (32/37) against 97% for evidence-backed sends. Rule added from the eval contract (a level must be shown by evidence), then tau was refitted on the calibration half (0.6076 -> 0.364).
+
+| Raven 3 | Precision (95% CI) | Coverage | Traps | Twin flips |
+|---|---|---|---|---|
+| Before, test half | 93.2% (84-97) | 58% | 51/68 | 7 |
+| After, test half | 93.8% (83-98) | 47% | 47/68 | 5 |
+| After, all 42 | 94.7% (89-98) | 52% | 94/136 | 16 |
+
+- Disclosure: the rule was found after seeing test-half results, so it is not a clean held-out result.
+- A simulation that kept the old tau showed 97.6% on the test half. Refitting tau, as the protocol requires, gives 93.8%: the lower threshold admits more low-confidence sends. The refitted number is the one to report.
+- By generator after the rule: Claude-written 87.8% (36/41), Codex-written 100% (66/66), adversarial F 85.7% (6/7).
