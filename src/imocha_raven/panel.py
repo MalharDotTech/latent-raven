@@ -25,6 +25,7 @@ class JudgeScore(BaseModel):
     quote: str | None = None  # strongest verbatim quote from the person's own documents
     source_id: str | None = None
     reason: str = ""
+    trace: dict = {}  # raven1: confidence; raven2: groups/floor/ceiling/rule; raven3: p_has, level_dist, tau, evidence weights
 
 
 class PanelSkill(BaseModel):

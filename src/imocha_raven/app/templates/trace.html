@@ -1,0 +1,61 @@
+{% macro raven_trace(view, compact=false) %}
+{% set j = view.judge %}{% set t = view.trace %}
+<figure class="raven-trace trace-{{ j.judge }} {{ 'trace-compact' if compact else '' }}" data-engine="{{ j.judge }}" x-data="ravenTrace" :class="{'trace-running': running}">
+  <div class="trace-toolbar"><span>{{ 'DECISION PATH' if view.available else 'OLDER RUN' }}</span>{% if view.available %}<button type="button" class="trace-replay" @click="replay()" aria-label="Replay {{ j.judge }} decision animation">↻ Replay</button>{% endif %}</div>
+  {% if not view.available %}
+  <p class="trace-unavailable">Trace unavailable for this run. The recorded decision above still applies.</p>
+  {% elif j.judge == 'raven1' %}
+  <svg class="prompt-flow" viewBox="0 0 400 116" role="img" aria-label="Document lines enter one LLM prompt; output level {{ t.get('level', j.level) or 'not recorded' }}">
+    <g class="trace-doc"><rect x="8" y="10" width="76" height="96" rx="5"/>{% for y in [28,42,56,70,84] %}<path class="stream-line" style="--i:{{ loop.index0 }}" d="M20 {{ y }}h49"/>{% endfor %}</g>
+    <path class="flow-wire" d="M88 58h36m148 0h37"/><path class="flow-arrow" d="m116 52 8 6-8 6m185-12 8 6-8 6"/>
+    <rect class="prompt-box" x="128" y="21" width="140" height="74" rx="9"/><text x="198" y="53" text-anchor="middle">ONE BIG</text><text class="svg-emphasis" x="198" y="76" text-anchor="middle">LLM PROMPT</text>
+    <g class="level-pop"><circle cx="351" cy="58" r="33"/><text class="svg-level" x="351" y="65" text-anchor="middle">{{ t.get('level', j.level) if t.get('level', j.level) is not none else '—' }}</text><text x="351" y="108" text-anchor="middle">LEVEL</text></g>
+  </svg>
+  <div class="trace-metric"><span>Confidence</span><strong>{{ probability(t.get('confidence')) }}</strong></div>
+  <div class="trace-meter" role="img" aria-label="Confidence {{ probability(t.get('confidence')) }}"><span class="trace-fill" style="--fill:{{ (t.get('confidence') or 0)*100 }}%"></span></div>
+  {% if t.get('quote_in_source') is sameas false %}<span class="trace-warning">⚠ Quote not found in source</span>{% elif t.get('quote_in_source') is sameas true %}<span class="trace-note">Quote appears in source</span>{% else %}<span class="trace-note">Quote check not recorded</span>{% endif %}
+  {% elif j.judge == 'raven2' %}
+  <div class="evidence-lanes" aria-label="Evidence sorted into independent groups">
+    {% for lane in view.lanes %}<div class="evidence-lane {{ 'lane-active' if lane.records else '' }}"><span>{{ lane.name|replace('_', ' ') }}</span><div>{% for record in lane.records %}<span class="lane-chip" style="--i:{{ loop.index0 }}" title="{{ record.get('type', 'Evidence')|replace('_', ' ') }} · level {{ record.get('level') if record.get('level') is not none else 'not established' }}">{{ record.get('level') if record.get('level') is not none else '•' }}</span>{% else %}<span class="lane-empty">—</span>{% endfor %}</div></div>{% endfor %}
+  </div>
+  {% set floor = t.get('floor') %}{% set ceiling = t.get('ceiling') %}{% set maximum = view.scale_max %}
+  <svg class="level-ruler" viewBox="0 0 400 72" role="img" aria-label="Level ruler 1 to {{ maximum }}. Floor {{ floor if floor is not none else 'not established' }}, ceiling {{ ceiling if ceiling is not none else 'not established' }}">
+    <path class="ruler-line" d="M30 34h340"/>
+    {% if floor is not none and ceiling is not none %}<path class="ruler-gap" d="M{{ 30+(floor-1)*340/(maximum-1) }} 34H{{ 30+(ceiling-1)*340/(maximum-1) }}"/>{% endif %}
+    {% for level in range(1, maximum+1) %}{% set x = 30+(level-1)*340/(maximum-1) %}<path class="ruler-tick" d="M{{ x }} 28v12"/><text x="{{ x }}" y="59" text-anchor="middle">{{ level }}</text>{% endfor %}
+    {% if floor is not none %}<g class="ruler-marker floor-marker"><path d="M{{ 30+(floor-1)*340/(maximum-1) }} 17v17"/><text x="{{ 30+(floor-1)*340/(maximum-1) }}" y="12" text-anchor="middle">FLOOR</text></g>{% endif %}
+    {% if ceiling is not none %}<g class="ruler-marker ceiling-marker"><circle cx="{{ 30+(ceiling-1)*340/(maximum-1) }}" cy="34" r="5"/><text x="{{ 30+(ceiling-1)*340/(maximum-1) }}" y="71" text-anchor="middle">CEILING</text></g>{% endif %}
+  </svg>
+  <p class="trace-note">Floor {{ floor if floor is not none else '—' }} · ceiling {{ ceiling if ceiling is not none else '—' }} · gap {{ ceiling-floor if floor is not none and ceiling is not none else '—' }}</p>
+  <p class="trace-context">{{ t.get('window_years', '—') }}-year window · {{ t.get('measured', '—') }} measured · {{ t.get('work_months', '—') }} work months<br>{{ (t.get('establishing') or [])|length }} establishing groups</p>
+  {% elif j.judge == 'raven3' %}
+  {% set evidence = view.evidence %}
+  <div class="weighted-evidence" aria-label="Evidence weights after dependence discounts">{% set shown_evidence = view.compact_evidence if compact else evidence %}{% for item in shown_evidence %}{{ evidence_pill(item, loop.index0) }}{% endfor %}{% if compact and evidence|length > 3 %}<span class="trace-note">+{{ evidence|length-3 }} more</span>{% endif %}{% if not evidence %}<span class="trace-note">Evidence weights not recorded</span>{% endif %}</div>
+  <div class="trace-metric"><span>P(has skill) <small>noisy-OR</small></span><strong>{{ probability(t.get('p_has')) }}</strong></div>
+  <div class="trace-meter noisy-or" role="img" aria-label="Noisy-OR skill probability {{ probability(t.get('p_has')) }}"><span class="trace-fill" style="--fill:{{ (t.get('p_has') or 0)*100 }}%"></span></div>
+  <p class="trace-context formula">1 − ∏(1 − weight) · duplicates count once</p>
+  {% set distribution = t.get('level_dist') or [] %}{% set accepted = t.get('accepted') or [] %}
+  {% if distribution %}<svg class="level-histogram" viewBox="0 0 400 116" role="img" aria-label="Level probabilities. Accepted levels {{ accepted|join(', ') }}; best level {{ t.get('best', 'not recorded') }}">
+    {% for value in distribution %}{% set width = 352/(distribution|length) %}{% set x = 24+loop.index0*width %}
+    {% if loop.index in accepted %}<rect class="accepted-band" x="{{ x+2 }}" y="4" width="{{ width-4 }}" height="108" rx="4"/>{% endif %}
+    <rect class="histogram-bar" style="--i:{{ loop.index0 }}" x="{{ x+width*0.25 }}" y="{{ 80-value*64 }}" width="{{ width*0.5 }}" height="{{ value*64 }}" rx="2"/>
+    <text x="{{ x+width/2 }}" y="{{ 73-value*64 }}" text-anchor="middle">{{ probability(value) }}</text><text x="{{ x+width/2 }}" y="99" text-anchor="middle">L{{ loop.index }}{{ ' ★' if loop.index == t.get('best') else '' }}</text>{% endfor %}
+  </svg>{% else %}<p class="trace-note">Level probabilities not recorded</p>{% endif %}
+  <p class="trace-note band-legend"><i></i> Accepted ±1 band{% if t.get('shift') is not none %} · level shift {{ '%+d'|format(t.shift) }}{% endif %}</p>
+  <div class="trace-metric"><span>P(yes) <strong>{{ probability(t.get('p_yes')) }}</strong></span><span>τ <strong>{{ probability(t.get('tau')) }}</strong></span></div>
+  <svg class="threshold-gauge" viewBox="0 0 400 37" role="img" aria-label="P yes {{ probability(t.get('p_yes')) }} versus threshold {{ probability(t.get('tau')) }}">
+    <rect class="gauge-track" x="24" y="13" width="352" height="9" rx="4"/>
+    {% if t.get('tau') is not none %}<path class="tau-line" d="M{{ 24+t.tau*352 }} 3v30"/>{% endif %}
+    {% if t.get('p_yes') is not none %}<path class="yes-needle" style="--needle-x:{{ t.p_yes*352 }}px" d="m19 3 5 9 5-9z" transform="translate({{ t.p_yes*352 }} 0)"/>{% endif %}
+    <text x="24" y="36">0</text><text x="376" y="36" text-anchor="end">100%</text>
+  </svg>
+  {% endif %}
+  {% if view.available %}<div class="trace-stamp {{ 'stamp-send' if j.action == 'send' else 'stamp-hold' }}"><strong>{{ 'SEND' if j.action == 'send' else 'HOLD' }}{% if j.action == 'send' and j.level is not none %} · LEVEL {{ j.level }}{% endif %}</strong>{% if j.judge == 'raven2' %}<span>{{ view.rule }}</span>{% endif %}</div>{% endif %}
+  <figcaption>{{ view.caption }}</figcaption>
+</figure>
+{% endmacro %}
+
+{% macro evidence_pill(item, index) %}
+<span class="weight-pill {{ 'weight-duplicate' if item.get('discount') == 0 else 'weight-cluster' if item.get('discount') == 0.3 else '' }}" style="--i:{{ index }}" title="{{ item.get('type', 'Evidence')|replace('_', ' ') }}; quality {{ '%.2f'|format(item.q) if item.get('q') is not none else 'not recorded' }}; discount {{ '%.2f'|format(item.discount) if item.get('discount') is not none else 'not recorded' }}; level {{ item.get('level') if item.get('level') is not none else 'not established' }}">
+<span>{{ item.get('group', 'evidence')|replace('_', ' ') }}</span> <b>{{ '%.2f'|format(item.weight) if item.get('weight') is not none else '—' }}</b><small>{{ 'duplicate ×0' if item.get('discount') == 0 else 'same cluster ×0.3' if item.get('discount') == 0.3 else item.get('type', '')|replace('_', ' ') }}</small></span>
+{% endmacro %}

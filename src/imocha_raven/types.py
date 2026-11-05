@@ -55,6 +55,7 @@ class Decision(BaseModel):
     p_yes: float | None = None  # engine's own confidence that the person answers Yes
     evidence: list[Citation] = []  # at most 3
     reason: str = ""
+    trace: dict = {}  # structured "how it decided", for the engine room visual
 
 
 class EngineResult(BaseModel):

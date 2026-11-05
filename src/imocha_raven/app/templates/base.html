@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" defer></script>
 </head>
 <body>
+{% if fake_mode %}<div style="background:#7a1f12;color:#fff;text-align:center;padding:.5rem;font-size:.9rem;font-weight:600">Demo mode (LATENT_FAKE_PANEL=1): rounds use synthetic skills, not your documents. Restart with scripts/serve.sh for the real engine.</div>{% endif %}
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><a class="brand" href="/" aria-label="Raven home"><span class="brand-mark">R</span> RAVEN <span class="brand-caption">THE LATENT MODE</span></a><nav aria-label="Main"><a href="/play">Play</a><a href="/leaderboard">Leaderboard</a><a href="/scoreboard">Engine room <span aria-hidden="true">↗</span></a></nav></header>
 <main id="main" class="{% block main_class %}container{% endblock %}">{% block content %}{% endblock %}</main>

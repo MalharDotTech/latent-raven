@@ -14,6 +14,7 @@ import secrets
 import sqlite3
 import threading
 import time
+import traceback
 from collections import defaultdict, deque
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
@@ -33,6 +34,8 @@ DB = ROOT / "pilot.db"
 UPLOADS = ROOT / "data/real/uploads"
 LATEST = ROOT / "runs/latest"
 MAX_FILE = 5 * 1024 * 1024
+ERROR_LOG = Path(__file__).resolve().parents[3] / "data" / "real" / "app_errors.log"
+FAKE_MODE = os.environ.get("LATENT_FAKE_PANEL", "").lower() in {"1", "true", "yes"}
 CONSENT = "Your documents are processed by Claude (Anthropic) and pass through Cloudflare. Stored only on the organiser's laptop, deleted after the demo."
 SECRET = os.environ.get("LATENT_SESSION_SECRET", secrets.token_hex(32)).encode()
 POOL = ThreadPoolExecutor(max_workers=2, thread_name_prefix="raven")
@@ -80,13 +83,15 @@ def init_db():
 @asynccontextmanager
 async def lifespan(app):
     init_db()
+    if FAKE_MODE:
+        print("\n*** LATENT_FAKE_PANEL=1: DEMO MODE. Every round gets synthetic skills, not the real engine. ***\n", flush=True)
     yield
 
 
 app = FastAPI(title="Raven · Just Latent", docs_url=None, redoc_url=None, lifespan=lifespan)
 app.mount("/static", StaticFiles(directory=HERE / "static"), name="static")
 templates = Jinja2Templates(directory=HERE / "templates")
-templates.env.globals.update(judges=JUDGES, blurbs=JUDGE_BLURB, consent_text=CONSENT)
+templates.env.globals.update(judges=JUDGES, blurbs=JUDGE_BLURB, consent_text=CONSENT, fake_mode=FAKE_MODE)
 
 
 def page(request, name, status_code=200, **ctx):
@@ -199,21 +204,30 @@ def resolve(value):
 
 def run_submission(sid, cv_bytes, cv_text, github_user, portfolio_url):
     demo, notice = False, ""
-    try:
-        if os.environ.get("LATENT_FAKE_PANEL", "").lower() in {"1", "true", "yes"}:
-            raise RuntimeError("demo requested")
-        from imocha_raven.intake import bundle_from_upload
-        from imocha_raven.pipeline import run_panel
-        from imocha_raven.load import load_taxonomy
-        bundle = resolve(bundle_from_upload(person_ref=sid, cv_bytes=cv_bytes or None,
-                         cv_text=cv_text or None, github_user=github_user or None, portfolio_url=portfolio_url or None))
-        panel = PanelResult.model_validate(resolve(run_panel(bundle, load_taxonomy())))
-        panel.skills = panel.skills[:5]
-    except Exception as exc:
-        # Do not log the exception body: upstream errors may contain private documents.
-        LOG.warning("Panel unavailable (%s); using labelled demo fixture", type(exc).__name__)
+    if os.environ.get("LATENT_FAKE_PANEL", "").lower() in {"1", "true", "yes"}:
         panel, demo = demo_panel(sid), True
-        notice = "Demo data · These example skills and quotes are synthetic; they are not an assessment of your documents."
+        notice = "Demo mode is on (LATENT_FAKE_PANEL=1) · These skills are synthetic, not an assessment of your documents."
+    else:
+        try:
+            from imocha_raven.intake import bundle_from_upload
+            from imocha_raven.pipeline import run_panel
+            from imocha_raven.load import load_taxonomy
+            bundle = resolve(bundle_from_upload(person_ref=sid, cv_bytes=cv_bytes or None,
+                             cv_text=cv_text or None, github_user=github_user or None, portfolio_url=portfolio_url or None))
+            panel = PanelResult.model_validate(resolve(run_panel(bundle, load_taxonomy())))
+            panel.skills = panel.skills[:5]
+        except Exception:
+            # A real person never gets fake skills. Traceback goes to a gitignored local file only.
+            ERROR_LOG.parent.mkdir(parents=True, exist_ok=True)
+            with ERROR_LOG.open("a") as f:
+                f.write(f"\n--- {sid} {time.strftime('%Y-%m-%d %H:%M:%S')}\n{traceback.format_exc()}")
+            LOG.warning("Panel failed for %s; see %s", sid, ERROR_LOG)
+            with connect() as c:
+                c.execute("UPDATE submissions SET status='interrupted', notice=? WHERE id=?",
+                          ("The Ravens hit an error reading your evidence. Nothing was scored. Please try again.", sid))
+            return
+        if not panel.skills:
+            notice = "The Ravens found no skills from the customer skill list in your evidence. Add a GitHub username or portfolio link and try again."
     with connect() as c:
         c.execute("UPDATE submissions SET status='ready', result=?, demo=?, notice=? WHERE id=?",
                   (panel.model_dump_json(), int(demo), notice, sid))
@@ -446,15 +460,130 @@ def stats():
 
 
 def panel_files():
-    files = {}
+    """Projected picker: names only for synthetic people and consenting players.
+
+    Keep the existing directory:id values, including real:<random submission id>.
+    A submission's saved panel is authoritative even if no run file was written.
+    """
+    files, live = {}, {}
+    with connect() as c:
+        rows = c.execute("""SELECT s.*, l.submission_id AS opted_in FROM submissions s
+            LEFT JOIN leaderboard l ON l.submission_id=s.id
+            WHERE s.status='ready' AND s.result IS NOT NULL ORDER BY s.created, s.id""").fetchall()
+    for number, row in enumerate(rows, 1):
+        try:
+            panel = PanelResult.model_validate_json(row["result"])
+        except ValueError:
+            continue
+        name = row["first_name"] if row["opted_in"] else f"Player {number}"
+        label = f"{name} · played {time.strftime('%H:%M', time.localtime(row['created']))}"
+        live[row["id"]] = dict(panel=panel, label=label, group="Live players")
+    # Match saved run references back to their submission, never display a raw id.
+    refs = {entry["panel"].person_ref: sid for sid, entry in live.items()}
+    matched = set()
+    index = read_json(ROOT / "data/real/index.json", [])
+    roles = {r.get("rid"): r.get("role_family", "") for r in index if isinstance(r, dict)} if isinstance(index, list) else {}
+    role_names = {"design": "Product designer", "data_ai": "Data & AI",
+                  "solutions_payments": "Solutions & payments", "mechanical": "Mechanical engineering",
+                  "civil": "Civil engineering"}
     for directory in (LATEST / "per_person", LATEST / "real"):
-        for path in sorted(directory.glob("*.json"))[:150]:
+        for path in sorted(directory.glob("*.json")):
             try:
                 panel = PanelResult.model_validate_json(path.read_text())
-                files[path.parent.name + ":" + path.stem] = (path, panel.person_ref)
             except (OSError, ValueError):
                 continue
+            key, pid = path.parent.name + ":" + path.stem, path.stem
+            sid = pid if pid in live else refs.get(panel.person_ref)
+            if sid:
+                files[key] = live[sid]
+                matched.add(sid)
+            elif directory.name == "per_person" and re.fullmatch(r"P\d{3}", pid):
+                hcm = read_json(ROOT / "data/bundles" / pid / "hcm.json", {})
+                if not isinstance(hcm, dict):
+                    hcm = {}
+                name = hcm.get("preferred_name") or hcm.get("legal_name") or pid
+                history = [job for job in hcm.get("job_history", []) if isinstance(job, dict)]
+                history.sort(key=lambda job: (not job.get("to"), job.get("from") or ""))
+                title = history[-1].get("title", "Synthetic employee") if history else "Synthetic employee"
+                files[key] = dict(panel=panel, label=f"{name} · {title}", group="Synthetic employees")
+            elif directory.name == "real" and re.fullmatch(r"R\d{3}", pid):
+                role = roles.get(pid) or "Pilot employee"
+                role = role_names.get(role, role.replace("_", " ").capitalize())
+                files[key] = dict(panel=panel, label=f"{pid} · {role} (real pilot)", group="Real pilot")
+    for sid, entry in live.items():
+        if sid not in matched:
+            files["real:" + sid] = entry
     return files
+
+
+RULE_NAMES = {"not_high": "Not enough independent proof", "no_floor": "No level backed twice",
+              "spread": "Evidence disagrees by 3+ levels", "measured_conflict": "Test result contradicted",
+              "decay": "Evidence too old", "send": "Independent proof agrees"}
+TRACE_CAPTIONS = {"raven1": "One LLM read of everything. No rules, no checks.",
+                  "raven2": "Independent proof sets a floor; rules decide send or hold.",
+                  "raven3": "Discount dependence, weigh levels, then clear a calibrated threshold."}
+
+
+def trace_view(judge, scale_max=4):
+    """Presentation only: expose recorded values, never re-run engine decisions."""
+    trace = judge.trace or {}
+    records = [r for r in trace.get("records", []) or [] if isinstance(r, dict)]
+    evidence = [e for e in trace.get("evidence", []) or [] if isinstance(e, dict)]
+    # A compact example should show the dependence discounts even when the
+    # highest-weight evidence occupies the first few entries in the saved trace.
+    compact_indices = [0] if evidence else []
+    for discount in (0, 0.3):
+        index = next((i for i, e in enumerate(evidence) if e.get("discount") == discount), None)
+        if index is not None and index not in compact_indices:
+            compact_indices.append(index)
+    compact_indices += [i for i in range(len(evidence)) if i not in compact_indices]
+    groups = ("measured", "work", "authored", "org", "third_party", "self", "training")
+    lanes = [dict(name=g, records=[r for r in records if r.get("group") == g]) for g in groups]
+    return dict(judge=judge, trace=trace, available=bool(trace),
+                scale_max=trace.get("scale_max") or scale_max,
+                lanes=lanes, evidence=evidence, compact_evidence=[evidence[i] for i in compact_indices[:3]],
+                caption=TRACE_CAPTIONS.get(judge.judge, ""),
+                rule=RULE_NAMES.get(trace.get("rule"), str(trace.get("rule") or "Rule not recorded").replace("_", " ").capitalize()))
+
+
+def trace_examples(people):
+    """Use synthetic run examples only; no live player's evidence on the intro."""
+    candidates = {j: [] for j in JUDGES}
+    for key, entry in people.items():
+        if entry["group"] != "Synthetic employees":
+            continue
+        for skill in entry["panel"].skills:
+            for judge in skill.judges:
+                if judge.judge in candidates and judge.trace:
+                    trace = judge.trace
+                    interest = (int(trace.get("quote_in_source") is False) if judge.judge == "raven1" else
+                                int(judge.action == "hold") + 2 * int(trace.get("floor") is not None and trace.get("ceiling") is not None) if judge.judge == "raven2" else
+                                sum(e.get("discount") in (0, 0.3) for e in trace.get("evidence", []) if isinstance(e, dict)))
+                    candidates[judge.judge].append((interest, key, skill, judge))
+    # Explicitly labelled illustrative fallback when runs are missing or predate traces.
+    illustrative = {
+        "raven1": dict(confidence=.88, level=4, quote_in_source=False),
+        "raven2": dict(rule="send", window_years=2, records=[dict(group="work", level=3, type="applied"), dict(group="authored", level=3, type="authored_doc")], groups=["work", "authored"], establishing=["work", "authored"], measured=0, work_months=8, floor=3, ceiling=4, scale_max=4),
+        "raven3": dict(evidence=[dict(type="applied", group="work", q=.8, discount=1, weight=.8, level=3), dict(type="applied", group="work", q=.8, discount=0, weight=0, level=3), dict(type="authored_doc", group="authored", q=.7, discount=.3, weight=.21, level=3)], p_has=.84, level_dist=[.02, .1, .76, .12], best=3, accepted=[2, 3, 4], p_yes=.82, tau=.61, shift=1),
+    }
+    examples = []
+    for name in JUDGES:
+        if candidates[name]:
+            _, key, skill, judge = max(candidates[name], key=lambda row: row[0])
+            view = trace_view(judge, skill.scale_max)
+            view["example"] = f"{key.split(':', 1)[1]} · {skill.name} · recorded trace"
+        else:
+            view = trace_view(JudgeScore(judge=name, action="send", level=3 if name != "raven1" else 4, trace=illustrative[name]))
+            view["example"] = "Illustrative example · not a benchmark result"
+        examples.append(view)
+    return examples
+
+
+def probability(value):
+    return "—" if value is None else f"{float(value):.2%}"
+
+
+templates.env.globals.update(trace_view=trace_view, probability=probability)
 
 
 def build_log():
@@ -531,8 +660,12 @@ def scoreboard(request: Request):
             continue
     points.sort(key=lambda p: p["coverage"])
     curve_path = " ".join(f"{55 + p['coverage'] * 600:.1f},{235 - p['precision'] * 200:.1f}" for p in points)
+    people = panel_files()
+    people_groups = [dict(label=group, options=[dict(value=key, label=entry["label"]) for key, entry in people.items() if entry["group"] == group])
+                     for group in ("Live players", "Real pilot", "Synthetic employees")]
     return page(request, "scoreboard.html", scores=scores, curve=points, curve_path=curve_path,
-                traps=trap_rows(), people=panel_files(), stats=stats(), build_log=build_log())
+                traps=trap_rows(), people=people, people_groups=people_groups, examples=trace_examples(people),
+                stats=stats(), build_log=build_log())
 
 
 @app.get("/scoreboard/stats", response_class=HTMLResponse)
@@ -549,14 +682,11 @@ def person(request: Request, person: str = ""):
     files = panel_files()
     if person not in files:
         return page(request, "person.html", panel=None, messages=[])
-    try:
-        panel = PanelResult.model_validate_json(files[person][0].read_text())
-    except (OSError, ValueError):
-        return page(request, "person.html", panel=None, messages=[])
+    panel = files[person]["panel"]
     messages = []
     for skill in panel.skills:
         decision = next((j for j in skill.judges if j.judge == "raven3"), None)
         if decision and decision.action == "send" and decision.level is not None:
             quotes = list(dict.fromkeys((j.quote, j.source_id) for j in skill.judges if j.quote and j.judge == "raven3"))[:3]
             messages.append(dict(name=skill.name, level=decision.level, level_name=skill.level_lines.get(str(decision.level), ""), quotes=quotes))
-    return page(request, "person.html", panel=panel, messages=messages[:3])
+    return page(request, "person.html", panel=panel, person_label=files[person]["label"], messages=messages[:3])

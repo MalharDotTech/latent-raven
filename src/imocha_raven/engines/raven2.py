@@ -28,11 +28,14 @@ class Raven2:
         window = sk["decay_hint_years"]
         top = scale_max(taxonomy, sid)
         cur = [c for c in cl if age_years(claim_date(c, bundle), bundle) <= window]
-        mk = lambda a, r, lvl=None, ev=None: Decision(person_ref=bundle.person_ref, skill_id=sid, action=a, level=lvl,
-                                                      reason=r, evidence=citations(ev or cl, bundle))
+        trace = {"window_years": window, "scale_max": top, "records_total": len(cl), "records_in_window": len(cur)}
+        mk = lambda a, r, lvl=None, ev=None, **t: Decision(person_ref=bundle.person_ref, skill_id=sid, action=a, level=lvl,
+                                                           reason=r, evidence=citations(ev or cl, bundle),
+                                                           trace={**trace, **t})
         if not cur:
-            return mk("hold", f"No evidence inside the {window}y decay window.")
+            return mk("hold", f"No evidence inside the {window}y decay window.", rule="decay")
         rec = [(group_of(c, bundle), cap(group_of(c, bundle), taxonomy, sid, c.level_seen), c) for c in cur]
+        trace["records"] = [{"group": g, "level": lv, "type": c.evidence_type} for g, lv, c in rec][:12]
         groups = {g for g, _, _ in rec}
         est = groups & ESTABLISH
         measured = [(lv, c) for g, lv, c in rec if g == "measured" and lv and age_years(claim_date(c, bundle), bundle) < 2]
@@ -40,11 +43,12 @@ class Raven2:
                             if g == "work" and lv and lv >= L and claim_date(c, bundle)
                             and age_years(claim_date(c, bundle), bundle) <= 2}
         work_months = months(1)
+        trace.update(groups=sorted(groups), establishing=sorted(est), measured=len(measured), work_months=len(work_months))
         high = (bool(measured) or len(work_months) >= 3
                 or (bool({"work", "authored"} & groups) and len(est) >= 2)
                 or ("third_party" in groups and len(est) >= 2))
         if not high:
-            return mk("hold", "Not High: no measured result, sustained work, or two establishing groups.")
+            return mk("hold", "Not High: no measured result, sustained work, or two establishing groups.", rule="not_high")
         floor = 0
         for L in range(top, 0, -1):
             backed = {g for g, lv, _ in rec if lv and lv >= L}
@@ -52,19 +56,22 @@ class Raven2:
                 floor = L
                 break
         if not floor:
-            return mk("hold", "No floor: no level backed by 2+ groups, a measured result, or 3+ months of work.")
+            return mk("hold", "No floor: no level backed by 2+ groups, a measured result, or 3+ months of work.", rule="no_floor")
         ceiling = max(lv for _, lv, _ in rec if lv)
         if measured:
             lvl = max(lv for lv, _ in measured)
             if any(lv and abs(lv - lvl) >= 2 for g, lv, _ in rec if g != "measured"):
-                return mk("hold", "Another group sits 2+ levels from the measured result.")
+                return mk("hold", "Another group sits 2+ levels from the measured result.", rule="measured_conflict",
+                          floor=floor, ceiling=ceiling)
         else:
             gap = ceiling - floor
             if gap >= 3:
-                return mk("hold", f"Ceiling {ceiling} - floor {floor} >= 3: evidence disagrees.")
+                return mk("hold", f"Ceiling {ceiling} - floor {floor} >= 3: evidence disagrees.", rule="spread",
+                          floor=floor, ceiling=ceiling)
             lvl = floor + 1 if gap == 2 else floor
         lvl = min(lvl, top)
-        return mk("send", f"Floor {floor}, ceiling {ceiling}, groups {sorted(groups)}.", lvl)
+        return mk("send", f"Floor {floor}, ceiling {ceiling}, groups {sorted(groups)}.", lvl, rule="send",
+                  floor=floor, ceiling=ceiling)
 
     def infer(self, bundle: Bundle, taxonomy: dict, claims: list[Claim]) -> EngineResult:
         by = defaultdict(list)

@@ -53,7 +53,7 @@ class Raven3:
                 s = src[c.source_id]
                 rows.append((-q, s.lineage_key or s.source_id, cluster_of(c, s), c))
             rows.sort(key=lambda r: (r[0], r[3].quote))
-            seen_q, seen_cluster, miss = set(), set(), 1.0
+            seen_q, seen_cluster, miss, contrib = set(), set(), 1.0, []
             lp = [0.0] * top
             for nq, lin, cluster, c in rows:
                 key = (lin, " ".join(c.quote.lower().split()))
@@ -62,6 +62,8 @@ class Raven3:
                 seen_cluster.add(cluster)
                 w = -nq * d
                 miss *= 1 - w
+                contrib.append({"type": c.evidence_type, "group": group_of(c, bundle), "q": round(-nq, 3),
+                                "discount": d, "weight": round(w, 3), "level": c.level_seen})
                 if c.level_seen and w > 0:
                     seen = min(top, c.level_seen + (self.shift if c.evidence_type == "applied" else 0))
                     for k in range(top):
@@ -74,7 +76,10 @@ class Raven3:
             best = max(range(1, top + 1), key=lambda l: (sum(pl[k - 1] for k in accepted(l, top)), l))
             p = ph * sum(pl[k - 1] for k in accepted(best, top))
             out.append(Decision(person_ref=bundle.person_ref, skill_id=sid, action="hold", level=best, p_yes=round(p, 4),
-                                evidence=citations(cl, bundle), reason=f"P(has)={ph:.2f}, level dist={[round(x, 2) for x in pl]}"))
+                                evidence=citations(cl, bundle), reason=f"P(has)={ph:.2f}, level dist={[round(x, 2) for x in pl]}",
+                                trace={"p_has": round(ph, 4), "level_dist": [round(x, 4) for x in pl], "best": best,
+                                       "accepted": accepted(best, top), "p_yes": round(p, 4), "tau": self.tau,
+                                       "shift": self.shift, "evidence": contrib[:10]}))
         return out
 
     def infer(self, bundle: Bundle, taxonomy: dict, claims: list[Claim]) -> EngineResult:

@@ -38,7 +38,9 @@ class Raven1:
             ev = [Citation(source_id=s.source_id, quote=q)] if s and q else []
             ds[sid] = Decision(person_ref=bundle.person_ref, skill_id=sid, action="send",
                                level=max(1, min(x["level"], scale_max(taxonomy, sid))),
-                               p_yes=float(x.get("confidence") or 0.0), evidence=ev, reason="LLM read of the raw bundle.")
+                               p_yes=float(x.get("confidence") or 0.0), evidence=ev, reason="LLM read of the raw bundle.",
+                               trace={"confidence": float(x.get("confidence") or 0.0), "level": x["level"],
+                                      "quote_in_source": bool(ev)})
         return EngineResult(engine=self.name, person_ref=bundle.person_ref,
                             decisions=apply_policy(sorted(ds.values(), key=lambda d: d.skill_id), bundle, taxonomy),
                             unmatched_skills=[str(u) for u in obj.get("unmatched", [])], cost_usd=r.cost_usd,

@@ -41,7 +41,8 @@ def _judge(engine: str, d: Decision | None) -> JudgeScore:
     ev = d.evidence[0] if d.evidence else None
     sent = d.action == "send"
     return JudgeScore(judge=engine, action=d.action, level=d.level if sent else None, p_yes=d.p_yes,
-                      quote=ev.quote if ev else None, source_id=ev.source_id if ev else None, reason=d.reason)
+                      quote=ev.quote if ev else None, source_id=ev.source_id if ev else None, reason=d.reason,
+                      trace=d.trace)
 
 
 def _missing_source(bundle: Bundle, claims: list, family: str, sid: str) -> str | None:

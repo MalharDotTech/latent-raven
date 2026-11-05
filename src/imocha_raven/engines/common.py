@@ -8,7 +8,7 @@ from ..types import Bundle, Citation, Claim, Decision
 
 EU = {"AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU",
       "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"}
-GROUP_OF = {"assessments": "measured", "github": "work", "jira": "work", "servicenow": "work", "salesforce": "work",
+GROUP_OF = {"assessments": "measured", "github": "work", "github_public": "work", "jira": "work", "servicenow": "work", "salesforce": "work",
             "authored_doc": "authored", "hcm": "org", "certs": "third_party", "lms": "training", "cv": "self"}
 GROUP_RANK = ["measured", "work", "authored", "org", "third_party", "self", "training"]  # conflict order, STEP-4.7
 

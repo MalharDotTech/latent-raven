@@ -13,7 +13,7 @@ from .map import map_claims
 from .types import Bundle, Claim, Source
 from .verify import verify_claims
 
-VERSION = "v4"
+VERSION = "v5"
 CHUNK = 12000
 SMALL = 2500
 DROP_KEYS = {"monthly_activity", "badge_url", "emails", "legacy_ids", "files_ext", "co_authors", "proctoring_flags",
@@ -27,6 +27,7 @@ TYPE_RULES = {
     "certs": "Each line is a certificate: evidence_type cert, level_seen null.",
     "lms": "Each line is a course completion: evidence_type course, level_seen null. Skip compliance/internal-onboarding courses with no skill.",
     "assessments": "Each line is a scored test: evidence_type test, level_seen at most 1 (use 1 only for a passing score, else null). Quote the assessment_name.",
+    "github_public": "Public GitHub. Each repo block: description, languages_bytes, the person's own_commits with first/last date and active_months, recent commit messages, README. A repo the person owns with commits across several months is applied work: level 2 for a small or guided project, 3 for a maintained project with releases, users or tests the README shows. A language with few bytes, or a repo with 0 own commits, is not evidence. merged_pr lines (PRs merged into other people's repos) are applied work reviewed by others. Date = last commit or merge date. Quote the exact line text.",
     "cv": "A CV. Skills in a bare skills list are evidence_type listed (level_seen null). Work bullets that show the person doing the work are applied.",
     "authored_doc": "A document the person wrote. evidence_type authored_doc; level_seen only if the text itself shows teaching or standards others adopt.",
     "hcm": "HR record.",
