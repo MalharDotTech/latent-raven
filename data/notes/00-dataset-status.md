@@ -94,3 +94,15 @@
 | Review 05 + alt engine 06 | Codex default | 148k in / 7k out |
 
 Main-session Claude Code totals: run `npx ccusage` (not parsed here). One Claude session-limit hit during batch F repair (resumed after reset).
+
+## Self-agreement check (2026-11-06, `uv run python -m imocha_raven.eval.by_generator`)
+
+Engines read with Claude Haiku. If they were rewarded for Claude agreeing with itself, they would score higher on Claude-written personas. They score lower.
+
+| Raven 3 sends, precision | Claude-written A/C/E | Codex-written B/D/G | Adversarial F (Codex + Claude repair) |
+|---|---|---|---|
+| All 42 personas | 36/39 = 92% (CI 80-97) | 82/83 = 99% (CI 93-100) | 13/17 = 76% (CI 53-90) |
+
+- Same direction for Raven 1 (47% Claude vs 74% Codex) and Raven 2.
+- Reading: no sign of self-agreement bias; a strong generator difficulty effect instead. Codex batches are easier (audits: fixture-like, evidence narrates traps; G is ordinary people by design, 41/41).
+- Honest headline for the hard slices (A/C/E + F): Raven 3 49/56 = 87.5%.
