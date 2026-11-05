@@ -9,6 +9,7 @@ Raven infers an employee's skills and proficiency levels from work evidence (CV,
   - Raven 1: one-prompt LLM baseline.
   - Raven 2: rule-based reference engine (floor/ceiling, caps, decay).
   - Raven 3: evidence clusters, dependence-aware combination, calibrated threshold.
+- **Feedback loop, borrowed from RLHF (not RLHF).** Latent answers act as the human reward signal, but they may only move Raven 3's send threshold and level correction, inside guardrails (minimum labels, step limits, misses-only). Evidence weights, decay, Raven 2's rules and the taxonomy stay human decisions. See `src/imocha_raven/feedback.py` and `docs/playbook/productionizing-raven.md` (PB.11).
 - **Honest eval.** Only `eval/` can read the hidden truth. Precision on sends comes with Wilson CIs, alongside coverage, traps caught, fairness-twin flips, cost, and a check of whether the engine is just agreeing with the model that wrote the data.
 
 ## Results (synthetic test half, 21 personas)

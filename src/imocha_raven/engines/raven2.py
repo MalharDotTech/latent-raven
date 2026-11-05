@@ -1,4 +1,7 @@
-"""Raven 2 (E1): iMocha's reference rules, STEP-3..STEP-5. Deterministic, no LLM."""
+"""Raven 2 (E1): iMocha's reference rules, STEP-3..STEP-5. Deterministic, no LLM.
+
+HUMAN-ONLY: no parameter here is tuned by the feedback loop (feedback.py). Rules change only in review.
+"""
 
 from collections import defaultdict
 

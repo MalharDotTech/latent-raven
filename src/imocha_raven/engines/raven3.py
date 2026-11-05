@@ -2,6 +2,7 @@
 
 import json
 import math
+import os
 from collections import defaultdict
 from pathlib import Path
 
@@ -9,7 +10,10 @@ from ..types import Bundle, Claim, Decision, EngineResult
 from .common import (age_years, apply_policy, citations, claim_date, cluster_of, group_of, scale_max, skill_index, src_of,
                      usable)
 
-TAU_FILE = Path(__file__).with_name("raven3_tau.json")
+TAU_FILE = Path(__file__).with_name("raven3_tau.json")  # offline baseline, fitted by eval.run on the calibration half
+FEEDBACK_FILE = Path(__file__).with_name("raven3_feedback.json")  # live overlay written by feedback.py (tau, shift only)
+
+# Parameters below are HUMAN-ONLY: the feedback loop (feedback.py) never changes them. See feedback.HUMAN_ONLY.
 HALF_LIFE_Y = 2.5
 SAME_CLUSTER = 0.3  # duplicate quote 0, same project/source 0.3, different 1
 Q = {"test": 0.85, "applied": 0.8, "authored_doc": 0.7, "cert": 0.6, "other": 0.2, "course": 0.15, "listed": 0.12,
@@ -19,8 +23,13 @@ LEVEL_NOISE = [0.6, 0.25, 0.1, 0.05]  # P(true level | record shows level) by di
 
 
 def load_cfg() -> dict:
-    """tau and level shift, fitted on the calibration split by eval.run."""
-    return json.loads(TAU_FILE.read_text()) if TAU_FILE.exists() else {"tau": 0.9, "shift": 0}
+    """tau and shift: offline baseline from eval.run, overlaid with feedback-loop values unless RAVEN3_FEEDBACK=0.
+    eval.run always passes tau/shift explicitly, so offline scores never depend on live feedback."""
+    cfg = json.loads(TAU_FILE.read_text()) if TAU_FILE.exists() else {"tau": 0.9, "shift": 0}
+    if FEEDBACK_FILE.exists() and os.environ.get("RAVEN3_FEEDBACK", "1") != "0":
+        fb = json.loads(FEEDBACK_FILE.read_text())
+        cfg = {**cfg, "tau": fb.get("tau", cfg["tau"]), "shift": fb.get("shift", cfg.get("shift", 0))}
+    return cfg
 
 
 def accepted(level: int, top: int) -> list[int]:
