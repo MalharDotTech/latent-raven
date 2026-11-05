@@ -4,7 +4,7 @@ Guide for anyone (human or coding agent) working in this repo: where things live
 
 ## What this is
 
-Raven infers employee skills and proficiency levels from work evidence and decides, per skill, whether to **send** (ask the person to confirm) or **hold**. Three engines ("Ravens") run on one shared extraction and are scored by one eval harness. **Just Latent** is the web app: the person rates themselves first, the three Ravens judge, and their Yes/No answers are the real precision metric.
+Raven infers employee skills and proficiency levels from work evidence and decides, per skill, whether to **send** (ask the person to confirm) or **hold**. Three engines ("Ravens") run on one shared extraction and are scored by one eval harness. **Latent** is the web app: the person rates themselves first, the three Ravens judge, and their Yes/No answers are the real precision metric.
 
 Architecture: [docs/architecture.svg](docs/architecture.svg) (editable source: `docs/architecture.tldraw`).
 

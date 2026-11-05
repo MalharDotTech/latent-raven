@@ -36,7 +36,7 @@ LATEST = ROOT / "runs/latest"
 MAX_FILE = 5 * 1024 * 1024
 ERROR_LOG = Path(__file__).resolve().parents[3] / "data" / "real" / "app_errors.log"
 FAKE_MODE = os.environ.get("LATENT_FAKE_PANEL", "").lower() in {"1", "true", "yes"}
-CONSENT = "Your documents are processed by Claude (Anthropic) and pass through Cloudflare. Stored only on the organiser's laptop, deleted after the demo."
+CONSENT = "Your documents are processed by Claude (Anthropic) and pass through Cloudflare. Stored only on the organiser's laptop, deleted after the demo. Your first name and score appear on the Latent leaderboard."
 SECRET = os.environ.get("LATENT_SESSION_SECRET", secrets.token_hex(32)).encode()
 POOL = ThreadPoolExecutor(max_workers=2, thread_name_prefix="raven")
 RATE: dict[str, deque] = defaultdict(deque)
@@ -88,7 +88,7 @@ async def lifespan(app):
     yield
 
 
-app = FastAPI(title="Raven · Just Latent", docs_url=None, redoc_url=None, lifespan=lifespan)
+app = FastAPI(title="Raven · Latent", docs_url=None, redoc_url=None, lifespan=lifespan)
 app.mount("/static", StaticFiles(directory=HERE / "static"), name="static")
 templates = Jinja2Templates(directory=HERE / "templates")
 templates.env.globals.update(judges=JUDGES, blurbs=JUDGE_BLURB, consent_text=CONSENT, fake_mode=FAKE_MODE)
@@ -299,6 +299,7 @@ async def start(request: Request):
     with connect() as c:
         c.execute("INSERT INTO submissions(id,first_name,created,consent_at,status) VALUES (?,?,?,?,?)",
                   (sid, name, now, now, "running"))
+        c.execute("INSERT OR REPLACE INTO leaderboard VALUES (?,?,?)", (sid, name, now))  # everyone plays on the leaderboard
     POOL.submit(run_submission, sid, cv_bytes, cv_text, github, portfolio)
     response = RedirectResponse(f"/play/{sid}", status_code=303)
     set_cookie(response, request, "latent_" + sid, sid)
@@ -403,10 +404,7 @@ async def finish(request: Request, sid: str):
         if completed < len(panel.skills):
             raise HTTPException(409, "Please give quick feedback on every skill before finishing.")
         c.execute("INSERT OR REPLACE INTO missed VALUES (?,?,?)", (sid, text, time.time()))
-        if form.get("leaderboard") == "yes":
-            c.execute("INSERT OR REPLACE INTO leaderboard VALUES (?,?,?)", (sid, row["first_name"], time.time()))
-        else:
-            c.execute("DELETE FROM leaderboard WHERE submission_id=?", (sid,))
+        c.execute("INSERT OR REPLACE INTO leaderboard VALUES (?,?,?)", (sid, row["first_name"], time.time()))
     return page(request, "finished.html")
 
 

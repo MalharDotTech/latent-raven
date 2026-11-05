@@ -1,6 +1,6 @@
 {% extends 'base.html' %}{% block title %}Your round · Raven{% endblock %}
 {% block content %}
-<div class="page-intro"><p class="eyebrow">JUST LATENT / YOUR ROUND</p><h1>Your call, <em>{{ row.first_name }}.</em></h1><p>Choose the sentence that fits your work. Once you lock it, it’s yours.</p></div>
+<div class="page-intro"><p class="eyebrow">LATENT / YOUR ROUND</p><h1>Your call, <em>{{ row.first_name }}.</em></h1><p>Choose the sentence that fits your work. Once you lock it, it’s yours.</p></div>
 {% if row.demo %}<div class="notice demo" role="status"><span class="badge">DEMO DATA</span> {{ row.notice }}</div>{% endif %}
 {% if row.status == 'running' %}{% include 'status.html' %}
 {% elif row.status == 'interrupted' %}<div class="notice">{{ row.notice }} <a href="/play">Start again →</a></div>

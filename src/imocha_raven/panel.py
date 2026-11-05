@@ -1,4 +1,4 @@
-"""Contract between the engines and the app (Just Latent mode + dashboard).
+"""Contract between the engines and the app (Latent mode + dashboard).
 
 The app only imports from this module. Until the real pipeline lands, it calls fake_panel().
 Judges: raven1 = LLM baseline (E0), raven2 = iMocha reference engine (E1), raven3 = our engine (E2).

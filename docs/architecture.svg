@@ -19,7 +19,7 @@
     </style>
   </defs>
   <rect width="1200" height="760" fill="#ffffff"/>
-  <text x="20" y="34" font-size="20" font-weight="800" fill="#2a241d">Raven + Just Latent: system design</text>
+  <text x="20" y="34" font-size="20" font-weight="800" fill="#2a241d">Raven + Latent: system design</text>
   <text x="20" y="54" class="s">The model reads, code decides. Engines never see the hidden truth; only the eval harness does.</text>
 
   <!-- DATA -->
@@ -121,7 +121,7 @@
   <rect class="frame" x="946" y="72" width="238" height="560"/>
   <text x="962" y="98" class="h">APP (local Mac)</text>
   <rect class="gold" x="960" y="112" width="210" height="140"/>
-  <text x="972" y="134" class="t" font-weight="700">Just Latent mode</text>
+  <text x="972" y="134" class="t" font-weight="700">Latent mode</text>
   <text x="972" y="154" class="s">1 upload CV / GitHub / portfolio</text>
   <text x="972" y="170" class="s">2 self-rate, locked server-side</text>
   <text x="972" y="186" class="s">3 Ravens reveal one by one</text>
@@ -147,7 +147,7 @@
   <!-- FEEDBACK -->
   <rect class="frame" x="16" y="660" width="1168" height="80"/>
   <text x="32" y="686" class="h">REAL FEEDBACK LOOP</text>
-  <text x="32" y="710" class="t">Friends play Just Latent: self-rating (before reveal) + "Do you have this skill?" Yes/No + "level too low / right / too high"</text>
+  <text x="32" y="710" class="t">Friends play Latent: self-rating (before reveal) + "Do you have this skill?" Yes/No + "level too low / right / too high"</text>
   <text x="32" y="728" class="s">The only non-synthetic precision number. Stored in pilot.db and shown live in the engine room.</text>
   <path class="ln" d="M1065 490 V660"/>
 </svg>

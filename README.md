@@ -1,6 +1,6 @@
 # latent-raven
 
-Raven infers an employee's skills and proficiency levels from work evidence (CV, GitHub, Jira, certs, LMS, assessments, docs) and decides, per skill, whether to send it to the person for confirmation or hold. **Just Latent** is the game mode: you rate yourself first, three Ravens judge, and you see if you match.
+Raven infers an employee's skills and proficiency levels from work evidence (CV, GitHub, Jira, certs, LMS, assessments, docs) and decides, per skill, whether to send it to the person for confirmation or hold. **Latent** is the game mode: you rate yourself first, three Ravens judge, and you see if you match.
 
 ![System design](docs/architecture.svg)
 
