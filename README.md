@@ -2,12 +2,38 @@
 
 Raven infers an employee's skills and proficiency levels from work evidence (CV, GitHub, Jira, certs, LMS, assessments, docs) and decides, per skill, whether to send it to the person for confirmation or hold. **Just Latent** is the game mode: you rate yourself first, three Ravens judge, and you see if you match.
 
+![System design](docs/architecture.svg)
+
 - **The model reads, code decides.** An LLM extracts claims with verbatim quotes, and every quote is checked against the source. A claim without a quote is dropped.
 - **Three judges, one harness.** All three are run and scored by the same harness on the same data:
   - Raven 1: one-prompt LLM baseline.
   - Raven 2: rule-based reference engine (floor/ceiling, caps, decay).
   - Raven 3: evidence clusters, dependence-aware combination, calibrated threshold.
-- **Honest eval.** Only `eval/` can read the hidden truth. Precision on sends comes with Wilson CIs, alongside coverage, traps caught, fairness-twin flips and cost.
+- **Honest eval.** Only `eval/` can read the hidden truth. Precision on sends comes with Wilson CIs, alongside coverage, traps caught, fairness-twin flips, cost, and a check of whether the engine is just agreeing with the model that wrote the data.
+
+## Results (synthetic test half, 21 personas)
+
+| Judge | Precision (95% CI) | Coverage | Traps caught | Twin flips |
+|---|---|---|---|---|
+| Raven 1 | 56% (49-63) | 98% | 37/68 | 37 |
+| Raven 2 | 76% (53-90) | 14% | 39/68 | 4 |
+| Raven 3 | 93% (84-97) | 58% | 51/68 | 7 |
+
+95% precision is not proven. On the hardest slices (realistic + adversarial personas) Raven 3 is at 87.5%. Details: `data/notes/00-dataset-status.md`.
+
+## Tech stack
+
+| Layer | Choice | Why |
+|---|---|---|
+| Language | Python 3.13, uv | eval statistics + JSON pipeline; one toolchain |
+| Types / contracts | pydantic v2 | `types.py` and `panel.py` are the seams between stages, engines and app |
+| LLM | Claude Haiku via headless `claude -p` | cheap structured extraction, per-call cost in the log, disk-cached |
+| Decision engines | plain Python | deterministic, testable, no model in the decide step |
+| Storage | JSON files (dataset, cache, runs) + SQLite `pilot.db` (stdlib) | no database server for a pilot this size |
+| Web | FastAPI + Jinja2 partials, HTMX 2, Alpine 3, hand-written CSS | server-rendered, no frontend build |
+| PDF intake | poppler `pdftotext` | robust text from CV PDFs |
+| Sharing | Cloudflare quick tunnel (`cloudflared`) | public link to a laptop, no deploy |
+| Diagrams | tldraw (source), SVG (README) | |
 
 ## Run
 
@@ -19,11 +45,6 @@ scripts/serve.sh                              # app on http://127.0.0.1:8000
 scripts/tunnel.sh                             # optional public link via Cloudflare quick tunnel
 ```
 
-## Layout
-
-- `src/imocha_raven/`: pipeline (`load`, `extract`, `verify`, `map`, `group`), `engines/`, `eval/`, `app/`
-- `data/`: synthetic company "Kestrel Cloud", with 42 personas and 18 fairness twins. Truth files are hidden from the engines. Also holds the taxonomy and the grounding corpus.
-- `docs/`: sprint notes, research, architecture
-- `scripts/`: validators, structure repair, twin generator
+[AGENTS.md](AGENTS.md) covers the repo map, the full run guide, environment variables and the rules that keep the eval honest.
 
 All people in `data/` are fictitious. Real pilot data is never committed.
