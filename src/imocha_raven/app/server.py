@@ -37,7 +37,19 @@ MAX_FILE = 5 * 1024 * 1024
 ERROR_LOG = Path(__file__).resolve().parents[3] / "data" / "real" / "app_errors.log"
 FAKE_MODE = os.environ.get("LATENT_FAKE_PANEL", "").lower() in {"1", "true", "yes"}
 CONSENT = "Your documents are processed by Claude (Anthropic) and pass through Cloudflare. Stored only on the organiser's laptop, deleted after the demo. Your first name and score appear on the Latent leaderboard."
-SECRET = os.environ.get("LATENT_SESSION_SECRET", secrets.token_hex(32)).encode()
+def session_secret() -> bytes:
+    """Env var wins; otherwise a secret saved once in gitignored data/real/, so cookies survive restarts."""
+    if env := os.environ.get("LATENT_SESSION_SECRET"):
+        return env.encode()
+    path = Path(__file__).resolve().parents[3] / "data" / "real" / ".session_secret"
+    if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(secrets.token_hex(32))
+        path.chmod(0o600)
+    return path.read_text().strip().encode()
+
+
+SECRET = session_secret()
 POOL = ThreadPoolExecutor(max_workers=2, thread_name_prefix="raven")
 RATE: dict[str, deque] = defaultdict(deque)
 RATE_LOCK = threading.Lock()
