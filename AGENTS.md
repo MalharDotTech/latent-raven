@@ -43,6 +43,8 @@ Architecture: [docs/architecture.svg](docs/architecture.svg) (editable source: `
 | `data/notes/` | Dataset status, batch notes, truth-v2 change log, ID remaps |
 | `docs/sprint/` | Problem framing: 5-question sprint, eval contract vs engine |
 | `docs/research/` | Market, methods, fault catalog, audits, real CV observations |
+| `docs/engine/raven3-interiors.md` | Raven 3 interiors: input/output, parameter DAG, every parameter with owner and research source, worked example (generated from `engines/raven3_params.py`) |
+| `src/imocha_raven/engines/raven3_params.py` | Parameter registry (P1..P13), single source for the doc and the `/scoreboard/raven3` page |
 | `docs/playbook/productionizing-raven.md` | Production playbook: parameters, tuning cadence, feedback loop, human in the loop, rollout |
 | `scripts/` | `validate_personas.py`, `fix_structure.py`, `make_twins.py`, `run_extraction.py`, `ingest_real.py`, `serve.sh`, `tunnel.sh` |
 | `tests/` | Engine tests and claim fixtures |
@@ -95,6 +97,7 @@ Routes:
 - `/play/{id}` private round
 - `/leaderboard`
 - `/scoreboard` engine room
+- `/scoreboard/raven3` Raven 3 interiors: parameter DAG, slow decision replay, feedback-loop replay
 
 ## Common changes
 

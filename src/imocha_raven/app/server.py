@@ -22,7 +22,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from imocha_raven.panel import (PanelResult, PanelSkill, JudgeScore, EngineScore,
@@ -524,6 +524,76 @@ def panel_files():
         if sid not in matched:
             files["real:" + sid] = entry
     return files
+
+
+def bundle_dir_for(key: str) -> Path | None:
+    """Picker key -> bundle directory. Only keys the picker itself offers are accepted."""
+    if key not in panel_files():
+        return None
+    kind, _, ref = key.partition(":")
+    if not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", ref):
+        return None
+    path = ROOT / ("data/bundles" if kind == "per_person" else "data/real/bundles") / ref
+    return path if path.is_dir() else None
+
+
+@app.get("/scoreboard/raven3", response_class=HTMLResponse)
+def raven3_interiors(request: Request):
+    if not dashboard_auth(request):
+        return page(request, "dashboard_gate.html", error=None)
+    people = panel_files()
+    people_groups = [dict(label=group, options=[dict(value=key, label=entry["label"]) for key, entry in people.items() if entry["group"] == group])
+                     for group in ("Live players", "Real pilot", "Synthetic employees")]
+    return page(request, "raven3.html", people=people, people_groups=people_groups)
+
+
+@app.get("/scoreboard/raven3/params")
+def raven3_params(request: Request):
+    """Parameter registry for the interiors view (organiser only)."""
+    if not dashboard_auth(request):
+        raise HTTPException(403, "Organiser passcode required.")
+    from imocha_raven.engines import raven3_params as rp
+    return JSONResponse({"params": rp.PARAMS, "not_yet": [dict(idea=a, source=b, status=c) for a, b, c in rp.NOT_YET],
+                         "sources": rp.SRC})
+
+
+@app.get("/scoreboard/raven3/explain")
+def raven3_explain(request: Request, person: str = "", skill: str = ""):
+    """Step-by-step Raven 3 computation for one person and skill, from cached claims only (never calls an LLM)."""
+    if not dashboard_auth(request):
+        raise HTTPException(403, "Organiser passcode required.")
+    from imocha_raven import extract, load
+    from imocha_raven.engines.raven3 import Raven3
+    d = bundle_dir_for(person)
+    if d is None:
+        raise HTTPException(404, "Unknown person.")
+    bundle = load.load_bundle(d)
+    if not (ROOT / "data/cache/claims" / f"{bundle.person_ref}.json").exists():
+        raise HTTPException(404, "This person has no cached extraction yet.")
+    tax = load.load_taxonomy()
+    claims = extract.get_claims(bundle, tax)
+    r3 = Raven3()
+    if not skill:
+        skills = sorted({c.skill_id for c in claims if c.quote_verified and c.skill_id})
+        return JSONResponse({"person": person, "skills": skills})
+    out = r3.explain(bundle, tax, claims, skill)
+    if out is None:
+        raise HTTPException(404, "No verified evidence for this skill.")
+    out["skill_name"] = next((s["name"] for s in tax["skills"] if s["skill_id"] == skill), skill)
+    return JSONResponse(out)
+
+
+@app.get("/scoreboard/raven3/replay")
+def raven3_replay(request: Request):
+    """Feedback-loop replay: simulated rounds (precomputed) plus the live dry run and applied history."""
+    if not dashboard_auth(request):
+        raise HTTPException(403, "Organiser passcode required.")
+    from imocha_raven import feedback
+    live_items = feedback.load_live()
+    return JSONResponse({"simulated": read_json(LATEST / "feedback_replay.json", {}),
+                         "live": {"dry_run": feedback.run(live_items, apply=False), "curve": feedback.tau_curve(live_items),
+                                  "current": feedback.current()},
+                         "guardrails": feedback.AUTO, "target": feedback.TARGET, "human_only": feedback.HUMAN_ONLY})
 
 
 RULE_NAMES = {"not_high": "Not enough independent proof", "no_floor": "No level backed twice",

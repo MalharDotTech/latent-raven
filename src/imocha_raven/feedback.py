@@ -116,19 +116,26 @@ def current() -> dict:
             "baseline": {"tau": base["tau"], "shift": base.get("shift", 0)}, "history": fb.get("history", [])}
 
 
+def tau_curve(items: list[Item]) -> list[dict]:
+    """For every candidate tau: how many labelled candidates would be sent, their precision, and its lower bound."""
+    cfg = AUTO["tau"]
+    scored = [it for it in items if it.level_evidence and it.level is not None]
+    out = []
+    for t in [round(x / 100, 2) for x in range(int(cfg["min"] * 100), int(cfg["max"] * 100) + 1)]:
+        sends = [it for it in scored if it.p_yes >= t]
+        k = sum(correct(it) for it in sends)
+        out.append({"tau": t, "sends": len(sends), "precision": round(k / len(sends), 4) if sends else None,
+                    "lower_bound": round(wilson_lower(k, len(sends)), 4) if sends else None})
+    return out
+
+
 def propose_tau(items: list[Item], tau_now: float) -> tuple[float, str]:
     """Smallest tau whose one-sided 95% lower bound on precision meets TARGET, moved at most max_step."""
     cfg = AUTO["tau"]
     scored = [it for it in items if it.level_evidence and it.level is not None]
     if len(scored) < cfg["min_labels"]:
         return tau_now, f"hold: {len(scored)} labelled Raven 3 candidates < {cfg['min_labels']} needed"
-    grid = [round(x / 100, 2) for x in range(int(cfg["min"] * 100), int(cfg["max"] * 100) + 1)]
-    ok = []
-    for t in grid:
-        sends = [it for it in scored if it.p_yes >= t]
-        k = sum(correct(it) for it in sends)
-        if len(sends) >= 10 and wilson_lower(k, len(sends)) >= TARGET:
-            ok.append(t)
+    ok = [pt["tau"] for pt in tau_curve(scored) if pt["sends"] >= 10 and pt["lower_bound"] >= TARGET]
     if ok:
         want, why = ok[0], f"lowest tau with precision lower bound >= {TARGET:.0%} is {ok[0]}"
     else:

@@ -13,7 +13,7 @@ import argparse
 import json
 from pathlib import Path
 
-from ..feedback import Item, run
+from ..feedback import AUTO, TARGET, Item, run, tau_curve
 from .score import load_truth, rows_of
 
 RUN = Path(__file__).resolve().parents[3] / "runs" / "latest"
@@ -39,13 +39,37 @@ def sim_items(labels: str = "said") -> list[Item]:
     return out
 
 
+def replay(labels: str = "said", start_tau: float = 0.75, start_shift: int = 1, rounds: int = 6) -> dict:
+    """Everything the engine-room replay needs: the curve the loop looks at and each round's move."""
+    items = sim_items(labels)
+    cur, out = {"tau": start_tau, "shift": start_shift, "history": []}, []
+    for i in range(1, rounds + 1):
+        r = run(items, apply=False, start=cur)
+        out.append({"round": i, "tau_from": r["tau"]["from"], "tau_to": r["tau"]["to"], "tau_why": r["tau"]["why"],
+                    "shift_from": r["shift"]["from"], "shift_to": r["shift"]["to"], "shift_why": r["shift"]["why"],
+                    "precision_at_tau": r["precision_at_current_tau"]})
+        cur = {"tau": r["tau"]["to"], "shift": r["shift"]["to"], "history": []}
+    return {"labels": labels, "n": len(items), "target": TARGET, "guardrails": AUTO, "curve": tau_curve(items), "rounds": out}
+
+
+def write_replays():
+    """runs/latest/feedback_replay.json: both label modes from both sides, for the app."""
+    data = {f"{lab}_{side}": replay(lab, t, 1) for lab in ("said", "ability") for side, t in (("high", 0.75), ("low", 0.10))}
+    (RUN / "feedback_replay.json").write_text(json.dumps(data, indent=1))
+    return data
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--start-tau", type=float, default=0.75)
     ap.add_argument("--start-shift", type=int, default=1)
     ap.add_argument("--rounds", type=int, default=6)
     ap.add_argument("--labels", choices=["said", "ability"], default="said")
+    ap.add_argument("--write", action="store_true", help="write runs/latest/feedback_replay.json for the app")
     a = ap.parse_args()
+    if a.write:
+        write_replays()
+        print("wrote", RUN / "feedback_replay.json")
     items = sim_items(a.labels)
     print(f"simulated labels: {len(items)} ({a.labels}: skills shown on synthetic panels, answered from hidden truth)")
     cur = {"tau": a.start_tau, "shift": a.start_shift, "history": []}
